@@ -1,0 +1,1653 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+index.html
+package.json
+src/App.tsx
+src/components/Dashboard.tsx
+src/components/MealDiary.tsx
+src/components/ProfileTab.tsx
+src/components/ProgressBar.tsx
+src/components/Recipes.tsx
+src/components/Workout.tsx
+src/index.css
+src/lib/calc.ts
+src/lib/data.ts
+src/lib/storage.ts
+src/main.tsx
+src/types.ts
+src/utils/cn.ts
+tsconfig.json
+vite.config.ts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="index.html">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#10b981" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>VitalTrack · Calorías y Hábitos</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "react-vite-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "lucide-react": "^1.8.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "7.2.4",
+    "vite-plugin-singlefile": "2.3.0"
+  }
+}
+</file>
+
+<file path="src/App.tsx">
+import { useEffect, useState } from "react";
+import {
+  Home,
+  Utensils,
+  User,
+  Dumbbell,
+  ChefHat,
+  Sun,
+  Moon,
+} from "lucide-react";
+import type { FoodEntry, Profile, WeightEntry, WorkoutSession } from "./types";
+import { STORAGE_KEYS, useLocalStorage } from "./lib/storage";
+import { Dashboard } from "./components/Dashboard";
+import { MealDiary } from "./components/MealDiary";
+import { ProfileTab } from "./components/ProfileTab";
+import { Workout } from "./components/Workout";
+import { Recipes } from "./components/Recipes";
+import { todayISO } from "./lib/calc";
+
+const DEFAULT_PROFILE: Profile = {
+  name: "",
+  age: 45,
+  gender: "male",
+  heightCm: 175,
+  weightKg: 85,
+  targetWeightKg: 78,
+  activity: "sedentary",
+  goal: "lose",
+};
+
+type TabKey = "dashboard" | "diary" | "profile" | "workout" | "recipes";
+
+const TABS: { key: TabKey; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
+  { key: "dashboard", label: "Inicio", icon: Home },
+  { key: "diary", label: "Diario", icon: Utensils },
+  { key: "workout", label: "Entreno", icon: Dumbbell },
+  { key: "recipes", label: "Recetas", icon: ChefHat },
+  { key: "profile", label: "Perfil", icon: User },
+];
+
+export default function App() {
+  const [tab, setTab] = useState<TabKey>("dashboard");
+  const [profile, setProfile] = useLocalStorage<Profile>(STORAGE_KEYS.profile, DEFAULT_PROFILE);
+  const [foods, setFoods] = useLocalStorage<FoodEntry[]>(STORAGE_KEYS.foods, []);
+  const [weights, setWeights] = useLocalStorage<WeightEntry[]>(STORAGE_KEYS.weights, []);
+  const [workouts, setWorkouts] = useLocalStorage<WorkoutSession[]>(STORAGE_KEYS.workouts, []);
+  const [theme, setTheme] = useLocalStorage<"light" | "dark">(STORAGE_KEYS.theme, "light");
+
+  // Apply theme class on root
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  // First-time bootstrap: ensure today's weight is present once
+  useEffect(() => {
+    if (weights.length === 0 && profile.weightKg) {
+      setWeights([{ date: todayISO(), weight: profile.weightKg }]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <div className="min-h-full bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 max-w-md mx-auto relative">
+      {/* Top header bar */}
+      <div className="sticky top-0 z-30 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-100 dark:border-slate-800 safe-top">
+        <div className="flex items-center justify-between px-4 py-3">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white font-bold shadow-sm">
+              V
+            </div>
+            <div>
+              <p className="text-sm font-bold leading-tight">VitalTrack</p>
+              <p className="text-[10px] text-slate-500 leading-tight">Hábitos y calorías</p>
+            </div>
+          </div>
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="w-9 h-9 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 active:scale-95 transition"
+            aria-label="Cambiar tema"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Content */}
+      <main>
+        {tab === "dashboard" && (
+          <Dashboard profile={profile} foods={foods} workouts={workouts} />
+        )}
+        {tab === "diary" && (
+          <MealDiary profile={profile} foods={foods} setFoods={setFoods} />
+        )}
+        {tab === "profile" && (
+          <ProfileTab
+            profile={profile}
+            setProfile={setProfile}
+            weights={weights}
+            setWeights={setWeights}
+          />
+        )}
+        {tab === "workout" && (
+          <Workout workouts={workouts} setWorkouts={setWorkouts} />
+        )}
+        {tab === "recipes" && <Recipes />}
+      </main>
+
+      {/* Bottom nav */}
+      <nav className="fixed bottom-0 inset-x-0 z-40 max-w-md mx-auto safe-bottom">
+        <div className="m-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg flex justify-between px-1 py-1.5">
+          {TABS.map((t) => {
+            const active = tab === t.key;
+            const Icon = t.icon;
+            return (
+              <button
+                key={t.key}
+                onClick={() => setTab(t.key)}
+                className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-2 rounded-xl transition active:scale-95 ${
+                  active
+                    ? "bg-emerald-500 text-white"
+                    : "text-slate-500 dark:text-slate-400"
+                }`}
+              >
+                <Icon size={20} />
+                <span className="text-[10px] font-medium">{t.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Dashboard.tsx">
+import { Flame, Target, TrendingDown, AlertTriangle, Activity } from "lucide-react";
+import type { FoodEntry, Profile, WorkoutSession } from "../types";
+import { dailyTarget, tdee, todayISO } from "../lib/calc";
+import { ProgressBar } from "./ProgressBar";
+
+interface Props {
+  profile: Profile;
+  foods: FoodEntry[];
+  workouts: WorkoutSession[];
+}
+
+export function Dashboard({ profile, foods, workouts }: Props) {
+  const today = todayISO();
+  const todayFoods = foods.filter((f) => f.date === today);
+  const consumed = todayFoods.reduce((s, f) => s + f.calories, 0);
+  const target = dailyTarget(profile);
+  const remaining = target - consumed;
+  const over = consumed > target;
+  const tdeeVal = Math.round(tdee(profile));
+
+  const todayWorkouts = workouts.filter((w) => w.date === today);
+  const workoutMin = Math.round(todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60);
+
+  // Group by meal slot
+  const mealOrder = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"] as const;
+  const byMeal = mealOrder.map((m) => ({
+    name: m,
+    kcal: todayFoods.filter((f) => f.meal === m).reduce((s, f) => s + f.calories, 0),
+  }));
+
+  const greeting = (() => {
+    const h = new Date().getHours();
+    if (h < 12) return "Buenos días";
+    if (h < 19) return "Buenas tardes";
+    return "Buenas noches";
+  })();
+
+  return (
+    <div className="px-4 pt-4 pb-28 space-y-4">
+      <header>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{greeting},</p>
+        <h1 className="text-2xl font-bold">{profile.name || "Bienvenido"} 👋</h1>
+      </header>
+
+      {over && (
+        <div className="flex items-start gap-3 p-3 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800">
+          <AlertTriangle className="text-rose-600 shrink-0 mt-0.5" size={20} />
+          <div className="text-sm">
+            <p className="font-semibold text-rose-700 dark:text-rose-300">
+              Has superado tu objetivo diario
+            </p>
+            <p className="text-rose-600/80 dark:text-rose-300/80">
+              {consumed - target} kcal por encima del límite.
+            </p>
+          </div>
+        </div>
+      )}
+
+      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <Flame className="text-emerald-500" size={20} />
+            <h2 className="font-semibold">Hoy</h2>
+          </div>
+          <span className="text-xs text-slate-500">{today}</span>
+        </div>
+        <div className="flex items-end justify-between mb-3">
+          <div>
+            <p className="text-4xl font-bold tabular-nums">
+              {consumed}
+              <span className="text-base font-medium text-slate-500"> / {target} kcal</span>
+            </p>
+            <p className={`text-sm mt-1 ${over ? "text-rose-500" : "text-emerald-600 dark:text-emerald-400"}`}>
+              {over ? `${consumed - target} kcal de exceso` : `${remaining} kcal restantes`}
+            </p>
+          </div>
+        </div>
+        <ProgressBar value={consumed} max={target} over={over} />
+      </section>
+
+      <section className="grid grid-cols-2 gap-3">
+        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+          <Target className="text-emerald-500 mb-2" size={18} />
+          <p className="text-xs text-slate-500">TDEE</p>
+          <p className="text-xl font-bold tabular-nums">{tdeeVal}<span className="text-xs font-medium"> kcal</span></p>
+        </div>
+        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+          <TrendingDown className="text-emerald-500 mb-2" size={18} />
+          <p className="text-xs text-slate-500">Peso actual</p>
+          <p className="text-xl font-bold tabular-nums">{profile.weightKg}<span className="text-xs font-medium"> kg</span></p>
+        </div>
+        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+          <Activity className="text-emerald-500 mb-2" size={18} />
+          <p className="text-xs text-slate-500">Entreno hoy</p>
+          <p className="text-xl font-bold tabular-nums">{workoutMin}<span className="text-xs font-medium"> min</span></p>
+        </div>
+        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+          <Target className="text-emerald-500 mb-2" size={18} />
+          <p className="text-xs text-slate-500">Objetivo</p>
+          <p className="text-xl font-bold tabular-nums">{profile.targetWeightKg}<span className="text-xs font-medium"> kg</span></p>
+        </div>
+      </section>
+
+      <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+        <h3 className="font-semibold mb-3">Reparto por comida</h3>
+        <ul className="space-y-2.5">
+          {byMeal.map((m) => (
+            <li key={m.name} className="flex items-center justify-between text-sm">
+              <span className="text-slate-600 dark:text-slate-300">{m.name}</span>
+              <span className="font-semibold tabular-nums">{m.kcal} kcal</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/MealDiary.tsx">
+import { useMemo, useState } from "react";
+import { Plus, Trash2, Clock, X, Search } from "lucide-react";
+import type { FoodEntry, MealSlot, Profile } from "../types";
+import { COMMON_FOODS } from "../lib/data";
+import { dailyTarget, nowHHMM, todayISO } from "../lib/calc";
+import { ProgressBar } from "./ProgressBar";
+
+interface Props {
+  profile: Profile;
+  foods: FoodEntry[];
+  setFoods: React.Dispatch<React.SetStateAction<FoodEntry[]>>;
+}
+
+const MEAL_HOURS: { meal: MealSlot; hour: string }[] = [
+  { meal: "Desayuno", hour: "07:00" },
+  { meal: "Media Mañana", hour: "10:00" },
+  { meal: "Almuerzo", hour: "13:30" },
+  { meal: "Merienda", hour: "17:00" },
+  { meal: "Cena", hour: "20:30" },
+];
+
+function detectMealFromHour(hhmm: string): MealSlot {
+  const [h, m] = hhmm.split(":").map(Number);
+  const t = h * 60 + m;
+  if (t < 9 * 60) return "Desayuno";
+  if (t < 12 * 60) return "Media Mañana";
+  if (t < 16 * 60) return "Almuerzo";
+  if (t < 19 * 60) return "Merienda";
+  return "Cena";
+}
+
+export function MealDiary({ profile, foods, setFoods }: Props) {
+  const today = todayISO();
+  const [open, setOpen] = useState(false);
+  const [meal, setMeal] = useState<MealSlot>("Desayuno");
+  const [time, setTime] = useState(nowHHMM());
+  const [name, setName] = useState("");
+  const [calories, setCalories] = useState<string>("");
+  const [search, setSearch] = useState("");
+
+  const todayFoods = useMemo(
+    () => foods.filter((f) => f.date === today).sort((a, b) => a.time.localeCompare(b.time)),
+    [foods, today]
+  );
+
+  const consumed = todayFoods.reduce((s, f) => s + f.calories, 0);
+  const target = dailyTarget(profile);
+  const over = consumed > target;
+
+  const filtered = COMMON_FOODS.filter((f) =>
+    f.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  function openAdd(presetMeal?: MealSlot, presetHour?: string) {
+    const t = presetHour || nowHHMM();
+    setTime(t);
+    setMeal(presetMeal || detectMealFromHour(t));
+    setName("");
+    setCalories("");
+    setSearch("");
+    setOpen(true);
+  }
+
+  function quickAdd(food: { name: string; calories: number }) {
+    setName(food.name);
+    setCalories(String(food.calories));
+  }
+
+  function save() {
+    const cal = Number(calories);
+    if (!name.trim() || !cal || isNaN(cal)) return;
+    const entry: FoodEntry = {
+      id: crypto.randomUUID(),
+      name: name.trim(),
+      calories: Math.round(cal),
+      meal,
+      time,
+      date: today,
+    };
+    setFoods((prev) => [...prev, entry]);
+    setOpen(false);
+  }
+
+  function remove(id: string) {
+    setFoods((prev) => prev.filter((f) => f.id !== id));
+  }
+
+  return (
+    <div className="px-4 pt-4 pb-28 space-y-4">
+      <header className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold">Diario</h1>
+          <p className="text-sm text-slate-500 dark:text-slate-400">{today}</p>
+        </div>
+        <button
+          onClick={() => openAdd()}
+          className="flex items-center gap-1.5 bg-emerald-500 active:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-full shadow"
+        >
+          <Plus size={18} /> Añadir
+        </button>
+      </header>
+
+      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+        <div className="flex justify-between text-sm mb-2">
+          <span className="font-semibold tabular-nums">{consumed} / {target} kcal</span>
+          <span className={over ? "text-rose-500 font-medium" : "text-slate-500"}>
+            {over ? `+${consumed - target}` : `${target - consumed} restantes`}
+          </span>
+        </div>
+        <ProgressBar value={consumed} max={target} over={over} />
+      </section>
+
+      {/* Hour selector quick access */}
+      <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-4 px-4">
+        {MEAL_HOURS.map((m) => (
+          <button
+            key={m.meal}
+            onClick={() => openAdd(m.meal, m.hour)}
+            className="shrink-0 flex flex-col items-center gap-0.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2.5 rounded-2xl active:scale-95 transition"
+          >
+            <span className="text-xs text-slate-500">{m.hour}</span>
+            <span className="text-sm font-medium">{m.meal}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Meals grouped */}
+      <div className="space-y-3">
+        {(["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"] as MealSlot[]).map((slot) => {
+          const items = todayFoods.filter((f) => f.meal === slot);
+          const total = items.reduce((s, f) => s + f.calories, 0);
+          return (
+            <section
+              key={slot}
+              className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden"
+            >
+              <header className="flex items-center justify-between px-4 py-3">
+                <div>
+                  <h3 className="font-semibold">{slot}</h3>
+                  <p className="text-xs text-slate-500 tabular-nums">{total} kcal · {items.length} item{items.length !== 1 ? "s" : ""}</p>
+                </div>
+                <button
+                  onClick={() => openAdd(slot)}
+                  className="text-emerald-600 dark:text-emerald-400 font-medium text-sm flex items-center gap-1"
+                >
+                  <Plus size={16} /> Añadir
+                </button>
+              </header>
+              {items.length > 0 && (
+                <ul className="border-t border-slate-100 dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800">
+                  {items.map((f) => (
+                    <li key={f.id} className="flex items-center justify-between px-4 py-3">
+                      <div className="min-w-0 flex-1">
+                        <p className="font-medium truncate">{f.name}</p>
+                        <p className="text-xs text-slate-500 flex items-center gap-1">
+                          <Clock size={12} /> {f.time}
+                        </p>
+                      </div>
+                      <span className="tabular-nums font-semibold mr-3">{f.calories} kcal</span>
+                      <button
+                        onClick={() => remove(f.id)}
+                        className="p-2 text-slate-400 active:text-rose-500"
+                        aria-label="Eliminar"
+                      >
+                        <Trash2 size={18} />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          );
+        })}
+      </div>
+
+      {/* Add modal */}
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40">
+          <div className="w-full sm:max-w-md bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-3xl max-h-[90vh] overflow-y-auto safe-bottom">
+            <div className="sticky top-0 bg-white dark:bg-slate-900 px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <h2 className="font-semibold text-lg">Añadir alimento</h2>
+              <button onClick={() => setOpen(false)} className="p-1 -mr-1">
+                <X size={22} />
+              </button>
+            </div>
+
+            <div className="p-5 space-y-4">
+              <div className="grid grid-cols-2 gap-3">
+                <label className="block">
+                  <span className="text-xs text-slate-500">Hora</span>
+                  <input
+                    type="time"
+                    value={time}
+                    onChange={(e) => {
+                      setTime(e.target.value);
+                      setMeal(detectMealFromHour(e.target.value));
+                    }}
+                    className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+                  />
+                </label>
+                <label className="block">
+                  <span className="text-xs text-slate-500">Comida</span>
+                  <select
+                    value={meal}
+                    onChange={(e) => setMeal(e.target.value as MealSlot)}
+                    className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+                  >
+                    {(["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"] as MealSlot[]).map((m) => (
+                      <option key={m}>{m}</option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+
+              <label className="block">
+                <span className="text-xs text-slate-500">Alimento</span>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Nombre del alimento"
+                  className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+                />
+              </label>
+
+              <label className="block">
+                <span className="text-xs text-slate-500">Calorías (kcal)</span>
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  value={calories}
+                  onChange={(e) => setCalories(e.target.value)}
+                  placeholder="0"
+                  className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+                />
+              </label>
+
+              <div>
+                <p className="text-xs text-slate-500 mb-2">Alimentos comunes</p>
+                <div className="relative mb-2">
+                  <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                  <input
+                    type="text"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    placeholder="Buscar..."
+                    className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm"
+                  />
+                </div>
+                <div className="max-h-52 overflow-y-auto -mx-1 px-1 space-y-1.5">
+                  {filtered.map((f) => (
+                    <button
+                      key={f.name}
+                      onClick={() => quickAdd(f)}
+                      className="w-full flex items-center justify-between text-left px-3 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 active:bg-emerald-50 dark:active:bg-emerald-900/30"
+                    >
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium truncate">{f.name}</p>
+                        <p className="text-xs text-slate-500">{f.serving}</p>
+                      </div>
+                      <span className="text-sm font-semibold tabular-nums shrink-0">{f.calories} kcal</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <button
+                onClick={save}
+                disabled={!name.trim() || !Number(calories)}
+                className="w-full bg-emerald-500 active:bg-emerald-600 disabled:bg-slate-300 dark:disabled:bg-slate-700 text-white font-semibold py-3.5 rounded-2xl"
+              >
+                Guardar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/ProfileTab.tsx">
+import { useState } from "react";
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine } from "recharts";
+import { Save, Plus, Calculator, User } from "lucide-react";
+import type { ActivityLevel, Profile, WeightEntry } from "../types";
+import { ACTIVITY_LABEL, bmr, dailyTarget, tdee, todayISO } from "../lib/calc";
+
+interface Props {
+  profile: Profile;
+  setProfile: React.Dispatch<React.SetStateAction<Profile>>;
+  weights: WeightEntry[];
+  setWeights: React.Dispatch<React.SetStateAction<WeightEntry[]>>;
+}
+
+export function ProfileTab({ profile, setProfile, weights, setWeights }: Props) {
+  const [draft, setDraft] = useState<Profile>(profile);
+  const [newWeight, setNewWeight] = useState("");
+
+  const tdeeVal = Math.round(tdee(draft));
+  const bmrVal = Math.round(bmr(draft));
+  const target = dailyTarget(draft);
+
+  function save() {
+    setProfile(draft);
+  }
+
+  function addWeight() {
+    const w = Number(newWeight);
+    if (!w || isNaN(w)) return;
+    const today = todayISO();
+    setWeights((prev) => {
+      const filtered = prev.filter((e) => e.date !== today);
+      return [...filtered, { date: today, weight: w }].sort((a, b) =>
+        a.date.localeCompare(b.date)
+      );
+    });
+    setDraft((p) => ({ ...p, weightKg: w }));
+    setProfile((p) => ({ ...p, weightKg: w }));
+    setNewWeight("");
+  }
+
+  const chartData = weights.map((w) => ({
+    date: w.date.slice(5), // MM-DD
+    weight: w.weight,
+  }));
+
+  return (
+    <div className="px-4 pt-4 pb-28 space-y-4">
+      <header>
+        <h1 className="text-2xl font-bold">Perfil & Progreso</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          Tus datos se guardan en este dispositivo.
+        </p>
+      </header>
+
+      {/* Form */}
+      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 space-y-4">
+        <div className="flex items-center gap-2 mb-1">
+          <User size={18} className="text-emerald-500" />
+          <h2 className="font-semibold">Datos personales</h2>
+        </div>
+
+        <Field label="Nombre">
+          <input
+            value={draft.name}
+            onChange={(e) => setDraft({ ...draft, name: e.target.value })}
+            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          />
+        </Field>
+
+        <div className="grid grid-cols-2 gap-3">
+          <Field label="Edad">
+            <input
+              type="number"
+              inputMode="numeric"
+              value={draft.age || ""}
+              onChange={(e) => setDraft({ ...draft, age: Number(e.target.value) })}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            />
+          </Field>
+          <Field label="Género">
+            <select
+              value={draft.gender}
+              onChange={(e) => setDraft({ ...draft, gender: e.target.value as Profile["gender"] })}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            >
+              <option value="male">Hombre</option>
+              <option value="female">Mujer</option>
+            </select>
+          </Field>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          <Field label="Altura (cm)">
+            <input
+              type="number"
+              inputMode="numeric"
+              value={draft.heightCm || ""}
+              onChange={(e) => setDraft({ ...draft, heightCm: Number(e.target.value) })}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            />
+          </Field>
+          <Field label="Peso (kg)">
+            <input
+              type="number"
+              inputMode="decimal"
+              step="0.1"
+              value={draft.weightKg || ""}
+              onChange={(e) => setDraft({ ...draft, weightKg: Number(e.target.value) })}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            />
+          </Field>
+        </div>
+
+        <Field label="Peso objetivo (kg)">
+          <input
+            type="number"
+            inputMode="decimal"
+            step="0.1"
+            value={draft.targetWeightKg || ""}
+            onChange={(e) => setDraft({ ...draft, targetWeightKg: Number(e.target.value) })}
+            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          />
+        </Field>
+
+        <Field label="Nivel de actividad">
+          <select
+            value={draft.activity}
+            onChange={(e) => setDraft({ ...draft, activity: e.target.value as ActivityLevel })}
+            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          >
+            {(Object.keys(ACTIVITY_LABEL) as ActivityLevel[]).map((k) => (
+              <option key={k} value={k}>{ACTIVITY_LABEL[k]}</option>
+            ))}
+          </select>
+        </Field>
+
+        <Field label="Objetivo">
+          <div className="grid grid-cols-3 gap-2">
+            {(["lose", "maintain", "gain"] as const).map((g) => (
+              <button
+                key={g}
+                onClick={() => setDraft({ ...draft, goal: g })}
+                className={`py-2.5 rounded-xl text-sm font-medium border transition ${
+                  draft.goal === g
+                    ? "bg-emerald-500 border-emerald-500 text-white"
+                    : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
+                }`}
+              >
+                {g === "lose" ? "Perder" : g === "maintain" ? "Mantener" : "Ganar"}
+              </button>
+            ))}
+          </div>
+        </Field>
+
+        <button
+          onClick={save}
+          className="w-full bg-emerald-500 active:bg-emerald-600 text-white font-semibold py-3.5 rounded-2xl flex items-center justify-center gap-2"
+        >
+          <Save size={18} /> Guardar perfil
+        </button>
+      </section>
+
+      {/* TDEE */}
+      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Calculator size={18} className="text-emerald-500" />
+          <h2 className="font-semibold">Cálculo Mifflin-St Jeor</h2>
+        </div>
+        <div className="grid grid-cols-3 gap-2 text-center">
+          <div className="rounded-xl bg-slate-50 dark:bg-slate-800 p-3">
+            <p className="text-xs text-slate-500">BMR</p>
+            <p className="text-lg font-bold tabular-nums">{bmrVal}</p>
+          </div>
+          <div className="rounded-xl bg-slate-50 dark:bg-slate-800 p-3">
+            <p className="text-xs text-slate-500">TDEE</p>
+            <p className="text-lg font-bold tabular-nums">{tdeeVal}</p>
+          </div>
+          <div className="rounded-xl bg-emerald-50 dark:bg-emerald-900/30 p-3">
+            <p className="text-xs text-emerald-700 dark:text-emerald-300">Objetivo</p>
+            <p className="text-lg font-bold tabular-nums text-emerald-700 dark:text-emerald-300">{target}</p>
+          </div>
+        </div>
+        <p className="text-xs text-slate-500 mt-3">
+          Objetivo = TDEE {draft.goal === "lose" ? "− 500" : draft.goal === "gain" ? "+ 300" : "± 0"} kcal.
+        </p>
+      </section>
+
+      {/* Weight tracking */}
+      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+        <h2 className="font-semibold mb-3">Evolución de peso</h2>
+        <div className="flex gap-2 mb-4">
+          <input
+            type="number"
+            inputMode="decimal"
+            step="0.1"
+            value={newWeight}
+            onChange={(e) => setNewWeight(e.target.value)}
+            placeholder="Peso de hoy (kg)"
+            className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          />
+          <button
+            onClick={addWeight}
+            className="bg-emerald-500 active:bg-emerald-600 text-white px-4 rounded-xl flex items-center gap-1 font-semibold"
+          >
+            <Plus size={18} />
+          </button>
+        </div>
+
+        {chartData.length > 0 ? (
+          <div className="h-56 -ml-4">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" opacity={0.4} />
+                <XAxis dataKey="date" tick={{ fontSize: 11 }} />
+                <YAxis domain={["dataMin - 1", "dataMax + 1"]} tick={{ fontSize: 11 }} width={40} />
+                <Tooltip
+                  contentStyle={{
+                    borderRadius: 12,
+                    border: "1px solid #e2e8f0",
+                    fontSize: 12,
+                  }}
+                />
+                <ReferenceLine y={profile.targetWeightKg} stroke="#10b981" strokeDasharray="4 4" label={{ value: "Objetivo", fontSize: 10, fill: "#10b981", position: "insideTopRight" }} />
+                <Line
+                  type="monotone"
+                  dataKey="weight"
+                  stroke="#10b981"
+                  strokeWidth={2.5}
+                  dot={{ r: 4, fill: "#10b981" }}
+                  activeDot={{ r: 6 }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        ) : (
+          <p className="text-sm text-slate-500 text-center py-6">
+            Añade tu primer registro para ver el gráfico.
+          </p>
+        )}
+
+        {weights.length > 0 && (
+          <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <p className="text-xs text-slate-500 mb-2">Últimos registros</p>
+            <ul className="space-y-1.5 max-h-32 overflow-y-auto">
+              {[...weights].reverse().slice(0, 8).map((w) => (
+                <li key={w.date} className="flex justify-between text-sm">
+                  <span className="text-slate-600 dark:text-slate-300">{w.date}</span>
+                  <span className="font-semibold tabular-nums">{w.weight} kg</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <label className="block">
+      <span className="text-xs text-slate-500 dark:text-slate-400 mb-1 block">{label}</span>
+      {children}
+    </label>
+  );
+}
+</file>
+
+<file path="src/components/ProgressBar.tsx">
+interface Props {
+  value: number;
+  max: number;
+  over?: boolean;
+}
+
+export function ProgressBar({ value, max, over }: Props) {
+  const pct = Math.min(100, Math.round((value / Math.max(1, max)) * 100));
+  return (
+    <div className="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+      <div
+        className={`h-full transition-all duration-500 ${
+          over
+            ? "bg-rose-500"
+            : pct > 85
+            ? "bg-amber-500"
+            : "bg-emerald-500"
+        }`}
+        style={{ width: `${pct}%` }}
+      />
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Recipes.tsx">
+import { useState } from "react";
+import { ChevronDown, Clock, Wallet, Flame } from "lucide-react";
+import { RECIPES } from "../lib/data";
+
+export function Recipes() {
+  const [open, setOpen] = useState<string | null>(RECIPES[0].id);
+
+  return (
+    <div className="px-4 pt-4 pb-28 space-y-4">
+      <header>
+        <h1 className="text-2xl font-bold">Recetario Low-Cost</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          5 recetas económicas y equilibradas
+        </p>
+      </header>
+
+      <div className="space-y-3">
+        {RECIPES.map((r) => {
+          const isOpen = open === r.id;
+          return (
+            <article
+              key={r.id}
+              className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden"
+            >
+              <button
+                onClick={() => setOpen(isOpen ? null : r.id)}
+                className="w-full flex items-center justify-between p-4 text-left"
+              >
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold">{r.name}</h3>
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-500">
+                    <span className="flex items-center gap-1"><Wallet size={12} /> {r.cost}</span>
+                    <span className="flex items-center gap-1"><Clock size={12} /> {r.time}</span>
+                    <span className="flex items-center gap-1"><Flame size={12} /> {r.kcal} kcal</span>
+                  </div>
+                </div>
+                <ChevronDown
+                  size={20}
+                  className={`shrink-0 ml-2 text-slate-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {isOpen && (
+                <div className="px-4 pb-4 border-t border-slate-100 dark:border-slate-800 pt-4 space-y-4">
+                  <div className="grid grid-cols-3 gap-2 text-center">
+                    <Macro label="Proteínas" value={`${r.protein} g`} color="emerald" />
+                    <Macro label="Carbs" value={`${r.carbs} g`} color="amber" />
+                    <Macro label="Grasas" value={`${r.fat} g`} color="rose" />
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Ingredientes</p>
+                    <ul className="space-y-1">
+                      {r.ingredients.map((i) => (
+                        <li key={i} className="text-sm flex gap-2">
+                          <span className="text-emerald-500">•</span> {i}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Preparación</p>
+                    <ol className="space-y-2">
+                      {r.steps.map((s, i) => (
+                        <li key={i} className="text-sm flex gap-2.5">
+                          <span className="shrink-0 w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-bold flex items-center justify-center">
+                            {i + 1}
+                          </span>
+                          <span>{s}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function Macro({ label, value, color }: { label: string; value: string; color: "emerald" | "amber" | "rose" }) {
+  const colorMap = {
+    emerald: "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300",
+    amber: "bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
+    rose: "bg-rose-50 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300",
+  };
+  return (
+    <div className={`rounded-xl p-2.5 ${colorMap[color]}`}>
+      <p className="text-[10px] uppercase tracking-wide opacity-80">{label}</p>
+      <p className="font-bold tabular-nums">{value}</p>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Workout.tsx">
+import { useEffect, useRef, useState } from "react";
+import { Play, Pause, RotateCcw, Check, Dumbbell, Bike, Activity } from "lucide-react";
+import type { WorkoutSession } from "../types";
+import { EXERCISES } from "../lib/data";
+import { todayISO } from "../lib/calc";
+
+interface Props {
+  workouts: WorkoutSession[];
+  setWorkouts: React.Dispatch<React.SetStateAction<WorkoutSession[]>>;
+}
+
+function formatTime(sec: number) {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+const CATEGORY_ICON = {
+  Mancuernas: Dumbbell,
+  Bici: Bike,
+  "Cuerpo libre": Activity,
+};
+
+export function Workout({ workouts, setWorkouts }: Props) {
+  const [activeIdx, setActiveIdx] = useState<number | null>(null);
+  const [seconds, setSeconds] = useState(0);
+  const [running, setRunning] = useState(false);
+  const intervalRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (running) {
+      intervalRef.current = window.setInterval(() => {
+        setSeconds((s) => s + 1);
+      }, 1000);
+    } else if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [running]);
+
+  function start(idx: number) {
+    setActiveIdx(idx);
+    setSeconds(0);
+    setRunning(true);
+  }
+
+  function toggle() {
+    setRunning((r) => !r);
+  }
+
+  function reset() {
+    setRunning(false);
+    setSeconds(0);
+  }
+
+  function finish() {
+    if (activeIdx == null || seconds === 0) {
+      setActiveIdx(null);
+      setRunning(false);
+      return;
+    }
+    const ex = EXERCISES[activeIdx];
+    const session: WorkoutSession = {
+      id: crypto.randomUUID(),
+      date: todayISO(),
+      exercise: ex.name,
+      durationSec: seconds,
+    };
+    setWorkouts((prev) => [...prev, session]);
+    setActiveIdx(null);
+    setRunning(false);
+    setSeconds(0);
+  }
+
+  const today = todayISO();
+  const todaySessions = workouts.filter((w) => w.date === today);
+  const totalToday = todaySessions.reduce((s, w) => s + w.durationSec, 0);
+  const active = activeIdx != null ? EXERCISES[activeIdx] : null;
+
+  return (
+    <div className="px-4 pt-4 pb-28 space-y-4">
+      <header>
+        <h1 className="text-2xl font-bold">Entrenamiento</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          Mancuernas hasta 10 kg + bicicleta estática
+        </p>
+      </header>
+
+      {/* Today summary */}
+      <section className="rounded-2xl bg-emerald-500 text-white p-5">
+        <p className="text-sm opacity-90">Hoy entrenado</p>
+        <p className="text-3xl font-bold tabular-nums">{formatTime(totalToday)}</p>
+        <p className="text-xs opacity-80 mt-1">{todaySessions.length} sesion{todaySessions.length !== 1 ? "es" : ""}</p>
+      </section>
+
+      {/* Active timer */}
+      {active && (
+        <section className="rounded-2xl bg-white dark:bg-slate-900 border-2 border-emerald-500 p-5">
+          <p className="text-xs text-slate-500 mb-1">Activo</p>
+          <h3 className="font-semibold text-lg">{active.name}</h3>
+          <p className="text-xs text-slate-500 mb-3">{active.description}</p>
+          <p className="text-5xl font-bold text-center tabular-nums my-3">
+            {formatTime(seconds)}
+          </p>
+          <p className="text-center text-xs text-slate-500 mb-4">
+            Sugerido: {formatTime(active.defaultSec)}
+          </p>
+          <div className="grid grid-cols-3 gap-2">
+            <button
+              onClick={toggle}
+              className="py-3 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold flex items-center justify-center gap-1.5"
+            >
+              {running ? <Pause size={18} /> : <Play size={18} />}
+              {running ? "Pausa" : "Reanudar"}
+            </button>
+            <button
+              onClick={reset}
+              className="py-3 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold flex items-center justify-center gap-1.5"
+            >
+              <RotateCcw size={18} /> Reset
+            </button>
+            <button
+              onClick={finish}
+              className="py-3 rounded-xl bg-emerald-500 active:bg-emerald-600 text-white font-semibold flex items-center justify-center gap-1.5"
+            >
+              <Check size={18} /> Fin
+            </button>
+          </div>
+        </section>
+      )}
+
+      {/* Exercise list */}
+      <section className="space-y-2">
+        <h2 className="font-semibold px-1">Ejercicios</h2>
+        {EXERCISES.map((ex, i) => {
+          const Icon = CATEGORY_ICON[ex.category];
+          return (
+            <button
+              key={ex.name}
+              onClick={() => start(i)}
+              disabled={activeIdx === i}
+              className="w-full flex items-center gap-3 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 active:bg-slate-50 dark:active:bg-slate-800 disabled:opacity-50 text-left"
+            >
+              <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+                <Icon size={20} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="font-semibold">{ex.name}</p>
+                <p className="text-xs text-slate-500 truncate">{ex.description}</p>
+              </div>
+              <div className="text-right shrink-0">
+                <p className="text-xs text-slate-500">Sugerido</p>
+                <p className="text-sm font-semibold tabular-nums">{formatTime(ex.defaultSec)}</p>
+              </div>
+            </button>
+          );
+        })}
+      </section>
+
+      {/* History today */}
+      {todaySessions.length > 0 && (
+        <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+          <h2 className="font-semibold mb-3">Sesiones de hoy</h2>
+          <ul className="divide-y divide-slate-100 dark:divide-slate-800">
+            {todaySessions.map((s) => (
+              <li key={s.id} className="flex items-center justify-between py-2.5">
+                <span className="text-sm">{s.exercise}</span>
+                <span className="text-sm font-semibold tabular-nums">{formatTime(s.durationSec)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/index.css">
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.dark body {
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
+/* Hide scrollbars on horizontal hour scroller */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Safe area for devices with notch */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+.safe-top { padding-top: env(safe-area-inset-top); }
+</file>
+
+<file path="src/lib/calc.ts">
+import type { ActivityLevel, Profile } from "../types";
+
+export const ACTIVITY_FACTOR: Record<ActivityLevel, number> = {
+  sedentary: 1.2, // Oficina / sedentario
+  light: 1.375,
+  moderate: 1.55,
+  active: 1.725,
+};
+
+export const ACTIVITY_LABEL: Record<ActivityLevel, string> = {
+  sedentary: "Oficina / Sedentario",
+  light: "Ligero (1-3 días/sem)",
+  moderate: "Moderado (3-5 días/sem)",
+  active: "Activo (6-7 días/sem)",
+};
+
+// Mifflin-St Jeor
+export function bmr(p: Pick<Profile, "weightKg" | "heightCm" | "age" | "gender">) {
+  const base = 10 * p.weightKg + 6.25 * p.heightCm - 5 * p.age;
+  return p.gender === "male" ? base + 5 : base - 161;
+}
+
+export function tdee(p: Profile) {
+  return bmr(p) * ACTIVITY_FACTOR[p.activity];
+}
+
+export function dailyTarget(p: Profile) {
+  const t = tdee(p);
+  if (p.goal === "lose") return Math.round(t - 500);
+  if (p.goal === "gain") return Math.round(t + 300);
+  return Math.round(t);
+}
+
+export function todayISO() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+export function nowHHMM() {
+  const d = new Date();
+  return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+</file>
+
+<file path="src/lib/data.ts">
+import type { CommonFood } from "../types";
+
+export const COMMON_FOODS: CommonFood[] = [
+  { name: "Té negro (sin azúcar)", calories: 2, serving: "1 taza" },
+  { name: "Café con leche", calories: 60, serving: "1 taza" },
+  { name: "Azúcar (1 cucharadita)", calories: 20, serving: "5 g" },
+  { name: "Sacarina", calories: 0, serving: "1 pastilla" },
+  { name: "Maiswaffel (tortita maíz)", calories: 25, serving: "1 unidad" },
+  { name: "Bocadillo queso/mortadela", calories: 380, serving: "1 unidad" },
+  { name: "Yogur natural", calories: 90, serving: "125 g" },
+  { name: "Plátano", calories: 105, serving: "1 mediano" },
+  { name: "Manzana", calories: 80, serving: "1 mediana" },
+  { name: "Huevo cocido", calories: 78, serving: "1 unidad" },
+  { name: "Pan integral", calories: 70, serving: "1 rebanada" },
+  { name: "Tostada con tomate y aceite", calories: 180, serving: "1 unidad" },
+  { name: "Pechuga de pollo a la plancha", calories: 165, serving: "100 g" },
+  { name: "Arroz blanco cocido", calories: 130, serving: "100 g" },
+  { name: "Ensalada mixta (sin aliño)", calories: 50, serving: "1 plato" },
+  { name: "Aceite de oliva", calories: 90, serving: "1 cucharada" },
+  { name: "Almendras", calories: 160, serving: "20 g" },
+  { name: "Chocolate negro 70%", calories: 60, serving: "10 g" },
+];
+
+export interface Recipe {
+  id: string;
+  name: string;
+  cost: string;
+  time: string;
+  kcal: number;
+  protein: number; // g
+  carbs: number; // g
+  fat: number; // g
+  ingredients: string[];
+  steps: string[];
+}
+
+export const RECIPES: Recipe[] = [
+  {
+    id: "r1",
+    name: "Arroz con pollo y verduras",
+    cost: "≈ 1,80 €/ración",
+    time: "30 min",
+    kcal: 520,
+    protein: 38,
+    carbs: 60,
+    fat: 12,
+    ingredients: [
+      "80 g arroz",
+      "120 g pechuga de pollo",
+      "1 zanahoria",
+      "1/2 pimiento",
+      "1/2 cebolla",
+      "1 cda aceite de oliva",
+      "Sal, pimienta, pimentón",
+    ],
+    steps: [
+      "Sofreír cebolla, pimiento y zanahoria en una cazuela.",
+      "Añadir el pollo en dados y dorar.",
+      "Incorporar el arroz, pimentón y agua (doble del arroz).",
+      "Cocer 18 minutos a fuego medio. Reposar 5 min.",
+    ],
+  },
+  {
+    id: "r2",
+    name: "Tortilla de espinacas",
+    cost: "≈ 1,20 €/ración",
+    time: "15 min",
+    kcal: 310,
+    protein: 22,
+    carbs: 6,
+    fat: 22,
+    ingredients: [
+      "3 huevos",
+      "150 g espinacas frescas",
+      "1 diente de ajo",
+      "1 cda aceite de oliva",
+      "Sal y pimienta",
+    ],
+    steps: [
+      "Saltear el ajo picado y añadir las espinacas hasta que reduzcan.",
+      "Batir los huevos, salpimentar y mezclar con las espinacas.",
+      "Cuajar a fuego medio 2-3 min por cada lado.",
+    ],
+  },
+  {
+    id: "r3",
+    name: "Lentejas con verduras",
+    cost: "≈ 0,90 €/ración",
+    time: "40 min",
+    kcal: 420,
+    protein: 22,
+    carbs: 55,
+    fat: 8,
+    ingredients: [
+      "100 g lentejas pardinas",
+      "1 zanahoria",
+      "1/2 cebolla",
+      "1 diente de ajo",
+      "1 hoja de laurel",
+      "Pimentón y aceite",
+    ],
+    steps: [
+      "Pochar cebolla, ajo y zanahoria.",
+      "Añadir lentejas, laurel, pimentón y agua.",
+      "Cocer 30-35 min a fuego suave. Salar al final.",
+    ],
+  },
+  {
+    id: "r4",
+    name: "Pasta con atún y tomate",
+    cost: "≈ 1,40 €/ración",
+    time: "20 min",
+    kcal: 540,
+    protein: 28,
+    carbs: 70,
+    fat: 14,
+    ingredients: [
+      "90 g pasta integral",
+      "1 lata atún al natural",
+      "200 g tomate triturado",
+      "1/2 cebolla",
+      "Aceite, sal, orégano",
+    ],
+    steps: [
+      "Cocer la pasta al dente.",
+      "Sofreír cebolla y añadir tomate. Cocinar 8 min.",
+      "Incorporar el atún escurrido y mezclar con la pasta.",
+    ],
+  },
+  {
+    id: "r5",
+    name: "Crema de calabacín",
+    cost: "≈ 1,00 €/ración",
+    time: "25 min",
+    kcal: 220,
+    protein: 8,
+    carbs: 18,
+    fat: 12,
+    ingredients: [
+      "2 calabacines",
+      "1 patata pequeña",
+      "1/2 cebolla",
+      "1 quesito light",
+      "Aceite, sal y pimienta",
+    ],
+    steps: [
+      "Pochar la cebolla en una olla.",
+      "Añadir calabacín y patata troceados. Cubrir con agua.",
+      "Cocer 18 min. Triturar con el quesito.",
+    ],
+  },
+];
+
+export interface ExerciseTemplate {
+  name: string;
+  description: string;
+  defaultSec: number;
+  category: "Mancuernas" | "Bici" | "Cuerpo libre";
+}
+
+export const EXERCISES: ExerciseTemplate[] = [
+  { name: "Sentadillas (mancuernas)", description: "10 kg · 3 series · 12 reps", defaultSec: 60, category: "Mancuernas" },
+  { name: "Press militar", description: "Mancuernas 8-10 kg · 3 x 10", defaultSec: 60, category: "Mancuernas" },
+  { name: "Remo a una mano", description: "10 kg · 3 x 12 por brazo", defaultSec: 90, category: "Mancuernas" },
+  { name: "Curl de bíceps", description: "8-10 kg · 3 x 12", defaultSec: 60, category: "Mancuernas" },
+  { name: "Peso muerto rumano", description: "10 kg · 3 x 12", defaultSec: 60, category: "Mancuernas" },
+  { name: "Bicicleta estática · suave", description: "Calentamiento 60-70 rpm", defaultSec: 600, category: "Bici" },
+  { name: "Bicicleta estática · cardio", description: "Ritmo constante 80-90 rpm", defaultSec: 1200, category: "Bici" },
+  { name: "Plancha abdominal", description: "Mantener postura", defaultSec: 45, category: "Cuerpo libre" },
+];
+</file>
+
+<file path="src/lib/storage.ts">
+import { useEffect, useState } from "react";
+
+export function useLocalStorage<T>(key: string, initial: T) {
+  const [value, setValue] = useState<T>(() => {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw == null) return initial;
+      return JSON.parse(raw) as T;
+    } catch {
+      return initial;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      /* noop */
+    }
+  }, [key, value]);
+
+  return [value, setValue] as const;
+}
+
+export const STORAGE_KEYS = {
+  profile: "vt.profile.v1",
+  foods: "vt.foods.v1",
+  weights: "vt.weights.v1",
+  workouts: "vt.workouts.v1",
+  theme: "vt.theme.v1",
+} as const;
+</file>
+
+<file path="src/main.tsx">
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+</file>
+
+<file path="src/types.ts">
+export type Gender = "male" | "female";
+export type ActivityLevel = "sedentary" | "light" | "moderate" | "active";
+
+export interface Profile {
+  name: string;
+  age: number;
+  gender: Gender;
+  heightCm: number;
+  weightKg: number;
+  targetWeightKg: number;
+  activity: ActivityLevel;
+  goal: "lose" | "maintain" | "gain";
+}
+
+export interface FoodEntry {
+  id: string;
+  name: string;
+  calories: number;
+  meal: MealSlot;
+  time: string; // HH:MM
+  date: string; // YYYY-MM-DD
+}
+
+export type MealSlot =
+  | "Desayuno"
+  | "Media Mañana"
+  | "Almuerzo"
+  | "Merienda"
+  | "Cena";
+
+export interface WeightEntry {
+  date: string; // YYYY-MM-DD
+  weight: number;
+}
+
+export interface WorkoutSession {
+  id: string;
+  date: string;
+  exercise: string;
+  durationSec: number;
+  notes?: string;
+}
+
+export interface CommonFood {
+  name: string;
+  calories: number; // per serving as described
+  serving: string;
+}
+</file>
+
+<file path="src/utils/cn.ts">
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "types": ["node"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Path mapping */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "vite.config.ts"]
+}
+</file>
+
+<file path="vite.config.ts">
+import path from "path";
+import { fileURLToPath } from "url";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import { viteSingleFile } from "vite-plugin-singlefile";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss(), viteSingleFile()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+});
+</file>
+
+</files>
