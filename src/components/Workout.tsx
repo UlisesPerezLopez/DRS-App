@@ -3,6 +3,7 @@ import { Play, Pause, RotateCcw, Check, Dumbbell, Bike, Activity } from "lucide-
 import { EXERCISES } from "../lib/data";
 import { todayISO } from "../lib/calc";
 import { useAppStore } from "../store/useAppStore";
+import { useTranslation } from "react-i18next";
 import type { WorkoutSession } from "../types";
 
 function formatTime(sec: number) {
@@ -20,6 +21,7 @@ const CATEGORY_ICON = {
 const DAILY_MINUTES_GOAL = 20;
 
 export function Workout() {
+  const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const workouts = account.workouts;
   const setWorkouts = useAppStore(s => s.setWorkouts);
@@ -88,14 +90,14 @@ export function Workout() {
       <header>
         <div className="flex justify-between items-start">
           <div>
-            <h1 className="text-2xl font-bold">Entrenamiento</h1>
+            <h1 className="text-2xl font-bold">{t("workout.title")}</h1>
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              Mancuernas hasta 10 kg + bici
+              {t("workout.subtitle")}
             </p>
           </div>
           <div className="text-right">
-            <p className="text-sm text-slate-500 dark:text-slate-400">Hoy quemado</p>
-            <p className="text-xl font-bold text-orange-500 tabular-nums">{totalCalories} <span className="text-xs">kcal</span></p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">{t("workout.burnedToday")}</p>
+            <p className="text-xl font-bold text-orange-500 tabular-nums">{totalCalories} <span className="text-xs">{t("common.kcal")}</span></p>
           </div>
         </div>
       </header>
@@ -104,10 +106,10 @@ export function Workout() {
       <section className="rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5">
         <div className="flex justify-between items-end mb-3">
           <div>
-            <p className="text-sm text-slate-500 dark:text-slate-400">Hoy entrenado</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">{t("workout.trainedToday")}</p>
             <p className="text-3xl font-bold tabular-nums text-emerald-600 dark:text-emerald-400 mt-1">
               {formatTime(totalToday)}
-              <span className="text-sm font-medium text-slate-500 dark:text-slate-400 ml-1">/ {DAILY_MINUTES_GOAL} min</span>
+              <span className="text-sm font-medium text-slate-500 dark:text-slate-400 ml-1">/ {DAILY_MINUTES_GOAL} {t("common.minutes")}</span>
             </p>
             <p className="text-xs text-slate-500 mt-1">{todaySessions.length} sesion{todaySessions.length !== 1 ? "es" : ""}</p>
           </div>
@@ -120,7 +122,7 @@ export function Workout() {
         </div>
         {Math.floor(totalToday / 60) >= DAILY_MINUTES_GOAL && (
           <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400 text-center animate-pulse">
-            🎉 ¡Felicidades! Has completado tu objetivo diario.
+            {t("workout.completedGoal")}
           </p>
         )}
       </section>
@@ -128,14 +130,14 @@ export function Workout() {
       {/* Active timer */}
       {active && (
         <section className="rounded-2xl bg-white dark:bg-slate-900 border-2 border-emerald-500 p-5">
-          <p className="text-xs text-slate-500 mb-1">Activo</p>
-          <h3 className="font-semibold text-lg">{active.name}</h3>
+          <p className="text-xs text-slate-500 mb-1">{t("workout.active")}</p>
+          <h3 className="font-semibold text-lg">{t(`exerciseDb.${active.name}`, { defaultValue: active.name })}</h3>
           <p className="text-xs text-slate-500 mb-3">{active.description}</p>
           <p className="text-5xl font-bold text-center tabular-nums my-3">
             {formatTime(seconds)}
           </p>
           <p className="text-center text-xs text-slate-500 mb-4">
-            Sugerido: {formatTime(active.defaultSec)}
+            {t("workout.suggested")} {formatTime(active.defaultSec)}
           </p>
           <div className="grid grid-cols-3 gap-2">
             <button
@@ -143,19 +145,19 @@ export function Workout() {
               className="py-3 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold flex items-center justify-center gap-1.5"
             >
               {running ? <Pause size={18} /> : <Play size={18} />}
-              {running ? "Pausa" : "Reanudar"}
+              {running ? t("workout.pause") : t("workout.resume")}
             </button>
             <button
               onClick={reset}
               className="py-3 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold flex items-center justify-center gap-1.5"
             >
-              <RotateCcw size={18} /> Reset
+              <RotateCcw size={18} /> {t("workout.reset")}
             </button>
             <button
               onClick={finish}
               className="py-3 rounded-xl bg-emerald-500 active:bg-emerald-600 text-white font-semibold flex items-center justify-center gap-1.5"
             >
-              <Check size={18} /> Fin
+              <Check size={18} /> {t("workout.finish")}
             </button>
           </div>
         </section>
@@ -165,6 +167,7 @@ export function Workout() {
       <section className="flex gap-2 overflow-x-auto hide-scrollbar -mx-4 px-4 pb-2">
         {["Todos", "Básico", "Intermedio", "Quemagrasas"].map((diff) => {
           const isSelected = diff === "Todos" ? filterDifficulty === null : filterDifficulty === diff;
+          const diffKey = diff === "Todos" ? "all" : diff === "Básico" ? "basic" : diff === "Intermedio" ? "intermediate" : "fatburn";
           return (
             <button
               key={diff}
@@ -175,7 +178,7 @@ export function Workout() {
                   : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400"
               }`}
             >
-              {diff}
+              {t(`workout.filters.${diffKey}`)}
             </button>
           );
         })}
@@ -184,7 +187,7 @@ export function Workout() {
       {/* Exercise list */}
       <section className="space-y-2">
         <div className="flex justify-between items-center px-1">
-          <h2 className="font-semibold">Ejercicios</h2>
+          <h2 className="font-semibold">{t("workout.exercises")}</h2>
         </div>
         {EXERCISES.filter(ex => !filterDifficulty || ex.difficulty === filterDifficulty).map((ex) => {
           const i = EXERCISES.indexOf(ex);
@@ -201,13 +204,15 @@ export function Workout() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
-                  <p className="font-semibold">{ex.name}</p>
-                  <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-500">{ex.difficulty}</span>
+                  <p className="font-semibold">{t(`exerciseDb.${ex.name}`, { defaultValue: ex.name })}</p>
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-500">
+                    {t(`workout.filters.${ex.difficulty === "Básico" ? "basic" : ex.difficulty === "Intermedio" ? "intermediate" : "fatburn"}`)}
+                  </span>
                 </div>
                 <p className="text-xs text-slate-500 truncate">{ex.description}</p>
               </div>
               <div className="text-right shrink-0">
-                <p className="text-xs text-slate-500">Sugerido</p>
+                <p className="text-xs text-slate-500">{t("workout.suggested").replace(':', '')}</p>
                 <p className="text-sm font-semibold tabular-nums">{formatTime(ex.defaultSec)}</p>
               </div>
             </button>
@@ -218,11 +223,11 @@ export function Workout() {
       {/* History today */}
       {todaySessions.length > 0 && (
         <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
-          <h2 className="font-semibold mb-3">Sesiones de hoy</h2>
+          <h2 className="font-semibold mb-3">{t("workout.sessionsToday")}</h2>
           <ul className="divide-y divide-slate-100 dark:divide-slate-800">
             {todaySessions.map((s) => (
               <li key={s.id} className="flex items-center justify-between py-2.5">
-                <span className="text-sm">{s.exercise}</span>
+                <span className="text-sm">{t(`exerciseDb.${s.exercise}`, { defaultValue: s.exercise })}</span>
                 <span className="text-sm font-semibold tabular-nums">{formatTime(s.durationSec)}</span>
               </li>
             ))}

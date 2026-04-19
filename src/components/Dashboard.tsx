@@ -3,6 +3,7 @@ import { dailyTarget, tdee, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
 import { getSmartAdvice } from "../lib/advisor";
+import { useTranslation } from "react-i18next";
 
 function formatTime(sec: number) {
   const m = Math.floor(sec / 60);
@@ -11,6 +12,7 @@ function formatTime(sec: number) {
 }
 
 export function Dashboard() {
+  const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const { profile, foods, workouts } = account;
 
@@ -26,17 +28,20 @@ export function Dashboard() {
   const workoutMin = Math.round(todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60);
 
   // Group by meal slot
-  const mealOrder = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"] as const;
-  const byMeal = mealOrder.map((m) => ({
-    name: m,
-    kcal: todayFoods.filter((f) => f.meal === m).reduce((s, f) => s + f.calories, 0),
-  }));
+  const byMeal = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"].map((m) => {
+    // Generate meal key dynamically (desayuno, mediaManana...)
+    const mealKey = m === "Media Mañana" ? "mediaManana" : m.toLowerCase();
+    return {
+      name: t(`meals.${mealKey}`),
+      kcal: todayFoods.filter((f) => f.meal === m).reduce((s, f) => s + f.calories, 0),
+    };
+  });
 
   const greeting = (() => {
     const h = new Date().getHours();
-    if (h < 12) return "Buenos días";
-    if (h < 19) return "Buenas tardes";
-    return "Buenas noches";
+    if (h < 12) return t("dashboard.greeting_morning");
+    if (h < 19) return t("dashboard.greeting_afternoon");
+    return t("dashboard.greeting_evening");
   })();
 
   const advice = getSmartAdvice(foods, target);
@@ -53,7 +58,7 @@ export function Dashboard() {
       <header>
         <p className="text-sm text-slate-500 dark:text-slate-400">{greeting},</p>
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">{profile.name || "Bienvenido"} 👋</h1>
+          <h1 className="text-2xl font-bold">{profile.name || t("dashboard.welcome")} 👋</h1>
           <span className="text-2xl tracking-widest">{feedbackEmoji}</span>
         </div>
       </header>
@@ -63,7 +68,7 @@ export function Dashboard() {
         <Sparkles className="text-indigo-500 shrink-0 mt-0.5" size={20} />
         <div>
           <h3 className="font-semibold text-indigo-900 dark:text-indigo-300 text-sm mb-1">
-            Advisor Engine
+            {t("dashboard.advisorTitle")}
           </h3>
           <p className="text-sm text-indigo-800/80 dark:text-indigo-300/80 leading-snug">
             {advice}
@@ -76,10 +81,10 @@ export function Dashboard() {
           <AlertTriangle className="text-rose-600 shrink-0 mt-0.5" size={20} />
           <div className="text-sm">
             <p className="font-semibold text-rose-700 dark:text-rose-300">
-              Has superado tu objetivo diario
+              {t("dashboard.overTarget")}
             </p>
             <p className="text-rose-600/80 dark:text-rose-300/80">
-              {consumed - target} kcal por encima del límite.
+              {t("dashboard.overKcal", { amount: consumed - target })}
             </p>
           </div>
         </div>
@@ -89,7 +94,7 @@ export function Dashboard() {
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <Flame className="text-emerald-500" size={20} />
-            <h2 className="font-semibold">Hoy</h2>
+            <h2 className="font-semibold">{t("dashboard.today")}</h2>
           </div>
           <span className="text-xs text-slate-500">{today}</span>
         </div>
@@ -97,10 +102,10 @@ export function Dashboard() {
           <div>
             <p className="text-4xl font-bold tabular-nums">
               {consumed}
-              <span className="text-base font-medium text-slate-500"> / {target} kcal</span>
+              <span className="text-base font-medium text-slate-500"> / {target} {t("common.kcal")}</span>
             </p>
             <p className={`text-sm mt-1 ${over ? "text-rose-500" : "text-emerald-600 dark:text-emerald-400"}`}>
-              {over ? `${consumed - target} kcal de exceso` : `${remaining} kcal restantes`}
+              {over ? t("dashboard.kcalExceed", { amount: consumed - target }) : t("dashboard.kcalRemain", { amount: remaining })}
             </p>
           </div>
         </div>
@@ -111,25 +116,25 @@ export function Dashboard() {
         <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
           <Target className="text-emerald-500 mb-2" size={18} />
           <p className="text-xs text-slate-500">TDEE</p>
-          <p className="text-xl font-bold tabular-nums">{tdeeVal}<span className="text-xs font-medium"> kcal</span></p>
+          <p className="text-xl font-bold tabular-nums">{tdeeVal}<span className="text-xs font-medium"> {t("common.kcal")}</span></p>
         </div>
         <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
           <TrendingDown className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">Peso actual</p>
+          <p className="text-xs text-slate-500">{t("dashboard.currentWeight")}</p>
           <p className="text-xl font-bold tabular-nums">{profile.weightKg}<span className="text-xs font-medium"> kg</span></p>
         </div>
         <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
           <Activity className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">Entreno hoy</p>
+          <p className="text-xs text-slate-500">{t("dashboard.workoutToday")}</p>
           <div className="flex items-baseline gap-1 mt-0.5">
-            <p className="text-xl font-bold tabular-nums">{workoutMin}<span className="text-xs font-medium">m</span></p>
+            <p className="text-xl font-bold tabular-nums">{workoutMin}<span className="text-xs font-medium">{t("common.minutes")}</span></p>
             <span className="text-xs text-slate-300 dark:text-slate-600">|</span>
-            <p className="text-sm font-bold tabular-nums text-orange-500">{totalCaloriesSport}<span className="text-xs">kcal</span></p>
+            <p className="text-sm font-bold tabular-nums text-orange-500">{totalCaloriesSport}<span className="text-xs">{t("common.kcal")}</span></p>
           </div>
         </div>
         <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
           <Target className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">Objetivo</p>
+          <p className="text-xs text-slate-500">{t("profile.goal")}</p>
           <p className="text-xl font-bold tabular-nums">{profile.targetWeightKg}<span className="text-xs font-medium"> kg</span></p>
         </div>
       </section>
@@ -139,20 +144,20 @@ export function Dashboard() {
         <summary className="flex items-center justify-between p-5 font-semibold cursor-pointer select-none">
           <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
             <Dumbbell size={20} />
-            <span>Ver Sesiones de Hoy</span>
+            <span>{t("dashboard.viewSessions")}</span>
           </div>
           <ChevronDown size={20} className="text-slate-400 transition group-open:rotate-180" />
         </summary>
         <div className="p-5 pt-0 border-t border-slate-100 dark:border-slate-800">
           {todayWorkouts.length === 0 ? (
-            <p className="text-sm text-slate-500 mt-3">Aún no hay sesiones registradas hoy.</p>
+            <p className="text-sm text-slate-500 mt-3">{t("dashboard.noSessions")}</p>
           ) : (
             <ul className="space-y-3 mb-4 mt-3">
               {todayWorkouts.map((s) => (
                 <li key={s.id} className="flex flex-col text-sm">
                   <div className="flex justify-between font-medium">
-                    <span>{s.exercise}</span>
-                    <span className="text-orange-500">{s.caloriesBurned || 0} kcal</span>
+                    <span>{t(`exerciseDb.${s.exercise}`, { defaultValue: s.exercise })}</span>
+                    <span className="text-orange-500">{s.caloriesBurned || 0} {t("common.kcal")}</span>
                   </div>
                   <span className="text-slate-500 text-xs">{formatTime(s.durationSec)}</span>
                 </li>
@@ -163,13 +168,13 @@ export function Dashboard() {
       </details>
 
       <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
-        <h3 className="font-semibold mb-3">Reparto por comida</h3>
+        <h3 className="font-semibold mb-3">{t("dashboard.mealDist")}</h3>
         <ul className="space-y-2.5">
           {byMeal.map((m) => (
-            <li key={m.name} className="flex items-center justify-between text-sm">
-              <span className="text-slate-600 dark:text-slate-300">{m.name}</span>
-              <span className="font-semibold tabular-nums">{m.kcal} kcal</span>
-            </li>
+             <li key={m.name} className="flex items-center justify-between text-sm">
+               <span className="text-slate-600 dark:text-slate-300">{m.name}</span>
+               <span className="font-semibold tabular-nums">{m.kcal} {t("common.kcal")}</span>
+             </li>
           ))}
         </ul>
       </section>

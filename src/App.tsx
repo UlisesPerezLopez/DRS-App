@@ -10,6 +10,7 @@ import {
   Map,
   Apple,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useAppStore } from "./store/useAppStore";
 import { Dashboard } from "./components/Dashboard";
 import { MealDiary } from "./components/MealDiary";
@@ -22,18 +23,20 @@ import { todayISO } from "./lib/calc";
 
 type TabKey = "dashboard" | "journey" | "diet" | "diary" | "profile" | "workout" | "recipes";
 
-const TABS: { key: TabKey; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
-  { key: "dashboard", label: "Inicio", icon: Home },
-  { key: "journey", label: "Mi Plan", icon: Map },
-  { key: "diet", label: "Dieta", icon: Apple },
-  { key: "diary", label: "Diario", icon: Utensils },
-  { key: "workout", label: "Entreno", icon: Dumbbell },
-  { key: "recipes", label: "Recetas", icon: ChefHat },
-  { key: "profile", label: "Perfil", icon: User },
-];
-
 export default function App() {
+  const { t } = useTranslation();
   const [tab, setTab] = useState<TabKey>("dashboard");
+
+  const TABS: { key: TabKey; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
+    { key: "dashboard", label: t("tabs.dashboard"), icon: Home },
+    { key: "journey", label: t("tabs.journey"), icon: Map },
+    { key: "diet", label: t("tabs.diet"), icon: Apple },
+    { key: "diary", label: t("tabs.diary"), icon: Utensils },
+    { key: "workout", label: t("tabs.workout"), icon: Dumbbell },
+    { key: "recipes", label: t("tabs.recipes"), icon: ChefHat },
+    { key: "profile", label: t("tabs.profile"), icon: User },
+  ];
+
   const theme = useAppStore(s => s.theme);
   const setTheme = useAppStore(s => s.setTheme);
   const activeAccountId = useAppStore(s => s.activeAccountId);
@@ -66,18 +69,18 @@ export default function App() {
         <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg mb-8">
           <span className="text-4xl text-white">🎯</span>
         </div>
-        <h1 className="text-3xl font-bold mb-2">Bienvenido a DRS</h1>
-        <p className="text-center text-slate-500 mb-8">Crea tu primer perfil para comenzar tu desafío de planificación saludable.</p>
+        <h1 className="text-3xl font-bold mb-2">{t("onboarding.title")}</h1>
+        <p className="text-center text-slate-500 mb-8">{t("onboarding.subtitle")}</p>
         <button
           onClick={() => {
-            const name = window.prompt("¿Cuál es tu nombre?");
+            const name = window.prompt(t("onboarding.createPrompt"));
             if (name && name.trim()) {
               createAccount(name.trim());
             }
           }}
           className="w-full bg-emerald-600 text-white font-bold text-lg py-4 rounded-2xl shadow-lg active:scale-95 transition"
         >
-          Crear mi Perfil
+          {t("onboarding.createBtn")}
         </button>
       </div>
     );
@@ -100,7 +103,7 @@ export default function App() {
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="w-9 h-9 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 active:scale-95 transition"
-            aria-label="Cambiar tema"
+            aria-label={theme === "dark" ? t("common.themeLight") : t("common.themeDark")}
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>

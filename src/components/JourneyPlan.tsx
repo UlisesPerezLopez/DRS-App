@@ -2,6 +2,7 @@ import { Map, Target, Activity, Flame, ChevronDown } from "lucide-react";
 import { useAppStore } from "../store/useAppStore";
 import { todayISO } from "../lib/calc";
 import { getCurrentPlanDay, getPhaseForDay } from "../lib/journey";
+import { useTranslation } from "react-i18next";
 
 function formatTime(sec: number) {
   const m = Math.floor(sec / 60);
@@ -10,6 +11,7 @@ function formatTime(sec: number) {
 }
 
 export function JourneyPlan() {
+  const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const { profile, workouts, planStartDate } = account;
   const startPlan = useAppStore(s => s.startPlan);
@@ -20,16 +22,16 @@ export function JourneyPlan() {
         <div className="mx-auto w-20 h-20 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-500 rounded-full flex items-center justify-center mb-6">
           <Map size={40} />
         </div>
-        <h1 className="text-2xl font-bold">Plan 90 Días</h1>
+        <h1 className="text-2xl font-bold">{t("journey.title")}</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">
-          Transforma tu cuerpo y tus hábitos con un programa estructurado de 3 fases. Especialmente diseñado para oficinistas sedentarios.
+          {t("journey.startPrompt")}
         </p>
         <div className="pt-4">
           <button 
             onClick={() => startPlan(todayISO())}
             className="w-full bg-indigo-600 active:bg-indigo-700 text-white font-semibold py-3.5 rounded-2xl shadow-lg shadow-indigo-200 dark:shadow-none transition"
           >
-            Empezar mi reto de 90 días hoy
+            {t("journey.startBtn")}
           </button>
         </div>
       </div>
@@ -54,8 +56,8 @@ export function JourneyPlan() {
   return (
     <div className="px-4 pt-4 pb-28 space-y-5">
       <header>
-        <p className="text-sm text-slate-500 dark:text-slate-400">Tu Ruta</p>
-        <h1 className="text-2xl font-bold">Reto 90 Días</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{t("tabs.journey")}</p>
+        <h1 className="text-2xl font-bold">{t("journey.title")}</h1>
       </header>
       
       {/* Circle Progress */}
@@ -66,9 +68,8 @@ export function JourneyPlan() {
             <circle cx="50" cy="50" r="45" fill="none" strokeWidth="8" className="stroke-indigo-500" strokeDasharray="283" strokeDashoffset={283 - (283 * percentage) / 100} strokeLinecap="round" />
           </svg>
           <div className="text-center">
-            <p className="text-sm font-medium text-slate-500">Día</p>
-            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 tabular-nums">{currentDay}</p>
-            <p className="text-xs text-slate-400">de 90</p>
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 tabular-nums my-1">{currentDay}</p>
+            <p className="text-xs text-slate-400">{t("journey.day", { day: currentDay }).replace(String(currentDay), '')}</p>
           </div>
         </div>
         <div className="text-center">
@@ -85,7 +86,7 @@ export function JourneyPlan() {
       <section className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-3xl p-5 shadow-sm">
         <div className="flex items-center gap-2 mb-2">
           <Target size={20} className="text-indigo-200" />
-          <h3 className="font-semibold text-lg">Enfoque Nutricional</h3>
+          <h3 className="font-semibold text-lg">{t("journey.dietFocus")}</h3>
         </div>
         <p className="text-sm opacity-90 leading-relaxed">
           {phase.dietFocus}
@@ -96,14 +97,11 @@ export function JourneyPlan() {
       <section className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-5 shadow-sm">
         <div className="flex items-center gap-2 mb-4">
           <Activity size={20} className="text-emerald-500" />
-          <h3 className="font-semibold text-lg">Rutina de Hoy</h3>
+          <h3 className="font-semibold text-lg">{t("journey.routineToday")}</h3>
         </div>
         <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 text-center">
-          <p className="font-semibold text-slate-800 dark:text-slate-200">{todaysWorkout}</p>
+          <p className="font-semibold text-slate-800 dark:text-slate-200">{todaysWorkout === "Día de Desanso." ? t("journey.restDay") : todaysWorkout}</p>
         </div>
-        <p className="text-xs text-center text-slate-500 mt-4">
-          Usa la pestaña "Entreno" para realizar los ejercicios sugeridos.
-        </p>
       </section>
 
       {/* Accordion de deporte de hoy */}
@@ -111,20 +109,20 @@ export function JourneyPlan() {
         <summary className="flex items-center justify-between p-5 font-semibold cursor-pointer select-none">
           <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400">
             <Flame size={20} />
-            <span>Detalle Deportivo Hoy</span>
+            <span>{t("dashboard.viewSessions")}</span>
           </div>
           <ChevronDown size={20} className="text-slate-400 transition group-open:rotate-180" />
         </summary>
         <div className="p-5 pt-0 border-t border-slate-100 dark:border-slate-800">
           {todaySessions.length === 0 ? (
-            <p className="text-sm text-slate-500 mt-3">Aún no hay sesiones registradas hoy.</p>
+            <p className="text-sm text-slate-500 mt-3">{t("dashboard.noSessions")}</p>
           ) : (
             <ul className="space-y-3 mb-4 mt-3">
               {todaySessions.map((s) => (
                 <li key={s.id} className="flex flex-col text-sm">
                   <div className="flex justify-between font-medium">
-                    <span>{s.exercise}</span>
-                    <span className="text-orange-500">{s.caloriesBurned || 0} kcal</span>
+                    <span>{t(`exerciseDb.${s.exercise}`, { defaultValue: s.exercise })}</span>
+                    <span className="text-orange-500">{s.caloriesBurned || 0} {t("common.kcal")}</span>
                   </div>
                   <span className="text-slate-500 text-xs">{formatTime(s.durationSec)}</span>
                 </li>
@@ -132,8 +130,8 @@ export function JourneyPlan() {
             </ul>
           )}
           <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-between font-bold mt-4">
-            <span>Total Quemado</span>
-            <span className="text-orange-500">{totalCalories} kcal</span>
+            <span>{t("workout.burnedToday")}</span>
+            <span className="text-orange-500">{totalCalories} {t("common.kcal")}</span>
           </div>
         </div>
       </details>

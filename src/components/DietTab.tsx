@@ -2,9 +2,11 @@ import { useMemo, useState } from "react";
 import { Plus, Apple, RefreshCw } from "lucide-react";
 import { useAppStore } from "../store/useAppStore";
 import { generateDailyMenu, SuggestedMeal } from "../lib/dietEngine";
+import { useTranslation } from "react-i18next";
 import { dailyTarget, todayISO } from "../lib/calc";
 
 export function DietTab() {
+  const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const profile = account.profile;
   const setProfile = useAppStore(s => s.setProfile);
@@ -51,9 +53,9 @@ export function DietTab() {
         <div>
           <h1 className="text-2xl font-bold flex items-center gap-2">
             <Apple className="text-emerald-500" />
-            Diet Engine
+            {t("dietTab.title")}
           </h1>
-          <p className="text-sm text-slate-500">Planificador de menús inteligente</p>
+          <p className="text-sm text-slate-500">{t("dietTab.menuOptimal")}</p>
         </div>
         <button 
           onClick={() => setRefreshKey(k => k + 1)}
@@ -83,7 +85,7 @@ export function DietTab() {
         {menu.map((m, idx) => (
           <div key={idx} className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 shadow-sm">
             <div className="flex justify-between items-center mb-3">
-              <h3 className="font-bold text-lg">{m.meal}</h3>
+              <h3 className="font-bold text-lg">{t(`meals.${m.meal === "Media Mañana" ? "mediaManana" : m.meal.toLowerCase()}`, { defaultValue: m.meal })}</h3>
               <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
                 ~ {m.totalCalories} kcal
               </span>
@@ -92,7 +94,7 @@ export function DietTab() {
             <ul className="space-y-3 mb-4">
               {m.items.map((itm, i) => (
                 <li key={i} className="flex justify-between text-sm items-center hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition">
-                  <span className="text-slate-700 dark:text-slate-300 pr-2">{itm.name}</span>
+                  <span className="text-slate-700 dark:text-slate-300 pr-2">{t(`foodDb.${itm.name}`, { defaultValue: itm.name })}</span>
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-slate-500 whitespace-nowrap">{itm.calories} <span className="text-[10px]">kcal</span></span>
                     <button 
@@ -112,7 +114,7 @@ export function DietTab() {
               className="w-full py-2.5 rounded-xl border border-emerald-500 text-emerald-600 dark:text-emerald-400 font-medium text-sm hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition flex justify-center items-center gap-2 active:scale-95"
             >
               <Plus size={16} />
-              Añadir menú al Diario
+              {t("dietTab.addAll")}
             </button>
           </div>
         ))}

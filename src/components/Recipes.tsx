@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { ChevronDown, Clock, Wallet, Flame } from "lucide-react";
 import { RECIPES } from "../lib/data";
+import { useTranslation } from "react-i18next";
 
 export function Recipes() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState<string | null>(RECIPES[0].id);
 
   return (
     <div className="px-4 pt-4 pb-28 space-y-4">
       <header>
-        <h1 className="text-2xl font-bold">Recetario Low-Cost</h1>
+        <h1 className="text-2xl font-bold">{t("recipes.title")}</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">
-          5 recetas económicas y equilibradas
+          {t("recipes.subtitle")}
         </p>
       </header>
 
@@ -49,7 +51,7 @@ export function Recipes() {
                   </div>
 
                   <div>
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Ingredientes</p>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">{t("recipes.ingredients")}</p>
                     <ul className="space-y-1">
                       {r.ingredients.map((i) => (
                         <li key={i} className="text-sm flex gap-2">
@@ -60,7 +62,7 @@ export function Recipes() {
                   </div>
 
                   <div>
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Preparación</p>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">{t("recipes.steps")}</p>
                     <ol className="space-y-2">
                       {r.steps.map((s, i) => (
                         <li key={i} className="text-sm flex gap-2.5">
