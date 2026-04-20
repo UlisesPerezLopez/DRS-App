@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
-import { Plus, Apple, RefreshCw } from "lucide-react";
+import { Plus, Apple, RefreshCw, AlertTriangle } from "lucide-react";
 import { useAppStore } from "../store/useAppStore";
-import { generateDailyMenu, SuggestedMeal } from "../lib/dietEngine";
+import { generateDailyMenu, SuggestedMeal, SuggestedItem } from "../lib/dietEngine";
 import { useTranslation } from "react-i18next";
 import { dailyTarget, todayISO } from "../lib/calc";
 
@@ -22,11 +22,18 @@ export function DietTab() {
     [target, preference, profile.goal, refreshKey]
   );
 
-  const handleAdd = (mealSlot: SuggestedMeal, itm: { name: string; calories: number }) => {
+  const handleAdd = (mealSlot: SuggestedMeal, itm: SuggestedItem) => {
     const newFood = {
       id: crypto.randomUUID(),
-      name: itm.name,
+      name: itm.translationKey,
       calories: itm.calories,
+      grams: itm.grams,
+      protein: itm.protein,
+      carbs: itm.carbs,
+      fat: itm.fat,
+      fiber: itm.fiber,
+      ig: itm.ig,
+      sodiumLevel: itm.sodiumLevel,
       meal: mealSlot.meal,
       time: new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false }),
       date: todayISO(),
@@ -38,8 +45,15 @@ export function DietTab() {
     const time = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false });
     const newFoods = mealSlot.items.map((itm) => ({
       id: crypto.randomUUID(),
-      name: itm.name,
+      name: itm.translationKey,
       calories: itm.calories,
+      grams: itm.grams,
+      protein: itm.protein,
+      carbs: itm.carbs,
+      fat: itm.fat,
+      fiber: itm.fiber,
+      ig: itm.ig,
+      sodiumLevel: itm.sodiumLevel,
       meal: mealSlot.meal,
       time,
       date: todayISO(),
@@ -67,12 +81,12 @@ export function DietTab() {
 
       <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 shadow-sm">
         <label className="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300 flex justify-between">
-          <span>Preferencia Alimenticia</span>
+          <span>{t("dietTab.title")}</span>
           <span className="font-bold text-emerald-600 dark:text-emerald-400">{Math.round(target)} kcal</span>
         </label>
         <select
           value={preference}
-          onChange={(e) => setProfile({ dietPreference: e.target.value as any })}
+          onChange={(e) => setProfile({ dietPreference: e.target.value as "mediterranea" | "low-carb" | "vegetariana" })}
           className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 outline-none focus:ring-2 ring-emerald-500/20 transition"
         >
           <option value="mediterranea">Dieta Mediterránea</option>
@@ -93,14 +107,27 @@ export function DietTab() {
             
             <ul className="space-y-3 mb-4">
               {m.items.map((itm, i) => (
-                <li key={i} className="flex justify-between text-sm items-center hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition">
-                  <span className="text-slate-700 dark:text-slate-300 pr-2">{t(`foodDb.${itm.name}`, { defaultValue: itm.name })}</span>
+                <li key={i} className="flex justify-between text-sm items-start hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition">
+                  <div className="flex-1 pr-2">
+                    <span className="text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                      {t(`foodDb.${itm.translationKey}`, { defaultValue: itm.name })}
+                      <span className="text-xs text-slate-400">({itm.grams}g)</span>
+                      {itm.sodiumLevel === "Alto" && (
+                        <AlertTriangle size={13} className="text-rose-500" />
+                      )}
+                    </span>
+                    <div className="flex gap-2 text-[10px] text-slate-400 mt-0.5">
+                      <span>P:{itm.protein}g</span>
+                      <span>C:{itm.carbs}g</span>
+                      <span>G:{itm.fat}g</span>
+                    </div>
+                  </div>
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-slate-500 whitespace-nowrap">{itm.calories} <span className="text-[10px]">kcal</span></span>
                     <button 
                       onClick={() => handleAdd(m, itm)}
                       className="text-emerald-500 p-1.5 bg-emerald-50 dark:bg-emerald-950/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 rounded-lg transition active:scale-95"
-                      aria-label="Añadir alimento"
+                      aria-label={t("common.add")}
                     >
                       <Plus size={16} />
                     </button>

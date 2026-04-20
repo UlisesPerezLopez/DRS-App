@@ -1,4 +1,4 @@
-import type { ActivityLevel, Profile } from "../types";
+import type { ActivityLevel, CommonFood, Profile } from "../types";
 
 export const ACTIVITY_FACTOR: Record<ActivityLevel, number> = {
   sedentary: 1.2, // Oficina / sedentario
@@ -42,4 +42,22 @@ export function todayISO() {
 export function nowHHMM() {
   const d = new Date();
   return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+
+/** CG = (IG * ((Carbs - Fiber) * (grams / 100))) / 100 */
+export function calculateGlycemicLoad(ig: number, carbs: number, fiber: number, grams: number): number {
+  const availableCarbs = Math.max(0, carbs - fiber);
+  return (ig * (availableCarbs * (grams / 100))) / 100;
+}
+
+/** Normaliza macros base 100g a la porción real en gramos */
+export function calculateMacrosForPortion(food: CommonFood, grams: number) {
+  const factor = grams / 100;
+  return {
+    calories: Math.round(food.calories * factor),
+    protein: Math.round(food.protein * factor * 10) / 10,
+    carbs: Math.round(food.carbs * factor * 10) / 10,
+    fat: Math.round(food.fat * factor * 10) / 10,
+    fiber: Math.round(food.fiber * factor * 10) / 10,
+  };
 }

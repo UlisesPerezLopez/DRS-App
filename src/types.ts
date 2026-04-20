@@ -17,6 +17,13 @@ export interface FoodEntry {
   id: string;
   name: string;
   calories: number;
+  grams: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  fiber: number;
+  ig: number | null;
+  sodiumLevel: "Bajo" | "Medio" | "Alto" | null;
   meal: MealSlot;
   time: string; // HH:MM
   date: string; // YYYY-MM-DD
@@ -44,9 +51,14 @@ export interface WorkoutSession {
 }
 
 export interface CommonFood {
-  name: string;
-  calories: number; // per serving as described
-  serving: string;
+  translationKey: string;
+  calories: number; // per 100g
+  protein: number;
+  carbs: number;
+  fat: number;
+  fiber: number;
+  ig: number | null;
+  sodiumLevel: "Bajo" | "Medio" | "Alto";
 }
 
 export interface AccountData {
