@@ -20,6 +20,15 @@ export interface SuggestedMeal {
   totalCalories: number;
 }
 
+// Mapeo de slots a mealTags
+const SLOT_TAG_MAP: Record<MealSlot, 'breakfast' | 'lunch' | 'dinner' | 'snack'> = {
+  "Desayuno": "breakfast",
+  "Media Mañana": "snack",
+  "Almuerzo": "lunch",
+  "Merienda": "snack",
+  "Cena": "dinner",
+};
+
 export function generateDailyMenu(targetCalories: number, dietPreference: string, _goal: string): SuggestedMeal[] {
   const ratios: Record<MealSlot, number> = {
     Desayuno: 0.20,
@@ -29,14 +38,13 @@ export function generateDailyMenu(targetCalories: number, dietPreference: string
     Cena: 0.25,
   };
 
-  // Filtros por translationKey para la nueva DB
+  // Filtros por translationKey para preferencia dietética
   const vegKeys = ["chicken", "turkey", "salmon", "hake", "canned_tuna", "pork_loin", "beef_lean", "cod", "sardines", "rabbit", "octopus", "prawns", "egg"];
   const lowCarbKeys = ["oats", "lentils", "chickpeas", "quinoa", "potato", "sweet_potato", "brown_rice", "rye_bread", "whole_pasta", "black_beans", "couscous", "buckwheat", "millet", "peas", "broad_beans", "corn_cakes", "cassava", "bulgur", "corn", "amaranth", "banana", "apple", "pineapple", "watermelon"];
-  // Filtros por nombre para recetas (mantienen nombres en español)
   const vegRecipeKeys = ["Pollo", "Pavo", "Atún", "Salmón", "Merluza", "Mortadela", "Carne"];
   const lcRecipeKeys = ["Arroz", "Pan", "Pasta", "Boniato", "Patata", "Avena", "Cuscús"];
 
-  function isCommonAllowed(key: string) {
+  function isDietAllowed(key: string) {
     if (dietPreference === "vegetariana") return !vegKeys.includes(key);
     if (dietPreference === "low-carb") return !lowCarbKeys.includes(key);
     return true;
@@ -47,8 +55,8 @@ export function generateDailyMenu(targetCalories: number, dietPreference: string
     return true;
   }
 
-  const allowedCommon = COMMON_FOODS.filter(f => isCommonAllowed(f.translationKey));
-  const allowedRecipes = RECIPES.filter(r => isRecipeAllowed(r.name));
+  const dietFiltered = COMMON_FOODS.filter(f => isDietAllowed(f.translationKey));
+  const allowedRecipes = RECIPES.filter(r => isRecipeAllowed(r.translationKey));
   const slots: MealSlot[] = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"];
   const suggestions: SuggestedMeal[] = [];
   const getRandom = <T>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)];
@@ -57,6 +65,11 @@ export function generateDailyMenu(targetCalories: number, dietPreference: string
     const targetKcal = targetCalories * ratios[slot];
     const items: SuggestedItem[] = [];
     let currentKcal = 0;
+    const tag = SLOT_TAG_MAP[slot];
+
+    // Filtrar por mealTag para este slot (fallback a todos si no hay coincidencias)
+    const tagFiltered = dietFiltered.filter(f => f.mealTags?.includes(tag));
+    const allowedCommon = tagFiltered.length >= 5 ? tagFiltered : dietFiltered;
 
     // Almuerzo o Cena -> priorizar receta
     if ((slot === "Almuerzo" || slot === "Cena") && allowedRecipes.length > 0) {
@@ -64,13 +77,13 @@ export function generateDailyMenu(targetCalories: number, dietPreference: string
       const candidates = bestFits.length > 0 ? bestFits : allowedRecipes;
       const r = getRandom(candidates);
       items.push({
-        translationKey: r.name, name: r.name, calories: r.kcal, grams: 100,
+        translationKey: r.translationKey, name: r.translationKey, calories: r.kcal, grams: 100,
         protein: r.protein, carbs: r.carbs, fat: r.fat, fiber: 0, ig: null, sodiumLevel: null,
       });
       currentKcal += r.kcal;
     }
 
-    // Rellenar con alimentos base (ración inteligente)
+    // Rellenar con alimentos filtrados por tag (ración inteligente)
     let maxAttempts = 15;
     while (currentKcal < targetKcal - 50 && maxAttempts > 0) {
       const food = getRandom(allowedCommon);

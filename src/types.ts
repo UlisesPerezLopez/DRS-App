@@ -59,6 +59,19 @@ export interface CommonFood {
   fiber: number;
   ig: number | null;
   sodiumLevel: "Bajo" | "Medio" | "Alto";
+  mealTags?: ('breakfast' | 'lunch' | 'dinner' | 'snack')[];
+}
+
+export interface CustomFood {
+  id: string;
+  name: string; // user-entered, not translated
+  calories: number; // per 100g
+  protein: number;
+  carbs: number;
+  fat: number;
+  fiber: number;
+  ig: number | null;
+  sodiumLevel: "Bajo" | "Medio" | "Alto";
 }
 
 export interface AccountData {
@@ -67,5 +80,7 @@ export interface AccountData {
   foods: FoodEntry[];
   weights: WeightEntry[];
   workouts: WorkoutSession[];
+  waterLogs: Record<string, number>;
+  customFoods: CustomFood[];
   planStartDate: string | null;
 }

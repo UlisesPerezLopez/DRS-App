@@ -1,5 +1,5 @@
-import { Flame, Target, TrendingDown, AlertTriangle, Activity, Sparkles, ChevronDown, Dumbbell } from "lucide-react";
-import { dailyTarget, tdee, todayISO } from "../lib/calc";
+import { Flame, Target, TrendingDown, AlertTriangle, Activity, Sparkles, ChevronDown, Dumbbell, Droplets, Plus, Minus } from "lucide-react";
+import { dailyTarget, dailyWaterTarget, tdee, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
 import { getSmartAdvice } from "../lib/advisor";
@@ -14,7 +14,8 @@ function formatTime(sec: number) {
 export function Dashboard() {
   const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
-  const { profile, foods, workouts } = account;
+  const { profile, foods, workouts, waterLogs } = account;
+  const logWater = useAppStore(s => s.logWater);
 
   const today = todayISO();
   const todayFoods = foods.filter((f) => f.date === today);
@@ -26,6 +27,12 @@ export function Dashboard() {
 
   const todayWorkouts = workouts.filter((w) => w.date === today);
   const workoutMin = Math.round(todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60);
+
+  // Water tracking
+  const waterConsumed = (waterLogs || {})[today] || 0;
+  const waterTarget = dailyWaterTarget(profile, workoutMin);
+  const waterPercent = Math.min(100, Math.round((waterConsumed / waterTarget) * 100));
+  const waterGlasses = Math.floor(waterConsumed / 250);
 
   // Group by meal slot
   const byMeal = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"].map((m) => {
@@ -110,6 +117,59 @@ export function Dashboard() {
           </div>
         </div>
         <ProgressBar value={consumed} max={target} over={over} />
+      </section>
+
+      {/* Water Tracker Card */}
+      <section className="rounded-3xl bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 border border-sky-200 dark:border-sky-800/50 p-5 shadow-sm">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <Droplets className="text-sky-500" size={20} />
+            <h2 className="font-semibold text-sky-900 dark:text-sky-300">{t("water.title")}</h2>
+          </div>
+          <span className="text-xs text-sky-600 dark:text-sky-400 font-medium">
+            {t("water.target", { target: waterTarget })}
+          </span>
+        </div>
+        <div className="flex items-end justify-between mb-3">
+          <div>
+            <p className="text-3xl font-bold tabular-nums text-sky-700 dark:text-sky-300">
+              {waterConsumed}
+              <span className="text-sm font-medium text-sky-500"> / {waterTarget} ml</span>
+            </p>
+            <p className="text-xs text-sky-600/70 dark:text-sky-400/70 mt-0.5">
+              {waterGlasses} {t("water.glasses")} · {waterPercent}%
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => logWater(-250)}
+              disabled={waterConsumed <= 0}
+              className="w-10 h-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-sky-200 dark:border-sky-700 text-sky-600 dark:text-sky-400 active:scale-95 transition disabled:opacity-30 shadow-sm"
+              aria-label={t("water.remove_glass")}
+            >
+              <Minus size={18} />
+            </button>
+            <button
+              onClick={() => logWater(250)}
+              className="w-10 h-10 flex items-center justify-center rounded-xl bg-sky-500 text-white active:bg-sky-600 active:scale-95 transition shadow-sm"
+              aria-label={t("water.add_glass")}
+            >
+              <Plus size={18} />
+            </button>
+          </div>
+        </div>
+        {/* Water progress bar */}
+        <div className="h-3 bg-sky-100 dark:bg-sky-900/50 rounded-full overflow-hidden">
+          <div
+            className="h-full rounded-full transition-all duration-500 ease-out"
+            style={{
+              width: `${waterPercent}%`,
+              background: waterPercent >= 100
+                ? 'linear-gradient(90deg, #0ea5e9, #22d3ee)'
+                : 'linear-gradient(90deg, #38bdf8, #0ea5e9)',
+            }}
+          />
+        </div>
       </section>
 
       <section className="grid grid-cols-2 gap-3">

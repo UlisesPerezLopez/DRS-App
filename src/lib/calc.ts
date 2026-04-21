@@ -61,3 +61,9 @@ export function calculateMacrosForPortion(food: CommonFood, grams: number) {
     fiber: Math.round(food.fiber * factor * 10) / 10,
   };
 }
+
+/** Objetivo diario de hidratación en ml: (peso * 35) + (min ejercicio * 15) */
+export function dailyWaterTarget(p: Pick<Profile, "weightKg">, workoutMinutes: number = 0): number {
+  return Math.round(p.weightKg * 35 + workoutMinutes * 15);
+}
+

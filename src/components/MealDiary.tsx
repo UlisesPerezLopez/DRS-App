@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
-import { Plus, Trash2, Clock, X, Search, AlertTriangle } from "lucide-react";
-import type { FoodEntry, MealSlot, CommonFood } from "../types";
+import { Plus, Trash2, Clock, X, Search, AlertTriangle, Star } from "lucide-react";
+import type { FoodEntry, MealSlot, CommonFood, CustomFood } from "../types";
 import { COMMON_FOODS } from "../lib/data";
 import { calculateGlycemicLoad, calculateMacrosForPortion, dailyTarget, nowHHMM, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
@@ -32,18 +32,32 @@ function cgBadgeClass(cg: number | null | undefined): string {
   return "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-400";
 }
 
+// Union type for search results
+type SearchableFood = (CommonFood & { _type: "common" }) | (CustomFood & { _type: "custom" });
+
 export function MealDiary() {
   const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
-  const { profile, foods } = account;
+  const { profile, foods, customFoods } = account;
   const setFoods = useAppStore(s => s.setFoods);
+  const addCustomFood = useAppStore(s => s.addCustomFood);
   const today = todayISO();
   const [open, setOpen] = useState(false);
   const [meal, setMeal] = useState<MealSlot>("Desayuno");
   const [time, setTime] = useState(nowHHMM());
   const [search, setSearch] = useState("");
-  const [selectedFood, setSelectedFood] = useState<CommonFood | null>(null);
+  const [selectedFood, setSelectedFood] = useState<SearchableFood | null>(null);
   const [gramsInput, setGramsInput] = useState("100");
+  const [showCreateForm, setShowCreateForm] = useState(false);
+
+  // Custom Food form state
+  const [cfName, setCfName] = useState("");
+  const [cfKcal, setCfKcal] = useState("");
+  const [cfProtein, setCfProtein] = useState("");
+  const [cfCarbs, setCfCarbs] = useState("");
+  const [cfFat, setCfFat] = useState("");
+  const [cfFiber, setCfFiber] = useState("");
+  const [cfSodium, setCfSodium] = useState<"Bajo" | "Medio" | "Alto">("Bajo");
 
   const todayFoods = useMemo(
     () => foods.filter((f) => f.date === today).sort((a, b) => a.time.localeCompare(b.time)),
@@ -54,11 +68,27 @@ export function MealDiary() {
   const target = dailyTarget(profile);
   const over = consumed > target;
 
-  const filtered = COMMON_FOODS.filter((f) => {
+  // Fused search: COMMON_FOODS + customFoods
+  const allFoods = useMemo(() => {
+    const commons: SearchableFood[] = COMMON_FOODS.map(f => ({ ...f, _type: "common" as const }));
+    const customs: SearchableFood[] = (customFoods || []).map(f => ({ ...f, _type: "custom" as const }));
+    return [...commons, ...customs];
+  }, [customFoods]);
+
+  const filtered = allFoods.filter((f) => {
     const term = search.toLowerCase();
-    const translated = t("foodDb." + f.translationKey, { defaultValue: f.translationKey }).toLowerCase();
-    return translated.includes(term) || f.translationKey.includes(term);
+    if (f._type === "common") {
+      const translated = t("foodDb." + f.translationKey, { defaultValue: f.translationKey }).toLowerCase();
+      return translated.includes(term) || f.translationKey.includes(term);
+    }
+    // CustomFood: search by name
+    return f.name.toLowerCase().includes(term);
   });
+
+  function getFoodDisplayName(f: SearchableFood): string {
+    if (f._type === "common") return t("foodDb." + f.translationKey);
+    return f.name;
+  }
 
   function openAdd(presetMeal?: MealSlot, presetHour?: string) {
     const now = presetHour || nowHHMM();
@@ -67,20 +97,35 @@ export function MealDiary() {
     setSelectedFood(null);
     setGramsInput("100");
     setSearch("");
+    setShowCreateForm(false);
     setOpen(true);
   }
 
   function save() {
     const gr = Number(gramsInput);
     if (!selectedFood || !gr || isNaN(gr)) return;
-    const macros = calculateMacrosForPortion(selectedFood, gr);
-    const cg = selectedFood.ig !== null && selectedFood.ig > 0
-      ? Math.round(calculateGlycemicLoad(selectedFood.ig, macros.carbs, macros.fiber, gr) * 10) / 10
+    // Extract CommonFood-compatible shape for macro calculation
+    const foodData: CommonFood = {
+      translationKey: selectedFood._type === "common" ? selectedFood.translationKey : selectedFood.name,
+      calories: selectedFood.calories,
+      protein: selectedFood.protein,
+      carbs: selectedFood.carbs,
+      fat: selectedFood.fat,
+      fiber: selectedFood.fiber,
+      ig: selectedFood.ig,
+      sodiumLevel: selectedFood.sodiumLevel,
+    };
+    const macros = calculateMacrosForPortion(foodData, gr);
+    const ig = selectedFood.ig;
+    const cg = ig !== null && ig > 0
+      ? Math.round(calculateGlycemicLoad(ig, macros.carbs, macros.fiber, gr) * 10) / 10
       : null;
+
+    const entryName = selectedFood._type === "common" ? selectedFood.translationKey : `custom:${selectedFood.name}`;
 
     const entry: FoodEntry = {
       id: crypto.randomUUID(),
-      name: selectedFood.translationKey,
+      name: entryName,
       calories: macros.calories,
       grams: gr,
       protein: macros.protein,
@@ -101,9 +146,49 @@ export function MealDiary() {
     setFoods((prev) => prev.filter((f) => f.id !== id));
   }
 
+  function openCreateForm() {
+    setCfName("");
+    setCfKcal("");
+    setCfProtein("");
+    setCfCarbs("");
+    setCfFat("");
+    setCfFiber("");
+    setCfSodium("Bajo");
+    setShowCreateForm(true);
+  }
+
+  function saveCustomFood() {
+    const kcal = Number(cfKcal);
+    if (!cfName.trim() || isNaN(kcal) || kcal <= 0) return;
+    const newFood: Omit<CustomFood, 'id'> = {
+      name: cfName.trim(),
+      calories: kcal,
+      protein: Number(cfProtein) || 0,
+      carbs: Number(cfCarbs) || 0,
+      fat: Number(cfFat) || 0,
+      fiber: Number(cfFiber) || 0,
+      ig: null,
+      sodiumLevel: cfSodium,
+    };
+    addCustomFood(newFood);
+    setShowCreateForm(false);
+    // Auto-select the newly created food
+    const created: SearchableFood = { ...newFood, id: "pending", _type: "custom" };
+    setSelectedFood(created);
+  }
+
+  function renderEntryName(f: FoodEntry): string {
+    if (f.name.startsWith("custom:")) return f.name.slice(7);
+    return t("foodDb." + f.name, { defaultValue: f.name });
+  }
+
   // Preview macros for selected food
   const previewGrams = Number(gramsInput) || 0;
-  const preview = selectedFood && previewGrams > 0 ? calculateMacrosForPortion(selectedFood, previewGrams) : null;
+  const preview = selectedFood && previewGrams > 0 ? calculateMacrosForPortion({
+    translationKey: "", calories: selectedFood.calories, protein: selectedFood.protein,
+    carbs: selectedFood.carbs, fat: selectedFood.fat, fiber: selectedFood.fiber,
+    ig: selectedFood.ig, sodiumLevel: selectedFood.sodiumLevel,
+  }, previewGrams) : null;
   const previewCG = selectedFood && preview && selectedFood.ig !== null && selectedFood.ig > 0
     ? Math.round(calculateGlycemicLoad(selectedFood.ig, preview.carbs, preview.fiber, previewGrams) * 10) / 10
     : null;
@@ -176,7 +261,8 @@ export function MealDiary() {
                       <div className="flex items-start justify-between">
                         <div className="min-w-0 flex-1">
                           <p className="font-medium truncate flex items-center gap-1.5">
-                            {t("foodDb." + f.name, { defaultValue: f.name })}
+                            {f.name.startsWith("custom:") && <Star size={12} className="text-amber-500 shrink-0" />}
+                            {renderEntryName(f)}
                             <span className="text-xs font-normal text-slate-400">({f.grams || 0}g)</span>
                             {f.sodiumLevel === "Alto" && (
                               <span title={t("warnings.high_sodium")} className="text-rose-500">
@@ -247,14 +333,73 @@ export function MealDiary() {
                 </label>
               </div>
 
-              {selectedFood ? (
+              {showCreateForm ? (
+                /* ===== CREATE CUSTOM FOOD FORM ===== */
+                <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 p-4 rounded-2xl space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold text-amber-900 dark:text-amber-300 flex items-center gap-1.5">
+                      <Star size={16} /> {t("customFood.createTitle")}
+                    </h3>
+                    <button onClick={() => setShowCreateForm(false)} className="p-1 text-amber-600">
+                      <X size={16} />
+                    </button>
+                  </div>
+                  <input type="text" value={cfName} onChange={(e) => setCfName(e.target.value)}
+                    placeholder={t("customFood.namePlaceholder")}
+                    className="w-full px-3 py-2.5 rounded-xl border border-amber-200 dark:border-amber-700 bg-white dark:bg-slate-900 text-sm" />
+                  <div className="grid grid-cols-2 gap-2">
+                    <label className="block">
+                      <span className="text-[10px] text-amber-700 dark:text-amber-400 font-bold uppercase">Kcal/100g *</span>
+                      <input type="number" inputMode="numeric" value={cfKcal} onChange={(e) => setCfKcal(e.target.value)}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-amber-200 dark:border-amber-700 bg-white dark:bg-slate-900 text-sm" />
+                    </label>
+                    <label className="block">
+                      <span className="text-[10px] text-blue-600 font-bold uppercase">{t("customFood.protein")}</span>
+                      <input type="number" inputMode="numeric" value={cfProtein} onChange={(e) => setCfProtein(e.target.value)}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm" />
+                    </label>
+                    <label className="block">
+                      <span className="text-[10px] text-amber-600 font-bold uppercase">{t("customFood.carbs")}</span>
+                      <input type="number" inputMode="numeric" value={cfCarbs} onChange={(e) => setCfCarbs(e.target.value)}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm" />
+                    </label>
+                    <label className="block">
+                      <span className="text-[10px] text-rose-600 font-bold uppercase">{t("customFood.fat")}</span>
+                      <input type="number" inputMode="numeric" value={cfFat} onChange={(e) => setCfFat(e.target.value)}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm" />
+                    </label>
+                    <label className="block">
+                      <span className="text-[10px] text-emerald-600 font-bold uppercase">{t("customFood.fiber")}</span>
+                      <input type="number" inputMode="numeric" value={cfFiber} onChange={(e) => setCfFiber(e.target.value)}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm" />
+                    </label>
+                    <label className="block">
+                      <span className="text-[10px] text-slate-600 font-bold uppercase">{t("customFood.sodium")}</span>
+                      <select value={cfSodium} onChange={(e) => setCfSodium(e.target.value as "Bajo" | "Medio" | "Alto")}
+                        className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm">
+                        <option value="Bajo">{t("customFood.sodiumLow")}</option>
+                        <option value="Medio">{t("customFood.sodiumMed")}</option>
+                        <option value="Alto">{t("customFood.sodiumHigh")}</option>
+                      </select>
+                    </label>
+                  </div>
+                  <button onClick={saveCustomFood}
+                    disabled={!cfName.trim() || !Number(cfKcal)}
+                    className="w-full bg-amber-500 active:bg-amber-600 disabled:bg-slate-200 dark:disabled:bg-slate-800 disabled:text-slate-400 text-white font-semibold py-3 rounded-xl transition">
+                    {t("customFood.saveBtn")}
+                  </button>
+                </div>
+              ) : selectedFood ? (
                 /* ===== SELECTED FOOD: Gram input + macros preview ===== */
                 <div className="bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/50 p-4 rounded-2xl relative">
                   <button onClick={() => setSelectedFood(null)}
                     className="absolute top-2 right-2 p-2 text-emerald-600 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 rounded-full">
                     <X size={16} />
                   </button>
-                  <p className="font-bold text-lg mb-3 pr-8">{t("foodDb." + selectedFood.translationKey)}</p>
+                  <p className="font-bold text-lg mb-3 pr-8 flex items-center gap-1.5">
+                    {selectedFood._type === "custom" && <Star size={14} className="text-amber-500" />}
+                    {getFoodDisplayName(selectedFood)}
+                  </p>
 
                   <label className="block">
                     <span className="text-xs font-semibold text-emerald-800 dark:text-emerald-400 uppercase tracking-wider">
@@ -313,26 +458,36 @@ export function MealDiary() {
                       className="w-full pl-9 pr-3 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:ring-2 ring-emerald-500/20 outline-none transition" />
                   </div>
                   <div className="space-y-1.5 max-h-60 overflow-y-auto">
-                    {filtered.map((f) => (
-                      <button key={f.translationKey} onClick={() => setSelectedFood(f)}
-                        className="w-full flex items-center justify-between text-left px-3 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition group">
-                        <div className="min-w-0 pr-4">
-                          <p className="text-sm font-medium truncate group-hover:text-emerald-700 dark:group-hover:text-emerald-400">
-                            {t("foodDb." + f.translationKey)}
-                          </p>
-                          <div className="flex gap-2 text-[10px] text-slate-400 mt-0.5">
-                            <span>{f.calories} kcal/100g</span>
-                            <span>P:{f.protein}g</span>
-                            <span>C:{f.carbs}g</span>
+                    {filtered.map((f) => {
+                      const key = f._type === "common" ? f.translationKey : `custom-${f.id}`;
+                      return (
+                        <button key={key} onClick={() => setSelectedFood(f)}
+                          className="w-full flex items-center justify-between text-left px-3 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition group">
+                          <div className="min-w-0 pr-4">
+                            <p className="text-sm font-medium truncate group-hover:text-emerald-700 dark:group-hover:text-emerald-400 flex items-center gap-1">
+                              {f._type === "custom" && <Star size={12} className="text-amber-500 shrink-0" />}
+                              {getFoodDisplayName(f)}
+                            </p>
+                            <div className="flex gap-2 text-[10px] text-slate-400 mt-0.5">
+                              <span>{f.calories} kcal/100g</span>
+                              <span>P:{f.protein}g</span>
+                              <span>C:{f.carbs}g</span>
+                            </div>
                           </div>
-                        </div>
-                        <Plus size={16} className="shrink-0 text-slate-400 group-hover:text-emerald-500" />
-                      </button>
-                    ))}
+                          <Plus size={16} className="shrink-0 text-slate-400 group-hover:text-emerald-500" />
+                        </button>
+                      );
+                    })}
                     {filtered.length === 0 && search && (
                       <p className="text-center text-sm text-slate-400 py-4">No results</p>
                     )}
                   </div>
+                  {/* Create Custom Food Button */}
+                  <button onClick={openCreateForm}
+                    className="w-full mt-3 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 text-amber-600 dark:text-amber-400 font-medium text-sm hover:bg-amber-50 dark:hover:bg-amber-950/20 active:scale-[0.98] transition">
+                    <Star size={16} />
+                    {t("customFood.createBtn")}
+                  </button>
                 </div>
               )}
             </div>

@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage, StateStorage } from "zustand/middleware";
 import { STORAGE_KEYS } from "../lib/storage";
-import type { FoodEntry, Profile, WeightEntry, WorkoutSession, AccountData } from "../types";
+import type { FoodEntry, Profile, WeightEntry, WorkoutSession, AccountData, CustomFood } from "../types";
 
 export const DEFAULT_PROFILE: Profile = {
   name: "",
@@ -19,6 +19,7 @@ export interface AppState {
   accounts: Record<string, AccountData>;
   activeAccountId: string | null;
   theme: "light" | "dark";
+  hasSeenWelcome: boolean;
 }
 
 export interface AppActions {
@@ -31,6 +32,9 @@ export interface AppActions {
   setWorkouts: (workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[])) => void;
   setTheme: (theme: "light" | "dark") => void;
   startPlan: (date: string) => void;
+  logWater: (amountMl: number) => void;
+  addCustomFood: (food: Omit<CustomFood, 'id'>) => void;
+  completeWelcome: () => void;
 }
 
 export type AppStore = AppState & AppActions;
@@ -68,13 +72,16 @@ const customStorage: StateStorage = {
         foods: foodsStr ? JSON.parse(foodsStr) : [],
         weights: weightsStr ? JSON.parse(weightsStr) : [],
         workouts: workoutsStr ? JSON.parse(workoutsStr) : [],
+        waterLogs: {},
+        customFoods: [],
         planStartDate: planStr ? JSON.parse(planStr) : null,
       };
 
       const state: AppState = {
         accounts: { "default_legacy": defaultAccount },
         activeAccountId: "default_legacy",
-        theme: themeStr ? JSON.parse(themeStr) : "light"
+        theme: themeStr ? JSON.parse(themeStr) : "light",
+        hasSeenWelcome: true, // legacy users already onboarded
       };
 
       return JSON.stringify({ state, version: 0 });
@@ -100,6 +107,7 @@ export const useAppStore = create<AppStore>()(
       accounts: {},
       activeAccountId: null,
       theme: "light",
+      hasSeenWelcome: false,
 
       createAccount: (name, profile) => set((state) => {
         const id = crypto.randomUUID();
@@ -109,6 +117,8 @@ export const useAppStore = create<AppStore>()(
           foods: [],
           weights: [],
           workouts: [],
+          waterLogs: {},
+          customFoods: [],
           planStartDate: null,
         };
         return {
@@ -202,6 +212,42 @@ export const useAppStore = create<AppStore>()(
           }
         };
       }),
+
+      logWater: (amountMl) => set((state) => {
+        if (!state.activeAccountId) return {};
+        const acc = state.accounts[state.activeAccountId];
+        const today = new Date();
+        const key = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+        const logs = acc.waterLogs || {};
+        const current = logs[key] || 0;
+        const next = Math.max(0, current + amountMl);
+        return {
+          accounts: {
+            ...state.accounts,
+            [state.activeAccountId]: {
+              ...acc,
+              waterLogs: { ...logs, [key]: next }
+            }
+          }
+        };
+      }),
+
+      addCustomFood: (food) => set((state) => {
+        if (!state.activeAccountId) return {};
+        const acc = state.accounts[state.activeAccountId];
+        const newFood: CustomFood = { ...food, id: crypto.randomUUID() };
+        return {
+          accounts: {
+            ...state.accounts,
+            [state.activeAccountId]: {
+              ...acc,
+              customFoods: [...(acc.customFoods || []), newFood]
+            }
+          }
+        };
+      }),
+
+      completeWelcome: () => set({ hasSeenWelcome: true }),
     }),
     {
       name: "drs.store.v2", 

@@ -16,7 +16,8 @@
     "diary": "Diario",
     "workout": "Allenamento",
     "recipes": "Ricette",
-    "profile": "Profilo"
+    "profile": "Profilo",
+    "stats": "Analisi"
   },
   "onboarding": {
     "title": "Benvenuto in DRS",
@@ -103,7 +104,10 @@
     "title": "Ricette Low-Cost",
     "subtitle": "Facili, veloci e orientate alla perdita di peso.",
     "ingredients": "Ingredienti",
-    "steps": "Preparazione"
+    "steps": "Preparazione",
+    "proteinLabel": "Proteine",
+    "carbsLabel": "Carboidrati",
+    "fatLabel": "Grassi"
   },
   "dietTab": {
     "title": "Piano Nutrizionale",
@@ -266,5 +270,239 @@
   },
   "warnings": {
     "high_sodium": "⚠️ Attenzione: Alto contenuto di sodio. Può causare ritenzione idrica."
+  },
+  "water": {
+    "title": "Idratazione",
+    "add_glass": "+250ml",
+    "remove_glass": "-250ml",
+    "target": "Obiettivo: {{target}} ml",
+    "consumed": "{{amount}} ml",
+    "glasses": "bicchieri"
+  },
+  "stats": {
+    "title": "Analisi & Esportazione",
+    "subtitle": "Visualizza i tuoi progressi e esporta i dati.",
+    "exportTitle": "Esporta Dati",
+    "exportDesc": "Scarica lo storico completo del profilo.",
+    "weightCalChart": "Peso & Calorie (14 giorni)",
+    "waterTrainChart": "Idratazione & Allenamento (14 giorni)",
+    "weight": "Peso (kg)",
+    "calories": "Calorie",
+    "water": "Acqua (ml)",
+    "training": "Allenamento (min)"
+  },
+  "customFood": {
+    "createBtn": "➕ Crea nuovo alimento",
+    "createTitle": "Crea Alimento Personalizzato",
+    "namePlaceholder": "Nome dell'alimento",
+    "protein": "Proteine (g)",
+    "carbs": "Carboidrati (g)",
+    "fat": "Grassi (g)",
+    "fiber": "Fibre (g)",
+    "sodium": "Livello di Sodio",
+    "sodiumLow": "Basso",
+    "sodiumMed": "Medio",
+    "sodiumHigh": "Alto",
+    "saveBtn": "Salva Alimento"
+  },
+  "welcome": {
+    "title": "Benvenuto",
+    "select_language": "Seleziona la tua lingua",
+    "disclaimer_title": "Messaggio dello Sviluppatore",
+    "disclaimer_text": "Questa applicazione è in fase di sviluppo e ha bisogno del tuo aiuto per essere completata e migliorata. Per favore sii critico/a e aiutami a creare un'app straordinaria e senza pari.",
+    "credits": "Applicazione creata da Ulises Pérez López, sviluppatore Junior di applicazioni IA e studente in formazione di programmazione e sviluppo in ambienti IA.",
+    "start_button": "Iniziare"
+  },
+  "recipeDb": {
+    "chicken_rice": {
+      "name": "Riso con pollo e verdure",
+      "ingredients": [
+        "80 g riso",
+        "120 g petto di pollo",
+        "Verdure miste",
+        "1 cucchiaio olio"
+      ],
+      "steps": [
+        "Saltare le verdure.",
+        "Aggiungere il pollo.",
+        "Cuocere il riso e mescolare."
+      ]
+    },
+    "spinach_omelette": {
+      "name": "Frittata di spinaci",
+      "ingredients": [
+        "3 uova",
+        "150 g spinaci",
+        "Aglio",
+        "1 cucchiaio olio"
+      ],
+      "steps": [
+        "Saltare aglio e spinaci.",
+        "Sbattere le uova e cuocere in padella."
+      ]
+    },
+    "quick_lentils": {
+      "name": "Lenticchie veloci",
+      "ingredients": [
+        "200 g lenticchie in scatola",
+        "Carota",
+        "Cipolla",
+        "Paprika"
+      ],
+      "steps": [
+        "Soffriggere le verdure.",
+        "Aggiungere lenticchie e un po' d'acqua, cuocere 10 min."
+      ]
+    },
+    "tuna_pasta": {
+      "name": "Pasta integrale al tonno",
+      "ingredients": [
+        "90 g pasta integrale",
+        "1 scatoletta tonno al naturale",
+        "Pomodoro tritato"
+      ],
+      "steps": [
+        "Cuocere la pasta.",
+        "Mescolare il sugo caldo con il tonno scolato."
+      ]
+    },
+    "zucchini_cream": {
+      "name": "Crema di zucchine",
+      "ingredients": [
+        "2 zucchine",
+        "1 patata",
+        "Cipolla",
+        "1 formaggino light"
+      ],
+      "steps": [
+        "Bollire le verdure.",
+        "Frullare aggiungendo il formaggino."
+      ]
+    },
+    "chickpea_salad": {
+      "name": "Insalata di ceci",
+      "ingredients": [
+        "150 g ceci in scatola",
+        "Pomodoro",
+        "Cetriolo",
+        "Cipolla rossa",
+        "Olio"
+      ],
+      "steps": [
+        "Sciacquare i ceci.",
+        "Tagliare le verdure fresche e condire."
+      ]
+    },
+    "lemon_chicken_sweetpotato": {
+      "name": "Pollo al limone con patata dolce",
+      "ingredients": [
+        "150 g petto di pollo",
+        "1 patata dolce media",
+        "Succo di limone"
+      ],
+      "steps": [
+        "Cuocere la patata dolce al microonde (8 min).",
+        "Grigliare il pollo al limone."
+      ]
+    },
+    "broken_eggs": {
+      "name": "Uova rotte salutari",
+      "ingredients": [
+        "2 uova",
+        "1 patata grande",
+        "Paprika"
+      ],
+      "steps": [
+        "Cuocere le fette di patata al forno/microonde.",
+        "Friggere le uova sopra."
+      ]
+    },
+    "avocado_turkey_toast": {
+      "name": "Toast avocado e tacchino",
+      "ingredients": [
+        "2 fette pane integrale",
+        "Mezzo avocado",
+        "2 fette di tacchino"
+      ],
+      "steps": [
+        "Tostare il pane.",
+        "Spalmare l'avocado e posizionare il tacchino."
+      ]
+    },
+    "egg_white_mushroom": {
+      "name": "Strapazzata di albumi e funghi",
+      "ingredients": [
+        "200 g albumi",
+        "100 g champignon affettati",
+        "Aglio",
+        "Olio"
+      ],
+      "steps": [
+        "Saltare i funghi con l'aglio.",
+        "Aggiungere gli albumi e strapazzare."
+      ]
+    },
+    "apple_porridge": {
+      "name": "Porridge di avena e mela",
+      "ingredients": [
+        "50 g avena",
+        "1 bicchiere latte/bevanda vegetale",
+        "1 mela",
+        "Cannella"
+      ],
+      "steps": [
+        "Cuocere l'avena con il latte per 5 min.",
+        "Aggiungere mela a dadini e cannella."
+      ]
+    },
+    "stuffed_peppers_soy": {
+      "name": "Peperoni ripieni di soia",
+      "ingredients": [
+        "2 peperoni",
+        "50 g soia testurizzata",
+        "Pomodoro tritato"
+      ],
+      "steps": [
+        "Idratare la soia e mescolare col pomodoro.",
+        "Riempire i peperoni e infornare 25 min."
+      ]
+    },
+    "express_couscous": {
+      "name": "Cuscus express",
+      "ingredients": [
+        "80 g cuscus",
+        "Carota grattugiata",
+        "Uvetta",
+        "Brodo"
+      ],
+      "steps": [
+        "Bollire stessa quantità di brodo e cuscus.",
+        "Versare sul cuscus, coprire 5 min e sgranare."
+      ]
+    },
+    "grilled_eggplant_cheese": {
+      "name": "Melanzana grigliata con formaggio",
+      "ingredients": [
+        "1 melanzana",
+        "80 g formaggio fresco",
+        "Origano"
+      ],
+      "steps": [
+        "Tagliare la melanzana a fette e grigliare.",
+        "Servire con fette di formaggio sopra."
+      ]
+    },
+    "protein_smoothie_bowl": {
+      "name": "Smoothie Bowl proteico",
+      "ingredients": [
+        "1 banana congelata",
+        "Quark",
+        "Una manciata di fragole"
+      ],
+      "steps": [
+        "Frullare banana, fragole e quark.",
+        "Servire molto freddo in una ciotola."
+      ]
+    }
   }
 }

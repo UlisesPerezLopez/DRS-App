@@ -19,6 +19,10 @@ export function Recipes() {
       <div className="space-y-3">
         {RECIPES.map((r) => {
           const isOpen = open === r.id;
+          const recipeName = t(`${r.translationKey}.name`);
+          const ingredients = t(`${r.translationKey}.ingredients`, { returnObjects: true }) as string[];
+          const steps = t(`${r.translationKey}.steps`, { returnObjects: true }) as string[];
+
           return (
             <article
               key={r.id}
@@ -29,7 +33,7 @@ export function Recipes() {
                 className="w-full flex items-center justify-between p-4 text-left"
               >
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold">{r.name}</h3>
+                  <h3 className="font-semibold">{recipeName}</h3>
                   <div className="flex flex-wrap gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-500">
                     <span className="flex items-center gap-1"><Wallet size={12} /> {r.cost}</span>
                     <span className="flex items-center gap-1"><Clock size={12} /> {r.time}</span>
@@ -45,17 +49,17 @@ export function Recipes() {
               {isOpen && (
                 <div className="px-4 pb-4 border-t border-slate-100 dark:border-slate-800 pt-4 space-y-4">
                   <div className="grid grid-cols-3 gap-2 text-center">
-                    <Macro label="Proteínas" value={`${r.protein} g`} color="emerald" />
-                    <Macro label="Carbs" value={`${r.carbs} g`} color="amber" />
-                    <Macro label="Grasas" value={`${r.fat} g`} color="rose" />
+                    <Macro label={t("recipes.proteinLabel")} value={`${r.protein} g`} color="emerald" />
+                    <Macro label={t("recipes.carbsLabel")} value={`${r.carbs} g`} color="amber" />
+                    <Macro label={t("recipes.fatLabel")} value={`${r.fat} g`} color="rose" />
                   </div>
 
                   <div>
                     <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">{t("recipes.ingredients")}</p>
                     <ul className="space-y-1">
-                      {r.ingredients.map((i) => (
-                        <li key={i} className="text-sm flex gap-2">
-                          <span className="text-emerald-500">•</span> {i}
+                      {Array.isArray(ingredients) && ingredients.map((item, idx) => (
+                        <li key={idx} className="text-sm flex gap-2">
+                          <span className="text-emerald-500">•</span> {item}
                         </li>
                       ))}
                     </ul>
@@ -64,12 +68,12 @@ export function Recipes() {
                   <div>
                     <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">{t("recipes.steps")}</p>
                     <ol className="space-y-2">
-                      {r.steps.map((s, i) => (
-                        <li key={i} className="text-sm flex gap-2.5">
+                      {Array.isArray(steps) && steps.map((step, idx) => (
+                        <li key={idx} className="text-sm flex gap-2.5">
                           <span className="shrink-0 w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-bold flex items-center justify-center">
-                            {i + 1}
+                            {idx + 1}
                           </span>
-                          <span>{s}</span>
+                          <span>{step}</span>
                         </li>
                       ))}
                     </ol>

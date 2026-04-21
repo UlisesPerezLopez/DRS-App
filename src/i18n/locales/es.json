@@ -16,7 +16,8 @@
     "diary": "Diario",
     "workout": "Entreno",
     "recipes": "Recetas",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "stats": "Analítica"
   },
   "onboarding": {
     "title": "Bienvenido a DRS",
@@ -103,7 +104,10 @@
     "title": "Recetas Low-Cost",
     "subtitle": "Fáciles, rápidas y orientadas a pérdida de peso.",
     "ingredients": "Ingredientes",
-    "steps": "Preparación"
+    "steps": "Preparación",
+    "proteinLabel": "Proteínas",
+    "carbsLabel": "Carbohidratos",
+    "fatLabel": "Grasas"
   },
   "dietTab": {
     "title": "Plan Nutricional",
@@ -266,5 +270,239 @@
   },
   "warnings": {
     "high_sodium": "⚠️ Cuidado: Alto en sodio. Puede causar retención de líquidos."
+  },
+  "water": {
+    "title": "Hidratación",
+    "add_glass": "+250ml",
+    "remove_glass": "-250ml",
+    "target": "Objetivo: {{target}} ml",
+    "consumed": "{{amount}} ml",
+    "glasses": "vasos"
+  },
+  "stats": {
+    "title": "Analítica y Exportación",
+    "subtitle": "Visualiza tu progreso y exporta tus datos.",
+    "exportTitle": "Exportar Datos",
+    "exportDesc": "Descarga el historial completo de tu perfil.",
+    "weightCalChart": "Peso y Calorías (14 días)",
+    "waterTrainChart": "Hidratación y Entreno (14 días)",
+    "weight": "Peso (kg)",
+    "calories": "Calorías",
+    "water": "Agua (ml)",
+    "training": "Entreno (min)"
+  },
+  "customFood": {
+    "createBtn": "➕ Crear nuevo alimento",
+    "createTitle": "Crear Alimento Personalizado",
+    "namePlaceholder": "Nombre del alimento",
+    "protein": "Proteínas (g)",
+    "carbs": "Carbohidratos (g)",
+    "fat": "Grasas (g)",
+    "fiber": "Fibra (g)",
+    "sodium": "Nivel de Sodio",
+    "sodiumLow": "Bajo",
+    "sodiumMed": "Medio",
+    "sodiumHigh": "Alto",
+    "saveBtn": "Guardar Alimento"
+  },
+  "welcome": {
+    "title": "Bienvenido / Welcome / Willkommen",
+    "select_language": "Selecciona tu idioma / Select your language",
+    "disclaimer_title": "Mensaje del Desarrollador",
+    "disclaimer_text": "Esta aplicación está en fase de desarrollo y necesita de tu ayuda para ser completada y mejorada. Por favor sé crítico/a y ayúdame a hacer una aplicación genial sin igual.",
+    "credits": "Aplicación creada por Ulises Pérez López, desarrollador Junior de aplicaciones con IA y estudiante en formación de programación y desarrollo en entornos de IA.",
+    "start_button": "Empezar"
+  },
+  "recipeDb": {
+    "chicken_rice": {
+      "name": "Arroz con pollo y verduras",
+      "ingredients": [
+        "80 g arroz",
+        "120 g pechuga de pollo",
+        "Verduras variadas",
+        "1 cda aceite"
+      ],
+      "steps": [
+        "Sofreír verduras.",
+        "Añadir pollo.",
+        "Cocer arroz mientras tanto y mezclar."
+      ]
+    },
+    "spinach_omelette": {
+      "name": "Tortilla de espinacas",
+      "ingredients": [
+        "3 huevos",
+        "150 g espinacas",
+        "Ajo",
+        "1 cda aceite"
+      ],
+      "steps": [
+        "Saltear ajo y espinacas.",
+        "Batir huevos y cuajar en la sartén."
+      ]
+    },
+    "quick_lentils": {
+      "name": "Lentejas rápidas",
+      "ingredients": [
+        "200 g lentejas de bote",
+        "Zanahoria",
+        "Cebolla",
+        "Pimentón"
+      ],
+      "steps": [
+        "Pochar verduras.",
+        "Añadir lentejas y un dedo de agua, cocer 10 min."
+      ]
+    },
+    "tuna_pasta": {
+      "name": "Pasta integral con atún",
+      "ingredients": [
+        "90 g pasta integral",
+        "1 lata atún natural",
+        "Tomate triturado"
+      ],
+      "steps": [
+        "Cocer pasta.",
+        "Mezclar tomate caliente y el atún escurrido."
+      ]
+    },
+    "zucchini_cream": {
+      "name": "Crema de calabacín",
+      "ingredients": [
+        "2 calabacines",
+        "1 patata",
+        "Cebolla",
+        "1 quesito light"
+      ],
+      "steps": [
+        "Hervir verduras.",
+        "Triturar añadiendo el quesito."
+      ]
+    },
+    "chickpea_salad": {
+      "name": "Ensalada de garbanzos",
+      "ingredients": [
+        "150 g garbanzos de bote",
+        "Tomate",
+        "Pepino",
+        "Cebolla roja",
+        "Aceite"
+      ],
+      "steps": [
+        "Lavar garbanzos.",
+        "Cortar verdura fresca y aliñar."
+      ]
+    },
+    "lemon_chicken_sweetpotato": {
+      "name": "Pechuga al limón con boniato",
+      "ingredients": [
+        "150 g pechuga",
+        "1 boniato mediano",
+        "Zumo de limón"
+      ],
+      "steps": [
+        "Asar boniato al microondas (8 min).",
+        "Plancha el pollo con limón."
+      ]
+    },
+    "broken_eggs": {
+      "name": "Huevos rotos saludables",
+      "ingredients": [
+        "2 huevos",
+        "1 patata grande",
+        "Pimentón"
+      ],
+      "steps": [
+        "Asar patata en rodajas al micro/horno.",
+        "Hacer huevos a la plancha encima."
+      ]
+    },
+    "avocado_turkey_toast": {
+      "name": "Tostadas de aguacate y pavo",
+      "ingredients": [
+        "2 rebanadas pan integral",
+        "Medio aguacate",
+        "2 lonchas pavo"
+      ],
+      "steps": [
+        "Tostar el pan.",
+        "Untar aguacate y colocar pavo."
+      ]
+    },
+    "egg_white_mushroom": {
+      "name": "Revuelto de claras y champiñones",
+      "ingredients": [
+        "200 g claras",
+        "100 g champiñón laminado",
+        "Ajo",
+        "Aceite"
+      ],
+      "steps": [
+        "Saltear champiñones con ajo.",
+        "Añadir claras hasta cuajar."
+      ]
+    },
+    "apple_porridge": {
+      "name": "Porridge de avena y manzana",
+      "ingredients": [
+        "50 g avena",
+        "1 vaso leche/bebida vegetal",
+        "1 manzana",
+        "Canela"
+      ],
+      "steps": [
+        "Cocer avena con la leche 5 min.",
+        "Añadir manzana en dados y canela."
+      ]
+    },
+    "stuffed_peppers_soy": {
+      "name": "Pimientos rellenos de soja",
+      "ingredients": [
+        "2 pimientos",
+        "50 g soja texturizada",
+        "Tomate triturado"
+      ],
+      "steps": [
+        "Hidratar soja. Mezclar con tomate.",
+        "Rellenar pimientos y hornear 25 min."
+      ]
+    },
+    "express_couscous": {
+      "name": "Cuscús exprés",
+      "ingredients": [
+        "80 g cuscús",
+        "Zanahoria rallada",
+        "Pasas",
+        "Caldo"
+      ],
+      "steps": [
+        "Hervir mismo bol de caldo que de cuscús.",
+        "Verter sobre cuscús, tapar 5 min y ahuecar."
+      ]
+    },
+    "grilled_eggplant_cheese": {
+      "name": "Berenjena a la plancha con queso",
+      "ingredients": [
+        "1 berenjena",
+        "80 g queso fresco",
+        "Orégano"
+      ],
+      "steps": [
+        "Cortar berenjena a rodajas, hacer a la plancha.",
+        "Servir con rodajas de queso encima."
+      ]
+    },
+    "protein_smoothie_bowl": {
+      "name": "Smoothie Bowl proteico",
+      "ingredients": [
+        "1 plátano congelado",
+        "Queso quark",
+        "Un puñado de fresas"
+      ],
+      "steps": [
+        "Triturar plátano, fresas y quark.",
+        "Servir en bol muy frío."
+      ]
+    }
   }
 }

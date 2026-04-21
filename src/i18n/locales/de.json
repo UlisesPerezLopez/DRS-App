@@ -16,7 +16,8 @@
     "diary": "Tagebuch",
     "workout": "Training",
     "recipes": "Rezepte",
-    "profile": "Profil"
+    "profile": "Profil",
+    "stats": "Analytik"
   },
   "onboarding": {
     "title": "Willkommen bei DRS",
@@ -103,7 +104,10 @@
     "title": "Günstige Rezepte",
     "subtitle": "Einfach, schnell und auf Gewichtsverlust ausgerichtet.",
     "ingredients": "Zutaten",
-    "steps": "Zubereitung"
+    "steps": "Zubereitung",
+    "proteinLabel": "Protein",
+    "carbsLabel": "Kohlenhydrate",
+    "fatLabel": "Fett"
   },
   "dietTab": {
     "title": "Ernährungsplan",
@@ -266,5 +270,239 @@
   },
   "warnings": {
     "high_sodium": "⚠️ Achtung: Hoher Natriumgehalt. Kann Wassereinlagerungen verursachen."
+  },
+  "water": {
+    "title": "Flüssigkeitszufuhr",
+    "add_glass": "+250ml",
+    "remove_glass": "-250ml",
+    "target": "Ziel: {{target}} ml",
+    "consumed": "{{amount}} ml",
+    "glasses": "Gläser"
+  },
+  "stats": {
+    "title": "Analytik & Export",
+    "subtitle": "Visualisiere deinen Fortschritt und exportiere Daten.",
+    "exportTitle": "Daten exportieren",
+    "exportDesc": "Lade die komplette Profilhistorie herunter.",
+    "weightCalChart": "Gewicht & Kalorien (14 Tage)",
+    "waterTrainChart": "Flüssigkeit & Training (14 Tage)",
+    "weight": "Gewicht (kg)",
+    "calories": "Kalorien",
+    "water": "Wasser (ml)",
+    "training": "Training (min)"
+  },
+  "customFood": {
+    "createBtn": "➕ Neues Lebensmittel erstellen",
+    "createTitle": "Eigenes Lebensmittel erstellen",
+    "namePlaceholder": "Name des Lebensmittels",
+    "protein": "Protein (g)",
+    "carbs": "Kohlenhydrate (g)",
+    "fat": "Fett (g)",
+    "fiber": "Ballaststoffe (g)",
+    "sodium": "Natriumgehalt",
+    "sodiumLow": "Niedrig",
+    "sodiumMed": "Mittel",
+    "sodiumHigh": "Hoch",
+    "saveBtn": "Lebensmittel speichern"
+  },
+  "welcome": {
+    "title": "Willkommen",
+    "select_language": "Wähle deine Sprache",
+    "disclaimer_title": "Nachricht des Entwicklers",
+    "disclaimer_text": "Diese Anwendung befindet sich in der Entwicklungsphase und benötigt deine Hilfe, um vervollständigt und verbessert zu werden. Bitte sei kritisch und hilf mir, eine unvergleichlich großartige App zu entwickeln.",
+    "credits": "App erstellt von Ulises Pérez López, Junior-Entwickler für KI-Anwendungen und in Ausbildung für Programmierung und Entwicklung in KI-Umgebungen.",
+    "start_button": "Starten"
+  },
+  "recipeDb": {
+    "chicken_rice": {
+      "name": "Reis mit Hähnchen und Gemüse",
+      "ingredients": [
+        "80 g Reis",
+        "120 g Hähnchenbrust",
+        "Verschiedenes Gemüse",
+        "1 EL Öl"
+      ],
+      "steps": [
+        "Gemüse anbraten.",
+        "Hähnchen hinzufügen.",
+        "Reis kochen und alles vermischen."
+      ]
+    },
+    "spinach_omelette": {
+      "name": "Spinat-Omelett",
+      "ingredients": [
+        "3 Eier",
+        "150 g Spinat",
+        "Knoblauch",
+        "1 EL Öl"
+      ],
+      "steps": [
+        "Knoblauch und Spinat anbraten.",
+        "Eier verquirlen und in der Pfanne stocken lassen."
+      ]
+    },
+    "quick_lentils": {
+      "name": "Schnelle Linsen",
+      "ingredients": [
+        "200 g Linsen aus dem Glas",
+        "Karotte",
+        "Zwiebel",
+        "Paprikapulver"
+      ],
+      "steps": [
+        "Gemüse anschwitzen.",
+        "Linsen und etwas Wasser hinzufügen, 10 Min. kochen."
+      ]
+    },
+    "tuna_pasta": {
+      "name": "Vollkornnudeln mit Thunfisch",
+      "ingredients": [
+        "90 g Vollkornnudeln",
+        "1 Dose Thunfisch natur",
+        "Passierte Tomaten"
+      ],
+      "steps": [
+        "Nudeln kochen.",
+        "Warme Tomatensoße und abgetropften Thunfisch vermischen."
+      ]
+    },
+    "zucchini_cream": {
+      "name": "Zucchinicremesuppe",
+      "ingredients": [
+        "2 Zucchini",
+        "1 Kartoffel",
+        "Zwiebel",
+        "1 Schmelzkäse light"
+      ],
+      "steps": [
+        "Gemüse kochen.",
+        "Pürieren und Schmelzkäse hinzufügen."
+      ]
+    },
+    "chickpea_salad": {
+      "name": "Kichererbsensalat",
+      "ingredients": [
+        "150 g Kichererbsen aus dem Glas",
+        "Tomate",
+        "Gurke",
+        "Rote Zwiebel",
+        "Öl"
+      ],
+      "steps": [
+        "Kichererbsen abspülen.",
+        "Frisches Gemüse schneiden und anmachen."
+      ]
+    },
+    "lemon_chicken_sweetpotato": {
+      "name": "Zitronen-Hähnchen mit Süßkartoffel",
+      "ingredients": [
+        "150 g Hähnchenbrust",
+        "1 mittelgroße Süßkartoffel",
+        "Zitronensaft"
+      ],
+      "steps": [
+        "Süßkartoffel in der Mikrowelle garen (8 Min.).",
+        "Hähnchen mit Zitrone braten."
+      ]
+    },
+    "broken_eggs": {
+      "name": "Gesunde Spiegeleier mit Kartoffeln",
+      "ingredients": [
+        "2 Eier",
+        "1 große Kartoffel",
+        "Paprikapulver"
+      ],
+      "steps": [
+        "Kartoffel in Scheiben im Ofen/Mikrowelle garen.",
+        "Spiegeleier darauf braten."
+      ]
+    },
+    "avocado_turkey_toast": {
+      "name": "Avocado-Puten-Toast",
+      "ingredients": [
+        "2 Scheiben Vollkornbrot",
+        "Halbe Avocado",
+        "2 Scheiben Putenbrust"
+      ],
+      "steps": [
+        "Brot toasten.",
+        "Avocado verteilen und Pute darauflegen."
+      ]
+    },
+    "egg_white_mushroom": {
+      "name": "Eiweiß-Champignon-Rührei",
+      "ingredients": [
+        "200 g Eiweiß",
+        "100 g Champignons in Scheiben",
+        "Knoblauch",
+        "Öl"
+      ],
+      "steps": [
+        "Champignons mit Knoblauch anbraten.",
+        "Eiweiß hinzufügen und stocken lassen."
+      ]
+    },
+    "apple_porridge": {
+      "name": "Hafer-Apfel-Porridge",
+      "ingredients": [
+        "50 g Haferflocken",
+        "1 Glas Milch/Pflanzenmilch",
+        "1 Apfel",
+        "Zimt"
+      ],
+      "steps": [
+        "Haferflocken mit Milch 5 Min. kochen.",
+        "Apfelwürfel und Zimt hinzufügen."
+      ]
+    },
+    "stuffed_peppers_soy": {
+      "name": "Mit Soja gefüllte Paprika",
+      "ingredients": [
+        "2 Paprika",
+        "50 g Sojaschnetzel",
+        "Passierte Tomaten"
+      ],
+      "steps": [
+        "Soja einweichen und mit Tomaten mischen.",
+        "Paprika füllen und 25 Min. backen."
+      ]
+    },
+    "express_couscous": {
+      "name": "Express-Couscous",
+      "ingredients": [
+        "80 g Couscous",
+        "Geraspelte Karotte",
+        "Rosinen",
+        "Brühe"
+      ],
+      "steps": [
+        "Gleiche Menge Brühe wie Couscous aufkochen.",
+        "Über Couscous gießen, 5 Min. zugedeckt quellen lassen."
+      ]
+    },
+    "grilled_eggplant_cheese": {
+      "name": "Gegrillte Aubergine mit Käse",
+      "ingredients": [
+        "1 Aubergine",
+        "80 g Frischkäse",
+        "Oregano"
+      ],
+      "steps": [
+        "Aubergine in Scheiben schneiden und grillen.",
+        "Mit Käsescheiben servieren."
+      ]
+    },
+    "protein_smoothie_bowl": {
+      "name": "Protein Smoothie Bowl",
+      "ingredients": [
+        "1 gefrorene Banane",
+        "Quark",
+        "Eine Handvoll Erdbeeren"
+      ],
+      "steps": [
+        "Banane, Erdbeeren und Quark pürieren.",
+        "Sehr kalt in einer Schüssel servieren."
+      ]
+    }
   }
 }

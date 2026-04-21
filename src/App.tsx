@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   Home,
   Utensils,
@@ -9,7 +9,9 @@ import {
   Moon,
   Map,
   Apple,
+  BarChart3,
 } from "lucide-react";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAppStore } from "./store/useAppStore";
 import { Dashboard } from "./components/Dashboard";
@@ -19,23 +21,54 @@ import { Workout } from "./components/Workout";
 import { Recipes } from "./components/Recipes";
 import { JourneyPlan } from "./components/JourneyPlan";
 import { DietTab } from "./components/DietTab";
+import { StatsTab } from "./components/StatsTab";
+import { WelcomeScreen } from "./components/WelcomeScreen";
 import { todayISO } from "./lib/calc";
 
-type TabKey = "dashboard" | "journey" | "diet" | "diary" | "profile" | "workout" | "recipes";
+const NAV_ITEMS = [
+  { path: "/", icon: Home, labelKey: "tabs.dashboard" },
+  { path: "/plan", icon: Map, labelKey: "tabs.journey" },
+  { path: "/diet", icon: Apple, labelKey: "tabs.diet" },
+  { path: "/diary", icon: Utensils, labelKey: "tabs.diary" },
+  { path: "/workout", icon: Dumbbell, labelKey: "tabs.workout" },
+  { path: "/recipes", icon: ChefHat, labelKey: "tabs.recipes" },
+  { path: "/stats", icon: BarChart3, labelKey: "tabs.stats" },
+  { path: "/profile", icon: User, labelKey: "tabs.profile" },
+] as const;
+
+function BottomNav() {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  return (
+    <nav className="fixed bottom-0 inset-x-0 z-40 max-w-md mx-auto safe-bottom">
+      <div className="m-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg flex justify-between px-1 py-1.5">
+        {NAV_ITEMS.map((item) => {
+          const active = location.pathname === item.path;
+          const Icon = item.icon;
+          return (
+            <button
+              key={item.path}
+              onClick={() => navigate(item.path)}
+              className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-2 rounded-xl transition active:scale-95 ${
+                active
+                  ? "bg-emerald-500 text-white"
+                  : "text-slate-500 dark:text-slate-400"
+              }`}
+            >
+              <Icon size={20} />
+              <span className="text-[10px] font-medium">{t(item.labelKey)}</span>
+            </button>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}
 
 export default function App() {
   const { t } = useTranslation();
-  const [tab, setTab] = useState<TabKey>("dashboard");
-
-  const TABS: { key: TabKey; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
-    { key: "dashboard", label: t("tabs.dashboard"), icon: Home },
-    { key: "journey", label: t("tabs.journey"), icon: Map },
-    { key: "diet", label: t("tabs.diet"), icon: Apple },
-    { key: "diary", label: t("tabs.diary"), icon: Utensils },
-    { key: "workout", label: t("tabs.workout"), icon: Dumbbell },
-    { key: "recipes", label: t("tabs.recipes"), icon: ChefHat },
-    { key: "profile", label: t("tabs.profile"), icon: User },
-  ];
 
   const theme = useAppStore(s => s.theme);
   const setTheme = useAppStore(s => s.setTheme);
@@ -43,6 +76,7 @@ export default function App() {
   const accounts = useAppStore(s => s.accounts);
   const setWeights = useAppStore(s => s.setWeights);
   const createAccount = useAppStore(s => s.createAccount);
+  const hasSeenWelcome = useAppStore(s => s.hasSeenWelcome);
 
   const activeAccount = activeAccountId ? accounts[activeAccountId] : null;
 
@@ -62,6 +96,11 @@ export default function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeAccount?.profile.weightKg, activeAccountId]);
+
+  // Gate: show welcome screen for first-time users
+  if (!hasSeenWelcome) {
+    return <WelcomeScreen />;
+  }
 
   if (!activeAccount) {
     return (
@@ -110,40 +149,22 @@ export default function App() {
         </div>
       </div>
 
-      {/* Content */}
+      {/* Routed Content */}
       <main>
-        {tab === "dashboard" && <Dashboard />}
-        {tab === "journey" && <JourneyPlan />}
-        {tab === "diet" && <DietTab />}
-        {tab === "diary" && <MealDiary />}
-        {tab === "profile" && <ProfileTab />}
-        {tab === "workout" && <Workout />}
-        {tab === "recipes" && <Recipes />}
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/plan" element={<JourneyPlan />} />
+          <Route path="/diet" element={<DietTab />} />
+          <Route path="/diary" element={<MealDiary />} />
+          <Route path="/workout" element={<Workout />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/stats" element={<StatsTab />} />
+          <Route path="/profile" element={<ProfileTab />} />
+        </Routes>
       </main>
 
       {/* Bottom nav */}
-      <nav className="fixed bottom-0 inset-x-0 z-40 max-w-md mx-auto safe-bottom">
-        <div className="m-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg flex justify-between px-1 py-1.5">
-          {TABS.map((t) => {
-            const active = tab === t.key;
-            const Icon = t.icon;
-            return (
-              <button
-                key={t.key}
-                onClick={() => setTab(t.key)}
-                className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-2 rounded-xl transition active:scale-95 ${
-                  active
-                    ? "bg-emerald-500 text-white"
-                    : "text-slate-500 dark:text-slate-400"
-                }`}
-              >
-                <Icon size={20} />
-                <span className="text-[10px] font-medium">{t.label}</span>
-              </button>
-            );
-          })}
-        </div>
-      </nav>
+      <BottomNav />
     </div>
   );
 }

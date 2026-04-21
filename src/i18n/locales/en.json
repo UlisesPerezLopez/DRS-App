@@ -16,7 +16,8 @@
     "diary": "Diary",
     "workout": "Workout",
     "recipes": "Recipes",
-    "profile": "Profile"
+    "profile": "Profile",
+    "stats": "Analytics"
   },
   "onboarding": {
     "title": "Welcome to DRS",
@@ -103,7 +104,10 @@
     "title": "Low-Cost Recipes",
     "subtitle": "Easy, fast and weight-loss oriented.",
     "ingredients": "Ingredients",
-    "steps": "Preparation"
+    "steps": "Preparation",
+    "proteinLabel": "Protein",
+    "carbsLabel": "Carbs",
+    "fatLabel": "Fat"
   },
   "dietTab": {
     "title": "Nutritional Plan",
@@ -266,5 +270,239 @@
   },
   "warnings": {
     "high_sodium": "⚠️ Warning: High sodium. May cause water retention."
+  },
+  "water": {
+    "title": "Hydration",
+    "add_glass": "+250ml",
+    "remove_glass": "-250ml",
+    "target": "Target: {{target}} ml",
+    "consumed": "{{amount}} ml",
+    "glasses": "glasses"
+  },
+  "stats": {
+    "title": "Analytics & Export",
+    "subtitle": "Visualize your progress and export your data.",
+    "exportTitle": "Export Data",
+    "exportDesc": "Download the complete profile history.",
+    "weightCalChart": "Weight & Calories (14 days)",
+    "waterTrainChart": "Hydration & Training (14 days)",
+    "weight": "Weight (kg)",
+    "calories": "Calories",
+    "water": "Water (ml)",
+    "training": "Training (min)"
+  },
+  "customFood": {
+    "createBtn": "➕ Create new food",
+    "createTitle": "Create Custom Food",
+    "namePlaceholder": "Food name",
+    "protein": "Protein (g)",
+    "carbs": "Carbs (g)",
+    "fat": "Fat (g)",
+    "fiber": "Fiber (g)",
+    "sodium": "Sodium Level",
+    "sodiumLow": "Low",
+    "sodiumMed": "Medium",
+    "sodiumHigh": "High",
+    "saveBtn": "Save Food"
+  },
+  "welcome": {
+    "title": "Welcome",
+    "select_language": "Select your language",
+    "disclaimer_title": "Developer's Message",
+    "disclaimer_text": "This application is in the development phase and needs your help to be completed and improved. Please be critical and help me make an unbeatably great app.",
+    "credits": "App created by Ulises Pérez López, Junior AI App Developer and student in programming and development in AI environments.",
+    "start_button": "Start"
+  },
+  "recipeDb": {
+    "chicken_rice": {
+      "name": "Chicken Rice with Vegetables",
+      "ingredients": [
+        "80 g rice",
+        "120 g chicken breast",
+        "Mixed vegetables",
+        "1 tbsp oil"
+      ],
+      "steps": [
+        "Sauté vegetables.",
+        "Add chicken.",
+        "Cook rice meanwhile and combine."
+      ]
+    },
+    "spinach_omelette": {
+      "name": "Spinach Omelette",
+      "ingredients": [
+        "3 eggs",
+        "150 g spinach",
+        "Garlic",
+        "1 tbsp oil"
+      ],
+      "steps": [
+        "Sauté garlic and spinach.",
+        "Whisk eggs and cook in pan."
+      ]
+    },
+    "quick_lentils": {
+      "name": "Quick Lentils",
+      "ingredients": [
+        "200 g canned lentils",
+        "Carrot",
+        "Onion",
+        "Paprika"
+      ],
+      "steps": [
+        "Sauté vegetables.",
+        "Add lentils and a splash of water, cook 10 min."
+      ]
+    },
+    "tuna_pasta": {
+      "name": "Whole Wheat Tuna Pasta",
+      "ingredients": [
+        "90 g whole wheat pasta",
+        "1 can tuna in water",
+        "Crushed tomatoes"
+      ],
+      "steps": [
+        "Cook pasta.",
+        "Mix warm tomato sauce with drained tuna."
+      ]
+    },
+    "zucchini_cream": {
+      "name": "Zucchini Cream Soup",
+      "ingredients": [
+        "2 zucchini",
+        "1 potato",
+        "Onion",
+        "1 light cheese wedge"
+      ],
+      "steps": [
+        "Boil vegetables.",
+        "Blend adding the cheese."
+      ]
+    },
+    "chickpea_salad": {
+      "name": "Chickpea Salad",
+      "ingredients": [
+        "150 g canned chickpeas",
+        "Tomato",
+        "Cucumber",
+        "Red onion",
+        "Oil"
+      ],
+      "steps": [
+        "Rinse chickpeas.",
+        "Chop fresh vegetables and dress."
+      ]
+    },
+    "lemon_chicken_sweetpotato": {
+      "name": "Lemon Chicken with Sweet Potato",
+      "ingredients": [
+        "150 g chicken breast",
+        "1 medium sweet potato",
+        "Lemon juice"
+      ],
+      "steps": [
+        "Microwave sweet potato (8 min).",
+        "Pan-grill chicken with lemon."
+      ]
+    },
+    "broken_eggs": {
+      "name": "Healthy Broken Eggs",
+      "ingredients": [
+        "2 eggs",
+        "1 large potato",
+        "Paprika"
+      ],
+      "steps": [
+        "Bake potato slices in oven/microwave.",
+        "Fry eggs on top."
+      ]
+    },
+    "avocado_turkey_toast": {
+      "name": "Avocado Turkey Toast",
+      "ingredients": [
+        "2 slices whole wheat bread",
+        "Half avocado",
+        "2 slices turkey breast"
+      ],
+      "steps": [
+        "Toast the bread.",
+        "Spread avocado and place turkey on top."
+      ]
+    },
+    "egg_white_mushroom": {
+      "name": "Egg White & Mushroom Scramble",
+      "ingredients": [
+        "200 g egg whites",
+        "100 g sliced mushrooms",
+        "Garlic",
+        "Oil"
+      ],
+      "steps": [
+        "Sauté mushrooms with garlic.",
+        "Add egg whites and scramble."
+      ]
+    },
+    "apple_porridge": {
+      "name": "Apple Oat Porridge",
+      "ingredients": [
+        "50 g oats",
+        "1 glass milk/plant milk",
+        "1 apple",
+        "Cinnamon"
+      ],
+      "steps": [
+        "Cook oats with milk for 5 min.",
+        "Add diced apple and cinnamon."
+      ]
+    },
+    "stuffed_peppers_soy": {
+      "name": "Soy-Stuffed Peppers",
+      "ingredients": [
+        "2 bell peppers",
+        "50 g textured soy",
+        "Crushed tomatoes"
+      ],
+      "steps": [
+        "Hydrate soy and mix with tomato.",
+        "Stuff peppers and bake 25 min."
+      ]
+    },
+    "express_couscous": {
+      "name": "Express Couscous",
+      "ingredients": [
+        "80 g couscous",
+        "Grated carrot",
+        "Raisins",
+        "Broth"
+      ],
+      "steps": [
+        "Boil equal parts broth and couscous.",
+        "Pour over couscous, cover 5 min and fluff."
+      ]
+    },
+    "grilled_eggplant_cheese": {
+      "name": "Grilled Eggplant with Cheese",
+      "ingredients": [
+        "1 eggplant",
+        "80 g fresh cheese",
+        "Oregano"
+      ],
+      "steps": [
+        "Slice eggplant and grill.",
+        "Serve with cheese slices on top."
+      ]
+    },
+    "protein_smoothie_bowl": {
+      "name": "Protein Smoothie Bowl",
+      "ingredients": [
+        "1 frozen banana",
+        "Quark cheese",
+        "A handful of strawberries"
+      ],
+      "steps": [
+        "Blend banana, strawberries and quark.",
+        "Serve very cold in a bowl."
+      ]
+    }
   }
 }

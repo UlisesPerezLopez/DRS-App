@@ -16,7 +16,8 @@
     "diary": "Journal",
     "workout": "Exercice",
     "recipes": "Recettes",
-    "profile": "Profil"
+    "profile": "Profil",
+    "stats": "Analytique"
   },
   "onboarding": {
     "title": "Bienvenue sur DRS",
@@ -103,7 +104,10 @@
     "title": "Recettes à bas prix",
     "subtitle": "Faciles, rapides et orientées vers la perte de poids.",
     "ingredients": "Ingrédients",
-    "steps": "Préparation"
+    "steps": "Préparation",
+    "proteinLabel": "Protéines",
+    "carbsLabel": "Glucides",
+    "fatLabel": "Lipides"
   },
   "dietTab": {
     "title": "Plan Nutritionnel",
@@ -266,5 +270,239 @@
   },
   "warnings": {
     "high_sodium": "⚠️ Attention : Forte teneur en sodium. Peut causer de la rétention d'eau."
+  },
+  "water": {
+    "title": "Hydratation",
+    "add_glass": "+250ml",
+    "remove_glass": "-250ml",
+    "target": "Objectif : {{target}} ml",
+    "consumed": "{{amount}} ml",
+    "glasses": "verres"
+  },
+  "stats": {
+    "title": "Analytique & Exportation",
+    "subtitle": "Visualisez vos progrès et exportez vos données.",
+    "exportTitle": "Exporter les données",
+    "exportDesc": "Téléchargez l'historique complet du profil.",
+    "weightCalChart": "Poids & Calories (14 jours)",
+    "waterTrainChart": "Hydratation & Entraînement (14 jours)",
+    "weight": "Poids (kg)",
+    "calories": "Calories",
+    "water": "Eau (ml)",
+    "training": "Entraînement (min)"
+  },
+  "customFood": {
+    "createBtn": "➕ Créer un nouvel aliment",
+    "createTitle": "Créer un Aliment Personnalisé",
+    "namePlaceholder": "Nom de l'aliment",
+    "protein": "Protéines (g)",
+    "carbs": "Glucides (g)",
+    "fat": "Lipides (g)",
+    "fiber": "Fibres (g)",
+    "sodium": "Niveau de Sodium",
+    "sodiumLow": "Bas",
+    "sodiumMed": "Moyen",
+    "sodiumHigh": "Élevé",
+    "saveBtn": "Enregistrer l'aliment"
+  },
+  "welcome": {
+    "title": "Bienvenue",
+    "select_language": "Choisissez votre langue",
+    "disclaimer_title": "Message du Développeur",
+    "disclaimer_text": "Cette application est en phase de développement et a besoin de votre aide pour être complétée et améliorée. Soyez critique et aidez-moi à créer une application exceptionnelle.",
+    "credits": "Application créée par Ulises Pérez López, développeur Junior d'applications IA et étudiant en formation de programmation et développement dans des environnements IA.",
+    "start_button": "Commencer"
+  },
+  "recipeDb": {
+    "chicken_rice": {
+      "name": "Riz au poulet et légumes",
+      "ingredients": [
+        "80 g riz",
+        "120 g blanc de poulet",
+        "Légumes variés",
+        "1 c.à.s huile"
+      ],
+      "steps": [
+        "Faire revenir les légumes.",
+        "Ajouter le poulet.",
+        "Cuire le riz et mélanger."
+      ]
+    },
+    "spinach_omelette": {
+      "name": "Omelette aux épinards",
+      "ingredients": [
+        "3 œufs",
+        "150 g épinards",
+        "Ail",
+        "1 c.à.s huile"
+      ],
+      "steps": [
+        "Faire sauter l'ail et les épinards.",
+        "Battre les œufs et cuire dans la poêle."
+      ]
+    },
+    "quick_lentils": {
+      "name": "Lentilles rapides",
+      "ingredients": [
+        "200 g lentilles en conserve",
+        "Carotte",
+        "Oignon",
+        "Paprika"
+      ],
+      "steps": [
+        "Faire revenir les légumes.",
+        "Ajouter les lentilles et un peu d'eau, cuire 10 min."
+      ]
+    },
+    "tuna_pasta": {
+      "name": "Pâtes complètes au thon",
+      "ingredients": [
+        "90 g pâtes complètes",
+        "1 boîte thon au naturel",
+        "Tomates concassées"
+      ],
+      "steps": [
+        "Cuire les pâtes.",
+        "Mélanger la sauce tomate chaude et le thon égoutté."
+      ]
+    },
+    "zucchini_cream": {
+      "name": "Velouté de courgettes",
+      "ingredients": [
+        "2 courgettes",
+        "1 pomme de terre",
+        "Oignon",
+        "1 fromage fondu light"
+      ],
+      "steps": [
+        "Faire bouillir les légumes.",
+        "Mixer en ajoutant le fromage."
+      ]
+    },
+    "chickpea_salad": {
+      "name": "Salade de pois chiches",
+      "ingredients": [
+        "150 g pois chiches en conserve",
+        "Tomate",
+        "Concombre",
+        "Oignon rouge",
+        "Huile"
+      ],
+      "steps": [
+        "Rincer les pois chiches.",
+        "Couper les légumes frais et assaisonner."
+      ]
+    },
+    "lemon_chicken_sweetpotato": {
+      "name": "Poulet au citron et patate douce",
+      "ingredients": [
+        "150 g blanc de poulet",
+        "1 patate douce moyenne",
+        "Jus de citron"
+      ],
+      "steps": [
+        "Cuire la patate douce au micro-ondes (8 min).",
+        "Griller le poulet au citron."
+      ]
+    },
+    "broken_eggs": {
+      "name": "Œufs cassés santé",
+      "ingredients": [
+        "2 œufs",
+        "1 grosse pomme de terre",
+        "Paprika"
+      ],
+      "steps": [
+        "Cuire les rondelles de pomme de terre au four/micro-ondes.",
+        "Frire les œufs dessus."
+      ]
+    },
+    "avocado_turkey_toast": {
+      "name": "Toasts avocat-dinde",
+      "ingredients": [
+        "2 tranches pain complet",
+        "Demi-avocat",
+        "2 tranches de dinde"
+      ],
+      "steps": [
+        "Toaster le pain.",
+        "Tartiner l'avocat et placer la dinde."
+      ]
+    },
+    "egg_white_mushroom": {
+      "name": "Brouillé de blancs d'œufs aux champignons",
+      "ingredients": [
+        "200 g blancs d'œufs",
+        "100 g champignons émincés",
+        "Ail",
+        "Huile"
+      ],
+      "steps": [
+        "Faire sauter les champignons à l'ail.",
+        "Ajouter les blancs et brouiller."
+      ]
+    },
+    "apple_porridge": {
+      "name": "Porridge pomme-avoine",
+      "ingredients": [
+        "50 g flocons d'avoine",
+        "1 verre lait/boisson végétale",
+        "1 pomme",
+        "Cannelle"
+      ],
+      "steps": [
+        "Cuire les flocons avec le lait 5 min.",
+        "Ajouter la pomme en dés et la cannelle."
+      ]
+    },
+    "stuffed_peppers_soy": {
+      "name": "Poivrons farcis au soja",
+      "ingredients": [
+        "2 poivrons",
+        "50 g protéines de soja",
+        "Tomates concassées"
+      ],
+      "steps": [
+        "Réhydrater le soja et mélanger à la tomate.",
+        "Farcir les poivrons et enfourner 25 min."
+      ]
+    },
+    "express_couscous": {
+      "name": "Couscous express",
+      "ingredients": [
+        "80 g couscous",
+        "Carotte râpée",
+        "Raisins secs",
+        "Bouillon"
+      ],
+      "steps": [
+        "Faire bouillir autant de bouillon que de couscous.",
+        "Verser sur le couscous, couvrir 5 min et égrainer."
+      ]
+    },
+    "grilled_eggplant_cheese": {
+      "name": "Aubergine grillée au fromage",
+      "ingredients": [
+        "1 aubergine",
+        "80 g fromage frais",
+        "Origan"
+      ],
+      "steps": [
+        "Couper l'aubergine en rondelles et griller.",
+        "Servir avec des rondelles de fromage."
+      ]
+    },
+    "protein_smoothie_bowl": {
+      "name": "Smoothie Bowl protéiné",
+      "ingredients": [
+        "1 banane congelée",
+        "Fromage blanc",
+        "Une poignée de fraises"
+      ],
+      "steps": [
+        "Mixer banane, fraises et fromage blanc.",
+        "Servir très froid dans un bol."
+      ]
+    }
   }
 }
