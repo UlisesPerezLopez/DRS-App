@@ -269,7 +269,9 @@
     "1 cucharada (21g)": "1 cucchiaio (21g)"
   },
   "warnings": {
-    "high_sodium": "⚠️ Attenzione: Alto contenuto di sodio. Può causare ritenzione idrica."
+    "high_sodium": "⚠️ Attenzione: Alto contenuto di sodio. Può causare ritenzione idrica.",
+    "plan_high_sodium": "⚠️ Attenzione: Bevi 500ml di acqua in più oggi per compensare il sodio.",
+    "plan_high_potassium": "✅ Ideale per equilibrare la pressione sanguigna."
   },
   "water": {
     "title": "Idratazione",
@@ -504,5 +506,186 @@
         "Servire molto freddo in una ciotola."
       ]
     }
+  },
+  "plans": {
+    "med": {
+      "w1_d1": {
+        "breakfast": "Caffè con latte scremato + Toast di segale (60g) con pomodoro e 10g di olio EVO + 2 fette di tacchino.",
+        "lunch": "Lenticchie in umido con carota, peperone e cipolla (250g cotte) + Insalata verde.",
+        "snack": "1 Mela + 20g di Noci.",
+        "dinner": "Orata al forno su letto di zucchine e cipolla + 1 fetta di ananas fresco."
+      },
+      "w1_d2": {
+        "breakfast": "Yogurt greco 0% con 30g di avena e mirtilli + Caffellatte.",
+        "lunch": "Pollo al forno (200g) con erbe provenzali e patata arrosto (150g) + Asparagi selvatici.",
+        "snack": "1 Banana (potassio per la pressione) + Caffè.",
+        "dinner": "Insalata Mista completa: Tonno al naturale, uovo sodo, valerianella, pomodoro e olive."
+      },
+      "w1_d3": {
+        "breakfast": "Caffellatte + Panino integrale con formaggio fresco e rucola.",
+        "lunch": "Ceci con spinaci e paprika (250g cotti) + 1 fetta di pane integrale.",
+        "snack": "1 Yogurt naturale + 15g di mandorle.",
+        "dinner": "Frittata (2 uova) con funghi saltati e insalata di pomodori."
+      },
+      "w1_d4": {
+        "breakfast": "Caffellatte + Toast di segale con avocado (50g) e uovo in camicia.",
+        "lunch": "Riso integrale con verdure saltate (funghi, broccoli) e strisce di tacchino (150g).",
+        "snack": "1 Pera + Caffellatte.",
+        "dinner": "Salmone alla piastra (150g) con fagiolini lessati e un tocco di limone."
+      },
+      "w1_d5": {
+        "breakfast": "Yogurt greco 0% con avena e 1 noce tritata + Caffè.",
+        "lunch": "Pasta integrale (70g a crudo) con salsa di pomodoro, basilico e macinato di pollo (100g).",
+        "snack": "1 Kiwi + Formaggio fresco (100g).",
+        "dinner": "Nasello al vapore con piselli e carote baby. Condimento: 5ml di olio EVO."
+      },
+      "w1_d6": {
+        "breakfast": "Caffellatte + Panino integrale piccolo con prosciutto crudo e pomodoro.",
+        "lunch": "Paella di verdure e carne magra (Porzione moderata: 200g) + Insalata di cetrioli.",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Petto di pollo alla piastra con purè di zucca e zenzero."
+      },
+      "w1_d7": {
+        "breakfast": "Frittata di 2 albumi e 1 tuorlo con spinaci + Caffellatte.",
+        "lunch": "Baccalà con pomodoro e peperoni arrostiti + 2 fette biscottate integrali.",
+        "snack": "Macedonia di frutta di stagione.",
+        "dinner": "Tapas Sane: Hummus (80g) con bastoncini di carota e 1 scatoletta di sardine in olio EVO."
+      },
+      "w2_d1": {
+        "breakfast": "Caffellatte + Toast di segale (60g) con fiocchi di latte e fragole affettate.",
+        "lunch": "Insalata di Ceci: 200g ceci, cetriolo, peperone, cipolla rossa e 1 scatoletta di sgombro.",
+        "snack": "1 Yogurt naturale + 15g di Noci.",
+        "dinner": "Petto di tacchino alla piastra con purè di patata dolce (100g) e valerianella."
+      },
+      "w2_d2": {
+        "breakfast": "Yogurt greco 0% con 30g di avena e 1 kiwi + Caffellatte.",
+        "lunch": "Coniglio o Pollo all'aglio (200g) con funghi e 2 patate piccole arrosto.",
+        "snack": "1 Mela + 20g di Mandorle.",
+        "dinner": "Uova strapazzate con asparagi e gamberi (2 uova) + Insalata di pomodori."
+      },
+      "w2_d3": {
+        "breakfast": "Caffellatte + Panino integrale con prosciutto cotto e fette di pomodoro.",
+        "lunch": "Penne integrali (70g a crudo) con tonno naturale, olive e salsa di pomodoro fatta in casa.",
+        "snack": "1 Arancia + 15g di Pistacchi.",
+        "dinner": "Branzino al forno con peperoni rossi arrostiti e melanzana grigliata."
+      },
+      "w2_d4": {
+        "breakfast": "Caffellatte + Toast di segale con avocado (50g) e semi di chia.",
+        "lunch": "Lenticchie con riso integrale: 150g lenticchie cotte + 50g riso cotto + verdure.",
+        "snack": "Formaggio fresco (150g) con un tocco di cannella.",
+        "dinner": "Burger di pollo (senza panino) con insalata di rucola, noci e cipolla arrostita."
+      },
+      "w2_d5": {
+        "breakfast": "Frittata di 2 albumi e 1 tuorlo con tacchino + Caffè con latte scremato.",
+        "lunch": "Seppia alla piastra con aglio e prezzemolo + Insalata di patate (150g) e fagiolini.",
+        "snack": "1 Banana + Caffè.",
+        "dinner": "Vellutata di verdure di stagione (senza panna) + Frittata semplice."
+      },
+      "w2_d6": {
+        "breakfast": "Caffellatte + Toast di segale con olio d'oliva (10ml) e prosciutto crudo.",
+        "lunch": "Cuscus integrale con verdure e strisce di manzo magro (120g) + Peperoni saltati.",
+        "snack": "1 Pera + 20g di Nocciole.",
+        "dinner": "Spiedini di tacchino e ananas alla piastra con insalata di spinaci freschi."
+      },
+      "w2_d7": {
+        "breakfast": "Porridge di avena (40g) con latte e mezza mela a pezzi + Caffè.",
+        "lunch": "Marmitako di Tonno leggero (Tonno, patata, peperone, cipolla) + Insalata di cetrioli.",
+        "snack": "Macedonia di frutta (Anguria, melone, arancia).",
+        "dinner": "Piatto Mediterraneo: Hummus, 1 uovo sodo, sedano e 3 fette di lonza stagionata."
+      },
+      "w3_d1": {
+        "breakfast": "Caffellatte + Toast di segale con uovo al tegamino (poco olio) e pepe.",
+        "lunch": "Fagioli bianchi in umido con tante verdure (fagiolini, carota e zucca).",
+        "snack": "1 Yogurt greco 0% con semi di chia.",
+        "dinner": "Petto di pollo con broccoli al vapore e un tocco di senape antica."
+      },
+      "w3_d2": {
+        "breakfast": "Porridge di avena (40g) con mela e cannella + Caffellatte.",
+        "lunch": "Trota alla navarra (al forno con fetta di prosciutto crudo) + 150g patate lesse.",
+        "snack": "20g di Noci + 1 Pesca o Pera.",
+        "dinner": "Crema di spinaci (senza latticini) + 1 uovo sodo tritato sopra."
+      },
+      "w3_d3": {
+        "breakfast": "Caffellatte + Toast di segale con tacchino e fette di pomodoro fresco.",
+        "lunch": "Peperoni ripieni di tacchino e riso integrale (70g riso cotto + 100g tacchino macinato).",
+        "snack": "Fiocchi di latte (100g) con mirtilli freschi.",
+        "dinner": "Seppia saltata con carciofi e aglio."
+      },
+      "w3_d4": {
+        "breakfast": "Yogurt greco 0% con 30g di avena e 1 kiwi + Caffellatte.",
+        "lunch": "Quinoa con pollo e verdure: 60g quinoa (cruda), 150g pollo, zucchine e peperone.",
+        "snack": "1 Arancia + 15g di mandorle naturali.",
+        "dinner": "Frittata di funghi (2 uova) con insalata di valerianella e ravanelli."
+      },
+      "w3_d5": {
+        "breakfast": "Caffellatte + Toast di segale con avocado (50g) e un filo di limone.",
+        "lunch": "Baccalà al forno in crosta di erbe su letto di asparagi e cipolla.",
+        "snack": "Skyr (150g) con 10g di noci tritate.",
+        "dinner": "Carpaccio di zucchine con tonno naturale, limone, pepe e 5g di parmigiano."
+      },
+      "w3_d6": {
+        "breakfast": "Uova strapazzate 2 albumi e 1 tuorlo con spinaci freschi + Caffellatte.",
+        "lunch": "Stufato di manzo magro con piselli, carota e un po' di vino bianco.",
+        "snack": "Insalata di frutta fresca di stagione.",
+        "dinner": "Pesce spada alla piastra con purè di melanzane arrostite."
+      },
+      "w3_d7": {
+        "breakfast": "Caffellatte + Toast di segale con olio EVO (10ml) e spicchio d'aglio strofinato.",
+        "lunch": "Frittata di patate salutare (patata al vapore) + Insalata di pomodoro e cetriolo.",
+        "snack": "20g di Pistacchi + 1 Pera.",
+        "dinner": "Gamberi al forno con aglio e prezzemolo + Hummus con bastoncini di carota."
+      },
+      "w4_d1": {
+        "breakfast": "Caffellatte + Toast di segale con formaggio fresco e noci (15g).",
+        "lunch": "Polpette di tacchino fatte in casa in salsa di pomodoro con piselli.",
+        "snack": "1 Mela + 15g di mandorle.",
+        "dinner": "Insalata di spinaci, fragole, caprino (20g) e strisce di pollo."
+      },
+      "w4_d2": {
+        "breakfast": "Porridge di avena (40g) con mirtilli e semi di lino + Caffè.",
+        "lunch": "Zuppa di ceci e bietole (o spinaci) con un tocco di cumino.",
+        "snack": "1 Banana + Caffellatte.",
+        "dinner": "Uova strapazzate con zucchine e cipolla (2 uova) + 2 fette di prosciutto crudo magro."
+      },
+      "w4_d3": {
+        "breakfast": "Caffellatte + Panino integrale con tonno naturale e valerianella.",
+        "lunch": "Spaghetti integrali con gamberi, aglio, peperoncino e 10ml di olio EVO.",
+        "snack": "Yogurt greco 0% con mezza pera a dadini.",
+        "dinner": "Petto di pollo all'arancia (cotto nel succo naturale) con asparagi."
+      },
+      "w4_d4": {
+        "breakfast": "Caffellatte + Toast di segale con avocado e uovo in camicia.",
+        "lunch": "Insalata di Lenticchie fredde: peperone, cipolla, pomodoro e 1 scatoletta di sardine (scolate).",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Baccalà al forno in crosta di mandorle con broccoli."
+      },
+      "w4_d5": {
+        "breakfast": "Quark magro (200g) con 10g di noci e cannella + Caffellatte.",
+        "lunch": "Riso integrale con funghi e coniglio (o pollo) + Insalata di ravanelli.",
+        "snack": "1 Mela + Caffè.",
+        "dinner": "Frittata di tacchino e formaggio light + Crema di zucca."
+      },
+      "w4_d6": {
+        "breakfast": "Caffellatte + Toast di segale con pomodoro, olio EVO e un po' di origano.",
+        "lunch": "Melanzane ripiene di carne macinata di manzo magro e verdure (senza gratinatura).",
+        "snack": "1 Kiwi + 15g di noci.",
+        "dinner": "Spiedini di nasello e gamberi alla piastra con fagiolini."
+      },
+      "w4_d7": {
+        "breakfast": "Uova strapazzate (2) con funghi + Caffè con latte scremato.",
+        "lunch": "Stufato di patate con calamari (o seppia) e piselli + Insalata mista.",
+        "snack": "Formaggio fresco con fragole.",
+        "dinner": "Pulizia del Frigo: Hummus, uovo sodo, peperoni arrostiti e bastoncini di tacchino."
+      }
+    },
+    "planTitle": "Piano Mediterraneo · 28 Giorni",
+    "planSubtitle": "Menu clinicamente equilibrato per una perdita di peso sana",
+    "weekLabel": "Settimana",
+    "dayLabel": "Giorno",
+    "breakfastLabel": "Colazione",
+    "lunchLabel": "Pranzo",
+    "snackLabel": "Merenda",
+    "dinnerLabel": "Cena",
+    "kcalLabel": "kcal/giorno"
   }
 }

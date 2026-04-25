@@ -269,7 +269,9 @@
     "1 cucharada (21g)": "1 cucharada (21g)"
   },
   "warnings": {
-    "high_sodium": "⚠️ Cuidado: Alto en sodio. Puede causar retención de líquidos."
+    "high_sodium": "⚠️ Cuidado: Alto en sodio. Puede causar retención de líquidos.",
+    "plan_high_sodium": "⚠️ Cuidado: Bebe 500ml extra de agua hoy para compensar el sodio.",
+    "plan_high_potassium": "✅ Ideal para equilibrar la tensión arterial."
   },
   "water": {
     "title": "Hidratación",
@@ -504,5 +506,186 @@
         "Servir en bol muy frío."
       ]
     }
+  },
+  "plans": {
+    "med": {
+      "w1_d1": {
+        "breakfast": "Café con leche desnatada + Tostada de centeno (60g) con tomate y 10g de AOVE + 2 lonchas de pavo.",
+        "lunch": "Lentejas estofadas con zanahoria, pimiento y cebolla (250g cocidas) + Ensalada verde.",
+        "snack": "1 Manzana + 20g de Nueces.",
+        "dinner": "Dorada al horno con cama de calabacín y cebolla + 1 rodaja de piña natural."
+      },
+      "w1_d2": {
+        "breakfast": "Yogur griego 0% con 30g de avena y arándanos + Café con leche.",
+        "lunch": "Pollo al horno (200g) con hierbas provenzales y patata asada (150g) + Espárragos trigueros.",
+        "snack": "1 Plátano (potasio para la tensión) + Café.",
+        "dinner": "Ensalada Mixta completa: Atún al natural, huevo duro, canónigos, tomate y olivas."
+      },
+      "w1_d3": {
+        "breakfast": "Café con leche + Sandwich integral de queso fresco batido y rúcula.",
+        "lunch": "Garbanzos con espinacas y un toque de pimentón (250g cocidas) + 1 rodaja de pan integral.",
+        "snack": "1 Yogur natural + 15g de almendras.",
+        "dinner": "Tortilla francesa (2 huevos) con champiñones salteados y ensalada de tomate."
+      },
+      "w1_d4": {
+        "breakfast": "Café con leche + Tostada de centeno con aguacate (50g) y huevo poché.",
+        "lunch": "Arroz integral con verduras salteadas (setas, brócoli) y tiras de pavo (150g).",
+        "snack": "1 Pera + Café con leche.",
+        "dinner": "Salmón a la plancha (150g) con judías verdes hervidas y un toque de limón."
+      },
+      "w1_d5": {
+        "breakfast": "Yogur griego 0% con avena y 1 nuez picada + Café.",
+        "lunch": "Pasta integral (70g en crudo) con salsa de tomate natural, albahaca y carne picada de pollo (100g).",
+        "snack": "1 Kiwi + Queso fresco batido (100g).",
+        "dinner": "Merluza al vapor con guisantes y zanahoria baby. Aliño: 5ml de AOVE."
+      },
+      "w1_d6": {
+        "breakfast": "Café con leche + Bocadillo pequeño integral con jamón serrano y tomate.",
+        "lunch": "Paella de verduras y magro (Ración moderada: 200g) + Ensalada de pepino.",
+        "snack": "1 Naranja + 20g de pistachos.",
+        "dinner": "Pechuga de pollo a la plancha con puré de calabaza y jengibre."
+      },
+      "w1_d7": {
+        "breakfast": "Tortilla de 2 claras y 1 yema con espinacas + Café con leche.",
+        "lunch": "Bacalao con tomate y pimientos asados + 2 biscotes de pan integral.",
+        "snack": "Macedonia de frutas de temporada.",
+        "dinner": "Cena de Picoteo Sano: Hummus (80g) con palitos de zanahoria y 1 lata de sardinas en AOVE."
+      },
+      "w2_d1": {
+        "breakfast": "Café con leche + Tostada de centeno (60g) con queso Cottage y fresas laminadas.",
+        "lunch": "Ensalada de Garbanzos: 200g garbanzos, pepino, pimiento, cebolla roja y 1 lata de caballa.",
+        "snack": "1 Yogur natural + 15g de Nueces.",
+        "dinner": "Pechuga de pavo a la plancha con puré de boniato (100g) y canónigos."
+      },
+      "w2_d2": {
+        "breakfast": "Yogur griego 0% con 30g de avena y 1 kiwi + Café con leche.",
+        "lunch": "Conejo o Pollo al ajillo (200g) con champiñones y 2 patatas pequeñas asadas.",
+        "snack": "1 Manzana + 20g de Almendras.",
+        "dinner": "Revuelto de espárragos y gambas (2 huevos) + Ensalada de tomate."
+      },
+      "w2_d3": {
+        "breakfast": "Café con leche + Sandwich integral de jamón cocido y rodajas de tomate.",
+        "lunch": "Pasta Integral (Penne) (70g crudo) con atún natural, aceitunas y salsa de tomate casera.",
+        "snack": "1 Naranja + 15g de Pistachos.",
+        "dinner": "Lubina al horno con pimientos rojos asados y berenjena a la plancha."
+      },
+      "w2_d4": {
+        "breakfast": "Café con leche + Tostada de centeno con aguacate (50g) y semillas de chía.",
+        "lunch": "Lentejas con arroz integral: 150g lentejas cocidas + 50g arroz cocido + verduras.",
+        "snack": "Queso fresco batido (150g) con un toque de canela.",
+        "dinner": "Hamburguesa de pollo (sin pan) con ensalada de rúcula, nueces y cebolla asada."
+      },
+      "w2_d5": {
+        "breakfast": "Tortilla de 2 claras y 1 yema con pavo + Café con leche desnatada.",
+        "lunch": "Sepia a la plancha con ajo y perejil + Ensalada de patata cocida (150g) y judía verde.",
+        "snack": "1 Plátano + Café.",
+        "dinner": "Crema de verduras de temporada (sin nata) + Tortilla francesa simple."
+      },
+      "w2_d6": {
+        "breakfast": "Café con leche + Tostada de centeno con aceite de oliva (10ml) y jamón serrano.",
+        "lunch": "Cuscús integral con verduras y tiras de ternera magra (120g) + Pimientos salteados.",
+        "snack": "1 Pera + 20g de Avellanas.",
+        "dinner": "Brochetas de pavo y piña a la plancha con ensalada de espinacas frescas."
+      },
+      "w2_d7": {
+        "breakfast": "Porridge de avena (40g) cocido con leche y media manzana picada + Café.",
+        "lunch": "Marmitako de Atún ligero (Atún, patata, pimiento, cebolla) + Ensalada de pepino.",
+        "snack": "Macedonia de frutas (Sandía, melón, naranja).",
+        "dinner": "Tabla Mediterránea: Hummus, 1 huevo duro, palitos de apio y 3 lonchas de lomo embuchado."
+      },
+      "w3_d1": {
+        "breakfast": "Café con leche + Tostada de centeno con huevo a la plancha (poco aceite) y pimienta.",
+        "lunch": "Alubias blancas estofadas con gran cantidad de verduras (judía verde, zanahoria y calabaza).",
+        "snack": "1 Yogur griego 0% con semillas de chía.",
+        "dinner": "Pechuga de pollo con brócoli al vapor y un toque de mostaza antigua."
+      },
+      "w3_d2": {
+        "breakfast": "Porridge de avena (40g) con manzana y canela + Café con leche.",
+        "lunch": "Trucha a la navarra (al horno con una loncha de jamón serrano dentro) + 150g patata cocida.",
+        "snack": "20g de Nueces + 1 Melocotón o Pera.",
+        "dinner": "Crema de espinacas (sin lácteos) + 1 huevo duro picado por encima."
+      },
+      "w3_d3": {
+        "breakfast": "Café con leche + Tostada de centeno con pavo y rodajas de tomate natural.",
+        "lunch": "Pimientos rellenos de pavo y arroz integral (70g arroz cocido + 100g pavo picado).",
+        "snack": "Queso Cottage (100g) con arándanos frescos.",
+        "dinner": "Sepia salteada con alcachofas y ajo."
+      },
+      "w3_d4": {
+        "breakfast": "Yogur griego 0% con 30g de avena y 1 kiwi + Café con leche.",
+        "lunch": "Quinoa con pollo y verduras: 60g quinoa (crudo), 150g pollo, calabacín y pimiento.",
+        "snack": "1 Naranja + 15g de almendras naturales.",
+        "dinner": "Tortilla de champiñones (2 huevos) con una ensalada de canónigos y rabanitos."
+      },
+      "w3_d5": {
+        "breakfast": "Café con leche + Tostada de centeno con aguacate (50g) y un chorrito de limón.",
+        "lunch": "Bacalao al horno con costra de hierbas y cama de espárragos y cebolla.",
+        "snack": "Skyr (150g) con 10g de nueces picadas.",
+        "dinner": "Carpaccio de calabacín con atún al natural, limón, pimienta y 5g de parmesano."
+      },
+      "w3_d6": {
+        "breakfast": "Revuelto de 2 claras y 1 yema con espinacas frescas + Café con leche.",
+        "lunch": "Estofado de ternera magra con guisantes, zanahoria y un poco de vino blanco.",
+        "snack": "Ensalada de frutas frescas de temporada.",
+        "dinner": "Emperador o Pez Espada a la plancha con puré de berenjena asada."
+      },
+      "w3_d7": {
+        "breakfast": "Café con leche + Tostada de centeno con AOVE (10ml) y un diente de ajo frotado.",
+        "lunch": "Tortilla de patatas saludable (patata al vapor) + Ensalada de tomate y pepino.",
+        "snack": "20g de Pistachos + 1 Pera.",
+        "dinner": "Langostinos o Gambas al horno con ajo y perejil + Hummus con bastones de zanahoria."
+      },
+      "w4_d1": {
+        "breakfast": "Café con leche + Tostada de centeno con queso fresco y nueces (15g).",
+        "lunch": "Albóndigas de pavo caseras en salsa de tomate natural y guisantes.",
+        "snack": "1 Manzana + 15g de almendras.",
+        "dinner": "Ensalada de espinacas, fresas, queso de cabra (20g) y tiras de pollo."
+      },
+      "w4_d2": {
+        "breakfast": "Porridge de avena (40g) con arándanos y semillas de lino + Café.",
+        "lunch": "Potaje de garbanzos y acelgas (o espinacas) con un toque de comino.",
+        "snack": "1 Plátano + Café con leche.",
+        "dinner": "Revuelto de calabacín y cebolla (2 huevos) + 2 lonchas de jamón serrano (sin grasa)."
+      },
+      "w4_d3": {
+        "breakfast": "Café con leche + Sandwich integral de atún natural y canónigos.",
+        "lunch": "Pasta Integral (Espaguetis) con gambas, ajo, guindilla y 10ml de AOVE.",
+        "snack": "Yogur griego 0% con media pera picada.",
+        "dinner": "Pechuga de pollo a la naranja (cocinada en zumo natural) con espárragos."
+      },
+      "w4_d4": {
+        "breakfast": "Café con leche + Tostada de centeno con aguacate y huevo poché.",
+        "lunch": "Ensalada de Lentejas frías: pimiento, cebolla, tomate y 1 lata de sardinas (escurridas).",
+        "snack": "1 Naranja + 20g de pistachos.",
+        "dinner": "Bacalao al horno con costra de almendra y brócoli."
+      },
+      "w4_d5": {
+        "breakfast": "Magerquark (200g) con 10g de nueces y canela + Café con leche.",
+        "lunch": "Arroz integral con setas y conejo (o pollo) + Ensalada de rabanitos.",
+        "snack": "1 Manzana + Café.",
+        "dinner": "Tortilla francesa de pavo y queso light + Crema de calabaza."
+      },
+      "w4_d6": {
+        "breakfast": "Café con leche + Tostada de centeno con tomate, AOVE y un poco de orégano.",
+        "lunch": "Berenjenas rellenas de carne picada de ternera magra y verduras (sin queso gratinado).",
+        "snack": "1 Kiwi + 15g de nueces.",
+        "dinner": "Brochetas de Merluza y Langostinos a la plancha con judías verdes."
+      },
+      "w4_d7": {
+        "breakfast": "Revuelto de 2 huevos con champiñones + Café con leche desnatada.",
+        "lunch": "Guiso de patatas con calamares (o sepia) y guisantes + Ensalada mixta.",
+        "snack": "Queso fresco batido con fresas.",
+        "dinner": "Cena 'Limpieza de Nevera': Hummus, huevo duro, pimientos asados y palitos de pavo."
+      }
+    },
+    "planTitle": "Plan Mediterráneo · 28 Días",
+    "planSubtitle": "Menú clínico equilibrado para pérdida de peso saludable",
+    "weekLabel": "Semana",
+    "dayLabel": "Día",
+    "breakfastLabel": "Desayuno",
+    "lunchLabel": "Almuerzo",
+    "snackLabel": "Merienda",
+    "dinnerLabel": "Cena",
+    "kcalLabel": "kcal/día"
   }
 }

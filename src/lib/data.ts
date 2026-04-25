@@ -137,6 +137,43 @@ export const RECIPES: Recipe[] = [
   { id: "r15", translationKey: "recipeDb.protein_smoothie_bowl", cost: "≈ 1,50 €", time: "5 min", kcal: 310, protein: 25, carbs: 35, fat: 8 },
 ];
 
+import type { DailyMenuPlan } from "../types";
+
+export const MEDITERRANEAN_PLAN: DailyMenuPlan[] = [
+  // SEMANA 1
+  { id: 'm_w1_d1', week: 1, day: 1, translationKey: 'plans.med.w1_d1', totalKcal: 1750 },
+  { id: 'm_w1_d2', week: 1, day: 2, translationKey: 'plans.med.w1_d2', totalKcal: 1820 },
+  { id: 'm_w1_d3', week: 1, day: 3, translationKey: 'plans.med.w1_d3', totalKcal: 1790 },
+  { id: 'm_w1_d4', week: 1, day: 4, translationKey: 'plans.med.w1_d4', totalKcal: 1880 },
+  { id: 'm_w1_d5', week: 1, day: 5, translationKey: 'plans.med.w1_d5', totalKcal: 1810 },
+  { id: 'm_w1_d6', week: 1, day: 6, translationKey: 'plans.med.w1_d6', totalKcal: 1850 },
+  { id: 'm_w1_d7', week: 1, day: 7, translationKey: 'plans.med.w1_d7', totalKcal: 1780 },
+  // SEMANA 2
+  { id: 'm_w2_d1', week: 2, day: 8, translationKey: 'plans.med.w2_d1', totalKcal: 1780, warnings: ['high_sodium'] },
+  { id: 'm_w2_d2', week: 2, day: 9, translationKey: 'plans.med.w2_d2', totalKcal: 1820 },
+  { id: 'm_w2_d3', week: 2, day: 10, translationKey: 'plans.med.w2_d3', totalKcal: 1850 },
+  { id: 'm_w2_d4', week: 2, day: 11, translationKey: 'plans.med.w2_d4', totalKcal: 1870 },
+  { id: 'm_w2_d5', week: 2, day: 12, translationKey: 'plans.med.w2_d5', totalKcal: 1790 },
+  { id: 'm_w2_d6', week: 2, day: 13, translationKey: 'plans.med.w2_d6', totalKcal: 1830 },
+  { id: 'm_w2_d7', week: 2, day: 14, translationKey: 'plans.med.w2_d7', totalKcal: 1810, warnings: ['high_sodium'] },
+  // SEMANA 3
+  { id: 'm_w3_d1', week: 3, day: 15, translationKey: 'plans.med.w3_d1', totalKcal: 1750, warnings: ['high_potassium'] },
+  { id: 'm_w3_d2', week: 3, day: 16, translationKey: 'plans.med.w3_d2', totalKcal: 1820, warnings: ['high_potassium'] },
+  { id: 'm_w3_d3', week: 3, day: 17, translationKey: 'plans.med.w3_d3', totalKcal: 1840 },
+  { id: 'm_w3_d4', week: 3, day: 18, translationKey: 'plans.med.w3_d4', totalKcal: 1880 },
+  { id: 'm_w3_d5', week: 3, day: 19, translationKey: 'plans.med.w3_d5', totalKcal: 1790 },
+  { id: 'm_w3_d6', week: 3, day: 20, translationKey: 'plans.med.w3_d6', totalKcal: 1860 },
+  { id: 'm_w3_d7', week: 3, day: 21, translationKey: 'plans.med.w3_d7', totalKcal: 1810 },
+  // SEMANA 4
+  { id: 'm_w4_d1', week: 4, day: 22, translationKey: 'plans.med.w4_d1', totalKcal: 1780 },
+  { id: 'm_w4_d2', week: 4, day: 23, translationKey: 'plans.med.w4_d2', totalKcal: 1820 },
+  { id: 'm_w4_d3', week: 4, day: 24, translationKey: 'plans.med.w4_d3', totalKcal: 1850 },
+  { id: 'm_w4_d4', week: 4, day: 25, translationKey: 'plans.med.w4_d4', totalKcal: 1870 },
+  { id: 'm_w4_d5', week: 4, day: 26, translationKey: 'plans.med.w4_d5', totalKcal: 1810 },
+  { id: 'm_w4_d6', week: 4, day: 27, translationKey: 'plans.med.w4_d6', totalKcal: 1840 },
+  { id: 'm_w4_d7', week: 4, day: 28, translationKey: 'plans.med.w4_d7', totalKcal: 1890 },
+];
+
 export interface ExerciseTemplate {
   name: string;
   description: string;

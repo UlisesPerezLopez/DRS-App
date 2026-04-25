@@ -19,7 +19,7 @@ import { MealDiary } from "./components/MealDiary";
 import { ProfileTab } from "./components/ProfileTab";
 import { Workout } from "./components/Workout";
 import { Recipes } from "./components/Recipes";
-import { JourneyPlan } from "./components/JourneyPlan";
+import { MyPlanTab } from "./components/MyPlanTab";
 import { DietTab } from "./components/DietTab";
 import { StatsTab } from "./components/StatsTab";
 import { WelcomeScreen } from "./components/WelcomeScreen";
@@ -153,7 +153,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/plan" element={<JourneyPlan />} />
+          <Route path="/plan" element={<MyPlanTab />} />
           <Route path="/diet" element={<DietTab />} />
           <Route path="/diary" element={<MealDiary />} />
           <Route path="/workout" element={<Workout />} />

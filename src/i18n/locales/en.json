@@ -269,7 +269,9 @@
     "1 cucharada (21g)": "1 tbsp (21g)"
   },
   "warnings": {
-    "high_sodium": "⚠️ Warning: High sodium. May cause water retention."
+    "high_sodium": "⚠️ Warning: High sodium. May cause water retention.",
+    "plan_high_sodium": "⚠️ Warning: Drink 500ml extra water today to compensate for sodium.",
+    "plan_high_potassium": "✅ Ideal for balancing blood pressure."
   },
   "water": {
     "title": "Hydration",
@@ -504,5 +506,186 @@
         "Serve very cold in a bowl."
       ]
     }
+  },
+  "plans": {
+    "med": {
+      "w1_d1": {
+        "breakfast": "Coffee with skim milk + Rye toast (60g) with tomato and 10g EVOO + 2 slices of turkey.",
+        "lunch": "Stewed lentils with carrot, pepper and onion (250g cooked) + Green salad.",
+        "snack": "1 Apple + 20g Walnuts.",
+        "dinner": "Baked sea bream on zucchini and onion bed + 1 slice fresh pineapple."
+      },
+      "w1_d2": {
+        "breakfast": "Greek yogurt 0% with 30g oats and blueberries + Coffee with milk.",
+        "lunch": "Baked chicken (200g) with Provençal herbs and roasted potato (150g) + Wild asparagus.",
+        "snack": "1 Banana (potassium for blood pressure) + Coffee.",
+        "dinner": "Complete Mixed Salad: Tuna, hard-boiled egg, lamb's lettuce, tomato and olives."
+      },
+      "w1_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with cream cheese and arugula.",
+        "lunch": "Chickpeas with spinach and paprika (250g cooked) + 1 slice whole wheat bread.",
+        "snack": "1 Natural yogurt + 15g almonds.",
+        "dinner": "French omelette (2 eggs) with sautéed mushrooms and tomato salad."
+      },
+      "w1_d4": {
+        "breakfast": "Coffee with milk + Rye toast with avocado (50g) and poached egg.",
+        "lunch": "Brown rice with stir-fried vegetables (mushrooms, broccoli) and turkey strips (150g).",
+        "snack": "1 Pear + Coffee with milk.",
+        "dinner": "Grilled salmon (150g) with boiled green beans and a squeeze of lemon."
+      },
+      "w1_d5": {
+        "breakfast": "Greek yogurt 0% with oats and 1 chopped walnut + Coffee.",
+        "lunch": "Whole wheat pasta (70g dry) with tomato sauce, basil and chicken mince (100g).",
+        "snack": "1 Kiwi + Cottage cheese (100g).",
+        "dinner": "Steamed hake with peas and baby carrots. Dressing: 5ml EVOO."
+      },
+      "w1_d6": {
+        "breakfast": "Coffee with milk + Small whole wheat roll with cured ham and tomato.",
+        "lunch": "Vegetable and lean meat paella (Moderate portion: 200g) + Cucumber salad.",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Grilled chicken breast with pumpkin purée and ginger."
+      },
+      "w1_d7": {
+        "breakfast": "Omelette with 2 whites and 1 yolk with spinach + Coffee with milk.",
+        "lunch": "Cod with tomato and roasted peppers + 2 whole wheat crackers.",
+        "snack": "Seasonal fruit salad.",
+        "dinner": "Healthy Tapas: Hummus (80g) with carrot sticks and 1 can sardines in EVOO."
+      },
+      "w2_d1": {
+        "breakfast": "Coffee with milk + Rye toast (60g) with cottage cheese and sliced strawberries.",
+        "lunch": "Chickpea Salad: 200g chickpeas, cucumber, pepper, red onion and 1 can mackerel.",
+        "snack": "1 Natural yogurt + 15g Walnuts.",
+        "dinner": "Grilled turkey breast with sweet potato purée (100g) and lamb's lettuce."
+      },
+      "w2_d2": {
+        "breakfast": "Greek yogurt 0% with 30g oats and 1 kiwi + Coffee with milk.",
+        "lunch": "Garlic rabbit or chicken (200g) with mushrooms and 2 small roasted potatoes.",
+        "snack": "1 Apple + 20g Almonds.",
+        "dinner": "Asparagus and prawn scramble (2 eggs) + Tomato salad."
+      },
+      "w2_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with cooked ham and tomato slices.",
+        "lunch": "Whole wheat penne (70g dry) with tuna, olives and homemade tomato sauce.",
+        "snack": "1 Orange + 15g Pistachios.",
+        "dinner": "Baked sea bass with roasted red peppers and grilled eggplant."
+      },
+      "w2_d4": {
+        "breakfast": "Coffee with milk + Rye toast with avocado (50g) and chia seeds.",
+        "lunch": "Lentils with brown rice: 150g cooked lentils + 50g cooked rice + vegetables.",
+        "snack": "Cottage cheese (150g) with a touch of cinnamon.",
+        "dinner": "Chicken burger (no bun) with arugula salad, walnuts and roasted onion."
+      },
+      "w2_d5": {
+        "breakfast": "Omelette with 2 whites and 1 yolk with turkey + Coffee with skim milk.",
+        "lunch": "Grilled cuttlefish with garlic and parsley + Potato salad (150g) with green beans.",
+        "snack": "1 Banana + Coffee.",
+        "dinner": "Seasonal vegetable cream soup (no cream) + Simple French omelette."
+      },
+      "w2_d6": {
+        "breakfast": "Coffee with milk + Rye toast with olive oil (10ml) and cured ham.",
+        "lunch": "Whole wheat couscous with vegetables and lean beef strips (120g) + Sautéed peppers.",
+        "snack": "1 Pear + 20g Hazelnuts.",
+        "dinner": "Turkey and pineapple skewers with fresh spinach salad."
+      },
+      "w2_d7": {
+        "breakfast": "Oat porridge (40g) with milk and half diced apple + Coffee.",
+        "lunch": "Light Tuna Marmitako (tuna, potato, pepper, onion) + Cucumber salad.",
+        "snack": "Fruit salad (Watermelon, melon, orange).",
+        "dinner": "Mediterranean Platter: Hummus, 1 hard-boiled egg, celery sticks and 3 slices cured loin."
+      },
+      "w3_d1": {
+        "breakfast": "Coffee with milk + Rye toast with fried egg (little oil) and pepper.",
+        "lunch": "White bean stew with plenty of vegetables (green beans, carrot and pumpkin).",
+        "snack": "1 Greek yogurt 0% with chia seeds.",
+        "dinner": "Chicken breast with steamed broccoli and a touch of whole grain mustard."
+      },
+      "w3_d2": {
+        "breakfast": "Oat porridge (40g) with apple and cinnamon + Coffee with milk.",
+        "lunch": "Navarra-style trout (baked with a slice of cured ham inside) + 150g boiled potato.",
+        "snack": "20g Walnuts + 1 Peach or Pear.",
+        "dinner": "Spinach cream soup (dairy-free) + 1 chopped hard-boiled egg on top."
+      },
+      "w3_d3": {
+        "breakfast": "Coffee with milk + Rye toast with turkey and fresh tomato slices.",
+        "lunch": "Peppers stuffed with turkey and brown rice (70g cooked rice + 100g minced turkey).",
+        "snack": "Cottage cheese (100g) with fresh blueberries.",
+        "dinner": "Sautéed cuttlefish with artichokes and garlic."
+      },
+      "w3_d4": {
+        "breakfast": "Greek yogurt 0% with 30g oats and 1 kiwi + Coffee with milk.",
+        "lunch": "Quinoa with chicken and vegetables: 60g quinoa (dry), 150g chicken, zucchini and pepper.",
+        "snack": "1 Orange + 15g natural almonds.",
+        "dinner": "Mushroom omelette (2 eggs) with lamb's lettuce and radish salad."
+      },
+      "w3_d5": {
+        "breakfast": "Coffee with milk + Rye toast with avocado (50g) and a squeeze of lemon.",
+        "lunch": "Herb-crusted baked cod on asparagus and onion bed.",
+        "snack": "Skyr (150g) with 10g chopped walnuts.",
+        "dinner": "Zucchini carpaccio with tuna, lemon, pepper and 5g Parmesan."
+      },
+      "w3_d6": {
+        "breakfast": "Scramble with 2 whites and 1 yolk with fresh spinach + Coffee with milk.",
+        "lunch": "Lean beef stew with peas, carrot and a splash of white wine.",
+        "snack": "Fresh seasonal fruit salad.",
+        "dinner": "Grilled swordfish with roasted eggplant purée."
+      },
+      "w3_d7": {
+        "breakfast": "Coffee with milk + Rye toast with EVOO (10ml) and rubbed garlic clove.",
+        "lunch": "Healthy potato tortilla (steamed potato) + Tomato and cucumber salad.",
+        "snack": "20g Pistachios + 1 Pear.",
+        "dinner": "Baked prawns with garlic and parsley + Hummus with carrot sticks."
+      },
+      "w4_d1": {
+        "breakfast": "Coffee with milk + Rye toast with fresh cheese and walnuts (15g).",
+        "lunch": "Homemade turkey meatballs in tomato sauce with peas.",
+        "snack": "1 Apple + 15g almonds.",
+        "dinner": "Spinach salad with strawberries, goat cheese (20g) and chicken strips."
+      },
+      "w4_d2": {
+        "breakfast": "Oat porridge (40g) with blueberries and flaxseed + Coffee.",
+        "lunch": "Chickpea and chard stew (or spinach) with a touch of cumin.",
+        "snack": "1 Banana + Coffee with milk.",
+        "dinner": "Zucchini and onion scramble (2 eggs) + 2 slices lean cured ham."
+      },
+      "w4_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with tuna and lamb's lettuce.",
+        "lunch": "Whole wheat spaghetti with prawns, garlic, chili and 10ml EVOO.",
+        "snack": "Greek yogurt 0% with half a diced pear.",
+        "dinner": "Orange chicken breast (cooked in natural juice) with asparagus."
+      },
+      "w4_d4": {
+        "breakfast": "Coffee with milk + Rye toast with avocado and poached egg.",
+        "lunch": "Cold Lentil Salad: pepper, onion, tomato and 1 can sardines (drained).",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Almond-crusted baked cod with broccoli."
+      },
+      "w4_d5": {
+        "breakfast": "Low-fat quark (200g) with 10g walnuts and cinnamon + Coffee with milk.",
+        "lunch": "Brown rice with mushrooms and rabbit (or chicken) + Radish salad.",
+        "snack": "1 Apple + Coffee.",
+        "dinner": "Turkey and light cheese omelette + Pumpkin cream soup."
+      },
+      "w4_d6": {
+        "breakfast": "Coffee with milk + Rye toast with tomato, EVOO and a pinch of oregano.",
+        "lunch": "Eggplants stuffed with lean beef mince and vegetables (no cheese gratin).",
+        "snack": "1 Kiwi + 15g walnuts.",
+        "dinner": "Grilled hake and prawn skewers with green beans."
+      },
+      "w4_d7": {
+        "breakfast": "Scrambled eggs (2) with mushrooms + Coffee with skim milk.",
+        "lunch": "Potato stew with squid (or cuttlefish) and peas + Mixed salad.",
+        "snack": "Cottage cheese with strawberries.",
+        "dinner": "Fridge Clearance: Hummus, hard-boiled egg, roasted peppers and turkey sticks."
+      }
+    },
+    "planTitle": "Mediterranean Plan · 28 Days",
+    "planSubtitle": "Clinically balanced menu for healthy weight loss",
+    "weekLabel": "Week",
+    "dayLabel": "Day",
+    "breakfastLabel": "Breakfast",
+    "lunchLabel": "Lunch",
+    "snackLabel": "Snack",
+    "dinnerLabel": "Dinner",
+    "kcalLabel": "kcal/day"
   }
 }

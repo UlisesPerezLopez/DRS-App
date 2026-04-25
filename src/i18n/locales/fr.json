@@ -269,7 +269,9 @@
     "1 cucharada (21g)": "1 c.à.s (21g)"
   },
   "warnings": {
-    "high_sodium": "⚠️ Attention : Forte teneur en sodium. Peut causer de la rétention d'eau."
+    "high_sodium": "⚠️ Attention : Forte teneur en sodium. Peut causer de la rétention d'eau.",
+    "plan_high_sodium": "⚠️ Attention : Buvez 500ml d'eau supplémentaires aujourd'hui pour compenser le sodium.",
+    "plan_high_potassium": "✅ Idéal pour équilibrer la pression artérielle."
   },
   "water": {
     "title": "Hydratation",
@@ -504,5 +506,186 @@
         "Servir très froid dans un bol."
       ]
     }
+  },
+  "plans": {
+    "med": {
+      "w1_d1": {
+        "breakfast": "Café au lait écrémé + Toast de seigle (60g) avec tomate et 10g d'huile d'olive + 2 tranches de dinde.",
+        "lunch": "Lentilles mijotées avec carotte, poivron et oignon (250g cuites) + Salade verte.",
+        "snack": "1 Pomme + 20g de Noix.",
+        "dinner": "Daurade au four sur lit de courgette et oignon + 1 tranche d'ananas frais."
+      },
+      "w1_d2": {
+        "breakfast": "Yaourt grec 0% avec 30g de flocons d'avoine et myrtilles + Café au lait.",
+        "lunch": "Poulet rôti (200g) aux herbes de Provence et pomme de terre au four (150g) + Asperges sauvages.",
+        "snack": "1 Banane (potassium pour la tension) + Café.",
+        "dinner": "Salade Mixte complète : Thon nature, œuf dur, mâche, tomate et olives."
+      },
+      "w1_d3": {
+        "breakfast": "Café au lait + Sandwich complet au fromage frais et roquette.",
+        "lunch": "Pois chiches aux épinards et paprika (250g cuits) + 1 tranche de pain complet.",
+        "snack": "1 Yaourt nature + 15g d'amandes.",
+        "dinner": "Omelette (2 œufs) aux champignons sautés et salade de tomates."
+      },
+      "w1_d4": {
+        "breakfast": "Café au lait + Toast de seigle avec avocat (50g) et œuf poché.",
+        "lunch": "Riz complet aux légumes sautés (champignons, brocoli) et lanières de dinde (150g).",
+        "snack": "1 Poire + Café au lait.",
+        "dinner": "Saumon grillé (150g) avec haricots verts et un filet de citron."
+      },
+      "w1_d5": {
+        "breakfast": "Yaourt grec 0% avec avoine et 1 noix hachée + Café.",
+        "lunch": "Pâtes complètes (70g crues) avec sauce tomate, basilic et poulet haché (100g).",
+        "snack": "1 Kiwi + Fromage frais (100g).",
+        "dinner": "Merlu vapeur avec petits pois et mini-carottes. Assaisonnement : 5ml d'huile d'olive."
+      },
+      "w1_d6": {
+        "breakfast": "Café au lait + Petit sandwich complet au jambon cru et tomate.",
+        "lunch": "Paella de légumes et viande maigre (Portion modérée : 200g) + Salade de concombre.",
+        "snack": "1 Orange + 20g de pistaches.",
+        "dinner": "Blanc de poulet grillé avec purée de potiron et gingembre."
+      },
+      "w1_d7": {
+        "breakfast": "Omelette 2 blancs et 1 jaune aux épinards + Café au lait.",
+        "lunch": "Cabillaud à la tomate et poivrons grillés + 2 biscottes complètes.",
+        "snack": "Salade de fruits de saison.",
+        "dinner": "Tapas Santé : Houmous (80g) avec bâtonnets de carotte et 1 boîte de sardines à l'huile d'olive."
+      },
+      "w2_d1": {
+        "breakfast": "Café au lait + Toast de seigle (60g) avec cottage cheese et fraises émincées.",
+        "lunch": "Salade de Pois Chiches : 200g pois chiches, concombre, poivron, oignon rouge et 1 boîte de maquereau.",
+        "snack": "1 Yaourt nature + 15g de Noix.",
+        "dinner": "Blanc de dinde grillé avec purée de patate douce (100g) et mâche."
+      },
+      "w2_d2": {
+        "breakfast": "Yaourt grec 0% avec 30g d'avoine et 1 kiwi + Café au lait.",
+        "lunch": "Lapin ou Poulet à l'ail (200g) avec champignons et 2 petites pommes de terre rôties.",
+        "snack": "1 Pomme + 20g d'Amandes.",
+        "dinner": "Œufs brouillés aux asperges et crevettes (2 œufs) + Salade de tomates."
+      },
+      "w2_d3": {
+        "breakfast": "Café au lait + Sandwich complet au jambon cuit et rondelles de tomate.",
+        "lunch": "Penne complètes (70g crues) avec thon nature, olives et sauce tomate maison.",
+        "snack": "1 Orange + 15g de Pistaches.",
+        "dinner": "Bar au four avec poivrons rouges grillés et aubergine grillée."
+      },
+      "w2_d4": {
+        "breakfast": "Café au lait + Toast de seigle avec avocat (50g) et graines de chia.",
+        "lunch": "Lentilles au riz complet : 150g lentilles cuites + 50g riz cuit + légumes.",
+        "snack": "Fromage frais (150g) avec une touche de cannelle.",
+        "dinner": "Burger de poulet (sans pain) avec salade de roquette, noix et oignon grillé."
+      },
+      "w2_d5": {
+        "breakfast": "Omelette 2 blancs et 1 jaune avec dinde + Café au lait écrémé.",
+        "lunch": "Seiche grillée à l'ail et persil + Salade de pommes de terre (150g) et haricots verts.",
+        "snack": "1 Banane + Café.",
+        "dinner": "Velouté de légumes de saison (sans crème) + Omelette nature."
+      },
+      "w2_d6": {
+        "breakfast": "Café au lait + Toast de seigle avec huile d'olive (10ml) et jambon cru.",
+        "lunch": "Couscous complet aux légumes et lanières de bœuf maigre (120g) + Poivrons sautés.",
+        "snack": "1 Poire + 20g de Noisettes.",
+        "dinner": "Brochettes de dinde et ananas grillées avec salade d'épinards frais."
+      },
+      "w2_d7": {
+        "breakfast": "Porridge d'avoine (40g) au lait avec demi-pomme hachée + Café.",
+        "lunch": "Marmitako de Thon léger (Thon, pomme de terre, poivron, oignon) + Salade de concombre.",
+        "snack": "Salade de fruits (Pastèque, melon, orange).",
+        "dinner": "Planche Méditerranéenne : Houmous, 1 œuf dur, bâtonnets de céleri et 3 tranches de longe séchée."
+      },
+      "w3_d1": {
+        "breakfast": "Café au lait + Toast de seigle avec œuf au plat (peu d'huile) et poivre.",
+        "lunch": "Haricots blancs mijotés avec beaucoup de légumes (haricots verts, carotte et potiron).",
+        "snack": "1 Yaourt grec 0% avec graines de chia.",
+        "dinner": "Blanc de poulet avec brocoli vapeur et une touche de moutarde à l'ancienne."
+      },
+      "w3_d2": {
+        "breakfast": "Porridge d'avoine (40g) avec pomme et cannelle + Café au lait.",
+        "lunch": "Truite à la navarraise (au four avec tranche de jambon cru) + 150g pommes de terre bouillies.",
+        "snack": "20g de Noix + 1 Pêche ou Poire.",
+        "dinner": "Velouté d'épinards (sans produits laitiers) + 1 œuf dur haché par-dessus."
+      },
+      "w3_d3": {
+        "breakfast": "Café au lait + Toast de seigle avec dinde et rondelles de tomate fraîche.",
+        "lunch": "Poivrons farcis à la dinde et riz complet (70g riz cuit + 100g dinde hachée).",
+        "snack": "Cottage cheese (100g) avec myrtilles fraîches.",
+        "dinner": "Seiche sautée aux artichauts et ail."
+      },
+      "w3_d4": {
+        "breakfast": "Yaourt grec 0% avec 30g d'avoine et 1 kiwi + Café au lait.",
+        "lunch": "Quinoa avec poulet et légumes : 60g quinoa (cru), 150g poulet, courgette et poivron.",
+        "snack": "1 Orange + 15g d'amandes naturelles.",
+        "dinner": "Omelette aux champignons (2 œufs) avec salade de mâche et radis."
+      },
+      "w3_d5": {
+        "breakfast": "Café au lait + Toast de seigle avec avocat (50g) et un filet de citron.",
+        "lunch": "Cabillaud au four en croûte d'herbes sur lit d'asperges et oignon.",
+        "snack": "Skyr (150g) avec 10g de noix hachées.",
+        "dinner": "Carpaccio de courgette avec thon nature, citron, poivre et 5g de parmesan."
+      },
+      "w3_d6": {
+        "breakfast": "Œufs brouillés 2 blancs et 1 jaune aux épinards frais + Café au lait.",
+        "lunch": "Ragoût de bœuf maigre avec petits pois, carotte et un peu de vin blanc.",
+        "snack": "Salade de fruits frais de saison.",
+        "dinner": "Espadon grillé avec purée d'aubergine rôtie."
+      },
+      "w3_d7": {
+        "breakfast": "Café au lait + Toast de seigle avec huile d'olive (10ml) et gousse d'ail frottée.",
+        "lunch": "Tortilla de pommes de terre santé (pomme de terre vapeur) + Salade tomate-concombre.",
+        "snack": "20g de Pistaches + 1 Poire.",
+        "dinner": "Crevettes au four à l'ail et persil + Houmous avec bâtonnets de carotte."
+      },
+      "w4_d1": {
+        "breakfast": "Café au lait + Toast de seigle avec fromage frais et noix (15g).",
+        "lunch": "Boulettes de dinde maison en sauce tomate naturelle avec petits pois.",
+        "snack": "1 Pomme + 15g d'amandes.",
+        "dinner": "Salade d'épinards, fraises, chèvre (20g) et lanières de poulet."
+      },
+      "w4_d2": {
+        "breakfast": "Porridge d'avoine (40g) avec myrtilles et graines de lin + Café.",
+        "lunch": "Potage de pois chiches et blettes (ou épinards) avec une touche de cumin.",
+        "snack": "1 Banane + Café au lait.",
+        "dinner": "Œufs brouillés courgette-oignon (2 œufs) + 2 tranches de jambon cru maigre."
+      },
+      "w4_d3": {
+        "breakfast": "Café au lait + Sandwich complet au thon nature et mâche.",
+        "lunch": "Spaghetti complets aux crevettes, ail, piment et 10ml d'huile d'olive.",
+        "snack": "Yaourt grec 0% avec demi-poire en dés.",
+        "dinner": "Blanc de poulet à l'orange (cuit au jus naturel) avec asperges."
+      },
+      "w4_d4": {
+        "breakfast": "Café au lait + Toast de seigle avec avocat et œuf poché.",
+        "lunch": "Salade de Lentilles froides : poivron, oignon, tomate et 1 boîte de sardines (égouttées).",
+        "snack": "1 Orange + 20g de pistaches.",
+        "dinner": "Cabillaud au four en croûte d'amande avec brocoli."
+      },
+      "w4_d5": {
+        "breakfast": "Fromage blanc maigre (200g) avec 10g de noix et cannelle + Café au lait.",
+        "lunch": "Riz complet aux champignons et lapin (ou poulet) + Salade de radis.",
+        "snack": "1 Pomme + Café.",
+        "dinner": "Omelette dinde-fromage allégé + Velouté de potiron."
+      },
+      "w4_d6": {
+        "breakfast": "Café au lait + Toast de seigle avec tomate, huile d'olive et un peu d'origan.",
+        "lunch": "Aubergines farcies à la viande hachée de bœuf maigre et légumes (sans gratin).",
+        "snack": "1 Kiwi + 15g de noix.",
+        "dinner": "Brochettes de merlu et crevettes grillées avec haricots verts."
+      },
+      "w4_d7": {
+        "breakfast": "Œufs brouillés (2) aux champignons + Café au lait écrémé.",
+        "lunch": "Ragoût de pommes de terre aux calamars (ou seiche) et petits pois + Salade mixte.",
+        "snack": "Fromage frais avec fraises.",
+        "dinner": "Nettoyage du Frigo : Houmous, œuf dur, poivrons grillés et bâtonnets de dinde."
+      }
+    },
+    "planTitle": "Plan Méditerranéen · 28 Jours",
+    "planSubtitle": "Menu cliniquement équilibré pour une perte de poids saine",
+    "weekLabel": "Semaine",
+    "dayLabel": "Jour",
+    "breakfastLabel": "Petit-déjeuner",
+    "lunchLabel": "Déjeuner",
+    "snackLabel": "Goûter",
+    "dinnerLabel": "Dîner",
+    "kcalLabel": "kcal/jour"
   }
 }

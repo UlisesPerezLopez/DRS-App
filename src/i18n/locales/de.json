@@ -269,7 +269,9 @@
     "1 cucharada (21g)": "1 EL (21g)"
   },
   "warnings": {
-    "high_sodium": "⚠️ Achtung: Hoher Natriumgehalt. Kann Wassereinlagerungen verursachen."
+    "high_sodium": "⚠️ Achtung: Hoher Natriumgehalt. Kann Wassereinlagerungen verursachen.",
+    "plan_high_sodium": "⚠️ Achtung: Trinke heute 500ml extra Wasser, um das Natrium auszugleichen.",
+    "plan_high_potassium": "✅ Ideal zum Ausgleich des Blutdrucks."
   },
   "water": {
     "title": "Flüssigkeitszufuhr",
@@ -504,5 +506,186 @@
         "Sehr kalt in einer Schüssel servieren."
       ]
     }
+  },
+  "plans": {
+    "med": {
+      "w1_d1": {
+        "breakfast": "Kaffee mit fettarmer Milch + Roggentoast (60g) mit Tomate und 10g Olivenöl + 2 Scheiben Putenbrust.",
+        "lunch": "Linsen-Eintopf mit Karotte, Paprika und Zwiebel (250g gekocht) + Grüner Salat.",
+        "snack": "1 Apfel + 20g Walnüsse.",
+        "dinner": "Dorade aus dem Ofen auf Zucchini-Zwiebel-Bett + 1 Scheibe frische Ananas."
+      },
+      "w1_d2": {
+        "breakfast": "Griechischer Joghurt 0% mit 30g Haferflocken und Blaubeeren + Milchkaffee.",
+        "lunch": "Hähnchen aus dem Ofen (200g) mit Kräutern der Provence und Ofenkartoffel (150g) + Grüner Spargel.",
+        "snack": "1 Banane (Kalium für den Blutdruck) + Kaffee.",
+        "dinner": "Gemischter Salat: Thunfisch natur, hartgekochtes Ei, Feldsalat, Tomate und Oliven."
+      },
+      "w1_d3": {
+        "breakfast": "Milchkaffee + Vollkorn-Sandwich mit Frischkäse und Rucola.",
+        "lunch": "Kichererbsen mit Spinat und Paprikapulver (250g gekocht) + 1 Scheibe Vollkornbrot.",
+        "snack": "1 Naturjoghurt + 15g Mandeln.",
+        "dinner": "Omelett (2 Eier) mit gebratenen Champignons und Tomatensalat."
+      },
+      "w1_d4": {
+        "breakfast": "Milchkaffee + Roggentoast mit Avocado (50g) und pochiertem Ei.",
+        "lunch": "Vollkornreis mit Gemüsepfanne (Pilze, Brokkoli) und Putenstreifen (150g).",
+        "snack": "1 Birne + Milchkaffee.",
+        "dinner": "Lachs vom Grill (150g) mit gekochten grünen Bohnen und Zitrone."
+      },
+      "w1_d5": {
+        "breakfast": "Griechischer Joghurt 0% mit Haferflocken und 1 gehackten Walnuss + Kaffee.",
+        "lunch": "Vollkornnudeln (70g roh) mit Tomatensoße, Basilikum und Hähnchenhack (100g).",
+        "snack": "1 Kiwi + Quark (100g).",
+        "dinner": "Seehecht gedämpft mit Erbsen und Baby-Karotten. Dressing: 5ml Olivenöl."
+      },
+      "w1_d6": {
+        "breakfast": "Milchkaffee + Kleines Vollkornbrötchen mit Serrano-Schinken und Tomate.",
+        "lunch": "Gemüse-Paella mit magerem Fleisch (Moderate Portion: 200g) + Gurkensalat.",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Hähnchenbrust vom Grill mit Kürbispüree und Ingwer."
+      },
+      "w1_d7": {
+        "breakfast": "Omelett aus 2 Eiweiß und 1 Eigelb mit Spinat + Milchkaffee.",
+        "lunch": "Kabeljau mit Tomate und gerösteten Paprika + 2 Vollkorn-Zwieback.",
+        "snack": "Obstsalat der Saison.",
+        "dinner": "Gesunde Tapas: Hummus (80g) mit Karottensticks und 1 Dose Sardinen in Olivenöl."
+      },
+      "w2_d1": {
+        "breakfast": "Milchkaffee + Roggentoast (60g) mit Hüttenkäse und Erdbeerscheiben.",
+        "lunch": "Kichererbsen-Salat: 200g Kichererbsen, Gurke, Paprika, rote Zwiebel und 1 Dose Makrele.",
+        "snack": "1 Naturjoghurt + 15g Walnüsse.",
+        "dinner": "Putenbrust vom Grill mit Süßkartoffelpüree (100g) und Feldsalat."
+      },
+      "w2_d2": {
+        "breakfast": "Griechischer Joghurt 0% mit 30g Haferflocken und 1 Kiwi + Milchkaffee.",
+        "lunch": "Kaninchen oder Knoblauch-Hähnchen (200g) mit Champignons und 2 kleinen Ofenkartoffeln.",
+        "snack": "1 Apfel + 20g Mandeln.",
+        "dinner": "Spargel-Garnelen-Rührei (2 Eier) + Tomatensalat."
+      },
+      "w2_d3": {
+        "breakfast": "Milchkaffee + Vollkorn-Sandwich mit Kochschinken und Tomatenscheiben.",
+        "lunch": "Vollkorn-Penne (70g roh) mit Thunfisch natur, Oliven und hausgemachter Tomatensoße.",
+        "snack": "1 Orange + 15g Pistazien.",
+        "dinner": "Wolfsbarsch aus dem Ofen mit gerösteten Paprika und gegrillter Aubergine."
+      },
+      "w2_d4": {
+        "breakfast": "Milchkaffee + Roggentoast mit Avocado (50g) und Chiasamen.",
+        "lunch": "Linsen mit Vollkornreis: 150g gekochte Linsen + 50g gekochter Reis + Gemüse.",
+        "snack": "Quark (150g) mit einer Prise Zimt.",
+        "dinner": "Hähnchen-Burger (ohne Brötchen) mit Rucola-Salat, Walnüssen und gerösteter Zwiebel."
+      },
+      "w2_d5": {
+        "breakfast": "Omelett aus 2 Eiweiß und 1 Eigelb mit Pute + Milchkaffee.",
+        "lunch": "Sepia vom Grill mit Knoblauch und Petersilie + Kartoffelsalat (150g) mit grünen Bohnen.",
+        "snack": "1 Banane + Kaffee.",
+        "dinner": "Saisonale Gemüsecremesuppe (ohne Sahne) + Einfaches Omelett."
+      },
+      "w2_d6": {
+        "breakfast": "Milchkaffee + Roggentoast mit Olivenöl (10ml) und Serrano-Schinken.",
+        "lunch": "Vollkorn-Couscous mit Gemüse und mageren Rinderstreifen (120g) + Gebratene Paprika.",
+        "snack": "1 Birne + 20g Haselnüsse.",
+        "dinner": "Puten-Ananas-Spieße vom Grill mit frischem Spinatsalat."
+      },
+      "w2_d7": {
+        "breakfast": "Hafer-Porridge (40g) mit Milch und halbem Apfel + Kaffee.",
+        "lunch": "Leichter Thunfisch-Marmitako (Thunfisch, Kartoffel, Paprika, Zwiebel) + Gurkensalat.",
+        "snack": "Obstsalat (Wassermelone, Honigmelone, Orange).",
+        "dinner": "Mediterrane Platte: Hummus, 1 hartgekochtes Ei, Selleriestangen und 3 Scheiben Lende."
+      },
+      "w3_d1": {
+        "breakfast": "Milchkaffee + Roggentoast mit Spiegelei (wenig Öl) und Pfeffer.",
+        "lunch": "Weiße-Bohnen-Eintopf mit viel Gemüse (grüne Bohnen, Karotte und Kürbis).",
+        "snack": "1 Griechischer Joghurt 0% mit Chiasamen.",
+        "dinner": "Hähnchenbrust mit gedämpftem Brokkoli und einem Hauch Senf."
+      },
+      "w3_d2": {
+        "breakfast": "Hafer-Porridge (40g) mit Apfel und Zimt + Milchkaffee.",
+        "lunch": "Forelle Navarra-Art (im Ofen mit einer Scheibe Serrano-Schinken) + 150g Salzkartoffeln.",
+        "snack": "20g Walnüsse + 1 Pfirsich oder Birne.",
+        "dinner": "Spinatcremesuppe (ohne Milchprodukte) + 1 gehacktes hartgekochtes Ei obenauf."
+      },
+      "w3_d3": {
+        "breakfast": "Milchkaffee + Roggentoast mit Pute und frischen Tomatenscheiben.",
+        "lunch": "Mit Pute und Vollkornreis gefüllte Paprika (70g Reis + 100g Putenhack).",
+        "snack": "Hüttenkäse (100g) mit frischen Blaubeeren.",
+        "dinner": "Gebratene Sepia mit Artischocken und Knoblauch."
+      },
+      "w3_d4": {
+        "breakfast": "Griechischer Joghurt 0% mit 30g Haferflocken und 1 Kiwi + Milchkaffee.",
+        "lunch": "Quinoa mit Hähnchen und Gemüse: 60g Quinoa (roh), 150g Hähnchen, Zucchini und Paprika.",
+        "snack": "1 Orange + 15g natürliche Mandeln.",
+        "dinner": "Champignon-Omelett (2 Eier) mit Feldsalat und Radieschen."
+      },
+      "w3_d5": {
+        "breakfast": "Milchkaffee + Roggentoast mit Avocado (50g) und Zitronensaft.",
+        "lunch": "Kabeljau mit Kräuterkruste auf Spargel-Zwiebel-Bett.",
+        "snack": "Skyr (150g) mit 10g gehackten Walnüssen.",
+        "dinner": "Zucchini-Carpaccio mit Thunfisch natur, Zitrone, Pfeffer und 5g Parmesan."
+      },
+      "w3_d6": {
+        "breakfast": "Rührei aus 2 Eiweiß und 1 Eigelb mit frischem Spinat + Milchkaffee.",
+        "lunch": "Magerer Rinderschmortopf mit Erbsen, Karotte und etwas Weißwein.",
+        "snack": "Frischer Obstsalat der Saison.",
+        "dinner": "Schwertfisch vom Grill mit Auberginen-Püree."
+      },
+      "w3_d7": {
+        "breakfast": "Milchkaffee + Roggentoast mit Olivenöl (10ml) und eingeriebener Knoblauchzehe.",
+        "lunch": "Gesunde Kartoffel-Tortilla (gedämpfte Kartoffel) + Tomaten-Gurken-Salat.",
+        "snack": "20g Pistazien + 1 Birne.",
+        "dinner": "Garnelen aus dem Ofen mit Knoblauch und Petersilie + Hummus mit Karottensticks."
+      },
+      "w4_d1": {
+        "breakfast": "Milchkaffee + Roggentoast mit Frischkäse und Walnüssen (15g).",
+        "lunch": "Hausgemachte Puten-Frikadellen in Tomatensoße mit Erbsen.",
+        "snack": "1 Apfel + 15g Mandeln.",
+        "dinner": "Spinatsalat mit Erdbeeren, Ziegenkäse (20g) und Hühnchenstreifen."
+      },
+      "w4_d2": {
+        "breakfast": "Hafer-Porridge (40g) mit Blaubeeren und Leinsamen + Kaffee.",
+        "lunch": "Kichererbsen-Mangold-Eintopf (oder Spinat) mit einer Prise Kreuzkümmel.",
+        "snack": "1 Banane + Milchkaffee.",
+        "dinner": "Zucchini-Zwiebel-Rührei (2 Eier) + 2 Scheiben Serrano-Schinken (fettfrei)."
+      },
+      "w4_d3": {
+        "breakfast": "Milchkaffee + Vollkorn-Sandwich mit Thunfisch natur und Feldsalat.",
+        "lunch": "Vollkorn-Spaghetti mit Garnelen, Knoblauch, Chili und 10ml Olivenöl.",
+        "snack": "Griechischer Joghurt 0% mit halber Birne.",
+        "dinner": "Hähnchenbrust à l'Orange (in Orangensaft gegart) mit Spargel."
+      },
+      "w4_d4": {
+        "breakfast": "Milchkaffee + Roggentoast mit Avocado und pochiertem Ei.",
+        "lunch": "Kalter Linsensalat: Paprika, Zwiebel, Tomate und 1 Dose Sardinen (abgetropft).",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Kabeljau mit Mandelkruste und Brokkoli."
+      },
+      "w4_d5": {
+        "breakfast": "Magerquark (200g) mit 10g Walnüssen und Zimt + Milchkaffee.",
+        "lunch": "Vollkornreis mit Pilzen und Kaninchen (oder Hähnchen) + Radieschensalat.",
+        "snack": "1 Apfel + Kaffee.",
+        "dinner": "Puten-Käse-Omelett + Kürbiscremesuppe."
+      },
+      "w4_d6": {
+        "breakfast": "Milchkaffee + Roggentoast mit Tomate, Olivenöl und etwas Oregano.",
+        "lunch": "Auberginen gefüllt mit magerem Rinderhack und Gemüse (ohne Käsegratin).",
+        "snack": "1 Kiwi + 15g Walnüsse.",
+        "dinner": "Seehecht-Garnelen-Spieße vom Grill mit grünen Bohnen."
+      },
+      "w4_d7": {
+        "breakfast": "Rührei aus 2 Eiern mit Champignons + Milchkaffee.",
+        "lunch": "Kartoffeltopf mit Tintenfisch (oder Sepia) und Erbsen + Gemischter Salat.",
+        "snack": "Quark mit Erdbeeren.",
+        "dinner": "Kühlschrank-Räumung: Hummus, hartgekochtes Ei, geröstete Paprika und Putenstreifen."
+      }
+    },
+    "planTitle": "Mediterran-Plan · 28 Tage",
+    "planSubtitle": "Klinisch ausgewogener Menüplan für gesunden Gewichtsverlust",
+    "weekLabel": "Woche",
+    "dayLabel": "Tag",
+    "breakfastLabel": "Frühstück",
+    "lunchLabel": "Mittagessen",
+    "snackLabel": "Snack",
+    "dinnerLabel": "Abendessen",
+    "kcalLabel": "kcal/Tag"
   }
 }

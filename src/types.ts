@@ -84,3 +84,14 @@ export interface AccountData {
   customFoods: CustomFood[];
   planStartDate: string | null;
 }
+
+export type PlanWarning = 'high_sodium' | 'high_potassium';
+
+export interface DailyMenuPlan {
+  id: string;
+  day: number;
+  week: number;
+  translationKey: string;
+  totalKcal: number;
+  warnings?: PlanWarning[];
+}
