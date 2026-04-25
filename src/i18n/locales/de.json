@@ -233,7 +233,8 @@
     "papaya": "Papaya",
     "watermelon": "Wassermelone",
     "raspberries": "Himbeeren",
-    "blackberry": "Brombeeren"
+    "blackberry": "Brombeeren",
+    "broken_eggs": "Gebackene Eier mit Kartoffeln (Huevos Rotos)"
   },
   "exerciseDb": {
     "Sentadillas (mancuernas)": "Kniebeugen (Kurzhanteln)",
@@ -408,7 +409,7 @@
       ]
     },
     "broken_eggs": {
-      "name": "Gesunde Spiegeleier mit Kartoffeln",
+      "name": "Gebackene Eier mit Kartoffeln (Huevos Rotos)",
       "ingredients": [
         "2 Eier",
         "1 große Kartoffel",
@@ -676,16 +677,190 @@
         "lunch": "Kartoffeltopf mit Tintenfisch (oder Sepia) und Erbsen + Gemischter Salat.",
         "snack": "Quark mit Erdbeeren.",
         "dinner": "Kühlschrank-Räumung: Hummus, hartgekochtes Ei, geröstete Paprika und Putenstreifen."
-      }
+      },
+      "title": "Mediterran-Plan · 28 Tage",
+      "subtitle": "Klinisch ausgewogener Menüplan für gesunden Gewichtsverlust"
     },
-    "planTitle": "Mediterran-Plan · 28 Tage",
-    "planSubtitle": "Klinisch ausgewogener Menüplan für gesunden Gewichtsverlust",
     "weekLabel": "Woche",
     "dayLabel": "Tag",
     "breakfastLabel": "Frühstück",
     "lunchLabel": "Mittagessen",
     "snackLabel": "Snack",
     "dinnerLabel": "Abendessen",
-    "kcalLabel": "kcal/Tag"
+    "kcalLabel": "kcal/Tag",
+    "low_carb": {
+      "title": "Low-Carb Plan · 28 Tage",
+      "subtitle": "Kohlenhydratreduziertes Menü zur Fettverbrennung",
+      "w1_d1": {
+        "breakfast": "Rührei (2) mit 50g Avocado und Kaffee.",
+        "lunch": "Zitronen-Hähnchenbrust mit einer Menge in Olivenöl (AOVE) sautiertem Brokkoli.",
+        "snack": "20g naturbelassene Mandeln + Grüner Tee.",
+        "dinner": "Gegrillter Lachs mit Wildspargel und Rucola-Salat."
+      },
+      "w1_d2": {
+        "breakfast": "Griechischer Joghurt 0% mit 15g Walnüssen und Chiasamen + Kaffee.",
+        "lunch": "Keto-Salat: Feldsalat, Thunfisch, hartgekochtes Ei, Oliven und 30g Feta-Käse.",
+        "snack": "1 Scheibe Emmentaler + 2 Tomatenscheiben.",
+        "dinner": "Mageres Rindfleisch, angebraten mit roten und grünen Paprika."
+      },
+      "w1_d3": {
+        "breakfast": "Omelett aus 2 Eiern mit 2 Scheiben extra magerem Kochschinken + Kaffee.",
+        "lunch": "Seehecht aus dem Ofen auf einem Bett aus Zucchini und Zwiebeln (ohne Kartoffeln).",
+        "snack": "Magerquark mit Zimt.",
+        "dinner": "Rinder-Burger (ohne Brötchen) mit Cheddar-Käse, Gurke und Kopfsalat."
+      },
+      "w1_d4": {
+        "breakfast": "Kaffee mit Milch + 2 pochierte Eier auf 1 kleinen Scheibe Roggenbrot.",
+        "lunch": "Gebratene Hähnchenschenkel (ohne Haut) mit gratinierem Blumenkohl.",
+        "snack": "20g Pistazien + 1 Kräutertee.",
+        "dinner": "Garnelen-Gemüse-Wok: Zucchini, Karotten, Champignons und Sojasprossen."
+      },
+      "w1_d5": {
+        "breakfast": "Protein-Shake (Whey) mit Mandelmilch und 10g Erdnussbutter.",
+        "lunch": "Mageres Schweinelendenstück mit Spinatsalat, Walnüssen und Senf-Dressing.",
+        "snack": "1 hartgekochtes Ei + 5 Oliven.",
+        "dinner": "Zoodles (Zucchini-Spaghetti) mit Putenhackfleisch und frischen Tomaten."
+      },
+      "w1_d6": {
+        "breakfast": "Rührei mit Champignons und einem Hauch geriebenem Käse + Kaffee.",
+        "lunch": "Gedünsteter frischer Kabeljau mit grünen Bohnen und Knoblauch-Refried.",
+        "snack": "20g kalifornische Walnüsse.",
+        "dinner": "Gegrillte Putenbrust mit Blumenkohlpüree."
+      },
+      "w1_d7": {
+        "breakfast": "Griechischer Joghurt 0% mit Erdbeeren und Leinsamen + Kaffee.",
+        "lunch": "Entrecôte oder Rinderfilet mit Pimientos de Padrón und gemischtem Salat.",
+        "snack": "1 Staudensellerie mit etwas fettarmem Frischkäse.",
+        "dinner": "Thunfisch-Spinat-Omelett + 50g Avocado als Beilage."
+      },
+      "w2_d1": {
+        "breakfast": "Omelett aus 2 Eiern mit 30g Ziegenkäse und Spinat.",
+        "lunch": "Pesto-Hähnchen: 200g Brust mit Basilikum-Pinienkern-Sauce + grüne Bohnen.",
+        "snack": "20g Macadamianüsse.",
+        "dinner": "Seehecht en papillote mit Spargel und gerösteten Paprika."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) mit 10g Kürbiskernen und Himbeeren.",
+        "lunch": "Gegrilltes Rindfleisch (180g) mit kaltem Brokkolisalat und knusprigem Speck.",
+        "snack": "1 hartgekochtes Ei + 1 Scheibe Pute.",
+        "dinner": "Mit Thunfisch gefüllte Auberginen: 2 Dosen Thunfisch natur, Zwiebel und etwas geriebener Käse."
+      },
+      "w2_d3": {
+        "breakfast": "Kaffee + 2 Spiegeleier (in wenig AOVE) mit 50g Avocado.",
+        "lunch": "Frischer Kabeljau aus dem Ofen mit Kräuterkruste und Gurkensalat.",
+        "snack": "Magerquark mit 10g Sonnenblumenkernen.",
+        "dinner": "Putencurry-Brust mit sautiertem Blumenkohl."
+      },
+      "w2_d4": {
+        "breakfast": "Protein-Shake mit Kokosmilch und Zimt.",
+        "lunch": "Hausgemachte Hähnchen-Burger in Salatblätter gewickelt, mit Tomate und Zwiebel.",
+        "snack": "20g Pistazien + Weißer Tee.",
+        "dinner": "Rührei mit Pilzen und Garnelen mit einem Hauch Knoblauch und Petersilie."
+      },
+      "w2_d5": {
+        "breakfast": "Protein-Omelett aus 2 Eiklar und 1 Eigelb mit Thunfisch + Milchkaffee.",
+        "lunch": "Lachs aus dem Ofen mit Zucchini-Püree.",
+        "snack": "1 Scheibe Gouda + 5 Oliven.",
+        "dinner": "Mageres Schweinefilet mit Rucola-Salat, Walnüssen und Parmesan."
+      },
+      "w2_d6": {
+        "breakfast": "Rührei mit einer Scheibe gehacktem Serrano-Schinken + Kaffee.",
+        "lunch": "Low-Carb Caesar Salad: Hähnchen, Salat, hartgekochtes Ei, Sardellen und Dressing.",
+        "snack": "15g Erdnussbutter auf Selleriestangen.",
+        "dinner": "Garnelen- und Zucchini-Spieße vom Grill mit Tomatensalat."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark mit 15g Walnüssen und einem Hauch 100% Kakao.",
+        "lunch": "Rindfleisch-Paprika-Wok mit salzarmer Sojasauce und Ingwer.",
+        "snack": "1/2 Avocado mit Salz und Pfeffer.",
+        "dinner": "Keto-Pizza: Boden aus gehacktem Hähnchen und Ei, mit Tomate, Oregano und Käse."
+      },
+      "w3_d1": {
+        "breakfast": "Rührei (2) mit 30g Feta-Käse und Spinat.",
+        "lunch": "Sesam-Hähnchenbrust mit sautierten grünen Bohnen.",
+        "snack": "20g Walnüsse + Rooibos-Tee.",
+        "dinner": "Zucchini-Lauch-Creme + 150g gedünsteter Seehecht."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) mit 15g Mandeln und Vanille-Extrakt.",
+        "lunch": "Rindfleisch mit Brokkoli und Ingwer in salzarmer Sojasauce.",
+        "snack": "1 hartgekochtes Ei + 5 grüne Oliven.",
+        "dinner": "Spinatsalat, Walnüsse, hartgekochtes Ei und 50g Avocado."
+      },
+      "w3_d3": {
+        "breakfast": "2 pochierte Eier mit 50g Räucherlachs (Achtung Natrium, kein Salz hinzufügen).",
+        "lunch": "Mageres Schweinelendenstück mit sautiertem Wirsing, Knoblauch und Paprika.",
+        "snack": "Magerquark mit 10g Chiasamen.",
+        "dinner": "Goldbrasse aus dem Ofen mit roten Paprika und Zwiebeln."
+      },
+      "w3_d4": {
+        "breakfast": "Omelett (2 Eier) mit Champignons und Petersilie + Kaffee.",
+        "lunch": "Forelle aus dem Ofen mit Wildspargelsalat und Zitrone.",
+        "snack": "20g Pistazien + 1 Scheibe Emmentaler.",
+        "dinner": "Blumenkohlreis mit Putenhackfleisch und mexikanischen Gewürzen."
+      },
+      "w3_d5": {
+        "breakfast": "Griechischer Joghurt 0% mit 15g Sonnenblumenkernen und Zimt.",
+        "lunch": "Gebackene Hähnchenkeulen mit Gewürzen und Gurken-Joghurt-Salat (Tzatziki light).",
+        "snack": "1/2 Avocado mit schwarzem Pfeffer.",
+        "dinner": "Zoodles (Zucchini) mit Knoblauch-Garnelen und einem Hauch Chili."
+      },
+      "w3_d6": {
+        "breakfast": "Rührei mit 1 Scheibe Kochschinken und Kaffee.",
+        "lunch": "Rinder-Entrecôte mit verschiedenen Pilzen und Knoblauch.",
+        "snack": "Magerquark (150g) mit 10g Walnüssen.",
+        "dinner": "Kabeljau-Omelett und Tomatensalat."
+      },
+      "w3_d7": {
+        "breakfast": "Keto-Pancakes: 1 Ei, 30g Mandelmehl und ein Schuss Milch.",
+        "lunch": "Weißfisch in grüner Sauce mit Venusmuscheln und weißem Spargel.",
+        "snack": "20g geröstete Mandeln.",
+        "dinner": "Blumenkohl-Tabouleh: Zerkleinerter Blumenkohl, Tomate, Gurke, Petersilie und Zitrone."
+      },
+      "w4_d1": {
+        "breakfast": "2 Spiegeleier (wenig AOVE) mit 50g Avocado und Kaffee.",
+        "lunch": "Rosmarin-Hähnchenbrust mit sautierten grünen Bohnen und Knoblauch.",
+        "snack": "20g Mandeln + 1 Stück Schokolade (>85%).",
+        "dinner": "Seehecht aus dem Ofen mit Kräuterkruste und Rucola-Salat."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) mit Blaubeeren und Leinsamen.",
+        "lunch": "Rinderhackbällchen in Tomaten-Paprika-Sauce.",
+        "snack": "1 hartgekochtes Ei + 5 Oliven.",
+        "dinner": "Puten-Brokkoli-Wok mit Ingwer und Sojasauce."
+      },
+      "w4_d3": {
+        "breakfast": "Omelett (2 Eier) mit Emmentaler (20g) + Kaffee.",
+        "lunch": "Gedünsteter Kabeljau mit sautiertem Spinat und Pinienkernen.",
+        "snack": "20g Macadamianüsse.",
+        "dinner": "Salat mit gegrilltem Hähnchen, Kürbiskernen, Tomate und Gurke."
+      },
+      "w4_d4": {
+        "breakfast": "Magerquark (200g) mit 15g Walnüssen und einem Hauch Zimt.",
+        "lunch": "Rindersteak (Entrecôte) mit Pimientos de Padrón und gemischtem Salat.",
+        "snack": "1 Scheibe Gouda + 2 Tomatenscheiben.",
+        "dinner": "Zoodles (Zucchini) mit Knoblauch-Garnelen und Chili."
+      },
+      "w4_d5": {
+        "breakfast": "Rührei (2) mit Champignons und frischer Petersilie.",
+        "lunch": "Mageres Schweinefilet mit Rosenkohl und Speck.",
+        "snack": "20g naturbelassene Pistazien.",
+        "dinner": "Gegrillter Lachs mit Wildspargel und Zitrone."
+      },
+      "w4_d6": {
+        "breakfast": "Protein-Omelett aus 2 Eiklar und 1 Eigelb mit Basilikum-Pesto + Kaffee.",
+        "lunch": "Gebratene Putenbrust mit Ofengemüse (Paprika, Zwiebel, Aubergine).",
+        "snack": "Griechischer Joghurt 0% mit 10g Chiasamen.",
+        "dinner": "Rindfleisch-Pilz-Pfanne mit Knoblauch und Petersilie."
+      },
+      "w4_d7": {
+        "breakfast": "Spiegeleier (2) mit 2 Scheiben Serrano-Schinken (ohne Fett).",
+        "lunch": "Wolfsbarsch oder Goldbrasse aus dem Ofen mit Blumenkohlpüree und Tomatensalat.",
+        "snack": "20g kalifornische Walnüsse.",
+        "dinner": "Keto-Geflügelpizza: Boden aus Putenhackfleisch mit Tomate und Mozzarella."
+      }
+    },
+    "med_label": "Mediterran",
+    "low_carb_label": "Low-Carb"
   }
 }

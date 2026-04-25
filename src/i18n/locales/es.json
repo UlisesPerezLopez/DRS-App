@@ -233,7 +233,8 @@
     "papaya": "Papaya",
     "watermelon": "Sandía",
     "raspberries": "Frambuesas",
-    "blackberry": "Moras"
+    "blackberry": "Moras",
+    "broken_eggs": "Huevos rotos"
   },
   "exerciseDb": {
     "Sentadillas (mancuernas)": "Sentadillas (mancuernas)",
@@ -408,7 +409,7 @@
       ]
     },
     "broken_eggs": {
-      "name": "Huevos rotos saludables",
+      "name": "Huevos rotos",
       "ingredients": [
         "2 huevos",
         "1 patata grande",
@@ -676,16 +677,190 @@
         "lunch": "Guiso de patatas con calamares (o sepia) y guisantes + Ensalada mixta.",
         "snack": "Queso fresco batido con fresas.",
         "dinner": "Cena 'Limpieza de Nevera': Hummus, huevo duro, pimientos asados y palitos de pavo."
-      }
+      },
+      "title": "Plan Mediterráneo · 28 Días",
+      "subtitle": "Menú clínico equilibrado para pérdida de peso saludable"
     },
-    "planTitle": "Plan Mediterráneo · 28 Días",
-    "planSubtitle": "Menú clínico equilibrado para pérdida de peso saludable",
     "weekLabel": "Semana",
     "dayLabel": "Día",
     "breakfastLabel": "Desayuno",
     "lunchLabel": "Almuerzo",
     "snackLabel": "Merienda",
     "dinnerLabel": "Cena",
-    "kcalLabel": "kcal/día"
+    "kcalLabel": "kcal/día",
+    "low_carb": {
+      "w1_d1": {
+        "breakfast": "Huevos revueltos (2) con 50g de aguacate y café.",
+        "lunch": "Pechuga de pollo al limón con una montaña de brócoli salteado en AOVE.",
+        "snack": "20g de almendras naturales + Té verde.",
+        "dinner": "Salmón a la plancha con espárragos trigueros y ensalada de rúcula."
+      },
+      "w1_d2": {
+        "breakfast": "Yogur griego 0% con 15g de nueces y semillas de chía + Café.",
+        "lunch": "Ensalada Keto: Canónigos, atún, huevo duro, aceitunas y 30g de queso feta.",
+        "snack": "1 rodaja de queso emmental + 2 rodajas de tomate.",
+        "dinner": "Ternera magra salteada con pimientos rojos y verdes."
+      },
+      "w1_d3": {
+        "breakfast": "Tortilla francesa de 2 huevos con 2 lonchas de jamón cocido extra magro + Café.",
+        "lunch": "Merluza al horno sobre cama de calabacín y cebolla (sin patata).",
+        "snack": "Queso fresco batido con canela.",
+        "dinner": "Hamburguesa de ternera (sin pan) con queso cheddar, pepinillo y lechuga."
+      },
+      "w1_d4": {
+        "breakfast": "Café con leche + 2 huevos poché sobre 1 rodaja pequeña de pan de centeno.",
+        "lunch": "Muslos de pollo asados (sin piel) con coliflor gratinada.",
+        "snack": "20g de pistachos + 1 infusión.",
+        "dinner": "Wok de gambas y verduras: Calabacín, zanahoria, champiñones y brotes de soja."
+      },
+      "w1_d5": {
+        "breakfast": "Batido de proteínas (Whey) con leche de almendras y 10g de crema de cacahuete.",
+        "lunch": "Lomo de cerdo magro con ensalada de espinacas, nueces y aliño de mostaza.",
+        "snack": "1 huevo duro + 5 aceitunas.",
+        "dinner": "Zoodles (Espaguetis de calabacín) con carne picada de pavo y tomate natural."
+      },
+      "w1_d6": {
+        "breakfast": "Huevos revueltos con champiñones y un toque de queso rallado + Café.",
+        "lunch": "Bacalao fresco al vapor con judías verdes y refrito de ajos.",
+        "snack": "20g de nueces de california.",
+        "dinner": "Pechuga de pavo a la plancha con puré de coliflor."
+      },
+      "w1_d7": {
+        "breakfast": "Yogur griego 0% con fresas y semillas de lino + Café.",
+        "lunch": "Entrecot o filete de ternera con pimientos de Padrón y ensalada mixta.",
+        "snack": "1 tallo de apio con un poco de queso crema light.",
+        "dinner": "Tortilla de atún y espinacas + 50g de aguacate lateral."
+      },
+      "w2_d1": {
+        "breakfast": "Tortilla de 2 huevos con 30g de queso de cabra y espinacas.",
+        "lunch": "Pollo al Pesto: 200g pechuga con salsa de albahaca y piñones + Judías verdes.",
+        "snack": "20g de nueces de macadamia.",
+        "dinner": "Merluza al papillote con espárragos y pimientos asados."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) con 10g de semillas de calabaza y frambuesas.",
+        "lunch": "Ternera a la plancha (180g) con ensalada de brócoli frío y bacon crujiente.",
+        "snack": "1 huevo duro + 1 rodaja de pavo.",
+        "dinner": "Berengenas rellenas de atún: 2 latas al natural, cebolla y un toque de queso rallado."
+      },
+      "w2_d3": {
+        "breakfast": "Café + 2 huevos fritos (en poco AOVE) con 50g de aguacate.",
+        "lunch": "Bacalao fresco al horno con costra de hierbas y ensalada de pepino.",
+        "snack": "Queso fresco batido con 10g de pipas de girasol.",
+        "dinner": "Pechuga de pavo al curry con coliflor salteada."
+      },
+      "w2_d4": {
+        "breakfast": "Batido de proteína con leche de coco y canela.",
+        "lunch": "Hamburguesas de pollo caseras envueltas en hojas de lechuga con tomate y cebolla.",
+        "snack": "20g de pistachos + Té blanco.",
+        "dinner": "Revuelto de setas y gambas con un toque de ajo y perejil."
+      },
+      "w2_d5": {
+        "breakfast": "Tortilla de 2 claras y 1 yema con atún + Café con leche.",
+        "lunch": "Salmón al horno con puré de calabacín.",
+        "snack": "1 rodaja de queso Gouda + 5 olivas.",
+        "dinner": "Filete de cerdo magro con ensalada de rúcula, nueces y parmesano."
+      },
+      "w2_d6": {
+        "breakfast": "Huevos revueltos con 1 loncha de jamón serrano picado + Café.",
+        "lunch": "Ensalada César Low-Carb: Pollo, lechuga, huevo duro, anchoas y aliño.",
+        "snack": "15g de crema de cacahuete sobre palitos de apio.",
+        "dinner": "Brochetas de langostinos y calabacín a la plancha con ensalada de tomate."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark con 15g de nueces y un toque de cacao puro 100%.",
+        "lunch": "Wok de ternera y pimientos con soja baja en sal y jengibre.",
+        "snack": "1/2 Aguacate con sal y pimienta.",
+        "dinner": "Pizza Keto: Base de pollo picado y huevo, con tomate, orégano y queso."
+      },
+      "w3_d1": {
+        "breakfast": "Huevos revueltos (2) con 30g de queso feta y espinacas.",
+        "lunch": "Pechuga de pollo al sésamo con judías verdes salteadas.",
+        "snack": "20g de nueces + Té rooibos.",
+        "dinner": "Crema de calabacín y puerro + 150g de merluza al vapor."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) con 15g de almendras y esencia de vainilla.",
+        "lunch": "Ternera con brócoli y jengibre con salsa de soja baja en sal.",
+        "snack": "1 huevo duro + 5 aceitunas verdes.",
+        "dinner": "Ensalada de espinacas, nueces, huevo duro y 50g de aguacate."
+      },
+      "w3_d3": {
+        "breakfast": "2 Huevos poché con 50g de salmón ahumado (ojo sodio, no añadir sal).",
+        "lunch": "Lomo de cerdo magro con col de Milán salteada con ajo y pimentón.",
+        "snack": "Queso fresco batido con 10g de semillas de chía.",
+        "dinner": "Dorada al horno con pimientos rojos y cebolla."
+      },
+      "w3_d4": {
+        "breakfast": "Tortilla francesa (2 huevos) con champiñones y perejil + Café.",
+        "lunch": "Trucha al horno con ensalada de espárragos trigueros y limón.",
+        "snack": "20g de pistachos + 1 rodaja de queso emmental.",
+        "dinner": "Arroz de coliflor con carne picada de pavo y especias mexicanas."
+      },
+      "w3_d5": {
+        "breakfast": "Yogur griego 0% con 15g de pipas de girasol y canela.",
+        "lunch": "Muslos de pollo al horno con especias y ensalada de pepino y yogur (Tzatziki light).",
+        "snack": "1/2 aguacate con pimienta negra.",
+        "dinner": "Zoodles (calabacín) con gambas al ajillo y un toque de guindilla."
+      },
+      "w3_d6": {
+        "breakfast": "Huevos revueltos con 1 loncha de jamón cocido y café.",
+        "lunch": "Entrecot de ternera con salteado de setas variadas y ajo.",
+        "snack": "Magerquark (150g) con 10g de nueces.",
+        "dinner": "Tortilla de bacalao y ensalada de tomate."
+      },
+      "w3_d7": {
+        "breakfast": "Keto-Pancakes: 1 huevo, 30g de harina de almendra y chorrito de leche.",
+        "lunch": "Pescado blanco en salsa verde con almejas y espárragos blancos.",
+        "snack": "20g de almendras tostadas.",
+        "dinner": "Tabulé de coliflor: Coliflor triturada, tomate, pepino, perejil y limón."
+      },
+      "w4_d1": {
+        "breakfast": "2 Huevos fritos (poco AOVE) con 50g de aguacate y café.",
+        "lunch": "Pechuga de pollo al romero con salteado de judías verdes y ajo.",
+        "snack": "20g de almendras + 1 onza de chocolate >85%.",
+        "dinner": "Merluza al horno con costra de hierbas y ensalada de rúcula."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) con arándanos y semillas de lino.",
+        "lunch": "Albóndigas de ternera en salsa de tomate y pimientos.",
+        "snack": "1 Huevo duro + 5 aceitunas.",
+        "dinner": "Wok de pavo y brócoli con jengibre y salsa de soja."
+      },
+      "w4_d3": {
+        "breakfast": "Tortilla francesa (2 huevos) con queso emmental (20g) + Café.",
+        "lunch": "Bacalao al vapor con espinacas salteadas y piñones.",
+        "snack": "20g de nueces de macadamia.",
+        "dinner": "Ensalada de pollo asado, pipas de calabaza, tomate and pepino."
+      },
+      "w4_d4": {
+        "breakfast": "Magerquark (200g) con 15g de nueces y un toque de canela.",
+        "lunch": "Filete de ternera (Entrecot) con pimientos de Padrón y ensalada mixta.",
+        "snack": "1 rodaja de queso Gouda + 2 rodajas de tomate.",
+        "dinner": "Zoodles (calabacín) con gambas al ajillo y guindilla."
+      },
+      "w4_d5": {
+        "breakfast": "Huevos revueltos (2) con champiñones y perejil fresco.",
+        "lunch": "Solomillo de cerdo magro con coles de Bruselas y bacon.",
+        "snack": "20g de pistachos naturales.",
+        "dinner": "Salmón a la plancha con espárragos trigueros y limón."
+      },
+      "w4_d6": {
+        "breakfast": "Tortilla de 2 claras y 1 yema con pesto de albahaca + Café.",
+        "lunch": "Pechuga de pavo asada con verduras al horno (pimiento, cebolla, berenjena).",
+        "snack": "Yogur griego 0% con 10g de semillas de chía.",
+        "dinner": "Salteado de ternera y setas con ajo y perejil."
+      },
+      "w4_d7": {
+        "breakfast": "Huevos fritos (2) con 2 lonchas de jamón serrano (sin grasa).",
+        "lunch": "Lubina o Dorada al horno con puré de coliflor y ensalada de tomate.",
+        "snack": "20g de nueces de California.",
+        "dinner": "Keto-Pizza de pollo: Base de pollo picado con tomate y mozzarella."
+      },
+      "title": "Plan Low-Carb · 28 Días",
+      "subtitle": "Menú reducido en carbohidratos para quemar grasa"
+    },
+    "med_label": "Mediterránea",
+    "low_carb_label": "Low-Carb"
   }
 }

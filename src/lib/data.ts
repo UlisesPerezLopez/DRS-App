@@ -174,6 +174,41 @@ export const MEDITERRANEAN_PLAN: DailyMenuPlan[] = [
   { id: 'm_w4_d7', week: 4, day: 28, translationKey: 'plans.med.w4_d7', totalKcal: 1890 },
 ];
 
+export const LOW_CARB_PLAN: DailyMenuPlan[] = [
+  // SEMANA 1
+  { id: 'lc_w1_d1', week: 1, day: 1, translationKey: 'plans.low_carb.w1_d1', totalKcal: 1850 },
+  { id: 'lc_w1_d2', week: 1, day: 2, translationKey: 'plans.low_carb.w1_d2', totalKcal: 1850 },
+  { id: 'lc_w1_d3', week: 1, day: 3, translationKey: 'plans.low_carb.w1_d3', totalKcal: 1850 },
+  { id: 'lc_w1_d4', week: 1, day: 4, translationKey: 'plans.low_carb.w1_d4', totalKcal: 1850 },
+  { id: 'lc_w1_d5', week: 1, day: 5, translationKey: 'plans.low_carb.w1_d5', totalKcal: 1850 },
+  { id: 'lc_w1_d6', week: 1, day: 6, translationKey: 'plans.low_carb.w1_d6', totalKcal: 1850 },
+  { id: 'lc_w1_d7', week: 1, day: 7, translationKey: 'plans.low_carb.w1_d7', totalKcal: 1850 },
+  // SEMANA 2
+  { id: 'lc_w2_d1', week: 2, day: 8, translationKey: 'plans.low_carb.w2_d1', totalKcal: 1850 },
+  { id: 'lc_w2_d2', week: 2, day: 9, translationKey: 'plans.low_carb.w2_d2', totalKcal: 1850 },
+  { id: 'lc_w2_d3', week: 2, day: 10, translationKey: 'plans.low_carb.w2_d3', totalKcal: 1850 },
+  { id: 'lc_w2_d4', week: 2, day: 11, translationKey: 'plans.low_carb.w2_d4', totalKcal: 1850 },
+  { id: 'lc_w2_d5', week: 2, day: 12, translationKey: 'plans.low_carb.w2_d5', totalKcal: 1850 },
+  { id: 'lc_w2_d6', week: 2, day: 13, translationKey: 'plans.low_carb.w2_d6', totalKcal: 1850 },
+  { id: 'lc_w2_d7', week: 2, day: 14, translationKey: 'plans.low_carb.w2_d7', totalKcal: 1850 },
+  // SEMANA 3
+  { id: 'lc_w3_d1', week: 3, day: 15, translationKey: 'plans.low_carb.w3_d1', totalKcal: 1850 },
+  { id: 'lc_w3_d2', week: 3, day: 16, translationKey: 'plans.low_carb.w3_d2', totalKcal: 1850 },
+  { id: 'lc_w3_d3', week: 3, day: 17, translationKey: 'plans.low_carb.w3_d3', totalKcal: 1850, warnings: ['high_sodium'] },
+  { id: 'lc_w3_d4', week: 3, day: 18, translationKey: 'plans.low_carb.w3_d4', totalKcal: 1850 },
+  { id: 'lc_w3_d5', week: 3, day: 19, translationKey: 'plans.low_carb.w3_d5', totalKcal: 1850 },
+  { id: 'lc_w3_d6', week: 3, day: 20, translationKey: 'plans.low_carb.w3_d6', totalKcal: 1850 },
+  { id: 'lc_w3_d7', week: 3, day: 21, translationKey: 'plans.low_carb.w3_d7', totalKcal: 1850 },
+  // SEMANA 4
+  { id: 'lc_w4_d1', week: 4, day: 22, translationKey: 'plans.low_carb.w4_d1', totalKcal: 1850 },
+  { id: 'lc_w4_d2', week: 4, day: 23, translationKey: 'plans.low_carb.w4_d2', totalKcal: 1850 },
+  { id: 'lc_w4_d3', week: 4, day: 24, translationKey: 'plans.low_carb.w4_d3', totalKcal: 1850 },
+  { id: 'lc_w4_d4', week: 4, day: 25, translationKey: 'plans.low_carb.w4_d4', totalKcal: 1850 },
+  { id: 'lc_w4_d5', week: 4, day: 26, translationKey: 'plans.low_carb.w4_d5', totalKcal: 1850 },
+  { id: 'lc_w4_d6', week: 4, day: 27, translationKey: 'plans.low_carb.w4_d6', totalKcal: 1850 },
+  { id: 'lc_w4_d7', week: 4, day: 28, translationKey: 'plans.low_carb.w4_d7', totalKcal: 1850 },
+];
+
 export interface ExerciseTemplate {
   name: string;
   description: string;

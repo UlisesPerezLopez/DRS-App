@@ -1,22 +1,51 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { MEDITERRANEAN_PLAN } from "../lib/data";
-import { Flame, Coffee, UtensilsCrossed, Cookie, MoonStar, AlertTriangle, HeartPulse } from "lucide-react";
+import { MEDITERRANEAN_PLAN, LOW_CARB_PLAN } from "../lib/data";
+import { Flame, Coffee, UtensilsCrossed, Cookie, MoonStar, AlertTriangle, HeartPulse, LayoutList } from "lucide-react";
 
 const WEEKS = [1, 2, 3, 4] as const;
+type DietType = "med" | "low_carb";
 
 export function MyPlanTab() {
   const { t } = useTranslation();
+  const [activeDiet, setActiveDiet] = useState<DietType>("med");
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [openDay, setOpenDay] = useState<string | null>(null);
 
-  const weekDays = MEDITERRANEAN_PLAN.filter(d => d.week === selectedWeek);
+  const planData = activeDiet === "med" ? MEDITERRANEAN_PLAN : LOW_CARB_PLAN;
+  const weekDays = planData.filter(d => d.week === selectedWeek);
 
   return (
-    <div className="px-4 pt-4 pb-28 space-y-4">
+    <div className="px-4 pt-4 pb-28 space-y-6">
+      {/* Diet Selector */}
+      <div className="bg-slate-100 dark:bg-slate-800 p-1 rounded-2xl flex gap-1">
+        <button
+          onClick={() => setActiveDiet("med")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
+            activeDiet === "med"
+              ? "bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+          }`}
+        >
+          <LayoutList size={16} />
+          {t("plans.med_label")}
+        </button>
+        <button
+          onClick={() => setActiveDiet("low_carb")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
+            activeDiet === "low_carb"
+              ? "bg-white dark:bg-slate-700 text-orange-600 dark:text-orange-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+          }`}
+        >
+          <Flame size={16} />
+          {t("plans.low_carb_label")}
+        </button>
+      </div>
+
       <header>
-        <h1 className="text-2xl font-bold">{t("plans.planTitle")}</h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{t("plans.planSubtitle")}</p>
+        <h1 className="text-2xl font-bold">{t(`plans.${activeDiet}.title`)}</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{t(`plans.${activeDiet}.subtitle`)}</p>
       </header>
 
       {/* Week selector */}
@@ -27,7 +56,9 @@ export function MyPlanTab() {
             onClick={() => { setSelectedWeek(w); setOpenDay(null); }}
             className={`flex-1 py-2.5 rounded-xl text-sm font-bold transition active:scale-95 ${
               selectedWeek === w
-                ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                ? activeDiet === "med" 
+                  ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                  : "bg-orange-500 text-white shadow-md shadow-orange-500/20"
                 : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300"
             }`}
           >
@@ -57,7 +88,11 @@ export function MyPlanTab() {
                 className="w-full flex items-center justify-between p-4 text-left"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 flex items-center justify-center font-bold text-sm">
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm ${
+                    activeDiet === "med" 
+                      ? "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300"
+                      : "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300"
+                  }`}>
                     {plan.day}
                   </div>
                   <div>

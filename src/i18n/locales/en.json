@@ -233,7 +233,8 @@
     "papaya": "Papaya",
     "watermelon": "Watermelon",
     "raspberries": "Raspberries",
-    "blackberry": "Blackberries"
+    "blackberry": "Blackberries",
+    "broken_eggs": "Broken Eggs (Huevos Rotos)"
   },
   "exerciseDb": {
     "Sentadillas (mancuernas)": "Squats (dumbbells)",
@@ -408,7 +409,7 @@
       ]
     },
     "broken_eggs": {
-      "name": "Healthy Broken Eggs",
+      "name": "Broken Eggs (Huevos Rotos)",
       "ingredients": [
         "2 eggs",
         "1 large potato",
@@ -676,16 +677,190 @@
         "lunch": "Potato stew with squid (or cuttlefish) and peas + Mixed salad.",
         "snack": "Cottage cheese with strawberries.",
         "dinner": "Fridge Clearance: Hummus, hard-boiled egg, roasted peppers and turkey sticks."
-      }
+      },
+      "title": "Mediterranean Plan · 28 Days",
+      "subtitle": "Clinically balanced menu for healthy weight loss"
     },
-    "planTitle": "Mediterranean Plan · 28 Days",
-    "planSubtitle": "Clinically balanced menu for healthy weight loss",
     "weekLabel": "Week",
     "dayLabel": "Day",
     "breakfastLabel": "Breakfast",
     "lunchLabel": "Lunch",
     "snackLabel": "Snack",
     "dinnerLabel": "Dinner",
-    "kcalLabel": "kcal/day"
+    "kcalLabel": "kcal/day",
+    "low_carb": {
+      "title": "Low-Carb Plan · 28 Days",
+      "subtitle": "Low-carb menu for fat burning",
+      "w1_d1": {
+        "breakfast": "Scrambled eggs (2) with 50g avocado and coffee.",
+        "lunch": "Lemon chicken breast with a mountain of sautéed broccoli in EVOO.",
+        "snack": "20g natural almonds + Green tea.",
+        "dinner": "Grilled salmon with wild asparagus and arugula salad."
+      },
+      "w1_d2": {
+        "breakfast": "0% Greek yogurt with 15g walnuts and chia seeds + Coffee.",
+        "lunch": "Keto Salad: Lamb's lettuce, tuna, hard-boiled egg, olives, and 30g feta cheese.",
+        "snack": "1 slice Emmental cheese + 2 tomato slices.",
+        "dinner": "Lean beef sautéed with red and green peppers."
+      },
+      "w1_d3": {
+        "breakfast": "2-egg French omelette with 2 slices of extra lean ham + Coffee.",
+        "lunch": "Baked hake on a bed of zucchini and onion (no potato).",
+        "snack": "Magerquark (whipped fresh cheese) with cinnamon.",
+        "dinner": "Beef burger (no bun) with cheddar cheese, pickle, and lettuce."
+      },
+      "w1_d4": {
+        "breakfast": "Coffee with milk + 2 poached eggs on 1 small slice of rye bread.",
+        "lunch": "Roasted chicken thighs (skinless) with cauliflower gratin.",
+        "snack": "20g pistachios + 1 herbal tea.",
+        "dinner": "Shrimp and vegetable wok: Zucchini, carrot, mushrooms, and soy sprouts."
+      },
+      "w1_d5": {
+        "breakfast": "Protein shake (Whey) with almond milk and 10g peanut butter.",
+        "lunch": "Lean pork loin with spinach salad, walnuts, and mustard dressing.",
+        "snack": "1 hard-boiled egg + 5 olives.",
+        "dinner": "Zoodles (zucchini spaghetti) with minced turkey and fresh tomato."
+      },
+      "w1_d6": {
+        "breakfast": "Scrambled eggs with mushrooms and a touch of shredded cheese + Coffee.",
+        "lunch": "Steamed fresh cod with green beans and fried garlic.",
+        "snack": "20g California walnuts.",
+        "dinner": "Grilled turkey breast with cauliflower puree."
+      },
+      "w1_d7": {
+        "breakfast": "0% Greek yogurt with strawberries and flaxseed + Coffee.",
+        "lunch": "Entrecote or beef fillet with Padrón peppers and mixed salad.",
+        "snack": "1 celery stalk with a bit of light cream cheese.",
+        "dinner": "Tuna and spinach omelette + 50g avocado on the side."
+      },
+      "w2_d1": {
+        "breakfast": "2-egg omelette with 30g goat cheese and spinach.",
+        "lunch": "Pesto Chicken: 200g breast with basil and pine nut sauce + Green beans.",
+        "snack": "20g macadamia nuts.",
+        "dinner": "Hake en papillote with asparagus and roasted peppers."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) with 10g pumpkin seeds and raspberries.",
+        "lunch": "Grilled beef (180g) with cold broccoli salad and crispy bacon.",
+        "snack": "1 hard-boiled egg + 1 slice of turkey.",
+        "dinner": "Eggplants stuffed with tuna: 2 cans in water, onion, and a touch of shredded cheese."
+      },
+      "w2_d3": {
+        "breakfast": "Coffee + 2 fried eggs (light EVOO) with 50g avocado.",
+        "lunch": "Baked fresh cod with herb crust and cucumber salad.",
+        "snack": "Magerquark with 10g sunflower seeds.",
+        "dinner": "Curry turkey breast with sautéed cauliflower."
+      },
+      "w2_d4": {
+        "breakfast": "Protein shake with coconut milk and cinnamon.",
+        "lunch": "Homemade chicken burgers wrapped in lettuce leaves with tomato and onion.",
+        "snack": "20g pistachios + White tea.",
+        "dinner": "Mushroom and shrimp scramble with a touch of garlic and parsley."
+      },
+      "w2_d5": {
+        "breakfast": "2-white and 1-yolk omelette with tuna + Coffee with milk.",
+        "lunch": "Baked salmon with zucchini puree.",
+        "snack": "1 slice Gouda cheese + 5 olives.",
+        "dinner": "Lean pork fillet with arugula salad, walnuts, and parmesan."
+      },
+      "w2_d6": {
+        "breakfast": "Scrambled eggs with 1 slice of chopped Serrano ham + Coffee.",
+        "lunch": "Low-Carb Caesar Salad: Chicken, lettuce, hard-boiled egg, anchovies, and dressing.",
+        "snack": "15g peanut butter on celery sticks.",
+        "dinner": "Grilled shrimp and zucchini skewers with tomato salad."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark with 15g walnuts and a touch of 100% pure cocoa.",
+        "lunch": "Beef and pepper wok with low-sodium soy and ginger.",
+        "snack": "1/2 Avocado with salt and pepper.",
+        "dinner": "Keto Pizza: Minced chicken and egg base, with tomato, oregano, and cheese."
+      },
+      "w3_d1": {
+        "breakfast": "Scrambled eggs (2) with 30g feta cheese and spinach.",
+        "lunch": "Sesame chicken breast with sautéed green beans.",
+        "snack": "20g walnuts + Rooibos tea.",
+        "dinner": "Zucchini and leek cream + 150g steamed hake."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) with 15g almonds and vanilla extract.",
+        "lunch": "Beef with broccoli and ginger in low-sodium soy sauce.",
+        "snack": "1 hard-boiled egg + 5 green olives.",
+        "dinner": "Spinach salad, walnuts, hard-boiled egg, and 50g avocado."
+      },
+      "w3_d3": {
+        "breakfast": "2 poached eggs with 50g smoked salmon (watch sodium, do not add salt).",
+        "lunch": "Lean pork loin with Savoy cabbage sautéed with garlic and paprika.",
+        "snack": "Magerquark with 10g chia seeds.",
+        "dinner": "Baked sea bream with red peppers and onion."
+      },
+      "w3_d4": {
+        "breakfast": "2-egg French omelette with mushrooms and parsley + Coffee.",
+        "lunch": "Baked trout with wild asparagus salad and lemon.",
+        "snack": "20g pistachios + 1 slice Emmental cheese.",
+        "dinner": "Cauliflower rice with minced turkey and Mexican spices."
+      },
+      "w3_d5": {
+        "breakfast": "0% Greek yogurt with 15g sunflower seeds and cinnamon.",
+        "lunch": "Baked chicken thighs with spices and cucumber-yogurt salad (Tzatziki light).",
+        "snack": "1/2 avocado with black pepper.",
+        "dinner": "Zoodles (zucchini) with garlic shrimp and a touch of chili."
+      },
+      "w3_d6": {
+        "breakfast": "Scrambled eggs with 1 slice of ham and coffee.",
+        "lunch": "Beef entrecote with assorted mushrooms and garlic.",
+        "snack": "Magerquark (150g) with 10g walnuts.",
+        "dinner": "Cod omelette and tomato salad."
+      },
+      "w3_d7": {
+        "breakfast": "Keto Pancakes: 1 egg, 30g almond flour, and a splash of milk.",
+        "lunch": "White fish in green sauce with clams and white asparagus.",
+        "snack": "20g toasted almonds.",
+        "dinner": "Cauliflower tabbouleh: Minced cauliflower, tomato, cucumber, parsley, and lemon."
+      },
+      "w4_d1": {
+        "breakfast": "2 fried eggs (light EVOO) with 50g avocado and coffee.",
+        "lunch": "Rosemary chicken breast with sautéed green beans and garlic.",
+        "snack": "20g almonds + 1 oz of chocolate (>85%).",
+        "dinner": "Baked hake with herb crust and arugula salad."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) with blueberries and flaxseed.",
+        "lunch": "Beef meatballs in tomato and pepper sauce.",
+        "snack": "1 hard-boiled egg + 5 olives.",
+        "dinner": "Turkey and broccoli wok with ginger and soy sauce."
+      },
+      "w4_d3": {
+        "breakfast": "2-egg French omelette with Emmental cheese (20g) + Coffee.",
+        "lunch": "Steamed cod with sautéed spinach and pine nuts.",
+        "snack": "20g macadamia nuts.",
+        "dinner": "Roasted chicken salad, pumpkin seeds, tomato, and cucumber."
+      },
+      "w4_d4": {
+        "breakfast": "Magerquark (200g) with 15g walnuts and a touch of cinnamon.",
+        "lunch": "Beef entrecote with Padrón peppers and mixed salad.",
+        "snack": "1 slice Gouda cheese + 2 tomato slices.",
+        "dinner": "Zoodles (zucchini) with garlic shrimp and chili."
+      },
+      "w4_d5": {
+        "breakfast": "Scrambled eggs (2) with mushrooms and fresh parsley.",
+        "lunch": "Lean pork tenderloin with Brussels sprouts and bacon.",
+        "snack": "20g natural pistachios.",
+        "dinner": "Grilled salmon with wild asparagus and lemon."
+      },
+      "w4_d6": {
+        "breakfast": "2-white and 1-yolk omelette with basil pesto + Coffee.",
+        "lunch": "Roasted turkey breast with baked vegetables (pepper, onion, eggplant).",
+        "snack": "0% Greek yogurt with 10g chia seeds.",
+        "dinner": "Beef and mushroom stir-fry with garlic and parsley."
+      },
+      "w4_d7": {
+        "breakfast": "2 fried eggs with 2 slices of Serrano ham (no fat).",
+        "lunch": "Sea bass or sea bream with cauliflower puree and tomato salad.",
+        "snack": "20g California walnuts.",
+        "dinner": "Keto chicken pizza: Minced chicken base with tomato and mozzarella."
+      }
+    },
+    "med_label": "Mediterranean",
+    "low_carb_label": "Low-Carb"
   }
 }

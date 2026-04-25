@@ -233,7 +233,8 @@
     "papaya": "Papaya",
     "watermelon": "Watermelon",
     "raspberries": "Raspberries",
-    "blackberry": "Blackberries"
+    "blackberry": "Blackberries",
+    "broken_eggs": "Œufs cassés (Huevos Rotos)"
   },
   "exerciseDb": {
     "Sentadillas (mancuernas)": "Squats (haltères)",
@@ -408,7 +409,7 @@
       ]
     },
     "broken_eggs": {
-      "name": "Œufs cassés santé",
+      "name": "Œufs cassés (Huevos Rotos)",
       "ingredients": [
         "2 œufs",
         "1 grosse pomme de terre",
@@ -676,16 +677,190 @@
         "lunch": "Ragoût de pommes de terre aux calamars (ou seiche) et petits pois + Salade mixte.",
         "snack": "Fromage frais avec fraises.",
         "dinner": "Nettoyage du Frigo : Houmous, œuf dur, poivrons grillés et bâtonnets de dinde."
-      }
+      },
+      "title": "Plan Méditerranéen · 28 Jours",
+      "subtitle": "Menu cliniquement équilibré pour une perte de poids saine"
     },
-    "planTitle": "Plan Méditerranéen · 28 Jours",
-    "planSubtitle": "Menu cliniquement équilibré pour une perte de poids saine",
     "weekLabel": "Semaine",
     "dayLabel": "Jour",
     "breakfastLabel": "Petit-déjeuner",
     "lunchLabel": "Déjeuner",
     "snackLabel": "Goûter",
     "dinnerLabel": "Dîner",
-    "kcalLabel": "kcal/jour"
+    "kcalLabel": "kcal/jour",
+    "low_carb": {
+      "title": "Plan Low-Carb · 28 Jours",
+      "subtitle": "Menu réduit en glucides pour brûler les graisses",
+      "w1_d1": {
+        "breakfast": "Œufs brouillés (2) avec 50g d'avocat et café.",
+        "lunch": "Blanc de poulet au citron avec une montagne de brocoli sauté à l'huile d'olive (AOVE).",
+        "snack": "20g d'amandes naturelles + Thé vert.",
+        "dinner": "Saumon grillé avec asperges sauvages et salade de roquette."
+      },
+      "w1_d2": {
+        "breakfast": "Yaourt grec 0% con 15g de noix et graines de chia + Café.",
+        "lunch": "Salade Keto : Mâche, thon, œuf dur, olives et 30g de fromage feta.",
+        "snack": "1 tranche de fromage emmental + 2 tranches de tomate.",
+        "dinner": "Bœuf maigre sauté avec poivrons rouges et verts."
+      },
+      "w1_d3": {
+        "breakfast": "Omelette française de 2 œufs avec 2 tranches de jambon cuit extra maigre + Café.",
+        "lunch": "Merlu au four sur lit de courgettes et oignons (sans pomme de terre).",
+        "snack": "Magerquark (fromage frais fouetté) avec cannelle.",
+        "dinner": "Burger de bœuf (sans pain) avec fromage cheddar, cornichon et laitue."
+      },
+      "w1_d4": {
+        "breakfast": "Café au lait + 2 œufs pochés sur 1 petite tranche de pain de seigle.",
+        "lunch": "Cuisses de poulet rôties (sans peau) avec chou-fleur gratiné.",
+        "snack": "20g de pistaches + 1 infusion.",
+        "dinner": "Wok de crevettes et légumes : Courgettes, carottes, champignons et germes de soja."
+      },
+      "w1_d5": {
+        "breakfast": "Shake protéiné (Whey) avec lait d'amande et 10g de beurre de cacahuète.",
+        "lunch": "Longe de porc maigre avec salade d'épinards, noix et vinaigrette à la moutarde.",
+        "snack": "1 œuf dur + 5 olives.",
+        "dinner": "Zoodles (spaghettis de courgettes) avec dinde hachée et tomate fraîche."
+      },
+      "w1_d6": {
+        "breakfast": "Œufs brouillés aux champignons et une touche de fromage râpé + Café.",
+        "lunch": "Cabillaud frais à la vapeur avec haricots verts et ail frit.",
+        "snack": "20g de noix de Californie.",
+        "dinner": "Blanc de dinde grillé avec purée de chou-fleur."
+      },
+      "w1_d7": {
+        "breakfast": "Yaourt grec 0% aux fraises et graines de lin + Café.",
+        "lunch": "Entrecôte ou filet de bœuf avec piments de Padrón et salade composée.",
+        "snack": "1 branche de céleri avec un peu de fromage à la crème allégé.",
+        "dinner": "Omelette au thon et épinards + 50g d'avocat à part."
+      },
+      "w2_d1": {
+        "breakfast": "Omelette de 2 œufs avec 30g de fromage de chèvre et épinards.",
+        "lunch": "Poulet au pesto : 200g de blanc avec sauce basilic et pignons + Haricots verts.",
+        "snack": "20g de noix de macadamia.",
+        "dinner": "Merlu en papillote avec asperges et poivrons rôtis."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) avec 10g de graines de citrouille et framboises.",
+        "lunch": "Bœuf grillé (180g) avec salade de brocoli froide et bacon croustillant.",
+        "snack": "1 œuf dur + 1 tranche de dinde.",
+        "dinner": "Aubergines farcies au thon : 2 boîtes au naturel, oignon et une touche de fromage râpé."
+      },
+      "w2_d3": {
+        "breakfast": "Café + 2 œufs sur le plat (peu d'AOVE) avec 50g d'avocat.",
+        "lunch": "Cabillaud frais au four avec croûte d'herbes et salade de concombre.",
+        "snack": "Magerquark avec 10g de graines de tournesol.",
+        "dinner": "Blanc de dinde au curry avec chou-fleur sauté."
+      },
+      "w2_d4": {
+        "breakfast": "Shake protéiné au lait de coco et cannelle.",
+        "lunch": "Burgers de poulet maison enveloppés dans des feuilles de laitue avec tomate et oignon.",
+        "snack": "20g de pistaches + Thé blanc.",
+        "dinner": "Poêlée de champignons et crevettes avec une touche d'ail et persil."
+      },
+      "w2_d5": {
+        "breakfast": "Omelette de 2 blancs et 1 jaune au thon + Café au lait.",
+        "lunch": "Saumon au four avec purée de courgettes.",
+        "snack": "1 tranche de fromage Gouda + 5 olives.",
+        "dinner": "Filet de porc maigre avec salade de roquette, noix et parmesan."
+      },
+      "w2_d6": {
+        "breakfast": "Œufs brouillés avec 1 tranche de jambon serrano haché + Café.",
+        "lunch": "Salade César Low-Carb : Poulet, laitue, œuf dur, anchois et vinaigrette.",
+        "snack": "15g de beurre de cacahuète sur bâtonnets de céleri.",
+        "dinner": "Brochettes de crevettes et courgettes à la plancha avec salade de tomate."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark avec 15g de noix et une touche de cacao pur 100%.",
+        "lunch": "Wok de bœuf et poivrons avec soja pauvre en sel et gingembre.",
+        "snack": "1/2 avocat avec sel et poivre.",
+        "dinner": "Pizza Keto : Base de dinde hachée et œuf, avec tomate, origan et fromage."
+      },
+      "w3_d1": {
+        "breakfast": "Œufs brouillés (2) avec 30g de fromage feta et épinards.",
+        "lunch": "Blanc de poulet au sésame avec haricots verts sautés.",
+        "snack": "20g de noix + Thé rooibos.",
+        "dinner": "Crème de courgette et poireau + 150g de merlu à la vapeur."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) avec 15g d'amandes et extrait de vanille.",
+        "lunch": "Bœuf au brocoli et gingembre avec sauce soja pauvre en sel.",
+        "snack": "1 œuf dur + 5 olives vertes.",
+        "dinner": "Salade d'épinards, noix, œuf dur et 50g d'avocat."
+      },
+      "w3_d3": {
+        "breakfast": "2 œufs pochés avec 50g de saumon fumé (attention au sodium, ne pas ajouter de sel).",
+        "lunch": "Longe de porc maigre avec chou de Milan sauté à l'ail et paprika.",
+        "snack": "Magerquark avec 10g de graines de chia.",
+        "dinner": "Daurade au four avec poivrons rouges et oignon."
+      },
+      "w3_d4": {
+        "breakfast": "Omelette française (2 œufs) aux champignons et persil + Café.",
+        "lunch": "Truite au four avec salade d'asperges sauvages et citron.",
+        "snack": "20g de pistaches + 1 tranche de fromage emmental.",
+        "dinner": "Riz de chou-fleur avec dinde hachée et épices mexicaines."
+      },
+      "w3_d5": {
+        "breakfast": "Yaourt grec 0% avec 15g de graines de tournesol et cannelle.",
+        "lunch": "Cuisses de poulet au four aux épices et salade concombre-yaourt (Tzatziki allégé).",
+        "snack": "1/2 avocat au poivre noir.",
+        "dinner": "Zoodles (courgettes) aux crevettes à l'ail et une touche de piment."
+      },
+      "w3_d6": {
+        "breakfast": "Œufs brouillés avec 1 tranche de jambon cuit et café.",
+        "lunch": "Entrecôte de bœuf avec poêlée de champignons variés et ail.",
+        "snack": "Magerquark (150g) avec 10g de noix.",
+        "dinner": "Omelette à la morue et salade de tomate."
+      },
+      "w3_d7": {
+        "breakfast": "Keto-Pancakes : 1 œuf, 30g de farine d'amande et un trait de lait.",
+        "lunch": "Poisson blanc en sauce verte avec palourdes et asperges blanches.",
+        "snack": "20g d'amandes grillées.",
+        "dinner": "Taboulé de chou-fleur : Chou-fleur haché, tomate, concombre, persil et citron."
+      },
+      "w4_d1": {
+        "breakfast": "2 œufs sur le plat (peu d'AOVE) avec 50g d'avocat et café.",
+        "lunch": "Blanc de poulet au romarin avec haricots verts sautés et ail.",
+        "snack": "20g d'amandes + 1 carré de chocolat >85%.",
+        "dinner": "Merlu au four avec croûte d'herbes et salade de roquette."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) aux myrtilles et graines de lin.",
+        "lunch": "Boulettes de bœuf à la sauce tomate et poivrons.",
+        "snack": "1 œuf dur + 5 olives.",
+        "dinner": "Wok de dinde et brocoli au gingembre et sauce soja."
+      },
+      "w4_d3": {
+        "breakfast": "Omelette française (2 œufs) au fromage emmental (20g) + Café.",
+        "lunch": "Cabillaud à la vapeur avec épinards sautés et pignons.",
+        "snack": "20g de noix de macadamia.",
+        "dinner": "Salade de poulet rôti, graines de citrouille, tomate et concombre."
+      },
+      "w4_d4": {
+        "breakfast": "Magerquark (200g) avec 15g de noix et une touche de cannelle.",
+        "lunch": "Entrecôte de bœuf avec piments de Padrón et salade composée.",
+        "snack": "1 tranche de fromage Gouda + 2 tranches de tomate.",
+        "dinner": "Zoodles (courgettes) aux crevettes à l'ail et piment."
+      },
+      "w4_d5": {
+        "breakfast": "Œufs brouillés (2) aux champignons et persil frais.",
+        "lunch": "Filet de porc maigre avec choux de Bruxelles et bacon.",
+        "snack": "20g de pistaches naturelles.",
+        "dinner": "Saumon grillé avec asperges sauvages et citron."
+      },
+      "w4_d6": {
+        "breakfast": "Omelette de 2 blancs et 1 jaune au pesto de basilic + Café.",
+        "lunch": "Blanc de dinde rôti aux légumes au four (poivron, oignon, aubergine).",
+        "snack": "Yaourt grec 0% avec 10g de graines de chia.",
+        "dinner": "Sauté de bœuf et champignons à l'ail et persil."
+      },
+      "w4_d7": {
+        "breakfast": "Œufs sur le plat (2) avec 2 tranches de jambon serrano (sans gras).",
+        "lunch": "Bar ou daurade au four avec purée de chou-fleur et salade de tomate.",
+        "snack": "20g de noix de Californie.",
+        "dinner": "Pizza-Keto au poulet : Base de dinde hachée avec tomate et mozzarella."
+      }
+    },
+    "med_label": "Méditerranéenne",
+    "low_carb_label": "Low-Carb"
   }
 }
