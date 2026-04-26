@@ -1507,6 +1507,197 @@
           "Profiter de la fin de la semaine."
         ]
       }
+    },
+    "veg": {
+      "w1_l1": {
+        "name": "Lentilles Braisées aux Légumes",
+        "ingredients": [
+          "150g de lentilles cuites",
+          "Carotte, poivron et pomme de terre",
+          "Tomate fraîche et huile d'olive"
+        ],
+        "steps": [
+          "Hacher et faire revenir les légumes (sauf la tomate).",
+          "Ajouter les lentilles, un verre d'eau et cuire 15 min.",
+          "Accompagner de salade de tomates fraîche."
+        ]
+      },
+      "w1_d1": {
+        "name": "Œufs Brouillés aux Épinards et Pignons de Pin",
+        "ingredients": [
+          "2 œufs",
+          "150g d'épinards frais",
+          "10g de pignons de pin",
+          "1 tranche de pain complet"
+        ],
+        "steps": [
+          "Faire revenir les épinards jusqu'à ce qu'ils réduisent de volume.",
+          "Ajouter les pignons et les œufs battus.",
+          "Cuire à feu doux et servir avec le pain."
+        ]
+      },
+      "w1_l2": {
+        "name": "Curry de Pois Chiches et Coco",
+        "ingredients": [
+          "200g de pois chiches cuits",
+          "Épinards frais",
+          "50ml de lait de coco léger et curry",
+          "40g de riz complet"
+        ],
+        "steps": [
+          "Faire bouillir le riz complet.",
+          "Dans une poêle, cuire les pois chiches et les épinards avec le lait de coco et le curry.",
+          "Mélanger et servir chaud."
+        ]
+      },
+      "w1_d2": {
+        "name": "Burger de Tofu Grillé",
+        "ingredients": [
+          "1 burger de tofu",
+          "Aubergine et courgette",
+          "Huile d'olive et poivre"
+        ],
+        "steps": [
+          "Couper les légumes en tranches et les rôtir ou les griller.",
+          "Griller le burger de tofu.",
+          "Servir le burger sur le lit de légumes rôtis."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pâtes à la Bolognaise de Lentilles",
+        "ingredients": [
+          "100g de lentilles cuites",
+          "Tomates concassées",
+          "Oignon et carotte",
+          "70g de pâtes complètes"
+        ],
+        "steps": [
+          "Hacher l'oignon et la carotte et les faire revenir.",
+          "Ajouter les lentilles (légèrement écrasées pour donner une texture de viande hachée) et la tomate.",
+          "Cuire 15 min et servir sur les pâtes al dente."
+        ]
+      },
+      "w1_d3": {
+        "name": "Omelette aux Asperges Sauvages",
+        "ingredients": [
+          "2 œufs",
+          "1 botte d'asperges sauvages",
+          "Roquette et 10g de parmesan"
+        ],
+        "steps": [
+          "Faire revenir les asperges hachées avec un peu d'ail.",
+          "Ajouter les œufs battus et cuire l'omelette.",
+          "Accompagner d'une salade d'accompagnement de roquette et de copeaux de parmesan."
+        ]
+      },
+      "w1_l4": {
+        "name": "Tofu Fumé au Quinoa",
+        "ingredients": [
+          "100g de tofu fumé",
+          "60g de quinoa",
+          "Courgette et petits pois"
+        ],
+        "steps": [
+          "Couper le tofu en dés et le faire dorer à la poêle jusqu'à ce qu'il soit très croustillant.",
+          "Faire bouillir le quinoa 12 min après l'avoir bien lavé.",
+          "Mélanger le tofu, le quinoa, la courgette sautée et les petits pois."
+        ]
+      },
+      "w1_d4": {
+        "name": "Crème de Citrouille et Gingembre",
+        "ingredients": [
+          "300g de citrouille",
+          "Gingembre frais",
+          "1 œuf dur",
+          "Graines de lin"
+        ],
+        "steps": [
+          "Faire bouillir la citrouille avec un petit morceau de gingembre et mixer.",
+          "Servir la crème dans un bol.",
+          "Ajouter l'œuf dur haché et les graines sur le dessus pour assurer les protéines."
+        ]
+      },
+      "w1_l5": {
+        "name": "Ragoût de Haricots Blancs",
+        "ingredients": [
+          "200g de haricots blancs cuits",
+          "Blettes fraîches",
+          "Ail et paprika fumé"
+        ],
+        "steps": [
+          "Très bien laver les haricots en conserve pour enlever le sodium.",
+          "Faire revenir l'ail et le paprika (hors du feu pour qu'il ne devienne pas amer).",
+          "Ajouter les blettes, les haricots et le bouillon. Cuire 15 min."
+        ]
+      },
+      "w1_d5": {
+        "name": "Poivrons Farcis au Couscous",
+        "ingredients": [
+          "2 poivrons à rôtir",
+          "40g de couscous complet",
+          "Légumes rôtis variés",
+          "20g de fromage feta"
+        ],
+        "steps": [
+          "Hydrater le couscous avec de l'eau bouillante (5 min).",
+          "Le mélanger avec les légumes hachés et farcir les poivrons préalablement vidés.",
+          "Ajouter le fromage feta émietté sur le dessus et cuire au four 20 min."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella Végétarienne",
+        "ingredients": [
+          "70g de riz bomba",
+          "Artichauts et haricots verts plats",
+          "Haricots de Lima ou blancs",
+          "Safran et paprika doux"
+        ],
+        "steps": [
+          "Faire revenir les légumes dans la poêle à paella.",
+          "Ajouter l'eau, le safran et le paprika. Porter à ébullition.",
+          "Ajouter le riz et cuire à feu moyen environ 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Brochettes de Tempeh et Ananas",
+        "ingredients": [
+          "100g de Tempeh",
+          "Tranches d'ananas frais",
+          "Mâche et huile d'olive"
+        ],
+        "steps": [
+          "Couper le tempeh et l'ananas en dés.",
+          "Enfiler les ingrédients en les alternant et les griller jusqu'à ce qu'ils soient dorés.",
+          "Servir chaud sur un lit de mâche fraîche."
+        ]
+      },
+      "w1_l7": {
+        "name": "Chakchouka aux Œufs Pochés",
+        "ingredients": [
+          "2 œufs",
+          "200ml de tomates concassées",
+          "Poivron rouge et cumin",
+          "1 tranche de pain de seigle"
+        ],
+        "steps": [
+          "Faire un sofrito lent avec le poivron et la tomate épicée au cumin.",
+          "Quand la sauce bouillonne, faire deux trous et casser les œufs dedans.",
+          "Couvrir la poêle 5 min pour qu'ils pochent. Servir avec le pain."
+        ]
+      },
+      "w1_d7": {
+        "name": "Houmous Maison avec Crudités",
+        "ingredients": [
+          "100g de houmous",
+          "Bâtonnets de carotte et de concombre",
+          "1 œuf dur"
+        ],
+        "steps": [
+          "Préparer les bâtonnets de légumes crus en les lavant bien.",
+          "Faire bouillir l'œuf dur.",
+          "Servir le tout sur une planche en bois style apéritif sain."
+        ]
+      }
     }
   },
   "dietTab": {

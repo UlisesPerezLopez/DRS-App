@@ -1507,6 +1507,197 @@
           "Disfruta del cierre semanal."
         ]
       }
+    },
+    "veg": {
+      "w1_l1": {
+        "name": "Lentejas Estofadas con Verduras",
+        "ingredients": [
+          "150g lentejas cocidas",
+          "Zanahoria, pimiento y patata",
+          "Tomate natural y AOVE"
+        ],
+        "steps": [
+          "Pica y saltea las verduras (excepto el tomate).",
+          "Añade las lentejas, un vaso de agua y cuece 15 min.",
+          "Acompaña con la ensalada de tomate fresca."
+        ]
+      },
+      "w1_d1": {
+        "name": "Revuelto de Espinacas y Piñones",
+        "ingredients": [
+          "2 huevos",
+          "150g espinacas frescas",
+          "10g piñones",
+          "1 rodaja de pan integral"
+        ],
+        "steps": [
+          "Saltea las espinacas hasta que reduzcan su volumen.",
+          "Añade los piñones y los huevos batidos.",
+          "Cuaja a fuego lento y sirve con el pan."
+        ]
+      },
+      "w1_l2": {
+        "name": "Curry de Garbanzos y Coco",
+        "ingredients": [
+          "200g garbanzos cocidos",
+          "Espinacas frescas",
+          "50ml leche de coco light y curry",
+          "40g arroz integral"
+        ],
+        "steps": [
+          "Hierve el arroz integral.",
+          "En una sartén, cocina los garbanzos y las espinacas con la leche de coco y el curry.",
+          "Mezcla y sirve caliente."
+        ]
+      },
+      "w1_d2": {
+        "name": "Hamburguesa de Tofu a la Plancha",
+        "ingredients": [
+          "1 hamburguesa de tofu",
+          "Berenjena y calabacín",
+          "AOVE y pimienta"
+        ],
+        "steps": [
+          "Corta la verdura en rodajas y hornéala o hazla a la plancha.",
+          "Cocina la hamburguesa de tofu a la plancha.",
+          "Sirve la hamburguesa sobre la cama de verduras asadas."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pasta con Boloñesa de Lentejas",
+        "ingredients": [
+          "100g lentejas cocidas",
+          "Tomate triturado natural",
+          "Cebolla y zanahoria",
+          "70g pasta integral"
+        ],
+        "steps": [
+          "Pica la cebolla y la zanahoria y saltéalas.",
+          "Añade las lentejas (ligeramente trituradas para dar textura de carne picada) y el tomate.",
+          "Cocina 15 min y sirve sobre la pasta al dente."
+        ]
+      },
+      "w1_d3": {
+        "name": "Tortilla de Espárragos Trigueros",
+        "ingredients": [
+          "2 huevos",
+          "1 manojo espárragos trigueros",
+          "Rúcula y 10g parmesano"
+        ],
+        "steps": [
+          "Saltea los espárragos troceados con un poco de ajo.",
+          "Añade los huevos batidos y cuaja la tortilla.",
+          "Acompaña con una ensalada lateral de rúcula y lascas de parmesano."
+        ]
+      },
+      "w1_l4": {
+        "name": "Tofu Ahumado con Quinoa",
+        "ingredients": [
+          "100g Tofu ahumado (Räuchertofu)",
+          "60g quinoa",
+          "Calabacín y guisantes"
+        ],
+        "steps": [
+          "Corta el tofu en dados y dóralo en la sartén hasta que esté muy crujiente.",
+          "Hierve la quinoa 12 min tras lavarla bien.",
+          "Mezcla el tofu, la quinoa, el calabacín salteado y los guisantes."
+        ]
+      },
+      "w1_d4": {
+        "name": "Crema de Calabaza y Jengibre",
+        "ingredients": [
+          "300g calabaza",
+          "Jengibre fresco",
+          "1 huevo duro",
+          "Semillas de lino"
+        ],
+        "steps": [
+          "Hierve la calabaza con un trozo pequeño de jengibre y tritura.",
+          "Sirve la crema en un bol.",
+          "Añade el huevo duro picado y las semillas por encima para asegurar la proteína."
+        ]
+      },
+      "w1_l5": {
+        "name": "Potaje de Alubias Blancas",
+        "ingredients": [
+          "200g alubias blancas cocidas",
+          "Acelgas frescas",
+          "Ajo y pimentón de la Vera"
+        ],
+        "steps": [
+          "Lava muy bien las alubias de bote para quitarles el sodio.",
+          "Rehoga el ajo y el pimentón (fuera del fuego para que no amargue).",
+          "Añade acelgas, alubias y caldo. Cuece 15 min."
+        ]
+      },
+      "w1_d5": {
+        "name": "Pimientos Rellenos de Cuscús",
+        "ingredients": [
+          "2 pimientos para asar",
+          "40g cuscús integral",
+          "Verduras variadas asadas",
+          "20g queso feta"
+        ],
+        "steps": [
+          "Hidrata el cuscús con agua hirviendo (5 min).",
+          "Mézclalo con las verduras picadas y rellena los pimientos previamente vaciados.",
+          "Añade el queso feta desmigado encima y hornea 20 min."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella Vegetariana",
+        "ingredients": [
+          "70g arroz bomba",
+          "Alcachofas y judía verde plana",
+          "Garrofó o alubia blanca",
+          "Azafrán y pimentón dulce"
+        ],
+        "steps": [
+          "Sofríe las verduras en la paellera.",
+          "Añade agua, azafrán y pimentón. Lleva a ebullición.",
+          "Echa el arroz y cocina a fuego medio unos 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Brochetas de Tempeh y Piña",
+        "ingredients": [
+          "100g Tempeh",
+          "Rodajas de piña natural",
+          "Canónigos y AOVE"
+        ],
+        "steps": [
+          "Corta el tempeh y la piña en dados.",
+          "Ensarta los ingredientes alternándolos y hazlos a la plancha hasta que doren.",
+          "Sirve caliente sobre una cama de canónigos frescos."
+        ]
+      },
+      "w1_l7": {
+        "name": "Shakshuka de Huevos Escalfados",
+        "ingredients": [
+          "2 huevos",
+          "200ml tomate triturado natural",
+          "Pimiento rojo y comino",
+          "1 rodaja pan de centeno"
+        ],
+        "steps": [
+          "Haz un sofrito lento con el pimiento y el tomate especiado con comino.",
+          "Cuando la salsa burbujee, haz dos huecos y casca los huevos dentro.",
+          "Tapa la sartén 5 min para que cuajen al vapor. Acompaña con el pan."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus Casero con Crudités",
+        "ingredients": [
+          "100g hummus",
+          "Zanahoria y pepino en bastones",
+          "1 huevo duro"
+        ],
+        "steps": [
+          "Prepara los palitos de verdura cruda lavándolos bien.",
+          "Hierve el huevo duro.",
+          "Sirve todo en una tabla de madera estilo picoteo saludable."
+        ]
+      }
     }
   },
   "dietTab": {

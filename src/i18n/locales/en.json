@@ -1507,6 +1507,197 @@
           "Enjoy the end of the week."
         ]
       }
+    },
+    "veg": {
+      "w1_l1": {
+        "name": "Braised Lentils with Vegetables",
+        "ingredients": [
+          "150g cooked lentils",
+          "Carrot, pepper and potato",
+          "Fresh tomato and EVOO"
+        ],
+        "steps": [
+          "Chop and sauté the vegetables (except the tomato).",
+          "Add the lentils, a glass of water and cook 15 min.",
+          "Serve with fresh tomato salad."
+        ]
+      },
+      "w1_d1": {
+        "name": "Scrambled Eggs with Spinach and Pine Nuts",
+        "ingredients": [
+          "2 eggs",
+          "150g fresh spinach",
+          "10g pine nuts",
+          "1 slice of whole wheat bread"
+        ],
+        "steps": [
+          "Sauté the spinach until it reduces its volume.",
+          "Add the pine nuts and beaten eggs.",
+          "Cook slowly and serve with the bread."
+        ]
+      },
+      "w1_l2": {
+        "name": "Chickpea and Coconut Curry",
+        "ingredients": [
+          "200g cooked chickpeas",
+          "Fresh spinach",
+          "50ml light coconut milk and curry",
+          "40g brown rice"
+        ],
+        "steps": [
+          "Boil the brown rice.",
+          "In a pan, cook the chickpeas and spinach with the coconut milk and curry.",
+          "Mix and serve hot."
+        ]
+      },
+      "w1_d2": {
+        "name": "Grilled Tofu Burger",
+        "ingredients": [
+          "1 tofu burger",
+          "Eggplant and zucchini",
+          "EVOO and pepper"
+        ],
+        "steps": [
+          "Slice the vegetables and bake or grill them.",
+          "Grill the tofu burger.",
+          "Serve the burger on the bed of roasted vegetables."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pasta with Lentil Bolognese",
+        "ingredients": [
+          "100g cooked lentils",
+          "Crushed tomatoes",
+          "Onion and carrot",
+          "70g whole wheat pasta"
+        ],
+        "steps": [
+          "Chop the onion and carrot and sauté them.",
+          "Add the lentils (lightly crushed to give a minced meat texture) and the tomato.",
+          "Cook 15 min and serve over al dente pasta."
+        ]
+      },
+      "w1_d3": {
+        "name": "Wild Asparagus Omelet",
+        "ingredients": [
+          "2 eggs",
+          "1 bunch wild asparagus",
+          "Arugula and 10g parmesan"
+        ],
+        "steps": [
+          "Sauté the chopped asparagus with a little garlic.",
+          "Add the beaten eggs and cook the omelet.",
+          "Serve with a side salad of arugula and parmesan flakes."
+        ]
+      },
+      "w1_l4": {
+        "name": "Smoked Tofu with Quinoa",
+        "ingredients": [
+          "100g Smoked tofu",
+          "60g quinoa",
+          "Zucchini and peas"
+        ],
+        "steps": [
+          "Dice the tofu and brown it in the pan until very crispy.",
+          "Boil the quinoa 12 min after washing it well.",
+          "Mix the tofu, quinoa, sautéed zucchini and peas."
+        ]
+      },
+      "w1_d4": {
+        "name": "Pumpkin and Ginger Cream",
+        "ingredients": [
+          "300g pumpkin",
+          "Fresh ginger",
+          "1 hard-boiled egg",
+          "Flax seeds"
+        ],
+        "steps": [
+          "Boil the pumpkin with a small piece of ginger and blend.",
+          "Serve the cream in a bowl.",
+          "Add the chopped hard-boiled egg and seeds on top to ensure protein."
+        ]
+      },
+      "w1_l5": {
+        "name": "White Bean Stew",
+        "ingredients": [
+          "200g cooked white beans",
+          "Fresh chard",
+          "Garlic and smoked paprika"
+        ],
+        "steps": [
+          "Wash the canned beans very well to remove the sodium.",
+          "Sauté the garlic and paprika (off the heat so it doesn't get bitter).",
+          "Add chard, beans and broth. Cook 15 min."
+        ]
+      },
+      "w1_d5": {
+        "name": "Couscous Stuffed Peppers",
+        "ingredients": [
+          "2 roasting peppers",
+          "40g whole wheat couscous",
+          "Mixed roasted vegetables",
+          "20g feta cheese"
+        ],
+        "steps": [
+          "Hydrate the couscous with boiling water (5 min).",
+          "Mix it with the chopped vegetables and stuff the previously emptied peppers.",
+          "Add crumbled feta cheese on top and bake 20 min."
+        ]
+      },
+      "w1_l6": {
+        "name": "Vegetarian Paella",
+        "ingredients": [
+          "70g bomba rice",
+          "Artichokes and flat green beans",
+          "Lima or white beans",
+          "Saffron and sweet paprika"
+        ],
+        "steps": [
+          "Sauté the vegetables in the paella pan.",
+          "Add water, saffron and paprika. Bring to a boil.",
+          "Add the rice and cook over medium heat for about 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Tempeh and Pineapple Skewers",
+        "ingredients": [
+          "100g Tempeh",
+          "Fresh pineapple slices",
+          "Lamb's lettuce and EVOO"
+        ],
+        "steps": [
+          "Dice the tempeh and pineapple.",
+          "Thread the ingredients alternating them and grill until brown.",
+          "Serve hot over a bed of fresh lamb's lettuce."
+        ]
+      },
+      "w1_l7": {
+        "name": "Poached Eggs Shakshuka",
+        "ingredients": [
+          "2 eggs",
+          "200ml crushed tomatoes",
+          "Red pepper and cumin",
+          "1 slice rye bread"
+        ],
+        "steps": [
+          "Make a slow sofrito with the pepper and tomato spiced with cumin.",
+          "When the sauce bubbles, make two holes and crack the eggs inside.",
+          "Cover the pan 5 min so they poach. Serve with the bread."
+        ]
+      },
+      "w1_d7": {
+        "name": "Homemade Hummus with Crudités",
+        "ingredients": [
+          "100g hummus",
+          "Carrot and cucumber sticks",
+          "1 hard-boiled egg"
+        ],
+        "steps": [
+          "Prepare the raw vegetable sticks by washing them well.",
+          "Boil the hard-boiled egg.",
+          "Serve everything on a wooden board healthy snack style."
+        ]
+      }
     }
   },
   "dietTab": {

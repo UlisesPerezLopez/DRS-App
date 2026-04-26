@@ -1507,6 +1507,197 @@
           "Den Wochenabschluss genießen."
         ]
       }
+    },
+    "veg": {
+      "w1_l1": {
+        "name": "Geschmorte Linsen mit Gemüse",
+        "ingredients": [
+          "150g gekochte Linsen",
+          "Karotte, Paprika und Kartoffel",
+          "Frische Tomate und Olivenöl"
+        ],
+        "steps": [
+          "Gemüse (außer der Tomate) hacken und anbraten.",
+          "Linsen, ein Glas Wasser hinzufügen und 15 Min. kochen.",
+          "Mit frischem Tomatensalat servieren."
+        ]
+      },
+      "w1_d1": {
+        "name": "Rührei mit Spinat und Pinienkernen",
+        "ingredients": [
+          "2 Eier",
+          "150g frischer Spinat",
+          "10g Pinienkerne",
+          "1 Scheibe Vollkornbrot"
+        ],
+        "steps": [
+          "Spinat anbraten, bis er zusammenfällt.",
+          "Pinienkerne und geschlagene Eier hinzufügen.",
+          "Langsam stocken lassen und mit dem Brot servieren."
+        ]
+      },
+      "w1_l2": {
+        "name": "Kichererbsen-Kokos-Curry",
+        "ingredients": [
+          "200g gekochte Kichererbsen",
+          "Frischer Spinat",
+          "50ml leichte Kokosmilch und Curry",
+          "40g brauner Reis"
+        ],
+        "steps": [
+          "Braunen Reis kochen.",
+          "In einer Pfanne Kichererbsen und Spinat mit Kokosmilch und Curry kochen.",
+          "Mischen und heiß servieren."
+        ]
+      },
+      "w1_d2": {
+        "name": "Gegrillter Tofu-Burger",
+        "ingredients": [
+          "1 Tofu-Burger",
+          "Aubergine und Zucchini",
+          "Olivenöl und Pfeffer"
+        ],
+        "steps": [
+          "Gemüse in Scheiben schneiden und backen oder grillen.",
+          "Tofu-Burger grillen.",
+          "Burger auf dem gerösteten Gemüse servieren."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pasta mit Linsen-Bolognese",
+        "ingredients": [
+          "100g gekochte Linsen",
+          "Passierte Tomaten",
+          "Zwiebel und Karotte",
+          "70g Vollkornnudeln"
+        ],
+        "steps": [
+          "Zwiebel und Karotte hacken und anbraten.",
+          "Linsen (leicht zerdrückt für eine Hackfleischstruktur) und Tomate hinzufügen.",
+          "15 Min. kochen und über der al dente Pasta servieren."
+        ]
+      },
+      "w1_d3": {
+        "name": "Omelett mit wildem Spargel",
+        "ingredients": [
+          "2 Eier",
+          "1 Bund wilder Spargel",
+          "Rucola und 10g Parmesan"
+        ],
+        "steps": [
+          "Gehackten Spargel mit etwas Knoblauch anbraten.",
+          "Geschlagene Eier hinzufügen und Omelett braten.",
+          "Mit einem Beilagensalat aus Rucola und Parmesanflocken servieren."
+        ]
+      },
+      "w1_l4": {
+        "name": "Räuchertofu mit Quinoa",
+        "ingredients": [
+          "100g Räuchertofu",
+          "60g Quinoa",
+          "Zucchini und Erbsen"
+        ],
+        "steps": [
+          "Tofu würfeln und in der Pfanne sehr knusprig anbraten.",
+          "Quinoa nach gutem Waschen 12 Min. kochen.",
+          "Tofu, Quinoa, angebratene Zucchini und Erbsen mischen."
+        ]
+      },
+      "w1_d4": {
+        "name": "Kürbis-Ingwer-Cremesuppe",
+        "ingredients": [
+          "300g Kürbis",
+          "Frischer Ingwer",
+          "1 hartgekochtes Ei",
+          "Leinsamen"
+        ],
+        "steps": [
+          "Kürbis mit einem kleinen Stück Ingwer kochen und pürieren.",
+          "Cremesuppe in einer Schüssel servieren.",
+          "Gehacktes hartgekochtes Ei und Samen darüber geben, um das Protein zu sichern."
+        ]
+      },
+      "w1_l5": {
+        "name": "Weiße-Bohnen-Eintopf",
+        "ingredients": [
+          "200g gekochte weiße Bohnen",
+          "Frischer Mangold",
+          "Knoblauch und geräuchertes Paprikapulver"
+        ],
+        "steps": [
+          "Bohnen aus der Dose sehr gut waschen, um das Natrium zu entfernen.",
+          "Knoblauch und Paprika anbraten (von der Hitze nehmen, damit es nicht bitter wird).",
+          "Mangold, Bohnen und Brühe hinzufügen. 15 Min. kochen."
+        ]
+      },
+      "w1_d5": {
+        "name": "Mit Couscous gefüllte Paprika",
+        "ingredients": [
+          "2 Bratpaprika",
+          "40g Vollkorn-Couscous",
+          "Gemischtes geröstetes Gemüse",
+          "20g Feta-Käse"
+        ],
+        "steps": [
+          "Couscous mit kochendem Wasser hydratisieren (5 Min.).",
+          "Mit dem gehackten Gemüse mischen und die zuvor ausgehöhlten Paprika füllen.",
+          "Zerkrümelten Feta darüber streuen und 20 Min. backen."
+        ]
+      },
+      "w1_l6": {
+        "name": "Vegetarische Paella",
+        "ingredients": [
+          "70g Bomba-Reis",
+          "Artischocken und flache grüne Bohnen",
+          "Limabohnen oder weiße Bohnen",
+          "Safran und süßes Paprikapulver"
+        ],
+        "steps": [
+          "Gemüse in der Paella-Pfanne anbraten.",
+          "Wasser, Safran und Paprika hinzufügen. Zum Kochen bringen.",
+          "Reis hinzufügen und bei mittlerer Hitze ca. 18 Min. kochen."
+        ]
+      },
+      "w1_d6": {
+        "name": "Tempeh-Ananas-Spieße",
+        "ingredients": [
+          "100g Tempeh",
+          "Frische Ananasscheiben",
+          "Feldsalat und Olivenöl"
+        ],
+        "steps": [
+          "Tempeh und Ananas würfeln.",
+          "Zutaten abwechselnd aufspießen und grillen, bis sie braun sind.",
+          "Heiß auf einem Bett aus frischem Feldsalat servieren."
+        ]
+      },
+      "w1_l7": {
+        "name": "Shakshuka mit pochierten Eiern",
+        "ingredients": [
+          "2 Eier",
+          "200ml passierte Tomaten",
+          "Rote Paprika und Kreuzkümmel",
+          "1 Scheibe Roggenbrot"
+        ],
+        "steps": [
+          "Langsam ein Sofrito mit Paprika und den mit Kreuzkümmel gewürzten Tomaten machen.",
+          "Wenn die Sauce blubbert, zwei Mulden machen und die Eier hineinschlagen.",
+          "Pfanne 5 Min. abdecken, damit sie pochieren. Mit dem Brot servieren."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hausgemachter Hummus mit Crudités",
+        "ingredients": [
+          "100g Hummus",
+          "Karotten- und Gurkensticks",
+          "1 hartgekochtes Ei"
+        ],
+        "steps": [
+          "Rohe Gemüsesticks vorbereiten, indem sie gut gewaschen werden.",
+          "Hartgekochtes Ei kochen.",
+          "Alles auf einem Holzbrett im Healthy-Snack-Style servieren."
+        ]
+      }
     }
   },
   "dietTab": {

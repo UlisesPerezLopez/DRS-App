@@ -1507,6 +1507,197 @@
           "Goditi la fine della settimana."
         ]
       }
+    },
+    "veg": {
+      "w1_l1": {
+        "name": "Lenticchie Brasate con Verdure",
+        "ingredients": [
+          "150g di lenticchie cotte",
+          "Carota, peperone e patata",
+          "Pomodoro fresco e olio EVO"
+        ],
+        "steps": [
+          "Trita e salta le verdure (tranne il pomodoro).",
+          "Aggiungi le lenticchie, un bicchiere d'acqua e cuoci 15 min.",
+          "Accompagna con insalata di pomodori fresca."
+        ]
+      },
+      "w1_d1": {
+        "name": "Uova Strapazzate con Spinaci e Pinoli",
+        "ingredients": [
+          "2 uova",
+          "150g di spinaci freschi",
+          "10g di pinoli",
+          "1 fetta di pane integrale"
+        ],
+        "steps": [
+          "Salta gli spinaci fino a farne ridurre il volume.",
+          "Aggiungi i pinoli e le uova sbattute.",
+          "Cuoci a fuoco lento e servi con il pane."
+        ]
+      },
+      "w1_l2": {
+        "name": "Curry di Ceci e Cocco",
+        "ingredients": [
+          "200g di ceci cotti",
+          "Spinaci freschi",
+          "50ml di latte di cocco leggero e curry",
+          "40g di riso integrale"
+        ],
+        "steps": [
+          "Bolli il riso integrale.",
+          "In una padella, cuoci i ceci e gli spinaci con il latte di cocco e il curry.",
+          "Mescola e servi caldo."
+        ]
+      },
+      "w1_d2": {
+        "name": "Hamburger di Tofu Grigliato",
+        "ingredients": [
+          "1 hamburger di tofu",
+          "Melanzana e zucchina",
+          "Olio EVO e pepe"
+        ],
+        "steps": [
+          "Taglia le verdure a fette e infornale o grigliale.",
+          "Griglia l'hamburger di tofu.",
+          "Servi l'hamburger sul letto di verdure arrostite."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pasta con Ragù di Lenticchie",
+        "ingredients": [
+          "100g di lenticchie cotte",
+          "Passata di pomodoro",
+          "Cipolla e carota",
+          "70g di pasta integrale"
+        ],
+        "steps": [
+          "Trita cipolla e carota e saltale.",
+          "Aggiungi le lenticchie (leggermente schiacciate per dare la consistenza della carne macinata) e il pomodoro.",
+          "Cuoci 15 min e servi sulla pasta al dente."
+        ]
+      },
+      "w1_d3": {
+        "name": "Frittata di Asparagi Selvatici",
+        "ingredients": [
+          "2 uova",
+          "1 mazzo di asparagi selvatici",
+          "Rucola e 10g di parmigiano"
+        ],
+        "steps": [
+          "Salta gli asparagi tritati con un po' d'aglio.",
+          "Aggiungi le uova sbattute e cuoci la frittata.",
+          "Accompagna con un'insalata di contorno di rucola e scaglie di parmigiano."
+        ]
+      },
+      "w1_l4": {
+        "name": "Tofu Affumicato con Quinoa",
+        "ingredients": [
+          "100g di tofu affumicato",
+          "60g di quinoa",
+          "Zucchina e piselli"
+        ],
+        "steps": [
+          "Taglia il tofu a cubetti e rosolalo in padella fino a renderlo molto croccante.",
+          "Bolli la quinoa per 12 min dopo averla lavata bene.",
+          "Mescola il tofu, la quinoa, la zucchina saltata e i piselli."
+        ]
+      },
+      "w1_d4": {
+        "name": "Crema di Zucca e Zenzero",
+        "ingredients": [
+          "300g di zucca",
+          "Zenzero fresco",
+          "1 uovo sodo",
+          "Semi di lino"
+        ],
+        "steps": [
+          "Bolli la zucca con un pezzetto di zenzero e frulla.",
+          "Servi la crema in una ciotola.",
+          "Aggiungi l'uovo sodo tritato e i semi sopra per assicurare le proteine."
+        ]
+      },
+      "w1_l5": {
+        "name": "Zuppa di Fagioli Bianchi",
+        "ingredients": [
+          "200g di fagioli bianchi cotti",
+          "Bietole fresche",
+          "Aglio e paprika affumicata"
+        ],
+        "steps": [
+          "Lava molto bene i fagioli in scatola per rimuovere il sodio.",
+          "Soffriggi l'aglio e la paprika (fuori dal fuoco per non farla diventare amara).",
+          "Aggiungi bietole, fagioli e brodo. Cuoci 15 min."
+        ]
+      },
+      "w1_d5": {
+        "name": "Peperoni Ripieni di Cous Cous",
+        "ingredients": [
+          "2 peperoni da arrostire",
+          "40g di cous cous integrale",
+          "Verdure arrosto miste",
+          "20g di formaggio feta"
+        ],
+        "steps": [
+          "Idrata il cous cous con acqua bollente (5 min).",
+          "Mescolalo con le verdure tritate e riempi i peperoni precedentemente svuotati.",
+          "Aggiungi il formaggio feta sbriciolato sopra e inforna per 20 min."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella Vegetariana",
+        "ingredients": [
+          "70g di riso bomba",
+          "Carciofi e taccole",
+          "Fagioli di Lima o bianchi",
+          "Zafferano e paprika dolce"
+        ],
+        "steps": [
+          "Soffriggi le verdure nella padella per paella.",
+          "Aggiungi acqua, zafferano e paprika. Porta a ebollizione.",
+          "Aggiungi il riso e cuoci a fuoco medio per circa 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Spiedini di Tempeh e Ananas",
+        "ingredients": [
+          "100g di Tempeh",
+          "Fette di ananas fresco",
+          "Valeriana e olio EVO"
+        ],
+        "steps": [
+          "Taglia a cubetti il tempeh e l'ananas.",
+          "Infila gli ingredienti alternandoli e grigliali fino a doratura.",
+          "Servi caldo su un letto di valeriana fresca."
+        ]
+      },
+      "w1_l7": {
+        "name": "Shakshuka con Uova in Camicia",
+        "ingredients": [
+          "2 uova",
+          "200ml di passata di pomodoro",
+          "Peperone rosso e cumino",
+          "1 fetta di pane di segale"
+        ],
+        "steps": [
+          "Fai un soffritto lento con il peperone e il pomodoro speziato al cumino.",
+          "Quando la salsa bolle, fai due buchi e rompi le uova all'interno.",
+          "Copri la padella per 5 min in modo che cuociano in camicia. Servi con il pane."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus Fatto in Casa con Crudités",
+        "ingredients": [
+          "100g di hummus",
+          "Bastoncini di carota e cetriolo",
+          "1 uovo sodo"
+        ],
+        "steps": [
+          "Prepara i bastoncini di verdure crude lavandoli bene.",
+          "Bolli l'uovo sodo.",
+          "Servi tutto su un tagliere di legno in stile spuntino sano."
+        ]
+      }
     }
   },
   "dietTab": {
