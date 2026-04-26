@@ -110,24 +110,24 @@
     "fatLabel": "Fett",
     "low_carb": {
       "w2_l1": {
-        "name": "Hähnchen mit Pesto und grünen Bohnen",
+        "name": "Pesto-Hähnchen mit grünen Bohnen",
         "ingredients": [
           "200g Hähnchenbrust",
           "15g hausgemachtes Pesto",
           "200g grüne Bohnen"
         ],
         "steps": [
-          "Hähnchen auf dem Grill garen.",
-          "Pesto am Ende darauf verteilen.",
-          "Mit bissfest gekochten grünen Bohnen servieren, um Ballaststoffe zu erhalten."
+          "Hähnchen grillen.",
+          "Am Ende das Pesto verstreichen.",
+          "Mit den al dente gekochten Bohnen servieren, um die Ballaststoffe zu erhalten."
         ]
       },
       "w2_d1": {
-        "name": "Seehecht en Papillote",
+        "name": "Seehecht im Pergamentpapier",
         "ingredients": [
           "200g Seehecht",
           "Wilder Spargel",
-          "Geröstete Paprika und Olivenöl (AOVE)"
+          "Geröstete Paprika und Olivenöl"
         ],
         "steps": [
           "Fisch und Gemüse in Backpapier einwickeln.",
@@ -140,28 +140,28 @@
         "ingredients": [
           "180g mageres Rindfleisch",
           "Kalter Brokkoli",
-          "Knuspriger Speck (wenig) und Joghurtdressing"
+          "Knuspriger Speck (ein wenig) und Joghurt-Dressing"
         ],
         "steps": [
           "Rindfleisch nach Geschmack grillen.",
-          "Kalten Brokkoli mit Speck und Joghurtdressing mischen."
+          "Kalten Brokkoli mit Speck und Joghurt-Dressing mischen."
         ]
       },
       "w2_d2": {
-        "name": "Gefüllte Auberginen mit Thunfisch Express",
+        "name": "Schnelle mit Thunfisch gefüllte Auberginen",
         "ingredients": [
           "1 große Aubergine",
           "2 Dosen Thunfisch natur",
-          "1/2 Zwiebel und 20g Light-Käse"
+          "1/2 Zwiebel und 20g leichter Käse"
         ],
         "steps": [
-          "Aubergine in der Mikrowelle 8 Min. rösten.",
+          "Aubergine 8 Min. in der Mikrowelle braten.",
           "Fruchtfleisch mit Thunfisch und Zwiebel mischen.",
-          "Füllen und 2 Min. gratinieren."
+          "Füllen und 2 Min. überbacken."
         ]
       },
       "w2_l3": {
-        "name": "Kabeljau aus dem Ofen mit Kruste",
+        "name": "Gebackener Kabeljau mit Kruste",
         "ingredients": [
           "200g Kabeljau",
           "Kräuter der Provence",
@@ -182,103 +182,103 @@
         ],
         "steps": [
           "Pute mit Curry anbraten.",
-          "Zerkleinerten Blumenkohl (Reis-Stil) hinzufügen und alles zusammen 5 Min. anbraten."
+          "Zerkleinerten Blumenkohl (Reisart) hinzufügen und alles zusammen 5 Min. anbraten."
         ]
       },
       "w2_l4": {
-        "name": "Hähnchen-Burger in Salatblättern",
+        "name": "Hähnchen-Burger in Salat",
         "ingredients": [
           "2 hausgemachte Hähnchen-Burger",
           "Große Salatblätter",
           "Tomate und Zwiebel"
         ],
         "steps": [
-          "Burger auf dem Grill garen.",
-          "In Salatblätter einwickeln und als Brötchenersatz verwenden."
+          "Burger grillen.",
+          "In die Salatblätter einwickeln und diese als Brot verwenden."
         ]
       },
       "w2_d4": {
-        "name": "Pilz- und Garnelen-Rührei",
+        "name": "Rührei mit Pilzen und Garnelen",
         "ingredients": [
           "2 Eier",
           "100g Garnelen",
-          "Verschiedene Pilze, Knoblauch und Petersilie"
+          "Gemischte Pilze, Knoblauch und Petersilie"
         ],
         "steps": [
           "Pilze und Garnelen mit Knoblauch anbraten.",
-          "Eier hinzufügen und bei niedriger Hitze stocken lassen."
+          "Eier hinzufügen und bei schwacher Hitze stocken lassen."
         ]
       },
       "w2_l5": {
-        "name": "Lachs aus dem Ofen mit Zucchini-Püree",
+        "name": "Gebackener Lachs mit Zucchinipüree",
         "ingredients": [
           "180g Lachs",
           "1 Zucchini",
           "Olivenöl und Pfeffer"
         ],
         "steps": [
-          "Lachs im Ofen backen.",
-          "Gekochte Zucchini mit Öl pürieren."
+          "Lachs backen.",
+          "Zuvor gekochte Zucchini mit Öl pürieren."
         ]
       },
       "w2_d5": {
         "name": "Schweinefilet mit Rucola",
         "ingredients": [
-          "150g mageres Schweinefilet",
+          "150g magere Schweinelende",
           "Rucolasalat",
           "Walnüsse und Parmesan"
         ],
         "steps": [
-          "Schwein auf dem Grill garen.",
-          "Auf Rucolabett mit Walnüssen und Parmesanspänen servieren."
+          "Schweinefleisch grillen.",
+          "Auf dem Rucolabett mit Walnüssen und Parmesanspänen servieren."
         ]
       },
       "w2_l6": {
-        "name": "Low-Carb Caesar Salad",
+        "name": "Low-Carb Caesar Salat",
         "ingredients": [
-          "Gebratenes Hähnchen",
+          "Brathähnchen",
           "Salat und 1 hartgekochtes Ei",
-          "Sardellen und Zitronen-Öl-Dressing"
+          "Sardellen und Zitronen-/Öldressing"
         ],
         "steps": [
-          "Salat ohne Croutons zusammenstellen, um Kohlenhydrate zu sparen.",
-          "Großzügig anrichten."
+          "Salat anrichten, dabei die Croutons weglassen, um keine Kohlenhydrate hinzuzufügen.",
+          "Großzügig anmachen."
         ]
       },
       "w2_d6": {
-        "name": "Garnelen- und Zucchini-Spieße",
+        "name": "Garnelen-Zucchini-Spieße",
         "ingredients": [
           "150g Garnelen",
-          "1 Zucchini, gewürfelt",
+          "1 gewürfelte Zucchini",
           "Tomatensalat"
         ],
         "steps": [
-          "Spieße abwechselnd bestücken.",
-          "Kurz auf dem Grill garen."
+          "Spieße abwechselnd mit Zutaten bestücken.",
+          "Auf dem Grill von beiden Seiten anbraten."
         ]
       },
       "w2_l7": {
-        "name": "Rindfleisch- und Paprika-Wok",
+        "name": "Rindfleisch-Paprika-Wok",
         "ingredients": [
           "180g Rindfleischstreifen",
-          "Verschiedene Paprika",
+          "Gemischte Paprika",
           "Salzarme Sojasauce und Ingwer"
         ],
         "steps": [
           "Rindfleisch und Gemüse bei starker Hitze anbraten.",
-          "Sojasauce und geriebenen Ingwer am Ende hinzufügen."
+          "Am Ende Sojasauce und geriebenen Ingwer hinzufügen."
         ]
       },
       "w2_d7": {
         "name": "Keto-Hähnchen-Pizza",
         "ingredients": [
-          "150g rohes Hähnchenhackfleisch und 1 ei",
+          "150g rohes zerkleinertes Hähnchen und 1 Ei",
           "Tomate und Oregano",
           "Mozzarella-Käse"
         ],
         "steps": [
-          "Hähnchen und Ei mischen. Auf einem Blech als Boden ausbreiten.",
-          "12 Min. backen. Tomate und Käse hinzufügen und weitere 5 Min. gratinieren."
+          "Hähnchen und Ei mischen. Auf einem Blech verteilen und die Basis bilden.",
+          "12 Min. backen. Tomate und Käse hinzufügen und weitere 5 Min. überbacken."
         ]
       },
       "w1_l1": {

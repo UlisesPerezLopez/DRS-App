@@ -117,96 +117,96 @@
           "200g de haricots verts"
         ],
         "steps": [
-          "Cuire le poulet sur le gril.",
+          "Faire griller le poulet.",
           "Étaler le pesto à la fin.",
-          "Servir avec les haricots verts bouillis al dente pour conserver les fibres."
+          "Servir avec les haricots bouillis al dente pour conserver les fibres."
         ]
       },
       "w2_d1": {
-        "name": "Merlu en Papillote",
+        "name": "Colin en Papillote",
         "ingredients": [
-          "200g de merlu",
+          "200g de colin",
           "Asperges sauvages",
-          "Poivrons rôtis et huile d'olive (AOVE)"
+          "Poivrons rôtis et huile d'olive"
         ],
         "steps": [
-          "Envelopper le poisson et les légumes dans du papier sulfurisé.",
-          "Cuire à 200°C pendant 15 min.",
+          "Envelopper le poisson et les légumes dans du papier cuisson.",
+          "Cuire au four à 200°C pendant 15 min.",
           "Ajouter un filet d'huile d'olive crue à l'ouverture."
         ]
       },
       "w2_l2": {
-        "name": "Bœuf Grillé avec Brocoli",
+        "name": "Bœuf Grillé au Brocoli",
         "ingredients": [
           "180g de bœuf maigre",
           "Brocoli froid",
-          "Bacon croustillant (peu) et vinaigrette au yaourt"
+          "Bacon croustillant (un peu) et vinaigrette au yaourt"
         ],
         "steps": [
-          "Griller le bœuf selon le goût.",
+          "Griller le bœuf selon vos goûts.",
           "Mélanger le brocoli froid avec le bacon et la vinaigrette au yaourt."
         ]
       },
       "w2_d2": {
         "name": "Aubergines Farcies au Thon Express",
         "ingredients": [
-          "1 grosse aubergine",
+          "1 grande aubergine",
           "2 boîtes de thon au naturel",
-          "1/2 oignon et 20g de fromage léger"
+          "1/2 oignon et 20g de fromage allégé"
         ],
         "steps": [
           "Rôtir l'aubergine au micro-ondes pendant 8 min.",
           "Mélanger la pulpe avec le thon et l'oignon.",
-          "Garnir et gratiner pendant 2 min."
+          "Farcir et gratiner pendant 2 min."
         ]
       },
       "w2_l3": {
-        "name": "Cabillaud au Four avec Croûte d'Herbes",
+        "name": "Cabillaud au Four en Croûte",
         "ingredients": [
-          "200g de Cabillaud",
+          "200g de cabillaud",
           "Herbes de Provence",
           "Salade de concombre"
         ],
         "steps": [
           "Couvrir le poisson avec la croûte d'herbes.",
-          "Cuire 15 min à 180°C.",
-          "Accompagner d'une salade de concombre."
+          "Cuire au four 15 min à 180°C.",
+          "Accompagner de la salade de concombre."
         ]
       },
       "w2_d3": {
-        "name": "Dinde au Curry avec Chou-Fleur",
+        "name": "Dinde au Curry et Chou-fleur",
         "ingredients": [
           "150g de blanc de dinde",
-          "Chou-fleur broyé",
-          "Curry en poudre et huile d'olive"
+          "Chou-fleur écrasé",
+          "Poudre de curry et huile d'olive"
         ],
         "steps": [
-          "Sauter la dinde avec le curry.",
-          "Ajouter le chou-fleur broyé (façon riz) et sauter le tout pendant 5 min."
+          "Faire revenir la dinde avec le curry.",
+          "Ajouter le chou-fleur écrasé (façon riz) et faire revenir le tout ensemble pendant 5 min."
         ]
       },
       "w2_l4": {
-        "name": "Burgers de Poulet en Wraps de Laitue",
+        "name": "Burgers de Poulet en Laitue",
         "ingredients": [
           "2 burgers de poulet maison",
           "Grandes feuilles de laitue",
           "Tomate et oignon"
         ],
         "steps": [
-          "Cuire les burgers sur le gril.",
-          "Les envelopper dans les feuilles de laitue, en les utilisant comme pain."
+          "Faire griller les burgers.",
+          "Enveloppez-les dans les feuilles de laitue, en les utilisant comme pain."
         ]
       },
       "w2_d4": {
-        "name": "Poêlée de Champignons et Crevettes",
+        "name": "Œufs Brouillés aux Champignons et Crevettes",
         "ingredients": [
           "2 œufs",
           "100g de crevettes",
-          "Champignons variés, ail et persil"
+          "Mélange de champignons, ail et persil"
         ],
         "steps": [
-          "Sauter les champignons et les crevettes avec de l'ail.",
-          "Ajouter les œufs et laisser prendre à feu doux."
+          "Faire revenir les champignons et les crevettes avec l'ail.",
+          "Ajouter les œufs et cuire à feu doux."
         ]
       },
       "w2_l5": {
@@ -222,26 +222,26 @@
         ]
       },
       "w2_d5": {
-        "name": "Filet de Porc avec Roquette",
+        "name": "Filet de Porc à la Roquette",
         "ingredients": [
-          "150g de longe de porc maigre",
+          "150g de filet de porc maigre",
           "Salade de roquette",
           "Noix et parmesan"
         ],
         "steps": [
-          "Cuire le porc sur le gril.",
-          "Servir sur un lit de roquette avec des noix et des copeaux de parmesan."
+          "Griller le porc.",
+          "Servir sur le lit de roquette avec les noix et les copeaux de parmesan."
         ]
       },
       "w2_l6": {
-        "name": "Salade César Low-Carb",
+        "name": "Salade César Faible en Glucides",
         "ingredients": [
           "Poulet rôti",
           "Laitue et 1 œuf dur",
           "Anchois et vinaigrette citron/huile"
         ],
         "steps": [
-          "Assembler la salade en omettant les croûtons pour éviter les glucides.",
+          "Monter la salade en omettant les croûtons pour ne pas ajouter de glucides.",
           "Assaisonner généreusement."
         ]
       },
@@ -254,19 +254,19 @@
         ],
         "steps": [
           "Monter les brochettes en alternant les ingrédients.",
-          "Cuire sur le gril, en retournant une fois."
+          "Faire griller de chaque côté."
         ]
       },
       "w2_l7": {
         "name": "Wok de Bœuf et Poivrons",
         "ingredients": [
-          "180g de bœuf en lanières",
-          "Poivrons variés",
-          "Sauce soja à teneur réduite en sel et gingembre"
+          "180g de lanières de bœuf",
+          "Poivrons mélangés",
+          "Soja pauvre en sel et gingembre"
         ],
         "steps": [
           "Sauter le bœuf et les légumes à feu vif.",
-          "Ajouter la sauce soja et le gingembre râpé à la fin."
+          "Ajouter le soja et le gingembre râpé à la fin."
         ]
       },
       "w2_d7": {
@@ -277,8 +277,8 @@
           "Fromage mozzarella"
         ],
         "steps": [
-          "Mélanger le poulet et l'œuf. Étaler sur une plaque pour former la base.",
-          "Cuire 12 min. Ajouter la tomate et le fromage, et gratiner 5 min de plus."
+          "Mélanger le poulet et l'œuf. Étaler sur une plaque en formant la base.",
+          "Cuire au four 12 min. Ajouter la tomate et le fromage, et gratiner 5 min de plus."
         ]
       },
       "w1_l1": {

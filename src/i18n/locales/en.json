@@ -110,16 +110,16 @@
     "fatLabel": "Fat",
     "low_carb": {
       "w2_l1": {
-        "name": "Pesto Chicken and Green Beans",
+        "name": "Pesto Chicken with Green Beans",
         "ingredients": [
           "200g chicken breast",
           "15g homemade pesto",
           "200g green beans"
         ],
         "steps": [
-          "Cook the chicken on the grill.",
+          "Grill the chicken.",
           "Spread the pesto at the end.",
-          "Serve with green beans boiled al dente to maintain fiber."
+          "Serve with the beans boiled al dente to maintain fiber."
         ]
       },
       "w2_d1": {
@@ -130,7 +130,7 @@
           "Roasted peppers and EVOO"
         ],
         "steps": [
-          "Wrap the fish and vegetables in parchment paper.",
+          "Wrap the fish and vegetables in baking paper.",
           "Bake at 200°C for 15 min.",
           "Add a drizzle of raw EVOO when opening."
         ]
@@ -140,11 +140,11 @@
         "ingredients": [
           "180g lean beef",
           "Cold broccoli",
-          "Crispy bacon (little) and yogurt dressing"
+          "Crispy bacon (a little) and yogurt dressing"
         ],
         "steps": [
           "Grill the beef to taste.",
-          "Mix the cold broccoli with bacon and yogurt dressing."
+          "Mix the cold broccoli with the bacon and yogurt dressing."
         ]
       },
       "w2_d2": {
@@ -157,56 +157,56 @@
         "steps": [
           "Roast the eggplant in the microwave for 8 min.",
           "Mix the pulp with tuna and onion.",
-          "Fill and gratin for 2 min."
+          "Stuff and gratin for 2 min."
         ]
       },
       "w2_l3": {
-        "name": "Baked Cod with Herb Crust",
+        "name": "Baked Cod with Crust",
         "ingredients": [
           "200g Cod",
-          "Provençal herbs",
+          "Herbes de Provence",
           "Cucumber salad"
         ],
         "steps": [
           "Cover the fish with the herb crust.",
           "Bake 15 min at 180°C.",
-          "Serve with cucumber salad."
+          "Serve with the cucumber salad."
         ]
       },
       "w2_d3": {
-        "name": "Curry Turkey with Cauliflower",
+        "name": "Turkey Curry with Cauliflower",
         "ingredients": [
           "150g turkey breast",
           "Crushed cauliflower",
           "Curry powder and EVOO"
         ],
         "steps": [
-          "Sauté the turkey with curry.",
-          "Add crushed cauliflower (rice style) and sauté everything together for 5 min."
+          "Sauté the turkey with the curry.",
+          "Add the crushed cauliflower (rice style) and sauté everything together for 5 min."
         ]
       },
       "w2_l4": {
-        "name": "Chicken Burgers in Lettuce Wraps",
+        "name": "Chicken Burgers in Lettuce",
         "ingredients": [
           "2 homemade chicken burgers",
           "Large lettuce leaves",
           "Tomato and onion"
         ],
         "steps": [
-          "Cook the burgers on the grill.",
-          "Wrap them in lettuce leaves, using them as buns."
+          "Grill the burgers.",
+          "Wrap them in the lettuce leaves, using them as a bun."
         ]
       },
       "w2_d4": {
-        "name": "Mushroom and Prawn Scramble",
+        "name": "Scrambled Eggs with Mushrooms and Prawns",
         "ingredients": [
           "2 eggs",
           "100g prawns",
           "Mixed mushrooms, garlic and parsley"
         ],
         "steps": [
-          "Sauté mushrooms and prawns with garlic.",
-          "Add eggs and cook over low heat until set."
+          "Sauté the mushrooms and prawns with garlic.",
+          "Add the eggs and cook over low heat."
         ]
       },
       "w2_l5": {
@@ -218,7 +218,7 @@
         ],
         "steps": [
           "Bake the salmon.",
-          "Blend pre-cooked zucchini with oil to make the puree."
+          "Blend the previously cooked zucchini with oil to make the puree."
         ]
       },
       "w2_d5": {
@@ -229,8 +229,8 @@
           "Walnuts and parmesan"
         ],
         "steps": [
-          "Cook the pork on the grill.",
-          "Serve on a bed of arugula with walnuts and parmesan shavings."
+          "Grill the pork.",
+          "Serve on the bed of arugula with walnuts and parmesan shavings."
         ]
       },
       "w2_l6": {
@@ -241,7 +241,7 @@
           "Anchovies and lemon/oil dressing"
         ],
         "steps": [
-          "Assemble the salad omitting croutons to avoid adding carbs.",
+          "Assemble the salad omitting the croutons so as not to add carbohydrates.",
           "Dress generously."
         ]
       },
@@ -249,12 +249,12 @@
         "name": "Prawn and Zucchini Skewers",
         "ingredients": [
           "150g prawns",
-          "1 zucchini, diced",
+          "1 diced zucchini",
           "Tomato salad"
         ],
         "steps": [
-          "Assemble skewers alternating ingredients.",
-          "Cook on the grill, turning once."
+          "Assemble the skewers alternating ingredients.",
+          "Grill on both sides."
         ]
       },
       "w2_l7": {
@@ -262,22 +262,22 @@
         "ingredients": [
           "180g beef strips",
           "Mixed peppers",
-          "Low-salt soy sauce and ginger"
+          "Low salt soy and ginger"
         ],
         "steps": [
-          "Sauté beef and vegetables over high heat.",
-          "Add soy sauce and grated ginger at the end."
+          "Sauté the beef and vegetables over extreme heat.",
+          "Add the soy and grated ginger at the end."
         ]
       },
       "w2_d7": {
         "name": "Keto Chicken Pizza",
         "ingredients": [
-          "150g raw ground chicken and 1 egg",
+          "150g raw minced chicken and 1 egg",
           "Tomato and oregano",
           "Mozzarella cheese"
         ],
         "steps": [
-          "Mix chicken and egg. Spread on a tray forming the base.",
+          "Mix the chicken and egg. Spread on a tray forming the base.",
           "Bake 12 min. Add tomato and cheese, and gratin for 5 more min."
         ]
       },

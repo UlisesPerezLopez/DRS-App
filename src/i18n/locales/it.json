@@ -117,34 +117,34 @@
           "200g di fagiolini"
         ],
         "steps": [
-          "Cuocere il pollo sulla piastra.",
-          "Spalmare il pesto alla fine.",
-          "Servire con fagiolini bolliti al dente per mantenere le fibre."
+          "Griglia il pollo.",
+          "Spalma il pesto alla fine.",
+          "Servi con i fagiolini bolliti al dente per mantenere le fibre."
         ]
       },
       "w2_d1": {
-        "name": "Merluzzo al Cartoccio (Papillote)",
+        "name": "Nasello al Cartoccio",
         "ingredients": [
-          "200g di merluzzo",
+          "200g di nasello",
           "Asparagi selvatici",
-          "Peperoni arrostiti e Olio EVO"
+          "Peperoni arrostiti e olio EVO"
         ],
         "steps": [
-          "Avvolgere il pesce e le verdure nella carta forno.",
-          "Infornare a 200°C per 15 min.",
-          "Aggiungere un filo di Olio EVO crudo all'apertura."
+          "Avvolgi il pesce e le verdure nella carta da forno.",
+          "Inforna a 200°C per 15 min.",
+          "Aggiungi un filo d'olio a crudo all'apertura."
         ]
       },
       "w2_l2": {
-        "name": "Manzo alla Piastra con Broccoli",
+        "name": "Manzo alla Griglia con Broccoli",
         "ingredients": [
           "180g di manzo magro",
           "Broccoli freddi",
-          "Bacon croccante (poco) e condimento allo yogurt"
+          "Pancetta croccante (un po') e condimento allo yogurt"
         ],
         "steps": [
-          "Grigliare il manzo a piacere.",
-          "Mescolare i broccoli freddi con il bacon e il condimento allo yogurt."
+          "Griglia il manzo a piacere.",
+          "Mescola i broccoli freddi con la pancetta e il condimento allo yogurt."
         ]
       },
       "w2_d2": {
@@ -155,22 +155,22 @@
           "1/2 cipolla e 20g di formaggio light"
         ],
         "steps": [
-          "Arrostire la melanzana nel microonde per 8 min.",
-          "Mescolare la polpa con tonno e cipolla.",
-          "Farcire e gratinare per 2 min."
+          "Arrostisci la melanzana nel microonde per 8 min.",
+          "Mescola la polpa con tonno e cipolla.",
+          "Riempi e gratina per 2 min."
         ]
       },
       "w2_l3": {
-        "name": "Merluzzo al Forno con Crosta d'Erbe",
+        "name": "Merluzzo al Forno in Crosta",
         "ingredients": [
-          "200g di Merluzzo",
+          "200g di merluzzo",
           "Erbe di Provenza",
           "Insalata di cetrioli"
         ],
         "steps": [
-          "Coprire il pesce con la crosta d'erbe.",
-          "Infornare per 15 min a 180°C.",
-          "Accompagnare con l'insalata di cetrioli."
+          "Copri il pesce con la crosta di erbe.",
+          "Inforna 15 min a 180°C.",
+          "Accompagna con l'insalata di cetrioli."
         ]
       },
       "w2_d3": {
@@ -178,35 +178,35 @@
         "ingredients": [
           "150g di petto di tacchino",
           "Cavolfiore tritato",
-          "Curry in polvere e Olio EVO"
+          "Curry in polvere e olio EVO"
         ],
         "steps": [
-          "Saltare il tacchino con il curry.",
-          "Aggiungere il cavolfiore tritato (stile riso) e saltare tutto insieme per 5 min."
+          "Salta il tacchino con il curry.",
+          "Aggiungi il cavolfiore tritato (tipo riso) e salta tutto insieme per 5 min."
         ]
       },
       "w2_l4": {
-        "name": "Hamburger di Pollo in Foglie di Lattuga",
+        "name": "Hamburger di Pollo in Lattuga",
         "ingredients": [
           "2 hamburger di pollo fatti in casa",
-          "Foglie di lattuga grandi",
+          "Grandi foglie di lattuga",
           "Pomodoro e cipolla"
         ],
         "steps": [
-          "Cuocere gli hamburger sulla piastra.",
-          "Avvolgerli nelle foglie di lattuga, usandole come pane."
+          "Griglia gli hamburger.",
+          "Avvolgili nelle foglie di lattuga, usandole come pane."
         ]
       },
       "w2_d4": {
-        "name": "Padellata di Funghi e Gamberetti",
+        "name": "Uova Strapazzate con Funghi e Gamberi",
         "ingredients": [
           "2 uova",
-          "100g di gamberetti",
+          "100g di gamberi",
           "Funghi misti, aglio e prezzemolo"
         ],
         "steps": [
-          "Saltare funghi e gamberetti con l'aglio.",
-          "Aggiungere le uova e far rapprendere a fuoco basso."
+          "Salta i funghi e i gamberi con l'aglio.",
+          "Aggiungi le uova e cuoci a fuoco basso."
         ]
       },
       "w2_l5": {
@@ -217,32 +217,32 @@
           "Olio EVO e pepe"
         ],
         "steps": [
-          "Cuocere il salmone al forno.",
-          "Frullare la zucchina precedentemente cotta con olio per fare il purè."
+          "Cuoci il salmone al forno.",
+          "Frulla la zucchina precedentemente cotta con olio per fare il purè."
         ]
       },
       "w2_d5": {
         "name": "Filetto di Maiale con Rucola",
         "ingredients": [
-          "150g di lonza di maiale magra",
+          "150g di lombo di maiale magro",
           "Insalata di rucola",
           "Noci e parmigiano"
         ],
         "steps": [
-          "Cuocere il maiale sulla piastra.",
-          "Servire su un letto di rucola con noci e scaglie di parmigiano."
+          "Griglia il maiale.",
+          "Servi sul letto di rucola con noci e scaglie di parmigiano."
         ]
       },
       "w2_l6": {
-        "name": "Insalata Cesare Low-Carb",
+        "name": "Insalata Caesar Low-Carb",
         "ingredients": [
           "Pollo arrosto",
           "Lattuga e 1 uovo sodo",
           "Acciughe e condimento limone/olio"
         ],
         "steps": [
-          "Comporre l'insalata omettendo i crostini per non aggiungere carboidrati.",
-          "Condire generosamente."
+          "Componi l'insalata omettendo i crostini per non aggiungere carboidrati.",
+          "Condisci generosamente."
         ]
       },
       "w2_d6": {
@@ -253,20 +253,20 @@
           "Insalata di pomodori"
         ],
         "steps": [
-          "Montare gli spiedini alternando gli ingredienti.",
-          "Cuocere sulla piastra, girando una volta."
+          "Componi gli spiedini alternando gli ingredienti.",
+          "Griglia da entrambi i lati."
         ]
       },
       "w2_l7": {
         "name": "Wok di Manzo e Peperoni",
         "ingredients": [
-          "180g di manzo a striscioline",
+          "180g di strisce di manzo",
           "Peperoni misti",
-          "Salsa di soia a basso contenuto di sale e zenzero"
+          "Soia a basso contenuto di sale e zenzero"
         ],
         "steps": [
-          "Saltare manzo e verdure a fuoco vivo.",
-          "Aggiungere la salsa di soia e lo zenzero grattugiato alla fine."
+          "Salta la carne e le verdure a fuoco altissimo.",
+          "Aggiungi la soia e lo zenzero grattugiato alla fine."
         ]
       },
       "w2_d7": {
@@ -274,11 +274,11 @@
         "ingredients": [
           "150g di pollo tritato crudo e 1 uovo",
           "Pomodoro e origano",
-          "Mozzarella"
+          "Formaggio mozzarella"
         ],
         "steps": [
-          "Mescolare pollo e uovo. Stendere su una teglia formando la base.",
-          "Infornare per 12 min. Aggiungere pomodoro e mozzarella e gratinare per altri 5 min."
+          "Mescola il pollo e l'uovo. Stendi su una teglia formando la base.",
+          "Inforna 12 min. Aggiungi pomodoro e formaggio, e gratina altri 5 min."
         ]
       },
       "w1_l1": {
