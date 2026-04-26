@@ -280,6 +280,188 @@
           "Mescolare pollo e uovo. Stendere su una teglia formando la base.",
           "Infornare per 12 min. Aggiungere pomodoro e mozzarella e gratinare per altri 5 min."
         ]
+      },
+      "w1_l1": {
+        "name": "Pollo al limone e broccoli Volume-Eating",
+        "ingredients": [
+          "200g di petto di pollo",
+          "300g di broccoli",
+          "10ml di olio EVO, aglio e limone"
+        ],
+        "steps": [
+          "Taglia il pollo a strisce e saltalo con l'aglio.",
+          "Aggiungi i broccoli precedentemente bolliti per 4 min.",
+          "Spremi il limone alla fine. Il grande volume dei broccoli darà sazietà senza carboidrati."
+        ]
+      },
+      "w1_d1": {
+        "name": "Salmone alla griglia con asparagi",
+        "ingredients": [
+          "200g di salmone fresco",
+          "Asparagi selvatici",
+          "Rucola e olio EVO"
+        ],
+        "steps": [
+          "Griglia il salmone iniziando dal lato della pelle.",
+          "Salta gli asparagi.",
+          "Servi su un letto di rucola fresca."
+        ]
+      },
+      "w1_l2": {
+        "name": "Insalata Keto",
+        "ingredients": [
+          "Valeriana",
+          "1 scatoletta di tonno e 1 uovo sodo",
+          "Olive e 30g di formaggio feta"
+        ],
+        "steps": [
+          "Bolli l'uovo.",
+          "Mescola tutti gli ingredienti in una ciotola grande.",
+          "Condisci con olio EVO. Questa insalata fornisce grassi sani e proteine pure."
+        ]
+      },
+      "w1_d2": {
+        "name": "Manzo magro saltato",
+        "ingredients": [
+          "150g di manzo magro",
+          "Peperoni rossi e verdi",
+          "Spezie stile fajita"
+        ],
+        "steps": [
+          "Taglia la carne e le verdure a strisce sottili.",
+          "Salta a fuoco alto con le spezie.",
+          "Servi nel piatto (stile fajita ma senza la tortilla di grano)."
+        ]
+      },
+      "w1_l3": {
+        "name": "Nasello su letto di zucchine",
+        "ingredients": [
+          "200g di nasello fresco",
+          "1 zucchina grande",
+          "Cipolla e olio EVO"
+        ],
+        "steps": [
+          "Taglia la zucchina e la cipolla a fette sottili.",
+          "Metti il pesce sulle verdure in una teglia.",
+          "Inforna a 180°C per 15-20 min."
+        ]
+      },
+      "w1_d3": {
+        "name": "Hamburger di manzo senza pane",
+        "ingredients": [
+          "150g di carne macinata di manzo",
+          "Formaggio cheddar e cetriolini",
+          "Lattuga iceberg"
+        ],
+        "steps": [
+          "Griglia l'hamburger e fai sciogliere il formaggio sopra.",
+          "Usa grandi foglie di lattuga iceberg come sostituto del pane.",
+          "Aggiungi i cetriolini."
+        ]
+      },
+      "w1_l4": {
+        "name": "Cosce di pollo con cavolfiore gratinato",
+        "ingredients": [
+          "2 cosce di pollo senza pelle",
+          "300g di cavolfiore",
+          "20g di formaggio grattugiato light e noce moscata"
+        ],
+        "steps": [
+          "Arrostisci le cosce di pollo.",
+          "Bolli il cavolfiore al dente e trasferiscilo in una pirofila.",
+          "Aggiungi formaggio e noce moscata, e gratina per 5 min nel forno."
+        ]
+      },
+      "w1_d4": {
+        "name": "Wok di gamberi e verdure",
+        "ingredients": [
+          "150g di gamberi sgusciati",
+          "Zucchina, carota, funghi",
+          "Germogli di soia"
+        ],
+        "steps": [
+          "Taglia le verdure a julienne fine.",
+          "Salta tutto nel wok a fuoco molto alto con i gamberi.",
+          "Aggiungi salsa di soia a basso contenuto di sodio."
+        ]
+      },
+      "w1_l5": {
+        "name": "Lombo di maiale con senape",
+        "ingredients": [
+          "200g di lombo di maiale magro",
+          "Spinaci freschi e noci",
+          "Condimento alla senape rustica"
+        ],
+        "steps": [
+          "Griglia i filetti di lombo.",
+          "Prepara l'insalata di spinaci e noci.",
+          "Condisci la carne e l'insalata con la senape rustica."
+        ]
+      },
+      "w1_d5": {
+        "name": "Zoodles alla bolognese di tacchino",
+        "ingredients": [
+          "1 zucchina grande (a spirale)",
+          "150g di tacchino macinato",
+          "Pomodoro naturale"
+        ],
+        "steps": [
+          "Salta il tacchino e aggiungi il pomodoro.",
+          "Incorpora gli zoodles (spaghetti di zucchine) alla fine.",
+          "Cuoci solo 2 min per non far rilasciare acqua."
+        ]
+      },
+      "w1_l6": {
+        "name": "Merluzzo fresco al vapore",
+        "ingredients": [
+          "200g di merluzzo fresco",
+          "Fagiolini",
+          "Aglio e olio EVO"
+        ],
+        "steps": [
+          "Cuoci il pesce e i fagiolini al vapore.",
+          "Prepara un soffritto di aglio a fettine in padella.",
+          "Versa il soffritto sul pesce prima di servire."
+        ]
+      },
+      "w1_d6": {
+        "name": "Tacchino alla griglia con purè di cavolfiore",
+        "ingredients": [
+          "150g di petto di tacchino",
+          "300g di cavolfiore",
+          "Un goccio di latte scremato e pepe bianco"
+        ],
+        "steps": [
+          "Griglia il tacchino.",
+          "Bolli il cavolfiore e scolalo perfettamente in modo che non rimanga acqua.",
+          "Frulla con il latte e il pepe. Otterrai una consistenza da purè di patate con minimo indice glicemico."
+        ]
+      },
+      "w1_l7": {
+        "name": "Entrecôte con peperoncini di Padrón",
+        "ingredients": [
+          "200g di entrecôte o filetto di manzo",
+          "Peperoncini di Padrón",
+          "Insalata mista"
+        ],
+        "steps": [
+          "Scotta la carne alla griglia al punto desiderato.",
+          "Salta i peperoncini con un po' di olio EVO.",
+          "Accompagna con l'insalata mista fresca."
+        ]
+      },
+      "w1_d7": {
+        "name": "Frittata di tonno e spinaci",
+        "ingredients": [
+          "2 uova",
+          "1 scatoletta di tonno al naturale",
+          "Spinaci e 50g di avocado"
+        ],
+        "steps": [
+          "Salta gli spinaci fino a ridurne il volume.",
+          "Mescola con il tonno e le uova sbattute, e cuoci la frittata.",
+          "Servi con l'avocado a fette a lato."
+        ]
       }
     },
     "med": {

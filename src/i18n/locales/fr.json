@@ -280,6 +280,188 @@
           "Mélanger le poulet et l'œuf. Étaler sur une plaque pour former la base.",
           "Cuire 12 min. Ajouter la tomate et le fromage, et gratiner 5 min de plus."
         ]
+      },
+      "w1_l1": {
+        "name": "Poulet au citron et brocoli Volume-Eating",
+        "ingredients": [
+          "200g de blanc de poulet",
+          "300g de brocoli",
+          "10ml d'huile d'olive, ail et citron"
+        ],
+        "steps": [
+          "Couper le poulet en lanières et faire revenir avec l'ail.",
+          "Ajouter le brocoli préalablement bouilli 4 min.",
+          "Presser le citron à la fin. Le grand volume de brocoli apportera la satiété sans glucides."
+        ]
+      },
+      "w1_d1": {
+        "name": "Saumon grillé aux asperges",
+        "ingredients": [
+          "200g de saumon frais",
+          "Asperges sauvages",
+          "Roquette et huile d'olive"
+        ],
+        "steps": [
+          "Griller le saumon en commençant par le côté peau.",
+          "Faire revenir les asperges.",
+          "Servir sur un lit de roquette fraîche."
+        ]
+      },
+      "w1_l2": {
+        "name": "Salade Keto",
+        "ingredients": [
+          "Mâche",
+          "1 boîte de thon et 1 œuf dur",
+          "Olives et 30g de fromage feta"
+        ],
+        "steps": [
+          "Faire bouillir l'œuf.",
+          "Mélanger tous les ingrédients dans un grand bol.",
+          "Assaisonner d'huile d'olive. Cette salade apporte des graisses saines et des protéines pures."
+        ]
+      },
+      "w1_d2": {
+        "name": "Bœuf maigre sauté",
+        "ingredients": [
+          "150g de bœuf maigre",
+          "Poivrons rouges et verts",
+          "Épices style fajita"
+        ],
+        "steps": [
+          "Couper la viande et les légumes en fines lanières.",
+          "Sauter à feu vif avec les épices.",
+          "Servir dans l'assiette (façon fajita mais sans la galette de blé)."
+        ]
+      },
+      "w1_l3": {
+        "name": "Colin sur lit de courgette",
+        "ingredients": [
+          "200g de colin frais",
+          "1 grande courgette",
+          "Oignon et huile d'olive"
+        ],
+        "steps": [
+          "Couper la courgette et l'oignon en fines rondelles.",
+          "Placer le poisson sur les légumes dans un plat.",
+          "Cuire au four à 180°C pendant 15-20 min."
+        ]
+      },
+      "w1_d3": {
+        "name": "Burger de bœuf sans pain",
+        "ingredients": [
+          "150g de bœuf haché",
+          "Fromage cheddar et cornichons",
+          "Laitue iceberg"
+        ],
+        "steps": [
+          "Griller le burger et faire fondre le fromage dessus.",
+          "Utiliser de grandes feuilles de laitue iceberg en remplacement du pain.",
+          "Ajouter les cornichons."
+        ]
+      },
+      "w1_l4": {
+        "name": "Cuisses de poulet et chou-fleur gratiné",
+        "ingredients": [
+          "2 cuisses de poulet sans peau",
+          "300g de chou-fleur",
+          "20g de fromage râpé allégé et muscade"
+        ],
+        "steps": [
+          "Rôtir les cuisses de poulet.",
+          "Faire bouillir le chou-fleur al dente et le transférer dans un plat.",
+          "Ajouter le fromage et la muscade, et gratiner 5 min au four."
+        ]
+      },
+      "w1_d4": {
+        "name": "Wok de crevettes et légumes",
+        "ingredients": [
+          "150g de crevettes décortiquées",
+          "Courgette, carotte, champignons",
+          "Pousses de soja"
+        ],
+        "steps": [
+          "Couper les légumes en fine julienne.",
+          "Faire revenir le tout dans le wok à feu très vif avec les crevettes.",
+          "Ajouter la sauce soja pauvre en sodium."
+        ]
+      },
+      "w1_l5": {
+        "name": "Filet de porc à la moutarde",
+        "ingredients": [
+          "200g de filet de porc maigre",
+          "Épinards frais et noix",
+          "Vinaigrette à la moutarde à l'ancienne"
+        ],
+        "steps": [
+          "Griller les filets de porc.",
+          "Préparer la salade d'épinards et de noix.",
+          "Assaisonner la viande et la salade avec la moutarde à l'ancienne."
+        ]
+      },
+      "w1_d5": {
+        "name": "Zoodles bolognaise de dinde",
+        "ingredients": [
+          "1 grande courgette (en spirales)",
+          "150g de dinde hachée",
+          "Tomate nature"
+        ],
+        "steps": [
+          "Faire revenir la dinde et ajouter la tomate.",
+          "Incorporer les zoodles (spaghettis de courgette) à la fin.",
+          "Cuire seulement 2 min pour qu'ils ne rendent pas d'eau."
+        ]
+      },
+      "w1_l6": {
+        "name": "Cabillaud frais à la vapeur",
+        "ingredients": [
+          "200g de cabillaud frais",
+          "Haricots verts",
+          "Ail et huile d'olive"
+        ],
+        "steps": [
+          "Cuire le poisson et les haricots à la vapeur.",
+          "Préparer une poêlée d'ail émincé.",
+          "Verser la poêlée sur le poisson avant de servir."
+        ]
+      },
+      "w1_d6": {
+        "name": "Dinde grillée et purée de chou-fleur",
+        "ingredients": [
+          "150g de blanc de dinde",
+          "300g de chou-fleur",
+          "Un filet de lait écrémé et poivre blanc"
+        ],
+        "steps": [
+          "Griller la dinde.",
+          "Faire bouillir le chou-fleur et bien l'égoutter pour qu'il ne reste pas d'eau.",
+          "Mixer avec le lait et le poivre. Vous obtiendrez une texture de purée de pommes de terre avec un index glycémique minimal."
+        ]
+      },
+      "w1_l7": {
+        "name": "Entrecôte aux piments de Padrón",
+        "ingredients": [
+          "200g d'entrecôte ou de filet de bœuf",
+          "Piments de Padrón",
+          "Salade mixte"
+        ],
+        "steps": [
+          "Saisir la viande à la plancha à la cuisson désirée.",
+          "Faire revenir les piments avec un peu d'huile d'olive.",
+          "Accompagner de salade mixte fraîche."
+        ]
+      },
+      "w1_d7": {
+        "name": "Omelette au thon et épinards",
+        "ingredients": [
+          "2 œufs",
+          "1 boîte de thon au naturel",
+          "Épinards et 50g d'avocat"
+        ],
+        "steps": [
+          "Faire revenir les épinards jusqu'à réduction de volume.",
+          "Mélanger avec le thon et les œufs battus, et cuire l'omelette.",
+          "Servir avec l'avocat en tranches sur le côté."
+        ]
       }
     },
     "med": {

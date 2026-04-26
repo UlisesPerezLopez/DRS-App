@@ -280,6 +280,188 @@
           "Mix chicken and egg. Spread on a tray forming the base.",
           "Bake 12 min. Add tomato and cheese, and gratin for 5 more min."
         ]
+      },
+      "w1_l1": {
+        "name": "Volume-Eating Lemon Broccoli Chicken",
+        "ingredients": [
+          "200g chicken breast",
+          "300g broccoli",
+          "10ml EVOO, garlic and lemon"
+        ],
+        "steps": [
+          "Cut the chicken into strips and sauté with garlic.",
+          "Add the broccoli previously boiled for 4 min.",
+          "Squeeze lemon at the end. The large volume of broccoli will provide satiety without carbohydrates."
+        ]
+      },
+      "w1_d1": {
+        "name": "Grilled Salmon with Asparagus",
+        "ingredients": [
+          "200g fresh salmon",
+          "Wild asparagus",
+          "Arugula and EVOO"
+        ],
+        "steps": [
+          "Grill the salmon starting skin side down.",
+          "Sauté the asparagus.",
+          "Serve alongside a bed of fresh arugula."
+        ]
+      },
+      "w1_l2": {
+        "name": "Keto Salad",
+        "ingredients": [
+          "Lamb's lettuce",
+          "1 can of tuna and 1 hard-boiled egg",
+          "Olives and 30g feta cheese"
+        ],
+        "steps": [
+          "Boil the egg.",
+          "Mix all ingredients in a large bowl.",
+          "Dress with EVOO. This salad provides healthy fats and pure protein."
+        ]
+      },
+      "w1_d2": {
+        "name": "Sautéed Lean Beef",
+        "ingredients": [
+          "150g lean beef",
+          "Red and green peppers",
+          "Fajita style spices"
+        ],
+        "steps": [
+          "Cut meat and vegetables into thin strips.",
+          "Sauté over high heat with the spices.",
+          "Serve on the plate (fajita style but without the wheat tortilla)."
+        ]
+      },
+      "w1_l3": {
+        "name": "Hake on a Bed of Zucchini",
+        "ingredients": [
+          "200g fresh hake",
+          "1 large zucchini",
+          "Onion and EVOO"
+        ],
+        "steps": [
+          "Slice the zucchini and onion thinly.",
+          "Place the fish on the vegetables in a tray.",
+          "Bake at 180°C for 15-20 min."
+        ]
+      },
+      "w1_d3": {
+        "name": "Bunless Beef Burger",
+        "ingredients": [
+          "150g minced beef",
+          "Cheddar cheese and pickles",
+          "Iceberg lettuce"
+        ],
+        "steps": [
+          "Grill the burger and melt the cheese on top.",
+          "Use large iceberg lettuce leaves as a bun substitute.",
+          "Add the pickles."
+        ]
+      },
+      "w1_l4": {
+        "name": "Chicken Thighs with Cauliflower Gratin",
+        "ingredients": [
+          "2 skinless chicken thighs",
+          "300g cauliflower",
+          "20g grated light cheese and nutmeg"
+        ],
+        "steps": [
+          "Roast the chicken thighs.",
+          "Boil the cauliflower al dente and transfer to a dish.",
+          "Add cheese and nutmeg, and gratin for 5 min in the oven."
+        ]
+      },
+      "w1_d4": {
+        "name": "Prawn and Vegetable Wok",
+        "ingredients": [
+          "150g peeled prawns",
+          "Zucchini, carrot, mushrooms",
+          "Bean sprouts"
+        ],
+        "steps": [
+          "Julienne the vegetables finely.",
+          "Sauté everything in the wok over very high heat with the prawns.",
+          "Add low sodium soy sauce."
+        ]
+      },
+      "w1_l5": {
+        "name": "Pork Loin with Mustard",
+        "ingredients": [
+          "200g lean pork loin",
+          "Fresh spinach and walnuts",
+          "Whole grain mustard dressing"
+        ],
+        "steps": [
+          "Grill the pork loin fillets.",
+          "Prepare the spinach and walnut salad.",
+          "Dress the meat and salad with the whole grain mustard."
+        ]
+      },
+      "w1_d5": {
+        "name": "Turkey Bolognese Zoodles",
+        "ingredients": [
+          "1 large zucchini (spiralized)",
+          "150g minced turkey",
+          "Natural tomato"
+        ],
+        "steps": [
+          "Sauté the turkey and add the tomato.",
+          "Incorporate the zoodles (zucchini spaghetti) at the end.",
+          "Cook for only 2 min so they don't release water."
+        ]
+      },
+      "w1_l6": {
+        "name": "Steamed Fresh Cod",
+        "ingredients": [
+          "200g fresh cod",
+          "Green beans",
+          "Garlic and EVOO"
+        ],
+        "steps": [
+          "Steam the fish and green beans.",
+          "Prepare a sauté of sliced garlic in a pan.",
+          "Pour the sauté over the fish before serving."
+        ]
+      },
+      "w1_d6": {
+        "name": "Grilled Turkey with Cauliflower Puree",
+        "ingredients": [
+          "150g turkey breast",
+          "300g cauliflower",
+          "Splash of skim milk and white pepper"
+        ],
+        "steps": [
+          "Grill the turkey.",
+          "Boil the cauliflower and drain perfectly so no water remains.",
+          "Mash with milk and pepper. You will get a mashed potato texture with minimum glycemic index."
+        ]
+      },
+      "w1_l7": {
+        "name": "Entrecote with Padrón Peppers",
+        "ingredients": [
+          "200g entrecote or beef steak",
+          "Padrón peppers",
+          "Mixed salad"
+        ],
+        "steps": [
+          "Sear the meat on the grill to the desired point.",
+          "Sauté the peppers with a little EVOO.",
+          "Serve with the fresh mixed salad."
+        ]
+      },
+      "w1_d7": {
+        "name": "Tuna and Spinach Omelet",
+        "ingredients": [
+          "2 eggs",
+          "1 can natural tuna",
+          "Spinach and 50g avocado"
+        ],
+        "steps": [
+          "Sauté the spinach until reduced in volume.",
+          "Mix with tuna and beaten eggs, and cook the omelet.",
+          "Serve with sliced avocado on the side."
+        ]
       }
     },
     "med": {

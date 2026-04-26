@@ -280,6 +280,188 @@
           "Mezcla el pollo y huevo. Extiende en una bandeja formando la base.",
           "Hornea 12 min. Añade tomate y queso, y gratina 5 min más."
         ]
+      },
+      "w1_l1": {
+        "name": "Pollo al Limón y Brócoli Volume-Eating",
+        "ingredients": [
+          "200g pechuga de pollo",
+          "300g brócoli",
+          "10ml AOVE, ajo y limón"
+        ],
+        "steps": [
+          "Corta el pollo en tiras y saltea con ajo.",
+          "Añade el brócoli previamente hervido 4 min.",
+          "Exprime limón al final. El gran volumen de brócoli aportará saciedad sin carbohidratos."
+        ]
+      },
+      "w1_d1": {
+        "name": "Salmón a la Plancha con Espárragos",
+        "ingredients": [
+          "200g salmón fresco",
+          "Espárragos trigueros",
+          "Rúcula y AOVE"
+        ],
+        "steps": [
+          "Haz el salmón a la plancha empezando por el lado de la piel.",
+          "Saltea los espárragos.",
+          "Sirve junto a una cama de rúcula fresca."
+        ]
+      },
+      "w1_l2": {
+        "name": "Ensalada Keto",
+        "ingredients": [
+          "Canónigos",
+          "1 lata de atún y 1 huevo duro",
+          "Aceitunas y 30g queso feta"
+        ],
+        "steps": [
+          "Hierve el huevo.",
+          "Mezcla todos los ingredientes en un bol grande.",
+          "Aliña con AOVE. Esta ensalada aporta grasas saludables y proteína pura."
+        ]
+      },
+      "w1_d2": {
+        "name": "Ternera Magra Salteada",
+        "ingredients": [
+          "150g ternera magra",
+          "Pimientos rojos y verdes",
+          "Especias estilo fajita"
+        ],
+        "steps": [
+          "Corta la carne y la verdura en tiras finas.",
+          "Saltea a fuego fuerte con las especias.",
+          "Sirve en el plato (estilo fajita pero sin la tortita de trigo)."
+        ]
+      },
+      "w1_l3": {
+        "name": "Merluza sobre Cama de Calabacín",
+        "ingredients": [
+          "200g merluza fresca",
+          "1 calabacín grande",
+          "Cebolla y AOVE"
+        ],
+        "steps": [
+          "Corta el calabacín y la cebolla en rodajas finas.",
+          "Pon el pescado sobre la verdura en una bandeja.",
+          "Hornea a 180°C durante 15-20 min."
+        ]
+      },
+      "w1_d3": {
+        "name": "Hamburguesa de Ternera sin Pan",
+        "ingredients": [
+          "150g carne picada de ternera",
+          "Queso cheddar y pepinillos",
+          "Lechuga iceberg"
+        ],
+        "steps": [
+          "Haz la hamburguesa a la plancha y funde el queso encima.",
+          "Usa hojas grandes de lechuga iceberg como sustituto del pan.",
+          "Añade los pepinillos."
+        ]
+      },
+      "w1_l4": {
+        "name": "Muslos de Pollo con Coliflor Gratinada",
+        "ingredients": [
+          "2 muslos de pollo sin piel",
+          "300g coliflor",
+          "20g queso rallado light y nuez moscada"
+        ],
+        "steps": [
+          "Asa los muslos de pollo.",
+          "Hierve la coliflor al dente y pásala a una fuente.",
+          "Añade queso y nuez moscada, y gratina 5 min en el horno."
+        ]
+      },
+      "w1_d4": {
+        "name": "Wok de Gambas y Verduras",
+        "ingredients": [
+          "150g gambas peladas",
+          "Calabacín, zanahoria, champiñones",
+          "Brotes de soja"
+        ],
+        "steps": [
+          "Corta la verdura en juliana fina.",
+          "Saltea todo en el wok a fuego muy fuerte con las gambas.",
+          "Añade salsa de soja baja en sodio."
+        ]
+      },
+      "w1_l5": {
+        "name": "Lomo de Cerdo con Mostaza",
+        "ingredients": [
+          "200g lomo de cerdo magro",
+          "Espinacas frescas y nueces",
+          "Aliño de mostaza antigua"
+        ],
+        "steps": [
+          "Haz los filetes de lomo a la plancha.",
+          "Prepara la ensalada de espinacas y nueces.",
+          "Aliña la carne y la ensalada con la mostaza antigua."
+        ]
+      },
+      "w1_d5": {
+        "name": "Zoodles a la Boloñesa de Pavo",
+        "ingredients": [
+          "1 calabacín grande (espiralizado)",
+          "150g pavo picado",
+          "Tomate natural"
+        ],
+        "steps": [
+          "Saltea el pavo y añade el tomate.",
+          "Incorpora los zoodles (espaguetis de calabacín) al final.",
+          "Cocina solo 2 min para que no suelten agua."
+        ]
+      },
+      "w1_l6": {
+        "name": "Bacalao Fresco al Vapor",
+        "ingredients": [
+          "200g bacalao fresco",
+          "Judías verdes",
+          "Ajo y AOVE"
+        ],
+        "steps": [
+          "Haz el pescado y las judías al vapor.",
+          "Prepara un refrito de ajos laminados en una sartén.",
+          "Vierte el refrito sobre el pescado antes de servir."
+        ]
+      },
+      "w1_d6": {
+        "name": "Pavo a la Plancha con Puré de Coliflor",
+        "ingredients": [
+          "150g pechuga de pavo",
+          "300g coliflor",
+          "Chorrito de leche desnatada y pimienta blanca"
+        ],
+        "steps": [
+          "Haz el pavo a la plancha.",
+          "Hierve la coliflor y escúrrela perfectamente para que no quede agua.",
+          "Tritura con la leche y pimienta. Obtendrás textura de puré de patata con mínimo índice glucémico."
+        ]
+      },
+      "w1_l7": {
+        "name": "Entrecot con Pimientos de Padrón",
+        "ingredients": [
+          "200g entrecot o filete de ternera",
+          "Pimientos de Padrón",
+          "Ensalada mixta"
+        ],
+        "steps": [
+          "Sella la carne a la plancha al punto deseado.",
+          "Saltea los pimientos con un poco de AOVE.",
+          "Acompaña con la ensalada mixta fresca."
+        ]
+      },
+      "w1_d7": {
+        "name": "Tortilla de Atún y Espinacas",
+        "ingredients": [
+          "2 huevos",
+          "1 lata de atún al natural",
+          "Espinacas y 50g aguacate"
+        ],
+        "steps": [
+          "Saltea las espinacas hasta reducir su volumen.",
+          "Mezcla con el atún y los huevos batidos, y cuaja la tortilla.",
+          "Sirve con el aguacate laminado en un lateral."
+        ]
       }
     },
     "med": {

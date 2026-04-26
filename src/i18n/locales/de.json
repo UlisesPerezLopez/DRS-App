@@ -280,6 +280,188 @@
           "Hähnchen und Ei mischen. Auf einem Blech als Boden ausbreiten.",
           "12 Min. backen. Tomate und Käse hinzufügen und weitere 5 Min. gratinieren."
         ]
+      },
+      "w1_l1": {
+        "name": "Volume-Eating Zitronen-Brokkoli-Hähnchen",
+        "ingredients": [
+          "200g Hähnchenbrust",
+          "300g Brokkoli",
+          "10ml Olivenöl, Knoblauch und Zitrone"
+        ],
+        "steps": [
+          "Hähnchen in Streifen schneiden und mit Knoblauch anbraten.",
+          "Zuvor 4 Min. gekochten Brokkoli hinzufügen.",
+          "Am Ende Zitrone darüber auspressen. Das große Brokkoli-Volumen sorgt für Sättigung ohne Kohlenhydrate."
+        ]
+      },
+      "w1_d1": {
+        "name": "Gegrillter Lachs mit Spargel",
+        "ingredients": [
+          "200g frischer Lachs",
+          "Wilder Spargel",
+          "Rucola und Olivenöl"
+        ],
+        "steps": [
+          "Lachs mit der Hautseite nach unten grillen.",
+          "Spargel anbraten.",
+          "Auf einem Bett aus frischem Rucola servieren."
+        ]
+      },
+      "w1_l2": {
+        "name": "Keto-Salat",
+        "ingredients": [
+          "Feldsalat",
+          "1 Dose Thunfisch und 1 hartgekochtes Ei",
+          "Oliven und 30g Feta-Käse"
+        ],
+        "steps": [
+          "Ei kochen.",
+          "Alle Zutaten in einer großen Schüssel mischen.",
+          "Mit Olivenöl anmachen. Dieser Salat liefert gesunde Fette und reines Protein."
+        ]
+      },
+      "w1_d2": {
+        "name": "Sautiertes mageres Rindfleisch",
+        "ingredients": [
+          "150g mageres Rindfleisch",
+          "Rote und grüne Paprika",
+          "Gewürze nach Fajita-Art"
+        ],
+        "steps": [
+          "Fleisch und Gemüse in feine Streifen schneiden.",
+          "Bei starker Hitze mit den Gewürzen anbraten.",
+          "Auf dem Teller servieren (Fajita-Art, aber ohne Weizentortilla)."
+        ]
+      },
+      "w1_l3": {
+        "name": "Seehecht auf Zucchini-Bett",
+        "ingredients": [
+          "200g frischer Seehecht",
+          "1 große Zucchini",
+          "Zwiebel und Olivenöl"
+        ],
+        "steps": [
+          "Zucchini und Zwiebel in feine Scheiben schneiden.",
+          "Fisch auf dem Gemüse in eine Auflaufform legen.",
+          "Bei 180°C für 15-20 Min. backen."
+        ]
+      },
+      "w1_d3": {
+        "name": "Rindfleisch-Burger ohne Brot",
+        "ingredients": [
+          "150g Rinderhackfleisch",
+          "Cheddar-Käse und Essiggurken",
+          "Eisbergsalat"
+        ],
+        "steps": [
+          "Burger grillen und Käse darauf schmelzen lassen.",
+          "Große Eisbergsalatblätter als Brotersatz verwenden.",
+          "Essiggurken hinzufügen."
+        ]
+      },
+      "w1_l4": {
+        "name": "Hähnchenkeulen mit überbackenem Blumenkohl",
+        "ingredients": [
+          "2 Hähnchenkeulen ohne Haut",
+          "300g Blumenkohl",
+          "20g leichter Reibekäse und Muskatnuss"
+        ],
+        "steps": [
+          "Hähnchenkeulen braten.",
+          "Blumenkohl al dente kochen und in eine Auflaufform geben.",
+          "Käse und Muskatnuss hinzufügen und 5 Min. im Ofen überbacken."
+        ]
+      },
+      "w1_d4": {
+        "name": "Garnelen-Gemüse-Wok",
+        "ingredients": [
+          "150g geschälte Garnelen",
+          "Zucchini, Karotte, Champignons",
+          "Sojasprossen"
+        ],
+        "steps": [
+          "Gemüse in feine Streifen schneiden.",
+          "Alles im Wok bei sehr starker Hitze mit den Garnelen anbraten.",
+          "Natriumarme Sojasauce hinzufügen."
+        ]
+      },
+      "w1_l5": {
+        "name": "Schweinelende mit Senf",
+        "ingredients": [
+          "200g magere Schweinelende",
+          "Frischer Spinat und Walnüsse",
+          "Grobkörniges Senfdressing"
+        ],
+        "steps": [
+          "Schweinelendenfilets grillen.",
+          "Spinat-Walnuss-Salat zubereiten.",
+          "Fleisch und Salat mit dem grobkörnigen Senf anmachen."
+        ]
+      },
+      "w1_d5": {
+        "name": "Puten-Bolognese-Zoodles",
+        "ingredients": [
+          "1 große Zucchini (spiralisiert)",
+          "150g Putenhackfleisch",
+          "Natürliche Tomate"
+        ],
+        "steps": [
+          "Pute anbraten und Tomate hinzufügen.",
+          "Am Ende Zoodles (Zucchini-Spaghetti) unterheben.",
+          "Nur 2 Min. kochen, damit sie kein Wasser ziehen."
+        ]
+      },
+      "w1_l6": {
+        "name": "Gedämpfter frischer Kabeljau",
+        "ingredients": [
+          "200g frischer Kabeljau",
+          "Grüne Bohnen",
+          "Knoblauch und Olivenöl"
+        ],
+        "steps": [
+          "Fisch und Bohnen dämpfen.",
+          "Ein Sofrito aus in Scheiben geschnittenem Knoblauch in einer Pfanne zubereiten.",
+          "Sofrito vor dem Servieren über den Fisch gießen."
+        ]
+      },
+      "w1_d6": {
+        "name": "Gegrillte Pute mit Blumenkohlpüree",
+        "ingredients": [
+          "150g Putenbrust",
+          "300g Blumenkohl",
+          "Ein Schuss Magermilch und weißer Pfeffer"
+        ],
+        "steps": [
+          "Pute grillen.",
+          "Blumenkohl kochen und perfekt abtropfen lassen, damit kein Wasser zurückbleibt.",
+          "Mit Milch und Pfeffer pürieren. Sie erhalten eine Kartoffelpüree-Textur mit minimalem glykämischen Index."
+        ]
+      },
+      "w1_l7": {
+        "name": "Entrecôte mit Padrón-Paprika",
+        "ingredients": [
+          "200g Entrecôte oder Rindersteak",
+          "Padrón-Paprika",
+          "Gemischter Salat"
+        ],
+        "steps": [
+          "Fleisch nach Wunsch auf dem Grill anbraten.",
+          "Paprika mit etwas Olivenöl anbraten.",
+          "Mit frischem gemischten Salat servieren."
+        ]
+      },
+      "w1_d7": {
+        "name": "Thunfisch-Spinat-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "1 Dose Thunfisch natur",
+          "Spinat und 50g Avocado"
+        ],
+        "steps": [
+          "Spinat anbraten, bis das Volumen reduziert ist.",
+          "Mit Thunfisch und geschlagenen Eiern mischen und Omelett braten.",
+          "Mit in Scheiben geschnittener Avocado als Beilage servieren."
+        ]
       }
     },
     "med": {
