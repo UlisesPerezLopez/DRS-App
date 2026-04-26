@@ -1697,6 +1697,369 @@
           "Faire bouillir l'œuf dur.",
           "Servir le tout sur une planche en bois style apéritif sain."
         ]
+      },
+      "w2_l1": {
+        "name": "Salade de Quinoa et Haricots Noirs",
+        "ingredients": [
+          "60g de quinoa (à sec)",
+          "100g de haricots noirs",
+          "Maïs doux et 50g d'avocat"
+        ],
+        "steps": [
+          "Faire bouillir le quinoa 12 min.",
+          "Mélanger à froid avec les haricots bien lavés, le maïs et l'avocat en morceaux.",
+          "Assaisonner avec du citron et des épices."
+        ]
+      },
+      "w2_d1": {
+        "name": "Œufs Brouillés aux Champignons et Tofu",
+        "ingredients": [
+          "2 œufs",
+          "100g de tofu émietté",
+          "Champignons et ail"
+        ],
+        "steps": [
+          "Faire dorer le tofu émietté dans la poêle pour lui donner de la texture.",
+          "Ajouter les champignons et l'ail.",
+          "Verser les œufs et brouiller."
+        ]
+      },
+      "w2_l2": {
+        "name": "Moussaka Végétarienne",
+        "ingredients": [
+          "1 aubergine",
+          "150g de lentilles cuites et tomate",
+          "1 courgette (pour la béchamel)"
+        ],
+        "steps": [
+          "Griller des tranches d'aubergine. Faire revenir les lentilles avec la tomate.",
+          "Faire bouillir la courgette avec un peu de lait écrémé et mixer pour créer une fausse béchamel peu calorique.",
+          "Monter les couches d'aubergine, lentilles et béchamel. Cuire au four 15 min."
+        ]
+      },
+      "w2_d2": {
+        "name": "Fromage Grillé aux Légumes",
+        "ingredients": [
+          "60g de fromage Halloumi ou Feta",
+          "Poivrons rôtis",
+          "Mâche"
+        ],
+        "steps": [
+          "Plonger le fromage dans l'eau 10 min avant pour réduire son sodium.",
+          "Griller le fromage des deux côtés.",
+          "Servir sur les poivrons rôtis et la mâche."
+        ]
+      },
+      "w2_l3": {
+        "name": "Pâtes de Pois Chiches au Pesto",
+        "ingredients": [
+          "70g de pâtes de légumineuses (pois chiches)",
+          "Tomates cerises",
+          "Basilic et huile d'olive"
+        ],
+        "steps": [
+          "Faire bouillir les pâtes de légumineuses (elles ont plus de protéines que celles de blé).",
+          "Mélanger avec un pesto léger de basilic, huile et ail.",
+          "Ajouter des tomates cerises crues coupées en deux."
+        ]
+      },
+      "w2_d3": {
+        "name": "Crème de Brocoli et Cheddar Léger",
+        "ingredients": [
+          "250g de brocoli",
+          "30g de fromage cheddar léger",
+          "1 œuf dur"
+        ],
+        "steps": [
+          "Faire bouillir le brocoli et le mixer.",
+          "Ajouter le fromage pour qu'il fonde avec la chaleur résiduelle et apporte de l'onctuosité.",
+          "Servir avec un œuf dur haché sur le dessus."
+        ]
+      },
+      "w2_l4": {
+        "name": "Sauté de Tempeh et Légumes",
+        "ingredients": [
+          "120g de tempeh",
+          "Poivrons et carotte",
+          "10g de cacahuètes"
+        ],
+        "steps": [
+          "Couper le tempeh en lanières et le faire sauter à feu vif.",
+          "Ajouter les légumes en julienne et faire sauter façon wok.",
+          "Décorer avec des cacahuètes hachées pour une touche croustillante."
+        ]
+      },
+      "w2_d4": {
+        "name": "Poivrons Farcis à la Ricotta et aux Épinards",
+        "ingredients": [
+          "2 gros poivrons",
+          "200g d'épinards frais",
+          "60g de fromage ricotta ou de cottage cheese et 1 œuf"
+        ],
+        "steps": [
+          "Faire sauter les épinards et les mélanger avec la ricotta et l'œuf battu.",
+          "Farcir les poivrons (préalablement rôtis vides pendant 10 min).",
+          "Cuire au four 15 min. Plat à très haute densité protéique."
+        ]
+      },
+      "w2_l5": {
+        "name": "Dahl de Lentilles Rouges",
+        "ingredients": [
+          "80g de lentilles rouges",
+          "300g de chou-fleur broyé",
+          "50ml de lait de coco léger, curcuma et gingembre"
+        ],
+        "steps": [
+          "Cuire les lentilles (elles n'ont pas besoin de trempage) avec le lait de coco et les épices environ 15 min.",
+          "Faire sauter le chou-fleur broyé (faux riz) 5 min dans la poêle.",
+          "Servir le Dahl sur la base de chou-fleur."
+        ]
+      },
+      "w2_d5": {
+        "name": "Omelette aux Asperges et Oignons",
+        "ingredients": [
+          "2 œufs",
+          "1 botte d'asperges sauvages",
+          "1/2 oignon",
+          "Salade de radis et concombre"
+        ],
+        "steps": [
+          "Faire suer l'oignon et faire sauter les asperges.",
+          "Cuire l'omelette.",
+          "Servir avec une salade fraîche en accompagnement de concombre et radis."
+        ]
+      },
+      "w2_l6": {
+        "name": "Falafel au Four avec Houmous",
+        "ingredients": [
+          "200g de pois chiches cuits",
+          "Ail, persil et cumin",
+          "60g de houmous et pain pita complet"
+        ],
+        "steps": [
+          "Mixer les pois chiches avec l'ail, le persil et le cumin sans en faire de la purée.",
+          "Former des boules, les aplatir légèrement et les badigeonner d'huile d'olive.",
+          "Cuire au four à 200°C pendant 20 min (en économisant les calories de la friture). Servir avec du houmous et du pain pita."
+        ]
+      },
+      "w2_d6": {
+        "name": "Galettes de Courgette et Œuf",
+        "ingredients": [
+          "2 œufs",
+          "1 courgette râpée",
+          "1 cuillère à soupe de farine d'avoine"
+        ],
+        "steps": [
+          "Râper la courgette et bien l'égoutter pour enlever l'eau.",
+          "Mélanger avec l'œuf et la farine d'avoine.",
+          "Faire de petites galettes à la plancha avec une goutte d'huile."
+        ]
+      },
+      "w2_l7": {
+        "name": "Risotto aux Champignons et Riz Complet",
+        "ingredients": [
+          "70g de riz complet",
+          "Cèpes ou champignons",
+          "10g de parmesan"
+        ],
+        "steps": [
+          "Faire revenir les champignons.",
+          "Ajouter le riz complet et le bouillon de légumes petit à petit, en remuant constamment.",
+          "Incorporer le parmesan à la fin."
+        ]
+      },
+      "w2_d7": {
+        "name": "Pizza d'Aubergine",
+        "ingredients": [
+          "Tranches épaisses d'aubergine",
+          "Tomates concassées",
+          "Fromage mozzarella léger et basilic"
+        ],
+        "steps": [
+          "Utiliser les tranches d'aubergine rôties comme base de pizza.",
+          "Ajouter la tomate, le fromage et le basilic par-dessus.",
+          "Gratiner 5 minutes au four."
+        ]
+      },
+      "w3_l1": {
+        "name": "Salade Tiède de Lentilles",
+        "ingredients": [
+          "100g de lentilles",
+          "40g de quinoa",
+          "Poivrons et oignon"
+        ],
+        "steps": [
+          "Faire bouillir le quinoa.",
+          "Faire sauter les poivrons et l'oignon.",
+          "Mélanger le tout avec les lentilles dans un bol. Option tiède délicieuse."
+        ]
+      },
+      "w3_d1": {
+        "name": "Omelette à la Courgette et au Fromage de Chèvre",
+        "ingredients": [
+          "2 œufs",
+          "1/2 courgette",
+          "20g de bûche de chèvre"
+        ],
+        "steps": [
+          "Couper la courgette en très petits dés et la faire sauter.",
+          "Ajouter le fromage émietté aux œufs battus.",
+          "Cuire l'omelette à feu moyen."
+        ]
+      },
+      "w3_l2": {
+        "name": "Ragoût de Pois Chiches et Citrouille",
+        "ingredients": [
+          "200g de pois chiches cuits",
+          "Dés de citrouille",
+          "Cumin et épinards frais"
+        ],
+        "steps": [
+          "Faire sauter la citrouille avec du cumin.",
+          "Ajouter les pois chiches très bien lavés, les épinards et un verre d'eau.",
+          "Cuire à feu moyen jusqu'à ce que la citrouille soit tendre."
+        ]
+      },
+      "w3_d2": {
+        "name": "Tofu Mariné Grillé",
+        "ingredients": [
+          "100g de tofu ferme",
+          "Sauce soja et gingembre",
+          "Asperges sauvages"
+        ],
+        "steps": [
+          "Bien sécher le tofu et le couper en dés. Le faire mariner 15 min dans la sauce soja et le gingembre.",
+          "Faire griller le tofu jusqu'à ce qu'il soit doré.",
+          "Accompagner d'asperges sautées."
+        ]
+      },
+      "w3_l3": {
+        "name": "Pâtes Complètes au Pesto de Brocoli",
+        "ingredients": [
+          "70g de pâtes complètes",
+          "200g de brocoli (fleurs seulement)",
+          "10g de noix et 10g de parmesan"
+        ],
+        "steps": [
+          "Faire bouillir le brocoli 4 min. Le mixer avec l'ail, les noix, le fromage et 5ml d'huile pour créer une pâte.",
+          "Faire bouillir les pâtes al dente.",
+          "Mélanger les pâtes avec ce pesto super nutritif."
+        ]
+      },
+      "w3_d3": {
+        "name": "Crème de Légumes Blancs",
+        "ingredients": [
+          "Poireau, chou-fleur et oignon",
+          "1 œuf poché"
+        ],
+        "steps": [
+          "Faire bouillir les légumes blancs et les mixer jusqu'à obtenir une crème fine.",
+          "Préparer un œuf poché (poché dans l'eau bouillante avec du vinaigre 3 min).",
+          "Servir l'œuf sur la crème."
+        ]
+      },
+      "w3_l4": {
+        "name": "Couscous Complet aux Légumes et Amandes",
+        "ingredients": [
+          "60g de couscous complet",
+          "Courgette et carotte",
+          "15g d'amandes grillées"
+        ],
+        "steps": [
+          "Hydrater le couscous pendant 5 minutes.",
+          "Couper les légumes en tout petits dés (brunoise) et les faire sauter.",
+          "Mélanger le couscous, les légumes et décorer d'amandes hachées."
+        ]
+      },
+      "w3_d4": {
+        "name": "Burger de Haricots Noirs",
+        "ingredients": [
+          "150g de haricots noirs cuits",
+          "Oignon haché et cumin",
+          "1 cuillère à soupe de farine d'avoine"
+        ],
+        "steps": [
+          "Écraser les haricots à la fourchette (en gardant de la texture).",
+          "Mélanger avec l'oignon cru, le cumin et l'avoine.",
+          "Former le burger et le griller 4 min de chaque côté."
+        ]
+      },
+      "w3_l5": {
+        "name": "Risotto d'Orge ou de Riz Complet",
+        "ingredients": [
+          "70g d'orge perlé ou de riz complet",
+          "Champignons variés",
+          "Levure nutritionnelle"
+        ],
+        "steps": [
+          "Faire revenir les champignons.",
+          "Ajouter la céréale et le bouillon petit à petit.",
+          "Remplacer le parmesan par de la levure nutritionnelle (goût de fromage, mais 100% végétalien)."
+        ]
+      },
+      "w3_d5": {
+        "name": "Poivrons Farcis à l'Œuf",
+        "ingredients": [
+          "2 gros poivrons rouges",
+          "2 œufs",
+          "Sel et poivre"
+        ],
+        "steps": [
+          "Couper le poivron en deux (dans le sens de la longueur) et retirer les graines.",
+          "Le mettre dans une poêle avec un couvercle. Casser un œuf dans chaque moitié.",
+          "Couvrir et laisser mijoter 10 min pour qu'ils cuisent à la vapeur."
+        ]
+      },
+      "w3_l6": {
+        "name": "Ragoût de Seitan à l'Allemande",
+        "ingredients": [
+          "120g de seitan en dés",
+          "150g de pomme de terre",
+          "Bouillon de légumes pauvre en sodium, petits pois et laurier"
+        ],
+        "steps": [
+          "Saisir le seitan dans la marmite (le seitan apporte 25g impressionnants de protéines).",
+          "Ajouter la pomme de terre en dés, les petits pois et couvrir de bouillon et de laurier.",
+          "Cuire jusqu'à ce que la pomme de terre soit tendre."
+        ]
+      },
+      "w3_d6": {
+        "name": "Zoodles au Fromage Ricotta",
+        "ingredients": [
+          "1 courgette (en spirales)",
+          "60g de fromage ricotta",
+          "Noix hachées"
+        ],
+        "steps": [
+          "Faire sauter les zoodles (spaghettis de courgette) seulement 2 minutes pour qu'ils ne rendent pas d'eau.",
+          "Éteindre le feu, ajouter la ricotta et bien mélanger.",
+          "Décorer avec des noix."
+        ]
+      },
+      "w3_l7": {
+        "name": "Burrito Végétarien",
+        "ingredients": [
+          "1 tortilla complète",
+          "100g de haricots frits (sans graisse)",
+          "Laitue et pico de gallo (tomate/oignon hachés)"
+        ],
+        "steps": [
+          "Chauffer la tortilla.",
+          "Étaler les haricots.",
+          "Ajouter la laitue et le pico de gallo, rouler et déguster."
+        ]
+      },
+      "w3_d7": {
+        "name": "Houmous de Betterave",
+        "ingredients": [
+          "100g de houmous mixte (pois chiches + betterave cuite)",
+          "Crudités de carotte",
+          "2 œufs durs"
+        ],
+        "steps": [
+          "Si fait maison, mixer le houmous traditionnel avec un morceau de betterave cuite pour lui donner de la douceur et une couleur incroyable.",
+          "Accompagner de bâtonnets de légumes frais et des œufs."
+        ]
       }
     }
   },

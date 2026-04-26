@@ -1697,6 +1697,369 @@
           "Bolli l'uovo sodo.",
           "Servi tutto su un tagliere di legno in stile spuntino sano."
         ]
+      },
+      "w2_l1": {
+        "name": "Insalata di Quinoa e Fagioli Neri",
+        "ingredients": [
+          "60g di quinoa (a secco)",
+          "100g di fagioli neri",
+          "Mais dolce e 50g di avocado"
+        ],
+        "steps": [
+          "Bolli la quinoa per 12 min.",
+          "Mescola a freddo con i fagioli ben lavati, il mais e l'avocado a pezzetti.",
+          "Condisci con limone e spezie."
+        ]
+      },
+      "w2_d1": {
+        "name": "Uova Strapazzate con Funghi e Tofu",
+        "ingredients": [
+          "2 uova",
+          "100g di tofu sbriciolato",
+          "Funghi e aglio"
+        ],
+        "steps": [
+          "Rosola il tofu sbriciolato in padella per dargli consistenza.",
+          "Aggiungi i funghi e l'aglio.",
+          "Versa le uova e prepara le uova strapazzate."
+        ]
+      },
+      "w2_l2": {
+        "name": "Moussaka Vegetariana",
+        "ingredients": [
+          "1 melanzana",
+          "150g di lenticchie cotte e pomodoro",
+          "1 zucchina (per la besciamella)"
+        ],
+        "steps": [
+          "Griglia fette di melanzana. Fai un soffritto di lenticchie con pomodoro.",
+          "Bolli la zucchina con un po' di latte scremato e frulla per creare una finta besciamella ipocalorica.",
+          "Prepara strati di melanzane, lenticchie e besciamella. Inforna per 15 min."
+        ]
+      },
+      "w2_d2": {
+        "name": "Formaggio Grigliato con Verdure",
+        "ingredients": [
+          "60g di formaggio Halloumi o Feta",
+          "Peperoni arrosto",
+          "Valeriana"
+        ],
+        "steps": [
+          "Immergi il formaggio in acqua per 10 min prima per ridurne il sodio.",
+          "Griglia il formaggio da entrambi i lati.",
+          "Servi su peperoni arrosto e valeriana."
+        ]
+      },
+      "w2_l3": {
+        "name": "Pasta di Ceci al Pesto",
+        "ingredients": [
+          "70g di pasta di legumi (ceci)",
+          "Pomodorini",
+          "Basilico e olio EVO"
+        ],
+        "steps": [
+          "Bolli la pasta di legumi (ha più proteine di quella di grano).",
+          "Mescola con un pesto leggero di basilico, olio e aglio.",
+          "Aggiungi pomodorini crudi tagliati a metà."
+        ]
+      },
+      "w2_d3": {
+        "name": "Crema di Broccoli e Cheddar Leggero",
+        "ingredients": [
+          "250g di broccoli",
+          "30g di formaggio cheddar leggero",
+          "1 uovo sodo"
+        ],
+        "steps": [
+          "Bolli i broccoli e frullali.",
+          "Aggiungi il formaggio affinché si sciolga con il calore residuo e dia cremosità.",
+          "Servi con un uovo sodo tritato sopra."
+        ]
+      },
+      "w2_l4": {
+        "name": "Saltato di Tempeh e Verdure",
+        "ingredients": [
+          "120g di tempeh",
+          "Peperoni e carota",
+          "10g di arachidi"
+        ],
+        "steps": [
+          "Taglia il tempeh a strisce e saltalo a fuoco alto.",
+          "Aggiungi le verdure a julienne e salta in stile wok.",
+          "Decora con arachidi tritate per un tocco croccante."
+        ]
+      },
+      "w2_d4": {
+        "name": "Peperoni Ripieni di Ricotta e Spinaci",
+        "ingredients": [
+          "2 peperoni grandi",
+          "200g di spinaci freschi",
+          "60g di ricotta o formaggio fresco e 1 uovo"
+        ],
+        "steps": [
+          "Salta gli spinaci e mescolali con la ricotta e l'uovo sbattuto.",
+          "Riempi i peperoni (precedentemente arrostiti vuoti per 10 min).",
+          "Inforna per 15 min. Piatto ad altissima densità proteica."
+        ]
+      },
+      "w2_l5": {
+        "name": "Dahl di Lenticchie Rosse",
+        "ingredients": [
+          "80g di lenticchie rosse",
+          "300g di cavolfiore tritato",
+          "50ml di latte di cocco leggero, curcuma e zenzero"
+        ],
+        "steps": [
+          "Cuoci le lenticchie (non hanno bisogno di ammollo) con il latte di cocco e le spezie per circa 15 min.",
+          "Salta il cavolfiore tritato (finto riso) per 5 min in padella.",
+          "Servi il Dahl sulla base di cavolfiore."
+        ]
+      },
+      "w2_d5": {
+        "name": "Frittata di Asparagi e Cipolla",
+        "ingredients": [
+          "2 uova",
+          "1 mazzo di asparagi selvatici",
+          "1/2 cipolla",
+          "Insalata di ravanelli e cetriolo"
+        ],
+        "steps": [
+          "Soffriggi la cipolla e salta gli asparagi.",
+          "Cuoci la frittata.",
+          "Servi con un'insalata fresca di contorno di cetrioli e ravanelli."
+        ]
+      },
+      "w2_l6": {
+        "name": "Falafel al Forno con Hummus",
+        "ingredients": [
+          "200g di ceci cotti",
+          "Aglio, prezzemolo e cumino",
+          "60g di hummus e pane pita integrale"
+        ],
+        "steps": [
+          "Frulla i ceci con aglio, prezzemolo e cumino senza farne una purea.",
+          "Forma delle palline, schiacciale leggermente e spennella con olio EVO.",
+          "Inforna a 200°C per 20 min (risparmiando le calorie della frittura). Servi con hummus e pita."
+        ]
+      },
+      "w2_d6": {
+        "name": "Frittelle di Zucchine e Uova",
+        "ingredients": [
+          "2 uova",
+          "1 zucchina grattugiata",
+          "1 cucchiaio di farina d'avena"
+        ],
+        "steps": [
+          "Grattugia la zucchina e scolala molto bene per rimuovere l'acqua.",
+          "Mescola con uovo e farina d'avena.",
+          "Prepara piccole frittelle sulla piastra con una goccia d'olio."
+        ]
+      },
+      "w2_l7": {
+        "name": "Risotto ai Funghi e Riso Integrale",
+        "ingredients": [
+          "70g di riso integrale",
+          "Porcini o funghi champignon",
+          "10g di parmigiano"
+        ],
+        "steps": [
+          "Fai un soffritto con i funghi.",
+          "Aggiungi il riso integrale e il brodo vegetale poco a poco, mescolando costantemente.",
+          "Manteca con il parmigiano alla fine."
+        ]
+      },
+      "w2_d7": {
+        "name": "Pizza di Melanzane",
+        "ingredients": [
+          "Fette spesse di melanzana",
+          "Passata di pomodoro",
+          "Formaggio mozzarella leggero e basilico"
+        ],
+        "steps": [
+          "Usa le fette di melanzana arrosto come base per la pizza.",
+          "Aggiungi pomodoro, formaggio e basilico sopra.",
+          "Gratina per 5 minuti in forno."
+        ]
+      },
+      "w3_l1": {
+        "name": "Insalata Tiepida di Lenticchie",
+        "ingredients": [
+          "100g di lenticchie",
+          "40g di quinoa",
+          "Peperoni e cipolla"
+        ],
+        "steps": [
+          "Bolli la quinoa.",
+          "Salta i peperoni e la cipolla.",
+          "Mescola tutto con le lenticchie in una ciotola. Deliziosa opzione tiepida."
+        ]
+      },
+      "w3_d1": {
+        "name": "Frittata di Zucchine e Formaggio di Capra",
+        "ingredients": [
+          "2 uova",
+          "1/2 zucchina",
+          "20g di formaggio di capra (tronchetto)"
+        ],
+        "steps": [
+          "Taglia la zucchina a dadini piccolissimi e saltala.",
+          "Aggiungi il formaggio sbriciolato alle uova sbattute.",
+          "Cuoci la frittata a fuoco medio."
+        ]
+      },
+      "w3_l2": {
+        "name": "Zuppa di Ceci e Zucca",
+        "ingredients": [
+          "200g di ceci cotti",
+          "Zucca a dadini",
+          "Cumino e spinaci freschi"
+        ],
+        "steps": [
+          "Salta la zucca con il cumino.",
+          "Aggiungi i ceci molto ben lavati, gli spinaci e un bicchiere d'acqua.",
+          "Cuoci a fuoco medio fino a quando la zucca sarà tenera."
+        ]
+      },
+      "w3_d2": {
+        "name": "Tofu Marinato Grigliato",
+        "ingredients": [
+          "100g di tofu fermo",
+          "Salsa di soia e zenzero",
+          "Asparagi selvatici"
+        ],
+        "steps": [
+          "Asciuga bene il tofu e taglialo a dadini. Marinalo per 15 min in soia e zenzero.",
+          "Griglia il tofu fino a doratura.",
+          "Accompagna con asparagi saltati."
+        ]
+      },
+      "w3_l3": {
+        "name": "Pasta Integrale con Pesto di Broccoli",
+        "ingredients": [
+          "70g di pasta integrale",
+          "200g di broccoli (solo cimette)",
+          "10g di noci e 10g di parmigiano"
+        ],
+        "steps": [
+          "Bolli i broccoli per 4 min. Frullali insieme ad aglio, noci, formaggio e 5ml di olio per creare una pasta.",
+          "Bolli la pasta al dente.",
+          "Mescola la pasta con questo pesto super nutriente."
+        ]
+      },
+      "w3_d3": {
+        "name": "Crema di Verdure Bianche",
+        "ingredients": [
+          "Porro, cavolfiore e cipolla",
+          "1 uovo in camicia"
+        ],
+        "steps": [
+          "Bolli le verdure bianche e frullale fino a ottenere una crema liscia.",
+          "Prepara un uovo in camicia (cotto in acqua bollente con aceto per 3 min).",
+          "Servi l'uovo sulla crema."
+        ]
+      },
+      "w3_l4": {
+        "name": "Cous Cous Integrale con Verdure e Mandorle",
+        "ingredients": [
+          "60g di cous cous integrale",
+          "Zucchina e carota",
+          "15g di mandorle tostate"
+        ],
+        "steps": [
+          "Idrata il cous cous per 5 minuti.",
+          "Taglia le verdure a dadini piccolissimi (brunoise) e saltale.",
+          "Mescola il cous cous, le verdure e decora con mandorle tritate."
+        ]
+      },
+      "w3_d4": {
+        "name": "Hamburger di Fagioli Neri",
+        "ingredients": [
+          "150g di fagioli neri cotti",
+          "Cipolla tritata e cumino",
+          "1 cucchiaio di farina d'avena"
+        ],
+        "steps": [
+          "Schiaccia i fagioli con una forchetta (lasciando consistenza).",
+          "Mescola con cipolla cruda, cumino e farina d'avena.",
+          "Forma l'hamburger e griglia 4 min per lato."
+        ]
+      },
+      "w3_l5": {
+        "name": "Risotto d'Orzo o Riso Integrale",
+        "ingredients": [
+          "70g di orzo perlato o riso integrale",
+          "Funghi misti",
+          "Lievito alimentare"
+        ],
+        "steps": [
+          "Fai un soffritto con i funghi.",
+          "Aggiungi il cereale e il brodo poco a poco.",
+          "Sostituisci il parmigiano con lievito alimentare (sapore di formaggio, ma 100% vegano)."
+        ]
+      },
+      "w3_d5": {
+        "name": "Peperoni Ripieni di Uova",
+        "ingredients": [
+          "2 peperoni rossi grandi",
+          "2 uova",
+          "Sale e pepe"
+        ],
+        "steps": [
+          "Taglia il peperone a metà (longitudinalmente) e rimuovi i semi.",
+          "Mettilo in una padella con coperchio. Rompi un uovo dentro ogni metà.",
+          "Copri e cuoci a fuoco lento per 10 min affinché cuociano a vapore."
+        ]
+      },
+      "w3_l6": {
+        "name": "Stufato di Seitan alla Tedesca",
+        "ingredients": [
+          "120g di seitan a dadini",
+          "150g di patata",
+          "Brodo vegetale a basso contenuto di sodio, piselli e alloro"
+        ],
+        "steps": [
+          "Rosola il seitan nella pentola (il seitan fornisce ben 25g di proteine).",
+          "Aggiungi la patata a dadini, i piselli e copri con brodo e alloro.",
+          "Cuoci fino a quando la patata sarà tenera."
+        ]
+      },
+      "w3_d6": {
+        "name": "Zoodles con Formaggio Ricotta",
+        "ingredients": [
+          "1 zucchina (a spirale)",
+          "60g di formaggio ricotta",
+          "Noci tritate"
+        ],
+        "steps": [
+          "Salta gli zoodles (spaghetti di zucchine) solo per 2 minuti affinché non rilascino acqua.",
+          "Spegni il fuoco, aggiungi la ricotta e mescola bene.",
+          "Decora con noci."
+        ]
+      },
+      "w3_l7": {
+        "name": "Burrito Vegetariano",
+        "ingredients": [
+          "1 tortilla integrale",
+          "100g di fagioli fritti (senza grassi)",
+          "Lattuga e pico de gallo (pomodoro/cipolla tritata)"
+        ],
+        "steps": [
+          "Riscalda la tortilla.",
+          "Spalma i fagioli.",
+          "Aggiungi lattuga e pico de gallo, arrotola e gusta."
+        ]
+      },
+      "w3_d7": {
+        "name": "Hummus di Barbabietola",
+        "ingredients": [
+          "100g di hummus misto (ceci + barbabietola cotta)",
+          "Crudités di carota",
+          "2 uova sode"
+        ],
+        "steps": [
+          "Se lo fai in casa, frulla l'hummus tradizionale con un pezzo di barbabietola cotta per dargli dolcezza e un colore incredibile.",
+          "Accompagna con bastoncini di verdura fresca e le uova."
+        ]
       }
     }
   },

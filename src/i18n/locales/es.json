@@ -1697,6 +1697,369 @@
           "Hierve el huevo duro.",
           "Sirve todo en una tabla de madera estilo picoteo saludable."
         ]
+      },
+      "w2_l1": {
+        "name": "Ensalada de Quinoa y Alubias Negras",
+        "ingredients": [
+          "60g quinoa (en seco)",
+          "100g alubias negras",
+          "Maíz dulce y 50g aguacate"
+        ],
+        "steps": [
+          "Hierve la quinoa 12 min.",
+          "Mezcla en frío con las alubias bien lavadas, el maíz y el aguacate troceado.",
+          "Aliña con limón y especias."
+        ]
+      },
+      "w2_d1": {
+        "name": "Revuelto de Champiñones y Tofu",
+        "ingredients": [
+          "2 huevos",
+          "100g tofu desmenuzado",
+          "Champiñones y ajo"
+        ],
+        "steps": [
+          "Dora el tofu desmenuzado en la sartén para darle textura.",
+          "Añade los champiñones y el ajo.",
+          "Vierte los huevos y cuaja el revuelto."
+        ]
+      },
+      "w2_l2": {
+        "name": "Moussaka Vegetariana",
+        "ingredients": [
+          "1 berenjena",
+          "150g lentejas cocidas y tomate",
+          "1 calabacín (para la bechamel)"
+        ],
+        "steps": [
+          "Plancha láminas de berenjena. Haz un sofrito de lentejas con tomate.",
+          "Hierve el calabacín con un poco de leche desnatada y tritura para crear una falsa bechamel baja en calorías.",
+          "Monta capas de berenjena, lentejas y bechamel. Hornea 15 min."
+        ]
+      },
+      "w2_d2": {
+        "name": "Queso a la Plancha con Verduras",
+        "ingredients": [
+          "60g queso Halloumi o Feta",
+          "Pimientos asados",
+          "Canónigos"
+        ],
+        "steps": [
+          "Sumerge el queso en agua 10 min antes para reducir su sodio.",
+          "Haz el queso a la plancha vuelta y vuelta.",
+          "Sirve sobre pimientos asados y canónigos."
+        ]
+      },
+      "w2_l3": {
+        "name": "Pasta de Garbanzos con Pesto",
+        "ingredients": [
+          "70g pasta de legumbre (garbanzos)",
+          "Tomates cherry",
+          "Albahaca y AOVE"
+        ],
+        "steps": [
+          "Hierve la pasta de legumbres (tiene más proteína que la de trigo).",
+          "Mezcla con un pesto ligero de albahaca, aceite y ajo.",
+          "Añade tomates cherry crudos cortados por la mitad."
+        ]
+      },
+      "w2_d3": {
+        "name": "Crema de Brócoli y Cheddar Light",
+        "ingredients": [
+          "250g brócoli",
+          "30g queso cheddar light",
+          "1 huevo duro"
+        ],
+        "steps": [
+          "Hierve el brócoli y tritúralo.",
+          "Añade el queso para que se funda con el calor residual y aporte cremosidad.",
+          "Sirve con un huevo duro picado por encima."
+        ]
+      },
+      "w2_l4": {
+        "name": "Salteado de Tempeh y Verduras",
+        "ingredients": [
+          "120g tempeh",
+          "Pimientos y zanahoria",
+          "10g cacahuetes"
+        ],
+        "steps": [
+          "Corta el tempeh en tiras y saltéalo a fuego fuerte.",
+          "Añade la verdura en juliana y saltea al estilo wok.",
+          "Decora con cacahuetes picados para darle un toque crujiente."
+        ]
+      },
+      "w2_d4": {
+        "name": "Pimientos Rellenos de Ricotta y Espinacas",
+        "ingredients": [
+          "2 pimientos grandes",
+          "200g espinacas frescas",
+          "60g queso ricotta o requesón y 1 huevo"
+        ],
+        "steps": [
+          "Saltea las espinacas y mézclalas con la ricotta y el huevo batido.",
+          "Rellena los pimientos (previamente asados 10 min vacíos).",
+          "Hornea 15 min. Plato de altísima densidad proteica."
+        ]
+      },
+      "w2_l5": {
+        "name": "Dahl de Lentejas Rojas",
+        "ingredients": [
+          "80g lentejas rojas",
+          "300g coliflor triturada",
+          "50ml leche de coco light, cúrcuma y jengibre"
+        ],
+        "steps": [
+          "Cuece las lentejas (no necesitan remojo) con la leche de coco y especias unos 15 min.",
+          "Saltea la coliflor triturada (falso arroz) 5 min en la sartén.",
+          "Sirve el Dahl sobre la base de coliflor."
+        ]
+      },
+      "w2_d5": {
+        "name": "Tortilla de Espárragos y Cebolla",
+        "ingredients": [
+          "2 huevos",
+          "1 manojo espárragos trigueros",
+          "1/2 cebolla",
+          "Ensalada de rabanitos y pepino"
+        ],
+        "steps": [
+          "Pocha la cebolla y saltea los espárragos.",
+          "Cuaja la tortilla.",
+          "Sirve con una ensalada fresca lateral de pepino y rabanitos."
+        ]
+      },
+      "w2_l6": {
+        "name": "Falafel al Horno con Hummus",
+        "ingredients": [
+          "200g garbanzos cocidos",
+          "Ajo, perejil y comino",
+          "60g hummus y pan de pita integral"
+        ],
+        "steps": [
+          "Tritura los garbanzos con ajo, perejil y comino sin llegar a hacer puré.",
+          "Forma bolas, aplástalas un poco y pincela con AOVE.",
+          "Hornea a 200°C por 20 min (ahorrando las calorías de la fritura). Sirve con hummus y pita."
+        ]
+      },
+      "w2_d6": {
+        "name": "Tortitas de Calabacín y Huevo",
+        "ingredients": [
+          "2 huevos",
+          "1 calabacín rallado",
+          "1 cucharada de harina de avena"
+        ],
+        "steps": [
+          "Ralla el calabacín y escúrrelo muy bien para quitarle el agua.",
+          "Mezcla con huevo y harina de avena.",
+          "Haz pequeñas tortitas a la plancha con una gota de aceite."
+        ]
+      },
+      "w2_l7": {
+        "name": "Risotto de Setas e Integral",
+        "ingredients": [
+          "70g arroz integral",
+          "Boletus o champiñones",
+          "10g parmesano"
+        ],
+        "steps": [
+          "Haz un sofrito con las setas.",
+          "Añade el arroz integral y caldo vegetal poco a poco, removiendo constantemente.",
+          "Mantecar con el parmesano al final."
+        ]
+      },
+      "w2_d7": {
+        "name": "Pizza de Berenjena",
+        "ingredients": [
+          "Rodajas gruesas de berenjena",
+          "Tomate triturado",
+          "Queso mozzarella light y albahaca"
+        ],
+        "steps": [
+          "Usa las rodajas de berenjena asadas como base de pizza.",
+          "Añade tomate, queso y albahaca encima.",
+          "Gratina 5 minutos en el horno."
+        ]
+      },
+      "w3_l1": {
+        "name": "Ensalada Templada de Lentejas",
+        "ingredients": [
+          "100g lentejas",
+          "40g quinoa",
+          "Pimientos y cebolla"
+        ],
+        "steps": [
+          "Hierve la quinoa.",
+          "Saltea los pimientos y la cebolla.",
+          "Mezcla todo con las lentejas en un bol. Deliciosa opción templada."
+        ]
+      },
+      "w3_d1": {
+        "name": "Tortilla de Calabacín y Queso de Cabra",
+        "ingredients": [
+          "2 huevos",
+          "1/2 calabacín",
+          "20g queso de cabra rulo"
+        ],
+        "steps": [
+          "Corta el calabacín en dados muy pequeños y saltéalo.",
+          "Añade el queso desmigado a los huevos batidos.",
+          "Cuaja la tortilla a fuego medio."
+        ]
+      },
+      "w3_l2": {
+        "name": "Potaje de Garbanzos y Calabaza",
+        "ingredients": [
+          "200g garbanzos cocidos",
+          "Calabaza en dados",
+          "Comino y espinacas frescas"
+        ],
+        "steps": [
+          "Saltea la calabaza con comino.",
+          "Añade los garbanzos muy bien lavados, las espinacas y un vaso de agua.",
+          "Cuece a fuego medio hasta que la calabaza esté tierna."
+        ]
+      },
+      "w3_d2": {
+        "name": "Tofu Marinado a la Plancha",
+        "ingredients": [
+          "100g Tofu firme",
+          "Salsa de soja y jengibre",
+          "Espárragos trigueros"
+        ],
+        "steps": [
+          "Seca bien el tofu y córtalo en dados. Marínalo 15 min en soja y jengibre.",
+          "Haz el tofu a la plancha hasta que esté dorado.",
+          "Acompaña con espárragos salteados."
+        ]
+      },
+      "w3_l3": {
+        "name": "Pasta Integral con Pesto de Brócoli",
+        "ingredients": [
+          "70g pasta integral",
+          "200g brócoli (solo flores)",
+          "10g nueces y 10g parmesano"
+        ],
+        "steps": [
+          "Hierve el brócoli 4 min. Tritúralo junto al ajo, las nueces, el queso y 5ml de aceite para crear una pasta.",
+          "Hierve la pasta al dente.",
+          "Mezcla la pasta con este pesto súper nutritivo."
+        ]
+      },
+      "w3_d3": {
+        "name": "Crema de Verduras Blancas",
+        "ingredients": [
+          "Puerro, coliflor y cebolla",
+          "1 huevo poché"
+        ],
+        "steps": [
+          "Hierve las verduras blancas y tritúralas hasta obtener una crema fina.",
+          "Prepara un huevo poché (escalfado en agua hirviendo con vinagre 3 min).",
+          "Sirve el huevo sobre la crema."
+        ]
+      },
+      "w3_l4": {
+        "name": "Cuscús Integral con Verduras y Almendras",
+        "ingredients": [
+          "60g cuscús integral",
+          "Calabacín y zanahoria",
+          "15g almendras tostadas"
+        ],
+        "steps": [
+          "Hidrata el cuscús 5 minutos.",
+          "Corta la verdura en daditos muy pequeños (brunoise) y saltéalos.",
+          "Mezcla el cuscús, las verduras y decora con almendras picadas."
+        ]
+      },
+      "w3_d4": {
+        "name": "Hamburguesa de Alubias Negras",
+        "ingredients": [
+          "150g alubias negras cocidas",
+          "Cebolla picada y comino",
+          "1 cucharada harina de avena"
+        ],
+        "steps": [
+          "Aplasta las alubias con un tenedor (dejando textura).",
+          "Mezcla con la cebolla cruda, comino y la avena.",
+          "Forma la hamburguesa y plancha 4 min por lado."
+        ]
+      },
+      "w3_l5": {
+        "name": "Risotto de Cebada o Arroz Integral",
+        "ingredients": [
+          "70g cebada perlada o arroz integral",
+          "Setas variadas",
+          "Levadura nutricional"
+        ],
+        "steps": [
+          "Haz un sofrito con las setas.",
+          "Añade el cereal y el caldo poco a poco.",
+          "Sustituye el queso parmesano por levadura nutricional (sabor a queso, pero 100% vegana)."
+        ]
+      },
+      "w3_d5": {
+        "name": "Pimientos Rellenos de Huevo",
+        "ingredients": [
+          "2 pimientos rojos grandes",
+          "2 huevos",
+          "Sal y pimienta"
+        ],
+        "steps": [
+          "Corta el pimiento por la mitad (longitudinal) y quita las semillas.",
+          "Ponlo en una sartén con tapa. Rompe un huevo dentro de cada mitad.",
+          "Tapa y cocina a fuego lento 10 min para que se hagan al vapor."
+        ]
+      },
+      "w3_l6": {
+        "name": "Guiso de Seitán Estilo Alemán",
+        "ingredients": [
+          "120g seitán en dados",
+          "150g patata",
+          "Caldo de verduras bajo en sodio, guisantes y laurel"
+        ],
+        "steps": [
+          "Sella el seitán en la olla (el seitán aporta unos impresionantes 25g de proteína).",
+          "Añade la patata en dados, los guisantes y cubre con caldo y laurel.",
+          "Cocina hasta que la patata esté tierna."
+        ]
+      },
+      "w3_d6": {
+        "name": "Zoodles con Queso Ricotta",
+        "ingredients": [
+          "1 calabacín (espiralizado)",
+          "60g queso ricotta",
+          "Nueces picadas"
+        ],
+        "steps": [
+          "Saltea los zoodles (espaguetis de calabacín) solo 2 minutos para que no suelten agua.",
+          "Apaga el fuego, añade la ricotta y mezcla bien.",
+          "Decora con nueces."
+        ]
+      },
+      "w3_l7": {
+        "name": "Burrito Vegetariano",
+        "ingredients": [
+          "1 tortilla integral",
+          "100g frijoles refritos (sin grasa)",
+          "Lechuga y pico de gallo (tomate/cebolla picada)"
+        ],
+        "steps": [
+          "Calienta la tortilla.",
+          "Unta los frijoles.",
+          "Añade la lechuga y el pico de gallo, enrolla y disfruta."
+        ]
+      },
+      "w3_d7": {
+        "name": "Hummus de Remolacha",
+        "ingredients": [
+          "100g hummus mixto (garbanzos + remolacha cocida)",
+          "Crudités de zanahoria",
+          "2 huevos duros"
+        ],
+        "steps": [
+          "Si lo haces casero, tritura el hummus tradicional con un trozo de remolacha cocida para darle dulzor y un color increíble.",
+          "Acompaña con bastones de verdura fresca y los huevos."
+        ]
       }
     }
   },

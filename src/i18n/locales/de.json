@@ -1697,6 +1697,369 @@
           "Hartgekochtes Ei kochen.",
           "Alles auf einem Holzbrett im Healthy-Snack-Style servieren."
         ]
+      },
+      "w2_l1": {
+        "name": "Quinoa-Schwarzbohnen-Salat",
+        "ingredients": [
+          "60g trockener Quinoa",
+          "100g schwarze Bohnen",
+          "Zuckermais und 50g Avocado"
+        ],
+        "steps": [
+          "Quinoa 12 Min. kochen.",
+          "Kalt mit gut gewaschenen Bohnen, Mais und gehackter Avocado mischen.",
+          "Mit Zitrone und Gewürzen anmachen."
+        ]
+      },
+      "w2_d1": {
+        "name": "Rührei mit Pilzen und Tofu",
+        "ingredients": [
+          "2 Eier",
+          "100g zerbröselter Tofu",
+          "Pilze und Knoblauch"
+        ],
+        "steps": [
+          "Zerbröselten Tofu in der Pfanne anbraten, um ihm Textur zu verleihen.",
+          "Pilze und Knoblauch hinzufügen.",
+          "Eier hineingießen und Rührei machen."
+        ]
+      },
+      "w2_l2": {
+        "name": "Vegetarisches Moussaka",
+        "ingredients": [
+          "1 Aubergine",
+          "150g gekochte Linsen und Tomate",
+          "1 Zucchini (für die Béchamel)"
+        ],
+        "steps": [
+          "Auberginenscheiben grillen. Linsen mit Tomate anbraten.",
+          "Zucchini mit etwas Magermilch kochen und pürieren, um eine kalorienarme falsche Béchamel zu kreieren.",
+          "Aubergine, Linsen und Béchamel schichten. 15 Min. backen."
+        ]
+      },
+      "w2_d2": {
+        "name": "Gegrillter Käse mit Gemüse",
+        "ingredients": [
+          "60g Halloumi oder Feta-Käse",
+          "Geröstete Paprika",
+          "Feldsalat"
+        ],
+        "steps": [
+          "Käse vorher 10 Min. in Wasser legen, um das Natrium zu reduzieren.",
+          "Käse von beiden Seiten grillen.",
+          "Auf gerösteten Paprika und Feldsalat servieren."
+        ]
+      },
+      "w2_l3": {
+        "name": "Kichererbsen-Pasta mit Pesto",
+        "ingredients": [
+          "70g Hülsenfrüchte-Pasta (Kichererbsen)",
+          "Kirschtomaten",
+          "Basilikum und Olivenöl"
+        ],
+        "steps": [
+          "Hülsenfrüchte-Pasta kochen (sie hat mehr Protein als Weizenpasta).",
+          "Mit einem leichten Pesto aus Basilikum, Öl und Knoblauch mischen.",
+          "Halbierte rohe Kirschtomaten hinzufügen."
+        ]
+      },
+      "w2_d3": {
+        "name": "Brokkolicreme und Light-Cheddar",
+        "ingredients": [
+          "250g Brokkoli",
+          "30g Light-Cheddar",
+          "1 hartgekochtes Ei"
+        ],
+        "steps": [
+          "Brokkoli kochen und pürieren.",
+          "Käse hinzufügen, damit er durch die Restwärme schmilzt und Cremigkeit verleiht.",
+          "Mit gehacktem hartgekochtem Ei bestreut servieren."
+        ]
+      },
+      "w2_l4": {
+        "name": "Gebratenes Tempeh und Gemüse",
+        "ingredients": [
+          "120g Tempeh",
+          "Paprika und Karotte",
+          "10g Erdnüsse"
+        ],
+        "steps": [
+          "Tempeh in Streifen schneiden und bei starker Hitze anbraten.",
+          "Julienne-Gemüse hinzufügen und im Wok-Stil anbraten.",
+          "Mit gehackten Erdnüssen für einen knusprigen Touch garnieren."
+        ]
+      },
+      "w2_d4": {
+        "name": "Mit Ricotta und Spinat gefüllte Paprika",
+        "ingredients": [
+          "2 große Paprika",
+          "200g frischer Spinat",
+          "60g Ricotta oder Hüttenkäse und 1 Ei"
+        ],
+        "steps": [
+          "Spinat anbraten und mit Ricotta und geschlagenem Ei mischen.",
+          "Paprika füllen (vorher 10 Min. leer geröstet).",
+          "15 Min. backen. Gericht mit sehr hoher Proteindichte."
+        ]
+      },
+      "w2_l5": {
+        "name": "Rote-Linsen-Dahl",
+        "ingredients": [
+          "80g rote Linsen",
+          "300g zerkleinerter Blumenkohl",
+          "50ml leichte Kokosmilch, Kurkuma und Ingwer"
+        ],
+        "steps": [
+          "Linsen (sie müssen nicht eingeweicht werden) mit Kokosmilch und Gewürzen ca. 15 Min. kochen.",
+          "Zerkleinerten Blumenkohl (falscher Reis) 5 Min. in der Pfanne anbraten.",
+          "Dahl auf dem Blumenkohlboden servieren."
+        ]
+      },
+      "w2_d5": {
+        "name": "Spargel-Zwiebel-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "1 Bund wilder Spargel",
+          "1/2 Zwiebel",
+          "Radieschen-Gurken-Salat"
+        ],
+        "steps": [
+          "Zwiebel andünsten und Spargel anbraten.",
+          "Omelett braten.",
+          "Mit einem frischen Gurken-Radieschen-Beilagensalat servieren."
+        ]
+      },
+      "w2_l6": {
+        "name": "Gebackene Falafel mit Hummus",
+        "ingredients": [
+          "200g gekochte Kichererbsen",
+          "Knoblauch, Petersilie und Kreuzkümmel",
+          "60g Hummus und Vollkorn-Pita-Brot"
+        ],
+        "steps": [
+          "Kichererbsen mit Knoblauch, Petersilie und Kreuzkümmel pürieren, ohne sie komplett zu zerkleinern.",
+          "Bällchen formen, leicht flachdrücken und mit Olivenöl bepinseln.",
+          "Bei 200°C 20 Min. backen (spart Kalorien beim Frittieren). Mit Hummus und Pita servieren."
+        ]
+      },
+      "w2_d6": {
+        "name": "Zucchini-Ei-Pfannkuchen",
+        "ingredients": [
+          "2 Eier",
+          "1 geriebene Zucchini",
+          "1 Esslöffel Hafermehl"
+        ],
+        "steps": [
+          "Zucchini reiben und sehr gut abtropfen lassen, um das Wasser zu entfernen.",
+          "Mit Ei und Hafermehl mischen.",
+          "Kleine Pfannkuchen auf der Grillplatte mit einem Tropfen Öl backen."
+        ]
+      },
+      "w2_l7": {
+        "name": "Pilz-Vollkornreis-Risotto",
+        "ingredients": [
+          "70g Vollkornreis",
+          "Steinpilze oder Champignons",
+          "10g Parmesan"
+        ],
+        "steps": [
+          "Pilze anbraten.",
+          "Vollkornreis und Gemüsebrühe nach und nach hinzufügen, ständig rühren.",
+          "Am Ende den Parmesan unterrühren."
+        ]
+      },
+      "w2_d7": {
+        "name": "Auberginen-Pizza",
+        "ingredients": [
+          "Dicke Auberginenscheiben",
+          "Passierte Tomaten",
+          "Light-Mozzarella und Basilikum"
+        ],
+        "steps": [
+          "Geröstete Auberginenscheiben als Pizzaboden verwenden.",
+          "Tomate, Käse und Basilikum darauf geben.",
+          "5 Minuten im Ofen überbacken."
+        ]
+      },
+      "w3_l1": {
+        "name": "Warmer Linsensalat",
+        "ingredients": [
+          "100g Linsen",
+          "40g Quinoa",
+          "Paprika und Zwiebel"
+        ],
+        "steps": [
+          "Quinoa kochen.",
+          "Paprika und Zwiebel anbraten.",
+          "Alles in einer Schüssel mit den Linsen mischen. Köstliche warme Option."
+        ]
+      },
+      "w3_d1": {
+        "name": "Zucchini-Ziegenkäse-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "1/2 Zucchini",
+          "20g Ziegenkäserolle"
+        ],
+        "steps": [
+          "Zucchini in sehr kleine Würfel schneiden und anbraten.",
+          "Zerbröselten Käse zu den geschlagenen Eiern geben.",
+          "Omelett bei mittlerer Hitze braten."
+        ]
+      },
+      "w3_l2": {
+        "name": "Kichererbsen-Kürbis-Eintopf",
+        "ingredients": [
+          "200g gekochte Kichererbsen",
+          "Gewürfelter Kürbis",
+          "Kreuzkümmel und frischer Spinat"
+        ],
+        "steps": [
+          "Kürbis mit Kreuzkümmel anbraten.",
+          "Sehr gut gewaschene Kichererbsen, Spinat und ein Glas Wasser hinzufügen.",
+          "Bei mittlerer Hitze kochen, bis der Kürbis weich ist."
+        ]
+      },
+      "w3_d2": {
+        "name": "Gegrillter marinierter Tofu",
+        "ingredients": [
+          "100g fester Tofu",
+          "Sojasauce und Ingwer",
+          "Wilder Spargel"
+        ],
+        "steps": [
+          "Tofu gut abtrocknen und würfeln. 15 Min. in Soja und Ingwer marinieren.",
+          "Tofu grillen, bis er goldbraun ist.",
+          "Mit gebratenem Spargel servieren."
+        ]
+      },
+      "w3_l3": {
+        "name": "Vollkornpasta mit Brokkolipesto",
+        "ingredients": [
+          "70g Vollkornpasta",
+          "200g Brokkoli (nur Röschen)",
+          "10g Walnüsse und 10g Parmesan"
+        ],
+        "steps": [
+          "Brokkoli 4 Min. kochen. Zusammen mit Knoblauch, Walnüssen, Käse und 5ml Öl pürieren, um eine Paste zu erhalten.",
+          "Pasta al dente kochen.",
+          "Pasta mit diesem super nahrhaften Pesto mischen."
+        ]
+      },
+      "w3_d3": {
+        "name": "Weiße Gemüsecremesuppe",
+        "ingredients": [
+          "Lauch, Blumenkohl und Zwiebel",
+          "1 pochiertes Ei"
+        ],
+        "steps": [
+          "Weißes Gemüse kochen und zu einer feinen Creme pürieren.",
+          "Pochiertes Ei zubereiten (in kochendem Wasser mit Essig 3 Min. pochieren).",
+          "Ei auf der Creme servieren."
+        ]
+      },
+      "w3_l4": {
+        "name": "Vollkorn-Couscous mit Gemüse und Mandeln",
+        "ingredients": [
+          "60g Vollkorn-Couscous",
+          "Zucchini und Karotte",
+          "15g geröstete Mandeln"
+        ],
+        "steps": [
+          "Couscous 5 Minuten hydratisieren.",
+          "Gemüse in sehr kleine Würfel (Brunoise) schneiden und anbraten.",
+          "Couscous und Gemüse mischen und mit gehackten Mandeln garnieren."
+        ]
+      },
+      "w3_d4": {
+        "name": "Schwarzbohnen-Burger",
+        "ingredients": [
+          "150g gekochte schwarze Bohnen",
+          "Gehackte Zwiebel und Kreuzkümmel",
+          "1 Esslöffel Hafermehl"
+        ],
+        "steps": [
+          "Bohnen mit einer Gabel zerdrücken (etwas Textur belassen).",
+          "Mit roher Zwiebel, Kreuzkümmel und Hafermehl mischen.",
+          "Burger formen und 4 Min. pro Seite grillen."
+        ]
+      },
+      "w3_l5": {
+        "name": "Graupen- oder Vollkornreis-Risotto",
+        "ingredients": [
+          "70g Perlgraupen oder Vollkornreis",
+          "Gemischte Pilze",
+          "Hefeflocken"
+        ],
+        "steps": [
+          "Pilze anbraten.",
+          "Getreide und Brühe nach und nach hinzufügen.",
+          "Parmesankäse durch Hefeflocken ersetzen (Käsegeschmack, aber 100% vegan)."
+        ]
+      },
+      "w3_d5": {
+        "name": "Mit Ei gefüllte Paprika",
+        "ingredients": [
+          "2 große rote Paprika",
+          "2 Eier",
+          "Salz und Pfeffer"
+        ],
+        "steps": [
+          "Paprika in der Mitte (längs) durchschneiden und entkernen.",
+          "In eine Pfanne mit Deckel legen. In jede Hälfte ein Ei schlagen.",
+          "Abdecken und 10 Min. köcheln lassen, damit sie dämpfen."
+        ]
+      },
+      "w3_l6": {
+        "name": "Seitan-Eintopf nach deutscher Art",
+        "ingredients": [
+          "120g gewürfelter Seitan",
+          "150g Kartoffel",
+          "Natriumarme Gemüsebrühe, Erbsen und Lorbeerblatt"
+        ],
+        "steps": [
+          "Seitan im Topf anbraten (Seitan liefert beeindruckende 25g Protein).",
+          "Gewürfelte Kartoffel und Erbsen hinzufügen, mit Brühe und Lorbeerblatt bedecken.",
+          "Kochen, bis die Kartoffel weich ist."
+        ]
+      },
+      "w3_d6": {
+        "name": "Zoodles mit Ricotta-Käse",
+        "ingredients": [
+          "1 Zucchini (spiralisiert)",
+          "60g Ricotta-Käse",
+          "Gehackte Walnüsse"
+        ],
+        "steps": [
+          "Zoodles (Zucchini-Spaghetti) nur 2 Minuten anbraten, damit sie kein Wasser ziehen.",
+          "Hitze ausschalten, Ricotta hinzufügen und gut mischen.",
+          "Mit Walnüssen garnieren."
+        ]
+      },
+      "w3_l7": {
+        "name": "Vegetarischer Burrito",
+        "ingredients": [
+          "1 Vollkorn-Tortilla",
+          "100g Refried Beans (fettfrei)",
+          "Salat und Pico de Gallo (gehackte Tomate/Zwiebel)"
+        ],
+        "steps": [
+          "Tortilla erwärmen.",
+          "Bohnen verstreichen.",
+          "Salat und Pico de Gallo hinzufügen, aufrollen und genießen."
+        ]
+      },
+      "w3_d7": {
+        "name": "Rote-Bete-Hummus",
+        "ingredients": [
+          "100g gemischter Hummus (Kichererbsen + gekochte Rote Bete)",
+          "Karotten-Crudités",
+          "2 hartgekochte Eier"
+        ],
+        "steps": [
+          "Wenn hausgemacht, traditionellen Hummus mit einem Stück gekochter Roter Bete pürieren, um Süße und eine unglaubliche Farbe zu verleihen.",
+          "Mit frischen Gemüsesticks und den Eiern servieren."
+        ]
       }
     }
   },

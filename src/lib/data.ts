@@ -272,7 +272,37 @@ export const RECIPES: Recipe[] = [
   { id: 'rec_veg_w1_l6', translationKey: 'recipes.veg.w1_l6', prepTime: 40, calories: 650, protein: 22, carbs: 90, fat: 20, mealTags: ['lunch'] },
   { id: 'rec_veg_w1_d6', translationKey: 'recipes.veg.w1_d6', prepTime: 15, calories: 450, protein: 24, carbs: 35, fat: 22, mealTags: ['dinner'] },
   { id: 'rec_veg_w1_l7', translationKey: 'recipes.veg.w1_l7', prepTime: 20, calories: 650, protein: 26, carbs: 70, fat: 28, mealTags: ['lunch'] },
-  { id: 'rec_veg_w1_d7', translationKey: 'recipes.veg.w1_d7', prepTime: 10, calories: 450, protein: 22, carbs: 40, fat: 22, mealTags: ['dinner'] }
+  { id: 'rec_veg_w1_d7', translationKey: 'recipes.veg.w1_d7', prepTime: 10, calories: 450, protein: 22, carbs: 40, fat: 22, mealTags: ['dinner'] },
+  // SEMANA 2 - DIETA VEGETARIANA
+  { id: 'rec_veg_w2_l1', translationKey: 'recipes.veg.w2_l1', prepTime: 15, calories: 650, protein: 22, carbs: 85, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d1', translationKey: 'recipes.veg.w2_d1', prepTime: 20, calories: 450, protein: 25, carbs: 20, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l2', translationKey: 'recipes.veg.w2_l2', prepTime: 45, calories: 650, protein: 28, carbs: 75, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d2', translationKey: 'recipes.veg.w2_d2', prepTime: 15, calories: 450, protein: 20, carbs: 25, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l3', translationKey: 'recipes.veg.w2_l3', prepTime: 20, calories: 650, protein: 24, carbs: 80, fat: 24, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d3', translationKey: 'recipes.veg.w2_d3', prepTime: 25, calories: 450, protein: 22, carbs: 35, fat: 22, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l4', translationKey: 'recipes.veg.w2_l4', prepTime: 25, calories: 650, protein: 28, carbs: 70, fat: 26, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d4', translationKey: 'recipes.veg.w2_d4', prepTime: 35, calories: 450, protein: 26, carbs: 20, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l5', translationKey: 'recipes.veg.w2_l5', prepTime: 25, calories: 650, protein: 26, carbs: 85, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d5', translationKey: 'recipes.veg.w2_d5', prepTime: 15, calories: 450, protein: 18, carbs: 30, fat: 26, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l6', translationKey: 'recipes.veg.w2_l6', prepTime: 30, calories: 650, protein: 22, carbs: 85, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d6', translationKey: 'recipes.veg.w2_d6', prepTime: 20, calories: 450, protein: 20, carbs: 35, fat: 24, mealTags: ['dinner'] },
+  { id: 'rec_veg_w2_l7', translationKey: 'recipes.veg.w2_l7', prepTime: 35, calories: 650, protein: 20, carbs: 85, fat: 24, mealTags: ['lunch'] },
+  { id: 'rec_veg_w2_d7', translationKey: 'recipes.veg.w2_d7', prepTime: 25, calories: 450, protein: 22, carbs: 45, fat: 20, mealTags: ['dinner'] },
+  // SEMANA 3 - DIETA VEGETARIANA
+  { id: 'rec_veg_w3_l1', translationKey: 'recipes.veg.w3_l1', prepTime: 20, calories: 650, protein: 26, carbs: 80, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d1', translationKey: 'recipes.veg.w3_d1', prepTime: 20, calories: 450, protein: 24, carbs: 25, fat: 26, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l2', translationKey: 'recipes.veg.w3_l2', prepTime: 30, calories: 650, protein: 22, carbs: 85, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d2', translationKey: 'recipes.veg.w3_d2', prepTime: 20, calories: 450, protein: 26, carbs: 30, fat: 24, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l3', translationKey: 'recipes.veg.w3_l3', prepTime: 20, calories: 650, protein: 28, carbs: 80, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d3', translationKey: 'recipes.veg.w3_d3', prepTime: 25, calories: 450, protein: 20, carbs: 40, fat: 22, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l4', translationKey: 'recipes.veg.w3_l4', prepTime: 20, calories: 650, protein: 24, carbs: 85, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d4', translationKey: 'recipes.veg.w3_d4', prepTime: 20, calories: 450, protein: 22, carbs: 45, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l5', translationKey: 'recipes.veg.w3_l5', prepTime: 35, calories: 650, protein: 20, carbs: 85, fat: 24, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d5', translationKey: 'recipes.veg.w3_d5', prepTime: 25, calories: 450, protein: 24, carbs: 20, fat: 26, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l6', translationKey: 'recipes.veg.w3_l6', prepTime: 35, calories: 650, protein: 30, carbs: 75, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d6', translationKey: 'recipes.veg.w3_d6', prepTime: 15, calories: 450, protein: 22, carbs: 35, fat: 24, mealTags: ['dinner'] },
+  { id: 'rec_veg_w3_l7', translationKey: 'recipes.veg.w3_l7', prepTime: 15, calories: 650, protein: 24, carbs: 80, fat: 24, mealTags: ['lunch'] },
+  { id: 'rec_veg_w3_d7', translationKey: 'recipes.veg.w3_d7', prepTime: 10, calories: 450, protein: 20, carbs: 35, fat: 22, mealTags: ['dinner'] }
 ];
 
 import type { DailyMenuPlan } from "../types";

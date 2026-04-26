@@ -1697,6 +1697,369 @@
           "Boil the hard-boiled egg.",
           "Serve everything on a wooden board healthy snack style."
         ]
+      },
+      "w2_l1": {
+        "name": "Quinoa and Black Bean Salad",
+        "ingredients": [
+          "60g dry quinoa",
+          "100g black beans",
+          "Sweet corn and 50g avocado"
+        ],
+        "steps": [
+          "Boil the quinoa for 12 min.",
+          "Mix cold with well-washed beans, corn, and chopped avocado.",
+          "Dress with lemon and spices."
+        ]
+      },
+      "w2_d1": {
+        "name": "Scrambled Eggs with Mushrooms and Tofu",
+        "ingredients": [
+          "2 eggs",
+          "100g crumbled tofu",
+          "Mushrooms and garlic"
+        ],
+        "steps": [
+          "Brown the crumbled tofu in the pan to give it texture.",
+          "Add the mushrooms and garlic.",
+          "Pour in the eggs and scramble."
+        ]
+      },
+      "w2_l2": {
+        "name": "Vegetarian Moussaka",
+        "ingredients": [
+          "1 eggplant",
+          "150g cooked lentils and tomato",
+          "1 zucchini (for the bechamel)"
+        ],
+        "steps": [
+          "Grill slices of eggplant. Sauté lentils with tomato.",
+          "Boil the zucchini with a little skim milk and blend to create a low-calorie fake bechamel.",
+          "Layer eggplant, lentils, and bechamel. Bake 15 min."
+        ]
+      },
+      "w2_d2": {
+        "name": "Grilled Cheese with Vegetables",
+        "ingredients": [
+          "60g Halloumi or Feta cheese",
+          "Roasted peppers",
+          "Lamb's lettuce"
+        ],
+        "steps": [
+          "Soak the cheese in water for 10 min beforehand to reduce its sodium.",
+          "Grill the cheese on both sides.",
+          "Serve over roasted peppers and lamb's lettuce."
+        ]
+      },
+      "w2_l3": {
+        "name": "Chickpea Pasta with Pesto",
+        "ingredients": [
+          "70g legume pasta (chickpeas)",
+          "Cherry tomatoes",
+          "Basil and EVOO"
+        ],
+        "steps": [
+          "Boil the legume pasta (it has more protein than wheat pasta).",
+          "Mix with a light basil, oil, and garlic pesto.",
+          "Add halved raw cherry tomatoes."
+        ]
+      },
+      "w2_d3": {
+        "name": "Broccoli Cream and Light Cheddar",
+        "ingredients": [
+          "250g broccoli",
+          "30g light cheddar cheese",
+          "1 hard-boiled egg"
+        ],
+        "steps": [
+          "Boil the broccoli and blend it.",
+          "Add the cheese so it melts with the residual heat and adds creaminess.",
+          "Serve with a chopped hard-boiled egg on top."
+        ]
+      },
+      "w2_l4": {
+        "name": "Sautéed Tempeh and Vegetables",
+        "ingredients": [
+          "120g tempeh",
+          "Peppers and carrot",
+          "10g peanuts"
+        ],
+        "steps": [
+          "Cut the tempeh into strips and sauté over high heat.",
+          "Add the julienned vegetables and sauté wok-style.",
+          "Garnish with chopped peanuts for a crunchy touch."
+        ]
+      },
+      "w2_d4": {
+        "name": "Ricotta and Spinach Stuffed Peppers",
+        "ingredients": [
+          "2 large peppers",
+          "200g fresh spinach",
+          "60g ricotta or cottage cheese and 1 egg"
+        ],
+        "steps": [
+          "Sauté the spinach and mix it with the ricotta and beaten egg.",
+          "Stuff the peppers (previously roasted empty for 10 min).",
+          "Bake 15 min. Very high protein density dish."
+        ]
+      },
+      "w2_l5": {
+        "name": "Red Lentil Dahl",
+        "ingredients": [
+          "80g red lentils",
+          "300g crushed cauliflower",
+          "50ml light coconut milk, turmeric, and ginger"
+        ],
+        "steps": [
+          "Cook the lentils (they don't need soaking) with the coconut milk and spices for about 15 min.",
+          "Sauté the crushed cauliflower (fake rice) for 5 min in the pan.",
+          "Serve the Dahl on the cauliflower base."
+        ]
+      },
+      "w2_d5": {
+        "name": "Asparagus and Onion Omelet",
+        "ingredients": [
+          "2 eggs",
+          "1 bunch wild asparagus",
+          "1/2 onion",
+          "Radish and cucumber salad"
+        ],
+        "steps": [
+          "Sauté the onion and asparagus.",
+          "Cook the omelet.",
+          "Serve with a fresh cucumber and radish side salad."
+        ]
+      },
+      "w2_l6": {
+        "name": "Baked Falafel with Hummus",
+        "ingredients": [
+          "200g cooked chickpeas",
+          "Garlic, parsley, and cumin",
+          "60g hummus and whole wheat pita bread"
+        ],
+        "steps": [
+          "Blend the chickpeas with garlic, parsley, and cumin without mashing them completely.",
+          "Form balls, flatten them slightly, and brush with EVOO.",
+          "Bake at 200°C for 20 min (saving frying calories). Serve with hummus and pita."
+        ]
+      },
+      "w2_d6": {
+        "name": "Zucchini and Egg Pancakes",
+        "ingredients": [
+          "2 eggs",
+          "1 grated zucchini",
+          "1 tablespoon oatmeal"
+        ],
+        "steps": [
+          "Grate the zucchini and drain it very well to remove the water.",
+          "Mix with egg and oatmeal.",
+          "Make small pancakes on the griddle with a drop of oil."
+        ]
+      },
+      "w2_l7": {
+        "name": "Mushroom and Brown Rice Risotto",
+        "ingredients": [
+          "70g brown rice",
+          "Boletus or mushrooms",
+          "10g parmesan"
+        ],
+        "steps": [
+          "Sauté the mushrooms.",
+          "Add the brown rice and vegetable broth little by little, stirring constantly.",
+          "Stir in the parmesan at the end."
+        ]
+      },
+      "w2_d7": {
+        "name": "Eggplant Pizza",
+        "ingredients": [
+          "Thick slices of eggplant",
+          "Crushed tomatoes",
+          "Light mozzarella cheese and basil"
+        ],
+        "steps": [
+          "Use the roasted eggplant slices as a pizza base.",
+          "Add tomato, cheese, and basil on top.",
+          "Gratin for 5 minutes in the oven."
+        ]
+      },
+      "w3_l1": {
+        "name": "Warm Lentil Salad",
+        "ingredients": [
+          "100g lentils",
+          "40g quinoa",
+          "Peppers and onion"
+        ],
+        "steps": [
+          "Boil the quinoa.",
+          "Sauté the peppers and onion.",
+          "Mix everything with the lentils in a bowl. Delicious warm option."
+        ]
+      },
+      "w3_d1": {
+        "name": "Zucchini and Goat Cheese Omelet",
+        "ingredients": [
+          "2 eggs",
+          "1/2 zucchini",
+          "20g goat cheese log"
+        ],
+        "steps": [
+          "Cut the zucchini into very small cubes and sauté it.",
+          "Add the crumbled cheese to the beaten eggs.",
+          "Cook the omelet over medium heat."
+        ]
+      },
+      "w3_l2": {
+        "name": "Chickpea and Pumpkin Stew",
+        "ingredients": [
+          "200g cooked chickpeas",
+          "Diced pumpkin",
+          "Cumin and fresh spinach"
+        ],
+        "steps": [
+          "Sauté the pumpkin with cumin.",
+          "Add the very well-washed chickpeas, spinach, and a glass of water.",
+          "Cook over medium heat until the pumpkin is tender."
+        ]
+      },
+      "w3_d2": {
+        "name": "Grilled Marinated Tofu",
+        "ingredients": [
+          "100g Firm tofu",
+          "Soy sauce and ginger",
+          "Wild asparagus"
+        ],
+        "steps": [
+          "Dry the tofu well and dice it. Marinate for 15 min in soy and ginger.",
+          "Grill the tofu until golden brown.",
+          "Serve with sautéed asparagus."
+        ]
+      },
+      "w3_l3": {
+        "name": "Whole Wheat Pasta with Broccoli Pesto",
+        "ingredients": [
+          "70g whole wheat pasta",
+          "200g broccoli (florets only)",
+          "10g walnuts and 10g parmesan"
+        ],
+        "steps": [
+          "Boil the broccoli for 4 min. Blend it with garlic, walnuts, cheese, and 5ml of oil to create a paste.",
+          "Boil the pasta al dente.",
+          "Mix the pasta with this super nutritious pesto."
+        ]
+      },
+      "w3_d3": {
+        "name": "White Vegetable Cream",
+        "ingredients": [
+          "Leek, cauliflower, and onion",
+          "1 poached egg"
+        ],
+        "steps": [
+          "Boil the white vegetables and blend them until smooth.",
+          "Prepare a poached egg (poached in boiling water with vinegar for 3 min).",
+          "Serve the egg over the cream."
+        ]
+      },
+      "w3_l4": {
+        "name": "Whole Wheat Couscous with Vegetables and Almonds",
+        "ingredients": [
+          "60g whole wheat couscous",
+          "Zucchini and carrot",
+          "15g toasted almonds"
+        ],
+        "steps": [
+          "Hydrate the couscous for 5 minutes.",
+          "Cut the vegetables into very small cubes (brunoise) and sauté them.",
+          "Mix the couscous, vegetables, and garnish with chopped almonds."
+        ]
+      },
+      "w3_d4": {
+        "name": "Black Bean Burger",
+        "ingredients": [
+          "150g cooked black beans",
+          "Chopped onion and cumin",
+          "1 tablespoon oatmeal"
+        ],
+        "steps": [
+          "Mash the beans with a fork (leaving some texture).",
+          "Mix with raw onion, cumin, and oatmeal.",
+          "Form the burger and grill 4 min per side."
+        ]
+      },
+      "w3_l5": {
+        "name": "Barley or Brown Rice Risotto",
+        "ingredients": [
+          "70g pearl barley or brown rice",
+          "Mixed mushrooms",
+          "Nutritional yeast"
+        ],
+        "steps": [
+          "Sauté the mushrooms.",
+          "Add the cereal and broth little by little.",
+          "Replace parmesan cheese with nutritional yeast (cheese flavor, but 100% vegan)."
+        ]
+      },
+      "w3_d5": {
+        "name": "Egg Stuffed Peppers",
+        "ingredients": [
+          "2 large red peppers",
+          "2 eggs",
+          "Salt and pepper"
+        ],
+        "steps": [
+          "Cut the pepper in half (lengthwise) and remove the seeds.",
+          "Put it in a pan with a lid. Crack an egg inside each half.",
+          "Cover and simmer for 10 min so they steam."
+        ]
+      },
+      "w3_l6": {
+        "name": "German-style Seitan Stew",
+        "ingredients": [
+          "120g diced seitan",
+          "150g potato",
+          "Low-sodium vegetable broth, peas, and bay leaf"
+        ],
+        "steps": [
+          "Sear the seitan in the pot (seitan provides an impressive 25g of protein).",
+          "Add the diced potato, peas, and cover with broth and bay leaf.",
+          "Cook until the potato is tender."
+        ]
+      },
+      "w3_d6": {
+        "name": "Zoodles with Ricotta Cheese",
+        "ingredients": [
+          "1 zucchini (spiralized)",
+          "60g ricotta cheese",
+          "Chopped walnuts"
+        ],
+        "steps": [
+          "Sauté the zoodles (zucchini spaghetti) for only 2 minutes so they don't release water.",
+          "Turn off the heat, add the ricotta, and mix well.",
+          "Garnish with walnuts."
+        ]
+      },
+      "w3_l7": {
+        "name": "Vegetarian Burrito",
+        "ingredients": [
+          "1 whole wheat tortilla",
+          "100g refried beans (fat-free)",
+          "Lettuce and pico de gallo (chopped tomato/onion)"
+        ],
+        "steps": [
+          "Heat the tortilla.",
+          "Spread the beans.",
+          "Add lettuce and pico de gallo, roll up, and enjoy."
+        ]
+      },
+      "w3_d7": {
+        "name": "Beetroot Hummus",
+        "ingredients": [
+          "100g mixed hummus (chickpeas + cooked beetroot)",
+          "Carrot crudités",
+          "2 hard-boiled eggs"
+        ],
+        "steps": [
+          "If making it homemade, blend traditional hummus with a piece of cooked beetroot to give it sweetness and an incredible color.",
+          "Serve with fresh vegetable sticks and the eggs."
+        ]
       }
     }
   },
