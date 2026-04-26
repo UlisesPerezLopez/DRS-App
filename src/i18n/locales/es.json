@@ -3177,5 +3177,107 @@
       "subtitle": "Menú equilibrado sin carne ni pescado",
       "milestone_w4": "Ulises, has completado 28 días de nutrición de precisión. Tu cuerpo está más limpio y tu energía más estable. Es el momento de añadir el movimiento."
     }
+  },
+  "exercises": {
+    "squat_chair": {
+      "name": "Sentadilla a la Silla",
+      "muscles": "Cuádriceps, Glúteos",
+      "warning": "Siéntate completamente en la silla y levántate. Mantén el pecho arriba. Protege las rodillas."
+    },
+    "incline_pushup": {
+      "name": "Flexiones Inclinadas",
+      "muscles": "Pecho, Hombro, Tríceps",
+      "warning": "Apoya las manos en una mesa firme o en la pared. Cuanto más vertical, más fácil. No las hagas en el suelo aún."
+    },
+    "towel_row": {
+      "name": "Remo con Toalla en Puerta",
+      "muscles": "Espalda (Dorsal), Bíceps",
+      "warning": "Pasa una toalla por el pomo de una puerta abierta a horcajadas, tira de tu cuerpo hacia la puerta. Espalda recta."
+    },
+    "glute_bridge": {
+      "name": "Puente de Glúteo",
+      "muscles": "Glúteos, Isquiosurales",
+      "warning": "Tumbado boca arriba, rodillas flexionadas, eleva la cadera. No arquees la zona lumbar en exceso."
+    },
+    "incline_plank": {
+      "name": "Plancha en Inclinación",
+      "muscles": "Core (Abdomen)",
+      "warning": "Apoya los antebrazos en el sofá o mesa. Respira normal, no bloquees el aire (vital para tu tensión)."
+    },
+    "assisted_lunge": {
+      "name": "Zancada Estática Asistida",
+      "muscles": "Cuádriceps, Glúteos",
+      "warning": "Agárrate a una silla para equilibrarte. Baja la rodilla trasera recta hacia el suelo."
+    },
+    "floor_superman": {
+      "name": "Superman en Suelo",
+      "muscles": "Espalda Baja (Lumbar)",
+      "warning": "Tumbado boca abajo, eleva ligeramente pecho y piernas. Movimiento muy corto y controlado."
+    },
+    "chair_dips": {
+      "name": "Fondos en Silla",
+      "muscles": "Tríceps, Hombro frontal",
+      "warning": "Pies cerca de la silla. Baja solo hasta que tu codo forme 90 grados para proteger el manguito rotador."
+    },
+    "static_bear_crawl": {
+      "name": "Marcha de Oso Estática",
+      "muscles": "Core, Hombros",
+      "warning": "A gatas (manos y pies, rodillas sin tocar el suelo), levanta mano y pie contrario unos centímetros."
+    },
+    "jumping_jacks_no_jump": {
+      "name": "Jumping Jacks sin Salto",
+      "muscles": "Cardio, Todo el cuerpo",
+      "warning": "Da un paso lateral mientras subes los brazos. Sin impacto para proteger articulaciones."
+    },
+    "goblet_squat": {
+      "name": "Sentadilla Goblet",
+      "muscles": "Cuádriceps, Core",
+      "warning": "Sujeta una mancuerna (5-8 kg) pegada al pecho verticalmente. Abre las rodillas al bajar."
+    },
+    "dumbbell_floor_press": {
+      "name": "Press de Suelo con Mancuernas",
+      "muscles": "Pecho, Tríceps",
+      "warning": "Tumbado en el suelo boca arriba. Presiona las mancuernas hacia arriba. El suelo protege que tus hombros bajen demasiado."
+    },
+    "supported_one_arm_row": {
+      "name": "Remo a una Mano apoyado",
+      "muscles": "Dorsal, Bíceps",
+      "warning": "Apoya una mano y rodilla en una silla. Tira de la mancuerna hacia tu cadera, no hacia el pecho."
+    },
+    "light_romanian_deadlift": {
+      "name": "Peso Muerto Rumano Ligero",
+      "muscles": "Isquios, Glúteos",
+      "warning": "Dobla desde la cadera (como cerrando una puerta con el glúteo), rodillas semiflexionadas. Espalda recta."
+    },
+    "bicep_curl_to_press": {
+      "name": "Curl de Bíceps a Press Militar",
+      "muscles": "Bíceps, Hombros",
+      "warning": "Sube la mancuerna al hombro y luego empuja arriba. Movimiento compuesto controlado."
+    },
+    "dumbbell_lunge": {
+      "name": "Zancada con Mancuernas",
+      "muscles": "Piernas completas",
+      "warning": "Mancuernas ligeras a los lados. Mantén el torso erguido al bajar."
+    },
+    "lateral_raises": {
+      "name": "Elevaciones Laterales",
+      "muscles": "Hombro (Deltoides medio)",
+      "warning": "Eleva los brazos ligeramente flexionados como si sirvieras agua de una jarra."
+    },
+    "floor_pullover": {
+      "name": "Pullover en Suelo",
+      "muscles": "Dorsal ancho, Pecho",
+      "warning": "Tumbado boca arriba, agarra 1 mancuerna con ambas manos, llévala atrás de la cabeza y vuelve al pecho."
+    },
+    "plank_shoulder_taps": {
+      "name": "Plancha con Toque de Hombro",
+      "muscles": "Core, Hombros",
+      "warning": "En posición de flexión, toca el hombro contrario con una mano sin girar la cadera."
+    },
+    "static_bike": {
+      "name": "Bici Estática (Cardio LISS/Finisher)",
+      "muscles": "Cardio",
+      "warning": "Intensidad moderada. Debes poder mantener una conversación sin ahogarte. No aguantes la respiración."
+    }
   }
 }

@@ -3177,5 +3177,107 @@
       "milestone_w4": "Ulises, hai completato 28 giorni di nutrizione di precisione. Il tuo corpo è più pulito e la tua energia più stabile. È il momento di aggiungere il movimento."
     },
     "vegetarian_label": "Vegetariana"
+  },
+  "exercises": {
+    "squat_chair": {
+      "name": "Squat sulla Sedia",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Siediti completamente sulla sedia e alzati. Tieni il petto in alto. Proteggi le ginocchia."
+    },
+    "incline_pushup": {
+      "name": "Flessioni Inclinate",
+      "muscles": "Petto, Spalle, Tricipiti",
+      "warning": "Appoggia le mani su un tavolo solido o sul muro. Più è verticale, più è facile. Non farle ancora a terra."
+    },
+    "towel_row": {
+      "name": "Rematore con Asciugamano alla Porta",
+      "muscles": "Schiena (Dorsali), Bicipiti",
+      "warning": "Passa un asciugamano sulle maniglie di una porta aperta, mettiti a cavalcioni della porta, tira il corpo verso di essa. Schiena dritta."
+    },
+    "glute_bridge": {
+      "name": "Ponte Glutei",
+      "muscles": "Glutei, Femorali",
+      "warning": "Sdraiato a pancia in su, ginocchia piegate, solleva il bacino. Non inarcare troppo la zona lombare."
+    },
+    "incline_plank": {
+      "name": "Plank Inclinato",
+      "muscles": "Core (Addome)",
+      "warning": "Appoggia gli avambracci sul divano o tavolo. Respira normalmente, non trattenere il respiro (vitale per la pressione)."
+    },
+    "assisted_lunge": {
+      "name": "Affondo Statico Assistito",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Tieniti a una sedia per l'equilibrio. Abbassa il ginocchio posteriore dritto verso il pavimento."
+    },
+    "floor_superman": {
+      "name": "Superman a Terra",
+      "muscles": "Bassa Schiena (Lombari)",
+      "warning": "Sdraiato a pancia in giù, solleva leggermente petto e gambe. Movimento molto breve e controllato."
+    },
+    "chair_dips": {
+      "name": "Dips sulla Sedia",
+      "muscles": "Tricipiti, Spalle frontali",
+      "warning": "Piedi vicini alla sedia. Scendi solo finché il gomito forma 90 gradi per proteggere la cuffia dei rotatori."
+    },
+    "static_bear_crawl": {
+      "name": "Camminata dell'Orso Statica",
+      "muscles": "Core, Spalle",
+      "warning": "A gattoni (mani e piedi, ginocchia staccate da terra), solleva mano e piede opposti di pochi centimetri."
+    },
+    "jumping_jacks_no_jump": {
+      "name": "Jumping Jacks senza Salto",
+      "muscles": "Cardio, Tutto il corpo",
+      "warning": "Fai un passo laterale alzando le braccia. Nessun impatto per proteggere le articolazioni."
+    },
+    "goblet_squat": {
+      "name": "Goblet Squat",
+      "muscles": "Quadricipiti, Core",
+      "warning": "Tieni un manubrio (5-8 kg) in verticale vicino al petto. Spingi le ginocchia in fuori scendendo."
+    },
+    "dumbbell_floor_press": {
+      "name": "Press a Terra con Manubri",
+      "muscles": "Petto, Tricipiti",
+      "warning": "Sdraiato a terra a pancia in su. Spingi i manubri verso l'alto. Il pavimento impedisce alle spalle di scendere troppo."
+    },
+    "supported_one_arm_row": {
+      "name": "Rematore a un Braccio Appoggiato",
+      "muscles": "Dorsali, Bicipiti",
+      "warning": "Appoggia una mano e un ginocchio su una sedia. Tira il manubrio verso l'anca, non verso il petto."
+    },
+    "light_romanian_deadlift": {
+      "name": "Stacco Romeno Leggero",
+      "muscles": "Femorali, Glutei",
+      "warning": "Flettiti dalle anche (come per chiudere una porta con i glutei), ginocchia semiflesse. Schiena dritta."
+    },
+    "bicep_curl_to_press": {
+      "name": "Curl Bicipiti a Military Press",
+      "muscles": "Bicipiti, Spalle",
+      "warning": "Porta il manubrio alla spalla e spingi in alto. Movimento composto e controllato."
+    },
+    "dumbbell_lunge": {
+      "name": "Affondi con Manubri",
+      "muscles": "Gambe complete",
+      "warning": "Manubri leggeri ai lati. Tieni il busto dritto mentre scendi."
+    },
+    "lateral_raises": {
+      "name": "Alzate Laterali",
+      "muscles": "Spalle (Deltoidi laterali)",
+      "warning": "Solleva le braccia leggermente piegate, come se versassi acqua da una brocca."
+    },
+    "floor_pullover": {
+      "name": "Pullover a Terra",
+      "muscles": "Dorsali, Petto",
+      "warning": "Sdraiato a pancia in su, tieni 1 manubrio con entrambe le mani, portalo dietro la testa e torna al petto."
+    },
+    "plank_shoulder_taps": {
+      "name": "Plank con Tocchi alle Spalle",
+      "muscles": "Core, Spalle",
+      "warning": "In posizione di flessione, tocca la spalla opposta con una mano senza ruotare i fianchi."
+    },
+    "static_bike": {
+      "name": "Cyclette (Cardio LISS/Finisher)",
+      "muscles": "Cardio",
+      "warning": "Intensità moderata. Devi poter mantenere una conversazione senza affanno. Non trattenere il respiro."
+    }
   }
 }

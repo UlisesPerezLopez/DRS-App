@@ -3177,5 +3177,107 @@
       "milestone_w4": "Ulises, du hast 28 Tage Präzisionsernährung abgeschlossen. Dein Körper ist reiner und deine Energie stabiler. Es ist Zeit, Bewegung hinzuzufügen."
     },
     "vegetarian_label": "Vegetarisch"
+  },
+  "exercises": {
+    "squat_chair": {
+      "name": "Stuhl-Kniebeuge",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Setz dich komplett auf den Stuhl und steh wieder auf. Brust raus. Schütze deine Knie."
+    },
+    "incline_pushup": {
+      "name": "Schräge Liegestütze",
+      "muscles": "Brust, Schultern, Trizeps",
+      "warning": "Stütz dich an einem festen Tisch oder einer Wand ab. Je vertikaler, desto leichter. Noch nicht auf dem Boden."
+    },
+    "towel_row": {
+      "name": "Handtuch-Rudern an der Tür",
+      "muscles": "Rücken (Latissimus), Bizeps",
+      "warning": "Leg ein Handtuch um die Klinken einer offenen Tür, stell dich rittlings hin, zieh deinen Körper heran. Gerader Rücken."
+    },
+    "glute_bridge": {
+      "name": "Beckenheben",
+      "muscles": "Gesäß, Beinbeuger",
+      "warning": "Auf dem Rücken liegend, Knie angewinkelt, Hüfte anheben. Den unteren Rücken nicht zu sehr ins Hohlkreuz drücken."
+    },
+    "incline_plank": {
+      "name": "Schräger Unterarmstütz",
+      "muscles": "Rumpf (Bauch)",
+      "warning": "Unterarme auf Sofa oder Tisch ablegen. Normal atmen, nicht die Luft anhalten (wichtig für den Blutdruck)."
+    },
+    "assisted_lunge": {
+      "name": "Unterstützter statischer Ausfallschritt",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Halt dich an einem Stuhl fest. Hinteres Knie gerade in Richtung Boden senken."
+    },
+    "floor_superman": {
+      "name": "Boden-Superman",
+      "muscles": "Unterer Rücken",
+      "warning": "Auf dem Bauch liegend, Brust und Beine leicht anheben. Sehr kurze und kontrollierte Bewegung."
+    },
+    "chair_dips": {
+      "name": "Stuhl-Dips",
+      "muscles": "Trizeps, Vordere Schultern",
+      "warning": "Füße nah am Stuhl. Nur bis zu einem 90-Grad-Winkel der Ellbogen absenken, um die Rotatorenmanschette zu schützen."
+    },
+    "static_bear_crawl": {
+      "name": "Statischer Bärengang",
+      "muscles": "Rumpf, Schultern",
+      "warning": "Im Vierfüßlerstand (Knie berühren den Boden nicht), hebe gegenüberliegende Hand und Fuß einige Zentimeter an."
+    },
+    "jumping_jacks_no_jump": {
+      "name": "Hampelmann ohne Springen",
+      "muscles": "Cardio, Ganzer Körper",
+      "warning": "Mach einen Seitenschritt, während du die Arme hebst. Ohne Aufprall zur Schonung der Gelenke."
+    },
+    "goblet_squat": {
+      "name": "Goblet-Kniebeuge",
+      "muscles": "Oberschenkel, Rumpf",
+      "warning": "Halt eine Kurzhantel (5-8 kg) vertikal vor der Brust. Knie beim Runtergehen nach außen drücken."
+    },
+    "dumbbell_floor_press": {
+      "name": "Kurzhantel-Bankdrücken auf dem Boden",
+      "muscles": "Brust, Trizeps",
+      "warning": "Auf dem Rücken liegend. Kurzhanteln nach oben drücken. Der Boden verhindert, dass die Schultern zu tief sinken."
+    },
+    "supported_one_arm_row": {
+      "name": "Unterstütztes einarmiges Rudern",
+      "muscles": "Latissimus, Bizeps",
+      "warning": "Stütz eine Hand und ein Knie auf einen Stuhl. Zieh die Hantel zur Hüfte, nicht zur Brust."
+    },
+    "light_romanian_deadlift": {
+      "name": "Leichtes rumänisches Kreuzheben",
+      "muscles": "Beinbeuger, Gesäß",
+      "warning": "Aus der Hüfte beugen (als ob du eine Tür mit dem Po schließt), Knie leicht gebeugt. Gerader Rücken."
+    },
+    "bicep_curl_to_press": {
+      "name": "Bizeps-Curl zum Schulterdrücken",
+      "muscles": "Bizeps, Schultern",
+      "warning": "Hantel zur Schulter curlen und dann nach oben drücken. Kontrollierte Verbundübung."
+    },
+    "dumbbell_lunge": {
+      "name": "Ausfallschritt mit Kurzhanteln",
+      "muscles": "Ganze Beine",
+      "warning": "Leichte Hanteln an den Seiten. Oberkörper beim Absenken aufrecht halten."
+    },
+    "lateral_raises": {
+      "name": "Seitheben",
+      "muscles": "Schultern (Mittlerer Deltamuskel)",
+      "warning": "Arme leicht gebeugt anheben, als würdest du Wasser aus einem Krug gießen."
+    },
+    "floor_pullover": {
+      "name": "Boden-Überzüge",
+      "muscles": "Latissimus, Brust",
+      "warning": "Auf dem Rücken liegend, 1 Hantel mit beiden Händen greifen, hinter den Kopf führen und zurück zur Brust."
+    },
+    "plank_shoulder_taps": {
+      "name": "Plank mit Schultertippen",
+      "muscles": "Rumpf, Schultern",
+      "warning": "In Liegestützposition mit einer Hand die gegenüberliegende Schulter antippen, ohne die Hüfte zu drehen."
+    },
+    "static_bike": {
+      "name": "Ergometer (Cardio LISS/Finisher)",
+      "muscles": "Cardio",
+      "warning": "Moderate Intensität. Du solltest ein Gespräch führen können, ohne außer Atem zu geraten. Nicht die Luft anhalten."
+    }
   }
 }

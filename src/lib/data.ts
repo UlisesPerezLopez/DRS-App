@@ -427,6 +427,36 @@ export const VEGETARIAN_PLAN: DailyMenuPlan[] = [
   { id: 'v_w4_d7', week: 4, day: 28, translationKey: 'plans.vegetarian.w4_d7', totalKcal: 1750 },
 ];
 
+export interface ExerciseDef {
+  id: string;
+  translationKey: string;
+}
+
+export const EXERCISE_DB: Record<string, ExerciseDef> = {
+  // TRACK A: Zero Gravity (Nivel 1)
+  'squat_chair': { id: 'squat_chair', translationKey: 'exercises.squat_chair' },
+  'incline_pushup': { id: 'incline_pushup', translationKey: 'exercises.incline_pushup' },
+  'towel_row': { id: 'towel_row', translationKey: 'exercises.towel_row' },
+  'glute_bridge': { id: 'glute_bridge', translationKey: 'exercises.glute_bridge' },
+  'incline_plank': { id: 'incline_plank', translationKey: 'exercises.incline_plank' },
+  'assisted_lunge': { id: 'assisted_lunge', translationKey: 'exercises.assisted_lunge' },
+  'floor_superman': { id: 'floor_superman', translationKey: 'exercises.floor_superman' },
+  'chair_dips': { id: 'chair_dips', translationKey: 'exercises.chair_dips' },
+  'static_bear_crawl': { id: 'static_bear_crawl', translationKey: 'exercises.static_bear_crawl' },
+  'jumping_jacks_no_jump': { id: 'jumping_jacks_no_jump', translationKey: 'exercises.jumping_jacks_no_jump' },
+  // TRACK B: Home Gym (Nivel 1)
+  'goblet_squat': { id: 'goblet_squat', translationKey: 'exercises.goblet_squat' },
+  'dumbbell_floor_press': { id: 'dumbbell_floor_press', translationKey: 'exercises.dumbbell_floor_press' },
+  'supported_one_arm_row': { id: 'supported_one_arm_row', translationKey: 'exercises.supported_one_arm_row' },
+  'light_romanian_deadlift': { id: 'light_romanian_deadlift', translationKey: 'exercises.light_romanian_deadlift' },
+  'bicep_curl_to_press': { id: 'bicep_curl_to_press', translationKey: 'exercises.bicep_curl_to_press' },
+  'dumbbell_lunge': { id: 'dumbbell_lunge', translationKey: 'exercises.dumbbell_lunge' },
+  'lateral_raises': { id: 'lateral_raises', translationKey: 'exercises.lateral_raises' },
+  'floor_pullover': { id: 'floor_pullover', translationKey: 'exercises.floor_pullover' },
+  'plank_shoulder_taps': { id: 'plank_shoulder_taps', translationKey: 'exercises.plank_shoulder_taps' },
+  'static_bike': { id: 'static_bike', translationKey: 'exercises.static_bike' }
+};
+
 export interface ExerciseTemplate {
   name: string;
   description: string;

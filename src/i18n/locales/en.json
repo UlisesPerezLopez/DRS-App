@@ -3177,5 +3177,107 @@
       "milestone_w4": "Ulises, you have completed 28 days of precision nutrition. Your body is cleaner and your energy more stable. It's time to add movement."
     },
     "vegetarian_label": "Vegetarian"
+  },
+  "exercises": {
+    "squat_chair": {
+      "name": "Chair Squat",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Sit completely on the chair and stand up. Keep your chest up. Protect your knees."
+    },
+    "incline_pushup": {
+      "name": "Incline Push-ups",
+      "muscles": "Chest, Shoulders, Triceps",
+      "warning": "Rest your hands on a firm table or wall. The more vertical, the easier. Do not do them on the floor yet."
+    },
+    "towel_row": {
+      "name": "Door Towel Row",
+      "muscles": "Back (Lats), Biceps",
+      "warning": "Loop a towel around the handles of an open door, straddle the door, pull your body towards it. Keep back straight."
+    },
+    "glute_bridge": {
+      "name": "Glute Bridge",
+      "muscles": "Glutes, Hamstrings",
+      "warning": "Lying on your back with knees bent, raise your hips. Do not over-arch your lower back."
+    },
+    "incline_plank": {
+      "name": "Incline Plank",
+      "muscles": "Core (Abdomen)",
+      "warning": "Rest your forearms on the sofa or table. Breathe normally, do not hold your breath (vital for blood pressure)."
+    },
+    "assisted_lunge": {
+      "name": "Assisted Static Lunge",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Hold onto a chair for balance. Lower your back knee straight down towards the floor."
+    },
+    "floor_superman": {
+      "name": "Floor Superman",
+      "muscles": "Lower Back",
+      "warning": "Lying face down, slightly lift chest and legs. Very short and controlled movement."
+    },
+    "chair_dips": {
+      "name": "Chair Dips",
+      "muscles": "Triceps, Front Shoulders",
+      "warning": "Feet close to the chair. Lower only until your elbow forms 90 degrees to protect the rotator cuff."
+    },
+    "static_bear_crawl": {
+      "name": "Static Bear Crawl",
+      "muscles": "Core, Shoulders",
+      "warning": "On all fours (hands and feet, knees hovering off the floor), lift opposite hand and foot a few centimeters."
+    },
+    "jumping_jacks_no_jump": {
+      "name": "No-Jump Jumping Jacks",
+      "muscles": "Cardio, Full Body",
+      "warning": "Step to the side while raising your arms. Zero impact to protect joints."
+    },
+    "goblet_squat": {
+      "name": "Goblet Squat",
+      "muscles": "Quadriceps, Core",
+      "warning": "Hold a dumbbell (5-8 kg) vertically close to your chest. Push knees out as you go down."
+    },
+    "dumbbell_floor_press": {
+      "name": "Dumbbell Floor Press",
+      "muscles": "Chest, Triceps",
+      "warning": "Lying on the floor face up. Press the dumbbells upwards. The floor prevents your shoulders from dipping too low."
+    },
+    "supported_one_arm_row": {
+      "name": "Supported One-Arm Row",
+      "muscles": "Lats, Biceps",
+      "warning": "Support one hand and knee on a chair. Pull the dumbbell towards your hip, not your chest."
+    },
+    "light_romanian_deadlift": {
+      "name": "Light Romanian Deadlift",
+      "muscles": "Hamstrings, Glutes",
+      "warning": "Hinge from the hips (like closing a door with your glutes), knees slightly bent. Straight back."
+    },
+    "bicep_curl_to_press": {
+      "name": "Bicep Curl to Military Press",
+      "muscles": "Biceps, Shoulders",
+      "warning": "Curl the dumbbell to the shoulder and then press up. Controlled compound movement."
+    },
+    "dumbbell_lunge": {
+      "name": "Dumbbell Lunge",
+      "muscles": "Full Legs",
+      "warning": "Light dumbbells at your sides. Keep torso upright as you lower."
+    },
+    "lateral_raises": {
+      "name": "Lateral Raises",
+      "muscles": "Shoulders (Side Delts)",
+      "warning": "Raise arms slightly bent, as if pouring water from a pitcher."
+    },
+    "floor_pullover": {
+      "name": "Floor Pullover",
+      "muscles": "Lats, Chest",
+      "warning": "Lying face up, hold 1 dumbbell with both hands, bring it behind your head and back to your chest."
+    },
+    "plank_shoulder_taps": {
+      "name": "Plank Shoulder Taps",
+      "muscles": "Core, Shoulders",
+      "warning": "In push-up position, tap the opposite shoulder with one hand without twisting your hips."
+    },
+    "static_bike": {
+      "name": "Stationary Bike (LISS/Finisher Cardio)",
+      "muscles": "Cardio",
+      "warning": "Moderate intensity. You should be able to hold a conversation without gasping. Do not hold your breath."
+    }
   }
 }

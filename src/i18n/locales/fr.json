@@ -3177,5 +3177,107 @@
       "milestone_w4": "Ulises, tu as terminé 28 jours de nutrition de précision. Ton corps est plus propre et ton énergie plus stable. Il est temps d'ajouter du mouvement."
     },
     "vegetarian_label": "Végétarienne"
+  },
+  "exercises": {
+    "squat_chair": {
+      "name": "Squat sur Chaise",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Asseyez-vous complètement sur la chaise et relevez-vous. Gardez la poitrine haute. Protégez vos genoux."
+    },
+    "incline_pushup": {
+      "name": "Pompes Inclinées",
+      "muscles": "Pectoraux, Épaules, Triceps",
+      "warning": "Appuyez vos mains sur une table solide ou un mur. Plus c'est vertical, plus c'est facile. Ne les faites pas encore au sol."
+    },
+    "towel_row": {
+      "name": "Tirage avec Serviette sur Porte",
+      "muscles": "Dos (Grand dorsal), Biceps",
+      "warning": "Passez une serviette sur les poignées d'une porte ouverte, asseyez-vous à califourchon, tirez votre corps vers la porte. Dos droit."
+    },
+    "glute_bridge": {
+      "name": "Pont Fessier",
+      "muscles": "Fessiers, Ischio-jambiers",
+      "warning": "Allongé sur le dos, genoux pliés, soulevez les hanches. Ne cambrez pas trop le bas du dos."
+    },
+    "incline_plank": {
+      "name": "Planche Inclinée",
+      "muscles": "Ceinture Abdominale",
+      "warning": "Appuyez les avant-bras sur le canapé ou la table. Respirez normalement, ne bloquez pas votre respiration (vital pour la tension)."
+    },
+    "assisted_lunge": {
+      "name": "Fente Statique Assistée",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Accrochez-vous à une chaise pour l'équilibre. Descendez le genou arrière droit vers le sol."
+    },
+    "floor_superman": {
+      "name": "Superman au Sol",
+      "muscles": "Bas du Dos (Lombaires)",
+      "warning": "Allongé sur le ventre, soulevez légèrement la poitrine et les jambes. Mouvement très court et contrôlé."
+    },
+    "chair_dips": {
+      "name": "Dips sur Chaise",
+      "muscles": "Triceps, Épaule frontale",
+      "warning": "Pieds près de la chaise. Descendez seulement jusqu'à ce que votre coude forme 90 degrés pour protéger la coiffe des rotateurs."
+    },
+    "static_bear_crawl": {
+      "name": "Marche de l'Ours Statique",
+      "muscles": "Ceinture Abdominale, Épaules",
+      "warning": "À quatre pattes (genoux décollés du sol), soulevez légèrement la main et le pied opposés."
+    },
+    "jumping_jacks_no_jump": {
+      "name": "Jumping Jacks sans Saut",
+      "muscles": "Cardio, Corps entier",
+      "warning": "Faites un pas de côté tout en levant les bras. Zéro impact pour protéger les articulations."
+    },
+    "goblet_squat": {
+      "name": "Squat Goblet",
+      "muscles": "Quadriceps, Ceinture Abdominale",
+      "warning": "Tenez un haltère (5-8 kg) verticalement contre la poitrine. Écartez les genoux en descendant."
+    },
+    "dumbbell_floor_press": {
+      "name": "Développé au Sol avec Haltères",
+      "muscles": "Pectoraux, Triceps",
+      "warning": "Allongé sur le dos au sol. Poussez les haltères vers le haut. Le sol empêche les épaules de descendre trop bas."
+    },
+    "supported_one_arm_row": {
+      "name": "Tirage Bûcheron Appuyé",
+      "muscles": "Grand dorsal, Biceps",
+      "warning": "Appuyez une main et un genou sur une chaise. Tirez l'haltère vers la hanche, pas vers la poitrine."
+    },
+    "light_romanian_deadlift": {
+      "name": "Soulevé de Terre Roumain Léger",
+      "muscles": "Ischios, Fessiers",
+      "warning": "Penchez-vous à partir des hanches (comme pour fermer une porte avec les fessiers), genoux semi-fléchis. Dos droit."
+    },
+    "bicep_curl_to_press": {
+      "name": "Curl Biceps à Développé Militaire",
+      "muscles": "Biceps, Épaules",
+      "warning": "Montez l'haltère à l'épaule puis poussez vers le haut. Mouvement composé contrôlé."
+    },
+    "dumbbell_lunge": {
+      "name": "Fentes avec Haltères",
+      "muscles": "Jambes complètes",
+      "warning": "Haltères légers sur les côtés. Gardez le torse droit en descendant."
+    },
+    "lateral_raises": {
+      "name": "Élévations Latérales",
+      "muscles": "Épaules (Faisceau latéral)",
+      "warning": "Levez les bras légèrement fléchis comme pour verser de l'eau d'une carafe."
+    },
+    "floor_pullover": {
+      "name": "Pull-over au Sol",
+      "muscles": "Grand dorsal, Pectoraux",
+      "warning": "Allongé sur le dos, tenez 1 haltère à deux mains, amenez-le derrière la tête puis revenez à la poitrine."
+    },
+    "plank_shoulder_taps": {
+      "name": "Planche Touche-Épaules",
+      "muscles": "Ceinture Abdominale, Épaules",
+      "warning": "En position de pompe, touchez l'épaule opposée avec une main sans tourner les hanches."
+    },
+    "static_bike": {
+      "name": "Vélo d'Appartement (Cardio LISS/Finisher)",
+      "muscles": "Cardio",
+      "warning": "Intensité modérée. Vous devez pouvoir tenir une conversation sans vous essouffler. Ne bloquez pas votre respiration."
+    }
   }
 }
