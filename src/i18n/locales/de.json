@@ -2060,6 +2060,191 @@
           "Wenn hausgemacht, traditionellen Hummus mit einem Stück gekochter Roter Bete pürieren, um Süße und eine unglaubliche Farbe zu verleihen.",
           "Mit frischen Gemüsesticks und den Eiern servieren."
         ]
+      },
+      "w4_l1": {
+        "name": "Soja-Bolognese",
+        "ingredients": [
+          "60g texturiertes Soja",
+          "200ml passierte Tomaten",
+          "Zwiebel und Oregano",
+          "70g Vollkornnudeln"
+        ],
+        "steps": [
+          "Soja 10 Min. in heißem Wasser einweichen und abtropfen lassen.",
+          "Zwiebel anbraten, Soja und Tomate hinzufügen.",
+          "15 Min. kochen und über den Vollkornnudeln servieren."
+        ]
+      },
+      "w4_d1": {
+        "name": "Rührei mit grünen Bohnen und Knoblauch",
+        "ingredients": [
+          "2 Eier",
+          "150g grüne Bohnen",
+          "Knoblauch",
+          "1 Scheibe Vollkornbrot"
+        ],
+        "steps": [
+          "Zuvor gekochte grüne Bohnen mit Knoblauch anbraten.",
+          "Geschlagene Eier hinzufügen und bei schwacher Hitze stocken lassen.",
+          "Mit Brot servieren."
+        ]
+      },
+      "w4_l2": {
+        "name": "Rote-Bohnen-Eintopf",
+        "ingredients": [
+          "200g gekochte rote Bohnen",
+          "Zwiebel und Paprika",
+          "Gemüsebrühe"
+        ],
+        "steps": [
+          "Zwiebel mit Paprika anbraten.",
+          "Gut gewaschene Bohnen und Brühe hinzufügen.",
+          "10 Minuten köcheln lassen."
+        ]
+      },
+      "w4_d2": {
+        "name": "Knusprig gegrilltes Tempeh",
+        "ingredients": [
+          "120g Tempeh",
+          "Natriumarme Sojasauce und Ingwer",
+          "Feldsalat und Radieschen"
+        ],
+        "steps": [
+          "In Scheiben geschnittenes Tempeh in Soja und Ingwer marinieren.",
+          "Grillen, bis es goldbraun und knusprig ist.",
+          "Mit frischem Salat servieren."
+        ]
+      },
+      "w4_l3": {
+        "name": "Kichererbsen-Feta-Salat",
+        "ingredients": [
+          "150g gekochte Kichererbsen",
+          "30g Feta-Käse",
+          "Gurke und Oliven"
+        ],
+        "steps": [
+          "Kichererbsen gut waschen.",
+          "Gurke zerkleinern und Feta-Käse zerbröseln.",
+          "Alles in einer Schüssel mischen und nach Belieben würzen."
+        ]
+      },
+      "w4_d3": {
+        "name": "Waldpilzcremesuppe",
+        "ingredients": [
+          "300g Pilze",
+          "1 Lauch und 1 kleine Kartoffel (80g)",
+          "1 hartgekochtes Ei"
+        ],
+        "steps": [
+          "Lauch und Pilze anbraten.",
+          "Kartoffel hinzufügen, mit Wasser bedecken, 20 Min. kochen und pürieren.",
+          "Mit gehacktem hartgekochtem Ei servieren, um Protein zu sichern."
+        ]
+      },
+      "w4_l4": {
+        "name": "Räuchertofu-Brokkoli-Wok",
+        "ingredients": [
+          "120g Räuchertofu",
+          "Rote Paprika und Brokkoli",
+          "Sojasprossen"
+        ],
+        "steps": [
+          "Tofu würfeln und im Wok anbraten.",
+          "Brokkoli (leicht gekocht) und Paprikastreifen hinzufügen.",
+          "Bei starker Hitze mit den Sojasprossen anbraten."
+        ]
+      },
+      "w4_d4": {
+        "name": "Mit Quinoa gefüllte Paprika",
+        "ingredients": [
+          "2 Bratpaprika",
+          "50g gekochte Quinoa",
+          "Geröstetes Gemüse und 5ml Olivenöl"
+        ],
+        "steps": [
+          "Paprika aushöhlen und 10 Min. rösten.",
+          "Mit der Quinoa-Gemüse-Mischung füllen.",
+          "Weitere 15 Minuten backen."
+        ]
+      },
+      "w4_l5": {
+        "name": "Kartoffel-Artischocken-Eintopf",
+        "ingredients": [
+          "150g Kartoffel",
+          "4 Artischocken",
+          "Erbsen und Gemüsebrühe"
+        ],
+        "steps": [
+          "Artischocken putzen und Kartoffel zerkleinern.",
+          "Leicht anbraten, mit Brühe bedecken und Erbsen hinzufügen.",
+          "Bei mittlerer Hitze kochen, bis die Kartoffel weich ist."
+        ]
+      },
+      "w4_d5": {
+        "name": "Omelett mit wildem Spargel",
+        "ingredients": [
+          "2 Eier",
+          "1 Bund wilder Spargel",
+          "50g Avocado"
+        ],
+        "steps": [
+          "Gehackten Spargel anbraten.",
+          "Eier schlagen, mischen und Omelett braten.",
+          "Mit Avocadoscheiben als Beilage servieren."
+        ]
+      },
+      "w4_l6": {
+        "name": "Pilz-Gemüse-Paella",
+        "ingredients": [
+          "70g Vollkornreis",
+          "Steinpilze oder gemischte Pilze",
+          "Flache Bohnen und Safran"
+        ],
+        "steps": [
+          "Pilze und Bohnen anbraten.",
+          "Vollkornreis, Safran und heiße Gemüsebrühe hinzufügen.",
+          "Bei mittlerer Hitze ca. 35-40 Minuten kochen."
+        ]
+      },
+      "w4_d6": {
+        "name": "Auberginen-Käse-Burger",
+        "ingredients": [
+          "1 geröstete Aubergine",
+          "Light-Käsescheibe",
+          "Grüner Salat"
+        ],
+        "steps": [
+          "Dicke geröstete Auberginenscheiben wie Burgerfleisch verwenden.",
+          "Käse zwischen zwei Scheiben schmelzen lassen.",
+          "Mit Salat servieren."
+        ]
+      },
+      "w4_l7": {
+        "name": "Salat-Linsen-Tacos",
+        "ingredients": [
+          "Große Salatblätter",
+          "150g gekochte Linsen",
+          "Kreuzkümmel, Zitrone und Pico de Gallo (Tomate/Zwiebel)"
+        ],
+        "steps": [
+          "Linsen mit Kreuzkümmel anbraten.",
+          "Salatblatt als Tortilla verwenden und mit Linsen und Pico de Gallo füllen.",
+          "Ein paar Tropfen Zitrone hinzufügen."
+        ]
+      },
+      "w4_d7": {
+        "name": "Vegetarische Abschlussplatte",
+        "ingredients": [
+          "Hummus",
+          "2 hartgekochte Eier",
+          "Gemüse-Crudités",
+          "10g Parmesan"
+        ],
+        "steps": [
+          "Platte mit Hummus in der Mitte anrichten.",
+          "Mit rohem Gemüse, Eiern und Parmesanflocken servieren.",
+          "Das letzte Abendessen des Plans genießen."
+        ]
       }
     }
   },
@@ -2988,7 +3173,8 @@
         "dinner": "Vegetarische Abschlussplatte: Hummus, 2 hartgekochte Eier, Rohkost und 10g Parmesan."
       },
       "title": "Vegetarischer Plan · 28 Tage",
-      "subtitle": "Ausgewogenes Menü ohne Fleisch oder Fisch"
+      "subtitle": "Ausgewogenes Menü ohne Fleisch oder Fisch",
+      "milestone_w4": "Ulises, du hast 28 Tage Präzisionsernährung abgeschlossen. Dein Körper ist reiner und deine Energie stabiler. Es ist Zeit, Bewegung hinzuzufügen."
     },
     "vegetarian_label": "Vegetarisch"
   }

@@ -2060,6 +2060,191 @@
           "Se lo fai in casa, frulla l'hummus tradizionale con un pezzo di barbabietola cotta per dargli dolcezza e un colore incredibile.",
           "Accompagna con bastoncini di verdura fresca e le uova."
         ]
+      },
+      "w4_l1": {
+        "name": "Ragù di Soia Testurizzata",
+        "ingredients": [
+          "60g di soia testurizzata",
+          "200ml di pomodoro naturale",
+          "Cipolla e origano",
+          "70g di pasta integrale"
+        ],
+        "steps": [
+          "Idrata la soia in acqua calda per 10 min e scola.",
+          "Fai un soffritto con la cipolla, aggiungi la soia e il pomodoro.",
+          "Cuoci per 15 min e servi sulla pasta integrale."
+        ]
+      },
+      "w4_d1": {
+        "name": "Uova Strapazzate con Fagiolini e Aglio",
+        "ingredients": [
+          "2 uova",
+          "150g di fagiolini",
+          "Aglio",
+          "1 fetta di pane integrale"
+        ],
+        "steps": [
+          "Salta i fagiolini precedentemente bolliti con l'aglio.",
+          "Aggiungi le uova sbattute e cuoci a fuoco lento.",
+          "Accompagna con il pane."
+        ]
+      },
+      "w4_l2": {
+        "name": "Zuppa di Fagioli Rossi",
+        "ingredients": [
+          "200g di fagioli rossi cotti",
+          "Cipolla e paprika",
+          "Brodo vegetale"
+        ],
+        "steps": [
+          "Soffriggi la cipolla con la paprika.",
+          "Aggiungi i fagioli ben lavati e il brodo.",
+          "Cuoci a fuoco lento per 10 minuti."
+        ]
+      },
+      "w4_d2": {
+        "name": "Tempeh Grigliato Croccante",
+        "ingredients": [
+          "120g di Tempeh",
+          "Soia a basso contenuto di sodio e zenzero",
+          "Valeriana e ravanelli"
+        ],
+        "steps": [
+          "Marina il tempeh tagliato a fette nella soia e zenzero.",
+          "Griglialo fino a quando sarà dorato e croccante.",
+          "Servi con l'insalata fresca."
+        ]
+      },
+      "w4_l3": {
+        "name": "Insalata di Ceci e Feta",
+        "ingredients": [
+          "150g di ceci cotti",
+          "30g di feta",
+          "Cetriolo e olive"
+        ],
+        "steps": [
+          "Lava bene i ceci.",
+          "Taglia il cetriolo e sbriciola la feta.",
+          "Mescola tutto in una ciotola e condisci a piacere."
+        ]
+      },
+      "w4_d3": {
+        "name": "Crema di Funghi di Bosco",
+        "ingredients": [
+          "300g di funghi",
+          "1 porro e 1 piccola patata (80g)",
+          "1 uovo sodo"
+        ],
+        "steps": [
+          "Salta il porro e i funghi.",
+          "Aggiungi la patata, copri con acqua, bolli 20 min e frulla.",
+          "Servi con l'uovo sodo tritato per assicurare le proteine."
+        ]
+      },
+      "w4_l4": {
+        "name": "Wok di Tofu Affumicato e Broccoli",
+        "ingredients": [
+          "120g di tofu affumicato",
+          "Peperone rosso e broccoli",
+          "Germogli di soia"
+        ],
+        "steps": [
+          "Taglia il tofu a cubetti e rosolalo nel wok.",
+          "Aggiungi i broccoli (leggermente cotti) e il peperone a strisce.",
+          "Salta a fuoco alto con i germogli di soia."
+        ]
+      },
+      "w4_d4": {
+        "name": "Peperoni Ripieni di Quinoa",
+        "ingredients": [
+          "2 peperoni da arrostire",
+          "50g di quinoa cotta",
+          "Verdure arrosto e 5ml di olio EVO"
+        ],
+        "steps": [
+          "Svuota i peperoni e arrostiscili per 10 min.",
+          "Riempi con il composto di quinoa e verdure.",
+          "Inforna per altri 15 minuti."
+        ]
+      },
+      "w4_l5": {
+        "name": "Stufato di Patate e Carciofi",
+        "ingredients": [
+          "150g di patata",
+          "4 carciofi",
+          "Piselli e brodo vegetale"
+        ],
+        "steps": [
+          "Pulisci i carciofi e taglia la patata.",
+          "Rosola leggermente, copri con brodo e aggiungi i piselli.",
+          "Cuoci a fuoco medio fino a quando la patata sarà tenera."
+        ]
+      },
+      "w4_d5": {
+        "name": "Frittata di Asparagi Selvatici",
+        "ingredients": [
+          "2 uova",
+          "1 mazzo di asparagi selvatici",
+          "50g di avocado"
+        ],
+        "steps": [
+          "Salta gli asparagi a pezzetti.",
+          "Sbatti le uova, mescolale e cuoci la frittata.",
+          "Servi con l'avocado a fette di lato."
+        ]
+      },
+      "w4_l6": {
+        "name": "Paella di Funghi e Verdure",
+        "ingredients": [
+          "70g di riso integrale",
+          "Porcini o funghi misti",
+          "Taccole e zafferano"
+        ],
+        "steps": [
+          "Soffriggi i funghi e le taccole.",
+          "Aggiungi il riso integrale, zafferano e brodo vegetale caldo.",
+          "Cuoci a fuoco medio per circa 35-40 minuti."
+        ]
+      },
+      "w4_d6": {
+        "name": "Hamburger di Melanzane e Formaggio",
+        "ingredients": [
+          "1 melanzana arrosto",
+          "Fetta di formaggio leggero",
+          "Insalata verde"
+        ],
+        "steps": [
+          "Usa fette spesse di melanzana arrosto come se fossero la carne dell'hamburger.",
+          "Fondi il formaggio tra due fette.",
+          "Accompagna con insalata."
+        ]
+      },
+      "w4_l7": {
+        "name": "Tacos di Lattuga e Lenticchie",
+        "ingredients": [
+          "Grandi foglie di lattuga",
+          "150g di lenticchie cotte",
+          "Cumino, limone e pico de gallo (pomodoro/cipolla)"
+        ],
+        "steps": [
+          "Salta le lenticchie con il cumino.",
+          "Usa la foglia di lattuga come tortilla e riempila con le lenticchie e il pico de gallo.",
+          "Aggiungi qualche goccia di limone."
+        ]
+      },
+      "w4_d7": {
+        "name": "Tagliere Vegetariano di Chiusura",
+        "ingredients": [
+          "Hummus",
+          "2 uova sode",
+          "Crudités di verdure",
+          "10g di parmigiano"
+        ],
+        "steps": [
+          "Monta il tagliere con l'hummus al centro.",
+          "Accompagna con le verdure crude, le uova e le scaglie di parmigiano.",
+          "Goditi l'ultima cena del piano."
+        ]
       }
     }
   },
@@ -2988,7 +3173,8 @@
         "dinner": "Tagliere vegetariano di chiusura: Hummus, 2 uova sode, crudités e 10g di parmigiano."
       },
       "title": "Piano Vegetariano · 28 Giorni",
-      "subtitle": "Menu equilibrato senza carne né pesce"
+      "subtitle": "Menu equilibrato senza carne né pesce",
+      "milestone_w4": "Ulises, hai completato 28 giorni di nutrizione di precisione. Il tuo corpo è più pulito e la tua energia più stabile. È il momento di aggiungere il movimento."
     },
     "vegetarian_label": "Vegetariana"
   }

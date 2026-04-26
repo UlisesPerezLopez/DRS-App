@@ -2060,6 +2060,191 @@
           "Si lo haces casero, tritura el hummus tradicional con un trozo de remolacha cocida para darle dulzor y un color increíble.",
           "Acompaña con bastones de verdura fresca y los huevos."
         ]
+      },
+      "w4_l1": {
+        "name": "Boloñesa de Soja Texturizada",
+        "ingredients": [
+          "60g soja texturizada",
+          "200ml tomate natural",
+          "Cebolla y orégano",
+          "70g pasta integral"
+        ],
+        "steps": [
+          "Hidrata la soja en agua caliente 10 min y escurre.",
+          "Haz un sofrito con cebolla, añade la soja y el tomate.",
+          "Cocina 15 min y sirve sobre la pasta integral."
+        ]
+      },
+      "w4_d1": {
+        "name": "Revuelto de Judías Verdes y Ajo",
+        "ingredients": [
+          "2 huevos",
+          "150g judías verdes",
+          "Ajo",
+          "1 rodaja pan integral"
+        ],
+        "steps": [
+          "Saltea las judías verdes previamente hervidas con el ajo.",
+          "Añade los huevos batidos y cuaja a fuego lento.",
+          "Acompaña con el pan."
+        ]
+      },
+      "w4_l2": {
+        "name": "Potaje de Alubias Rojas",
+        "ingredients": [
+          "200g alubias rojas cocidas",
+          "Cebolla y pimentón",
+          "Caldo vegetal"
+        ],
+        "steps": [
+          "Sofríe la cebolla con pimentón.",
+          "Añade las alubias bien lavadas y el caldo.",
+          "Cuece 10 minutos a fuego lento."
+        ]
+      },
+      "w4_d2": {
+        "name": "Tempeh a la Plancha Crunchy",
+        "ingredients": [
+          "120g Tempeh",
+          "Soja baja en sal y jengibre",
+          "Canónigos y rabanitos"
+        ],
+        "steps": [
+          "Marina el tempeh cortado en láminas en soja y jengibre.",
+          "Hazlo a la plancha hasta que esté dorado y crujiente.",
+          "Sirve con la ensalada fresca."
+        ]
+      },
+      "w4_l3": {
+        "name": "Ensalada de Garbanzos y Feta",
+        "ingredients": [
+          "150g garbanzos cocidos",
+          "30g queso feta",
+          "Pepino y olivas"
+        ],
+        "steps": [
+          "Lava bien los garbanzos.",
+          "Trocea el pepino y desmiga el queso feta.",
+          "Mezcla todo en un bol y aliña al gusto."
+        ]
+      },
+      "w4_d3": {
+        "name": "Crema de Champiñones Silvestre",
+        "ingredients": [
+          "300g champiñones o setas",
+          "1 puerro y 1 patata pequeña (80g)",
+          "1 huevo duro"
+        ],
+        "steps": [
+          "Saltea el puerro y los champiñones.",
+          "Añade la patata, cubre con agua, hierve 20 min y tritura.",
+          "Sirve con el huevo duro picado para asegurar la proteína."
+        ]
+      },
+      "w4_l4": {
+        "name": "Wok de Tofu Ahumado y Brócoli",
+        "ingredients": [
+          "120g tofu ahumado",
+          "Pimiento rojo y brócoli",
+          "Brotes de soja"
+        ],
+        "steps": [
+          "Corta el tofu en dados y dora en el wok.",
+          "Añade el brócoli (ligeramente cocido) y el pimiento en tiras.",
+          "Saltea a fuego fuerte con los brotes de soja."
+        ]
+      },
+      "w4_d4": {
+        "name": "Pimientos Rellenos de Quinoa",
+        "ingredients": [
+          "2 pimientos para asar",
+          "50g quinoa cocida",
+          "Verduras asadas y 5ml AOVE"
+        ],
+        "steps": [
+          "Vacía los pimientos y ásalos 10 min.",
+          "Rellena con la mezcla de quinoa y verduras.",
+          "Hornea otros 15 minutos."
+        ]
+      },
+      "w4_l5": {
+        "name": "Guiso de Patatas y Alcachofas",
+        "ingredients": [
+          "150g patata",
+          "4 alcachofas",
+          "Guisantes y caldo vegetal"
+        ],
+        "steps": [
+          "Limpia las alcachofas y trocea la patata.",
+          "Rehoga ligeramente, cubre con caldo y añade los guisantes.",
+          "Cocina a fuego medio hasta que la patata esté tierna."
+        ]
+      },
+      "w4_d5": {
+        "name": "Tortilla de Espárragos Trigueros",
+        "ingredients": [
+          "2 huevos",
+          "1 manojo de espárragos trigueros",
+          "50g aguacate"
+        ],
+        "steps": [
+          "Saltea los espárragos troceados.",
+          "Bate los huevos, mézclalos y cuaja la tortilla.",
+          "Sirve con el aguacate laminado en un lateral."
+        ]
+      },
+      "w4_l6": {
+        "name": "Paella de Setas y Verduras",
+        "ingredients": [
+          "70g arroz integral",
+          "Boletus o setas variadas",
+          "Judía plana y azafrán"
+        ],
+        "steps": [
+          "Sofríe las setas y las judías.",
+          "Añade el arroz integral, azafrán y caldo vegetal caliente.",
+          "Cocina a fuego medio unos 35-40 minutos."
+        ]
+      },
+      "w4_d6": {
+        "name": "Hamburguesa de Berenjena y Queso",
+        "ingredients": [
+          "1 berenjena asada",
+          "Queso light en loncha",
+          "Ensalada verde"
+        ],
+        "steps": [
+          "Usa rodajas gruesas de berenjena asada como si fueran la carne de la hamburguesa.",
+          "Funde el queso entre dos rodajas.",
+          "Acompaña con ensalada."
+        ]
+      },
+      "w4_l7": {
+        "name": "Tacos de Lechuga y Lentejas",
+        "ingredients": [
+          "Hojas grandes de lechuga",
+          "150g lentejas cocidas",
+          "Comino, limón y pico de gallo (tomate/cebolla)"
+        ],
+        "steps": [
+          "Saltea las lentejas con comino.",
+          "Usa la hoja de lechuga como tortilla y rellénala con las lentejas y el pico de gallo.",
+          "Añade unas gotas de limón."
+        ]
+      },
+      "w4_d7": {
+        "name": "Tabla Vegetariana de Cierre",
+        "ingredients": [
+          "Hummus",
+          "2 huevos duros",
+          "Crudités de verduras",
+          "10g parmesano"
+        ],
+        "steps": [
+          "Monta la tabla con el hummus en el centro.",
+          "Acompaña con la verdura cruda, los huevos y lascas de parmesano.",
+          "Disfruta de la última cena del plan."
+        ]
       }
     }
   },
@@ -2989,7 +3174,8 @@
         "dinner": "Tabla Vegetariana de Cierre: Hummus, 2 huevos duros, crudités y 10g de parmesano."
       },
       "title": "Plan Vegetariano · 28 Días",
-      "subtitle": "Menú equilibrado sin carne ni pescado"
+      "subtitle": "Menú equilibrado sin carne ni pescado",
+      "milestone_w4": "Ulises, has completado 28 días de nutrición de precisión. Tu cuerpo está más limpio y tu energía más estable. Es el momento de añadir el movimiento."
     }
   }
 }

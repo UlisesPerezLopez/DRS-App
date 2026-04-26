@@ -2060,6 +2060,191 @@
           "If making it homemade, blend traditional hummus with a piece of cooked beetroot to give it sweetness and an incredible color.",
           "Serve with fresh vegetable sticks and the eggs."
         ]
+      },
+      "w4_l1": {
+        "name": "Textured Soy Bolognese",
+        "ingredients": [
+          "60g textured soy",
+          "200ml natural tomato",
+          "Onion and oregano",
+          "70g whole wheat pasta"
+        ],
+        "steps": [
+          "Hydrate the soy in hot water for 10 min and drain.",
+          "Sauté the onion, add the soy and tomato.",
+          "Cook for 15 min and serve over whole wheat pasta."
+        ]
+      },
+      "w4_d1": {
+        "name": "Scrambled Eggs with Green Beans and Garlic",
+        "ingredients": [
+          "2 eggs",
+          "150g green beans",
+          "Garlic",
+          "1 slice of whole wheat bread"
+        ],
+        "steps": [
+          "Sauté the previously boiled green beans with garlic.",
+          "Add the beaten eggs and scramble over low heat.",
+          "Serve with bread."
+        ]
+      },
+      "w4_l2": {
+        "name": "Red Bean Stew",
+        "ingredients": [
+          "200g cooked red beans",
+          "Onion and paprika",
+          "Vegetable broth"
+        ],
+        "steps": [
+          "Sauté the onion with paprika.",
+          "Add the well-washed beans and broth.",
+          "Simmer for 10 minutes."
+        ]
+      },
+      "w4_d2": {
+        "name": "Crunchy Grilled Tempeh",
+        "ingredients": [
+          "120g Tempeh",
+          "Low sodium soy and ginger",
+          "Lamb's lettuce and radishes"
+        ],
+        "steps": [
+          "Marinate the sliced tempeh in soy and ginger.",
+          "Grill until golden and crunchy.",
+          "Serve with fresh salad."
+        ]
+      },
+      "w4_l3": {
+        "name": "Chickpea and Feta Salad",
+        "ingredients": [
+          "150g cooked chickpeas",
+          "30g feta cheese",
+          "Cucumber and olives"
+        ],
+        "steps": [
+          "Wash the chickpeas well.",
+          "Chop the cucumber and crumble the feta cheese.",
+          "Mix everything in a bowl and dress to taste."
+        ]
+      },
+      "w4_d3": {
+        "name": "Wild Mushroom Cream",
+        "ingredients": [
+          "300g mushrooms",
+          "1 leek and 1 small potato (80g)",
+          "1 hard-boiled egg"
+        ],
+        "steps": [
+          "Sauté the leek and mushrooms.",
+          "Add the potato, cover with water, boil for 20 min and blend.",
+          "Serve with chopped hard-boiled egg to ensure protein."
+        ]
+      },
+      "w4_l4": {
+        "name": "Smoked Tofu and Broccoli Wok",
+        "ingredients": [
+          "120g smoked tofu",
+          "Red pepper and broccoli",
+          "Bean sprouts"
+        ],
+        "steps": [
+          "Dice the tofu and brown in the wok.",
+          "Add the broccoli (lightly cooked) and pepper strips.",
+          "Sauté over high heat with the bean sprouts."
+        ]
+      },
+      "w4_d4": {
+        "name": "Quinoa Stuffed Peppers",
+        "ingredients": [
+          "2 roasting peppers",
+          "50g cooked quinoa",
+          "Roasted vegetables and 5ml EVOO"
+        ],
+        "steps": [
+          "Empty the peppers and roast for 10 min.",
+          "Fill with the quinoa and vegetable mixture.",
+          "Bake for another 15 minutes."
+        ]
+      },
+      "w4_l5": {
+        "name": "Potato and Artichoke Stew",
+        "ingredients": [
+          "150g potato",
+          "4 artichokes",
+          "Peas and vegetable broth"
+        ],
+        "steps": [
+          "Clean the artichokes and chop the potato.",
+          "Sauté lightly, cover with broth and add the peas.",
+          "Cook over medium heat until the potato is tender."
+        ]
+      },
+      "w4_d5": {
+        "name": "Wild Asparagus Omelet",
+        "ingredients": [
+          "2 eggs",
+          "1 bunch of wild asparagus",
+          "50g avocado"
+        ],
+        "steps": [
+          "Sauté the chopped asparagus.",
+          "Beat the eggs, mix them and cook the omelet.",
+          "Serve with sliced avocado on the side."
+        ]
+      },
+      "w4_l6": {
+        "name": "Mushroom and Vegetable Paella",
+        "ingredients": [
+          "70g brown rice",
+          "Boletus or mixed mushrooms",
+          "Flat beans and saffron"
+        ],
+        "steps": [
+          "Sauté the mushrooms and beans.",
+          "Add the brown rice, saffron and hot vegetable broth.",
+          "Cook over medium heat for about 35-40 minutes."
+        ]
+      },
+      "w4_d6": {
+        "name": "Eggplant and Cheese Burger",
+        "ingredients": [
+          "1 roasted eggplant",
+          "Light cheese slice",
+          "Green salad"
+        ],
+        "steps": [
+          "Use thick slices of roasted eggplant as if they were the burger meat.",
+          "Melt the cheese between two slices.",
+          "Serve with salad."
+        ]
+      },
+      "w4_l7": {
+        "name": "Lettuce and Lentil Tacos",
+        "ingredients": [
+          "Large lettuce leaves",
+          "150g cooked lentils",
+          "Cumin, lemon and pico de gallo (tomato/onion)"
+        ],
+        "steps": [
+          "Sauté the lentils with cumin.",
+          "Use the lettuce leaf as a tortilla and fill it with lentils and pico de gallo.",
+          "Add a few drops of lemon."
+        ]
+      },
+      "w4_d7": {
+        "name": "Closing Vegetarian Board",
+        "ingredients": [
+          "Hummus",
+          "2 hard-boiled eggs",
+          "Vegetable crudités",
+          "10g parmesan"
+        ],
+        "steps": [
+          "Assemble the board with hummus in the center.",
+          "Serve with raw vegetables, eggs and parmesan flakes.",
+          "Enjoy the last supper of the plan."
+        ]
       }
     }
   },
@@ -2988,7 +3173,8 @@
         "dinner": "Closing Vegetarian Board: Hummus, 2 hard-boiled eggs, crudités and 10g parmesan."
       },
       "title": "Vegetarian Plan · 28 Days",
-      "subtitle": "Balanced menu without meat or fish"
+      "subtitle": "Balanced menu without meat or fish",
+      "milestone_w4": "Ulises, you have completed 28 days of precision nutrition. Your body is cleaner and your energy more stable. It's time to add movement."
     },
     "vegetarian_label": "Vegetarian"
   }

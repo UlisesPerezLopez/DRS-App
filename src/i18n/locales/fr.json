@@ -2060,6 +2060,191 @@
           "Si fait maison, mixer le houmous traditionnel avec un morceau de betterave cuite pour lui donner de la douceur et une couleur incroyable.",
           "Accompagner de bâtonnets de légumes frais et des œufs."
         ]
+      },
+      "w4_l1": {
+        "name": "Bolognaise de Soja Texturé",
+        "ingredients": [
+          "60g de soja texturé",
+          "200ml de tomate nature",
+          "Oignon et origan",
+          "70g de pâtes complètes"
+        ],
+        "steps": [
+          "Hydrater le soja dans l'eau chaude pendant 10 min et égoutter.",
+          "Faire revenir l'oignon, ajouter le soja et la tomate.",
+          "Cuire 15 min et servir sur les pâtes complètes."
+        ]
+      },
+      "w4_d1": {
+        "name": "Œufs Brouillés aux Haricots Verts et Ail",
+        "ingredients": [
+          "2 œufs",
+          "150g de haricots verts",
+          "Ail",
+          "1 tranche de pain complet"
+        ],
+        "steps": [
+          "Faire sauter les haricots verts préalablement bouillis avec l'ail.",
+          "Ajouter les œufs battus et brouiller à feu doux.",
+          "Accompagner avec le pain."
+        ]
+      },
+      "w4_l2": {
+        "name": "Ragoût de Haricots Rouges",
+        "ingredients": [
+          "200g de haricots rouges cuits",
+          "Oignon et paprika",
+          "Bouillon de légumes"
+        ],
+        "steps": [
+          "Faire revenir l'oignon avec le paprika.",
+          "Ajouter les haricots bien lavés et le bouillon.",
+          "Laisser mijoter 10 minutes."
+        ]
+      },
+      "w4_d2": {
+        "name": "Tempeh Grillé Croustillant",
+        "ingredients": [
+          "120g de Tempeh",
+          "Soja pauvre en sel et gingembre",
+          "Mâche et radis"
+        ],
+        "steps": [
+          "Faire mariner le tempeh en tranches dans le soja et le gingembre.",
+          "Le griller jusqu'à ce qu'il soit doré et croustillant.",
+          "Servir avec la salade fraîche."
+        ]
+      },
+      "w4_l3": {
+        "name": "Salade de Pois Chiches et Feta",
+        "ingredients": [
+          "150g de pois chiches cuits",
+          "30g de feta",
+          "Concombre et olives"
+        ],
+        "steps": [
+          "Bien laver les pois chiches.",
+          "Couper le concombre et émietter la feta.",
+          "Mélanger le tout dans un bol et assaisonner selon le goût."
+        ]
+      },
+      "w4_d3": {
+        "name": "Crème de Champignons Sauvages",
+        "ingredients": [
+          "300g de champignons",
+          "1 poireau et 1 petite pomme de terre (80g)",
+          "1 œuf dur"
+        ],
+        "steps": [
+          "Faire revenir le poireau et les champignons.",
+          "Ajouter la pomme de terre, couvrir d'eau, bouillir 20 min et mixer.",
+          "Servir avec l'œuf dur haché pour assurer les protéines."
+        ]
+      },
+      "w4_l4": {
+        "name": "Wok de Tofu Fumé et Brocoli",
+        "ingredients": [
+          "120g de tofu fumé",
+          "Poivron rouge et brocoli",
+          "Pousses de soja"
+        ],
+        "steps": [
+          "Couper le tofu en dés et dorer dans le wok.",
+          "Ajouter le brocoli (légèrement cuit) et le poivron en lanières.",
+          "Sauter à feu vif avec les pousses de soja."
+        ]
+      },
+      "w4_d4": {
+        "name": "Poivrons Farcis au Quinoa",
+        "ingredients": [
+          "2 poivrons à rôtir",
+          "50g de quinoa cuit",
+          "Légumes rôtis et 5ml d'huile d'olive"
+        ],
+        "steps": [
+          "Vider les poivrons et les rôtir 10 min.",
+          "Farcir avec le mélange de quinoa et légumes.",
+          "Cuire au four encore 15 minutes."
+        ]
+      },
+      "w4_l5": {
+        "name": "Ragoût de Pommes de Terre et Artichauts",
+        "ingredients": [
+          "150g de pomme de terre",
+          "4 artichauts",
+          "Petits pois et bouillon de légumes"
+        ],
+        "steps": [
+          "Nettoyer les artichauts et couper la pomme de terre.",
+          "Faire revenir légèrement, couvrir de bouillon et ajouter les petits pois.",
+          "Cuire à feu moyen jusqu'à ce que la pomme de terre soit tendre."
+        ]
+      },
+      "w4_d5": {
+        "name": "Omelette aux Asperges Sauvages",
+        "ingredients": [
+          "2 œufs",
+          "1 botte d'asperges sauvages",
+          "50g d'avocat"
+        ],
+        "steps": [
+          "Faire sauter les asperges coupées.",
+          "Battre les œufs, les mélanger et cuire l'omelette.",
+          "Servir avec l'avocat en lamelles sur le côté."
+        ]
+      },
+      "w4_l6": {
+        "name": "Paella aux Champignons et Légumes",
+        "ingredients": [
+          "70g de riz complet",
+          "Cèpes ou champignons variés",
+          "Haricots plats et safran"
+        ],
+        "steps": [
+          "Faire revenir les champignons et les haricots.",
+          "Ajouter le riz complet, le safran et le bouillon de légumes chaud.",
+          "Cuire à feu moyen environ 35-40 minutes."
+        ]
+      },
+      "w4_d6": {
+        "name": "Burger d'Aubergine et Fromage",
+        "ingredients": [
+          "1 aubergine rôtie",
+          "Tranche de fromage allégé",
+          "Salade verte"
+        ],
+        "steps": [
+          "Utiliser des tranches épaisses d'aubergine rôtie comme viande de burger.",
+          "Faire fondre le fromage entre deux tranches.",
+          "Accompagner de salade."
+        ]
+      },
+      "w4_l7": {
+        "name": "Tacos de Laitue et Lentilles",
+        "ingredients": [
+          "Grandes feuilles de laitue",
+          "150g de lentilles cuites",
+          "Cumin, citron et pico de gallo (tomate/oignon)"
+        ],
+        "steps": [
+          "Faire sauter les lentilles avec du cumin.",
+          "Utiliser la feuille de laitue comme tortilla et la remplir avec les lentilles et le pico de gallo.",
+          "Ajouter quelques gouttes de citron."
+        ]
+      },
+      "w4_d7": {
+        "name": "Planche Végétarienne de Clôture",
+        "ingredients": [
+          "Houmous",
+          "2 œufs durs",
+          "Crudités de légumes",
+          "10g de parmesan"
+        ],
+        "steps": [
+          "Monter la planche avec le houmous au centre.",
+          "Accompagner avec les légumes crus, les œufs et des copeaux de parmesan.",
+          "Profiter du dernier repas du plan."
+        ]
       }
     }
   },
@@ -2988,7 +3173,8 @@
         "dinner": "Planche végétarienne de clôture : Houmous, 2 œufs durs, crudités et 10g de parmesan."
       },
       "title": "Plan Végétarien · 28 Jours",
-      "subtitle": "Menu équilibré sans viande ni poisson"
+      "subtitle": "Menu équilibré sans viande ni poisson",
+      "milestone_w4": "Ulises, tu as terminé 28 jours de nutrition de précision. Ton corps est plus propre et ton énergie plus stable. Il est temps d'ajouter du mouvement."
     },
     "vegetarian_label": "Végétarienne"
   }

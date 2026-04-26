@@ -302,7 +302,22 @@ export const RECIPES: Recipe[] = [
   { id: 'rec_veg_w3_l6', translationKey: 'recipes.veg.w3_l6', prepTime: 35, calories: 650, protein: 30, carbs: 75, fat: 20, mealTags: ['lunch'] },
   { id: 'rec_veg_w3_d6', translationKey: 'recipes.veg.w3_d6', prepTime: 15, calories: 450, protein: 22, carbs: 35, fat: 24, mealTags: ['dinner'] },
   { id: 'rec_veg_w3_l7', translationKey: 'recipes.veg.w3_l7', prepTime: 15, calories: 650, protein: 24, carbs: 80, fat: 24, mealTags: ['lunch'] },
-  { id: 'rec_veg_w3_d7', translationKey: 'recipes.veg.w3_d7', prepTime: 10, calories: 450, protein: 20, carbs: 35, fat: 22, mealTags: ['dinner'] }
+  { id: 'rec_veg_w3_d7', translationKey: 'recipes.veg.w3_d7', prepTime: 10, calories: 450, protein: 20, carbs: 35, fat: 22, mealTags: ['dinner'] },
+  // SEMANA 4 - DIETA VEGETARIANA
+  { id: 'rec_veg_w4_l1', translationKey: 'recipes.veg.w4_l1', prepTime: 25, calories: 650, protein: 35, carbs: 75, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d1', translationKey: 'recipes.veg.w4_d1', prepTime: 15, calories: 450, protein: 22, carbs: 35, fat: 24, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l2', translationKey: 'recipes.veg.w4_l2', prepTime: 20, calories: 650, protein: 25, carbs: 85, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d2', translationKey: 'recipes.veg.w4_d2', prepTime: 15, calories: 450, protein: 24, carbs: 20, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l3', translationKey: 'recipes.veg.w4_l3', prepTime: 15, calories: 650, protein: 24, carbs: 70, fat: 26, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d3', translationKey: 'recipes.veg.w4_d3', prepTime: 30, calories: 450, protein: 20, carbs: 45, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l4', translationKey: 'recipes.veg.w4_l4', prepTime: 20, calories: 650, protein: 28, carbs: 65, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d4', translationKey: 'recipes.veg.w4_d4', prepTime: 35, calories: 450, protein: 18, carbs: 55, fat: 18, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l5', translationKey: 'recipes.veg.w4_l5', prepTime: 35, calories: 650, protein: 20, carbs: 85, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d5', translationKey: 'recipes.veg.w4_d5', prepTime: 15, calories: 450, protein: 20, carbs: 25, fat: 30, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l6', translationKey: 'recipes.veg.w4_l6', prepTime: 45, calories: 650, protein: 22, carbs: 90, fat: 18, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d6', translationKey: 'recipes.veg.w4_d6', prepTime: 15, calories: 450, protein: 20, carbs: 30, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_veg_w4_l7', translationKey: 'recipes.veg.w4_l7', prepTime: 15, calories: 650, protein: 26, carbs: 75, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_veg_w4_d7', translationKey: 'recipes.veg.w4_d7', prepTime: 10, calories: 450, protein: 24, carbs: 25, fat: 28, mealTags: ['dinner'] }
 ];
 
 import type { DailyMenuPlan } from "../types";
