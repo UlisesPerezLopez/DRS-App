@@ -73,14 +73,14 @@ export function generateDailyMenu(targetCalories: number, dietPreference: string
 
     // Almuerzo o Cena -> priorizar receta
     if ((slot === "Almuerzo" || slot === "Cena") && allowedRecipes.length > 0) {
-      const bestFits = allowedRecipes.filter(r => r.kcal <= targetKcal + 100);
+      const bestFits = allowedRecipes.filter(r => (r.calories || r.kcal || 0) <= targetKcal + 100);
       const candidates = bestFits.length > 0 ? bestFits : allowedRecipes;
       const r = getRandom(candidates);
       items.push({
-        translationKey: r.translationKey, name: r.translationKey, calories: r.kcal, grams: 100,
+        translationKey: r.translationKey, name: r.translationKey, calories: r.calories || r.kcal || 0, grams: 100,
         protein: r.protein, carbs: r.carbs, fat: r.fat, fiber: 0, ig: null, sodiumLevel: null,
       });
-      currentKcal += r.kcal;
+      currentKcal += r.calories || r.kcal || 0;
     }
 
     // Rellenar con alimentos filtrados por tag (ración inteligente)
