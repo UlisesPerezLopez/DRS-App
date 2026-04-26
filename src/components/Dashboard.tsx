@@ -1,21 +1,27 @@
-import { Flame, Target, TrendingDown, AlertTriangle, Activity, Sparkles, ChevronDown, Dumbbell, Droplets, Plus, Minus } from "lucide-react";
-import { dailyTarget, dailyWaterTarget, tdee, todayISO } from "../lib/calc";
+import { 
+  Flame, 
+  Activity, 
+  Sparkles, 
+  Dumbbell, 
+  Droplets, 
+  Utensils, 
+  ChevronRight,
+  TrendingDown
+} from "lucide-react";
+import { dailyTarget, dailyWaterTarget, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
 import { getSmartAdvice } from "../lib/advisor";
 import { useTranslation } from "react-i18next";
-
-function formatTime(sec: number) {
-  const m = Math.floor(sec / 60);
-  const s = sec % 60;
-  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-}
+import { useWorkoutStore } from "../store/workoutStore";
+import { generateDailyMenu } from "../lib/dietEngine";
 
 export function Dashboard() {
   const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const { profile, foods, workouts, waterLogs } = account;
-  const logWater = useAppStore(s => s.logWater);
+
+  const { userGoal, currentMonth, selectedTrack, getCurrentWorkouts } = useWorkoutStore();
 
   const today = todayISO();
   const todayFoods = foods.filter((f) => f.date === today);
@@ -23,7 +29,6 @@ export function Dashboard() {
   const target = dailyTarget(profile);
   const remaining = target - consumed;
   const over = consumed > target;
-  const tdeeVal = Math.round(tdee(profile));
 
   const todayWorkouts = workouts.filter((w) => w.date === today);
   const workoutMin = Math.round(todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60);
@@ -32,17 +37,6 @@ export function Dashboard() {
   const waterConsumed = (waterLogs || {})[today] || 0;
   const waterTarget = dailyWaterTarget(profile, workoutMin);
   const waterPercent = Math.min(100, Math.round((waterConsumed / waterTarget) * 100));
-  const waterGlasses = Math.floor(waterConsumed / 250);
-
-  // Group by meal slot
-  const byMeal = ["Desayuno", "Media Mañana", "Almuerzo", "Merienda", "Cena"].map((m) => {
-    // Generate meal key dynamically (desayuno, mediaManana...)
-    const mealKey = m === "Media Mañana" ? "mediaManana" : m.toLowerCase();
-    return {
-      name: t(`meals.${mealKey}`),
-      kcal: todayFoods.filter((f) => f.meal === m).reduce((s, f) => s + f.calories, 0),
-    };
-  });
 
   const greeting = (() => {
     const h = new Date().getHours();
@@ -53,191 +47,164 @@ export function Dashboard() {
 
   const advice = getSmartAdvice(foods, target);
 
-  const isGoalMet = !over && workoutMin >= 20;
-  const goodEmojis = ["🎯💪", "🚀🔥", "🏆✨"];
-  const badEmojis = ["🌱⏳", "🛠️🔋", "💡👣"];
-  const stableIndex = today.split('-').reduce((a, b) => a + parseInt(b), 0) % 3;
-  const feedbackEmoji = isGoalMet ? goodEmojis[stableIndex] : badEmojis[stableIndex];
-  const totalCaloriesSport = todayWorkouts.reduce((s, w) => s + (w.caloriesBurned || 0), 0);
+  // Nutrition Logic
+  const dailyMenu = generateDailyMenu(target, profile.dietPreference || "mediterranea", profile.goal);
+  const suggestion = dailyMenu[0].items[0]; // Desayuno sugerido
+
+  // Workout Logic
+  const activeRoutines = getCurrentWorkouts();
+  const mainRoutine = activeRoutines[0];
+
+  // Motivation Messages
+  const getMotivation = () => {
+    if (userGoal === 'lose') return "¡Cada caloría cuenta! Mantén el déficit y verás resultados.";
+    if (userGoal === 'gain') return "¡Carga pesado y come bien! El músculo se construye con constancia.";
+    return "¡Equilibrio es la clave! Sigue así para mantener tu mejor versión.";
+  };
 
   return (
-    <div className="px-4 pt-4 pb-28 space-y-4">
-      <header>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{greeting},</p>
+    <div className="px-4 pt-4 pb-28 space-y-6">
+      <header className="space-y-1">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">{profile.name || t("dashboard.welcome")} 👋</h1>
-          <span className="text-2xl tracking-widest">{feedbackEmoji}</span>
+          <div>
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{greeting},</p>
+            <h1 className="text-3xl font-black tracking-tighter text-slate-900 dark:text-white">
+              {profile.name || t("dashboard.welcome")} 👋
+            </h1>
+          </div>
+          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 flex items-center justify-center text-2xl shadow-sm">
+            🎯
+          </div>
         </div>
+        <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400 italic">
+          "{getMotivation()}"
+        </p>
       </header>
 
-      {/* Advisor Engine Card */}
-      <div className="rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-900/50 p-4 flex gap-3 shadow-sm">
-        <Sparkles className="text-indigo-500 shrink-0 mt-0.5" size={20} />
-        <div>
-          <h3 className="font-semibold text-indigo-900 dark:text-indigo-300 text-sm mb-1">
-            {t("dashboard.advisorTitle")}
-          </h3>
-          <p className="text-sm text-indigo-800/80 dark:text-indigo-300/80 leading-snug">
-            {advice}
-          </p>
-        </div>
-      </div>
-
-      {over && (
-        <div className="flex items-start gap-3 p-3 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800">
-          <AlertTriangle className="text-rose-600 shrink-0 mt-0.5" size={20} />
-          <div className="text-sm">
-            <p className="font-semibold text-rose-700 dark:text-rose-300">
-              {t("dashboard.overTarget")}
-            </p>
-            <p className="text-rose-600/80 dark:text-rose-300/80">
-              {t("dashboard.overKcal", { amount: consumed - target })}
-            </p>
+      {/* Summary Cards Grid */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Nutrition Summary Card */}
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-5 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+          <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
+            <Utensils size={80} className="text-emerald-500" />
+          </div>
+          <div className="relative z-10 space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                <Utensils size={16} />
+              </div>
+              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">Nutrición Hoy</h2>
+            </div>
+            <div>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{profile.dietPreference || "Mediterránea"}</p>
+              <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
+                Sugerencia: {suggestion ? (suggestion.translationKey ? t(`food.${suggestion.translationKey}`) : suggestion.name) : "Cargando..."}
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">{suggestion ? `Aprox. ${suggestion.calories} kcal` : "Consulta tu plan"}</p>
+            </div>
+            <button className="flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:gap-2 transition-all">
+              Ver plan completo <ChevronRight size={14} />
+            </button>
           </div>
         </div>
-      )}
 
-      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5">
-        <div className="flex items-center justify-between mb-3">
+        {/* Workout Summary Card */}
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-5 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+          <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
+            <Dumbbell size={80} className="text-indigo-500" />
+          </div>
+          <div className="relative z-10 space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                <Activity size={16} />
+              </div>
+              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">Entrenamiento Hoy</h2>
+            </div>
+            <div>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                Track {selectedTrack} · Nivel {Math.ceil(currentMonth / 2)}
+              </p>
+              <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
+                {mainRoutine ? t(mainRoutine.translationKey) : "Descanso"}
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                {mainRoutine ? `${mainRoutine.exercises.length} ejercicios · ${userGoal}` : "Recuperación activa"}
+              </p>
+            </div>
+            <button className="flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:gap-2 transition-all">
+              Ir a la rutina <ChevronRight size={14} />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Calories Progress Card */}
+      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-6 space-y-4">
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Flame className="text-emerald-500" size={20} />
-            <h2 className="font-semibold">{t("dashboard.today")}</h2>
+            <Flame className="text-orange-500" size={20} />
+            <h2 className="font-bold text-slate-800 dark:text-white tracking-tight">Presupuesto Calórico</h2>
           </div>
-          <span className="text-xs text-slate-500">{today}</span>
+          <span className="text-[10px] font-black bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-lg text-slate-500 uppercase tracking-widest">{today}</span>
         </div>
-        <div className="flex items-end justify-between mb-3">
+        
+        <div className="flex items-end justify-between">
           <div>
-            <p className="text-4xl font-bold tabular-nums">
-              {consumed}
-              <span className="text-base font-medium text-slate-500"> / {target} {t("common.kcal")}</span>
-            </p>
-            <p className={`text-sm mt-1 ${over ? "text-rose-500" : "text-emerald-600 dark:text-emerald-400"}`}>
+            <div className="flex items-baseline gap-1">
+              <span className="text-5xl font-black tracking-tighter tabular-nums">{consumed}</span>
+              <span className="text-lg font-bold text-slate-400 tracking-tight">/ {target}</span>
+              <span className="text-xs font-bold text-slate-400 uppercase ml-1">kcal</span>
+            </div>
+            <p className={`text-xs font-bold mt-2 uppercase tracking-wide ${over ? "text-rose-500" : "text-emerald-500"}`}>
               {over ? t("dashboard.kcalExceed", { amount: consumed - target }) : t("dashboard.kcalRemain", { amount: remaining })}
             </p>
           </div>
         </div>
+        
         <ProgressBar value={consumed} max={target} over={over} />
       </section>
 
-      {/* Water Tracker Card */}
-      <section className="rounded-3xl bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 border border-sky-200 dark:border-sky-800/50 p-5 shadow-sm">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Droplets className="text-sky-500" size={20} />
-            <h2 className="font-semibold text-sky-900 dark:text-sky-300">{t("water.title")}</h2>
+      {/* Quick Metrics Grid */}
+      <section className="grid grid-cols-2 gap-4">
+        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-7 h-7 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500">
+              <Droplets size={14} />
+            </div>
+            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hidratación</span>
           </div>
-          <span className="text-xs text-sky-600 dark:text-sky-400 font-medium">
-            {t("water.target", { target: waterTarget })}
-          </span>
-        </div>
-        <div className="flex items-end justify-between mb-3">
-          <div>
-            <p className="text-3xl font-bold tabular-nums text-sky-700 dark:text-sky-300">
-              {waterConsumed}
-              <span className="text-sm font-medium text-sky-500"> / {waterTarget} ml</span>
-            </p>
-            <p className="text-xs text-sky-600/70 dark:text-sky-400/70 mt-0.5">
-              {waterGlasses} {t("water.glasses")} · {waterPercent}%
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <button
-              onClick={() => logWater(-250)}
-              disabled={waterConsumed <= 0}
-              className="w-10 h-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-sky-200 dark:border-sky-700 text-sky-600 dark:text-sky-400 active:scale-95 transition disabled:opacity-30 shadow-sm"
-              aria-label={t("water.remove_glass")}
-            >
-              <Minus size={18} />
-            </button>
-            <button
-              onClick={() => logWater(250)}
-              className="w-10 h-10 flex items-center justify-center rounded-xl bg-sky-500 text-white active:bg-sky-600 active:scale-95 transition shadow-sm"
-              aria-label={t("water.add_glass")}
-            >
-              <Plus size={18} />
-            </button>
+          <p className="text-xl font-black tabular-nums">{waterConsumed}<span className="text-xs text-slate-400 ml-1">ml</span></p>
+          <div className="mt-2 h-1 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+            <div className="h-full bg-sky-500" style={{ width: `${waterPercent}%` }} />
           </div>
         </div>
-        {/* Water progress bar */}
-        <div className="h-3 bg-sky-100 dark:bg-sky-900/50 rounded-full overflow-hidden">
-          <div
-            className="h-full rounded-full transition-all duration-500 ease-out"
-            style={{
-              width: `${waterPercent}%`,
-              background: waterPercent >= 100
-                ? 'linear-gradient(90deg, #0ea5e9, #22d3ee)'
-                : 'linear-gradient(90deg, #38bdf8, #0ea5e9)',
-            }}
-          />
+
+        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-7 h-7 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-500">
+              <TrendingDown size={14} />
+            </div>
+            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Peso Actual</span>
+          </div>
+          <p className="text-xl font-black tabular-nums">{profile.weightKg}<span className="text-xs text-slate-400 ml-1">kg</span></p>
+          <p className="text-[10px] text-emerald-500 font-bold mt-1">Meta: {profile.targetWeightKg}kg</p>
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-3">
-        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
-          <Target className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">TDEE</p>
-          <p className="text-xl font-bold tabular-nums">{tdeeVal}<span className="text-xs font-medium"> {t("common.kcal")}</span></p>
+      {/* Advisor Engine Card */}
+      <div className="group rounded-[2rem] bg-gradient-to-br from-indigo-500 to-purple-600 p-6 text-white shadow-xl shadow-indigo-200/50 dark:shadow-none space-y-3 relative overflow-hidden text-left">
+        <div className="absolute -right-4 -top-4 opacity-10 group-hover:scale-110 transition-transform">
+          <Sparkles size={120} />
         </div>
-        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
-          <TrendingDown className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">{t("dashboard.currentWeight")}</p>
-          <p className="text-xl font-bold tabular-nums">{profile.weightKg}<span className="text-xs font-medium"> kg</span></p>
+        <div className="flex items-center gap-2 relative z-10">
+          <Sparkles className="text-indigo-200" size={18} />
+          <h3 className="font-black text-xs uppercase tracking-[0.2em]">Asistente IA</h3>
         </div>
-        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
-          <Activity className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">{t("dashboard.workoutToday")}</p>
-          <div className="flex items-baseline gap-1 mt-0.5">
-            <p className="text-xl font-bold tabular-nums">{workoutMin}<span className="text-xs font-medium">{t("common.minutes")}</span></p>
-            <span className="text-xs text-slate-300 dark:text-slate-600">|</span>
-            <p className="text-sm font-bold tabular-nums text-orange-500">{totalCaloriesSport}<span className="text-xs">{t("common.kcal")}</span></p>
-          </div>
-        </div>
-        <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
-          <Target className="text-emerald-500 mb-2" size={18} />
-          <p className="text-xs text-slate-500">{t("profile.goal")}</p>
-          <p className="text-xl font-bold tabular-nums">{profile.targetWeightKg}<span className="text-xs font-medium"> kg</span></p>
-        </div>
-      </section>
+        <p className="text-sm font-medium leading-relaxed relative z-10 text-indigo-50">
+          {advice}
+        </p>
+      </div>
 
-      {/* Accordion de deporte de hoy */}
-      <details className="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-sm mt-3">
-        <summary className="flex items-center justify-between p-5 font-semibold cursor-pointer select-none">
-          <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
-            <Dumbbell size={20} />
-            <span>{t("dashboard.viewSessions")}</span>
-          </div>
-          <ChevronDown size={20} className="text-slate-400 transition group-open:rotate-180" />
-        </summary>
-        <div className="p-5 pt-0 border-t border-slate-100 dark:border-slate-800">
-          {todayWorkouts.length === 0 ? (
-            <p className="text-sm text-slate-500 mt-3">{t("dashboard.noSessions")}</p>
-          ) : (
-            <ul className="space-y-3 mb-4 mt-3">
-              {todayWorkouts.map((s) => (
-                <li key={s.id} className="flex flex-col text-sm">
-                  <div className="flex justify-between font-medium">
-                    <span>{t(`exerciseDb.${s.exercise}`, { defaultValue: s.exercise })}</span>
-                    <span className="text-orange-500">{s.caloriesBurned || 0} {t("common.kcal")}</span>
-                  </div>
-                  <span className="text-slate-500 text-xs">{formatTime(s.durationSec)}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </details>
-
-      <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
-        <h3 className="font-semibold mb-3">{t("dashboard.mealDist")}</h3>
-        <ul className="space-y-2.5">
-          {byMeal.map((m) => (
-             <li key={m.name} className="flex items-center justify-between text-sm">
-               <span className="text-slate-600 dark:text-slate-300">{m.name}</span>
-               <span className="font-semibold tabular-nums">{m.kcal} {t("common.kcal")}</span>
-             </li>
-          ))}
-        </ul>
-      </section>
     </div>
   );
 }

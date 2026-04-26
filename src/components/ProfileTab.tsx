@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine } from "recharts";
-import { Save, Plus, Calculator, User, Users, Trash2, Globe } from "lucide-react";
+import { Save, Plus, Calculator, User, Users, Trash2, Globe, Settings, UtensilsCrossed, Zap, Calendar, Dumbbell } from "lucide-react";
 import type { ActivityLevel, Profile } from "../types";
 import { ACTIVITY_LABEL, bmr, dailyTarget, tdee, todayISO } from "../lib/calc";
 import { useAppStore } from "../store/useAppStore";
 import { useTranslation } from "react-i18next";
+import { useWorkoutStore } from "../store/workoutStore";
 
 export function ProfileTab() {
   const { t, i18n } = useTranslation();
@@ -19,6 +20,11 @@ export function ProfileTab() {
   const switchAccount = useAppStore(s => s.switchAccount);
   const createAccount = useAppStore(s => s.createAccount);
   const deleteAccount = useAppStore(s => s.deleteAccount);
+
+  const { 
+    userGoal, currentMonth, selectedTrack, 
+    setGoal: setWorkoutGoal, setMonth: setWorkoutMonth, setTrack: setWorkoutTrack 
+  } = useWorkoutStore();
 
   const [draft, setDraft] = useState<Profile>(profile);
   const [newWeight, setNewWeight] = useState("");
@@ -63,7 +69,79 @@ export function ProfileTab() {
           {t("profile.subtitle")}
         </p>
       </header>
-      
+
+      {/* Plan Configuration */}
+      <section className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-md space-y-5">
+        <div className="flex items-center gap-2 mb-1">
+          <Settings size={18} className="text-indigo-500" />
+          <h2 className="font-bold text-slate-800 dark:text-white">Configuración del Plan</h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4">
+          <Field label="Dieta Activa">
+            <div className="relative">
+              <UtensilsCrossed className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
+              <select
+                value={draft.dietPreference}
+                onChange={(e) => setDraft({ ...draft, dietPreference: e.target.value as any })}
+                className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+              >
+                <option value="mediterranea">Dieta Mediterránea</option>
+                <option value="low-carb">Dieta Low-Carb</option>
+                <option value="vegetariana">Dieta Vegetariana</option>
+              </select>
+            </div>
+          </Field>
+
+          <Field label="Track de Entrenamiento">
+            <div className="flex p-1 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+              <button
+                onClick={() => setWorkoutTrack('A')}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === 'A' ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+              >
+                <Zap size={14} /> Zero Gravity
+              </button>
+              <button
+                onClick={() => setWorkoutTrack('B')}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === 'B' ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+              >
+                <Dumbbell size={14} /> Home Gym
+              </button>
+            </div>
+          </Field>
+
+          <div className="grid grid-cols-2 gap-3">
+            <Field label="Objetivo">
+              <select
+                value={userGoal}
+                onChange={(e) => {
+                  const val = e.target.value as any;
+                  setWorkoutGoal(val);
+                  setDraft({ ...draft, goal: val });
+                }}
+                className="w-full px-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+              >
+                <option value="lose">Perder Peso</option>
+                <option value="maintain">Mantener</option>
+                <option value="gain">Ganar Músculo</option>
+              </select>
+            </Field>
+            <Field label="Mes Actual">
+              <div className="relative">
+                <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
+                <select
+                  value={currentMonth}
+                  onChange={(e) => setWorkoutMonth(Number(e.target.value))}
+                  className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+                >
+                  {[1,2,3,4,5,6].map(m => <option key={m} value={m}>Mes {m}</option>)}
+                </select>
+              </div>
+            </Field>
+          </div>
+        </div>
+      </section>
+
       {/* App Preferences */}
       <section className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
         <div className="flex items-center gap-2 mb-1">
@@ -214,7 +292,10 @@ export function ProfileTab() {
             {(["lose", "maintain", "gain"] as const).map((g) => (
               <button
                 key={g}
-                onClick={() => setDraft({ ...draft, goal: g })}
+                onClick={() => {
+                  setDraft({ ...draft, goal: g });
+                  setWorkoutGoal(g);
+                }}
                 className={`py-2.5 rounded-xl text-sm font-medium border transition ${
                   draft.goal === g
                     ? "bg-emerald-500 border-emerald-500 text-white"
