@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause, RotateCcw, Check, Dumbbell, Bike, Activity } from "lucide-react";
+import { Play, Pause, RotateCcw, Check, Dumbbell, Bike, Activity, Settings2 } from "lucide-react";
 import { EXERCISES } from "../lib/data";
 import { todayISO } from "../lib/calc";
 import { useAppStore } from "../store/useAppStore";
 import { useTranslation } from "react-i18next";
 import type { WorkoutSession } from "../types";
+import { useWorkoutStore } from "../store/workoutStore";
 
 function formatTime(sec: number) {
   const m = Math.floor(sec / 60);
@@ -22,13 +23,25 @@ const DAILY_MINUTES_GOAL = 20;
 
 export function Workout() {
   const { t } = useTranslation();
+  
+  // Zustand Stores
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const workouts = account.workouts;
   const setWorkouts = useAppStore(s => s.setWorkouts);
+  
+  const { 
+    userGoal, currentMonth, selectedTrack, 
+    setGoal, setMonth, setTrack, getCurrentWorkouts 
+  } = useWorkoutStore();
+
+  const dynamicRoutines = getCurrentWorkouts();
+
+  // Local State
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [filterDifficulty, setFilterDifficulty] = useState<string | null>(null);
   const [seconds, setSeconds] = useState(0);
   const [running, setRunning] = useState(false);
+  const [showLifeTest, setShowLifeTest] = useState(true);
   const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -95,12 +108,96 @@ export function Workout() {
               {t("workout.subtitle")}
             </p>
           </div>
-          <div className="text-right">
-            <p className="text-sm text-slate-500 dark:text-slate-400">{t("workout.burnedToday")}</p>
-            <p className="text-xl font-bold text-orange-500 tabular-nums">{totalCalories} <span className="text-xs">{t("common.kcal")}</span></p>
+          <div className="flex items-center gap-2">
+            <button 
+              onClick={() => setShowLifeTest(!showLifeTest)}
+              className={`p-2 rounded-lg transition ${showLifeTest ? "bg-indigo-100 text-indigo-600" : "bg-slate-100 text-slate-500"}`}
+            >
+              <Settings2 size={20} />
+            </button>
+            <div className="text-right">
+              <p className="text-sm text-slate-500 dark:text-slate-400">{t("workout.burnedToday")}</p>
+              <p className="text-xl font-bold text-orange-500 tabular-nums">{totalCalories} <span className="text-xs">{t("common.kcal")}</span></p>
+            </div>
           </div>
         </div>
       </header>
+
+      {/* PRUEBA DE VIDA - MOTOR DE ENTRENAMIENTO */}
+      {showLifeTest && (
+        <section className="rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/50 p-5 space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="font-bold text-indigo-900 dark:text-indigo-300 flex items-center gap-2">
+              <Activity size={18} /> PRUEBA DE VIDA: Motor Dinámico
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-3 gap-2">
+            <div className="space-y-1">
+              <label className="text-[10px] uppercase font-bold text-indigo-500">Objetivo</label>
+              <select 
+                value={userGoal} 
+                onChange={(e) => setGoal(e.target.value as any)}
+                className="w-full text-xs p-1.5 rounded-lg bg-white dark:bg-slate-900 border-none"
+              >
+                <option value="lose">Perder</option>
+                <option value="maintain">Mantener</option>
+                <option value="gain">Ganar</option>
+              </select>
+            </div>
+            <div className="space-y-1">
+              <label className="text-[10px] uppercase font-bold text-indigo-500">Mes</label>
+              <select 
+                value={currentMonth} 
+                onChange={(e) => setMonth(Number(e.target.value))}
+                className="w-full text-xs p-1.5 rounded-lg bg-white dark:bg-slate-900 border-none"
+              >
+                {[1,2,3,4,5,6].map(m => <option key={m} value={m}>Mes {m}</option>)}
+              </select>
+            </div>
+            <div className="space-y-1">
+              <label className="text-[10px] uppercase font-bold text-indigo-500">Track</label>
+              <div className="flex bg-white dark:bg-slate-900 rounded-lg p-0.5">
+                <button 
+                  onClick={() => setTrack('A')}
+                  className={`flex-1 text-[10px] py-1 rounded-md transition ${selectedTrack === 'A' ? "bg-indigo-500 text-white shadow-sm" : "text-slate-500"}`}
+                >A</button>
+                <button 
+                  onClick={() => setTrack('B')}
+                  className={`flex-1 text-[10px] py-1 rounded-md transition ${selectedTrack === 'B' ? "bg-indigo-500 text-white shadow-sm" : "text-slate-500"}`}
+                >B</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            {dynamicRoutines.map(routine => (
+              <div key={routine.id} className="bg-white dark:bg-slate-900 rounded-xl p-3 border border-indigo-100 dark:border-indigo-900/50">
+                <p className="text-xs font-bold text-indigo-600 mb-2 uppercase tracking-wider">
+                  {t(routine.translationKey)} (Nivel {routine.level})
+                </p>
+                <div className="space-y-1.5">
+                  {routine.exercises.map((ex, idx) => (
+                    <div key={idx} className="flex items-center justify-between text-[11px]">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">
+                        {t(`exercises.${ex.exerciseId}.name`)}
+                        {ex.supersetId && <span className="ml-1 text-[9px] text-orange-500 font-bold">({ex.supersetId})</span>}
+                      </span>
+                      <div className="flex items-center gap-2 text-slate-500">
+                        <span className="bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">{ex.baseSets}s</span>
+                        <span className="bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">
+                          {ex.targetValue}{ex.targetType === 'reps' ? 'r' : 's'}
+                        </span>
+                        <span className="text-slate-400">{ex.baseRestSecs}s rest</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Today summary & Progress bar */}
       <section className="rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5">
