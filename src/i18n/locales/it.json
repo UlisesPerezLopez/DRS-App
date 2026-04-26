@@ -281,6 +281,712 @@
           "Infornare per 12 min. Aggiungere pomodoro e mozzarella e gratinare per altri 5 min."
         ]
       }
+    },
+    "med": {
+      "w1_l1": {
+        "name": "Lenticchie in umido bio-efficienti",
+        "ingredients": [
+          "60g di lenticchie secche (o 200g cotte)",
+          "1 carota e 1/2 peperone verde",
+          "1/2 cipolla e 1 spicchio d'aglio",
+          "5ml olio EVO e alloro"
+        ],
+        "steps": [
+          "Trita le verdure molto finemente.",
+          "Soffriggi l'aglio e la cipolla con l'olio.",
+          "Aggiungi il resto delle verdure e le lenticchie.",
+          "Copri con acqua e cuoci per 40 min."
+        ]
+      },
+      "w1_d1": {
+        "name": "Orata al forno Omega-3",
+        "ingredients": [
+          "1 orata pulita (200g)",
+          "1 zucchina piccola",
+          "1/2 cipolla",
+          "10ml olio EVO e spezie a piacere"
+        ],
+        "steps": [
+          "Taglia la zucchina e la cipolla a fettine sottili formando un letto.",
+          "Posiziona il pesce sopra con due tagli trasversali.",
+          "Insaporisci usando spezie al posto del sale comune per proteggere la pressione.",
+          "Inforna a 180°C per 20 min."
+        ]
+      },
+      "w1_l2": {
+        "name": "Pollo al forno con patate",
+        "ingredients": [
+          "200g di petto o sovracoscia di pollo senza pelle",
+          "150g di patate",
+          "8 asparagi selvatici",
+          "Rosmarino e limone"
+        ],
+        "steps": [
+          "Taglia la patata a fette sottili.",
+          "Metti pollo, patate e asparagi su una teglia da forno.",
+          "Irrora con limone e rosmarino.",
+          "Inforna a 200°C per 25-30 min."
+        ]
+      },
+      "w1_d2": {
+        "name": "Insalata mista proteica",
+        "ingredients": [
+          "Valeriana o Rucola",
+          "1 scatoletta di tonno al naturale (sgocciolato)",
+          "1 uovo sodo",
+          "6 olive e pomodoro"
+        ],
+        "steps": [
+          "Fai bollire l'uovo per esattamente 9 minuti per evitare l'ossidazione.",
+          "Taglia il pomodoro ed estrai il tonno.",
+          "Mescola tutti gli ingredienti a freddo."
+        ]
+      },
+      "w1_l3": {
+        "name": "Ceci con spinaci",
+        "ingredients": [
+          "250g di ceci cotti (ben lavati)",
+          "100g di spinaci freschi",
+          "1 uovo sodo tritato",
+          "Paprika dolce"
+        ],
+        "steps": [
+          "Salta gli spinaci in padella con un po' d'acqua.",
+          "Aggiungi i ceci e la paprika.",
+          "Mescola per 5 min e aggiungi l'uovo tritato alla fine."
+        ]
+      },
+      "w1_d3": {
+        "name": "Frittata di funghi",
+        "ingredients": [
+          "2 uova",
+          "100g di funghi a fette",
+          "Aglio in polvere"
+        ],
+        "steps": [
+          "Salta i funghi fino a far rilasciare tutta l'acqua.",
+          "Sbatti le uova.",
+          "Cuoci la frittata a fuoco medio."
+        ]
+      },
+      "w1_l4": {
+        "name": "Riso integrale con tacchino",
+        "ingredients": [
+          "60g di riso integrale (crudo)",
+          "150g di tacchino a cubetti",
+          "Cimette di broccoli",
+          "5ml olio EVO"
+        ],
+        "steps": [
+          "Fai bollire il riso integrale (30-40 min).",
+          "Salta il tacchino con i broccoli in una padella.",
+          "Mescola tutto prima di servire."
+        ]
+      },
+      "w1_d4": {
+        "name": "Salmone con fagiolini",
+        "ingredients": [
+          "150g di salmone fresco",
+          "200g di fagiolini",
+          "Limone"
+        ],
+        "steps": [
+          "Cuoci i fagiolini al vapore per 8 minuti.",
+          "Griglia il salmone 3 min per lato, iniziando dalla pelle.",
+          "Spremi un po' di limone al momento di servire."
+        ]
+      },
+      "w1_l5": {
+        "name": "Pasta integrale al ragù di pollo",
+        "ingredients": [
+          "70g di pasta integrale",
+          "100g di pollo macinato",
+          "Passata di pomodoro naturale (senza zucchero)",
+          "Basilico"
+        ],
+        "steps": [
+          "Cuoci la pasta al dente per ridurre l'indice glicemico.",
+          "Prepara la salsa con carne e pomodoro in una padella antiaderente.",
+          "Mescola la pasta con la salsa e guarnisci con basilico."
+        ]
+      },
+      "w1_d5": {
+        "name": "Nasello al vapore con piselli",
+        "ingredients": [
+          "2 filetti di nasello",
+          "100g di piselli (congelati)",
+          "1 carotina",
+          "Aneto"
+        ],
+        "steps": [
+          "Metti nasello, piselli e carota a pezzetti in una vaporiera in silicone.",
+          "Aggiungi un pizzico di aneto.",
+          "Cuoci per 5-7 minuti al vapore (o microonde)."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella di verdure e maiale magro",
+        "ingredients": [
+          "70g di riso bomba",
+          "Fagiolini piatti e fagioli di Lima",
+          "80g di maiale magro senza grasso",
+          "Vero zafferano"
+        ],
+        "steps": [
+          "Soffriggi la carne e le verdure.",
+          "Aggiungi l'acqua e lo zafferano, portando a ebollizione.",
+          "Aggiungi il riso e cuoci a fuoco medio per 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Pollo con purè di zucca",
+        "ingredients": [
+          "150g di petto di pollo",
+          "200g di zucca arrosto",
+          "Zenzero grattugiato"
+        ],
+        "steps": [
+          "Riduci in purè la zucca precedentemente arrostita con un tocco di zenzero.",
+          "Griglia il petto di pollo.",
+          "Servi il pollo su un letto di purè."
+        ]
+      },
+      "w1_l7": {
+        "name": "Baccalà con pomodoro e peperoni",
+        "ingredients": [
+          "180g di baccalà (ben dissalato)",
+          "Peperoni arrosto",
+          "Salsa di pomodoro fatta in casa"
+        ],
+        "steps": [
+          "Assicurati che il baccalà sia perfettamente dissalato per proteggere la pressione.",
+          "Scalda la salsa di pomodoro con i peperoni.",
+          "Cuoci il baccalà a fuoco basso immerso nella salsa."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus e sardine",
+        "ingredients": [
+          "80g di hummus",
+          "Bastoncini di carota cruda",
+          "1 scatoletta di sardine in olio EVO (sgocciolate)"
+        ],
+        "steps": [
+          "Prepara i bastoncini di carota.",
+          "Sgocciola bene le sardine.",
+          "Servi freddo come spuntino salutare per chiudere la settimana."
+        ]
+      },
+      "w2_l1": {
+        "name": "Insalata di ceci mediterranea",
+        "ingredients": [
+          "200g di ceci cotti",
+          "1 scatoletta di sgombro",
+          "Cetriolo, peperone e cipolla rossa"
+        ],
+        "steps": [
+          "Lava bene i ceci.",
+          "Mescola con le verdure e lo sgombro.",
+          "Condisci con olio EVO e aceto di mele."
+        ]
+      },
+      "w2_d1": {
+        "name": "Tacchino con purè di patate dolci",
+        "ingredients": [
+          "150g di tacchino",
+          "100g di patata dolce",
+          "Valeriana"
+        ],
+        "steps": [
+          "Arrostisci la patata dolce nel microonde (8 min).",
+          "Schiaccia la patata dolce e griglia il tacchino.",
+          "Servi con valeriana."
+        ]
+      },
+      "w2_l2": {
+        "name": "Pollo all'aglio con funghi",
+        "ingredients": [
+          "200g di pollo",
+          "150g di funghi",
+          "Aglio e 2 patatine"
+        ],
+        "steps": [
+          "Salta il pollo con l'aglio a fettine.",
+          "Aggiungi i funghi fino a doratura.",
+          "Accompagna con patate lesse."
+        ]
+      },
+      "w2_d2": {
+        "name": "Uova strapazzate con asparagi e gamberi",
+        "ingredients": [
+          "2 uova",
+          "100g di gamberi sgusciati",
+          "1 mazzetto di asparagi selvatici"
+        ],
+        "steps": [
+          "Salta gli asparagi e i gamberi.",
+          "Aggiungi le uova e cuoci a fuoco lento."
+        ]
+      },
+      "w2_l3": {
+        "name": "Penne integrali al tonno",
+        "ingredients": [
+          "70g di pasta integrale",
+          "1 scatoletta di tonno al naturale",
+          "6 olive e salsa di pomodoro"
+        ],
+        "steps": [
+          "Cuoci la pasta al dente.",
+          "Mescola con tonno, olive e pomodoro."
+        ]
+      },
+      "w2_d3": {
+        "name": "Branzino al forno con verdure",
+        "ingredients": [
+          "1 branzino (200g)",
+          "Peperone rosso",
+          "Melanzana"
+        ],
+        "steps": [
+          "Taglia e griglia le verdure.",
+          "Inforna il pesce per 15 min a 180°C sopra le verdure."
+        ]
+      },
+      "w2_l4": {
+        "name": "Lenticchie con riso integrale",
+        "ingredients": [
+          "150g di lenticchie cotte",
+          "50g di riso integrale cotto",
+          "Cipolla, carota, peperone"
+        ],
+        "steps": [
+          "Prepara un soffritto con le verdure.",
+          "Aggiungi le lenticchie, il riso e il brodo vegetale."
+        ]
+      },
+      "w2_d4": {
+        "name": "Hamburger di pollo Fit",
+        "ingredients": [
+          "150g di pollo macinato",
+          "Rucola",
+          "10g di noci"
+        ],
+        "steps": [
+          "Forma l'hamburger e griglialo.",
+          "Servi senza pane su un letto di rucola e noci."
+        ]
+      },
+      "w2_l5": {
+        "name": "Seppia alla piastra",
+        "ingredients": [
+          "200g di seppia",
+          "Aglio e prezzemolo",
+          "150g di patate e fagiolini"
+        ],
+        "steps": [
+          "Griglia la seppia a fuoco alto con aglio.",
+          "Servi con patate e fagiolini al vapore."
+        ]
+      },
+      "w2_d5": {
+        "name": "Vellutata di verdure",
+        "ingredients": [
+          "Zucchina, porro, carota",
+          "1 uovo sodo"
+        ],
+        "steps": [
+          "Bollisci le verdure e frulla senza panna.",
+          "Aggiungi l'uovo sodo tritato sopra."
+        ]
+      },
+      "w2_l6": {
+        "name": "Cous cous integrale con manzo",
+        "ingredients": [
+          "60g di cous cous integrale",
+          "120g di manzo magro",
+          "Peperoni misti"
+        ],
+        "steps": [
+          "Idrata il cous cous con acqua bollente.",
+          "Salta il manzo e i peperoni, e mescola."
+        ]
+      },
+      "w2_d6": {
+        "name": "Spiedini di tacchino e ananas",
+        "ingredients": [
+          "150g di tacchino a cubetti",
+          "2 fette di ananas",
+          "Spinaci freschi"
+        ],
+        "steps": [
+          "Infilza alternando tacchino e ananas.",
+          "Griglia e servi con gli spinaci."
+        ]
+      },
+      "w2_l7": {
+        "name": "Marmitako di tonno leggero",
+        "ingredients": [
+          "150g di tonno fresco",
+          "150g di patate",
+          "Peperone e cipolla"
+        ],
+        "steps": [
+          "Stufa la patata con le verdure.",
+          "Aggiungi il tonno alla fine a fuoco spento."
+        ]
+      },
+      "w2_d7": {
+        "name": "Tagliere mediterraneo",
+        "ingredients": [
+          "80g di hummus",
+          "Sedano e carota",
+          "1 uovo sodo e 3 fette di lombo stagionato"
+        ],
+        "steps": [
+          "Presenta su un tagliere stile mezze. Senza cottura."
+        ]
+      },
+      "w3_l1": {
+        "name": "Fagioli bianchi in umido",
+        "ingredients": [
+          "200g di fagioli bianchi cotti",
+          "100g di zucca e 1 carota",
+          "Fagiolini e paprika"
+        ],
+        "steps": [
+          "Lava molto bene i fagioli in scatola.",
+          "Salta le verdure, aggiungi i fagioli e l'acqua.",
+          "Cuoci per 10 min."
+        ]
+      },
+      "w3_d1": {
+        "name": "Pollo al vapore con senape rustica",
+        "ingredients": [
+          "150g di petto di pollo",
+          "200g di broccoli",
+          "1 cucchiaino di senape di Digione"
+        ],
+        "steps": [
+          "Cuoci al vapore broccoli e pollo (12 min).",
+          "Spalma la senape alla fine."
+        ]
+      },
+      "w3_l2": {
+        "name": "Trota alla Navarra",
+        "ingredients": [
+          "1 trota intera",
+          "1 fetta di prosciutto crudo",
+          "150g di patata lessa"
+        ],
+        "steps": [
+          "Metti il prosciutto dentro la trota.",
+          "Inforna a 180°C per 15 min.",
+          "Servi con la patata."
+        ]
+      },
+      "w3_d2": {
+        "name": "Crema di spinaci Braccio di Ferro",
+        "ingredients": [
+          "300g di spinaci",
+          "1 patata piccola",
+          "1 uovo sodo"
+        ],
+        "steps": [
+          "Bollisci patata e spinaci con poca acqua.",
+          "Frulla e aggiungi l'uovo sodo tritato."
+        ]
+      },
+      "w3_l3": {
+        "name": "Peperoni ripieni di tacchino",
+        "ingredients": [
+          "2 peperoni rossi",
+          "100g di tacchino macinato",
+          "70g di riso integrale cotto"
+        ],
+        "steps": [
+          "Svuota i peperoni.",
+          "Riempi con il composto di tacchino saltato e riso.",
+          "Inforna 25 min a 190°C."
+        ]
+      },
+      "w3_d3": {
+        "name": "Seppia con carciofi",
+        "ingredients": [
+          "200g di seppia",
+          "4 carciofi",
+          "Aglio a fettine"
+        ],
+        "steps": [
+          "Salta la seppia a fuoco alto.",
+          "Aggiungi i carciofi e l'aglio alla fine."
+        ]
+      },
+      "w3_l4": {
+        "name": "Quinoa con pollo e verdure",
+        "ingredients": [
+          "60g di quinoa",
+          "150g di pollo",
+          "Zucchina e peperone"
+        ],
+        "steps": [
+          "Lava la quinoa e bollisci 12 min.",
+          "Salta pollo e verdure, e mescola con la quinoa."
+        ]
+      },
+      "w3_d4": {
+        "name": "Frittata di funghi e ravanelli",
+        "ingredients": [
+          "2 uova",
+          "100g di funghi",
+          "4 ravanelli"
+        ],
+        "steps": [
+          "Prepara la frittata con i funghi saltati.",
+          "Servi i ravanelli crudi a fette a lato."
+        ]
+      },
+      "w3_l5": {
+        "name": "Merluzzo in crosta di erbe",
+        "ingredients": [
+          "180g di merluzzo",
+          "Origano, timo, olio EVO",
+          "200g di asparagi"
+        ],
+        "steps": [
+          "Spennella il merluzzo con olio EVO ed erbe.",
+          "Inforna insieme agli asparagi 12 min a 200°C."
+        ]
+      },
+      "w3_d5": {
+        "name": "Carpaccio di zucchine e tonno",
+        "ingredients": [
+          "1 zucchina media",
+          "1 scatoletta di tonno al naturale",
+          "Limone e 5g di parmigiano"
+        ],
+        "steps": [
+          "Taglia la zucchina cruda molto finemente.",
+          "Metti tonno, limone, pepe e parmigiano sopra."
+        ]
+      },
+      "w3_l6": {
+        "name": "Gulasch di manzo leggero",
+        "ingredients": [
+          "150g di manzo magro",
+          "1 cipolla e 1 peperone rosso",
+          "Brodo senza sale"
+        ],
+        "steps": [
+          "Scotta la carne.",
+          "Aggiungi le verdure, copri con il brodo e cuoci a fuoco lento per 1,5 ore."
+        ]
+      },
+      "w3_d6": {
+        "name": "Spada con Baba Ganoush",
+        "ingredients": [
+          "150g di pesce spada",
+          "1 melanzana arrosto",
+          "Limone"
+        ],
+        "steps": [
+          "Frulla la melanzana arrosto con il limone.",
+          "Griglia il pesce."
+        ]
+      },
+      "w3_l7": {
+        "name": "Frittata di patate Fit",
+        "ingredients": [
+          "2 uova",
+          "150g di patate",
+          "1/2 cipolla"
+        ],
+        "steps": [
+          "Cuoci la patata a fette al vapore o al microonde (7 min).",
+          "Mescola con l'uovo e cuoci con un filo d'olio."
+        ]
+      },
+      "w3_d7": {
+        "name": "Gamberi al forno e hummus",
+        "ingredients": [
+          "12 gamberoni",
+          "80g di hummus",
+          "Carote crude"
+        ],
+        "steps": [
+          "Inforna i gamberi con aglio e prezzemolo (6 min).",
+          "Accompagna con hummus e carote crude."
+        ]
+      },
+      "w4_l1": {
+        "name": "Polpette di tacchino",
+        "ingredients": [
+          "150g di tacchino macinato",
+          "1 uovo e cipolla",
+          "Passata di pomodoro e 50g di piselli"
+        ],
+        "steps": [
+          "Forma le polpette e grigliale.",
+          "Cuoci nella salsa di pomodoro con piselli."
+        ]
+      },
+      "w4_d1": {
+        "name": "Insalata gourmet di spinaci",
+        "ingredients": [
+          "Spinaci freschi",
+          "100g di petto di pollo",
+          "4 fragole e 20g di formaggio di capra"
+        ],
+        "steps": [
+          "Griglia il pollo.",
+          "Prepara l'insalata a crudo mescolando tutto."
+        ]
+      },
+      "w4_l2": {
+        "name": "Zuppa di ceci e bietole",
+        "ingredients": [
+          "200g di ceci cotti",
+          "Bietole o spinaci",
+          "Aglio, cumino e paprika"
+        ],
+        "steps": [
+          "Soffriggi l'aglio con paprika e cumino per evitare gas.",
+          "Aggiungi bietole, ceci e acqua. Cuoci 15 min."
+        ]
+      },
+      "w4_d2": {
+        "name": "Uova strapazzate zucchine e cipolla",
+        "ingredients": [
+          "2 uova",
+          "Zucchine e cipolla",
+          "2 fette di prosciutto crudo"
+        ],
+        "steps": [
+          "Salta le verdure tritate finemente.",
+          "Aggiungi uova sbattute e prosciutto.",
+          "Cuoci a fuoco lento."
+        ]
+      },
+      "w4_l3": {
+        "name": "Spaghetti integrali ai gamberi",
+        "ingredients": [
+          "70g di pasta integrale",
+          "100g di gamberi sgusciati",
+          "2 spicchi d'aglio e peperoncino"
+        ],
+        "steps": [
+          "Soffriggi aglio e peperoncino nell'olio EVO.",
+          "Aggiungi gamberi e mescola con la pasta cotta al dente."
+        ]
+      },
+      "w4_d3": {
+        "name": "Petto di pollo all'arancia",
+        "ingredients": [
+          "150g di petto di pollo",
+          "Succo d'arancia fresco",
+          "Asparagi"
+        ],
+        "steps": [
+          "Griglia il pollo.",
+          "Aggiungi il succo e lascia restringere.",
+          "Servi con asparagi al vapore."
+        ]
+      },
+      "w4_l4": {
+        "name": "Insalata di lenticchie e sardine",
+        "ingredients": [
+          "150g di lenticchie cotte",
+          "1 scatoletta di sardine sott'olio",
+          "Verdure tritate a piacere"
+        ],
+        "steps": [
+          "Sgocciola molto bene le sardine.",
+          "Mescola tutto a freddo per una dose extra di Omega-3."
+        ]
+      },
+      "w4_d4": {
+        "name": "Merluzzo al forno",
+        "ingredients": [
+          "200g di merluzzo fresco",
+          "10g di mandorle tritate",
+          "Broccoli"
+        ],
+        "steps": [
+          "Metti le mandorle sul pesce.",
+          "Inforna 12 min a 180°C e servi con broccoli al vapore."
+        ]
+      },
+      "w4_l5": {
+        "name": "Riso integrale con funghi e coniglio",
+        "ingredients": [
+          "70g di riso integrale",
+          "Funghi misti",
+          "Coniglio o pollo a cubetti"
+        ],
+        "steps": [
+          "Fai un soffritto con la carne e i funghi.",
+          "Aggiungi riso e brodo, e cuoci finché è tenero."
+        ]
+      },
+      "w4_d5": {
+        "name": "Frittata tacchino e formaggio light",
+        "ingredients": [
+          "2 uova",
+          "2 fette di tacchino",
+          "1 fetta di formaggio light"
+        ],
+        "steps": [
+          "Sbatti le uova e mettile in padella.",
+          "Piega il formaggio e il tacchino al centro per far fondere."
+        ]
+      },
+      "w4_l6": {
+        "name": "Melanzane ripiene di manzo",
+        "ingredients": [
+          "1 grande melanzana",
+          "120g di manzo macinato",
+          "Cipolla e peperone"
+        ],
+        "steps": [
+          "Svuota la melanzana e salta la polpa con la carne.",
+          "Riempi la barca e inforna 20 min."
+        ]
+      },
+      "w4_d6": {
+        "name": "Spiedini di nasello e gamberi",
+        "ingredients": [
+          "150g di nasello a cubetti",
+          "Gamberi",
+          "Fagiolini"
+        ],
+        "steps": [
+          "Prepara gli spiedini e grigliali.",
+          "Accompagna con fagiolini al vapore."
+        ]
+      },
+      "w4_l7": {
+        "name": "Patate con calamari",
+        "ingredients": [
+          "150g di patate",
+          "200g di calamari o seppie",
+          "Cipolla e alloro"
+        ],
+        "steps": [
+          "Fai un soffritto con la cipolla.",
+          "Aggiungi calamari, patate, alloro e brodo. Stufa a fuoco lento."
+        ]
+      },
+      "w4_d7": {
+        "name": "Cena svuota frigo",
+        "ingredients": [
+          "Hummus",
+          "Uovo sodo",
+          "Peperoni arrosto e bastoncini di tacchino"
+        ],
+        "steps": [
+          "Crea un piatto misto freddo stile spuntino.",
+          "Goditi la fine della settimana."
+        ]
+      }
     }
   },
   "dietTab": {
@@ -853,7 +1559,8 @@
         "dinner": "Pulizia del Frigo: Hummus, uovo sodo, peperoni arrostiti e bastoncini di tacchino."
       },
       "title": "Piano Mediterraneo · 28 Giorni",
-      "subtitle": "Menu clinicamente equilibrato per una perdita di peso sana"
+      "subtitle": "Menu clinicamente equilibrato per una perdita di peso sana",
+      "milestone_w4": "Congratulazioni, Ulises! Hai completato il tuo primo mese di ottimizzazione metabolica. La tua pressione sanguigna dovrebbe iniziare a stabilizzarsi."
     },
     "weekLabel": "Settimana",
     "dayLabel": "Giorno",

@@ -35,9 +35,9 @@ export function Recipes() {
                 <div className="flex-1 min-w-0">
                   <h3 className="font-semibold">{recipeName}</h3>
                   <div className="flex flex-wrap gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-500">
-                    <span className="flex items-center gap-1"><Wallet size={12} /> {r.cost}</span>
-                    <span className="flex items-center gap-1"><Clock size={12} /> {r.time}</span>
-                    <span className="flex items-center gap-1"><Flame size={12} /> {r.kcal} kcal</span>
+                    {r.cost && <span className="flex items-center gap-1"><Wallet size={12} /> {r.cost}</span>}
+                    <span className="flex items-center gap-1"><Clock size={12} /> {r.time || `${r.prepTime} min`}</span>
+                    <span className="flex items-center gap-1"><Flame size={12} /> {r.kcal || r.calories} kcal</span>
                   </div>
                 </div>
                 <ChevronDown

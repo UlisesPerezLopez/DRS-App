@@ -281,6 +281,712 @@
           "Hornea 12 min. Añade tomate y queso, y gratina 5 min más."
         ]
       }
+    },
+    "med": {
+      "w1_l1": {
+        "name": "Lentejas Estofadas Bio-Eficientes",
+        "ingredients": [
+          "60g lenteja seca (o 200g cocida)",
+          "1 zanahoria y 1/2 pimiento verde",
+          "1/2 cebolla y 1 diente de ajo",
+          "5ml AOVE y laurel"
+        ],
+        "steps": [
+          "Pica las verduras muy finas.",
+          "Sofríe el ajo y la cebolla con el aceite.",
+          "Añade el resto de vegetales y las lentejas.",
+          "Cubre con agua y cuece 40 min."
+        ]
+      },
+      "w1_d1": {
+        "name": "Dorada al Horno Omega-3",
+        "ingredients": [
+          "1 dorada limpia (200g)",
+          "1 calabacín pequeño",
+          "1/2 cebolla",
+          "10ml AOVE y especias al gusto"
+        ],
+        "steps": [
+          "Corta el calabacín y la cebolla en rodajas finas formando una cama.",
+          "Pon el pescado encima con dos cortes transversales.",
+          "Salpimenta usando especias en lugar de sal común para proteger la tensión.",
+          "Hornea a 180°C durante 20 min."
+        ]
+      },
+      "w1_l2": {
+        "name": "Pollo al Horno con Patata",
+        "ingredients": [
+          "200g pechuga o contramuslo sin piel",
+          "150g patata",
+          "8 espárragos trigueros",
+          "Romero y limón"
+        ],
+        "steps": [
+          "Corta la patata en láminas tipo panadera.",
+          "Coloca en bandeja de horno el pollo, la patata y los espárragos.",
+          "Rocía con limón y romero.",
+          "Hornea a 200°C durante 25-30 min."
+        ]
+      },
+      "w1_d2": {
+        "name": "Ensalada Mixta Proteica",
+        "ingredients": [
+          "Canónigos o Rúcula",
+          "1 lata de atún al natural (escurrido)",
+          "1 huevo duro",
+          "6 olivas y tomate"
+        ],
+        "steps": [
+          "Hierve el huevo durante exactamente 9 minutos para evitar oxidación.",
+          "Corta el tomate y extrae el atún.",
+          "Mezcla todos los ingredientes en frío."
+        ]
+      },
+      "w1_l3": {
+        "name": "Garbanzos con Espinacas",
+        "ingredients": [
+          "250g garbanzos cocidos (bien lavados)",
+          "100g espinacas frescas",
+          "1 huevo duro picado",
+          "Pimentón dulce"
+        ],
+        "steps": [
+          "Saltea las espinacas en una sartén con un poco de agua.",
+          "Añade los garbanzos y el pimentón.",
+          "Mezcla 5 min y añade el huevo picado al final."
+        ]
+      },
+      "w1_d3": {
+        "name": "Tortilla de Champiñones",
+        "ingredients": [
+          "2 huevos",
+          "100g champiñones laminados",
+          "Ajo en polvo"
+        ],
+        "steps": [
+          "Saltea los champiñones hasta que suelten toda el agua.",
+          "Bate los huevos.",
+          "Cuaja la tortilla a fuego medio."
+        ]
+      },
+      "w1_l4": {
+        "name": "Arroz Integral con Pavo",
+        "ingredients": [
+          "60g arroz integral (en crudo)",
+          "150g pavo en dados",
+          "Brócoli en ramilletes",
+          "5ml AOVE"
+        ],
+        "steps": [
+          "Hierve el arroz integral (30-40 min).",
+          "Saltea el pavo con el brócoli en una sartén.",
+          "Mezcla todo junto antes de servir."
+        ]
+      },
+      "w1_d4": {
+        "name": "Salmón con Judías Verdes",
+        "ingredients": [
+          "150g salmón fresco",
+          "200g judías verdes",
+          "Limón"
+        ],
+        "steps": [
+          "Cuece las judías al vapor durante 8 minutos.",
+          "Haz el salmón a la plancha 3 min por lado, empezando por la piel.",
+          "Exprime un poco de limón al servir."
+        ]
+      },
+      "w1_l5": {
+        "name": "Pasta Integral Boloñesa de Pollo",
+        "ingredients": [
+          "70g pasta integral",
+          "100g carne picada de pollo",
+          "Tomate triturado natural (sin azúcar)",
+          "Albahaca"
+        ],
+        "steps": [
+          "Cocina la pasta al dente para reducir su índice glucémico.",
+          "Prepara la salsa con la carne y el tomate en sartén antiadherente.",
+          "Mezcla la pasta con la salsa y decora con albahaca."
+        ]
+      },
+      "w1_d5": {
+        "name": "Merluza al Vapor con Guisantes",
+        "ingredients": [
+          "2 lomos de merluza",
+          "100g guisantes (congelados)",
+          "1 zanahoria pequeña",
+          "Eneldo"
+        ],
+        "steps": [
+          "Introduce la merluza, guisantes y zanahoria picada en un estuche de vapor.",
+          "Añade una pizca de eneldo.",
+          "Cocina 5-7 minutos al vapor (o microondas)."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella de Verduras y Magro",
+        "ingredients": [
+          "70g arroz bomba",
+          "Judía verde plana y garrofó",
+          "80g magro de cerdo sin grasa",
+          "Azafrán real"
+        ],
+        "steps": [
+          "Sofríe la carne y la verdura.",
+          "Añade agua y azafrán, llevando a ebullición.",
+          "Echa el arroz y cocina a fuego medio durante 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Pollo con Puré de Calabaza",
+        "ingredients": [
+          "150g pechuga de pollo",
+          "200g calabaza asada",
+          "Jengibre rallado"
+        ],
+        "steps": [
+          "Tritura la calabaza previamente asada con un toque de jengibre.",
+          "Cocina la pechuga a la plancha.",
+          "Sirve el pollo sobre una cama de puré."
+        ]
+      },
+      "w1_l7": {
+        "name": "Bacalao con Tomate y Pimientos",
+        "ingredients": [
+          "180g bacalao (bien desalado)",
+          "Pimientos asados",
+          "Salsa de tomate casera"
+        ],
+        "steps": [
+          "Asegúrate de que el bacalao esté perfectamente desalado para proteger la tensión.",
+          "Calienta la salsa de tomate con los pimientos.",
+          "Cocina el bacalao a fuego lento sumergido en la salsa."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus y Sardinas",
+        "ingredients": [
+          "80g hummus",
+          "Bastones de zanahoria cruda",
+          "1 lata de sardinas en AOVE (escurridas)"
+        ],
+        "steps": [
+          "Prepara los bastones de zanahoria.",
+          "Escurre bien las sardinas.",
+          "Sirve en frío estilo picoteo saludable para cerrar la semana."
+        ]
+      },
+      "w2_l1": {
+        "name": "Ensalada de Garbanzos Mediterránea",
+        "ingredients": [
+          "200g garbanzos cocidos",
+          "1 lata caballa",
+          "Pepino, pimiento y cebolla roja"
+        ],
+        "steps": [
+          "Lava bien los garbanzos.",
+          "Mezcla con la verdura y la caballa.",
+          "Aliña con AOVE y vinagre de manzana."
+        ]
+      },
+      "w2_d1": {
+        "name": "Pavo con Puré de Boniato",
+        "ingredients": [
+          "150g pavo",
+          "100g boniato",
+          "Canónigos"
+        ],
+        "steps": [
+          "Asa el boniato al microondas (8 min).",
+          "Aplasta el boniato y haz el pavo a la plancha.",
+          "Sirve con canónigos."
+        ]
+      },
+      "w2_l2": {
+        "name": "Pollo al Ajillo con Champiñones",
+        "ingredients": [
+          "200g pollo",
+          "150g champiñones",
+          "Ajo y 2 patatas pequeñas"
+        ],
+        "steps": [
+          "Saltea el pollo con el ajo laminado.",
+          "Añade los champiñones hasta dorar.",
+          "Acompaña con patatas cocidas."
+        ]
+      },
+      "w2_d2": {
+        "name": "Revuelto de Espárragos y Gambas",
+        "ingredients": [
+          "2 huevos",
+          "100g gambas peladas",
+          "1 manojo espárragos trigueros"
+        ],
+        "steps": [
+          "Saltea los espárragos y gambas.",
+          "Añade los huevos y cuaja a fuego lento."
+        ]
+      },
+      "w2_l3": {
+        "name": "Penne Integral con Atún",
+        "ingredients": [
+          "70g pasta integral",
+          "1 lata atún natural",
+          "6 aceitunas y salsa de tomate"
+        ],
+        "steps": [
+          "Hierve la pasta al dente.",
+          "Mezcla con atún, aceitunas y tomate."
+        ]
+      },
+      "w2_d3": {
+        "name": "Lubina al Horno con Verduras",
+        "ingredients": [
+          "1 lubina (200g)",
+          "Pimiento rojo",
+          "Berenjena"
+        ],
+        "steps": [
+          "Corta y plancha las verduras.",
+          "Hornea el pescado 15 min a 180°C sobre la verdura."
+        ]
+      },
+      "w2_l4": {
+        "name": "Lentejas con Arroz Integral",
+        "ingredients": [
+          "150g lentejas cocidas",
+          "50g arroz integral cocido",
+          "Cebolla, zanahoria, pimiento"
+        ],
+        "steps": [
+          "Haz un sofrito con la verdura.",
+          "Añade las lentejas, el arroz y caldo vegetal."
+        ]
+      },
+      "w2_d4": {
+        "name": "Hamburguesa de Pollo Fit",
+        "ingredients": [
+          "150g pollo picado",
+          "Rúcula",
+          "10g nueces"
+        ],
+        "steps": [
+          "Forma la hamburguesa y hazla a la plancha.",
+          "Sirve sin pan sobre la cama de rúcula y nueces."
+        ]
+      },
+      "w2_l5": {
+        "name": "Sepia a la Plancha",
+        "ingredients": [
+          "200g sepia",
+          "Ajo y perejil",
+          "150g patata y judías verdes"
+        ],
+        "steps": [
+          "Plancha la sepia a fuego fuerte con ajo.",
+          "Sirve con la patata y judías al vapor."
+        ]
+      },
+      "w2_d5": {
+        "name": "Crema de Verduras",
+        "ingredients": [
+          "Calabacín, puerro, zanahoria",
+          "1 huevo duro"
+        ],
+        "steps": [
+          "Hierve las verduras y tritura sin nata.",
+          "Añade el huevo picado encima."
+        ]
+      },
+      "w2_l6": {
+        "name": "Cuscús Integral con Ternera",
+        "ingredients": [
+          "60g cuscús integral",
+          "120g ternera magra",
+          "Pimientos variados"
+        ],
+        "steps": [
+          "Hidrata el cuscús con agua hirviendo.",
+          "Saltea la ternera y los pimientos, y mezcla."
+        ]
+      },
+      "w2_d6": {
+        "name": "Brochetas de Pavo y Piña",
+        "ingredients": [
+          "150g pavo en dados",
+          "2 rodajas de piña",
+          "Espinacas frescas"
+        ],
+        "steps": [
+          "Ensarta alternando pavo y piña.",
+          "Haz a la plancha y sirve con espinacas."
+        ]
+      },
+      "w2_l7": {
+        "name": "Marmitako de Atún Ligero",
+        "ingredients": [
+          "150g atún fresco",
+          "150g patata",
+          "Pimiento y cebolla"
+        ],
+        "steps": [
+          "Guisa la patata con las verduras.",
+          "Añade el atún al final con el fuego apagado."
+        ]
+      },
+      "w2_d7": {
+        "name": "Tabla Mediterránea",
+        "ingredients": [
+          "80g hummus",
+          "Apio y zanahoria",
+          "1 huevo duro y 3 lonchas lomo embuchado"
+        ],
+        "steps": [
+          "Presenta en una tabla estilo mezze. Sin cocinar."
+        ]
+      },
+      "w3_l1": {
+        "name": "Alubias Blancas Estofadas",
+        "ingredients": [
+          "200g alubias blancas cocidas",
+          "100g calabaza y 1 zanahoria",
+          "Judías verdes y pimentón"
+        ],
+        "steps": [
+          "Lava muy bien las alubias de bote.",
+          "Saltea las verduras, añade alubias y agua.",
+          "Cuece 10 min."
+        ]
+      },
+      "w3_d1": {
+        "name": "Pollo al Vapor con Mostaza Antigua",
+        "ingredients": [
+          "150g pechuga",
+          "200g brócoli",
+          "1 cdta mostaza Dijon"
+        ],
+        "steps": [
+          "Cocina brócoli y pollo al vapor (12 min).",
+          "Unta la mostaza al final."
+        ]
+      },
+      "w3_l2": {
+        "name": "Trucha a la Navarra",
+        "ingredients": [
+          "1 trucha entera",
+          "1 loncha jamón serrano",
+          "150g patata hervida"
+        ],
+        "steps": [
+          "Mete el jamón dentro de la trucha.",
+          "Hornea a 180°C por 15 min.",
+          "Sirve con la patata."
+        ]
+      },
+      "w3_d2": {
+        "name": "Crema de Espinacas Popeye",
+        "ingredients": [
+          "300g espinacas",
+          "1 patata pequeña",
+          "1 huevo duro"
+        ],
+        "steps": [
+          "Hierve patata y espinacas con poca agua.",
+          "Tritura y añade el huevo duro picado."
+        ]
+      },
+      "w3_l3": {
+        "name": "Pimientos Rellenos de Pavo",
+        "ingredients": [
+          "2 pimientos rojos",
+          "100g pavo picado",
+          "70g arroz integral cocido"
+        ],
+        "steps": [
+          "Vacía los pimientos.",
+          "Rellena con la mezcla de pavo salteado y arroz.",
+          "Hornea 25 min a 190°C."
+        ]
+      },
+      "w3_d3": {
+        "name": "Sepia con Alcachofas",
+        "ingredients": [
+          "200g sepia",
+          "4 alcachofas",
+          "Ajo laminado"
+        ],
+        "steps": [
+          "Saltea la sepia a fuego fuerte.",
+          "Añade alcachofas y el ajo al final."
+        ]
+      },
+      "w3_l4": {
+        "name": "Quinoa con Pollo y Verduras",
+        "ingredients": [
+          "60g quinoa",
+          "150g pollo",
+          "Calabacín y pimiento"
+        ],
+        "steps": [
+          "Lava la quinoa y hiérvela 12 min.",
+          "Saltea pollo y verduras, y mezcla con la quinoa."
+        ]
+      },
+      "w3_d4": {
+        "name": "Tortilla de Champiñones y Rabanitos",
+        "ingredients": [
+          "2 huevos",
+          "100g champiñones",
+          "4 rabanitos"
+        ],
+        "steps": [
+          "Haz la tortilla con los champiñones salteados.",
+          "Sirve los rabanitos en rodajas crudos al lado."
+        ]
+      },
+      "w3_l5": {
+        "name": "Bacalao con Costra de Hierbas",
+        "ingredients": [
+          "180g bacalao",
+          "Orégano, tomillo, AOVE",
+          "200g espárragos"
+        ],
+        "steps": [
+          "Pincela el bacalao con AOVE y hierbas.",
+          "Hornea junto a los espárragos 12 min a 200°C."
+        ]
+      },
+      "w3_d5": {
+        "name": "Carpaccio de Calabacín y Atún",
+        "ingredients": [
+          "1 calabacín mediano",
+          "1 lata atún natural",
+          "Limón y 5g parmesano"
+        ],
+        "steps": [
+          "Corta el calabacín crudo muy fino.",
+          "Pon el atún, limón, pimienta y parmesano encima."
+        ]
+      },
+      "w3_l6": {
+        "name": "Gulasch de Ternera Ligero",
+        "ingredients": [
+          "150g ternera magra",
+          "1 cebolla y 1 pimiento rojo",
+          "Caldo sin sal"
+        ],
+        "steps": [
+          "Sella la carne.",
+          "Añade verdura, cubre con caldo y cuece a fuego lento 1.5 horas."
+        ]
+      },
+      "w3_d6": {
+        "name": "Emperador con Baba Ganoush",
+        "ingredients": [
+          "150g emperador o pez espada",
+          "1 berenjena asada",
+          "Limón"
+        ],
+        "steps": [
+          "Tritura la berenjena asada con limón.",
+          "Haz el pescado a la plancha."
+        ]
+      },
+      "w3_l7": {
+        "name": "Tortilla de Patatas Fit",
+        "ingredients": [
+          "2 huevos",
+          "150g patata",
+          "1/2 cebolla"
+        ],
+        "steps": [
+          "Cocina la patata en láminas al vapor o microondas (7 min).",
+          "Mezcla con huevo y cuaja con una gota de aceite."
+        ]
+      },
+      "w3_d7": {
+        "name": "Gambas al Horno y Hummus",
+        "ingredients": [
+          "12 gambones",
+          "80g hummus",
+          "Zanahorias crudas"
+        ],
+        "steps": [
+          "Hornea las gambas con ajo y perejil (6 min).",
+          "Acompaña con hummus y zanahoria cruda."
+        ]
+      },
+      "w4_l1": {
+        "name": "Albóndigas de Pavo",
+        "ingredients": [
+          "150g pavo picado",
+          "1 huevo y cebolla",
+          "Tomate triturado y 50g guisantes"
+        ],
+        "steps": [
+          "Forma las albóndigas y hazlas a la plancha.",
+          "Cocina dentro de la salsa de tomate con guisantes."
+        ]
+      },
+      "w4_d1": {
+        "name": "Ensalada Gourmet de Espinacas",
+        "ingredients": [
+          "Espinacas frescas",
+          "100g pechuga de pollo",
+          "4 fresas y 20g queso de cabra"
+        ],
+        "steps": [
+          "Haz el pollo a la plancha.",
+          "Monta la ensalada en crudo mezclando todo."
+        ]
+      },
+      "w4_l2": {
+        "name": "Potaje de Garbanzos y Acelgas",
+        "ingredients": [
+          "200g garbanzos cocidos",
+          "Acelgas o espinacas",
+          "Ajo, comino y pimentón"
+        ],
+        "steps": [
+          "Rehoga el ajo con pimentón y comino para evitar gases.",
+          "Añade acelgas, garbanzos y agua. Cuece 15 min."
+        ]
+      },
+      "w4_d2": {
+        "name": "Revuelto de Calabacín y Cebolla",
+        "ingredients": [
+          "2 huevos",
+          "Calabacín y cebolla",
+          "2 lonchas jamón serrano"
+        ],
+        "steps": [
+          "Saltea la verdura finamente picada.",
+          "Añade los huevos batidos y el jamón.",
+          "Cuaja a fuego lento."
+        ]
+      },
+      "w4_l3": {
+        "name": "Espaguetis Integrales con Gambas",
+        "ingredients": [
+          "70g pasta integral",
+          "100g gambas peladas",
+          "2 dientes ajo y guindilla"
+        ],
+        "steps": [
+          "Saltea ajo y guindilla en AOVE.",
+          "Añade gambas y mezcla con la pasta cocida al dente."
+        ]
+      },
+      "w4_d3": {
+        "name": "Pechuga de Pollo a la Naranja",
+        "ingredients": [
+          "150g pechuga de pollo",
+          "Zumo de naranja natural",
+          "Espárragos"
+        ],
+        "steps": [
+          "Cocina el pollo a la plancha.",
+          "Añade el zumo y deja reducir.",
+          "Sirve con espárragos al vapor."
+        ]
+      },
+      "w4_l4": {
+        "name": "Ensalada de Lentejas y Sardinas",
+        "ingredients": [
+          "150g lentejas cocidas",
+          "1 lata sardinas en aceite",
+          "Verduras picadas al gusto"
+        ],
+        "steps": [
+          "Escurre muy bien las sardinas.",
+          "Mezcla todo en frío para una dosis extra de Omega-3."
+        ]
+      },
+      "w4_d4": {
+        "name": "Kabeljau al Horno",
+        "ingredients": [
+          "200g bacalao fresco (Kabeljau)",
+          "10g almendra picada",
+          "Brócoli"
+        ],
+        "steps": [
+          "Pon la almendra sobre el pescado.",
+          "Hornea 12 min a 180°C y sirve con brócoli al vapor."
+        ]
+      },
+      "w4_l5": {
+        "name": "Arroz Integral con Setas y Conejo",
+        "ingredients": [
+          "70g arroz integral",
+          "Setas variadas",
+          "Conejo o pollo en dados"
+        ],
+        "steps": [
+          "Haz un sofrito con la carne y las setas.",
+          "Añade el arroz y caldo, y cuece hasta que esté tierno."
+        ]
+      },
+      "w4_d5": {
+        "name": "Tortilla de Pavo y Queso Light",
+        "ingredients": [
+          "2 huevos",
+          "2 lonchas de pavo",
+          "1 loncha queso light"
+        ],
+        "steps": [
+          "Bate los huevos y ponlos en la sartén.",
+          "Dobla el queso y pavo en el centro para que funda."
+        ]
+      },
+      "w4_l6": {
+        "name": "Berenjenas Rellenas de Ternera",
+        "ingredients": [
+          "1 berenjena grande",
+          "120g ternera picada",
+          "Cebolla y pimiento"
+        ],
+        "steps": [
+          "Vacía la berenjena y saltea la pulpa con la carne.",
+          "Rellena la barca y hornea 20 min."
+        ]
+      },
+      "w4_d6": {
+        "name": "Brochetas de Merluza y Langostinos",
+        "ingredients": [
+          "150g merluza en dados",
+          "Langostinos",
+          "Judías verdes"
+        ],
+        "steps": [
+          "Monta las brochetas y hazlas a la plancha.",
+          "Acompaña con judías verdes al vapor."
+        ]
+      },
+      "w4_l7": {
+        "name": "Patatas con Calamares",
+        "ingredients": [
+          "150g patata",
+          "200g calamares o sepia",
+          "Cebolla y laurel"
+        ],
+        "steps": [
+          "Haz un sofrito con la cebolla.",
+          "Añade los calamares, patata, laurel y caldo. Guisa a fuego lento."
+        ]
+      },
+      "w4_d7": {
+        "name": "Cena Limpieza de Nevera",
+        "ingredients": [
+          "Hummus",
+          "Huevo duro",
+          "Pimientos asados y palitos de pavo"
+        ],
+        "steps": [
+          "Monta un plato combinado frío estilo picoteo.",
+          "Disfruta del cierre semanal."
+        ]
+      }
     }
   },
   "dietTab": {
@@ -853,7 +1559,8 @@
         "dinner": "Cena 'Limpieza de Nevera': Hummus, huevo duro, pimientos asados y palitos de pavo."
       },
       "title": "Plan Mediterráneo · 28 Días",
-      "subtitle": "Menú clínico equilibrado para pérdida de peso saludable"
+      "subtitle": "Menú clínico equilibrado para pérdida de peso saludable",
+      "milestone_w4": "¡Felicidades, Ulises! Has completado tu primer mes de optimización metabólica. Tu tensión debería empezar a estabilizarse."
     },
     "weekLabel": "Semana",
     "dayLabel": "Día",

@@ -111,12 +111,15 @@ export const COMMON_FOODS: CommonFood[] = [
 export interface Recipe {
   id: string;
   translationKey: string;
-  cost: string;
-  time: string;
-  kcal: number;
+  cost?: string;
+  time?: string;
+  prepTime?: number;
+  kcal?: number;
+  calories?: number;
   protein: number;
   carbs: number;
   fat: number;
+  mealTags?: string[];
 }
 
 export const RECIPES: Recipe[] = [
@@ -135,6 +138,66 @@ export const RECIPES: Recipe[] = [
   { id: "r13", translationKey: "recipeDb.express_couscous", cost: "≈ 1,20 €", time: "10 min", kcal: 400, protein: 12, carbs: 70, fat: 5 },
   { id: "r14", translationKey: "recipeDb.grilled_eggplant_cheese", cost: "≈ 1,60 €", time: "20 min", kcal: 290, protein: 14, carbs: 12, fat: 18 },
   { id: "r15", translationKey: "protein_smoothie_bowl", cost: "≈ 1,50 €", time: "5 min", kcal: 310, protein: 25, carbs: 35, fat: 8 },
+  // SEMANA 1 - DIETA MEDITERRÁNEA
+  { id: 'rec_med_w1_l1', translationKey: 'recipes.med.w1_l1', prepTime: 40, calories: 350, protein: 20, carbs: 45, fat: 10, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d1', translationKey: 'recipes.med.w1_d1', prepTime: 20, calories: 450, protein: 42, carbs: 12, fat: 26, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l2', translationKey: 'recipes.med.w1_l2', prepTime: 30, calories: 650, protein: 55, carbs: 40, fat: 30, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d2', translationKey: 'recipes.med.w1_d2', prepTime: 15, calories: 450, protein: 38, carbs: 15, fat: 26, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l3', translationKey: 'recipes.med.w1_l3', prepTime: 15, calories: 650, protein: 30, carbs: 65, fat: 30, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d3', translationKey: 'recipes.med.w1_d3', prepTime: 15, calories: 450, protein: 25, carbs: 10, fat: 34, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l4', translationKey: 'recipes.med.w1_l4', prepTime: 40, calories: 650, protein: 45, carbs: 60, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d4', translationKey: 'recipes.med.w1_d4', prepTime: 15, calories: 450, protein: 35, carbs: 15, fat: 27, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l5', translationKey: 'recipes.med.w1_l5', prepTime: 20, calories: 650, protein: 40, carbs: 65, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d5', translationKey: 'recipes.med.w1_d5', prepTime: 15, calories: 450, protein: 45, carbs: 25, fat: 18, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l6', translationKey: 'recipes.med.w1_l6', prepTime: 30, calories: 650, protein: 35, carbs: 70, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d6', translationKey: 'recipes.med.w1_d6', prepTime: 20, calories: 450, protein: 40, carbs: 35, fat: 16, mealTags: ['dinner'] },
+  { id: 'rec_med_w1_l7', translationKey: 'recipes.med.w1_l7', prepTime: 25, calories: 650, protein: 45, carbs: 30, fat: 38, mealTags: ['lunch'] },
+  { id: 'rec_med_w1_d7', translationKey: 'recipes.med.w1_d7', prepTime: 10, calories: 450, protein: 25, carbs: 35, fat: 23, mealTags: ['dinner'] },
+  // SEMANA 2 - DIETA MEDITERRÁNEA
+  { id: 'rec_med_w2_l1', translationKey: 'recipes.med.w2_l1', prepTime: 15, calories: 650, protein: 45, carbs: 60, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d1', translationKey: 'recipes.med.w2_d1', prepTime: 20, calories: 450, protein: 35, carbs: 40, fat: 15, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l2', translationKey: 'recipes.med.w2_l2', prepTime: 35, calories: 650, protein: 50, carbs: 45, fat: 30, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d2', translationKey: 'recipes.med.w2_d2', prepTime: 15, calories: 450, protein: 30, carbs: 10, fat: 32, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l3', translationKey: 'recipes.med.w2_l3', prepTime: 20, calories: 650, protein: 40, carbs: 70, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d3', translationKey: 'recipes.med.w2_d3', prepTime: 25, calories: 450, protein: 35, carbs: 25, fat: 23, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l4', translationKey: 'recipes.med.w2_l4', prepTime: 40, calories: 650, protein: 30, carbs: 80, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d4', translationKey: 'recipes.med.w2_d4', prepTime: 15, calories: 450, protein: 40, carbs: 15, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l5', translationKey: 'recipes.med.w2_l5', prepTime: 20, calories: 650, protein: 45, carbs: 50, fat: 28, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d5', translationKey: 'recipes.med.w2_d5', prepTime: 25, calories: 450, protein: 15, carbs: 50, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l6', translationKey: 'recipes.med.w2_l6', prepTime: 20, calories: 650, protein: 40, carbs: 65, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d6', translationKey: 'recipes.med.w2_d6', prepTime: 15, calories: 450, protein: 35, carbs: 30, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_med_w2_l7', translationKey: 'recipes.med.w2_l7', prepTime: 35, calories: 650, protein: 45, carbs: 55, fat: 27, mealTags: ['lunch'] },
+  { id: 'rec_med_w2_d7', translationKey: 'recipes.med.w2_d7', prepTime: 10, calories: 450, protein: 30, carbs: 35, fat: 22, mealTags: ['dinner'] },
+  // SEMANA 3 - DIETA MEDITERRÁNEA
+  { id: 'rec_med_w3_l1', translationKey: 'recipes.med.w3_l1', prepTime: 25, calories: 650, protein: 35, carbs: 70, fat: 22, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d1', translationKey: 'recipes.med.w3_d1', prepTime: 15, calories: 450, protein: 45, carbs: 20, fat: 18, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l2', translationKey: 'recipes.med.w3_l2', prepTime: 25, calories: 650, protein: 40, carbs: 45, fat: 35, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d2', translationKey: 'recipes.med.w3_d2', prepTime: 20, calories: 450, protein: 20, carbs: 40, fat: 22, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l3', translationKey: 'recipes.med.w3_l3', prepTime: 35, calories: 650, protein: 35, carbs: 65, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d3', translationKey: 'recipes.med.w3_d3', prepTime: 20, calories: 450, protein: 40, carbs: 25, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l4', translationKey: 'recipes.med.w3_l4', prepTime: 25, calories: 650, protein: 45, carbs: 60, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d4', translationKey: 'recipes.med.w3_d4', prepTime: 15, calories: 450, protein: 25, carbs: 15, fat: 32, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l5', translationKey: 'recipes.med.w3_l5', prepTime: 20, calories: 650, protein: 45, carbs: 35, fat: 35, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d5', translationKey: 'recipes.med.w3_d5', prepTime: 10, calories: 450, protein: 35, carbs: 15, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l6', translationKey: 'recipes.med.w3_l6', prepTime: 90, calories: 650, protein: 50, carbs: 40, fat: 30, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d6', translationKey: 'recipes.med.w3_d6', prepTime: 20, calories: 450, protein: 35, carbs: 20, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_med_w3_l7', translationKey: 'recipes.med.w3_l7', prepTime: 20, calories: 650, protein: 25, carbs: 60, fat: 35, mealTags: ['lunch'] },
+  { id: 'rec_med_w3_d7', translationKey: 'recipes.med.w3_d7', prepTime: 15, calories: 450, protein: 30, carbs: 35, fat: 20, mealTags: ['dinner'] },
+  // SEMANA 4 - DIETA MEDITERRÁNEA
+  { id: 'rec_med_w4_l1', translationKey: 'recipes.med.w4_l1', prepTime: 35, calories: 650, protein: 45, carbs: 60, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d1', translationKey: 'recipes.med.w4_d1', prepTime: 15, calories: 450, protein: 35, carbs: 15, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l2', translationKey: 'recipes.med.w4_l2', prepTime: 30, calories: 650, protein: 30, carbs: 70, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d2', translationKey: 'recipes.med.w4_d2', prepTime: 15, calories: 450, protein: 20, carbs: 25, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l3', translationKey: 'recipes.med.w4_l3', prepTime: 20, calories: 650, protein: 35, carbs: 65, fat: 25, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d3', translationKey: 'recipes.med.w4_d3', prepTime: 25, calories: 450, protein: 45, carbs: 20, fat: 20, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l4', translationKey: 'recipes.med.w4_l4', prepTime: 15, calories: 650, protein: 40, carbs: 55, fat: 30, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d4', translationKey: 'recipes.med.w4_d4', prepTime: 20, calories: 450, protein: 40, carbs: 15, fat: 25, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l5', translationKey: 'recipes.med.w4_l5', prepTime: 35, calories: 650, protein: 45, carbs: 65, fat: 20, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d5', translationKey: 'recipes.med.w4_d5', prepTime: 10, calories: 450, protein: 35, carbs: 10, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l6', translationKey: 'recipes.med.w4_l6', prepTime: 40, calories: 650, protein: 40, carbs: 55, fat: 28, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d6', translationKey: 'recipes.med.w4_d6', prepTime: 15, calories: 450, protein: 40, carbs: 20, fat: 22, mealTags: ['dinner'] },
+  { id: 'rec_med_w4_l7', translationKey: 'recipes.med.w4_l7', prepTime: 45, calories: 650, protein: 35, carbs: 60, fat: 28, mealTags: ['lunch'] },
+  { id: 'rec_med_w4_d7', translationKey: 'recipes.med.w4_d7', prepTime: 10, calories: 450, protein: 25, carbs: 30, fat: 25, mealTags: ['dinner'] },
   // SEMANA 2 - DIETA LOW-CARB
   { id: 'rec_lc_w2_l1', translationKey: 'recipes.low_carb.w2_l1', cost: '≈ 2,10 €', time: '20 min', kcal: 650, protein: 50, carbs: 10, fat: 45 },
   { id: 'rec_lc_w2_d1', translationKey: 'recipes.low_carb.w2_d1', cost: '≈ 2,30 €', time: '25 min', kcal: 500, protein: 42, carbs: 8, fat: 33 },

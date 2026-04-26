@@ -281,6 +281,712 @@
           "Cuire 12 min. Ajouter la tomate et le fromage, et gratiner 5 min de plus."
         ]
       }
+    },
+    "med": {
+      "w1_l1": {
+        "name": "Lentilles mijotées bio-efficientes",
+        "ingredients": [
+          "60g de lentilles sèches (ou 200g cuites)",
+          "1 carotte et 1/2 poivron vert",
+          "1/2 oignon et 1 gousse d'ail",
+          "5ml d'huile d'olive et feuille de laurier"
+        ],
+        "steps": [
+          "Hacher les légumes très finement.",
+          "Faire revenir l'ail et l'oignon avec l'huile.",
+          "Ajouter le reste des légumes et les lentilles.",
+          "Couvrir d'eau et cuire 40 min."
+        ]
+      },
+      "w1_d1": {
+        "name": "Dorade au four Oméga-3",
+        "ingredients": [
+          "1 dorade propre (200g)",
+          "1 petite courgette",
+          "1/2 oignon",
+          "10ml d'huile d'olive et épices au goût"
+        ],
+        "steps": [
+          "Couper la courgette et l'oignon en fines tranches pour former un lit.",
+          "Placer le poisson dessus avec deux coupes transversales.",
+          "Assaisonner avec des épices au lieu de sel commun pour protéger la tension.",
+          "Cuire au four à 180°C pendant 20 min."
+        ]
+      },
+      "w1_l2": {
+        "name": "Poulet au four avec pommes de terre",
+        "ingredients": [
+          "200g de blanc ou de cuisse de poulet sans peau",
+          "150g de pomme de terre",
+          "8 asperges sauvages",
+          "Romarin et citron"
+        ],
+        "steps": [
+          "Couper la pomme de terre en rondelles.",
+          "Placer le poulet, la pomme de terre et les asperges sur une plaque de cuisson.",
+          "Arroser de citron et de romarin.",
+          "Cuire au four à 200°C pendant 25-30 min."
+        ]
+      },
+      "w1_d2": {
+        "name": "Salade mixte protéinée",
+        "ingredients": [
+          "Mâche ou Roquette",
+          "1 boîte de thon au naturel (égoutté)",
+          "1 œuf dur",
+          "6 olives et tomate"
+        ],
+        "steps": [
+          "Faire bouillir l'œuf exactement 9 minutes pour éviter l'oxydation.",
+          "Couper la tomate et extraire le thon.",
+          "Mélanger tous les ingrédients à froid."
+        ]
+      },
+      "w1_l3": {
+        "name": "Pois chiches aux épinards",
+        "ingredients": [
+          "250g de pois chiches cuits (bien lavés)",
+          "100g d'épinards frais",
+          "1 œuf dur haché",
+          "Paprika doux"
+        ],
+        "steps": [
+          "Faire revenir les épinards dans une poêle avec un peu d'eau.",
+          "Ajouter les pois chiches et le paprika.",
+          "Mélanger 5 min et ajouter l'œuf haché à la fin."
+        ]
+      },
+      "w1_d3": {
+        "name": "Omelette aux champignons",
+        "ingredients": [
+          "2 œufs",
+          "100g de champignons émincés",
+          "Ail en poudre"
+        ],
+        "steps": [
+          "Faire revenir les champignons jusqu'à ce qu'ils rendent toute leur eau.",
+          "Battre les œufs.",
+          "Cuire l'omelette à feu moyen."
+        ]
+      },
+      "w1_l4": {
+        "name": "Riz complet à la dinde",
+        "ingredients": [
+          "60g de riz complet (cru)",
+          "150g de dinde en dés",
+          "Fleurettes de brocoli",
+          "5ml d'huile d'olive"
+        ],
+        "steps": [
+          "Faire bouillir le riz complet (30-40 min).",
+          "Faire revenir la dinde avec le brocoli dans une poêle.",
+          "Mélanger le tout avant de servir."
+        ]
+      },
+      "w1_d4": {
+        "name": "Saumon aux haricots verts",
+        "ingredients": [
+          "150g de saumon frais",
+          "200g de haricots verts",
+          "Citron"
+        ],
+        "steps": [
+          "Cuire les haricots verts à la vapeur pendant 8 minutes.",
+          "Faire griller le saumon 3 min par face, en commençant par la peau.",
+          "Presser un peu de citron au moment de servir."
+        ]
+      },
+      "w1_l5": {
+        "name": "Pâtes complètes à la bolognaise de poulet",
+        "ingredients": [
+          "70g de pâtes complètes",
+          "100g de poulet haché",
+          "Tomate concassée naturelle (sans sucre)",
+          "Basilic"
+        ],
+        "steps": [
+          "Cuire les pâtes al dente pour réduire l'index glycémique.",
+          "Préparer la sauce avec la viande et la tomate dans une poêle antiadhésive.",
+          "Mélanger les pâtes avec la sauce et décorer avec du basilic."
+        ]
+      },
+      "w1_d5": {
+        "name": "Colin à la vapeur aux petits pois",
+        "ingredients": [
+          "2 dos de colin",
+          "100g de petits pois (congelés)",
+          "1 petite carotte",
+          "Aneth"
+        ],
+        "steps": [
+          "Placer le colin, les petits pois et la carotte hachée dans une papillote en silicone.",
+          "Ajouter une pincée d'aneth.",
+          "Cuire 5-7 minutes à la vapeur (ou au micro-ondes)."
+        ]
+      },
+      "w1_l6": {
+        "name": "Paella de légumes et porc maigre",
+        "ingredients": [
+          "70g de riz bomba",
+          "Haricots verts plats et gros haricots",
+          "80g de porc maigre sans graisse",
+          "Vrai safran"
+        ],
+        "steps": [
+          "Faire revenir la viande et les légumes.",
+          "Ajouter l'eau et le safran, porter à ébullition.",
+          "Ajouter le riz et cuire à feu moyen pendant 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Poulet avec purée de potiron",
+        "ingredients": [
+          "150g de blanc de poulet",
+          "200g de potiron rôti",
+          "Gingembre râpé"
+        ],
+        "steps": [
+          "Réduire en purée le potiron préalablement rôti avec une touche de gingembre.",
+          "Faire griller le blanc de poulet.",
+          "Servir le poulet sur un lit de purée."
+        ]
+      },
+      "w1_l7": {
+        "name": "Cabillaud tomate et poivrons",
+        "ingredients": [
+          "180g de cabillaud (bien dessalé)",
+          "Poivrons rôtis",
+          "Sauce tomate maison"
+        ],
+        "steps": [
+          "S'assurer que le cabillaud est parfaitement dessalé pour protéger la tension.",
+          "Chauffer la sauce tomate avec les poivrons.",
+          "Cuire le cabillaud à feu doux immergé dans la sauce."
+        ]
+      },
+      "w1_d7": {
+        "name": "Houmous et sardines",
+        "ingredients": [
+          "80g de houmous",
+          "Bâtonnets de carotte crue",
+          "1 boîte de sardines à l'huile d'olive (égouttées)"
+        ],
+        "steps": [
+          "Préparer les bâtonnets de carotte.",
+          "Bien égoutter les sardines.",
+          "Servir froid comme un apéritif sain pour clore la semaine."
+        ]
+      },
+      "w2_l1": {
+        "name": "Salade de pois chiches méditerranéenne",
+        "ingredients": [
+          "200g de pois chiches cuits",
+          "1 boîte de maquereau",
+          "Concombre, poivron et oignon rouge"
+        ],
+        "steps": [
+          "Bien laver les pois chiches.",
+          "Mélanger avec les légumes et le maquereau.",
+          "Assaisonner d'huile d'olive et de vinaigre de cidre."
+        ]
+      },
+      "w2_d1": {
+        "name": "Dinde et purée de patate douce",
+        "ingredients": [
+          "150g de dinde",
+          "100g de patate douce",
+          "Mâche"
+        ],
+        "steps": [
+          "Rôtir la patate douce au micro-ondes (8 min).",
+          "Écraser la patate douce et griller la dinde.",
+          "Servir avec la mâche."
+        ]
+      },
+      "w2_l2": {
+        "name": "Poulet à l'ail et aux champignons",
+        "ingredients": [
+          "200g de poulet",
+          "150g de champignons",
+          "Ail et 2 petites pommes de terre"
+        ],
+        "steps": [
+          "Faire revenir le poulet avec l'ail émincé.",
+          "Ajouter les champignons jusqu'à coloration dorée.",
+          "Servir avec des pommes de terre bouillies."
+        ]
+      },
+      "w2_d2": {
+        "name": "Brouillade d'asperges et crevettes",
+        "ingredients": [
+          "2 œufs",
+          "100g de crevettes décortiquées",
+          "1 botte d'asperges sauvages"
+        ],
+        "steps": [
+          "Faire revenir les asperges et les crevettes.",
+          "Ajouter les œufs et cuire à feu doux."
+        ]
+      },
+      "w2_l3": {
+        "name": "Penne complètes au thon",
+        "ingredients": [
+          "70g de pâtes complètes",
+          "1 boîte de thon au naturel",
+          "6 olives et sauce tomate"
+        ],
+        "steps": [
+          "Faire bouillir les pâtes al dente.",
+          "Mélanger avec le thon, les olives et la tomate."
+        ]
+      },
+      "w2_d3": {
+        "name": "Bar au four et légumes",
+        "ingredients": [
+          "1 bar (200g)",
+          "Poivron rouge",
+          "Aubergine"
+        ],
+        "steps": [
+          "Couper et griller les légumes.",
+          "Cuire le poisson 15 min à 180°C sur les légumes."
+        ]
+      },
+      "w2_l4": {
+        "name": "Lentilles au riz complet",
+        "ingredients": [
+          "150g de lentilles cuites",
+          "50g de riz complet cuit",
+          "Oignon, carotte, poivron"
+        ],
+        "steps": [
+          "Faire revenir les légumes.",
+          "Ajouter les lentilles, le riz et le bouillon de légumes."
+        ]
+      },
+      "w2_d4": {
+        "name": "Burger de poulet Fit",
+        "ingredients": [
+          "150g de poulet haché",
+          "Roquette",
+          "10g de noix"
+        ],
+        "steps": [
+          "Former le burger et le griller.",
+          "Servir sans pain sur un lit de roquette et noix."
+        ]
+      },
+      "w2_l5": {
+        "name": "Seiche à la plancha",
+        "ingredients": [
+          "200g de seiche",
+          "Ail et persil",
+          "150g de pomme de terre et haricots verts"
+        ],
+        "steps": [
+          "Griller la seiche à feu vif avec l'ail.",
+          "Servir avec la pomme de terre et les haricots à la vapeur."
+        ]
+      },
+      "w2_d5": {
+        "name": "Crème de légumes",
+        "ingredients": [
+          "Courgette, poireau, carotte",
+          "1 œuf dur"
+        ],
+        "steps": [
+          "Faire bouillir les légumes et mixer sans crème.",
+          "Ajouter l'œuf haché par-dessus."
+        ]
+      },
+      "w2_l6": {
+        "name": "Couscous complet au bœuf",
+        "ingredients": [
+          "60g de couscous complet",
+          "120g de bœuf maigre",
+          "Poivrons variés"
+        ],
+        "steps": [
+          "Hydrater le couscous avec de l'eau bouillante.",
+          "Faire revenir le bœuf et les poivrons, et mélanger."
+        ]
+      },
+      "w2_d6": {
+        "name": "Brochettes de dinde et d'ananas",
+        "ingredients": [
+          "150g de dinde en dés",
+          "2 tranches d'ananas",
+          "Épinards frais"
+        ],
+        "steps": [
+          "Embrocher en alternant dinde et ananas.",
+          "Griller et servir avec les épinards."
+        ]
+      },
+      "w2_l7": {
+        "name": "Marmitako de thon léger",
+        "ingredients": [
+          "150g de thon frais",
+          "150g de pomme de terre",
+          "Poivron et oignon"
+        ],
+        "steps": [
+          "Faire mijoter la pomme de terre avec les légumes.",
+          "Ajouter le thon à la fin, hors du feu."
+        ]
+      },
+      "w2_d7": {
+        "name": "Planche méditerranéenne",
+        "ingredients": [
+          "80g de houmous",
+          "Céleri et carotte",
+          "1 œuf dur et 3 tranches de filet mignon séché"
+        ],
+        "steps": [
+          "Présenter sur une planche façon mezze. Sans cuisson."
+        ]
+      },
+      "w3_l1": {
+        "name": "Haricots blancs mijotés",
+        "ingredients": [
+          "200g de haricots blancs cuits",
+          "100g de potiron et 1 carotte",
+          "Haricots verts et paprika"
+        ],
+        "steps": [
+          "Bien laver les haricots en boîte.",
+          "Faire revenir les légumes, ajouter les haricots et l'eau.",
+          "Cuire 10 min."
+        ]
+      },
+      "w3_d1": {
+        "name": "Poulet vapeur à la moutarde à l'ancienne",
+        "ingredients": [
+          "150g de blanc de poulet",
+          "200g de brocoli",
+          "1 c. à café de moutarde de Dijon"
+        ],
+        "steps": [
+          "Cuire le brocoli et le poulet à la vapeur (12 min).",
+          "Étaler la moutarde à la fin."
+        ]
+      },
+      "w3_l2": {
+        "name": "Truite à la navarraise",
+        "ingredients": [
+          "1 truite entière",
+          "1 tranche de jambon serrano",
+          "150g de pomme de terre bouillie"
+        ],
+        "steps": [
+          "Placer le jambon à l'intérieur de la truite.",
+          "Cuire au four à 180°C pendant 15 min.",
+          "Servir avec la pomme de terre."
+        ]
+      },
+      "w3_d2": {
+        "name": "Crème d'épinards Popeye",
+        "ingredients": [
+          "300g d'épinards",
+          "1 petite pomme de terre",
+          "1 œuf dur"
+        ],
+        "steps": [
+          "Faire bouillir la pomme de terre et les épinards avec peu d'eau.",
+          "Mixer et ajouter l'œuf dur haché."
+        ]
+      },
+      "w3_l3": {
+        "name": "Poivrons farcis à la dinde",
+        "ingredients": [
+          "2 poivrons rouges",
+          "100g de dinde hachée",
+          "70g de riz complet cuit"
+        ],
+        "steps": [
+          "Vider les poivrons.",
+          "Farcir avec le mélange de dinde sautée et riz.",
+          "Cuire au four 25 min à 190°C."
+        ]
+      },
+      "w3_d3": {
+        "name": "Seiche aux artichauts",
+        "ingredients": [
+          "200g de seiche",
+          "4 artichauts",
+          "Ail émincé"
+        ],
+        "steps": [
+          "Faire revenir la seiche à feu vif.",
+          "Ajouter les artichauts et l'ail à la fin."
+        ]
+      },
+      "w3_l4": {
+        "name": "Quinoa au poulet et aux légumes",
+        "ingredients": [
+          "60g de quinoa",
+          "150g de poulet",
+          "Courgette et poivron"
+        ],
+        "steps": [
+          "Laver le quinoa et bouillir 12 min.",
+          "Faire revenir le poulet et les légumes, et mélanger avec le quinoa."
+        ]
+      },
+      "w3_d4": {
+        "name": "Omelette aux champignons et radis",
+        "ingredients": [
+          "2 œufs",
+          "100g de champignons",
+          "4 radis"
+        ],
+        "steps": [
+          "Préparer l'omelette avec les champignons sautés.",
+          "Servir les radis crus en rondelles à côté."
+        ]
+      },
+      "w3_l5": {
+        "name": "Cabillaud en croûte d'herbes",
+        "ingredients": [
+          "180g de cabillaud",
+          "Origan, thym, huile d'olive",
+          "200g d'asperges"
+        ],
+        "steps": [
+          "Badigeonner le cabillaud d'huile d'olive et d'herbes.",
+          "Cuire au four avec les asperges 12 min à 200°C."
+        ]
+      },
+      "w3_d5": {
+        "name": "Carpaccio de courgette et thon",
+        "ingredients": [
+          "1 courgette moyenne",
+          "1 boîte de thon au naturel",
+          "Citron et 5g de parmesan"
+        ],
+        "steps": [
+          "Couper la courgette crue très finement.",
+          "Disposer le thon, citron, poivre et parmesan dessus."
+        ]
+      },
+      "w3_l6": {
+        "name": "Goulasch de bœuf léger",
+        "ingredients": [
+          "150g de bœuf maigre",
+          "1 oignon et 1 poivron rouge",
+          "Bouillon sans sel"
+        ],
+        "steps": [
+          "Saisir la viande.",
+          "Ajouter les légumes, couvrir de bouillon et mijoter 1h30."
+        ]
+      },
+      "w3_d6": {
+        "name": "Espadon au baba ganoush",
+        "ingredients": [
+          "150g d'espadon ou d'empereur",
+          "1 aubergine rôtie",
+          "Citron"
+        ],
+        "steps": [
+          "Mixer l'aubergine rôtie avec du citron.",
+          "Griller le poisson."
+        ]
+      },
+      "w3_l7": {
+        "name": "Omelette de pommes de terre Fit",
+        "ingredients": [
+          "2 œufs",
+          "150g de pomme de terre",
+          "1/2 oignon"
+        ],
+        "steps": [
+          "Cuire la pomme de terre en tranches à la vapeur ou micro-ondes (7 min).",
+          "Mélanger avec l'œuf et cuire avec une goutte d'huile."
+        ]
+      },
+      "w3_d7": {
+        "name": "Crevettes au four et houmous",
+        "ingredients": [
+          "12 grandes crevettes",
+          "80g de houmous",
+          "Carottes crues"
+        ],
+        "steps": [
+          "Cuire les crevettes au four avec ail et persil (6 min).",
+          "Accompagner de houmous et de carotte crue."
+        ]
+      },
+      "w4_l1": {
+        "name": "Boulettes de dinde",
+        "ingredients": [
+          "150g de dinde hachée",
+          "1 œuf et oignon",
+          "Tomate concassée et 50g de petits pois"
+        ],
+        "steps": [
+          "Former les boulettes et les griller.",
+          "Cuire dans la sauce tomate aux petits pois."
+        ]
+      },
+      "w4_d1": {
+        "name": "Salade d'épinards gourmande",
+        "ingredients": [
+          "Épinards frais",
+          "100g de blanc de poulet",
+          "4 fraises et 20g de fromage de chèvre"
+        ],
+        "steps": [
+          "Griller le poulet.",
+          "Monter la salade à cru en mélangeant tout."
+        ]
+      },
+      "w4_l2": {
+        "name": "Mijoté de pois chiches et blettes",
+        "ingredients": [
+          "200g de pois chiches cuits",
+          "Blettes ou épinards",
+          "Ail, cumin et paprika"
+        ],
+        "steps": [
+          "Faire revenir l'ail avec le paprika et le cumin pour éviter les gaz.",
+          "Ajouter les blettes, les pois chiches et l'eau. Cuire 15 min."
+        ]
+      },
+      "w4_d2": {
+        "name": "Brouillade courgette et oignon",
+        "ingredients": [
+          "2 œufs",
+          "Courgette et oignon",
+          "2 tranches de jambon serrano"
+        ],
+        "steps": [
+          "Faire revenir les légumes finement hachés.",
+          "Ajouter les œufs battus et le jambon.",
+          "Brouiller à feu doux."
+        ]
+      },
+      "w4_l3": {
+        "name": "Spaghettis complets aux crevettes",
+        "ingredients": [
+          "70g de pâtes complètes",
+          "100g de crevettes décortiquées",
+          "2 gousses d'ail et piment"
+        ],
+        "steps": [
+          "Faire revenir l'ail et le piment dans l'huile d'olive.",
+          "Ajouter les crevettes et mélanger avec les pâtes cuites al dente."
+        ]
+      },
+      "w4_d3": {
+        "name": "Blanc de poulet à l'orange",
+        "ingredients": [
+          "150g de blanc de poulet",
+          "Jus d'orange frais",
+          "Asperges"
+        ],
+        "steps": [
+          "Griller le poulet.",
+          "Ajouter le jus et laisser réduire.",
+          "Servir avec des asperges à la vapeur."
+        ]
+      },
+      "w4_l4": {
+        "name": "Salade de lentilles et sardines",
+        "ingredients": [
+          "150g de lentilles cuites",
+          "1 boîte de sardines à l'huile",
+          "Légumes hachés au goût"
+        ],
+        "steps": [
+          "Bien égoutter les sardines.",
+          "Mélanger le tout à froid pour une dose supplémentaire d'Oméga-3."
+        ]
+      },
+      "w4_d4": {
+        "name": "Cabillaud au four",
+        "ingredients": [
+          "200g de cabillaud frais",
+          "10g d'amandes concassées",
+          "Brocoli"
+        ],
+        "steps": [
+          "Mettre les amandes sur le poisson.",
+          "Cuire au four 12 min à 180°C et servir avec du brocoli à la vapeur."
+        ]
+      },
+      "w4_l5": {
+        "name": "Riz complet aux champignons et lapin",
+        "ingredients": [
+          "70g de riz complet",
+          "Champignons variés",
+          "Lapin ou poulet en dés"
+        ],
+        "steps": [
+          "Faire un sofrito avec la viande et les champignons.",
+          "Ajouter le riz et le bouillon, et cuire jusqu'à tendreté."
+        ]
+      },
+      "w4_d5": {
+        "name": "Omelette d'inde et fromage allégé",
+        "ingredients": [
+          "2 œufs",
+          "2 tranches de dinde",
+          "1 tranche de fromage allégé"
+        ],
+        "steps": [
+          "Battre les œufs et les mettre dans la poêle.",
+          "Plier le fromage et la dinde au centre pour fondre."
+        ]
+      },
+      "w4_l6": {
+        "name": "Aubergines farcies au bœuf",
+        "ingredients": [
+          "1 grande aubergine",
+          "120g de bœuf haché",
+          "Oignon et poivron"
+        ],
+        "steps": [
+          "Vider l'aubergine et faire revenir la pulpe avec la viande.",
+          "Farcir la barque et cuire au four 20 min."
+        ]
+      },
+      "w4_d6": {
+        "name": "Brochettes de colin et gambas",
+        "ingredients": [
+          "150g de colin en dés",
+          "Gambas",
+          "Haricots verts"
+        ],
+        "steps": [
+          "Monter les brochettes et les griller.",
+          "Accompagner de haricots verts à la vapeur."
+        ]
+      },
+      "w4_l7": {
+        "name": "Pommes de terre aux calamars",
+        "ingredients": [
+          "150g de pomme de terre",
+          "200g de calamars ou seiche",
+          "Oignon et laurier"
+        ],
+        "steps": [
+          "Faire un sofrito avec l'oignon.",
+          "Ajouter les calamars, la pomme de terre, le laurier et le bouillon. Mijoter à feu doux."
+        ]
+      },
+      "w4_d7": {
+        "name": "Dîner vide-frigo",
+        "ingredients": [
+          "Houmous",
+          "Œuf dur",
+          "Poivrons rôtis et bâtonnets de dinde"
+        ],
+        "steps": [
+          "Monter une assiette froide composée façon apéro.",
+          "Profiter de la fin de la semaine."
+        ]
+      }
     }
   },
   "dietTab": {
@@ -853,7 +1559,8 @@
         "dinner": "Nettoyage du Frigo : Houmous, œuf dur, poivrons grillés et bâtonnets de dinde."
       },
       "title": "Plan Méditerranéen · 28 Jours",
-      "subtitle": "Menu cliniquement équilibré pour une perte de poids saine"
+      "subtitle": "Menu cliniquement équilibré pour une perte de poids saine",
+      "milestone_w4": "Félicitations, Ulises ! Tu as terminé ton premier mois d'optimisation métabolique. Ta tension artérielle devrait commencer à se stabiliser."
     },
     "weekLabel": "Semaine",
     "dayLabel": "Jour",

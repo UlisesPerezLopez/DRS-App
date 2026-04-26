@@ -281,6 +281,712 @@
           "Bake 12 min. Add tomato and cheese, and gratin for 5 more min."
         ]
       }
+    },
+    "med": {
+      "w1_l1": {
+        "name": "Bio-Efficient Stewed Lentils",
+        "ingredients": [
+          "60g dry lentils (or 200g cooked)",
+          "1 carrot and 1/2 green pepper",
+          "1/2 onion and 1 garlic clove",
+          "5ml EVOO and bay leaf"
+        ],
+        "steps": [
+          "Chop the vegetables very finely.",
+          "Sauté the garlic and onion with the oil.",
+          "Add the rest of the vegetables and the lentils.",
+          "Cover with water and cook for 40 min."
+        ]
+      },
+      "w1_d1": {
+        "name": "Baked Gilt-head Bream Omega-3",
+        "ingredients": [
+          "1 clean gilt-head bream (200g)",
+          "1 small zucchini",
+          "1/2 onion",
+          "10ml EVOO and spices to taste"
+        ],
+        "steps": [
+          "Cut the zucchini and onion into thin slices forming a bed.",
+          "Place the fish on top with two cross cuts.",
+          "Season using spices instead of common salt to protect blood pressure.",
+          "Bake at 180°C for 20 min."
+        ]
+      },
+      "w1_l2": {
+        "name": "Baked Chicken with Potato",
+        "ingredients": [
+          "200g skinless chicken breast or thigh",
+          "150g potato",
+          "8 wild asparagus",
+          "Rosemary and lemon"
+        ],
+        "steps": [
+          "Cut the potato into baker-style slices.",
+          "Place the chicken, potato and asparagus on a baking tray.",
+          "Drizzle with lemon and rosemary.",
+          "Bake at 200°C for 25-30 min."
+        ]
+      },
+      "w1_d2": {
+        "name": "Protein Mixed Salad",
+        "ingredients": [
+          "Lamb's lettuce or Arugula",
+          "1 can of natural tuna (drained)",
+          "1 hard-boiled egg",
+          "6 olives and tomato"
+        ],
+        "steps": [
+          "Boil the egg for exactly 9 minutes to avoid oxidation.",
+          "Cut the tomato and extract the tuna.",
+          "Mix all the ingredients cold."
+        ]
+      },
+      "w1_l3": {
+        "name": "Chickpeas with Spinach",
+        "ingredients": [
+          "250g cooked chickpeas (well washed)",
+          "100g fresh spinach",
+          "1 chopped hard-boiled egg",
+          "Sweet paprika"
+        ],
+        "steps": [
+          "Sauté the spinach in a pan with a little water.",
+          "Add the chickpeas and paprika.",
+          "Mix for 5 min and add the chopped egg at the end."
+        ]
+      },
+      "w1_d3": {
+        "name": "Mushroom Omelet",
+        "ingredients": [
+          "2 eggs",
+          "100g sliced mushrooms",
+          "Garlic powder"
+        ],
+        "steps": [
+          "Sauté the mushrooms until they release all their water.",
+          "Beat the eggs.",
+          "Cook the omelet over medium heat."
+        ]
+      },
+      "w1_l4": {
+        "name": "Brown Rice with Turkey",
+        "ingredients": [
+          "60g brown rice (raw)",
+          "150g diced turkey",
+          "Broccoli florets",
+          "5ml EVOO"
+        ],
+        "steps": [
+          "Boil the brown rice (30-40 min).",
+          "Sauté the turkey with the broccoli in a pan.",
+          "Mix everything together before serving."
+        ]
+      },
+      "w1_d4": {
+        "name": "Salmon with Green Beans",
+        "ingredients": [
+          "150g fresh salmon",
+          "200g green beans",
+          "Lemon"
+        ],
+        "steps": [
+          "Steam the green beans for 8 minutes.",
+          "Grill the salmon for 3 min per side, starting with the skin.",
+          "Squeeze a little lemon when serving."
+        ]
+      },
+      "w1_l5": {
+        "name": "Whole Wheat Chicken Bolognese Pasta",
+        "ingredients": [
+          "70g whole wheat pasta",
+          "100g minced chicken",
+          "Natural crushed tomato (sugar-free)",
+          "Basil"
+        ],
+        "steps": [
+          "Cook the pasta al dente to reduce its glycemic index.",
+          "Prepare the sauce with the meat and tomato in a non-stick pan.",
+          "Mix the pasta with the sauce and garnish with basil."
+        ]
+      },
+      "w1_d5": {
+        "name": "Steamed Hake with Peas",
+        "ingredients": [
+          "2 hake loins",
+          "100g peas (frozen)",
+          "1 small carrot",
+          "Dill"
+        ],
+        "steps": [
+          "Place the hake, peas and chopped carrot in a steam case.",
+          "Add a pinch of dill.",
+          "Cook for 5-7 minutes steamed (or microwave)."
+        ]
+      },
+      "w1_l6": {
+        "name": "Vegetable and Lean Pork Paella",
+        "ingredients": [
+          "70g bomba rice",
+          "Flat green beans and lima beans",
+          "80g lean pork without fat",
+          "Real saffron"
+        ],
+        "steps": [
+          "Sauté the meat and vegetables.",
+          "Add water and saffron, bringing to a boil.",
+          "Add the rice and cook over medium heat for 18 min."
+        ]
+      },
+      "w1_d6": {
+        "name": "Chicken with Pumpkin Puree",
+        "ingredients": [
+          "150g chicken breast",
+          "200g roasted pumpkin",
+          "Grated ginger"
+        ],
+        "steps": [
+          "Mash the previously roasted pumpkin with a touch of ginger.",
+          "Grill the chicken breast.",
+          "Serve the chicken on a bed of puree."
+        ]
+      },
+      "w1_l7": {
+        "name": "Cod with Tomato and Peppers",
+        "ingredients": [
+          "180g cod (well desalted)",
+          "Roasted peppers",
+          "Homemade tomato sauce"
+        ],
+        "steps": [
+          "Ensure the cod is perfectly desalted to protect blood pressure.",
+          "Heat the tomato sauce with the peppers.",
+          "Cook the cod over low heat submerged in the sauce."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus and Sardines",
+        "ingredients": [
+          "80g hummus",
+          "Raw carrot sticks",
+          "1 can of sardines in EVOO (drained)"
+        ],
+        "steps": [
+          "Prepare the carrot sticks.",
+          "Drain the sardines well.",
+          "Serve cold as a healthy snack to close the week."
+        ]
+      },
+      "w2_l1": {
+        "name": "Mediterranean Chickpea Salad",
+        "ingredients": [
+          "200g cooked chickpeas",
+          "1 can mackerel",
+          "Cucumber, pepper and red onion"
+        ],
+        "steps": [
+          "Wash the chickpeas well.",
+          "Mix with the vegetables and mackerel.",
+          "Dress with EVOO and apple cider vinegar."
+        ]
+      },
+      "w2_d1": {
+        "name": "Turkey with Sweet Potato Puree",
+        "ingredients": [
+          "150g turkey",
+          "100g sweet potato",
+          "Lamb's lettuce"
+        ],
+        "steps": [
+          "Roast sweet potato in microwave (8 min).",
+          "Mash the sweet potato and grill the turkey.",
+          "Serve with lamb's lettuce."
+        ]
+      },
+      "w2_l2": {
+        "name": "Garlic Chicken with Mushrooms",
+        "ingredients": [
+          "200g chicken",
+          "150g mushrooms",
+          "Garlic and 2 small potatoes"
+        ],
+        "steps": [
+          "Sauté chicken with sliced garlic.",
+          "Add mushrooms until golden.",
+          "Serve with boiled potatoes."
+        ]
+      },
+      "w2_d2": {
+        "name": "Asparagus and Prawn Scramble",
+        "ingredients": [
+          "2 eggs",
+          "100g peeled prawns",
+          "1 bunch wild asparagus"
+        ],
+        "steps": [
+          "Sauté asparagus and prawns.",
+          "Add eggs and scramble over low heat."
+        ]
+      },
+      "w2_l3": {
+        "name": "Whole Wheat Penne with Tuna",
+        "ingredients": [
+          "70g whole wheat pasta",
+          "1 can natural tuna",
+          "6 olives and tomato sauce"
+        ],
+        "steps": [
+          "Boil pasta al dente.",
+          "Mix with tuna, olives and tomato."
+        ]
+      },
+      "w2_d3": {
+        "name": "Baked Sea Bass with Vegetables",
+        "ingredients": [
+          "1 sea bass (200g)",
+          "Red pepper",
+          "Eggplant"
+        ],
+        "steps": [
+          "Cut and grill the vegetables.",
+          "Bake the fish 15 min at 180°C on the vegetables."
+        ]
+      },
+      "w2_l4": {
+        "name": "Lentils with Brown Rice",
+        "ingredients": [
+          "150g cooked lentils",
+          "50g cooked brown rice",
+          "Onion, carrot, pepper"
+        ],
+        "steps": [
+          "Sauté the vegetables.",
+          "Add lentils, rice and vegetable broth."
+        ]
+      },
+      "w2_d4": {
+        "name": "Fit Chicken Burger",
+        "ingredients": [
+          "150g minced chicken",
+          "Arugula",
+          "10g walnuts"
+        ],
+        "steps": [
+          "Form burger and grill.",
+          "Serve without bread on a bed of arugula and walnuts."
+        ]
+      },
+      "w2_l5": {
+        "name": "Grilled Cuttlefish",
+        "ingredients": [
+          "200g cuttlefish",
+          "Garlic and parsley",
+          "150g potato and green beans"
+        ],
+        "steps": [
+          "Grill cuttlefish over high heat with garlic.",
+          "Serve with steamed potato and beans."
+        ]
+      },
+      "w2_d5": {
+        "name": "Vegetable Cream Soup",
+        "ingredients": [
+          "Zucchini, leek, carrot",
+          "1 hard-boiled egg"
+        ],
+        "steps": [
+          "Boil vegetables and blend without cream.",
+          "Add chopped egg on top."
+        ]
+      },
+      "w2_l6": {
+        "name": "Whole Wheat Couscous with Beef",
+        "ingredients": [
+          "60g whole wheat couscous",
+          "120g lean beef",
+          "Mixed peppers"
+        ],
+        "steps": [
+          "Hydrate couscous with boiling water.",
+          "Sauté beef and peppers, and mix."
+        ]
+      },
+      "w2_d6": {
+        "name": "Turkey and Pineapple Skewers",
+        "ingredients": [
+          "150g diced turkey",
+          "2 pineapple slices",
+          "Fresh spinach"
+        ],
+        "steps": [
+          "Skewer alternating turkey and pineapple.",
+          "Grill and serve with spinach."
+        ]
+      },
+      "w2_l7": {
+        "name": "Light Tuna Marmitako",
+        "ingredients": [
+          "150g fresh tuna",
+          "150g potato",
+          "Pepper and onion"
+        ],
+        "steps": [
+          "Stew the potato with vegetables.",
+          "Add tuna at the end with the heat off."
+        ]
+      },
+      "w2_d7": {
+        "name": "Mediterranean Board",
+        "ingredients": [
+          "80g hummus",
+          "Celery and carrot",
+          "1 hard-boiled egg and 3 slices cured loin"
+        ],
+        "steps": [
+          "Serve on a mezze style board. No cooking required."
+        ]
+      },
+      "w3_l1": {
+        "name": "Stewed White Beans",
+        "ingredients": [
+          "200g cooked white beans",
+          "100g pumpkin and 1 carrot",
+          "Green beans and paprika"
+        ],
+        "steps": [
+          "Wash canned beans thoroughly.",
+          "Sauté vegetables, add beans and water.",
+          "Cook 10 min."
+        ]
+      },
+      "w3_d1": {
+        "name": "Steamed Chicken with Whole Grain Mustard",
+        "ingredients": [
+          "150g chicken breast",
+          "200g broccoli",
+          "1 tsp Dijon mustard"
+        ],
+        "steps": [
+          "Steam broccoli and chicken (12 min).",
+          "Spread mustard at the end."
+        ]
+      },
+      "w3_l2": {
+        "name": "Navarre Style Trout",
+        "ingredients": [
+          "1 whole trout",
+          "1 slice serrano ham",
+          "150g boiled potato"
+        ],
+        "steps": [
+          "Place ham inside the trout.",
+          "Bake at 180°C for 15 min.",
+          "Serve with potato."
+        ]
+      },
+      "w3_d2": {
+        "name": "Popeye Spinach Cream",
+        "ingredients": [
+          "300g spinach",
+          "1 small potato",
+          "1 hard-boiled egg"
+        ],
+        "steps": [
+          "Boil potato and spinach with little water.",
+          "Blend and add chopped hard-boiled egg."
+        ]
+      },
+      "w3_l3": {
+        "name": "Turkey Stuffed Peppers",
+        "ingredients": [
+          "2 red peppers",
+          "100g minced turkey",
+          "70g cooked brown rice"
+        ],
+        "steps": [
+          "Hollow out the peppers.",
+          "Stuff with the sautéed turkey and rice mixture.",
+          "Bake 25 min at 190°C."
+        ]
+      },
+      "w3_d3": {
+        "name": "Cuttlefish with Artichokes",
+        "ingredients": [
+          "200g cuttlefish",
+          "4 artichokes",
+          "Sliced garlic"
+        ],
+        "steps": [
+          "Sauté cuttlefish over high heat.",
+          "Add artichokes and garlic at the end."
+        ]
+      },
+      "w3_l4": {
+        "name": "Quinoa with Chicken and Vegetables",
+        "ingredients": [
+          "60g quinoa",
+          "150g chicken",
+          "Zucchini and pepper"
+        ],
+        "steps": [
+          "Wash quinoa and boil 12 min.",
+          "Sauté chicken and vegetables, and mix with quinoa."
+        ]
+      },
+      "w3_d4": {
+        "name": "Mushroom and Radish Omelet",
+        "ingredients": [
+          "2 eggs",
+          "100g mushrooms",
+          "4 radishes"
+        ],
+        "steps": [
+          "Make omelet with sautéed mushrooms.",
+          "Serve raw sliced radishes on the side."
+        ]
+      },
+      "w3_l5": {
+        "name": "Herb Crusted Cod",
+        "ingredients": [
+          "180g cod",
+          "Oregano, thyme, EVOO",
+          "200g asparagus"
+        ],
+        "steps": [
+          "Brush cod with EVOO and herbs.",
+          "Bake alongside asparagus 12 min at 200°C."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zucchini and Tuna Carpaccio",
+        "ingredients": [
+          "1 medium zucchini",
+          "1 can natural tuna",
+          "Lemon and 5g parmesan"
+        ],
+        "steps": [
+          "Slice raw zucchini very thinly.",
+          "Top with tuna, lemon, pepper and parmesan."
+        ]
+      },
+      "w3_l6": {
+        "name": "Light Beef Goulash",
+        "ingredients": [
+          "150g lean beef",
+          "1 onion and 1 red pepper",
+          "Salt-free broth"
+        ],
+        "steps": [
+          "Sear the meat.",
+          "Add vegetables, cover with broth and simmer for 1.5 hours."
+        ]
+      },
+      "w3_d6": {
+        "name": "Swordfish with Baba Ganoush",
+        "ingredients": [
+          "150g swordfish",
+          "1 roasted eggplant",
+          "Lemon"
+        ],
+        "steps": [
+          "Mash roasted eggplant with lemon.",
+          "Grill the fish."
+        ]
+      },
+      "w3_l7": {
+        "name": "Fit Potato Omelet",
+        "ingredients": [
+          "2 eggs",
+          "150g potato",
+          "1/2 onion"
+        ],
+        "steps": [
+          "Cook sliced potato steamed or in microwave (7 min).",
+          "Mix with egg and cook with a drop of oil."
+        ]
+      },
+      "w3_d7": {
+        "name": "Baked Prawns and Hummus",
+        "ingredients": [
+          "12 large prawns",
+          "80g hummus",
+          "Raw carrots"
+        ],
+        "steps": [
+          "Bake prawns with garlic and parsley (6 min).",
+          "Serve with hummus and raw carrot."
+        ]
+      },
+      "w4_l1": {
+        "name": "Turkey Meatballs",
+        "ingredients": [
+          "150g minced turkey",
+          "1 egg and onion",
+          "Crushed tomato and 50g peas"
+        ],
+        "steps": [
+          "Form the meatballs and grill them.",
+          "Cook in tomato sauce with peas."
+        ]
+      },
+      "w4_d1": {
+        "name": "Gourmet Spinach Salad",
+        "ingredients": [
+          "Fresh spinach",
+          "100g chicken breast",
+          "4 strawberries and 20g goat cheese"
+        ],
+        "steps": [
+          "Grill the chicken.",
+          "Assemble the salad raw, mixing everything."
+        ]
+      },
+      "w4_l2": {
+        "name": "Chickpea and Chard Stew",
+        "ingredients": [
+          "200g cooked chickpeas",
+          "Chard or spinach",
+          "Garlic, cumin and paprika"
+        ],
+        "steps": [
+          "Sauté garlic with paprika and cumin to prevent gas.",
+          "Add chard, chickpeas and water. Cook 15 min."
+        ]
+      },
+      "w4_d2": {
+        "name": "Zucchini and Onion Scramble",
+        "ingredients": [
+          "2 eggs",
+          "Zucchini and onion",
+          "2 slices serrano ham"
+        ],
+        "steps": [
+          "Sauté finely chopped vegetables.",
+          "Add beaten eggs and ham.",
+          "Scramble over low heat."
+        ]
+      },
+      "w4_l3": {
+        "name": "Whole Wheat Spaghetti with Prawns",
+        "ingredients": [
+          "70g whole wheat pasta",
+          "100g peeled prawns",
+          "2 cloves garlic and chili"
+        ],
+        "steps": [
+          "Sauté garlic and chili in EVOO.",
+          "Add prawns and mix with pasta cooked al dente."
+        ]
+      },
+      "w4_d3": {
+        "name": "Orange Chicken Breast",
+        "ingredients": [
+          "150g chicken breast",
+          "Natural orange juice",
+          "Asparagus"
+        ],
+        "steps": [
+          "Grill the chicken.",
+          "Add the juice and let it reduce.",
+          "Serve with steamed asparagus."
+        ]
+      },
+      "w4_l4": {
+        "name": "Lentil and Sardine Salad",
+        "ingredients": [
+          "150g cooked lentils",
+          "1 can sardines in oil",
+          "Chopped vegetables to taste"
+        ],
+        "steps": [
+          "Drain sardines very well.",
+          "Mix everything cold for an extra dose of Omega-3."
+        ]
+      },
+      "w4_d4": {
+        "name": "Baked Cod",
+        "ingredients": [
+          "200g fresh cod",
+          "10g chopped almonds",
+          "Broccoli"
+        ],
+        "steps": [
+          "Place the almonds on the fish.",
+          "Bake 12 min at 180°C and serve with steamed broccoli."
+        ]
+      },
+      "w4_l5": {
+        "name": "Brown Rice with Mushrooms and Rabbit",
+        "ingredients": [
+          "70g brown rice",
+          "Mixed mushrooms",
+          "Diced rabbit or chicken"
+        ],
+        "steps": [
+          "Make a sofrito with the meat and mushrooms.",
+          "Add the rice and broth, and cook until tender."
+        ]
+      },
+      "w4_d5": {
+        "name": "Turkey and Light Cheese Omelet",
+        "ingredients": [
+          "2 eggs",
+          "2 slices turkey",
+          "1 slice light cheese"
+        ],
+        "steps": [
+          "Beat eggs and put in the pan.",
+          "Fold cheese and turkey in the center to melt."
+        ]
+      },
+      "w4_l6": {
+        "name": "Beef Stuffed Eggplants",
+        "ingredients": [
+          "1 large eggplant",
+          "120g minced beef",
+          "Onion and pepper"
+        ],
+        "steps": [
+          "Hollow out eggplant and sauté pulp with meat.",
+          "Stuff the boat and bake 20 min."
+        ]
+      },
+      "w4_d6": {
+        "name": "Hake and Prawn Skewers",
+        "ingredients": [
+          "150g diced hake",
+          "Prawns",
+          "Green beans"
+        ],
+        "steps": [
+          "Assemble skewers and grill them.",
+          "Serve with steamed green beans."
+        ]
+      },
+      "w4_l7": {
+        "name": "Potatoes with Squid",
+        "ingredients": [
+          "150g potato",
+          "200g squid or cuttlefish",
+          "Onion and bay leaf"
+        ],
+        "steps": [
+          "Make a sofrito with the onion.",
+          "Add squid, potato, bay leaf and broth. Stew over low heat."
+        ]
+      },
+      "w4_d7": {
+        "name": "Fridge Cleaning Dinner",
+        "ingredients": [
+          "Hummus",
+          "Hard-boiled egg",
+          "Roasted peppers and turkey sticks"
+        ],
+        "steps": [
+          "Assemble a cold mixed plate snack style.",
+          "Enjoy the end of the week."
+        ]
+      }
     }
   },
   "dietTab": {
@@ -853,7 +1559,8 @@
         "dinner": "Fridge Clearance: Hummus, hard-boiled egg, roasted peppers and turkey sticks."
       },
       "title": "Mediterranean Plan · 28 Days",
-      "subtitle": "Clinically balanced menu for healthy weight loss"
+      "subtitle": "Clinically balanced menu for healthy weight loss",
+      "milestone_w4": "Congratulations, Ulises! You have completed your first month of metabolic optimization. Your blood pressure should start to stabilize."
     },
     "weekLabel": "Week",
     "dayLabel": "Day",

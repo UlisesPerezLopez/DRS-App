@@ -281,6 +281,712 @@
           "12 Min. backen. Tomate und Käse hinzufügen und weitere 5 Min. gratinieren."
         ]
       }
+    },
+    "med": {
+      "w1_l1": {
+        "name": "Bio-effiziente Linseneintopf",
+        "ingredients": [
+          "60g trockene Linsen (oder 200g gekocht)",
+          "1 Karotte und 1/2 grüne Paprika",
+          "1/2 Zwiebel und 1 Knoblauchzehe",
+          "5ml Olivenöl und Lorbeerblatt"
+        ],
+        "steps": [
+          "Das Gemüse sehr fein hacken.",
+          "Knoblauch und Zwiebel mit dem Öl anbraten.",
+          "Den Rest des Gemüses und die Linsen hinzufügen.",
+          "Mit Wasser bedecken und 40 Min. kochen lassen."
+        ]
+      },
+      "w1_d1": {
+        "name": "Gebackene Goldbrasse Omega-3",
+        "ingredients": [
+          "1 saubere Goldbrasse (200g)",
+          "1 kleine Zucchini",
+          "1/2 Zwiebel",
+          "10ml Olivenöl und Gewürze nach Geschmack"
+        ],
+        "steps": [
+          "Zucchini und Zwiebel in feine Scheiben schneiden und ein Bett bilden.",
+          "Den Fisch darauf legen und zweimal einschneiden.",
+          "Mit Gewürzen statt mit Speisesalz würzen, um den Blutdruck zu schonen.",
+          "Bei 180°C für 20 Min. backen."
+        ]
+      },
+      "w1_l2": {
+        "name": "Gebackenes Hähnchen mit Kartoffeln",
+        "ingredients": [
+          "200g Hähnchenbrust oder Oberschenkel ohne Haut",
+          "150g Kartoffel",
+          "8 Wildspargel",
+          "Rosmarin und Zitrone"
+        ],
+        "steps": [
+          "Die Kartoffel in Scheiben schneiden (Bäckerin-Art).",
+          "Hähnchen, Kartoffeln und Spargel auf ein Backblech legen.",
+          "Mit Zitrone und Rosmarin beträufeln.",
+          "Bei 200°C für 25-30 Min. backen."
+        ]
+      },
+      "w1_d2": {
+        "name": "Gemischter Proteinsalat",
+        "ingredients": [
+          "Feldsalat oder Rucola",
+          "1 Dose Thunfisch natur (abgetropft)",
+          "1 hartgekochtes Ei",
+          "6 Oliven und Tomate"
+        ],
+        "steps": [
+          "Das Ei genau 9 Minuten kochen, um Oxidation zu vermeiden.",
+          "Die Tomate schneiden und den Thunfisch herausnehmen.",
+          "Alle Zutaten kalt mischen."
+        ]
+      },
+      "w1_l3": {
+        "name": "Kichererbsen mit Spinat",
+        "ingredients": [
+          "250g gekochte Kichererbsen (gut gewaschen)",
+          "100g frischer Spinat",
+          "1 gehacktes hartgekochtes Ei",
+          "Edelsüßes Paprikapulver"
+        ],
+        "steps": [
+          "Den Spinat in einer Pfanne mit etwas Wasser anbraten.",
+          "Die Kichererbsen und das Paprikapulver hinzufügen.",
+          "5 Min. mischen und das gehackte Ei am Ende hinzufügen."
+        ]
+      },
+      "w1_d3": {
+        "name": "Champignon-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "100g in Scheiben geschnittene Champignons",
+          "Knoblauchpulver"
+        ],
+        "steps": [
+          "Die Pilze anbraten, bis sie ihr gesamtes Wasser abgeben.",
+          "Die Eier schlagen.",
+          "Das Omelett bei mittlerer Hitze stocken lassen."
+        ]
+      },
+      "w1_l4": {
+        "name": "Brauner Reis mit Pute",
+        "ingredients": [
+          "60g brauner Reis (roh)",
+          "150g gewürfelte Pute",
+          "Brokkoliröschen",
+          "5ml Olivenöl"
+        ],
+        "steps": [
+          "Den braunen Reis kochen (30-40 Min.).",
+          "Die Pute mit dem Brokkoli in einer Pfanne anbraten.",
+          "Vor dem Servieren alles gut vermischen."
+        ]
+      },
+      "w1_d4": {
+        "name": "Lachs mit grünen Bohnen",
+        "ingredients": [
+          "150g frischer Lachs",
+          "200g grüne Bohnen",
+          "Zitrone"
+        ],
+        "steps": [
+          "Die grünen Bohnen 8 Minuten dämpfen.",
+          "Den Lachs auf der Plancha 3 Min. pro Seite braten, mit der Haut beginnend.",
+          "Beim Servieren etwas Zitrone auspressen."
+        ]
+      },
+      "w1_l5": {
+        "name": "Vollkornnudeln mit Hähnchen-Bolognese",
+        "ingredients": [
+          "70g Vollkornnudeln",
+          "100g Hähnchenhackfleisch",
+          "Natürliche passierte Tomaten (zuckerfrei)",
+          "Basilikum"
+        ],
+        "steps": [
+          "Die Nudeln al dente kochen, um den glykämischen Index zu senken.",
+          "Die Sauce mit dem Fleisch und der Tomate in einer Antihaft-Pfanne zubereiten.",
+          "Die Nudeln mit der Sauce mischen und mit Basilikum garnieren."
+        ]
+      },
+      "w1_d5": {
+        "name": "Gedämpfter Seehecht mit Erbsen",
+        "ingredients": [
+          "2 Seehechtfilets",
+          "100g Erbsen (gefroren)",
+          "1 kleine Karotte",
+          "Dill"
+        ],
+        "steps": [
+          "Seehecht, Erbsen und gehackte Karotte in einen Dampfgarer geben.",
+          "Eine Prise Dill hinzufügen.",
+          "5-7 Minuten dämpfen (oder Mikrowelle)."
+        ]
+      },
+      "w1_l6": {
+        "name": "Gemüse- und Magerfleisch-Paella",
+        "ingredients": [
+          "70g Bomba-Reis",
+          "Flache grüne Bohnen und dicke Bohnen",
+          "80g mageres Schweinefleisch ohne Fett",
+          "Echter Safran"
+        ],
+        "steps": [
+          "Fleisch und Gemüse anbraten.",
+          "Wasser und Safran hinzufügen und aufkochen lassen.",
+          "Den Reis einrühren und bei mittlerer Hitze 18 Min. kochen."
+        ]
+      },
+      "w1_d6": {
+        "name": "Hähnchen mit Kürbispüree",
+        "ingredients": [
+          "150g Hähnchenbrust",
+          "200g gerösteter Kürbis",
+          "Geriebener Ingwer"
+        ],
+        "steps": [
+          "Den zuvor gerösteten Kürbis mit einem Hauch Ingwer pürieren.",
+          "Die Hähnchenbrust auf der Plancha grillen.",
+          "Das Hähnchen auf einem Püree-Bett servieren."
+        ]
+      },
+      "w1_l7": {
+        "name": "Kabeljau mit Tomaten und Paprika",
+        "ingredients": [
+          "180g Kabeljau (gut entsalzen)",
+          "Geröstete Paprika",
+          "Hausgemachte Tomatensauce"
+        ],
+        "steps": [
+          "Darauf achten, dass der Kabeljau perfekt entsalzen ist, um den Blutdruck zu schonen.",
+          "Die Tomatensauce mit den Paprika erhitzen.",
+          "Den Kabeljau bei schwacher Hitze in der Sauce pochieren."
+        ]
+      },
+      "w1_d7": {
+        "name": "Hummus und Sardinen",
+        "ingredients": [
+          "80g Hummus",
+          "Rohe Karottensticks",
+          "1 Dose Sardinen in Olivenöl (abgetropft)"
+        ],
+        "steps": [
+          "Die Karottensticks vorbereiten.",
+          "Die Sardinen gut abtropfen lassen.",
+          "Kalt servieren als gesunder Snack zum Abschluss der Woche."
+        ]
+      },
+      "w2_l1": {
+        "name": "Mediterraner Kichererbsensalat",
+        "ingredients": [
+          "200g gekochte Kichererbsen",
+          "1 Dose Makrele",
+          "Gurke, Paprika und rote Zwiebel"
+        ],
+        "steps": [
+          "Kichererbsen gut waschen.",
+          "Mit dem Gemüse und der Makrele mischen.",
+          "Mit Olivenöl und Apfelessig anmachen."
+        ]
+      },
+      "w2_d1": {
+        "name": "Pute mit Süßkartoffelpüree",
+        "ingredients": [
+          "150g Pute",
+          "100g Süßkartoffel",
+          "Feldsalat"
+        ],
+        "steps": [
+          "Süßkartoffel in der Mikrowelle garen (8 Min.).",
+          "Süßkartoffel zerdrücken und Pute grillen.",
+          "Mit Feldsalat servieren."
+        ]
+      },
+      "w2_l2": {
+        "name": "Knoblauch-Hähnchen mit Champignons",
+        "ingredients": [
+          "200g Hähnchen",
+          "150g Champignons",
+          "Knoblauch und 2 kleine Kartoffeln"
+        ],
+        "steps": [
+          "Hähnchen mit in Scheiben geschnittenem Knoblauch anbraten.",
+          "Champignons hinzufügen, bis sie goldbraun sind.",
+          "Mit gekochten Kartoffeln servieren."
+        ]
+      },
+      "w2_d2": {
+        "name": "Rührei mit Spargel und Garnelen",
+        "ingredients": [
+          "2 Eier",
+          "100g geschälte Garnelen",
+          "1 Bund wilder Spargel"
+        ],
+        "steps": [
+          "Spargel und Garnelen anbraten.",
+          "Eier hinzufügen und bei schwacher Hitze stocken lassen."
+        ]
+      },
+      "w2_l3": {
+        "name": "Vollkorn-Penne mit Thunfisch",
+        "ingredients": [
+          "70g Vollkornnudeln",
+          "1 Dose Thunfisch natur",
+          "6 Oliven und Tomatensauce"
+        ],
+        "steps": [
+          "Nudeln al dente kochen.",
+          "Mit Thunfisch, Oliven und Tomaten mischen."
+        ]
+      },
+      "w2_d3": {
+        "name": "Gebackener Wolfsbarsch mit Gemüse",
+        "ingredients": [
+          "1 Wolfsbarsch (200g)",
+          "Rote Paprika",
+          "Aubergine"
+        ],
+        "steps": [
+          "Gemüse schneiden und grillen.",
+          "Fisch 15 Min. bei 180°C auf dem Gemüse backen."
+        ]
+      },
+      "w2_l4": {
+        "name": "Linsen mit braunem Reis",
+        "ingredients": [
+          "150g gekochte Linsen",
+          "50g gekochter brauner Reis",
+          "Zwiebel, Karotte, Paprika"
+        ],
+        "steps": [
+          "Das Gemüse anbraten.",
+          "Linsen, Reis und Gemüsebrühe hinzufügen."
+        ]
+      },
+      "w2_d4": {
+        "name": "Fit-Hähnchen-Burger",
+        "ingredients": [
+          "150g Hähnchenhackfleisch",
+          "Rucola",
+          "10g Walnüsse"
+        ],
+        "steps": [
+          "Burger formen und grillen.",
+          "Ohne Brot auf einem Bett aus Rucola und Walnüssen servieren."
+        ]
+      },
+      "w2_l5": {
+        "name": "Gegrillter Tintenfisch",
+        "ingredients": [
+          "200g Tintenfisch",
+          "Knoblauch und Petersilie",
+          "150g Kartoffel und grüne Bohnen"
+        ],
+        "steps": [
+          "Tintenfisch bei starker Hitze mit Knoblauch grillen.",
+          "Mit gedämpfter Kartoffel und Bohnen servieren."
+        ]
+      },
+      "w2_d5": {
+        "name": "Gemüsecremesuppe",
+        "ingredients": [
+          "Zucchini, Lauch, Karotte",
+          "1 hartgekochtes Ei"
+        ],
+        "steps": [
+          "Gemüse kochen und ohne Sahne pürieren.",
+          "Gehacktes Ei darüber geben."
+        ]
+      },
+      "w2_l6": {
+        "name": "Vollkorn-Couscous mit Rindfleisch",
+        "ingredients": [
+          "60g Vollkorn-Couscous",
+          "120g mageres Rindfleisch",
+          "Gemischte Paprika"
+        ],
+        "steps": [
+          "Couscous mit kochendem Wasser aufgießen.",
+          "Rindfleisch und Paprika anbraten und mischen."
+        ]
+      },
+      "w2_d6": {
+        "name": "Puten-Ananas-Spieße",
+        "ingredients": [
+          "150g Putenwürfel",
+          "2 Ananasscheiben",
+          "Frischer Spinat"
+        ],
+        "steps": [
+          "Abwechselnd Pute und Ananas aufspießen.",
+          "Grillen und mit Spinat servieren."
+        ]
+      },
+      "w2_l7": {
+        "name": "Leichtes Thunfisch-Marmitako",
+        "ingredients": [
+          "150g frischer Thunfisch",
+          "150g Kartoffel",
+          "Paprika und Zwiebel"
+        ],
+        "steps": [
+          "Kartoffel mit dem Gemüse schmoren.",
+          "Thunfisch am Ende bei ausgeschalteter Hitze hinzufügen."
+        ]
+      },
+      "w2_d7": {
+        "name": "Mediterrane Platte",
+        "ingredients": [
+          "80g Hummus",
+          "Sellerie und Karotte",
+          "1 hartgekochtes Ei und 3 Scheiben Lomo"
+        ],
+        "steps": [
+          "Auf einem Mezze-Brett anrichten. Kein Kochen erforderlich."
+        ]
+      },
+      "w3_l1": {
+        "name": "Geschmorte weiße Bohnen",
+        "ingredients": [
+          "200g gekochte weiße Bohnen",
+          "100g Kürbis und 1 Karotte",
+          "Grüne Bohnen und Paprikapulver"
+        ],
+        "steps": [
+          "Dosenbohnen gut waschen.",
+          "Gemüse anbraten, Bohnen und Wasser hinzufügen.",
+          "10 Min. kochen."
+        ]
+      },
+      "w3_d1": {
+        "name": "Gedämpftes Hähnchen mit grobem Senf",
+        "ingredients": [
+          "150g Hähnchenbrust",
+          "200g Brokkoli",
+          "1 TL Dijon-Senf"
+        ],
+        "steps": [
+          "Brokkoli und Hähnchen dämpfen (12 Min.).",
+          "Am Ende Senf verstreichen."
+        ]
+      },
+      "w3_l2": {
+        "name": "Forelle nach Navarra-Art",
+        "ingredients": [
+          "1 ganze Forelle",
+          "1 Scheibe Serrano-Schinken",
+          "150g gekochte Kartoffel"
+        ],
+        "steps": [
+          "Schinken in die Forelle legen.",
+          "Bei 180°C für 15 Min. backen.",
+          "Mit Kartoffel servieren."
+        ]
+      },
+      "w3_d2": {
+        "name": "Popeye-Spinatcreme",
+        "ingredients": [
+          "300g Spinat",
+          "1 kleine Kartoffel",
+          "1 hartgekochtes Ei"
+        ],
+        "steps": [
+          "Kartoffel und Spinat mit wenig Wasser kochen.",
+          "Pürieren und gehacktes hartgekochtes Ei hinzufügen."
+        ]
+      },
+      "w3_l3": {
+        "name": "Gefüllte Paprika mit Pute",
+        "ingredients": [
+          "2 rote Paprika",
+          "100g Putenhackfleisch",
+          "70g gekochter brauner Reis"
+        ],
+        "steps": [
+          "Paprika aushöhlen.",
+          "Mit der angebratenen Puten-Reis-Mischung füllen.",
+          "25 Min. bei 190°C backen."
+        ]
+      },
+      "w3_d3": {
+        "name": "Tintenfisch mit Artischocken",
+        "ingredients": [
+          "200g Tintenfisch",
+          "4 Artischocken",
+          "In Scheiben geschnittener Knoblauch"
+        ],
+        "steps": [
+          "Tintenfisch bei starker Hitze anbraten.",
+          "Am Ende Artischocken und Knoblauch hinzufügen."
+        ]
+      },
+      "w3_l4": {
+        "name": "Quinoa mit Hähnchen und Gemüse",
+        "ingredients": [
+          "60g Quinoa",
+          "150g Hähnchen",
+          "Zucchini und Paprika"
+        ],
+        "steps": [
+          "Quinoa waschen und 12 Min. kochen.",
+          "Hähnchen und Gemüse anbraten und mit Quinoa mischen."
+        ]
+      },
+      "w3_d4": {
+        "name": "Champignon-Radieschen-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "100g Champignons",
+          "4 Radieschen"
+        ],
+        "steps": [
+          "Omelett mit angebratenen Champignons zubereiten.",
+          "Rohe Radieschenscheiben als Beilage servieren."
+        ]
+      },
+      "w3_l5": {
+        "name": "Kabeljau mit Kräuterkruste",
+        "ingredients": [
+          "180g Kabeljau",
+          "Oregano, Thymian, Olivenöl",
+          "200g Spargel"
+        ],
+        "steps": [
+          "Kabeljau mit Olivenöl und Kräutern bestreichen.",
+          "Zusammen mit Spargel 12 Min. bei 200°C backen."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zucchini-Thunfisch-Carpaccio",
+        "ingredients": [
+          "1 mittelgroße Zucchini",
+          "1 Dose Thunfisch natur",
+          "Zitrone und 5g Parmesan"
+        ],
+        "steps": [
+          "Rohe Zucchini sehr fein in Scheiben schneiden.",
+          "Thunfisch, Zitrone, Pfeffer und Parmesan daraufgeben."
+        ]
+      },
+      "w3_l6": {
+        "name": "Leichtes Rindergulasch",
+        "ingredients": [
+          "150g mageres Rindfleisch",
+          "1 Zwiebel und 1 rote Paprika",
+          "Salzfreie Brühe"
+        ],
+        "steps": [
+          "Fleisch anbraten.",
+          "Gemüse hinzufügen, mit Brühe bedecken und 1,5 Stunden köcheln lassen."
+        ]
+      },
+      "w3_d6": {
+        "name": "Schwertfisch mit Baba Ganoush",
+        "ingredients": [
+          "150g Schwertfisch",
+          "1 geröstete Aubergine",
+          "Zitrone"
+        ],
+        "steps": [
+          "Geröstete Aubergine mit Zitrone pürieren.",
+          "Fisch grillen."
+        ]
+      },
+      "w3_l7": {
+        "name": "Fit-Kartoffelomelett",
+        "ingredients": [
+          "2 Eier",
+          "150g Kartoffel",
+          "1/2 Zwiebel"
+        ],
+        "steps": [
+          "In Scheiben geschnittene Kartoffel dämpfen oder in der Mikrowelle garen (7 Min.).",
+          "Mit Ei mischen und mit einem Tropfen Öl stocken lassen."
+        ]
+      },
+      "w3_d7": {
+        "name": "Gebackene Garnelen und Hummus",
+        "ingredients": [
+          "12 große Garnelen",
+          "80g Hummus",
+          "Rohe Karotten"
+        ],
+        "steps": [
+          "Garnelen mit Knoblauch und Petersilie backen (6 Min.).",
+          "Mit Hummus und rohen Karotten servieren."
+        ]
+      },
+      "w4_l1": {
+        "name": "Putenbällchen",
+        "ingredients": [
+          "150g Putenhackfleisch",
+          "1 Ei und Zwiebel",
+          "Passierte Tomaten und 50g Erbsen"
+        ],
+        "steps": [
+          "Bällchen formen und grillen.",
+          "In Tomatensauce mit Erbsen garen."
+        ]
+      },
+      "w4_d1": {
+        "name": "Gourmet-Spinatsalat",
+        "ingredients": [
+          "Frischer Spinat",
+          "100g Hähnchenbrust",
+          "4 Erdbeeren und 20g Ziegenkäse"
+        ],
+        "steps": [
+          "Hähnchen grillen.",
+          "Den Salat roh anrichten und alles mischen."
+        ]
+      },
+      "w4_l2": {
+        "name": "Kichererbsen-Mangold-Eintopf",
+        "ingredients": [
+          "200g gekochte Kichererbsen",
+          "Mangold oder Spinat",
+          "Knoblauch, Kreuzkümmel und Paprika"
+        ],
+        "steps": [
+          "Knoblauch mit Paprika und Kreuzkümmel anbraten, um Blähungen vorzubeugen.",
+          "Mangold, Kichererbsen und Wasser hinzufügen. 15 Min. kochen."
+        ]
+      },
+      "w4_d2": {
+        "name": "Zucchini-Zwiebel-Rührei",
+        "ingredients": [
+          "2 Eier",
+          "Zucchini und Zwiebel",
+          "2 Scheiben Serrano-Schinken"
+        ],
+        "steps": [
+          "Fein gehacktes Gemüse anbraten.",
+          "Geschlagene Eier und Schinken hinzufügen.",
+          "Bei schwacher Hitze stocken lassen."
+        ]
+      },
+      "w4_l3": {
+        "name": "Vollkorn-Spaghetti mit Garnelen",
+        "ingredients": [
+          "70g Vollkornnudeln",
+          "100g geschälte Garnelen",
+          "2 Knoblauchzehen und Chili"
+        ],
+        "steps": [
+          "Knoblauch und Chili in Olivenöl anbraten.",
+          "Garnelen hinzufügen und mit al dente gekochten Nudeln mischen."
+        ]
+      },
+      "w4_d3": {
+        "name": "Hähnchenbrust in Orange",
+        "ingredients": [
+          "150g Hähnchenbrust",
+          "Natürlicher Orangensaft",
+          "Spargel"
+        ],
+        "steps": [
+          "Hähnchen grillen.",
+          "Den Saft hinzufügen und reduzieren lassen.",
+          "Mit gedämpftem Spargel servieren."
+        ]
+      },
+      "w4_l4": {
+        "name": "Linsen-Sardinen-Salat",
+        "ingredients": [
+          "150g gekochte Linsen",
+          "1 Dose Sardinen in Öl",
+          "Gehacktes Gemüse nach Geschmack"
+        ],
+        "steps": [
+          "Sardinen sehr gut abtropfen lassen.",
+          "Alles kalt mischen für eine Extraportion Omega-3."
+        ]
+      },
+      "w4_d4": {
+        "name": "Gebackener Kabeljau",
+        "ingredients": [
+          "200g frischer Kabeljau",
+          "10g gehackte Mandeln",
+          "Brokkoli"
+        ],
+        "steps": [
+          "Die Mandeln auf den Fisch legen.",
+          "12 Min. bei 180°C backen und mit gedämpftem Brokkoli servieren."
+        ]
+      },
+      "w4_l5": {
+        "name": "Brauner Reis mit Pilzen und Kaninchen",
+        "ingredients": [
+          "70g brauner Reis",
+          "Gemischte Pilze",
+          "Gewürfeltes Kaninchen oder Hähnchen"
+        ],
+        "steps": [
+          "Ein Sofrito mit Fleisch und Pilzen zubereiten.",
+          "Reis und Brühe hinzufügen und kochen, bis er weich ist."
+        ]
+      },
+      "w4_d5": {
+        "name": "Omelett mit Pute und leichtem Käse",
+        "ingredients": [
+          "2 Eier",
+          "2 Scheiben Pute",
+          "1 Scheibe leichter Käse"
+        ],
+        "steps": [
+          "Eier schlagen und in die Pfanne geben.",
+          "Käse und Pute in der Mitte falten, damit es schmilzt."
+        ]
+      },
+      "w4_l6": {
+        "name": "Mit Rindfleisch gefüllte Auberginen",
+        "ingredients": [
+          "1 große Aubergine",
+          "120g Rinderhackfleisch",
+          "Zwiebel und Paprika"
+        ],
+        "steps": [
+          "Aubergine aushöhlen und Fruchtfleisch mit Fleisch anbraten.",
+          "Das Schiffchen füllen und 20 Min. backen."
+        ]
+      },
+      "w4_d6": {
+        "name": "Seehecht-Garnelen-Spieße",
+        "ingredients": [
+          "150g Seehechtwürfel",
+          "Garnelen",
+          "Grüne Bohnen"
+        ],
+        "steps": [
+          "Spieße zusammenstellen und grillen.",
+          "Mit gedämpften grünen Bohnen servieren."
+        ]
+      },
+      "w4_l7": {
+        "name": "Kartoffeln mit Tintenfisch",
+        "ingredients": [
+          "150g Kartoffel",
+          "200g Tintenfisch",
+          "Zwiebel und Lorbeerblatt"
+        ],
+        "steps": [
+          "Ein Sofrito mit der Zwiebel zubereiten.",
+          "Tintenfisch, Kartoffel, Lorbeerblatt und Brühe hinzufügen. Bei schwacher Hitze schmoren."
+        ]
+      },
+      "w4_d7": {
+        "name": "Kühlschrank-Restessen",
+        "ingredients": [
+          "Hummus",
+          "Hartgekochtes Ei",
+          "Geröstete Paprika und Putensticks"
+        ],
+        "steps": [
+          "Einen kalten gemischten Teller im Snack-Stil anrichten.",
+          "Den Wochenabschluss genießen."
+        ]
+      }
     }
   },
   "dietTab": {
@@ -853,7 +1559,8 @@
         "dinner": "Kühlschrank-Räumung: Hummus, hartgekochtes Ei, geröstete Paprika und Putenstreifen."
       },
       "title": "Mediterran-Plan · 28 Tage",
-      "subtitle": "Klinisch ausgewogener Menüplan für gesunden Gewichtsverlust"
+      "subtitle": "Klinisch ausgewogener Menüplan für gesunden Gewichtsverlust",
+      "milestone_w4": "Herzlichen Glückwunsch, Ulises! Du hast deinen ersten Monat der metabolischen Optimierung abgeschlossen. Dein Blutdruck sollte sich zu stabilisieren beginnen."
     },
     "weekLabel": "Woche",
     "dayLabel": "Tag",
