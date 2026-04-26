@@ -3278,6 +3278,156 @@
       "name": "Stationary Bike (LISS/Finisher Cardio)",
       "muscles": "Cardio",
       "warning": "Moderate intensity. You should be able to hold a conversation without gasping. Do not hold your breath."
+    },
+    "negative_pushup": {
+      "name": "Negative Push-ups",
+      "muscles": "Chest, Shoulders, Triceps",
+      "warning": "Lower very slowly (4 sec) until you touch the floor. Rest on your knees to come up. Protect your joints."
+    },
+    "isometric_towel_row": {
+      "name": "Isometric Towel Row",
+      "muscles": "Lats, Traps",
+      "warning": "Use the door, pull hard but hold the position of maximum contraction without moving."
+    },
+    "plank_walkouts": {
+      "name": "Plank Walkouts",
+      "muscles": "Core, Shoulders",
+      "warning": "Standing up, place hands on the floor and walk forward to a plank position. Walk back."
+    },
+    "straight_leg_dips": {
+      "name": "Straight Leg Dips",
+      "muscles": "Triceps",
+      "warning": "Keep your back brushing against the chair as you lower to protect your shoulders."
+    },
+    "side_plank": {
+      "name": "Side Plank",
+      "muscles": "Obliques",
+      "warning": "Support yourself on your forearm. Do not let your hips drop to the floor. Breathe fluidly."
+    },
+    "bulgarian_split_squat": {
+      "name": "Bulgarian Split Squat",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Rest your rear instep on a chair. Lower with your torso leaning slightly forward."
+    },
+    "single_leg_glute_bridge": {
+      "name": "Single-Leg Glute Bridge",
+      "muscles": "Hamstrings, Glutes",
+      "warning": "Lying down, stretch one leg in the air and raise your hips pushing only with the supporting foot."
+    },
+    "dynamic_reverse_lunge": {
+      "name": "Dynamic Reverse Lunge",
+      "muscles": "Quadriceps",
+      "warning": "Step backward. This protects the knee joint much more."
+    },
+    "mountain_climbers": {
+      "name": "Mountain Climbers",
+      "muscles": "Core, Cardio",
+      "warning": "Bring knees to chest alternately. Medium-high pace. Do not hold your breath!"
+    },
+    "unilateral_floor_press": {
+      "name": "Unilateral Floor Press",
+      "muscles": "Chest, Triceps, Core",
+      "warning": "Press with only one hand. Your abdomen must be braced to the maximum to prevent rotating."
+    },
+    "paused_row": {
+      "name": "Paused Row",
+      "muscles": "Lats",
+      "warning": "When bringing the dumbbell to your hip, hold the position for 2 seconds before lowering."
+    },
+    "seated_rear_delt_fly": {
+      "name": "Seated Rear Delt Fly",
+      "muscles": "Rear Deltoids",
+      "warning": "Sit down, lean your torso forward until it touches your thighs and raise the dumbbells to the sides."
+    },
+    "floor_french_press": {
+      "name": "Floor French Press",
+      "muscles": "Triceps",
+      "warning": "Lying down, bend elbows bringing dumbbells towards your ears and extend again."
+    },
+    "hammer_curls": {
+      "name": "Hammer Curls",
+      "muscles": "Biceps, Brachialis",
+      "warning": "Neutral grip (like holding a hammer). Raise both dumbbells at the same time with control."
+    },
+    "dumbbell_bulgarian_squat": {
+      "name": "Dumbbell Bulgarian Squat",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Hold the dumbbells at your sides. Very high demand, keep your balance."
+    },
+    "b_stance_deadlift": {
+      "name": "B-Stance Deadlift",
+      "muscles": "Hamstrings",
+      "warning": "Support one foot back only on the toes. Load 80% of the weight on the front leg."
+    },
+    "paused_goblet_squat": {
+      "name": "Paused Goblet Squat",
+      "muscles": "Quadriceps",
+      "warning": "Stay at the very bottom for 3 seconds before coming up. Eliminate momentum."
+    },
+    "dumbbell_swing": {
+      "name": "Dumbbell Swing",
+      "muscles": "Posterior Chain",
+      "warning": "The momentum comes from a sharp hip thrust, not from the shoulders. Keep your back straight."
+    },
+    "explosive_pushup": {
+      "name": "Explosive Push-ups",
+      "muscles": "Chest, Shoulders, Triceps",
+      "warning": "Push hard to separate yourself from the surface. Cushion very softly when landing."
+    },
+    "dynamic_isometric_row": {
+      "name": "Dynamic Isometric Row",
+      "muscles": "Lats, Biceps",
+      "warning": "Do a maximum contraction of 3 seconds at the end of each repetition."
+    },
+    "pike_pushup": {
+      "name": "Gentle Pike Push-ups",
+      "muscles": "Front Shoulders",
+      "warning": "Inverted V position. If there is dizziness due to blood pressure, switch to normal push-ups immediately."
+    },
+    "plank_knee_to_elbow": {
+      "name": "Plank Knee to Elbow",
+      "muscles": "Core, Obliques",
+      "warning": "In a high plank, bring your knee outside towards the elbow on the same side."
+    },
+    "jump_squats": {
+      "name": "Short Jump Squat",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Jump barely 5 cm. The important thing is to land softly like a ninja to protect your knees."
+    },
+    "fast_reverse_lunge": {
+      "name": "Fast Reverse Lunge",
+      "muscles": "Legs",
+      "warning": "Execute at a medium-high speed, strictly maintaining balance."
+    },
+    "explosive_single_leg_bridge": {
+      "name": "Explosive Glute Bridge",
+      "muscles": "Hamstrings",
+      "warning": "Raise hips fast, lower very slowly over 3 controlled seconds."
+    },
+    "skater_jumps": {
+      "name": "Skater Jumps",
+      "muscles": "Cardio, Abductors",
+      "warning": "Jump sideways from one foot to the other swinging your arms fluidly."
+    },
+    "floor_chest_fly": {
+      "name": "Floor Chest Fly",
+      "muscles": "Chest",
+      "warning": "Open your arms with control to isolate and pre-fatigue the pecs without damaging the shoulders."
+    },
+    "bulgarian_squat_one_point_five": {
+      "name": "Bulgarian Squat 1.5",
+      "muscles": "Quadriceps, Glutes",
+      "warning": "Go all the way down, come halfway up, go down again, and come all the way up. That is 1 repetition."
+    },
+    "unilateral_romanian_deadlift": {
+      "name": "Unilateral Deadlift",
+      "muscles": "Hamstrings",
+      "warning": "Hold the dumbbell in the hand opposite to the supporting leg. Challenge your core."
+    },
+    "dumbbell_thrusters": {
+      "name": "Dumbbell Thrusters",
+      "muscles": "Full Body",
+      "warning": "Fluid squat ending in a Military Press at the top. Breathe on every repetition."
     }
   }
 }

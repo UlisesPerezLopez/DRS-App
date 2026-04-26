@@ -3278,6 +3278,156 @@
       "name": "Bici Estática (Cardio LISS/Finisher)",
       "muscles": "Cardio",
       "warning": "Intensidad moderada. Debes poder mantener una conversación sin ahogarte. No aguantes la respiración."
+    },
+    "negative_pushup": {
+      "name": "Flexiones Excéntricas",
+      "muscles": "Pecho, Hombro, Tríceps",
+      "warning": "Baja muy lento (4 seg) hasta tocar el suelo. Apoya las rodillas para subir. Protege articulaciones."
+    },
+    "isometric_towel_row": {
+      "name": "Remo Isométrico con Toalla",
+      "muscles": "Dorsal, Trapecio",
+      "warning": "Usa la puerta, tira con fuerza pero mantén la posición de máxima contracción sin moverte."
+    },
+    "plank_walkouts": {
+      "name": "Caminata de Plancha",
+      "muscles": "Core, Hombros",
+      "warning": "De pie, pon las manos en el suelo y camina hacia adelante hasta posición de plancha. Vuelve atrás."
+    },
+    "straight_leg_dips": {
+      "name": "Fondos con Piernas Estiradas",
+      "muscles": "Tríceps",
+      "warning": "Mantén la espalda rozando la silla al bajar para proteger los hombros."
+    },
+    "side_plank": {
+      "name": "Plancha Lateral",
+      "muscles": "Oblicuos",
+      "warning": "Apoya antebrazo. No dejes que la cadera caiga al suelo. Respira fluidamente."
+    },
+    "bulgarian_split_squat": {
+      "name": "Sentadilla Búlgara",
+      "muscles": "Cuádriceps, Glúteo",
+      "warning": "Apoya el empeine trasero en una silla. Baja con el torso ligeramente inclinado hacia adelante."
+    },
+    "single_leg_glute_bridge": {
+      "name": "Puente de Glúteo Unilateral",
+      "muscles": "Isquiosurales, Glúteo",
+      "warning": "Tumbado, estira una pierna al aire y eleva la cadera empujando solo con el pie apoyado."
+    },
+    "dynamic_reverse_lunge": {
+      "name": "Zancada Inversa Dinámica",
+      "muscles": "Cuádriceps",
+      "warning": "Da el paso hacia atrás. Esto protege muchísimo más la articulación de la rodilla."
+    },
+    "mountain_climbers": {
+      "name": "Escaladores",
+      "muscles": "Core, Cardio",
+      "warning": "Lleva rodillas al pecho alternativamente. Ritmo medio-alto. ¡No aguantes la respiración!"
+    },
+    "unilateral_floor_press": {
+      "name": "Press de Suelo Unilateral",
+      "muscles": "Pecho, Tríceps, Core",
+      "warning": "Presiona solo con una mano. El abdomen debe apretarse al máximo para no girar."
+    },
+    "paused_row": {
+      "name": "Remo con Pausa",
+      "muscles": "Dorsal",
+      "warning": "Al llevar la mancuerna a la cadera, aguanta la posición 2 segundos antes de bajar."
+    },
+    "seated_rear_delt_fly": {
+      "name": "Pájaros en Silla",
+      "muscles": "Deltoides Posterior",
+      "warning": "Siéntate, inclina el torso hacia adelante hasta rozar los muslos y eleva las mancuernas hacia los lados."
+    },
+    "floor_french_press": {
+      "name": "Press Francés en Suelo",
+      "muscles": "Tríceps",
+      "warning": "Tumbado, flexiona codos llevando mancuernas hacia las orejas y vuelve a extender."
+    },
+    "hammer_curls": {
+      "name": "Curl Martillo",
+      "muscles": "Bíceps, Braquial",
+      "warning": "Agarre neutro (como sujetando un martillo). Sube ambas mancuernas a la vez con control."
+    },
+    "dumbbell_bulgarian_squat": {
+      "name": "Sentadilla Búlgara con Mancuernas",
+      "muscles": "Cuádriceps, Glúteo",
+      "warning": "Sujeta las mancuernas a los lados. Exigencia altísima, mantén el equilibrio."
+    },
+    "b_stance_deadlift": {
+      "name": "Peso Muerto B-Stance",
+      "muscles": "Isquiosurales",
+      "warning": "Apoya un pie atrás solo sobre la punta. Carga el 80% del peso en la pierna adelantada."
+    },
+    "paused_goblet_squat": {
+      "name": "Sentadilla Goblet con Pausa",
+      "muscles": "Cuádriceps",
+      "warning": "Quédate 3 segundos abajo del todo antes de subir. Elimina el rebote."
+    },
+    "dumbbell_swing": {
+      "name": "Swing con Mancuerna",
+      "muscles": "Cadena Posterior",
+      "warning": "El impulso sale de un golpe seco de cadera, no de los hombros. Mantén espalda recta."
+    },
+    "explosive_pushup": {
+      "name": "Flexiones Explosivas",
+      "muscles": "Pecho, Hombro, Tríceps",
+      "warning": "Empuja con fuerza para separarte de la superficie. Amortigua muy suave al caer."
+    },
+    "dynamic_isometric_row": {
+      "name": "Remo Isométrico Dinámico",
+      "muscles": "Dorsal, Bíceps",
+      "warning": "Haz una contracción máxima de 3 segundos al final de cada repetición."
+    },
+    "pike_pushup": {
+      "name": "Pike Push-ups Suaves",
+      "muscles": "Hombro Frontal",
+      "warning": "Posición de V invertida. Si hay mareo por la tensión arterial, cambiar a flexiones normales inmediatamente."
+    },
+    "plank_knee_to_elbow": {
+      "name": "Plancha con Toque de Rodilla",
+      "muscles": "Core, Oblicuos",
+      "warning": "En plancha alta, lleva la rodilla por fuera hacia el codo del mismo lado."
+    },
+    "jump_squats": {
+      "name": "Sentadilla con Salto Corto",
+      "muscles": "Cuádriceps, Glúteos",
+      "warning": "Salto de apenas 5 cm. Lo importante es amortiguar suave como un ninja para proteger rodillas."
+    },
+    "fast_reverse_lunge": {
+      "name": "Zancada Inversa Rápida",
+      "muscles": "Piernas",
+      "warning": "Ejecuta a velocidad media-alta, manteniendo estrictamente el equilibrio."
+    },
+    "explosive_single_leg_bridge": {
+      "name": "Puente de Glúteo Explosivo",
+      "muscles": "Isquiosurales",
+      "warning": "Sube la cadera rápido, bájala muy lento en 3 segundos controlados."
+    },
+    "skater_jumps": {
+      "name": "Saltos de Patinador",
+      "muscles": "Cardio, Abductores",
+      "warning": "Salta lateralmente de un pie a otro balanceando los brazos de forma fluida."
+    },
+    "floor_chest_fly": {
+      "name": "Aperturas de Pecho en Suelo",
+      "muscles": "Pecho",
+      "warning": "Abre los brazos con control para aislar y pre-fatigar el pectoral sin dañar los hombros."
+    },
+    "bulgarian_squat_one_point_five": {
+      "name": "Sentadilla Búlgara 1.5",
+      "muscles": "Cuádriceps, Glúteo",
+      "warning": "Baja del todo, sube a la mitad, vuelve a bajar, y sube entero. Eso es 1 repetición."
+    },
+    "unilateral_romanian_deadlift": {
+      "name": "Peso Muerto Unilateral",
+      "muscles": "Isquiosurales",
+      "warning": "Sujeta la mancuerna en la mano contraria a la pierna apoyada. Desafía tu core."
+    },
+    "dumbbell_thrusters": {
+      "name": "Thrusters con Mancuernas",
+      "muscles": "Full Body",
+      "warning": "Sentadilla fluida que termina en un Press Militar arriba. Respira en cada repetición."
     }
   }
 }

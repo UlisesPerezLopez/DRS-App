@@ -3278,6 +3278,156 @@
       "name": "Vélo d'Appartement (Cardio LISS/Finisher)",
       "muscles": "Cardio",
       "warning": "Intensité modérée. Vous devez pouvoir tenir une conversation sans vous essouffler. Ne bloquez pas votre respiration."
+    },
+    "negative_pushup": {
+      "name": "Pompes Négatives",
+      "muscles": "Pectoraux, Épaules, Triceps",
+      "warning": "Descendez très lentement (4 sec) jusqu'à toucher le sol. Appuyez vos genoux pour remonter. Protégez les articulations."
+    },
+    "isometric_towel_row": {
+      "name": "Tirage Isométrique avec Serviette",
+      "muscles": "Grand dorsal, Trapèzes",
+      "warning": "Utilisez la porte, tirez fort mais maintenez la position de contraction maximale sans bouger."
+    },
+    "plank_walkouts": {
+      "name": "Marche en Planche",
+      "muscles": "Ceinture Abdominale, Épaules",
+      "warning": "Debout, posez les mains au sol et avancez jusqu'en position de planche. Revenez."
+    },
+    "straight_leg_dips": {
+      "name": "Dips Jambes Tendues",
+      "muscles": "Triceps",
+      "warning": "Gardez le dos effleurant la chaise en descendant pour protéger les épaules."
+    },
+    "side_plank": {
+      "name": "Planche Latérale",
+      "muscles": "Obliques",
+      "warning": "Appuyez-vous sur l'avant-bras. Ne laissez pas les hanches tomber au sol. Respirez de manière fluide."
+    },
+    "bulgarian_split_squat": {
+      "name": "Squat Bulgare",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Appuyez le cou-de-pied arrière sur une chaise. Descendez avec le torse légèrement penché vers l'avant."
+    },
+    "single_leg_glute_bridge": {
+      "name": "Pont Fessier Unilatéral",
+      "muscles": "Ischio-jambiers, Fessiers",
+      "warning": "Allongé, tendez une jambe en l'air et soulevez les hanches en poussant uniquement avec le pied d'appui."
+    },
+    "dynamic_reverse_lunge": {
+      "name": "Fente Arrière Dynamique",
+      "muscles": "Quadriceps",
+      "warning": "Faites un pas vers l'arrière. Cela protège beaucoup plus l'articulation du genou."
+    },
+    "mountain_climbers": {
+      "name": "Alpinistes",
+      "muscles": "Ceinture Abdominale, Cardio",
+      "warning": "Amenez les genoux à la poitrine alternativement. Rythme moyen-élevé. Ne bloquez pas votre respiration !"
+    },
+    "unilateral_floor_press": {
+      "name": "Développé au Sol Unilatéral",
+      "muscles": "Pectoraux, Triceps, Ceinture Abdominale",
+      "warning": "Poussez d'une seule main. L'abdomen doit être contracté au maximum pour ne pas tourner."
+    },
+    "paused_row": {
+      "name": "Tirage avec Pause",
+      "muscles": "Grand dorsal",
+      "warning": "En amenant l'haltère à la hanche, maintenez la position 2 secondes avant de redescendre."
+    },
+    "seated_rear_delt_fly": {
+      "name": "Élévations Postérieures Assises",
+      "muscles": "Deltöide Postérieur",
+      "warning": "Asseyez-vous, penchez le torse en avant jusqu'à effleurer les cuisses et levez les haltères sur les côtés."
+    },
+    "floor_french_press": {
+      "name": "Barre au Front au Sol",
+      "muscles": "Triceps",
+      "warning": "Allongé, pliez les coudes en amenant les haltères vers les oreilles et tendez-les à nouveau."
+    },
+    "hammer_curls": {
+      "name": "Curl Marteau",
+      "muscles": "Biceps, Brachial",
+      "warning": "Prise neutre (comme tenir un marteau). Soulevez les deux haltères en même temps avec contrôle."
+    },
+    "dumbbell_bulgarian_squat": {
+      "name": "Squat Bulgare avec Haltères",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Tenez les haltères sur les côtés. Exigence très élevée, gardez l'équilibre."
+    },
+    "b_stance_deadlift": {
+      "name": "Soulevé de Terre B-Stance",
+      "muscles": "Ischio-jambiers",
+      "warning": "Appuyez un pied en arrière sur la pointe. Chargez 80% du poids sur la jambe avant."
+    },
+    "paused_goblet_squat": {
+      "name": "Squat Goblet avec Pause",
+      "muscles": "Quadriceps",
+      "warning": "Restez tout en bas pendant 3 secondes avant de remonter. Éliminez l'élan."
+    },
+    "dumbbell_swing": {
+      "name": "Swing avec Haltère",
+      "muscles": "Chaîne Postérieure",
+      "warning": "L'impulsion vient d'un coup de hanche sec, pas des épaules. Gardez le dos droit."
+    },
+    "explosive_pushup": {
+      "name": "Pompes Explosives",
+      "muscles": "Pectoraux, Épaules, Triceps",
+      "warning": "Poussez fort pour vous séparer de la surface. Amortissez très doucement en retombant."
+    },
+    "dynamic_isometric_row": {
+      "name": "Tirage Isométrique Dynamique",
+      "muscles": "Grand dorsal, Biceps",
+      "warning": "Faites une contraction maximale de 3 secondes à la fin de chaque répétition."
+    },
+    "pike_pushup": {
+      "name": "Pompes Piquées Douces",
+      "muscles": "Épaule frontale",
+      "warning": "Position en V inversé. En cas de vertige dû à la tension, passez aux pompes normales immédiatement."
+    },
+    "plank_knee_to_elbow": {
+      "name": "Planche Genou au Coude",
+      "muscles": "Ceinture Abdominale, Obliques",
+      "warning": "En planche haute, amenez le genou par l'extérieur vers le coude du même côté."
+    },
+    "jump_squats": {
+      "name": "Squat avec Petit Saut",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Saut d'à peine 5 cm. L'important est d'amortir doucement comme un ninja pour protéger les genoux."
+    },
+    "fast_reverse_lunge": {
+      "name": "Fente Arrière Rapide",
+      "muscles": "Jambes",
+      "warning": "Exécutez à vitesse moyenne-élevée, en maintenant strictement l'équilibre."
+    },
+    "explosive_single_leg_bridge": {
+      "name": "Pont Fessier Explosif",
+      "muscles": "Ischio-jambiers",
+      "warning": "Montez les hanches rapidement, descendez très lentement en 3 secondes contrôlées."
+    },
+    "skater_jumps": {
+      "name": "Sauts de Patineur",
+      "muscles": "Cardio, Abducteurs",
+      "warning": "Sautez latéralement d'un pied à l'autre en balançant les bras de manière fluide."
+    },
+    "floor_chest_fly": {
+      "name": "Écarté Couché au Sol",
+      "muscles": "Pectoraux",
+      "warning": "Ouvrez les arms avec contrôle pour isoler et pré-fatiguer les pectoraux sans abîmer les épaules."
+    },
+    "bulgarian_squat_one_point_five": {
+      "name": "Squat Bulgare 1.5",
+      "muscles": "Quadriceps, Fessiers",
+      "warning": "Descendez complètement, remontez à mi-chemin, redescendez et remontez complètement. C'est 1 répétition."
+    },
+    "unilateral_romanian_deadlift": {
+      "name": "Soulevé de Terre Unilatéral",
+      "muscles": "Ischio-jambiers",
+      "warning": "Tenez l'haltère dans la main opposée à la jambe d'appui. Défiez votre ceinture abdominale."
+    },
+    "dumbbell_thrusters": {
+      "name": "Thrusters avec Haltères",
+      "muscles": "Corps Entier",
+      "warning": "Squat fluide qui se termine par un développé militaire en haut. Respirez à chaque répétition."
     }
   }
 }

@@ -3278,6 +3278,156 @@
       "name": "Ergometer (Cardio LISS/Finisher)",
       "muscles": "Cardio",
       "warning": "Moderate Intensität. Du solltest ein Gespräch führen können, ohne außer Atem zu geraten. Nicht die Luft anhalten."
+    },
+    "negative_pushup": {
+      "name": "Negative Liegestütze",
+      "muscles": "Brust, Schultern, Trizeps",
+      "warning": "Sehr langsam (4 Sek.) absenken, bis du den Boden berührst. Knie aufstützen, um wieder hochzukommen. Schütze die Gelenke."
+    },
+    "isometric_towel_row": {
+      "name": "Isometrisches Handtuch-Rudern",
+      "muscles": "Latissimus, Trapezmuskel",
+      "warning": "Benutze die Tür, zieh kräftig, aber halte die Position der maximalen Kontraktion, ohne dich zu bewegen."
+    },
+    "plank_walkouts": {
+      "name": "Plank Walkouts",
+      "muscles": "Rumpf, Schultern",
+      "warning": "Aus dem Stand die Hände auf den Boden legen und nach vorne in die Liegestützposition laufen. Zurücklaufen."
+    },
+    "straight_leg_dips": {
+      "name": "Dips mit gestreckten Beinen",
+      "muscles": "Trizeps",
+      "warning": "Den Rücken beim Absenken leicht am Stuhl entlangstreifen lassen, um die Schultern zu schützen."
+    },
+    "side_plank": {
+      "name": "Seitlicher Unterarmstütz",
+      "muscles": "Schräge Bauchmuskeln",
+      "warning": "Auf dem Unterarm abstützen. Die Hüfte nicht auf den Boden sinken lassen. Fließend atmen."
+    },
+    "bulgarian_split_squat": {
+      "name": "Bulgarische Kniebeuge",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Hinteren Fußrücken auf einem Stuhl ablegen. Mit leicht nach vorne geneigtem Oberkörper absenken."
+    },
+    "single_leg_glute_bridge": {
+      "name": "Einbeiniges Beckenheben",
+      "muscles": "Beinbeuger, Gesäß",
+      "warning": "Liegend ein Bein in die Luft strecken und die Hüfte anheben, dabei nur mit dem aufgestützten Fuß drücken."
+    },
+    "dynamic_reverse_lunge": {
+      "name": "Dynamischer Rückwärts-Ausfallschritt",
+      "muscles": "Oberschenkel",
+      "warning": "Schritt nach hinten machen. Das schont das Kniegelenk deutlich mehr."
+    },
+    "mountain_climbers": {
+      "name": "Bergsteiger",
+      "muscles": "Rumpf, Cardio",
+      "warning": "Knie abwechselnd zur Brust ziehen. Mittelhohes Tempo. Luft nicht anhalten!"
+    },
+    "unilateral_floor_press": {
+      "name": "Einarmiges Bankdrücken auf dem Boden",
+      "muscles": "Brust, Trizeps, Rumpf",
+      "warning": "Nur mit einer Hand drücken. Der Bauch muss maximal angespannt sein, um nicht wegzudrehen."
+    },
+    "paused_row": {
+      "name": "Rudern mit Pause",
+      "muscles": "Latissimus",
+      "warning": "Wenn die Hantel an der Hüfte ist, die Position 2 Sekunden halten, bevor du sie absenkst."
+    },
+    "seated_rear_delt_fly": {
+      "name": "Vorgebeugtes Seitheben im Sitzen",
+      "muscles": "Hinterer Deltamuskel",
+      "warning": "Setzen, Oberkörper nach vorne neigen, bis er die Oberschenkel berührt, und die Hanteln seitlich anheben."
+    },
+    "floor_french_press": {
+      "name": "French Press auf dem Boden",
+      "muscles": "Trizeps",
+      "warning": "Liegend die Ellbogen beugen, Hanteln zu den Ohren führen und wieder strecken."
+    },
+    "hammer_curls": {
+      "name": "Hammer-Curls",
+      "muscles": "Bizeps, Brachialis",
+      "warning": "Neutraler Griff (wie bei einem Hammer). Beide Hanteln gleichzeitig kontrolliert anheben."
+    },
+    "dumbbell_bulgarian_squat": {
+      "name": "Bulgarische Kniebeuge mit Kurzhanteln",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Hanteln seitlich halten. Sehr hohe Belastung, Gleichgewicht halten."
+    },
+    "b_stance_deadlift": {
+      "name": "B-Stance Kreuzheben",
+      "muscles": "Beinbeuger",
+      "warning": "Einen Fuß hinten nur auf der Fußspitze abstützen. 80% des Gewichts auf das vordere Bein verlagern."
+    },
+    "paused_goblet_squat": {
+      "name": "Goblet-Kniebeuge mit Pause",
+      "muscles": "Oberschenkel",
+      "warning": "Ganz unten 3 Sekunden verharren, bevor du aufstehst. Schwung eliminieren."
+    },
+    "dumbbell_swing": {
+      "name": "Kurzhantel-Swing",
+      "muscles": "Hintere Kette",
+      "warning": "Der Schwung kommt aus einem kräftigen Hüftstoß, nicht aus den Schultern. Gerader Rücken."
+    },
+    "explosive_pushup": {
+      "name": "Explosive Liegestütze",
+      "muscles": "Brust, Schultern, Trizeps",
+      "warning": "Kräftig abdrücken, um dich von der Oberfläche zu lösen. Sehr sanft beim Landen abfedern."
+    },
+    "dynamic_isometric_row": {
+      "name": "Dynamisch-Isometrisches Rudern",
+      "muscles": "Latissimus, Bizeps",
+      "warning": "Am Ende jeder Wiederholung eine maximale Kontraktion von 3 Sekunden durchführen."
+    },
+    "pike_pushup": {
+      "name": "Sanfte Pike-Liegestütze",
+      "muscles": "Vordere Schultern",
+      "warning": "Umgekehrte V-Position. Bei Schwindel wegen Blutdruck sofort zu normalen Liegestützen wechseln."
+    },
+    "plank_knee_to_elbow": {
+      "name": "Plank Knie zum Ellbogen",
+      "muscles": "Rumpf, Schräge Bauchmuskeln",
+      "warning": "Im hohen Plank das Knie außen zum gleichseitigen Ellbogen führen."
+    },
+    "jump_squats": {
+      "name": "Kniebeuge mit kurzem Sprung",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Sprung von kaum 5 cm. Wichtig ist eine weiche Landung wie ein Ninja, um die Knie zu schonen."
+    },
+    "fast_reverse_lunge": {
+      "name": "Schneller Rückwärts-Ausfallschritt",
+      "muscles": "Beine",
+      "warning": "Mit mittelhoher Geschwindigkeit ausführen, striktes Gleichgewicht halten."
+    },
+    "explosive_single_leg_bridge": {
+      "name": "Explosives Beckenheben",
+      "muscles": "Beinbeuger",
+      "warning": "Hüfte schnell anheben, sehr langsam über 3 kontrollierte Sekunden absenken."
+    },
+    "skater_jumps": {
+      "name": "Skater-Sprünge",
+      "muscles": "Cardio, Abduktoren",
+      "warning": "Seitlich von einem Fuß auf den anderen springen, Arme fließend mitschwingen."
+    },
+    "floor_chest_fly": {
+      "name": "Fliegende auf dem Boden",
+      "muscles": "Brust",
+      "warning": "Arme kontrolliert öffnen, um die Brust zu isolieren und vorzuermüden, ohne die Schultern zu verletzen."
+    },
+    "bulgarian_squat_one_point_five": {
+      "name": "Bulgarische Kniebeuge 1.5",
+      "muscles": "Oberschenkel, Gesäß",
+      "warning": "Ganz absenken, zur Hälfte hochgehen, wieder absenken und ganz hochgehen. Das ist 1 Wiederholung."
+    },
+    "unilateral_romanian_deadlift": {
+      "name": "Einbeiniges Kreuzheben",
+      "muscles": "Beinbeuger",
+      "warning": "Hantel in der Hand gegenüber dem Standbein halten. Fordert deinen Rumpf heraus."
+    },
+    "dumbbell_thrusters": {
+      "name": "Kurzhantel-Thruster",
+      "muscles": "Ganzkörper",
+      "warning": "Fließende Kniebeuge, die oben in einem Schulterdrücken endet. Bei jeder Wiederholung atmen."
     }
   }
 }

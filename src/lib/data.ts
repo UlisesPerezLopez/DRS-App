@@ -454,7 +454,41 @@ export const EXERCISE_DB: Record<string, ExerciseDef> = {
   'lateral_raises': { id: 'lateral_raises', translationKey: 'exercises.lateral_raises' },
   'floor_pullover': { id: 'floor_pullover', translationKey: 'exercises.floor_pullover' },
   'plank_shoulder_taps': { id: 'plank_shoulder_taps', translationKey: 'exercises.plank_shoulder_taps' },
-  'static_bike': { id: 'static_bike', translationKey: 'exercises.static_bike' }
+  'static_bike': { id: 'static_bike', translationKey: 'exercises.static_bike' },
+  
+  // TRACK A & B: Nivel 2 (Meses 3 y 4)
+  'negative_pushup': { id: 'negative_pushup', translationKey: 'exercises.negative_pushup' },
+  'isometric_towel_row': { id: 'isometric_towel_row', translationKey: 'exercises.isometric_towel_row' },
+  'plank_walkouts': { id: 'plank_walkouts', translationKey: 'exercises.plank_walkouts' },
+  'straight_leg_dips': { id: 'straight_leg_dips', translationKey: 'exercises.straight_leg_dips' },
+  'side_plank': { id: 'side_plank', translationKey: 'exercises.side_plank' },
+  'bulgarian_split_squat': { id: 'bulgarian_split_squat', translationKey: 'exercises.bulgarian_split_squat' },
+  'single_leg_glute_bridge': { id: 'single_leg_glute_bridge', translationKey: 'exercises.single_leg_glute_bridge' },
+  'dynamic_reverse_lunge': { id: 'dynamic_reverse_lunge', translationKey: 'exercises.dynamic_reverse_lunge' },
+  'mountain_climbers': { id: 'mountain_climbers', translationKey: 'exercises.mountain_climbers' },
+  'unilateral_floor_press': { id: 'unilateral_floor_press', translationKey: 'exercises.unilateral_floor_press' },
+  'paused_row': { id: 'paused_row', translationKey: 'exercises.paused_row' },
+  'seated_rear_delt_fly': { id: 'seated_rear_delt_fly', translationKey: 'exercises.seated_rear_delt_fly' },
+  'floor_french_press': { id: 'floor_french_press', translationKey: 'exercises.floor_french_press' },
+  'hammer_curls': { id: 'hammer_curls', translationKey: 'exercises.hammer_curls' },
+  'dumbbell_bulgarian_squat': { id: 'dumbbell_bulgarian_squat', translationKey: 'exercises.dumbbell_bulgarian_squat' },
+  'b_stance_deadlift': { id: 'b_stance_deadlift', translationKey: 'exercises.b_stance_deadlift' },
+  'paused_goblet_squat': { id: 'paused_goblet_squat', translationKey: 'exercises.paused_goblet_squat' },
+  'dumbbell_swing': { id: 'dumbbell_swing', translationKey: 'exercises.dumbbell_swing' },
+  
+  // TRACK A & B: Nivel 3 (Meses 5 y 6)
+  'explosive_pushup': { id: 'explosive_pushup', translationKey: 'exercises.explosive_pushup' },
+  'dynamic_isometric_row': { id: 'dynamic_isometric_row', translationKey: 'exercises.dynamic_isometric_row' },
+  'pike_pushup': { id: 'pike_pushup', translationKey: 'exercises.pike_pushup' },
+  'plank_knee_to_elbow': { id: 'plank_knee_to_elbow', translationKey: 'exercises.plank_knee_to_elbow' },
+  'jump_squats': { id: 'jump_squats', translationKey: 'exercises.jump_squats' },
+  'fast_reverse_lunge': { id: 'fast_reverse_lunge', translationKey: 'exercises.fast_reverse_lunge' },
+  'explosive_single_leg_bridge': { id: 'explosive_single_leg_bridge', translationKey: 'exercises.explosive_single_leg_bridge' },
+  'skater_jumps': { id: 'skater_jumps', translationKey: 'exercises.skater_jumps' },
+  'floor_chest_fly': { id: 'floor_chest_fly', translationKey: 'exercises.floor_chest_fly' },
+  'bulgarian_squat_one_point_five': { id: 'bulgarian_squat_one_point_five', translationKey: 'exercises.bulgarian_squat_one_point_five' },
+  'unilateral_romanian_deadlift': { id: 'unilateral_romanian_deadlift', translationKey: 'exercises.unilateral_romanian_deadlift' },
+  'dumbbell_thrusters': { id: 'dumbbell_thrusters', translationKey: 'exercises.dumbbell_thrusters' }
 };
 
 export interface ExerciseTemplate {

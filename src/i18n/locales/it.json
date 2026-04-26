@@ -3278,6 +3278,156 @@
       "name": "Cyclette (Cardio LISS/Finisher)",
       "muscles": "Cardio",
       "warning": "Intensità moderata. Devi poter mantenere una conversazione senza affanno. Non trattenere il respiro."
+    },
+    "negative_pushup": {
+      "name": "Flessioni Negative",
+      "muscles": "Petto, Spalle, Tricipiti",
+      "warning": "Scendi molto lentamente (4 sec) fino a toccare il pavimento. Appoggia le ginocchia per risalire. Proteggi le articolazioni."
+    },
+    "isometric_towel_row": {
+      "name": "Rematore Isometrico con Asciugamano",
+      "muscles": "Dorsali, Trapezi",
+      "warning": "Usa la porta, tira forte ma mantieni la posizione di massima contrazione senza muoverti."
+    },
+    "plank_walkouts": {
+      "name": "Camminata in Plank",
+      "muscles": "Core, Spalle",
+      "warning": "In piedi, metti le mani a terra e cammina in avanti fino alla posizione di plank. Torna indietro."
+    },
+    "straight_leg_dips": {
+      "name": "Dips a Gambe Tese",
+      "muscles": "Tricipiti",
+      "warning": "Mantieni la schiena sfiorando la sedia scendendo per proteggere le spalle."
+    },
+    "side_plank": {
+      "name": "Plank Laterale",
+      "muscles": "Obliqui",
+      "warning": "Appoggiati sull'avambraccio. Non far cadere i fianchi a terra. Respira in modo fluido."
+    },
+    "bulgarian_split_squat": {
+      "name": "Squat Bulgaro",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Appoggia il collo del piede posteriore su una sedia. Scendi con il busto leggermente inclinato in avanti."
+    },
+    "single_leg_glute_bridge": {
+      "name": "Ponte Glutei Unilaterale",
+      "muscles": "Femorali, Glutei",
+      "warning": "Sdraiato, stendi una gamba in aria e solleva il bacino spingendo solo col piede in appoggio."
+    },
+    "dynamic_reverse_lunge": {
+      "name": "Affondo Inverso Dinamico",
+      "muscles": "Quadricipiti",
+      "warning": "Fai il passo indietro. Questo protegge molto di più l'articolazione del ginocchio."
+    },
+    "mountain_climbers": {
+      "name": "Mountain Climbers",
+      "muscles": "Core, Cardio",
+      "warning": "Porta le ginocchia al petto alternativamente. Ritmo medio-alto. Non trattenere il respiro!"
+    },
+    "unilateral_floor_press": {
+      "name": "Press a Terra Unilaterale",
+      "muscles": "Petto, Tricipiti, Core",
+      "warning": "Spingi solo con una mano. L'addome deve essere contratto al massimo per non ruotare."
+    },
+    "paused_row": {
+      "name": "Rematore con Pausa",
+      "muscles": "Dorsali",
+      "warning": "Quando porti il manubrio all'anca, mantieni la posizione per 2 secondi prima di scendere."
+    },
+    "seated_rear_delt_fly": {
+      "name": "Alzate Posteriori Seduti",
+      "muscles": "Deltoidi Posteriori",
+      "warning": "Siediti, inclina il busto in avanti fino a sfiorare le cosce e solleva i manubri di lato."
+    },
+    "floor_french_press": {
+      "name": "French Press a Terra",
+      "muscles": "Tricipiti",
+      "warning": "Sdraiato, piega i gomiti portando i manubri verso le orecchie ed estendi di nuovo."
+    },
+    "hammer_curls": {
+      "name": "Hammer Curl",
+      "muscles": "Bicipiti, Brachiale",
+      "warning": "Presa neutra (come tenere un martello). Solleva entrambi i manubri contemporaneamente con controllo."
+    },
+    "dumbbell_bulgarian_squat": {
+      "name": "Squat Bulgaro con Manubri",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Tieni i manubri ai lati. Esigenza altissima, mantieni l'equilibrio."
+    },
+    "b_stance_deadlift": {
+      "name": "Stacco B-Stance",
+      "muscles": "Femorali",
+      "warning": "Appoggia un piede indietro solo sulla punta. Carica l'80% del peso sulla gamba avanzata."
+    },
+    "paused_goblet_squat": {
+      "name": "Goblet Squat con Pausa",
+      "muscles": "Quadricipiti",
+      "warning": "Rimani giù per 3 secondi prima di salire. Elimina lo slancio."
+    },
+    "dumbbell_swing": {
+      "name": "Swing con Manubrio",
+      "muscles": "Catena Posteriore",
+      "warning": "Lo slancio nasce da un colpo secco di bacino, non dalle spalle. Schiena dritta."
+    },
+    "explosive_pushup": {
+      "name": "Flessioni Esplosive",
+      "muscles": "Petto, Spalle, Tricipiti",
+      "warning": "Spingi forte per staccarti dalla superficie. Ammortizza molto dolcemente cadendo."
+    },
+    "dynamic_isometric_row": {
+      "name": "Rematore Isometrico Dinamico",
+      "muscles": "Dorsali, Bicipiti",
+      "warning": "Fai una contrazione massima di 3 secondi alla fine di ogni ripetizione."
+    },
+    "pike_pushup": {
+      "name": "Pike Push-ups Leggeri",
+      "muscles": "Spalle frontali",
+      "warning": "Posizione a V rovesciata. Se avverti capogiri per la pressione, passa subito a flessioni normali."
+    },
+    "plank_knee_to_elbow": {
+      "name": "Plank Ginocchio al Gomito",
+      "muscles": "Core, Obliqui",
+      "warning": "In plank alto, porta il ginocchio all'esterno verso il gomito dello stesso lato."
+    },
+    "jump_squats": {
+      "name": "Squat con Salto Breve",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Salto di appena 5 cm. L'importante è atterrare dolcemente come un ninja per proteggere le ginocchia."
+    },
+    "fast_reverse_lunge": {
+      "name": "Affondo Inverso Veloce",
+      "muscles": "Gambe",
+      "warning": "Esegui a velocità medio-alta, mantenendo rigorosamente l'equilibrio."
+    },
+    "explosive_single_leg_bridge": {
+      "name": "Ponte Glutei Esplosivo",
+      "muscles": "Femorali",
+      "warning": "Solleva il bacino velocemente, scendi molto lentamente in 3 secondi controllati."
+    },
+    "skater_jumps": {
+      "name": "Salti del Pattinatore",
+      "muscles": "Cardio, Abduttori",
+      "warning": "Salta lateralmente da un piede all'altro facendo oscillare le braccia fluidamente."
+    },
+    "floor_chest_fly": {
+      "name": "Croci a Terra",
+      "muscles": "Petto",
+      "warning": "Apri le braccia con controllo per isolare e pre-affaticare i pettorali senza danneggiare le spalle."
+    },
+    "bulgarian_squat_one_point_five": {
+      "name": "Squat Bulgaro 1.5",
+      "muscles": "Quadricipiti, Glutei",
+      "warning": "Scendi del tutto, sali a metà, scendi di nuovo, e sali tutto. Questa è 1 ripetizione."
+    },
+    "unilateral_romanian_deadlift": {
+      "name": "Stacco Unilaterale",
+      "muscles": "Femorali",
+      "warning": "Tieni il manubrio nella mano opposta alla gamba d'appoggio. Sfida il tuo core."
+    },
+    "dumbbell_thrusters": {
+      "name": "Thruster con Manubri",
+      "muscles": "Corpo Intero",
+      "warning": "Squat fluido che termina in una Military Press in alto. Respira ad ogni ripetizione."
     }
   }
 }
