@@ -1,0 +1,2 @@
+﻿"    \"vegetarian\": {\n      \"w1_d1\": { \"breakfast\": \"CafÃ© au lait + Toast de seigle avec avocat (50g) et 1 Å“uf pochÃ©.\", \"lunch\": \"RagoÃ»t de lentilles aux lÃ©gumes (carotte, poivron, pomme de terre) + Salade de tomates.\", \"snack\": \"1 Pomm
+<truncated 10135 bytes>

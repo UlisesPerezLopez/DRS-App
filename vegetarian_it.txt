@@ -1,0 +1,2 @@
+﻿"    \"vegetarian\": {\n      \"w1_d1\": { \"breakfast\": \"CaffÃ¨ e latte + Toast di segale con avocado (50g) e 1 uovo in camicia.\", \"lunch\": \"Lenticchie in umido con verdure (carota, peperone, patata) + Insalata di pomodori.\", \"snack\": \"1 Mela + 
+<truncated 9851 bytes>

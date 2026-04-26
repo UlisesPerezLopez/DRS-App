@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { MEDITERRANEAN_PLAN, LOW_CARB_PLAN } from "../lib/data";
-import { Flame, Coffee, UtensilsCrossed, Cookie, MoonStar, AlertTriangle, HeartPulse, LayoutList } from "lucide-react";
+import { MEDITERRANEAN_PLAN, LOW_CARB_PLAN, VEGETARIAN_PLAN } from "../lib/data";
+import { Flame, Coffee, UtensilsCrossed, Cookie, MoonStar, AlertTriangle, HeartPulse, LayoutList, Leaf } from "lucide-react";
 
 const WEEKS = [1, 2, 3, 4] as const;
-type DietType = "med" | "low_carb";
+type DietType = "med" | "low_carb" | "vegetarian";
 
 export function MyPlanTab() {
   const { t } = useTranslation();
@@ -12,7 +12,10 @@ export function MyPlanTab() {
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [openDay, setOpenDay] = useState<string | null>(null);
 
-  const planData = activeDiet === "med" ? MEDITERRANEAN_PLAN : LOW_CARB_PLAN;
+  const planData = 
+    activeDiet === "med" ? MEDITERRANEAN_PLAN : 
+    activeDiet === "low_carb" ? LOW_CARB_PLAN : 
+    VEGETARIAN_PLAN;
   const weekDays = planData.filter(d => d.week === selectedWeek);
 
   return (
@@ -41,6 +44,17 @@ export function MyPlanTab() {
           <Flame size={16} />
           {t("plans.low_carb_label")}
         </button>
+        <button
+          onClick={() => setActiveDiet("vegetarian")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
+            activeDiet === "vegetarian"
+              ? "bg-white dark:bg-slate-700 text-green-600 dark:text-green-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+          }`}
+        >
+          <Leaf size={16} />
+          {t("plans.vegetarian_label")}
+        </button>
       </div>
 
       <header>
@@ -55,10 +69,12 @@ export function MyPlanTab() {
             key={w}
             onClick={() => { setSelectedWeek(w); setOpenDay(null); }}
             className={`flex-1 py-2.5 rounded-xl text-sm font-bold transition active:scale-95 ${
-              selectedWeek === w
+                selectedWeek === w
                 ? activeDiet === "med" 
                   ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
-                  : "bg-orange-500 text-white shadow-md shadow-orange-500/20"
+                  : activeDiet === "low_carb"
+                    ? "bg-orange-500 text-white shadow-md shadow-orange-500/20"
+                    : "bg-green-600 text-white shadow-md shadow-green-500/20"
                 : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300"
             }`}
           >
@@ -91,7 +107,9 @@ export function MyPlanTab() {
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm ${
                     activeDiet === "med" 
                       ? "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300"
-                      : "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300"
+                      : activeDiet === "low_carb"
+                        ? "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300"
+                        : "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300"
                   }`}>
                     {plan.day}
                   </div>

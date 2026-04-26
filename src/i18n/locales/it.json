@@ -107,7 +107,181 @@
     "steps": "Preparazione",
     "proteinLabel": "Proteine",
     "carbsLabel": "Carboidrati",
-    "fatLabel": "Grassi"
+    "fatLabel": "Grassi",
+    "low_carb": {
+      "w2_l1": {
+        "name": "Pollo al Pesto e Fagiolini",
+        "ingredients": [
+          "200g di petto di pollo",
+          "15g di pesto fatto in casa",
+          "200g di fagiolini"
+        ],
+        "steps": [
+          "Cuocere il pollo sulla piastra.",
+          "Spalmare il pesto alla fine.",
+          "Servire con fagiolini bolliti al dente per mantenere le fibre."
+        ]
+      },
+      "w2_d1": {
+        "name": "Merluzzo al Cartoccio (Papillote)",
+        "ingredients": [
+          "200g di merluzzo",
+          "Asparagi selvatici",
+          "Peperoni arrostiti e Olio EVO"
+        ],
+        "steps": [
+          "Avvolgere il pesce e le verdure nella carta forno.",
+          "Infornare a 200°C per 15 min.",
+          "Aggiungere un filo di Olio EVO crudo all'apertura."
+        ]
+      },
+      "w2_l2": {
+        "name": "Manzo alla Piastra con Broccoli",
+        "ingredients": [
+          "180g di manzo magro",
+          "Broccoli freddi",
+          "Bacon croccante (poco) e condimento allo yogurt"
+        ],
+        "steps": [
+          "Grigliare il manzo a piacere.",
+          "Mescolare i broccoli freddi con il bacon e il condimento allo yogurt."
+        ]
+      },
+      "w2_d2": {
+        "name": "Melanzane Ripiene di Tonno Express",
+        "ingredients": [
+          "1 melanzana grande",
+          "2 scatolette di tonno al naturale",
+          "1/2 cipolla e 20g di formaggio light"
+        ],
+        "steps": [
+          "Arrostire la melanzana nel microonde per 8 min.",
+          "Mescolare la polpa con tonno e cipolla.",
+          "Farcire e gratinare per 2 min."
+        ]
+      },
+      "w2_l3": {
+        "name": "Merluzzo al Forno con Crosta d'Erbe",
+        "ingredients": [
+          "200g di Merluzzo",
+          "Erbe di Provenza",
+          "Insalata di cetrioli"
+        ],
+        "steps": [
+          "Coprire il pesce con la crosta d'erbe.",
+          "Infornare per 15 min a 180°C.",
+          "Accompagnare con l'insalata di cetrioli."
+        ]
+      },
+      "w2_d3": {
+        "name": "Tacchino al Curry con Cavolfiore",
+        "ingredients": [
+          "150g di petto di tacchino",
+          "Cavolfiore tritato",
+          "Curry in polvere e Olio EVO"
+        ],
+        "steps": [
+          "Saltare il tacchino con il curry.",
+          "Aggiungere il cavolfiore tritato (stile riso) e saltare tutto insieme per 5 min."
+        ]
+      },
+      "w2_l4": {
+        "name": "Hamburger di Pollo in Foglie di Lattuga",
+        "ingredients": [
+          "2 hamburger di pollo fatti in casa",
+          "Foglie di lattuga grandi",
+          "Pomodoro e cipolla"
+        ],
+        "steps": [
+          "Cuocere gli hamburger sulla piastra.",
+          "Avvolgerli nelle foglie di lattuga, usandole come pane."
+        ]
+      },
+      "w2_d4": {
+        "name": "Padellata di Funghi e Gamberetti",
+        "ingredients": [
+          "2 uova",
+          "100g di gamberetti",
+          "Funghi misti, aglio e prezzemolo"
+        ],
+        "steps": [
+          "Saltare funghi e gamberetti con l'aglio.",
+          "Aggiungere le uova e far rapprendere a fuoco basso."
+        ]
+      },
+      "w2_l5": {
+        "name": "Salmone al Forno con Purè di Zucchine",
+        "ingredients": [
+          "180g di salmone",
+          "1 zucchina",
+          "Olio EVO e pepe"
+        ],
+        "steps": [
+          "Cuocere il salmone al forno.",
+          "Frullare la zucchina precedentemente cotta con olio per fare il purè."
+        ]
+      },
+      "w2_d5": {
+        "name": "Filetto di Maiale con Rucola",
+        "ingredients": [
+          "150g di lonza di maiale magra",
+          "Insalata di rucola",
+          "Noci e parmigiano"
+        ],
+        "steps": [
+          "Cuocere il maiale sulla piastra.",
+          "Servire su un letto di rucola con noci e scaglie di parmigiano."
+        ]
+      },
+      "w2_l6": {
+        "name": "Insalata Cesare Low-Carb",
+        "ingredients": [
+          "Pollo arrosto",
+          "Lattuga e 1 uovo sodo",
+          "Acciughe e condimento limone/olio"
+        ],
+        "steps": [
+          "Comporre l'insalata omettendo i crostini per non aggiungere carboidrati.",
+          "Condire generosamente."
+        ]
+      },
+      "w2_d6": {
+        "name": "Spiedini di Gamberi e Zucchine",
+        "ingredients": [
+          "150g di gamberi",
+          "1 zucchina a dadini",
+          "Insalata di pomodori"
+        ],
+        "steps": [
+          "Montare gli spiedini alternando gli ingredienti.",
+          "Cuocere sulla piastra, girando una volta."
+        ]
+      },
+      "w2_l7": {
+        "name": "Wok di Manzo e Peperoni",
+        "ingredients": [
+          "180g di manzo a striscioline",
+          "Peperoni misti",
+          "Salsa di soia a basso contenuto di sale e zenzero"
+        ],
+        "steps": [
+          "Saltare manzo e verdure a fuoco vivo.",
+          "Aggiungere la salsa di soia e lo zenzero grattugiato alla fine."
+        ]
+      },
+      "w2_d7": {
+        "name": "Pizza Keto di Pollo",
+        "ingredients": [
+          "150g di pollo tritato crudo e 1 uovo",
+          "Pomodoro e origano",
+          "Mozzarella"
+        ],
+        "steps": [
+          "Mescolare pollo e uovo. Stendere su una teglia formando la base.",
+          "Infornare per 12 min. Aggiungere pomodoro e mozzarella e gratinare per altri 5 min."
+        ]
+      }
+    }
   },
   "dietTab": {
     "title": "Piano Nutrizionale",
@@ -861,6 +1035,179 @@
       }
     },
     "med_label": "Mediterranea",
-    "low_carb_label": "Low-Carb"
+    "low_carb_label": "Low-Carb",
+    "vegetarian": {
+      "w1_d1": {
+        "breakfast": "Caffè con latte + Toast di segale con avocado (50g) e 1 uovo in camicia.",
+        "lunch": "Lenticchie in umido con verdure (carota, peperone, patata) + Insalata di pomodori.",
+        "snack": "1 Mela + 20g di noci.",
+        "dinner": "Uova strapazzate con spinaci e pinoli (2 uova) + 1 fetta di pane integrale."
+      },
+      "w1_d2": {
+        "breakfast": "Yogurt greco 0% con 30g di avena e mirtilli + Caffè.",
+        "lunch": "Curry di ceci: 200g di ceci, spinaci e latte di cocco leggero + 40g di riso integrale.",
+        "snack": "1 Banana + 15g di mandorle.",
+        "dinner": "Hamburger di Tofu alla griglia con verdure al forno (melanzane e zucchine)."
+      },
+      "w1_d3": {
+        "breakfast": "Caffè con latte + Sandwich integrale con formaggio fresco spalmabile, cetriolo e aneto.",
+        "lunch": "Pasta integrale con ragù di lenticchie: 70g di pasta + salsa di pomodoro e lenticchie tritate.",
+        "snack": "Fiocchi di latte (150g) con 10g di semi di girasole.",
+        "dinner": "Frittata di asparagi selvatici (2 uova) con insalata di rucola e parmigiano (10g)."
+      },
+      "w1_d4": {
+        "breakfast": "Porridge di avena (40g) con latte di soia (senza zucchero) e noci + Caffè.",
+        "lunch": "Quinoa reale con verdure e Tofu affumicato (100g di tofu) + Una manciata di piselli.",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Crema di zucca e zenzero + 1 uovo sodo tritato + Semi di lino."
+      },
+      "w1_d5": {
+        "breakfast": "Uova strapazzate (2) con funghi e prezzemolo + Caffè con latte.",
+        "lunch": "Zuppa di fagioli bianchi con bietole e un tocco di paprika.",
+        "snack": "1 Kiwi + Yogurt naturale 0%.",
+        "dinner": "Peperoni ripieni di cous cous integrale e verdure arrosto + Formaggio feta (20g)."
+      },
+      "w1_d6": {
+        "breakfast": "Caffè con latte + Toast di segale con pomodoro, olio EVO e formaggio fresco (40g).",
+        "lunch": "Paella vegetariana: Riso, carciofi, fagiolini piatti e fagioli di Lima.",
+        "snack": "Macedonia di frutta (mela, pera, arancia).",
+        "dinner": "Spiedini di Tempeh e ananas alla griglia con insalata di valeriana."
+      },
+      "w1_d7": {
+        "breakfast": "Yogurt greco 0% con 15g di noci e 1 cucchiaino di miele + Caffè.",
+        "lunch": "Shakshuka: 2 uova in camicia in salsa di pomodoro, peperoni e spezie + Pane di segale.",
+        "snack": "1 Pera + 15g di mandorle.",
+        "dinner": "Hummus fatto in casa (100g) con bastoncini di carota, cetriolo e 1 uovo sodo."
+      },
+      "w2_d1": {
+        "breakfast": "Caffè con latte + Toast di segale con fiocchi di latte, cetriolo e semi di chia.",
+        "lunch": "Insalata di Quinoa e fagioli neri: 60g di quinoa (secca), 100g di fagioli, mais e avocado.",
+        "snack": "1 Yogurt greco 0% + 15g di noci.",
+        "dinner": "Uova strapazzate con funghi e Tofu: 2 uova, 100g di tofu sbriciolato e aglio."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) con 30g di avena e lamponi + Caffè.",
+        "lunch": "Moussaka vegetariana: Strati di melanzane e lenticchie (150g) con besciamella di zucchine.",
+        "snack": "1 Banana + 20g di mandorle.",
+        "dinner": "Formaggio Halloumi o Feta alla griglia (60g) con peperoni arrostiti e valeriana."
+      },
+      "w2_d3": {
+        "breakfast": "Caffè con latte + Sandwich integrale di uovo sodo, pomodoro e spinaci freschi.",
+        "lunch": "Pasta di ceci al pesto: 70g di pasta di legumi, pomodorini e basilico.",
+        "snack": "Formaggio fresco spalmabile con 10g di semi di zucca.",
+        "dinner": "Crema di broccoli e Cheddar leggero + 1 uovo sodo tritato sopra."
+      },
+      "w2_d4": {
+        "breakfast": "Porridge di avena (40g) con latte di mandorle, cannella e 10g di burro di arachidi.",
+        "lunch": "Saltato di Tempeh e verdure: 120g di tempeh, peperoni, carota e arachidi (10g).",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Peperoni ripieni di Ricotta e Spinaci (200g di spinaci, 60g di ricotta) al forno."
+      },
+      "w2_d5": {
+        "breakfast": "Uova strapazzate (2) con 1 fetta di formaggio leggero e origano + Caffè con latte.",
+        "lunch": "Dahl di lenticchie rosse: 80g di lenticchie rosse, curcuma, cumino e riso di cavolfiore.",
+        "snack": "1 Mela + Yogurt naturale 0%.",
+        "dinner": "Frittata di asparagi e cipolla (2 uova) + Insalata di ravanelli e cetriolo."
+      },
+      "w2_d6": {
+        "breakfast": "Caffè con latte + Toast di segale con pomodoro, olio EVO e 2 fette di formaggio emmental.",
+        "lunch": "Falafel al forno con Hummus: 5 falafel fatti in casa, 60g di hummus e pane pita integrale.",
+        "snack": "Macedonia di frutta (kiwi, pera, arancia).",
+        "dinner": "Frittelle di zucchine e uova: 2 uova, zucchina grattugiata e un po' di farina d'avena."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark con 15g di noci, mirtilli e semi di lino + Caffè.",
+        "lunch": "Risotto di funghi e riso integrale: 70g di riso integrale, porcini o champignon e parmigiano (10g).",
+        "snack": "1 Pera + 15g di mandorle.",
+        "dinner": "Pizza di melanzane: Grandi fette di melanzane come base, pomodoro, formaggio e basilico."
+      },
+      "w3_d1": {
+        "breakfast": "Caffè con latte + Toast di segale con Hüttenkäse (fiocchi di latte) e ravanelli.",
+        "lunch": "Insalata tiepida di lenticchie e Quinoa: 100g di lenticchie, 40g di quinoa, peperoni e cipolla.",
+        "snack": "1 Yogurt greco 0% + 15g di noci.",
+        "dinner": "Frittata di zucchine e formaggio di capra (2 uova, 20g di formaggio) + Insalata verde."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) con 30g di avena e 1 mela a pezzetti + Caffè.",
+        "lunch": "Zuppa di ceci e zucca: 200g di ceci, molta zucca, cumino e spinaci.",
+        "snack": "1 Banana + 15g di mandorle.",
+        "dinner": "Tofu marinato in soia e zenzero alla griglia con asparagi selvatici."
+      },
+      "w3_d3": {
+        "breakfast": "Caffè con latte + Sandwich integrale con uovo sodo, avocado (40g) e valeriana.",
+        "lunch": "Pasta integrale con pesto di broccoli: 70g di pasta, broccoli tritati, aglio e 10g di parmigiano.",
+        "snack": "Formaggio fresco spalmabile con 10g di semi di chia.",
+        "dinner": "Crema di verdure bianche (Porro, cavolfiore, cipolla) + 1 uovo in camicia."
+      },
+      "w3_d4": {
+        "breakfast": "Porridge di avena (40g) con latte di mandorle, cannella e lamponi + Caffè.",
+        "lunch": "Cous cous integrale con verdure e mandorle: 60g di cous cous, zucchina, carota e 15g di mandorle.",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Hamburger di fagioli neri (fatto in casa) con insalata di cetrioli e pomodori."
+      },
+      "w3_d5": {
+        "breakfast": "Uova strapazzate (2) con pomodorini e origano + Caffè con latte.",
+        "lunch": "Risotto di orzo o riso integrale con funghi misti e un tocco di lievito alimentare.",
+        "snack": "1 Kiwi + Yogurt naturale 0%.",
+        "dinner": "Peperoni arrostiti ripieni di frittata: Uovo sbattuto dentro il peperone e al forno."
+      },
+      "w3_d6": {
+        "breakfast": "Caffè con latte + Toast di segale con burro di arachidi (15g) e banana.",
+        "lunch": "Stufato di Seitan con patate: 120g di seitan, 150g di patate, piselli e salsa di pomodoro.",
+        "snack": "Macedonia di frutta (mela e pera).",
+        "dinner": "Spaghetti di zucchine (Zoodles) con salsa di formaggio ricotta (60g) e noci."
+      },
+      "w3_d7": {
+        "breakfast": "Yogurt greco 0% con 15g di noci e semi di lino + Caffè.",
+        "lunch": "Burrito vegetariano: Tortilla integrale, purea di fagioli (senza grassi), lattuga e pico de gallo.",
+        "snack": "1 Pera + 15g di mandorle.",
+        "dinner": "Hummus di barbabietola (100g) con crudités di carota e 2 uova sode."
+      },
+      "w4_d1": {
+        "breakfast": "Caffè con latte + Toast di segale con avocado (50g) e 1 uovo alla griglia.",
+        "lunch": "Ragù di soia testurizzata: 60g di soia, pomodoro naturale e 70g di pasta integrale.",
+        "snack": "1 Mela + 20g di noci.",
+        "dinner": "Uova strapazzate con fagiolini e aglio: 2 uova + 1 fetta di pane integrale."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) con 30g di avena e lamponi + Caffè.",
+        "lunch": "Zuppa di fagioli rossi e peperoni: 200g di fagioli, cipolla e paprika.",
+        "snack": "1 Banana + 15g di mandorle.",
+        "dinner": "Tempeh alla griglia (120g) con insalata di valeriana e ravanelli."
+      },
+      "w4_d3": {
+        "breakfast": "Caffè con latte + Sandwich integrale di fiocchi di latte, pomodoro e basilico.",
+        "lunch": "Insalata di ceci e Feta: 150g di ceci, 30g di feta, cetriolo e olive.",
+        "snack": "Formaggio fresco spalmabile con 10g di semi di girasole.",
+        "dinner": "Crema di funghi e porro (senza panna) + 1 uovo sodo tritato."
+      },
+      "w4_d4": {
+        "breakfast": "Porridge di avena (40g) con latte di soia, cannella e 1 noce + Caffè.",
+        "lunch": "Wok di Tofu affumicato e broccoli: 120g di tofu, peperone rosso e germogli di soia.",
+        "snack": "1 Arancia + 20g di pistacchi.",
+        "dinner": "Peperoni ripieni di Quinoa e verdure arrosto al forno + 5ml EVO."
+      },
+      "w4_d5": {
+        "breakfast": "Uova strapazzate (2) con spinaci e un tocco di pepe + Caffè.",
+        "lunch": "Stufato di patate e carciofi: 150g di patate, 4 carciofi e piselli.",
+        "snack": "1 Kiwi + Yogurt naturale 0%.",
+        "dinner": "Frittata di asparagi selvatici (2 uova) + 50g di avocado a lato."
+      },
+      "w4_d6": {
+        "breakfast": "Caffè con latte + Toast di segale con pomodoro, olio EVO e formaggio fresco (40g).",
+        "lunch": "Paella di funghi e verdure: Riso integrale (70g), porcini e fagiolini piatti.",
+        "snack": "Macedonia di frutta (pera e mela).",
+        "dinner": "Hamburger di melanzane e formaggio: 1 melanzana arrostita, formaggio leggero e insalata."
+      },
+      "w4_d7": {
+        "breakfast": "Yogurt greco 0% con 15g di noci e semi di chia + Caffè.",
+        "lunch": "Tacos di lattuga e lenticchie: Foglie di lattuga, lenticchie speziate e pico de gallo.",
+        "snack": "1 Pera + 15g di mandorle.",
+        "dinner": "Tagliere vegetariano di chiusura: Hummus, 2 uova sode, crudités e 10g di parmigiano."
+      },
+      "title": "Piano Vegetariano · 28 Giorni",
+      "subtitle": "Menu equilibrato senza carne né pesce"
+    },
+    "vegetarian_label": "Vegetariana"
   }
 }

@@ -107,7 +107,181 @@
     "steps": "Preparation",
     "proteinLabel": "Protein",
     "carbsLabel": "Carbs",
-    "fatLabel": "Fat"
+    "fatLabel": "Fat",
+    "low_carb": {
+      "w2_l1": {
+        "name": "Pesto Chicken and Green Beans",
+        "ingredients": [
+          "200g chicken breast",
+          "15g homemade pesto",
+          "200g green beans"
+        ],
+        "steps": [
+          "Cook the chicken on the grill.",
+          "Spread the pesto at the end.",
+          "Serve with green beans boiled al dente to maintain fiber."
+        ]
+      },
+      "w2_d1": {
+        "name": "Hake en Papillote",
+        "ingredients": [
+          "200g hake",
+          "Wild asparagus",
+          "Roasted peppers and EVOO"
+        ],
+        "steps": [
+          "Wrap the fish and vegetables in parchment paper.",
+          "Bake at 200°C for 15 min.",
+          "Add a drizzle of raw EVOO when opening."
+        ]
+      },
+      "w2_l2": {
+        "name": "Grilled Beef with Broccoli",
+        "ingredients": [
+          "180g lean beef",
+          "Cold broccoli",
+          "Crispy bacon (little) and yogurt dressing"
+        ],
+        "steps": [
+          "Grill the beef to taste.",
+          "Mix the cold broccoli with bacon and yogurt dressing."
+        ]
+      },
+      "w2_d2": {
+        "name": "Express Tuna Stuffed Eggplants",
+        "ingredients": [
+          "1 large eggplant",
+          "2 cans of natural tuna",
+          "1/2 onion and 20g light cheese"
+        ],
+        "steps": [
+          "Roast the eggplant in the microwave for 8 min.",
+          "Mix the pulp with tuna and onion.",
+          "Fill and gratin for 2 min."
+        ]
+      },
+      "w2_l3": {
+        "name": "Baked Cod with Herb Crust",
+        "ingredients": [
+          "200g Cod",
+          "Provençal herbs",
+          "Cucumber salad"
+        ],
+        "steps": [
+          "Cover the fish with the herb crust.",
+          "Bake 15 min at 180°C.",
+          "Serve with cucumber salad."
+        ]
+      },
+      "w2_d3": {
+        "name": "Curry Turkey with Cauliflower",
+        "ingredients": [
+          "150g turkey breast",
+          "Crushed cauliflower",
+          "Curry powder and EVOO"
+        ],
+        "steps": [
+          "Sauté the turkey with curry.",
+          "Add crushed cauliflower (rice style) and sauté everything together for 5 min."
+        ]
+      },
+      "w2_l4": {
+        "name": "Chicken Burgers in Lettuce Wraps",
+        "ingredients": [
+          "2 homemade chicken burgers",
+          "Large lettuce leaves",
+          "Tomato and onion"
+        ],
+        "steps": [
+          "Cook the burgers on the grill.",
+          "Wrap them in lettuce leaves, using them as buns."
+        ]
+      },
+      "w2_d4": {
+        "name": "Mushroom and Prawn Scramble",
+        "ingredients": [
+          "2 eggs",
+          "100g prawns",
+          "Mixed mushrooms, garlic and parsley"
+        ],
+        "steps": [
+          "Sauté mushrooms and prawns with garlic.",
+          "Add eggs and cook over low heat until set."
+        ]
+      },
+      "w2_l5": {
+        "name": "Baked Salmon with Zucchini Puree",
+        "ingredients": [
+          "180g salmon",
+          "1 zucchini",
+          "EVOO and pepper"
+        ],
+        "steps": [
+          "Bake the salmon.",
+          "Blend pre-cooked zucchini with oil to make the puree."
+        ]
+      },
+      "w2_d5": {
+        "name": "Pork Fillet with Arugula",
+        "ingredients": [
+          "150g lean pork loin",
+          "Arugula salad",
+          "Walnuts and parmesan"
+        ],
+        "steps": [
+          "Cook the pork on the grill.",
+          "Serve on a bed of arugula with walnuts and parmesan shavings."
+        ]
+      },
+      "w2_l6": {
+        "name": "Low-Carb Caesar Salad",
+        "ingredients": [
+          "Roasted chicken",
+          "Lettuce and 1 hard-boiled egg",
+          "Anchovies and lemon/oil dressing"
+        ],
+        "steps": [
+          "Assemble the salad omitting croutons to avoid adding carbs.",
+          "Dress generously."
+        ]
+      },
+      "w2_d6": {
+        "name": "Prawn and Zucchini Skewers",
+        "ingredients": [
+          "150g prawns",
+          "1 zucchini, diced",
+          "Tomato salad"
+        ],
+        "steps": [
+          "Assemble skewers alternating ingredients.",
+          "Cook on the grill, turning once."
+        ]
+      },
+      "w2_l7": {
+        "name": "Beef and Pepper Wok",
+        "ingredients": [
+          "180g beef strips",
+          "Mixed peppers",
+          "Low-salt soy sauce and ginger"
+        ],
+        "steps": [
+          "Sauté beef and vegetables over high heat.",
+          "Add soy sauce and grated ginger at the end."
+        ]
+      },
+      "w2_d7": {
+        "name": "Keto Chicken Pizza",
+        "ingredients": [
+          "150g raw ground chicken and 1 egg",
+          "Tomato and oregano",
+          "Mozzarella cheese"
+        ],
+        "steps": [
+          "Mix chicken and egg. Spread on a tray forming the base.",
+          "Bake 12 min. Add tomato and cheese, and gratin for 5 more min."
+        ]
+      }
+    }
   },
   "dietTab": {
     "title": "Nutritional Plan",
@@ -861,6 +1035,179 @@
       }
     },
     "med_label": "Mediterranean",
-    "low_carb_label": "Low-Carb"
+    "low_carb_label": "Low-Carb",
+    "vegetarian": {
+      "w1_d1": {
+        "breakfast": "Coffee with milk + Rye toast with avocado (50g) and 1 poached egg.",
+        "lunch": "Stewed lentils with vegetables (carrot, bell pepper, potato) + Tomato salad.",
+        "snack": "1 Apple + 20g walnuts.",
+        "dinner": "Scrambled eggs with spinach and pine nuts (2 eggs) + 1 slice of whole wheat bread."
+      },
+      "w1_d2": {
+        "breakfast": "Greek yogurt 0% with 30g oats and blueberries + Coffee.",
+        "lunch": "Chickpea Curry: 200g chickpeas, spinach and light coconut milk + 40g brown rice.",
+        "snack": "1 Banana + 15g almonds.",
+        "dinner": "Grilled Tofu Burger with roasted vegetables (eggplant and zucchini)."
+      },
+      "w1_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with whipped fresh cheese, cucumber and dill.",
+        "lunch": "Whole Wheat Pasta with Lentil Bolognese: 70g pasta + tomato sauce and minced lentils.",
+        "snack": "Cottage Cheese (150g) with 10g sunflower seeds.",
+        "dinner": "Wild asparagus omelet (2 eggs) with arugula and parmesan salad (10g)."
+      },
+      "w1_d4": {
+        "breakfast": "Oatmeal porridge (40g) with soy milk (unsweetened) and walnuts + Coffee.",
+        "lunch": "Royal Quinoa with Vegetables and Smoked Tofu (100g tofu) + A handful of peas.",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Pumpkin and Ginger Cream + 1 chopped hard-boiled egg + Flax seeds."
+      },
+      "w1_d5": {
+        "breakfast": "Scrambled eggs (2) with mushrooms and parsley + Coffee with milk.",
+        "lunch": "White Bean Stew with Swiss chard and a touch of smoked paprika.",
+        "snack": "1 Kiwi + Plain yogurt 0%.",
+        "dinner": "Peppers stuffed with whole wheat couscous and roasted vegetables + Feta cheese (20g)."
+      },
+      "w1_d6": {
+        "breakfast": "Coffee with milk + Rye toast with tomato, EVOO and fresh cheese (40g).",
+        "lunch": "Vegetarian Paella: Rice, artichokes, flat green beans and lima beans.",
+        "snack": "Fruit salad (apple, pear, orange).",
+        "dinner": "Grilled Tempeh and pineapple skewers with lamb's lettuce salad."
+      },
+      "w1_d7": {
+        "breakfast": "Greek yogurt 0% with 15g walnuts and 1 tsp honey + Coffee.",
+        "lunch": "Shakshuka: 2 poached eggs in tomato sauce, peppers and spices + Rye bread.",
+        "snack": "1 Pear + 15g almonds.",
+        "dinner": "Homemade Hummus (100g) with carrot sticks, cucumber and 1 hard-boiled egg."
+      },
+      "w2_d1": {
+        "breakfast": "Coffee with milk + Rye toast with Cottage cheese, cucumber and chia seeds.",
+        "lunch": "Quinoa and Black Bean Salad: 60g quinoa (dry), 100g beans, corn and avocado.",
+        "snack": "1 Greek yogurt 0% + 15g walnuts.",
+        "dinner": "Mushroom and Tofu Scramble: 2 eggs, 100g crumbled tofu and garlic."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) with 30g oats and raspberries + Coffee.",
+        "lunch": "Vegetarian Moussaka: Eggplant and lentil layers (150g) with zucchini bechamel.",
+        "snack": "1 Banana + 20g almonds.",
+        "dinner": "Grilled Halloumi or Feta cheese (60g) with roasted peppers and lamb's lettuce."
+      },
+      "w2_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with hard-boiled egg, tomato and fresh spinach.",
+        "lunch": "Chickpea Pasta with Pesto: 70g legume pasta, cherry tomato and basil.",
+        "snack": "Whipped fresh cheese with 10g pumpkin seeds.",
+        "dinner": "Broccoli and light Cheddar Cream + 1 chopped hard-boiled egg on top."
+      },
+      "w2_d4": {
+        "breakfast": "Oatmeal porridge (40g) with almond milk, cinnamon and 10g peanut butter.",
+        "lunch": "Tempeh and Vegetable Stir-fry: 120g tempeh, peppers, carrot and peanuts (10g).",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Peppers stuffed with Ricotta and Spinach (200g spinach, 60g ricotta) baked."
+      },
+      "w2_d5": {
+        "breakfast": "Scrambled eggs (2) with 1 slice of light cheese and oregano + Coffee with milk.",
+        "lunch": "Red Lentil Dahl: 80g red lentils, turmeric, cumin and cauliflower rice.",
+        "snack": "1 Apple + Plain yogurt 0%.",
+        "dinner": "Asparagus and Onion Omelet (2 eggs) + Radish and cucumber salad."
+      },
+      "w2_d6": {
+        "breakfast": "Coffee with milk + Rye toast with tomato, EVOO and 2 slices of emmental cheese.",
+        "lunch": "Baked Falafel with Hummus: 5 homemade falafels, 60g hummus and whole wheat pita bread.",
+        "snack": "Fruit salad (kiwi, pear, orange).",
+        "dinner": "Zucchini and Egg Pancakes: 2 eggs, grated zucchini and a little oat flour."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark with 15g walnuts, blueberries and flax seeds + Coffee.",
+        "lunch": "Mushroom and Brown Rice Risotto: 70g brown rice, boletus or mushrooms and parmesan (10g).",
+        "snack": "1 Pear + 15g almonds.",
+        "dinner": "Eggplant Pizza: Large eggplant slices as base, tomato, cheese and basil."
+      },
+      "w3_d1": {
+        "breakfast": "Coffee with milk + Rye toast with Hüttenkäse (cottage cheese) and radishes.",
+        "lunch": "Warm Lentil and Quinoa Salad: 100g lentils, 40g quinoa, peppers and onion.",
+        "snack": "1 Greek yogurt 0% + 15g walnuts.",
+        "dinner": "Zucchini and Goat Cheese Omelet (2 eggs, 20g cheese) + Green salad."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) with 30g oats and 1 chopped apple + Coffee.",
+        "lunch": "Chickpea and Pumpkin Stew: 200g chickpeas, lots of pumpkin, cumin and spinach.",
+        "snack": "1 Banana + 15g almonds.",
+        "dinner": "Tofu marinated in soy and ginger, grilled with wild asparagus."
+      },
+      "w3_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with hard-boiled egg, avocado (40g) and lamb's lettuce.",
+        "lunch": "Whole Wheat Pasta with Broccoli Pesto: 70g pasta, crushed broccoli, garlic and 10g parmesan.",
+        "snack": "Whipped fresh cheese with 10g chia seeds.",
+        "dinner": "White Vegetable Cream (Leek, cauliflower, onion) + 1 poached egg."
+      },
+      "w3_d4": {
+        "breakfast": "Oatmeal porridge (40g) with almond milk, cinnamon and raspberries + Coffee.",
+        "lunch": "Whole Wheat Couscous with Vegetables and Almonds: 60g couscous, zucchini, carrot and 15g almonds.",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Black Bean Burger (homemade) with cucumber and tomato salad."
+      },
+      "w3_d5": {
+        "breakfast": "Scrambled eggs (2) with cherry tomato and oregano + Coffee with milk.",
+        "lunch": "Barley or Brown Rice Risotto with mixed mushrooms and a touch of nutritional yeast.",
+        "snack": "1 Kiwi + Plain yogurt 0%.",
+        "dinner": "Roasted Peppers stuffed with Omelet: Beaten egg inside the pepper and baked."
+      },
+      "w3_d6": {
+        "breakfast": "Coffee with milk + Rye toast with peanut butter (15g) and banana.",
+        "lunch": "Seitan Stew with Potatoes: 120g seitan, 150g potato, peas and tomato sauce.",
+        "snack": "Fruit salad (apple and pear).",
+        "dinner": "Zucchini Spaghetti (Zoodles) with ricotta cheese sauce (60g) and walnuts."
+      },
+      "w3_d7": {
+        "breakfast": "Greek yogurt 0% with 15g walnuts and flax seeds + Coffee.",
+        "lunch": "Vegetarian Burrito: Whole wheat tortilla, refried beans (fat-free), lettuce and pico de gallo.",
+        "snack": "1 Pear + 15g almonds.",
+        "dinner": "Beetroot Hummus (100g) with carrot crudités and 2 hard-boiled eggs."
+      },
+      "w4_d1": {
+        "breakfast": "Coffee with milk + Rye toast with avocado (50g) and 1 grilled egg.",
+        "lunch": "Textured Soy Bolognese: 60g soy, natural tomato and 70g whole wheat pasta.",
+        "snack": "1 Apple + 20g walnuts.",
+        "dinner": "Scrambled Green Beans and Garlic: 2 eggs + 1 slice of whole wheat bread."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) with 30g oats and raspberries + Coffee.",
+        "lunch": "Red Bean and Pepper Stew: 200g beans, onion and paprika.",
+        "snack": "1 Banana + 15g almonds.",
+        "dinner": "Grilled Tempeh (120g) with lamb's lettuce and radish salad."
+      },
+      "w4_d3": {
+        "breakfast": "Coffee with milk + Whole wheat sandwich with Cottage cheese, tomato and basil.",
+        "lunch": "Chickpea and Feta Salad: 150g chickpeas, 30g feta, cucumber and olives.",
+        "snack": "Whipped fresh cheese with 10g sunflower seeds.",
+        "dinner": "Mushroom and Leek Cream (no cream) + 1 chopped hard-boiled egg."
+      },
+      "w4_d4": {
+        "breakfast": "Oatmeal porridge (40g) with soy milk, cinnamon and 1 walnut + Coffee.",
+        "lunch": "Smoked Tofu and Broccoli Stir-fry: 120g tofu, red pepper and bean sprouts.",
+        "snack": "1 Orange + 20g pistachios.",
+        "dinner": "Peppers stuffed with Quinoa and roasted vegetables + 5ml EVOO."
+      },
+      "w4_d5": {
+        "breakfast": "Scrambled eggs (2) with spinach and a touch of pepper + Coffee.",
+        "lunch": "Potato and Artichoke Stew: 150g potato, 4 artichokes and peas.",
+        "snack": "1 Kiwi + Plain yogurt 0%.",
+        "dinner": "Wild Asparagus Omelet (2 eggs) + 50g avocado on the side."
+      },
+      "w4_d6": {
+        "breakfast": "Coffee with milk + Rye toast with tomato, EVOO and fresh cheese (40g).",
+        "lunch": "Mushroom and Vegetable Paella: Brown rice (70g), boletus and flat green beans.",
+        "snack": "Fruit salad (pear and apple).",
+        "dinner": "Eggplant and Cheese Burger: 1 roasted eggplant, light cheese and salad."
+      },
+      "w4_d7": {
+        "breakfast": "Greek yogurt 0% with 15g walnuts and chia seeds + Coffee.",
+        "lunch": "Lettuce and Lentil Tacos: Lettuce leaves, spiced lentils and pico de gallo.",
+        "snack": "1 Pear + 15g almonds.",
+        "dinner": "Closing Vegetarian Board: Hummus, 2 hard-boiled eggs, crudités and 10g parmesan."
+      },
+      "title": "Vegetarian Plan · 28 Days",
+      "subtitle": "Balanced menu without meat or fish"
+    },
+    "vegetarian_label": "Vegetarian"
   }
 }

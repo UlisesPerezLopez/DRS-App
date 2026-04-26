@@ -134,7 +134,22 @@ export const RECIPES: Recipe[] = [
   { id: "r12", translationKey: "recipeDb.stuffed_peppers_soy", cost: "≈ 1,80 €", time: "35 min", kcal: 380, protein: 25, carbs: 40, fat: 12 },
   { id: "r13", translationKey: "recipeDb.express_couscous", cost: "≈ 1,20 €", time: "10 min", kcal: 400, protein: 12, carbs: 70, fat: 5 },
   { id: "r14", translationKey: "recipeDb.grilled_eggplant_cheese", cost: "≈ 1,60 €", time: "20 min", kcal: 290, protein: 14, carbs: 12, fat: 18 },
-  { id: "r15", translationKey: "recipeDb.protein_smoothie_bowl", cost: "≈ 1,50 €", time: "5 min", kcal: 310, protein: 25, carbs: 35, fat: 8 },
+  { id: "r15", translationKey: "protein_smoothie_bowl", cost: "≈ 1,50 €", time: "5 min", kcal: 310, protein: 25, carbs: 35, fat: 8 },
+  // SEMANA 2 - DIETA LOW-CARB
+  { id: 'rec_lc_w2_l1', translationKey: 'recipes.low_carb.w2_l1', cost: '≈ 2,10 €', time: '20 min', kcal: 650, protein: 50, carbs: 10, fat: 45 },
+  { id: 'rec_lc_w2_d1', translationKey: 'recipes.low_carb.w2_d1', cost: '≈ 2,30 €', time: '25 min', kcal: 500, protein: 42, carbs: 8, fat: 33 },
+  { id: 'rec_lc_w2_l2', translationKey: 'recipes.low_carb.w2_l2', cost: '≈ 2,50 €', time: '20 min', kcal: 650, protein: 45, carbs: 12, fat: 46 },
+  { id: 'rec_lc_w2_d2', translationKey: 'recipes.low_carb.w2_d2', cost: '≈ 1,80 €', time: '30 min', kcal: 500, protein: 40, carbs: 15, fat: 31 },
+  { id: 'rec_lc_w2_l3', translationKey: 'recipes.low_carb.w2_l3', cost: '≈ 2,20 €', time: '25 min', kcal: 650, protein: 48, carbs: 5, fat: 48 },
+  { id: 'rec_lc_w2_d3', translationKey: 'recipes.low_carb.w2_d3', cost: '≈ 1,90 €', time: '20 min', kcal: 500, protein: 45, carbs: 12, fat: 30 },
+  { id: 'rec_lc_w2_l4', translationKey: 'recipes.low_carb.w2_l4', cost: '≈ 1,70 €', time: '15 min', kcal: 650, protein: 50, carbs: 8, fat: 46 },
+  { id: 'rec_lc_w2_d4', translationKey: 'recipes.low_carb.w2_d4', cost: '≈ 2,10 €', time: '15 min', kcal: 500, protein: 40, carbs: 5, fat: 35 },
+  { id: 'rec_lc_w2_l5', translationKey: 'recipes.low_carb.w2_l5', cost: '≈ 2,40 €', time: '25 min', kcal: 650, protein: 45, carbs: 10, fat: 47 },
+  { id: 'rec_lc_w2_d5', translationKey: 'recipes.low_carb.w2_d5', cost: '≈ 2,00 €', time: '15 min', kcal: 500, protein: 42, carbs: 5, fat: 34 },
+  { id: 'rec_lc_w2_l6', translationKey: 'recipes.low_carb.w2_l6', cost: '≈ 1,80 €', time: '10 min', kcal: 650, protein: 55, carbs: 8, fat: 44 },
+  { id: 'rec_lc_w2_d6', translationKey: 'recipes.low_carb.w2_d6', cost: '≈ 2,20 €', time: '15 min', kcal: 500, protein: 40, carbs: 10, fat: 33 },
+  { id: 'rec_lc_w2_l7', translationKey: 'recipes.low_carb.w2_l7', cost: '≈ 2,60 €', time: '20 min', kcal: 650, protein: 50, carbs: 12, fat: 44 },
+  { id: 'rec_lc_w2_d7', translationKey: 'recipes.low_carb.w2_d7', cost: '≈ 2,40 €', time: '35 min', kcal: 500, protein: 45, carbs: 10, fat: 31 },
 ];
 
 import type { DailyMenuPlan } from "../types";
@@ -207,6 +222,41 @@ export const LOW_CARB_PLAN: DailyMenuPlan[] = [
   { id: 'lc_w4_d5', week: 4, day: 26, translationKey: 'plans.low_carb.w4_d5', totalKcal: 1850 },
   { id: 'lc_w4_d6', week: 4, day: 27, translationKey: 'plans.low_carb.w4_d6', totalKcal: 1850 },
   { id: 'lc_w4_d7', week: 4, day: 28, translationKey: 'plans.low_carb.w4_d7', totalKcal: 1850 },
+];
+
+export const VEGETARIAN_PLAN: DailyMenuPlan[] = [
+  // SEMANA 1
+  { id: 'v_w1_d1', week: 1, day: 1, translationKey: 'plans.vegetarian.w1_d1', totalKcal: 1750 },
+  { id: 'v_w1_d2', week: 1, day: 2, translationKey: 'plans.vegetarian.w1_d2', totalKcal: 1750 },
+  { id: 'v_w1_d3', week: 1, day: 3, translationKey: 'plans.vegetarian.w1_d3', totalKcal: 1750 },
+  { id: 'v_w1_d4', week: 1, day: 4, translationKey: 'plans.vegetarian.w1_d4', totalKcal: 1750 },
+  { id: 'v_w1_d5', week: 1, day: 5, translationKey: 'plans.vegetarian.w1_d5', totalKcal: 1750 },
+  { id: 'v_w1_d6', week: 1, day: 6, translationKey: 'plans.vegetarian.w1_d6', totalKcal: 1750 },
+  { id: 'v_w1_d7', week: 1, day: 7, translationKey: 'plans.vegetarian.w1_d7', totalKcal: 1750 },
+  // SEMANA 2
+  { id: 'v_w2_d1', week: 2, day: 8, translationKey: 'plans.vegetarian.w2_d1', totalKcal: 1750 },
+  { id: 'v_w2_d2', week: 2, day: 9, translationKey: 'plans.vegetarian.w2_d2', totalKcal: 1750, warnings: ['high_sodium'] },
+  { id: 'v_w2_d3', week: 2, day: 10, translationKey: 'plans.vegetarian.w2_d3', totalKcal: 1750 },
+  { id: 'v_w2_d4', week: 2, day: 11, translationKey: 'plans.vegetarian.w2_d4', totalKcal: 1750 },
+  { id: 'v_w2_d5', week: 2, day: 12, translationKey: 'plans.vegetarian.w2_d5', totalKcal: 1750 },
+  { id: 'v_w2_d6', week: 2, day: 13, translationKey: 'plans.vegetarian.w2_d6', totalKcal: 1750 },
+  { id: 'v_w2_d7', week: 2, day: 14, translationKey: 'plans.vegetarian.w2_d7', totalKcal: 1750 },
+  // SEMANA 3
+  { id: 'v_w3_d1', week: 3, day: 15, translationKey: 'plans.vegetarian.w3_d1', totalKcal: 1750 },
+  { id: 'v_w3_d2', week: 3, day: 16, translationKey: 'plans.vegetarian.w3_d2', totalKcal: 1750 },
+  { id: 'v_w3_d3', week: 3, day: 17, translationKey: 'plans.vegetarian.w3_d3', totalKcal: 1750 },
+  { id: 'v_w3_d4', week: 3, day: 18, translationKey: 'plans.vegetarian.w3_d4', totalKcal: 1750 },
+  { id: 'v_w3_d5', week: 3, day: 19, translationKey: 'plans.vegetarian.w3_d5', totalKcal: 1750 },
+  { id: 'v_w3_d6', week: 3, day: 20, translationKey: 'plans.vegetarian.w3_d6', totalKcal: 1750, warnings: ['high_potassium'] },
+  { id: 'v_w3_d7', week: 3, day: 21, translationKey: 'plans.vegetarian.w3_d7', totalKcal: 1750 },
+  // SEMANA 4
+  { id: 'v_w4_d1', week: 4, day: 22, translationKey: 'plans.vegetarian.w4_d1', totalKcal: 1750 },
+  { id: 'v_w4_d2', week: 4, day: 23, translationKey: 'plans.vegetarian.w4_d2', totalKcal: 1750 },
+  { id: 'v_w4_d3', week: 4, day: 24, translationKey: 'plans.vegetarian.w4_d3', totalKcal: 1750, warnings: ['high_sodium'] },
+  { id: 'v_w4_d4', week: 4, day: 25, translationKey: 'plans.vegetarian.w4_d4', totalKcal: 1750 },
+  { id: 'v_w4_d5', week: 4, day: 26, translationKey: 'plans.vegetarian.w4_d5', totalKcal: 1750 },
+  { id: 'v_w4_d6', week: 4, day: 27, translationKey: 'plans.vegetarian.w4_d6', totalKcal: 1750 },
+  { id: 'v_w4_d7', week: 4, day: 28, translationKey: 'plans.vegetarian.w4_d7', totalKcal: 1750 },
 ];
 
 export interface ExerciseTemplate {

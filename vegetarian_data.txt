@@ -1,0 +1,2 @@
+﻿"  { id: 'lc_w4_d7', week: 4, day: 28, translationKey: 'plans.low_carb.w4_d7', totalKcal: 1850 },\n];\n\nexport const VEGETARIAN_PLAN: DailyMenuPlan[] = [\n  // SEMANA 1\n  { id: 'v_w1_d1', week: 1, day: 1, translationKey: 'plans.vegetarian.w1_d1', totalKc
+<truncated 2848 bytes>

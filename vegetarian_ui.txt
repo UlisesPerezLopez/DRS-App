@@ -1,0 +1,2 @@
+﻿[{"AllowMultiple":false,"EndLine":7,"ReplacementContent":"import { MEDITERRANEAN_PLAN, LOW_CARB_PLAN, VEGETARIAN_PLAN } from \"../lib/data\";\nimport { Flame, Coffee, UtensilsCrossed, Cookie, MoonStar, AlertTriangle, HeartPulse, LayoutList, Leaf } from \"l
+<truncated 4707 bytes>

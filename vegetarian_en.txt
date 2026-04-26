@@ -1,0 +1,2 @@
+﻿"    \"vegetarian\": {\n      \"w1_d1\": { \"breakfast\": \"Coffee with milk + Rye toast with avocado (50g) and 1 poached egg.\", \"lunch\": \"Lentil stew with vegetables (carrot, pepper, potato) + Tomato salad.\", \"snack\": \"1 Apple + 20g walnuts.\", \"
+<truncated 9452 bytes>

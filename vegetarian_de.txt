@@ -1,0 +1,2 @@
+﻿"    \"vegetarian\": {\n      \"w1_d1\": { \"breakfast\": \"Kaffee mit Milch + Roggentoast mit Avocado (50g) und 1 pochierten Ei.\", \"lunch\": \"Linseneintopf mit GemÃ¼se (Karotten, Paprika, Kartoffeln) + Tomatensalat.\", \"snack\": \"1 Apfel + 20g WalnÃ¼
+<truncated 9587 bytes>

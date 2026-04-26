@@ -107,7 +107,181 @@
     "steps": "Zubereitung",
     "proteinLabel": "Protein",
     "carbsLabel": "Kohlenhydrate",
-    "fatLabel": "Fett"
+    "fatLabel": "Fett",
+    "low_carb": {
+      "w2_l1": {
+        "name": "Hähnchen mit Pesto und grünen Bohnen",
+        "ingredients": [
+          "200g Hähnchenbrust",
+          "15g hausgemachtes Pesto",
+          "200g grüne Bohnen"
+        ],
+        "steps": [
+          "Hähnchen auf dem Grill garen.",
+          "Pesto am Ende darauf verteilen.",
+          "Mit bissfest gekochten grünen Bohnen servieren, um Ballaststoffe zu erhalten."
+        ]
+      },
+      "w2_d1": {
+        "name": "Seehecht en Papillote",
+        "ingredients": [
+          "200g Seehecht",
+          "Wilder Spargel",
+          "Geröstete Paprika und Olivenöl (AOVE)"
+        ],
+        "steps": [
+          "Fisch und Gemüse in Backpapier einwickeln.",
+          "Bei 200°C für 15 Min. backen.",
+          "Beim Öffnen einen Schuss rohes Olivenöl hinzufügen."
+        ]
+      },
+      "w2_l2": {
+        "name": "Gegrilltes Rindfleisch mit Brokkoli",
+        "ingredients": [
+          "180g mageres Rindfleisch",
+          "Kalter Brokkoli",
+          "Knuspriger Speck (wenig) und Joghurtdressing"
+        ],
+        "steps": [
+          "Rindfleisch nach Geschmack grillen.",
+          "Kalten Brokkoli mit Speck und Joghurtdressing mischen."
+        ]
+      },
+      "w2_d2": {
+        "name": "Gefüllte Auberginen mit Thunfisch Express",
+        "ingredients": [
+          "1 große Aubergine",
+          "2 Dosen Thunfisch natur",
+          "1/2 Zwiebel und 20g Light-Käse"
+        ],
+        "steps": [
+          "Aubergine in der Mikrowelle 8 Min. rösten.",
+          "Fruchtfleisch mit Thunfisch und Zwiebel mischen.",
+          "Füllen und 2 Min. gratinieren."
+        ]
+      },
+      "w2_l3": {
+        "name": "Kabeljau aus dem Ofen mit Kruste",
+        "ingredients": [
+          "200g Kabeljau",
+          "Kräuter der Provence",
+          "Gurkensalat"
+        ],
+        "steps": [
+          "Fisch mit der Kräuterkruste bedecken.",
+          "15 Min. bei 180°C backen.",
+          "Mit Gurkensalat servieren."
+        ]
+      },
+      "w2_d3": {
+        "name": "Puten-Curry mit Blumenkohl",
+        "ingredients": [
+          "150g Putenbrust",
+          "Zerkleinerter Blumenkohl",
+          "Currypulver und Olivenöl"
+        ],
+        "steps": [
+          "Pute mit Curry anbraten.",
+          "Zerkleinerten Blumenkohl (Reis-Stil) hinzufügen und alles zusammen 5 Min. anbraten."
+        ]
+      },
+      "w2_l4": {
+        "name": "Hähnchen-Burger in Salatblättern",
+        "ingredients": [
+          "2 hausgemachte Hähnchen-Burger",
+          "Große Salatblätter",
+          "Tomate und Zwiebel"
+        ],
+        "steps": [
+          "Burger auf dem Grill garen.",
+          "In Salatblätter einwickeln und als Brötchenersatz verwenden."
+        ]
+      },
+      "w2_d4": {
+        "name": "Pilz- und Garnelen-Rührei",
+        "ingredients": [
+          "2 Eier",
+          "100g Garnelen",
+          "Verschiedene Pilze, Knoblauch und Petersilie"
+        ],
+        "steps": [
+          "Pilze und Garnelen mit Knoblauch anbraten.",
+          "Eier hinzufügen und bei niedriger Hitze stocken lassen."
+        ]
+      },
+      "w2_l5": {
+        "name": "Lachs aus dem Ofen mit Zucchini-Püree",
+        "ingredients": [
+          "180g Lachs",
+          "1 Zucchini",
+          "Olivenöl und Pfeffer"
+        ],
+        "steps": [
+          "Lachs im Ofen backen.",
+          "Gekochte Zucchini mit Öl pürieren."
+        ]
+      },
+      "w2_d5": {
+        "name": "Schweinefilet mit Rucola",
+        "ingredients": [
+          "150g mageres Schweinefilet",
+          "Rucolasalat",
+          "Walnüsse und Parmesan"
+        ],
+        "steps": [
+          "Schwein auf dem Grill garen.",
+          "Auf Rucolabett mit Walnüssen und Parmesanspänen servieren."
+        ]
+      },
+      "w2_l6": {
+        "name": "Low-Carb Caesar Salad",
+        "ingredients": [
+          "Gebratenes Hähnchen",
+          "Salat und 1 hartgekochtes Ei",
+          "Sardellen und Zitronen-Öl-Dressing"
+        ],
+        "steps": [
+          "Salat ohne Croutons zusammenstellen, um Kohlenhydrate zu sparen.",
+          "Großzügig anrichten."
+        ]
+      },
+      "w2_d6": {
+        "name": "Garnelen- und Zucchini-Spieße",
+        "ingredients": [
+          "150g Garnelen",
+          "1 Zucchini, gewürfelt",
+          "Tomatensalat"
+        ],
+        "steps": [
+          "Spieße abwechselnd bestücken.",
+          "Kurz auf dem Grill garen."
+        ]
+      },
+      "w2_l7": {
+        "name": "Rindfleisch- und Paprika-Wok",
+        "ingredients": [
+          "180g Rindfleischstreifen",
+          "Verschiedene Paprika",
+          "Salzarme Sojasauce und Ingwer"
+        ],
+        "steps": [
+          "Rindfleisch und Gemüse bei starker Hitze anbraten.",
+          "Sojasauce und geriebenen Ingwer am Ende hinzufügen."
+        ]
+      },
+      "w2_d7": {
+        "name": "Keto-Hähnchen-Pizza",
+        "ingredients": [
+          "150g rohes Hähnchenhackfleisch und 1 ei",
+          "Tomate und Oregano",
+          "Mozzarella-Käse"
+        ],
+        "steps": [
+          "Hähnchen und Ei mischen. Auf einem Blech als Boden ausbreiten.",
+          "12 Min. backen. Tomate und Käse hinzufügen und weitere 5 Min. gratinieren."
+        ]
+      }
+    }
   },
   "dietTab": {
     "title": "Ernährungsplan",
@@ -861,6 +1035,179 @@
       }
     },
     "med_label": "Mediterran",
-    "low_carb_label": "Low-Carb"
+    "low_carb_label": "Low-Carb",
+    "vegetarian": {
+      "w1_d1": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Avocado (50g) und 1 pochiertes Ei.",
+        "lunch": "Linseneintopf mit Gemüse (Karotte, Paprika, Kartoffel) + Tomatensalat.",
+        "snack": "1 Apfel + 20g Walnüsse.",
+        "dinner": "Rührei mit Spinat und Pinienkernen (2 Eier) + 1 Scheibe Vollkornbrot."
+      },
+      "w1_d2": {
+        "breakfast": "Griechischer Joghurt 0% mit 30g Haferflocken und Blaubeeren + Kaffee.",
+        "lunch": "Kichererbsen-Curry: 200g Kichererbsen, Spinat und leichte Kokosmilch + 40g brauner Reis.",
+        "snack": "1 Banane + 15g Mandeln.",
+        "dinner": "Gegrillter Tofu-Burger mit geröstetem Gemüse (Aubergine und Zucchini)."
+      },
+      "w1_d3": {
+        "breakfast": "Kaffee mit Milch + Vollkornsandsandwich mit geschlagenem Frischkäse, Gurke und Dill.",
+        "lunch": "Vollkornnudeln mit Linsen-Bolognese: 70g Nudeln + Tomatensauce und gehackte Linsen.",
+        "snack": "Hüttenkäse (150g) mit 10g Sonnenblumenkernen.",
+        "dinner": "Wildspargel-Omelett (2 Eier) mit Rucola-Parmesansalat (10g)."
+      },
+      "w1_d4": {
+        "breakfast": "Haferbrei (40g) mit Sojamilch (ungesüßt) und Walnüssen + Kaffee.",
+        "lunch": "Royal Quinoa mit Gemüse und Räuchertofu (100g Tofu) + Eine Handvoll Erbsen.",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Kürbis-Ingwer-Creme + 1 gehacktes hartgekochtes Ei + Leinsamen."
+      },
+      "w1_d5": {
+        "breakfast": "Rührei (2) mit Champignons und Petersilie + Kaffee mit Milch.",
+        "lunch": "Weißer Bohneneintopf mit Mangold und einem Hauch Paprika.",
+        "snack": "1 Kiwi + Naturjoghurt 0%.",
+        "dinner": "Gefüllte Paprika mit Vollkorn-Couscous und geröstetem Gemüse + Feta-Käse (20g)."
+      },
+      "w1_d6": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Tomate, Olivenöl und Frischkäse (40g).",
+        "lunch": "Vegetarische Paella: Reis, Artischocken, flache grüne Bohnen und dicke Bohnen.",
+        "snack": "Obstsalat (Apfel, Birne, Orange).",
+        "dinner": "Gegrillte Tempeh- und Ananasspieße mit Feldsalat."
+      },
+      "w1_d7": {
+        "breakfast": "Griechischer Joghurt 0% mit 15g Walnüssen und 1 TL Honig + Kaffee.",
+        "lunch": "Shakshuka: 2 pochierte Eier in Tomatensauce, Paprika und Gewürzen + Roggenbrot.",
+        "snack": "1 Birne + 15g Mandeln.",
+        "dinner": "Hausgemachter Hummus (100g) mit Karottensticks, Gurke und 1 hartgekochten Ei."
+      },
+      "w2_d1": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Hüttenkäse, Gurke und Chiasamen.",
+        "lunch": "Quinoa-Schwarzbohnen-Salat: 60g Quinoa (trocken), 100g Bohnen, Mais und Avocado.",
+        "snack": "1 Griechischer Joghurt 0% + 15g Walnüsse.",
+        "dinner": "Pilz-Tofu-Rührei: 2 Eier, 100g zerbröckelter Tofu und Knoblauch."
+      },
+      "w2_d2": {
+        "breakfast": "Magerquark (200g) mit 30g Haferflocken und Himbeeren + Kaffee.",
+        "lunch": "Vegetarische Moussaka: Auberginen- und Linsenschichten (150g) mit Zucchini-Bechamel.",
+        "snack": "1 Banane + 20g Mandeln.",
+        "dinner": "Gegrillter Halloumi oder Feta (60g) mit gerösteter Paprika und Feldsalat."
+      },
+      "w2_d3": {
+        "breakfast": "Kaffee mit Milch + Vollkornsandsandwich mit hartgekochtem Ei, Tomate und frischem Spinat.",
+        "lunch": "Kichererbsennudeln mit Pesto: 70g Hülsenfrüchte-Nudeln, Kirschtomaten und Basilikum.",
+        "snack": "Geschlagener Frischkäse mit 10g Kürbiskernen.",
+        "dinner": "Brokkoli- und leichte Cheddar-Creme + 1 gehacktes hartgekochtes Ei darüber."
+      },
+      "w2_d4": {
+        "breakfast": "Haferbrei (40g) mit Mandelmilch, Zimt und 10g Erdnussbutter.",
+        "lunch": "Tempeh-Gemüse-Pfanne: 120g Tempeh, Paprika, Karotte und Erdnüsse (10g).",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Paprika gefüllt mit Ricotta und Spinat (200g Spinat, 60g Ricotta), gebacken."
+      },
+      "w2_d5": {
+        "breakfast": "Rührei (2) mit 1 Scheibe leichtem Käse und Oregano + Kaffee mit Milch.",
+        "lunch": "Rotes Linsen-Dahl: 80g rote Linsen, Kurkuma, Kreuzkümmel und Blumenkohlreis.",
+        "snack": "1 Apfel + Naturjoghurt 0%.",
+        "dinner": "Spargel-Zwiebel-Omelett (2 Eier) + Radieschen-Gurken-Salat."
+      },
+      "w2_d6": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Tomate, Olivenöl und 2 Scheiben Emmentaler.",
+        "lunch": "Gebackene Falafel mit Hummus: 5 hausgemachte Falafel, 60g Hummus und Vollkorn-Pita.",
+        "snack": "Obstsalat (Kiwi, Birne, Orange).",
+        "dinner": "Zucchini-Ei-Pfannkuchen: 2 Eier, geriebene Zucchini und etwas Hafermehl."
+      },
+      "w2_d7": {
+        "breakfast": "Magerquark mit 15g Walnüssen, Blaubeeren und Leinsamen + Kaffee.",
+        "lunch": "Pilz-Vollkornreis-Risotto: 70g brauner Reis, Steinpilze oder Champignons und Parmesan (10g).",
+        "snack": "1 Birne + 15g Mandeln.",
+        "dinner": "Auberginen-Pizza: Große Auberginenscheiben als Basis, Tomate, Käse und Basilikum."
+      },
+      "w3_d1": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Hüttenkäse und Radieschen.",
+        "lunch": "Warmer Linsen-Quinoa-Salat: 100g Linsen, 40g Quinoa, Paprika und Zwiebel.",
+        "snack": "1 Griechischer Joghurt 0% + 15g Walnüsse.",
+        "dinner": "Zucchini-Ziegenkäse-Omelett (2 Eier, 20g Käse) + Grüner Salat."
+      },
+      "w3_d2": {
+        "breakfast": "Magerquark (200g) mit 30g Haferflocken und 1 gehackten Apfel + Kaffee.",
+        "lunch": "Kichererbsen-Kürbis-Eintopf: 200g Kichererbsen, viel Kürbis, Kreuzkümmel und Spinat.",
+        "snack": "1 Banane + 15g Mandeln.",
+        "dinner": "In Soja und Ingwer marinierter Tofu, gegrillt mit Wildspargel."
+      },
+      "w3_d3": {
+        "breakfast": "Kaffee mit Milch + Vollkornsandsandwich mit hartgekochtem Ei, Avocado (40g) und Feldsalat.",
+        "lunch": "Vollkornnudeln mit Brokkoli-Pesto: 70g Nudeln, zerdrückter Brokkoli, Knoblauch und 10g Parmesan.",
+        "snack": "Geschlagener Frischkäse mit 10g Chiasamen.",
+        "dinner": "Weiße Gemüsecreme (Lauch, Blumenkohl, Zwiebel) + 1 pochiertes Ei."
+      },
+      "w3_d4": {
+        "breakfast": "Haferbrei (40g) mit Mandelmilch, Zimt und Himbeeren + Kaffee.",
+        "lunch": "Vollkorn-Couscous mit Gemüse und Mandeln: 60g Couscous, Zucchini, Karotte und 15g Mandeln.",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Schwarzbohnen-Burger (hausgemacht) mit Gurken-Tomaten-Salat."
+      },
+      "w3_d5": {
+        "breakfast": "Rührei (2) mit Kirschtomaten und Oregano + Kaffee mit Milch.",
+        "lunch": "Gersten- oder Vollkornreis-Risotto mit gemischten Pilzen und einem Hauch Nährhefe.",
+        "snack": "1 Kiwi + Naturjoghurt 0%.",
+        "dinner": "Geröstete Paprika, gefüllt mit Omelett: Geschlagenes Ei in der Paprika und gebacken."
+      },
+      "w3_d6": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Erdnussbutter (15g) und Banane.",
+        "lunch": "Seitan-Eintopf mit Kartoffeln: 120g Seitan, 150g Kartoffeln, Erbsen und Tomatensauce.",
+        "snack": "Obstsalat (Apfel und Birne).",
+        "dinner": "Zucchini-Spaghetti (Zoodles) mit Ricotta-Käsesauce (60g) und Walnüssen."
+      },
+      "w3_d7": {
+        "breakfast": "Griechischer Joghurt 0% mit 15g Walnüssen und Leinsamen + Kaffee.",
+        "lunch": "Vegetarischer Burrito: Vollkorn-Tortilla, Bohnenmus (ohne Fett), Salat und Pico de Gallo.",
+        "snack": "1 Birne + 15g Mandeln.",
+        "dinner": "Rote-Bete-Hummus (100g) mit Karotten-Rohkost und 2 hartgekochten Eiern."
+      },
+      "w4_d1": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Avocado (50g) und 1 gegrillten Ei.",
+        "lunch": "Soja-Bolognese: 60g Soja, natürliche Tomate und 70g Vollkornnudeln.",
+        "snack": "1 Apfel + 20g Walnüsse.",
+        "dinner": "Rührei mit grünen Bohnen und Knoblauch: 2 Eier + 1 Scheibe Vollkornbrot."
+      },
+      "w4_d2": {
+        "breakfast": "Magerquark (200g) mit 30g Haferflocken und Himbeeren + Kaffee.",
+        "lunch": "Roter Bohnen-Paprika-Eintopf: 200g Bohnen, Zwiebel und Paprikapulver.",
+        "snack": "1 Banane + 15g Mandeln.",
+        "dinner": "Gegrillter Tempeh (120g) mit Feldsalat und Radieschen."
+      },
+      "w4_d3": {
+        "breakfast": "Kaffee mit Milch + Vollkornsandsandwich mit Hüttenkäse, Tomate und Basilikum.",
+        "lunch": "Kichererbsen-Feta-Salat: 150g Kichererbsen, 30g Feta, Gurke und Oliven.",
+        "snack": "Geschlagener Frischkäse mit 10g Sonnenblumenkernen.",
+        "dinner": "Pilz-Lauch-Creme (ohne Sahne) + 1 gehacktes hartgekochtes Ei."
+      },
+      "w4_d4": {
+        "breakfast": "Haferbrei (40g) mit Sojamilch, Zimt und 1 Walnuss + Kaffee.",
+        "lunch": "Räuchertofu-Brokkoli-Pfanne: 120g Tofu, rote Paprika und Sojasprossen.",
+        "snack": "1 Orange + 20g Pistazien.",
+        "dinner": "Paprika gefüllt mit Quinoa und geröstetem Gemüse + 5ml Olivenöl."
+      },
+      "w4_d5": {
+        "breakfast": "Rührei (2) mit Spinat und einem Hauch Pfeffer + Kaffee.",
+        "lunch": "Kartoffel-Artischocken-Eintopf: 150g Kartoffeln, 4 Artischocken und Erbsen.",
+        "snack": "1 Kiwi + Naturjoghurt 0%.",
+        "dinner": "Wildspargel-Omelett (2 Eier) + 50g Avocado als Beilage."
+      },
+      "w4_d6": {
+        "breakfast": "Kaffee mit Milch + Roggentoast mit Tomate, Olivenöl und Frischkäse (40g).",
+        "lunch": "Pilz-Gemüse-Paella: Brauner Reis (70g), Steinpilze und flache grüne Bohnen.",
+        "snack": "Obstsalat (Birne und Apfel).",
+        "dinner": "Auberginen-Käse-Burger: 1 geröstete Aubergine, leichter Käse und Salat."
+      },
+      "w4_d7": {
+        "breakfast": "Griechischer Joghurt 0% mit 15g Walnüssen und Chiasamen + Kaffee.",
+        "lunch": "Salat-Linsen-Tacos: Salatblätter, gewürzte Linsen und Pico de Gallo.",
+        "snack": "1 Birne + 15g Mandeln.",
+        "dinner": "Vegetarische Abschlussplatte: Hummus, 2 hartgekochte Eier, Rohkost und 10g Parmesan."
+      },
+      "title": "Vegetarischer Plan · 28 Tage",
+      "subtitle": "Ausgewogenes Menü ohne Fleisch oder Fisch"
+    },
+    "vegetarian_label": "Vegetarisch"
   }
 }
