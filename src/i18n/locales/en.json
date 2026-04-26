@@ -3434,6 +3434,14 @@
     "a1_lvl1": "Routine A: Pushes & Quads (Level 1)",
     "a2_lvl1": "Routine B: Pulls & Posterior Chain (Level 1)",
     "b1_lvl1": "Strength 1: Core Stability (Level 1)",
-    "b2_lvl1": "Strength 2: Tension & Unilateral (Level 1)"
+    "b2_lvl1": "Strength 2: Tension & Unilateral (Level 1)",
+    "a1_lvl2": "Upper Body: Tension & Core (Level 2)",
+    "a2_lvl2": "Legs: Metabolic & Balance (Level 2)",
+    "b1_lvl2": "Strength 1: Continuous Tension (Level 2)",
+    "b2_lvl2": "Strength 2: The Fat-Burner + HIIT (Level 2)",
+    "a1_lvl3": "Advanced Upper Body: Supersets (Level 3)",
+    "a2_lvl3": "Legs & Agility: Turbo (Level 3)",
+    "b1_lvl3": "Strength 1: Pre-Fatigue (Level 3)",
+    "b2_lvl3": "Strength 2: Mechanical Tension + Tabata (Level 3)"
   }
 }

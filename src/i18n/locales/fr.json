@@ -3434,6 +3434,14 @@
     "a1_lvl1": "Routine A : Poussées et Quadriceps (Niveau 1)",
     "a2_lvl1": "Routine B : Tirages et Chaîne Postérieure (Niveau 1)",
     "b1_lvl1": "Force 1 : Stabilité Centrale (Niveau 1)",
-    "b2_lvl1": "Force 2 : Tension et Unilatéral (Niveau 1)"
+    "b2_lvl1": "Force 2 : Tension et Unilatéral (Niveau 1)",
+    "a1_lvl2": "Haut du Corps : Tension et Ceinture Abdominale (Niveau 2)",
+    "a2_lvl2": "Jambes : Métabolique et Équilibre (Niveau 2)",
+    "b1_lvl2": "Force 1 : Tension Continue (Niveau 2)",
+    "b2_lvl2": "Force 2 : Le Brûleur de Graisse + HIIT (Niveau 2)",
+    "a1_lvl3": "Haut du Corps Avancé : Supersets (Niveau 3)",
+    "a2_lvl3": "Jambes et Agilité : Turbo (Niveau 3)",
+    "b1_lvl3": "Force 1 : Pré-fatigue (Niveau 3)",
+    "b2_lvl3": "Force 2 : Tension Mécanique + Tabata (Niveau 3)"
   }
 }

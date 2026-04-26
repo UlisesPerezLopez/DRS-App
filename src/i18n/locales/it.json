@@ -3434,6 +3434,14 @@
     "a1_lvl1": "Routine A: Spinte e Quadricipiti (Livello 1)",
     "a2_lvl1": "Routine B: Trazioni e Catena Posteriore (Livello 1)",
     "b1_lvl1": "Forza 1: Stabilità Centrale (Livello 1)",
-    "b2_lvl1": "Forza 2: Tensione e Unilaterale (Livello 1)"
+    "b2_lvl1": "Forza 2: Tensione e Unilaterale (Livello 1)",
+    "a1_lvl2": "Parte Superiore: Tensione e Core (Livello 2)",
+    "a2_lvl2": "Gambe: Metabolico ed Equilibrio (Livello 2)",
+    "b1_lvl2": "Forza 1: Tensione Continua (Livello 2)",
+    "b2_lvl2": "Forza 2: Il Bruciagrassi + HIIT (Livello 2)",
+    "a1_lvl3": "Parte Superiore Avanzata: Superset (Livello 3)",
+    "a2_lvl3": "Gambe e Agilità: Turbo (Livello 3)",
+    "b1_lvl3": "Forza 1: Pre-affaticamento (Livello 3)",
+    "b2_lvl3": "Forza 2: Tensione Meccanica + Tabata (Livello 3)"
   }
 }

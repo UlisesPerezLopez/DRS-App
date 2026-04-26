@@ -561,6 +561,85 @@ export const WORKOUT_ROUTINES: WorkoutRoutine[] = [
       { exerciseId: 'plank_shoulder_taps', baseSets: 3, targetType: 'time', targetValue: 30, baseRestSecs: 60 },
       { exerciseId: 'static_bike', baseSets: 1, targetType: 'time', targetValue: 600, baseRestSecs: 0 } // 10 min finisher
     ]
+  },
+  
+  // TRACK A & B: Nivel 2 (Meses 3 y 4)
+  {
+    id: 'routine_a1_lvl2', translationKey: 'routines.a1_lvl2', track: 'A', level: 2,
+    exercises: [
+      { exerciseId: 'negative_pushup', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'isometric_towel_row', baseSets: 3, targetType: 'time', targetValue: 30, baseRestSecs: 60 },
+      { exerciseId: 'plank_walkouts', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'straight_leg_dips', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'side_plank', baseSets: 3, targetType: 'time', targetValue: 20, baseRestSecs: 60 }
+    ]
+  },
+  {
+    id: 'routine_a2_lvl2', translationKey: 'routines.a2_lvl2', track: 'A', level: 2,
+    exercises: [
+      { exerciseId: 'bulgarian_split_squat', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'single_leg_glute_bridge', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'dynamic_reverse_lunge', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'mountain_climbers', baseSets: 3, targetType: 'time', targetValue: 40, baseRestSecs: 60 }
+    ]
+  },
+  {
+    id: 'routine_b1_lvl2', translationKey: 'routines.b1_lvl2', track: 'B', level: 2,
+    exercises: [
+      { exerciseId: 'unilateral_floor_press', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'paused_row', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'seated_rear_delt_fly', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'floor_french_press', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'hammer_curls', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 }
+    ]
+  },
+  {
+    id: 'routine_b2_lvl2', translationKey: 'routines.b2_lvl2', track: 'B', level: 2,
+    exercises: [
+      { exerciseId: 'dumbbell_bulgarian_squat', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'b_stance_deadlift', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'paused_goblet_squat', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'dumbbell_swing', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'static_bike', baseSets: 1, targetType: 'time', targetValue: 720, baseRestSecs: 0 } // HIIT 12 min
+    ]
+  },
+  
+  // TRACK A & B: Nivel 3 (Meses 5 y 6) - ¡Atención al supersetId!
+  {
+    id: 'routine_a1_lvl3', translationKey: 'routines.a1_lvl3', track: 'A', level: 3,
+    exercises: [
+      { exerciseId: 'explosive_pushup', baseSets: 4, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'dynamic_isometric_row', baseSets: 4, targetType: 'reps', targetValue: 12, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'pike_pushup', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss2' },
+      { exerciseId: 'plank_knee_to_elbow', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60, supersetId: 'ss2' }
+    ]
+  },
+  {
+    id: 'routine_a2_lvl3', translationKey: 'routines.a2_lvl3', track: 'A', level: 3,
+    exercises: [
+      { exerciseId: 'jump_squats', baseSets: 4, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'fast_reverse_lunge', baseSets: 4, targetType: 'reps', targetValue: 12, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'explosive_single_leg_bridge', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss2' },
+      { exerciseId: 'skater_jumps', baseSets: 3, targetType: 'time', targetValue: 30, baseRestSecs: 60, supersetId: 'ss2' }
+    ]
+  },
+  {
+    id: 'routine_b1_lvl3', translationKey: 'routines.b1_lvl3', track: 'B', level: 3,
+    exercises: [
+      { exerciseId: 'floor_chest_fly', baseSets: 4, targetType: 'reps', targetValue: 12, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'dumbbell_floor_press', baseSets: 4, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'seated_rear_delt_fly', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60, supersetId: 'ss2' },
+      { exerciseId: 'supported_one_arm_row', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss2' }
+    ]
+  },
+  {
+    id: 'routine_b2_lvl3', translationKey: 'routines.b2_lvl3', track: 'B', level: 3,
+    exercises: [
+      { exerciseId: 'bulgarian_squat_one_point_five', baseSets: 4, targetType: 'reps', targetValue: 8, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'unilateral_romanian_deadlift', baseSets: 4, targetType: 'reps', targetValue: 10, baseRestSecs: 60, supersetId: 'ss1' },
+      { exerciseId: 'dumbbell_thrusters', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'static_bike', baseSets: 1, targetType: 'time', targetValue: 240, baseRestSecs: 0 } // Tabata 4 min
+    ]
   }
 ];
 

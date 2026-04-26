@@ -3434,6 +3434,14 @@
     "a1_lvl1": "Routine A: Druck & Quadrizeps (Level 1)",
     "a2_lvl1": "Routine B: Zug & Hintere Kette (Level 1)",
     "b1_lvl1": "Kraft 1: Rumpfstabilität (Level 1)",
-    "b2_lvl1": "Kraft 2: Spannung & Unilateral (Level 1)"
+    "b2_lvl1": "Kraft 2: Spannung & Unilateral (Level 1)",
+    "a1_lvl2": "Oberkörper: Spannung & Rumpf (Level 2)",
+    "a2_lvl2": "Beine: Metabolisch & Gleichgewicht (Level 2)",
+    "b1_lvl2": "Kraft 1: Kontinuierliche Spannung (Level 2)",
+    "b2_lvl2": "Kraft 2: Der Fettverbrenner + HIIT (Level 2)",
+    "a1_lvl3": "Oberkörper Fortgeschritten: Supersätze (Level 3)",
+    "a2_lvl3": "Beine & Agilität: Turbo (Level 3)",
+    "b1_lvl3": "Kraft 1: Vorermüdung (Level 3)",
+    "b2_lvl3": "Kraft 2: Mechanische Spannung + Tabata (Level 3)"
   }
 }
