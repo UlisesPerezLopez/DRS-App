@@ -462,6 +462,344 @@
           "Mix with tuna and beaten eggs, and cook the omelet.",
           "Serve with sliced avocado on the side."
         ]
+      },
+      "w3_l1": {
+        "name": "Sesame Chicken with Crunchy Green Beans",
+        "ingredients": [
+          "200g breast",
+          "5g sesame seeds",
+          "200g green beans"
+        ],
+        "steps": [
+          "Grill the chicken and add sesame at the end to toast it.",
+          "Steam the beans leaving them crunchy (6 min)."
+        ]
+      },
+      "w3_d1": {
+        "name": "Zucchini and Hake Cream",
+        "ingredients": [
+          "1 zucchini and 1 leek (without potato)",
+          "150g steamed hake"
+        ],
+        "steps": [
+          "Make a light vegetable cream.",
+          "Serve with the steamed hake."
+        ]
+      },
+      "w3_l2": {
+        "name": "Beef with Broccoli and Ginger",
+        "ingredients": [
+          "180g beef strips",
+          "Broccoli florets",
+          "Low salt soy sauce and ginger"
+        ],
+        "steps": [
+          "Sauté the beef.",
+          "Add the broccoli and a splash of water so it steams in the pan.",
+          "Season with soy."
+        ]
+      },
+      "w3_d2": {
+        "name": "Spinach and Avocado Salad",
+        "ingredients": [
+          "Fresh spinach",
+          "Walnuts and 1 hard-boiled egg",
+          "50g avocado"
+        ],
+        "steps": [
+          "Chop the avocado and egg.",
+          "Mix cold for a perfect dose of potassium and healthy fats."
+        ]
+      },
+      "w3_l3": {
+        "name": "Pork Loin with Savoy Cabbage",
+        "ingredients": [
+          "200g pork loin",
+          "300g Savoy cabbage",
+          "Garlic and paprika"
+        ],
+        "steps": [
+          "Boil the cabbage 5 min.",
+          "Sauté the garlic and paprika, and add the drained cabbage.",
+          "Serve with grilled pork loin."
+        ]
+      },
+      "w3_d3": {
+        "name": "Baked Bream with Peppers",
+        "ingredients": [
+          "1 clean bream",
+          "Red peppers",
+          "Onion and EVOO"
+        ],
+        "steps": [
+          "Create a bed of peppers and onion.",
+          "Bake the bream on top for 20 min at 180°C."
+        ]
+      },
+      "w3_l4": {
+        "name": "Baked Trout with Asparagus",
+        "ingredients": [
+          "1 whole trout",
+          "Wild asparagus",
+          "Lemon and EVOO"
+        ],
+        "steps": [
+          "Place the trout and asparagus on a tray.",
+          "Drizzle with lemon and bake 15 min at 180°C."
+        ]
+      },
+      "w3_d4": {
+        "name": "Cauliflower Rice with Turkey",
+        "ingredients": [
+          "300g crushed cauliflower",
+          "150g minced turkey",
+          "Mexican spices"
+        ],
+        "steps": [
+          "Brown the turkey with the spices.",
+          "Add the cauliflower (fake rice) and sauté 7 min stirring well."
+        ]
+      },
+      "w3_l5": {
+        "name": "Baked Chicken Thighs",
+        "ingredients": [
+          "2 chicken thighs",
+          "Spices to taste",
+          "Cucumber and yogurt salad (light Tzatziki)"
+        ],
+        "steps": [
+          "Roast the chicken until the skin is crispy.",
+          "Serve with the fresh cucumber and yogurt salad."
+        ]
+      },
+      "w3_d5": {
+        "name": "Garlic Prawn Zoodles",
+        "ingredients": [
+          "1 zucchini (spiralized)",
+          "150g prawns",
+          "Garlic and chilli"
+        ],
+        "steps": [
+          "Make the garlic prawns.",
+          "Sauté the zoodles for only 1 minute to prevent them from releasing water."
+        ]
+      },
+      "w3_l6": {
+        "name": "Entrecote with Mixed Mushrooms",
+        "ingredients": [
+          "180g entrecote",
+          "Mixed mushrooms",
+          "Garlic and parsley"
+        ],
+        "steps": [
+          "Sauté the mushrooms with garlic.",
+          "Grill the meat to the desired point."
+        ]
+      },
+      "w3_d6": {
+        "name": "Cod Omelet",
+        "ingredients": [
+          "2 eggs",
+          "100g desalted cod",
+          "Tomato salad"
+        ],
+        "steps": [
+          "Flake the cod and cook the omelet.",
+          "Serve with fresh tomato salad."
+        ]
+      },
+      "w3_l7": {
+        "name": "White Fish in Green Sauce",
+        "ingredients": [
+          "200g Cod or hake",
+          "Clams",
+          "White asparagus and parsley"
+        ],
+        "steps": [
+          "Make a green sauce with garlic, parsley and broth.",
+          "Simmer the fish and clams in the sauce."
+        ]
+      },
+      "w3_d7": {
+        "name": "Cauliflower Tabbouleh",
+        "ingredients": [
+          "200g raw crushed cauliflower",
+          "Tomato, cucumber and red onion",
+          "Parsley and lemon juice"
+        ],
+        "steps": [
+          "Mix everything raw.",
+          "Let rest 30 min in the fridge so the lemon marinates the cauliflower."
+        ]
+      },
+      "w4_l1": {
+        "name": "Rosemary Chicken",
+        "ingredients": [
+          "200g chicken breast",
+          "Green beans",
+          "Garlic and rosemary"
+        ],
+        "steps": [
+          "Grill the chicken with rosemary.",
+          "Sauté the beans with garlic.",
+          "Serve hot."
+        ]
+      },
+      "w4_d1": {
+        "name": "Baked Hake with Crust",
+        "ingredients": [
+          "200g hake",
+          "Herbes de Provence",
+          "Arugula salad"
+        ],
+        "steps": [
+          "Cover the hake with the herbs.",
+          "Bake at 180°C and serve with arugula."
+        ]
+      },
+      "w4_l2": {
+        "name": "Fit Beef Meatballs",
+        "ingredients": [
+          "180g minced beef",
+          "1 egg and garlic powder",
+          "Homemade tomato sauce"
+        ],
+        "steps": [
+          "Form the meatballs without using breadcrumbs.",
+          "Grill them and finish cooking in the tomato sauce."
+        ]
+      },
+      "w4_d2": {
+        "name": "Turkey and Broccoli Wok",
+        "ingredients": [
+          "150g turkey strips",
+          "Broccoli",
+          "Ginger and soy"
+        ],
+        "steps": [
+          "Sauté the turkey and broccoli over high heat.",
+          "Season with ginger and low salt soy."
+        ]
+      },
+      "w4_l3": {
+        "name": "Steamed Cod",
+        "ingredients": [
+          "200g fresh cod",
+          "Spinach",
+          "Pine nuts"
+        ],
+        "steps": [
+          "Steam the fish.",
+          "Sauté the spinach with pine nuts as a side dish."
+        ]
+      },
+      "w4_d3": {
+        "name": "Roast Chicken Salad",
+        "ingredients": [
+          "Shredded roast chicken",
+          "Pumpkin seeds",
+          "Tomato and cucumber"
+        ],
+        "steps": [
+          "Mix all ingredients cold.",
+          "Dress to taste."
+        ]
+      },
+      "w4_l4": {
+        "name": "Entrecote with Peppers",
+        "ingredients": [
+          "200g entrecote",
+          "Padrón peppers",
+          "Mixed salad"
+        ],
+        "steps": [
+          "Grill the entrecote.",
+          "Sauté the peppers and serve alongside the salad."
+        ]
+      },
+      "w4_d4": {
+        "name": "Prawn Zoodles",
+        "ingredients": [
+          "1 zucchini (spiralized)",
+          "150g prawns",
+          "Garlic and chilli"
+        ],
+        "steps": [
+          "Brown the prawns with garlic and chilli.",
+          "Add the zoodles 2 minutes before turning off the heat."
+        ]
+      },
+      "w4_l5": {
+        "name": "Pork Tenderloin with Brussels Sprouts",
+        "ingredients": [
+          "200g pork tenderloin",
+          "300g Brussels sprouts",
+          "Bacon (a little)"
+        ],
+        "steps": [
+          "Boil the sprouts 5 min.",
+          "Brown the bacon, sauté the sprouts in that fat and serve with grilled tenderloin."
+        ]
+      },
+      "w4_d5": {
+        "name": "Salmon with Asparagus",
+        "ingredients": [
+          "200g salmon",
+          "Wild asparagus",
+          "Lemon"
+        ],
+        "steps": [
+          "Grill the salmon and asparagus.",
+          "Drizzle with lemon when serving."
+        ]
+      },
+      "w4_l6": {
+        "name": "Roast Turkey with Vegetables",
+        "ingredients": [
+          "200g turkey breast",
+          "Pepper, onion, eggplant",
+          "EVOO"
+        ],
+        "steps": [
+          "Chop the vegetables and turkey.",
+          "Roast everything together in the oven at 200°C."
+        ]
+      },
+      "w4_d6": {
+        "name": "Beef Stir-fry",
+        "ingredients": [
+          "150g beef strips",
+          "Mixed mushrooms",
+          "Garlic and parsley"
+        ],
+        "steps": [
+          "Sauté the mushrooms with garlic.",
+          "Add the beef over high heat and garnish with parsley."
+        ]
+      },
+      "w4_l7": {
+        "name": "Sea Bass with Premium Puree",
+        "ingredients": [
+          "1 baked sea bass",
+          "300g cauliflower",
+          "1 tbsp light cream cheese"
+        ],
+        "steps": [
+          "Bake the sea bass.",
+          "Boil the cauliflower, drain very well and blend with the cream cheese to create a fake mashed potato."
+        ]
+      },
+      "w4_d7": {
+        "name": "Keto Chicken Pizza",
+        "ingredients": [
+          "150g minced chicken and 1 egg",
+          "Tomato and oregano",
+          "Mozzarella cheese"
+        ],
+        "steps": [
+          "Mix chicken and egg, and spread the thin dough on a tray.",
+          "Bake 12 min. Add tomato and cheese, and gratin."
+        ]
       }
     },
     "med": {
@@ -1921,7 +2259,8 @@
         "lunch": "Sea bass or sea bream with cauliflower puree and tomato salad.",
         "snack": "20g California walnuts.",
         "dinner": "Keto chicken pizza: Minced chicken base with tomato and mozzarella."
-      }
+      },
+      "milestone_w4": "Ulises, you have completed 4 weeks. Your metabolism now prefers fat as an energy source. Have you noticed you're no longer hungry mid-morning?"
     },
     "med_label": "Mediterranean",
     "low_carb_label": "Low-Carb",

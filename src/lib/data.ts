@@ -227,7 +227,37 @@ export const RECIPES: Recipe[] = [
   { id: 'rec_lc_w2_l6', translationKey: 'recipes.low_carb.w2_l6', prepTime: 10, calories: 650, protein: 55, carbs: 8, fat: 44, mealTags: ['lunch'] },
   { id: 'rec_lc_w2_d6', translationKey: 'recipes.low_carb.w2_d6', prepTime: 15, calories: 500, protein: 40, carbs: 10, fat: 33, mealTags: ['dinner'] },
   { id: 'rec_lc_w2_l7', translationKey: 'recipes.low_carb.w2_l7', prepTime: 20, calories: 650, protein: 50, carbs: 12, fat: 44, mealTags: ['lunch'] },
-  { id: 'rec_lc_w2_d7', translationKey: 'recipes.low_carb.w2_d7', prepTime: 35, calories: 500, protein: 45, carbs: 10, fat: 31, mealTags: ['dinner'] }
+  { id: 'rec_lc_w2_d7', translationKey: 'recipes.low_carb.w2_d7', prepTime: 35, calories: 500, protein: 45, carbs: 10, fat: 31, mealTags: ['dinner'] },
+  // SEMANA 3 - DIETA LOW-CARB
+  { id: 'rec_lc_w3_l1', translationKey: 'recipes.low_carb.w3_l1', prepTime: 20, calories: 650, protein: 55, carbs: 10, fat: 43, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d1', translationKey: 'recipes.low_carb.w3_d1', prepTime: 25, calories: 500, protein: 40, carbs: 15, fat: 31, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l2', translationKey: 'recipes.low_carb.w3_l2', prepTime: 20, calories: 650, protein: 50, carbs: 12, fat: 44, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d2', translationKey: 'recipes.low_carb.w3_d2', prepTime: 10, calories: 500, protein: 35, carbs: 12, fat: 34, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l3', translationKey: 'recipes.low_carb.w3_l3', prepTime: 25, calories: 650, protein: 45, carbs: 15, fat: 45, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d3', translationKey: 'recipes.low_carb.w3_d3', prepTime: 25, calories: 500, protein: 42, carbs: 10, fat: 32, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l4', translationKey: 'recipes.low_carb.w3_l4', prepTime: 30, calories: 650, protein: 48, carbs: 8, fat: 47, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d4', translationKey: 'recipes.low_carb.w3_d4', prepTime: 20, calories: 500, protein: 45, carbs: 15, fat: 28, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l5', translationKey: 'recipes.low_carb.w3_l5', prepTime: 35, calories: 650, protein: 50, carbs: 12, fat: 44, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d5', translationKey: 'recipes.low_carb.w3_d5', prepTime: 15, calories: 500, protein: 38, carbs: 10, fat: 34, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l6', translationKey: 'recipes.low_carb.w3_l6', prepTime: 20, calories: 650, protein: 55, carbs: 10, fat: 43, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d6', translationKey: 'recipes.low_carb.w3_d6', prepTime: 20, calories: 500, protein: 40, carbs: 5, fat: 35, mealTags: ['dinner'] },
+  { id: 'rec_lc_w3_l7', translationKey: 'recipes.low_carb.w3_l7', prepTime: 25, calories: 650, protein: 45, carbs: 8, fat: 48, mealTags: ['lunch'] },
+  { id: 'rec_lc_w3_d7', translationKey: 'recipes.low_carb.w3_d7', prepTime: 15, calories: 500, protein: 35, carbs: 15, fat: 33, mealTags: ['dinner'] },
+  // SEMANA 4 - DIETA LOW-CARB
+  { id: 'rec_lc_w4_l1', translationKey: 'recipes.low_carb.w4_l1', prepTime: 20, calories: 650, protein: 50, carbs: 12, fat: 44, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d1', translationKey: 'recipes.low_carb.w4_d1', prepTime: 25, calories: 500, protein: 42, carbs: 8, fat: 33, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l2', translationKey: 'recipes.low_carb.w4_l2', prepTime: 30, calories: 650, protein: 48, carbs: 10, fat: 45, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d2', translationKey: 'recipes.low_carb.w4_d2', prepTime: 15, calories: 500, protein: 40, carbs: 12, fat: 32, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l3', translationKey: 'recipes.low_carb.w4_l3', prepTime: 20, calories: 650, protein: 45, carbs: 8, fat: 48, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d3', translationKey: 'recipes.low_carb.w4_d3', prepTime: 10, calories: 500, protein: 45, carbs: 10, fat: 31, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l4', translationKey: 'recipes.low_carb.w4_l4', prepTime: 25, calories: 650, protein: 55, carbs: 15, fat: 40, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d4', translationKey: 'recipes.low_carb.w4_d4', prepTime: 15, calories: 500, protein: 40, carbs: 5, fat: 35, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l5', translationKey: 'recipes.low_carb.w4_l5', prepTime: 25, calories: 650, protein: 50, carbs: 12, fat: 44, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d5', translationKey: 'recipes.low_carb.w4_d5', prepTime: 20, calories: 500, protein: 45, carbs: 8, fat: 32, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l6', translationKey: 'recipes.low_carb.w4_l6', prepTime: 30, calories: 650, protein: 45, carbs: 10, fat: 47, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d6', translationKey: 'recipes.low_carb.w4_d6', prepTime: 15, calories: 500, protein: 42, carbs: 5, fat: 34, mealTags: ['dinner'] },
+  { id: 'rec_lc_w4_l7', translationKey: 'recipes.low_carb.w4_l7', prepTime: 35, calories: 650, protein: 50, carbs: 15, fat: 42, mealTags: ['lunch'] },
+  { id: 'rec_lc_w4_d7', translationKey: 'recipes.low_carb.w4_d7', prepTime: 25, calories: 500, protein: 48, carbs: 5, fat: 32, mealTags: ['dinner'] }
 ];
 
 import type { DailyMenuPlan } from "../types";

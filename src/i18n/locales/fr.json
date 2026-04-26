@@ -462,6 +462,344 @@
           "Mélanger avec le thon et les œufs battus, et cuire l'omelette.",
           "Servir avec l'avocat en tranches sur le côté."
         ]
+      },
+      "w3_l1": {
+        "name": "Poulet au Sésame et Haricots Verts Croquants",
+        "ingredients": [
+          "200g de blanc de poulet",
+          "5g de graines de sésame",
+          "200g de haricots verts"
+        ],
+        "steps": [
+          "Griller le poulet et ajouter le sésame à la fin pour le torréfier.",
+          "Cuire les haricots à la vapeur en les gardant croquants (6 min)."
+        ]
+      },
+      "w3_d1": {
+        "name": "Crème de Courgette et Colin",
+        "ingredients": [
+          "1 courgette et 1 poireau (sans pomme de terre)",
+          "150g de colin à la vapeur"
+        ],
+        "steps": [
+          "Faire une crème de légumes légère.",
+          "Accompagner du colin cuit à la vapeur."
+        ]
+      },
+      "w3_l2": {
+        "name": "Bœuf au Brocoli et Gingembre",
+        "ingredients": [
+          "180g de lanières de bœuf",
+          "Fleurettes de brocoli",
+          "Sauce soja pauvre en sel et gingembre"
+        ],
+        "steps": [
+          "Faire revenir le bœuf.",
+          "Ajouter le brocoli et un filet d'eau pour qu'il cuise à la vapeur dans la poêle.",
+          "Assaisonner de soja."
+        ]
+      },
+      "w3_d2": {
+        "name": "Salade d'Épinards et Avocat",
+        "ingredients": [
+          "Épinards frais",
+          "Noix et 1 œuf dur",
+          "50g d'avocat"
+        ],
+        "steps": [
+          "Hacher l'avocat et l'œuf.",
+          "Mélanger à froid pour une dose parfaite de potassium et de graisses saines."
+        ]
+      },
+      "w3_l3": {
+        "name": "Filet de Porc au Chou de Milan",
+        "ingredients": [
+          "200g de filet de porc",
+          "300g de chou de Milan",
+          "Ail et paprika"
+        ],
+        "steps": [
+          "Faire bouillir le chou 5 min.",
+          "Faire revenir l'ail et le paprika, et ajouter le chou égoutté.",
+          "Accompagner du filet grillé."
+        ]
+      },
+      "w3_d3": {
+        "name": "Dorade au Four aux Poivrons",
+        "ingredients": [
+          "1 dorade propre",
+          "Poivrons rouges",
+          "Oignon et huile d'olive"
+        ],
+        "steps": [
+          "Créer un lit de poivrons et d'oignons.",
+          "Cuire la dorade par-dessus pendant 20 min à 180°C."
+        ]
+      },
+      "w3_l4": {
+        "name": "Truite au Four aux Asperges",
+        "ingredients": [
+          "1 truite entière",
+          "Asperges sauvages",
+          "Citron et huile d'olive"
+        ],
+        "steps": [
+          "Placer la truite et les asperges sur une plaque.",
+          "Arroser de citron et cuire 15 min à 180°C."
+        ]
+      },
+      "w3_d4": {
+        "name": "Riz de Chou-fleur à la Dinde",
+        "ingredients": [
+          "300g de chou-fleur broyé",
+          "150g de dinde hachée",
+          "Épices mexicaines"
+        ],
+        "steps": [
+          "Faire dorer la dinde avec les épices.",
+          "Ajouter le chou-fleur (faux riz) et faire revenir 7 min en remuant bien."
+        ]
+      },
+      "w3_l5": {
+        "name": "Cuisses de Poulet Rôties",
+        "ingredients": [
+          "2 cuisses de poulet",
+          "Épices au goût",
+          "Salade de concombre et yaourt (Tzatziki léger)"
+        ],
+        "steps": [
+          "Rôtir le poulet jusqu'à ce que la peau soit croustillante.",
+          "Accompagner de la salade fraîche de concombre et yaourt."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zoodles aux Crevettes à l'Ail",
+        "ingredients": [
+          "1 courgette (en spirales)",
+          "150g de crevettes",
+          "Ail et piment"
+        ],
+        "steps": [
+          "Faire les crevettes à l'ail.",
+          "Sauter les zoodles seulement 1 minute pour éviter qu'ils ne rendent de l'eau."
+        ]
+      },
+      "w3_l6": {
+        "name": "Entrecôte aux Champignons Variés",
+        "ingredients": [
+          "180g d'entrecôte",
+          "Champignons variés",
+          "Ail et persil"
+        ],
+        "steps": [
+          "Faire revenir les champignons avec l'ail.",
+          "Griller la viande à la cuisson désirée."
+        ]
+      },
+      "w3_d6": {
+        "name": "Omelette de Cabillaud",
+        "ingredients": [
+          "2 œufs",
+          "100g de cabillaud dessalé",
+          "Salade de tomates"
+        ],
+        "steps": [
+          "Émietter le cabillaud et cuire l'omelette.",
+          "Servir avec une salade de tomates fraîche."
+        ]
+      },
+      "w3_l7": {
+        "name": "Poisson Blanc en Sauce Verte",
+        "ingredients": [
+          "200g de cabillaud ou colin",
+          "Palourdes",
+          "Asperges blanches et persil"
+        ],
+        "steps": [
+          "Faire une sauce verte avec de l'ail, du persil et du bouillon.",
+          "Laisser mijoter le poisson et les palourdes dans la sauce."
+        ]
+      },
+      "w3_d7": {
+        "name": "Taboulé de Chou-fleur",
+        "ingredients": [
+          "200g de chou-fleur cru broyé",
+          "Tomate, concombre et oignon rouge",
+          "Persil et jus de citron"
+        ],
+        "steps": [
+          "Mélanger tout à cru.",
+          "Laisser reposer 30 min au réfrigérateur pour que le citron marine le chou-fleur."
+        ]
+      },
+      "w4_l1": {
+        "name": "Poulet au Romarin",
+        "ingredients": [
+          "200g de blanc de poulet",
+          "Haricots verts",
+          "Ail et romarin"
+        ],
+        "steps": [
+          "Griller le poulet avec le romarin.",
+          "Faire revenir les haricots avec l'ail.",
+          "Servir chaud."
+        ]
+      },
+      "w4_d1": {
+        "name": "Colin au Four en Croûte",
+        "ingredients": [
+          "200g de colin",
+          "Herbes de Provence",
+          "Salade de roquette"
+        ],
+        "steps": [
+          "Couvrir le colin d'herbes.",
+          "Cuire au four à 180°C et accompagner de roquette."
+        ]
+      },
+      "w4_l2": {
+        "name": "Boulettes de Bœuf Fit",
+        "ingredients": [
+          "180g de bœuf haché",
+          "1 œuf et poudre d'ail",
+          "Sauce tomate maison"
+        ],
+        "steps": [
+          "Former les boulettes sans chapelure.",
+          "Les griller et finir de les cuire dans la sauce tomate."
+        ]
+      },
+      "w4_d2": {
+        "name": "Wok de Dinde et Brocoli",
+        "ingredients": [
+          "150g de lanières de dinde",
+          "Brocoli",
+          "Gingembre et soja"
+        ],
+        "steps": [
+          "Sauter la dinde et le brocoli à feu vif.",
+          "Assaisonner de gingembre et soja pauvre en sel."
+        ]
+      },
+      "w4_l3": {
+        "name": "Cabillaud à la Vapeur",
+        "ingredients": [
+          "200g de cabillaud frais",
+          "Épinards",
+          "Pignons de pin"
+        ],
+        "steps": [
+          "Cuire le poisson à la vapeur.",
+          "Faire revenir les épinards avec les pignons en accompagnement."
+        ]
+      },
+      "w4_d3": {
+        "name": "Salade de Poulet Rôti",
+        "ingredients": [
+          "Poulet rôti émietté",
+          "Graines de courge",
+          "Tomate et concombre"
+        ],
+        "steps": [
+          "Mélanger tous les ingrédients à froid.",
+          "Assaisonner selon les goûts."
+        ]
+      },
+      "w4_l4": {
+        "name": "Entrecôte aux Poivrons",
+        "ingredients": [
+          "200g d'entrecôte",
+          "Poivrons de Padrón",
+          "Salade mixte"
+        ],
+        "steps": [
+          "Griller l'entrecôte.",
+          "Sauter les poivrons et servir à côté de la salade."
+        ]
+      },
+      "w4_d4": {
+        "name": "Zoodles aux Crevettes",
+        "ingredients": [
+          "1 courgette (en spirales)",
+          "150g de crevettes",
+          "Ail et piment"
+        ],
+        "steps": [
+          "Faire dorer les crevettes avec de l'ail et du piment.",
+          "Ajouter les zoodles 2 minutes avant d'éteindre le feu."
+        ]
+      },
+      "w4_l5": {
+        "name": "Filet Mignon aux Choux de Bruxelles",
+        "ingredients": [
+          "200g de filet de porc",
+          "300g de choux de Bruxelles",
+          "Bacon (un peu)"
+        ],
+        "steps": [
+          "Faire bouillir les choux 5 min.",
+          "Faire dorer le bacon, sauter les choux dans cette graisse et accompagner du filet grillé."
+        ]
+      },
+      "w4_d5": {
+        "name": "Saumon aux Asperges",
+        "ingredients": [
+          "200g de saumon",
+          "Asperges sauvages",
+          "Citron"
+        ],
+        "steps": [
+          "Griller le saumon et les asperges.",
+          "Arroser de citron au moment de servir."
+        ]
+      },
+      "w4_l6": {
+        "name": "Dinde Rôtie aux Légumes",
+        "ingredients": [
+          "200g de blanc de dinde",
+          "Poivron, oignon, aubergine",
+          "Huile d'olive"
+        ],
+        "steps": [
+          "Couper les légumes et la dinde.",
+          "Rôtir le tout ensemble au four à 200°C."
+        ]
+      },
+      "w4_d6": {
+        "name": "Sauté de Bœuf",
+        "ingredients": [
+          "150g de lanières de bœuf",
+          "Champignons variés",
+          "Ail et persil"
+        ],
+        "steps": [
+          "Faire revenir les champignons avec l'ail.",
+          "Ajouter le bœuf à feu vif et garnir de persil."
+        ]
+      },
+      "w4_l7": {
+        "name": "Bar avec Purée Premium",
+        "ingredients": [
+          "1 bar rôti",
+          "300g de chou-fleur",
+          "1 c.à.s de fromage à la crème allégé"
+        ],
+        "steps": [
+          "Rôtir le bar.",
+          "Faire bouillir le chou-fleur, très bien égoutter et mixer avec le fromage à la crème pour créer une fausse purée de pommes de terre."
+        ]
+      },
+      "w4_d7": {
+        "name": "Pizza Keto au Poulet",
+        "ingredients": [
+          "150g de poulet haché et 1 œuf",
+          "Tomate et origan",
+          "Fromage mozzarella"
+        ],
+        "steps": [
+          "Mélanger poulet et œuf, et étaler la pâte fine sur une plaque.",
+          "Cuire 12 min. Ajouter tomate et fromage, et gratiner."
+        ]
       }
     },
     "med": {
@@ -1921,7 +2259,8 @@
         "lunch": "Bar ou daurade au four avec purée de chou-fleur et salade de tomate.",
         "snack": "20g de noix de Californie.",
         "dinner": "Pizza-Keto au poulet : Base de dinde hachée avec tomate et mozzarella."
-      }
+      },
+      "milestone_w4": "Ulises, tu as terminé 4 semaines. Ton métabolisme préfère maintenant les graisses comme source d'énergie. As-tu remarqué que tu n'as plus faim en milieu de matinée ?"
     },
     "med_label": "Méditerranéenne",
     "low_carb_label": "Low-Carb",

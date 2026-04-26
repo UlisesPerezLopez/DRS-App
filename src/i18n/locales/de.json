@@ -462,6 +462,344 @@
           "Mit Thunfisch und geschlagenen Eiern mischen und Omelett braten.",
           "Mit in Scheiben geschnittener Avocado als Beilage servieren."
         ]
+      },
+      "w3_l1": {
+        "name": "Sesam-Hähnchen mit knusprigen grünen Bohnen",
+        "ingredients": [
+          "200g Hähnchenbrust",
+          "5g Sesamsamen",
+          "200g grüne Bohnen"
+        ],
+        "steps": [
+          "Hähnchen grillen und am Ende Sesam zum Anrösten hinzufügen.",
+          "Bohnen dämpfen und knusprig lassen (6 Min.)."
+        ]
+      },
+      "w3_d1": {
+        "name": "Zucchini-Seehecht-Cremesuppe",
+        "ingredients": [
+          "1 Zucchini und 1 Lauch (ohne Kartoffel)",
+          "150g gedämpfter Seehecht"
+        ],
+        "steps": [
+          "Leichte Gemüsecreme zubereiten.",
+          "Mit dem gedämpften Seehecht servieren."
+        ]
+      },
+      "w3_l2": {
+        "name": "Rindfleisch mit Brokkoli und Ingwer",
+        "ingredients": [
+          "180g Rindfleischstreifen",
+          "Brokkoliröschen",
+          "Salzarme Sojasauce und Ingwer"
+        ],
+        "steps": [
+          "Rindfleisch anbraten.",
+          "Brokkoli und einen Schuss Wasser hinzufügen, damit er in der Pfanne dämpft.",
+          "Mit Soja würzen."
+        ]
+      },
+      "w3_d2": {
+        "name": "Spinat-Avocado-Salat",
+        "ingredients": [
+          "Frischer Spinat",
+          "Walnüsse und 1 hartgekochtes Ei",
+          "50g Avocado"
+        ],
+        "steps": [
+          "Avocado und Ei hacken.",
+          "Kalt mischen für eine perfekte Dosis Kalium und gesunde Fette."
+        ]
+      },
+      "w3_l3": {
+        "name": "Schweinelende mit Wirsing",
+        "ingredients": [
+          "200g Schweinelende",
+          "300g Wirsing",
+          "Knoblauch und Paprika"
+        ],
+        "steps": [
+          "Kohl 5 Min. kochen.",
+          "Knoblauch und Paprika anbraten und den abgetropften Kohl hinzufügen.",
+          "Mit der gegrillten Lende servieren."
+        ]
+      },
+      "w3_d3": {
+        "name": "Gebackene Dorade mit Paprika",
+        "ingredients": [
+          "1 saubere Dorade",
+          "Rote Paprika",
+          "Zwiebel und Olivenöl"
+        ],
+        "steps": [
+          "Ein Bett aus Paprika und Zwiebeln bereiten.",
+          "Dorade darauf 20 Min. bei 180°C backen."
+        ]
+      },
+      "w3_l4": {
+        "name": "Gebackene Forelle mit Spargel",
+        "ingredients": [
+          "1 ganze Forelle",
+          "Wilder Spargel",
+          "Zitrone und Olivenöl"
+        ],
+        "steps": [
+          "Forelle und Spargel auf ein Blech legen.",
+          "Mit Zitrone beträufeln und 15 Min. bei 180°C backen."
+        ]
+      },
+      "w3_d4": {
+        "name": "Blumenkohlreis mit Pute",
+        "ingredients": [
+          "300g zerkleinerter Blumenkohl",
+          "150g Putenhackfleisch",
+          "Mexikanische Gewürze"
+        ],
+        "steps": [
+          "Pute mit Gewürzen anbraten.",
+          "Blumenkohl (falscher Reis) hinzufügen und 7 Min. gut rührend anbraten."
+        ]
+      },
+      "w3_l5": {
+        "name": "Gebackene Hähnchenkeulen",
+        "ingredients": [
+          "2 Hähnchenkeulen",
+          "Gewürze nach Geschmack",
+          "Gurken-Joghurt-Salat (Tzatziki light)"
+        ],
+        "steps": [
+          "Hähnchen braten, bis die Haut knusprig ist.",
+          "Mit frischem Gurken-Joghurt-Salat servieren."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zoodles mit Knoblauchgarnelen",
+        "ingredients": [
+          "1 Zucchini (spiralisiert)",
+          "150g Garnelen",
+          "Knoblauch und Chili"
+        ],
+        "steps": [
+          "Knoblauchgarnelen zubereiten.",
+          "Zoodles nur 1 Minute anbraten, damit sie kein Wasser ziehen."
+        ]
+      },
+      "w3_l6": {
+        "name": "Entrecôte mit gemischten Pilzen",
+        "ingredients": [
+          "180g Entrecôte",
+          "Gemischte Pilze",
+          "Knoblauch und Petersilie"
+        ],
+        "steps": [
+          "Pilze mit Knoblauch anbraten.",
+          "Fleisch nach Wunsch grillen."
+        ]
+      },
+      "w3_d6": {
+        "name": "Kabeljau-Omelett",
+        "ingredients": [
+          "2 Eier",
+          "100g entsalzter Kabeljau",
+          "Tomatensalat"
+        ],
+        "steps": [
+          "Kabeljau zerkleinern und Omelett stocken lassen.",
+          "Mit frischem Tomatensalat servieren."
+        ]
+      },
+      "w3_l7": {
+        "name": "Weißfisch in grüner Sauce",
+        "ingredients": [
+          "200g Kabeljau oder Seehecht",
+          "Muscheln",
+          "Weißer Spargel und Petersilie"
+        ],
+        "steps": [
+          "Grüne Sauce mit Knoblauch, Petersilie und Brühe zubereiten.",
+          "Fisch und Muscheln in der Sauce köcheln lassen."
+        ]
+      },
+      "w3_d7": {
+        "name": "Blumenkohl-Tabouleh",
+        "ingredients": [
+          "200g roher zerkleinerter Blumenkohl",
+          "Tomate, Gurke und rote Zwiebel",
+          "Petersilie und Zitronensaft"
+        ],
+        "steps": [
+          "Alles roh mischen.",
+          "30 Min. im Kühlschrank ruhen lassen, damit die Zitrone den Blumenkohl mariniert."
+        ]
+      },
+      "w4_l1": {
+        "name": "Rosmarin-Hähnchen",
+        "ingredients": [
+          "200g Hähnchenbrust",
+          "Grüne Bohnen",
+          "Knoblauch und Rosmarin"
+        ],
+        "steps": [
+          "Hähnchen mit Rosmarin grillen.",
+          "Bohnen mit Knoblauch anbraten.",
+          "Heiß servieren."
+        ]
+      },
+      "w4_d1": {
+        "name": "Gebackener Seehecht mit Kruste",
+        "ingredients": [
+          "200g Seehecht",
+          "Kräuter der Provence",
+          "Rucolasalat"
+        ],
+        "steps": [
+          "Seehecht mit den Kräutern bedecken.",
+          "Bei 180°C backen und mit Rucola servieren."
+        ]
+      },
+      "w4_l2": {
+        "name": "Fit-Rindfleischbällchen",
+        "ingredients": [
+          "180g Rinderhackfleisch",
+          "1 Ei und Knoblauchpulver",
+          "Hausgemachte Tomatensauce"
+        ],
+        "steps": [
+          "Fleischbällchen ohne Paniermehl formen.",
+          "Grillen und in der Tomatensauce fertig garen."
+        ]
+      },
+      "w4_d2": {
+        "name": "Puten-Brokkoli-Wok",
+        "ingredients": [
+          "150g Putenstreifen",
+          "Brokkoli",
+          "Ingwer und Soja"
+        ],
+        "steps": [
+          "Pute und Brokkoli bei starker Hitze anbraten.",
+          "Mit Ingwer und salzarmer Soja würzen."
+        ]
+      },
+      "w4_l3": {
+        "name": "Gedämpfter Kabeljau",
+        "ingredients": [
+          "200g frischer Kabeljau",
+          "Spinat",
+          "Pinienkerne"
+        ],
+        "steps": [
+          "Fisch dämpfen.",
+          "Spinat mit Pinienkernen als Beilage anbraten."
+        ]
+      },
+      "w4_d3": {
+        "name": "Brathähnchensalat",
+        "ingredients": [
+          "Zerkleinertes Brathähnchen",
+          "Kürbiskerne",
+          "Tomate und Gurke"
+        ],
+        "steps": [
+          "Alle Zutaten kalt mischen.",
+          "Nach Geschmack anmachen."
+        ]
+      },
+      "w4_l4": {
+        "name": "Entrecôte mit Paprika",
+        "ingredients": [
+          "200g Entrecôte",
+          "Padrón-Paprika",
+          "Gemischter Salat"
+        ],
+        "steps": [
+          "Entrecôte grillen.",
+          "Paprika anbraten und neben dem Salat servieren."
+        ]
+      },
+      "w4_d4": {
+        "name": "Garnelen-Zoodles",
+        "ingredients": [
+          "1 Zucchini (spiralisiert)",
+          "150g Garnelen",
+          "Knoblauch und Chili"
+        ],
+        "steps": [
+          "Garnelen mit Knoblauch und Chili anbraten.",
+          "Zoodles 2 Minuten vor dem Ausschalten der Hitze hinzufügen."
+        ]
+      },
+      "w4_l5": {
+        "name": "Schweinefilet mit Rosenkohl",
+        "ingredients": [
+          "200g Schweinefilet",
+          "300g Rosenkohl",
+          "Speck (wenig)"
+        ],
+        "steps": [
+          "Kohl 5 Min. kochen.",
+          "Speck anbraten, Kohl in diesem Fett anbraten und mit dem gegrillten Filet servieren."
+        ]
+      },
+      "w4_d5": {
+        "name": "Lachs mit Spargel",
+        "ingredients": [
+          "200g Lachs",
+          "Wilder Spargel",
+          "Zitrone"
+        ],
+        "steps": [
+          "Lachs und Spargel grillen.",
+          "Beim Servieren mit Zitrone beträufeln."
+        ]
+      },
+      "w4_l6": {
+        "name": "Gebratene Pute mit Gemüse",
+        "ingredients": [
+          "200g Putenbrust",
+          "Paprika, Zwiebel, Aubergine",
+          "Olivenöl"
+        ],
+        "steps": [
+          "Gemüse und Pute schneiden.",
+          "Alles zusammen im Ofen bei 200°C braten."
+        ]
+      },
+      "w4_d6": {
+        "name": "Rindfleischpfanne",
+        "ingredients": [
+          "150g Rindfleischstreifen",
+          "Gemischte Pilze",
+          "Knoblauch und Petersilie"
+        ],
+        "steps": [
+          "Pilze mit Knoblauch anbraten.",
+          "Rindfleisch bei starker Hitze hinzufügen und mit Petersilie garnieren."
+        ]
+      },
+      "w4_l7": {
+        "name": "Wolfsbarsch mit Premium-Püree",
+        "ingredients": [
+          "1 gebackener Wolfsbarsch",
+          "300g Blumenkohl",
+          "1 EL leichter Frischkäse"
+        ],
+        "steps": [
+          "Wolfsbarsch backen.",
+          "Blumenkohl kochen, sehr gut abtropfen lassen und mit Frischkäse pürieren, um ein falsches Kartoffelpüree zu kreieren."
+        ]
+      },
+      "w4_d7": {
+        "name": "Keto-Hähnchen-Pizza",
+        "ingredients": [
+          "150g gehacktes Hähnchen und 1 Ei",
+          "Tomate und Oregano",
+          "Mozzarella-Käse"
+        ],
+        "steps": [
+          "Hähnchen und Ei mischen und den dünnen Teig auf ein Blech streichen.",
+          "12 Min. backen. Tomate und Käse hinzufügen und überbacken."
+        ]
       }
     },
     "med": {
@@ -1921,7 +2259,8 @@
         "lunch": "Wolfsbarsch oder Goldbrasse aus dem Ofen mit Blumenkohlpüree und Tomatensalat.",
         "snack": "20g kalifornische Walnüsse.",
         "dinner": "Keto-Geflügelpizza: Boden aus Putenhackfleisch mit Tomate und Mozzarella."
-      }
+      },
+      "milestone_w4": "Ulises, du hast 4 Wochen abgeschlossen. Dein Stoffwechsel bevorzugt nun Fett als Energiequelle. Ist dir aufgefallen, dass du am Vormittag keinen Hunger mehr hast?"
     },
     "med_label": "Mediterran",
     "low_carb_label": "Low-Carb",

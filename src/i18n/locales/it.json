@@ -462,6 +462,344 @@
           "Mescola con il tonno e le uova sbattute, e cuoci la frittata.",
           "Servi con l'avocado a fette a lato."
         ]
+      },
+      "w3_l1": {
+        "name": "Pollo al Sesamo e Fagiolini Croccanti",
+        "ingredients": [
+          "200g di petto",
+          "5g di semi di sesamo",
+          "200g di fagiolini"
+        ],
+        "steps": [
+          "Griglia il pollo e aggiungi il sesamo alla fine per tostarlo.",
+          "Cuoci i fagiolini a vapore lasciandoli croccanti (6 min)."
+        ]
+      },
+      "w3_d1": {
+        "name": "Crema di Zucchine e Nasello",
+        "ingredients": [
+          "1 zucchina e 1 porro (senza patate)",
+          "150g di nasello al vapore"
+        ],
+        "steps": [
+          "Fai una crema leggera di verdure.",
+          "Accompagna con il nasello cotto al vapore."
+        ]
+      },
+      "w3_l2": {
+        "name": "Manzo con Broccoli e Zenzero",
+        "ingredients": [
+          "180g di strisce di manzo",
+          "Cimette di broccoli",
+          "Salsa di soia a basso contenuto di sale e zenzero"
+        ],
+        "steps": [
+          "Salta il manzo.",
+          "Aggiungi i broccoli e un goccio d'acqua per cuocerli a vapore in padella.",
+          "Condisci con la soia."
+        ]
+      },
+      "w3_d2": {
+        "name": "Insalata di Spinaci e Avocado",
+        "ingredients": [
+          "Spinaci freschi",
+          "Noci e 1 uovo sodo",
+          "50g di avocado"
+        ],
+        "steps": [
+          "Trita l'avocado e l'uovo.",
+          "Mescola a freddo per una dose perfetta di potassio e grassi sani."
+        ]
+      },
+      "w3_l3": {
+        "name": "Lombo di Maiale con Verza",
+        "ingredients": [
+          "200g di lombo di maiale",
+          "300g di verza",
+          "Aglio e paprika"
+        ],
+        "steps": [
+          "Bolli il cavolo per 5 min.",
+          "Salta l'aglio e la paprika e aggiungi il cavolo scolato.",
+          "Accompagna con il lombo grigliato."
+        ]
+      },
+      "w3_d3": {
+        "name": "Orata al Forno con Peperoni",
+        "ingredients": [
+          "1 orata pulita",
+          "Peperoni rossi",
+          "Cipolla e olio EVO"
+        ],
+        "steps": [
+          "Crea un letto di peperoni e cipolle.",
+          "Cuoci l'orata sopra per 20 min a 180°C."
+        ]
+      },
+      "w3_l4": {
+        "name": "Trota al Forno con Asparagi",
+        "ingredients": [
+          "1 trota intera",
+          "Asparagi selvatici",
+          "Limone e olio EVO"
+        ],
+        "steps": [
+          "Disponi la trota e gli asparagi su una teglia.",
+          "Irrora con limone e inforna per 15 min a 180°C."
+        ]
+      },
+      "w3_d4": {
+        "name": "Riso di Cavolfiore con Tacchino",
+        "ingredients": [
+          "300g di cavolfiore tritato",
+          "150g di tacchino macinato",
+          "Spezie messicane"
+        ],
+        "steps": [
+          "Rosola il tacchino con le spezie.",
+          "Aggiungi il cavolfiore (finto riso) e salta per 7 min mescolando bene."
+        ]
+      },
+      "w3_l5": {
+        "name": "Cosce di Pollo al Forno",
+        "ingredients": [
+          "2 cosce di pollo",
+          "Spezie a piacere",
+          "Insalata di cetrioli e yogurt (Tzatziki leggero)"
+        ],
+        "steps": [
+          "Arrostisci il pollo fino a rendere la pelle croccante.",
+          "Accompagna con la fresca insalata di cetrioli e yogurt."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zoodles con Gamberi all'Aglio",
+        "ingredients": [
+          "1 zucchina (a spirale)",
+          "150g di gamberi",
+          "Aglio e peperoncino"
+        ],
+        "steps": [
+          "Prepara i gamberi all'aglio.",
+          "Salta gli zoodles per solo 1 minuto per evitare che rilascino acqua."
+        ]
+      },
+      "w3_l6": {
+        "name": "Entrecôte con Funghi Misti",
+        "ingredients": [
+          "180g di entrecôte",
+          "Funghi misti",
+          "Aglio e prezzemolo"
+        ],
+        "steps": [
+          "Salta i funghi con l'aglio.",
+          "Griglia la carne al grado di cottura desiderato."
+        ]
+      },
+      "w3_d6": {
+        "name": "Frittata di Merluzzo",
+        "ingredients": [
+          "2 uova",
+          "100g di merluzzo dissalato",
+          "Insalata di pomodori"
+        ],
+        "steps": [
+          "Sbriciola il merluzzo e cuoci la frittata.",
+          "Servi con insalata di pomodori fresca."
+        ]
+      },
+      "w3_l7": {
+        "name": "Pesce Bianco in Salsa Verde",
+        "ingredients": [
+          "200g di merluzzo o nasello",
+          "Vongole",
+          "Asparagi bianchi e prezzemolo"
+        ],
+        "steps": [
+          "Fai una salsa verde con aglio, prezzemolo e brodo.",
+          "Fai sobbollire il pesce e le vongole nella salsa."
+        ]
+      },
+      "w3_d7": {
+        "name": "Tabbouleh di Cavolfiore",
+        "ingredients": [
+          "200g di cavolfiore crudo tritato",
+          "Pomodoro, cetriolo e cipolla rossa",
+          "Prezzemolo e succo di limone"
+        ],
+        "steps": [
+          "Mescola tutto a crudo.",
+          "Lascia riposare 30 min in frigo per far marinare il cavolfiore nel limone."
+        ]
+      },
+      "w4_l1": {
+        "name": "Pollo al Rosmarino",
+        "ingredients": [
+          "200g di petto di pollo",
+          "Fagiolini",
+          "Aglio e rosmarino"
+        ],
+        "steps": [
+          "Griglia il pollo con il rosmarino.",
+          "Salta i fagiolini con l'aglio.",
+          "Servi caldo."
+        ]
+      },
+      "w4_d1": {
+        "name": "Nasello al Forno in Crosta",
+        "ingredients": [
+          "200g di nasello",
+          "Erbe di Provenza",
+          "Insalata di rucola"
+        ],
+        "steps": [
+          "Copri il nasello con le erbe.",
+          "Inforna a 180°C e servi con la rucola."
+        ]
+      },
+      "w4_l2": {
+        "name": "Polpette di Manzo Fit",
+        "ingredients": [
+          "180g di manzo macinato",
+          "1 uovo e aglio in polvere",
+          "Salsa di pomodoro fatta in casa"
+        ],
+        "steps": [
+          "Forma le polpette senza usare pangrattato.",
+          "Grigliale e termina la cottura nella salsa di pomodoro."
+        ]
+      },
+      "w4_d2": {
+        "name": "Wok di Tacchino e Broccoli",
+        "ingredients": [
+          "150g di strisce di tacchino",
+          "Broccoli",
+          "Zenzero e soia"
+        ],
+        "steps": [
+          "Salta il tacchino e i broccoli a fuoco alto.",
+          "Condisci con zenzero e soia a basso contenuto di sale."
+        ]
+      },
+      "w4_l3": {
+        "name": "Merluzzo al Vapore",
+        "ingredients": [
+          "200g di merluzzo fresco",
+          "Spinaci",
+          "Pinoli"
+        ],
+        "steps": [
+          "Cuoci il pesce a vapore.",
+          "Salta gli spinaci con i pinoli come contorno."
+        ]
+      },
+      "w4_d3": {
+        "name": "Insalata di Pollo Arrosto",
+        "ingredients": [
+          "Pollo arrosto sfilacciato",
+          "Semi di zucca",
+          "Pomodoro e cetriolo"
+        ],
+        "steps": [
+          "Mescola tutti gli ingredienti a freddo.",
+          "Condisci a piacere."
+        ]
+      },
+      "w4_l4": {
+        "name": "Entrecôte con Peperoni",
+        "ingredients": [
+          "200g di entrecôte",
+          "Peperoncini di Padrón",
+          "Insalata mista"
+        ],
+        "steps": [
+          "Griglia l'entrecôte.",
+          "Salta i peperoni e servi insieme all'insalata."
+        ]
+      },
+      "w4_d4": {
+        "name": "Zoodles con Gamberi",
+        "ingredients": [
+          "1 zucchina (a spirale)",
+          "150g di gamberi",
+          "Aglio e peperoncino"
+        ],
+        "steps": [
+          "Rosola i gamberi con aglio e peperoncino.",
+          "Aggiungi gli zoodles 2 minuti prima di spegnere il fuoco."
+        ]
+      },
+      "w4_l5": {
+        "name": "Filetto di Maiale con Cavoletti di Bruxelles",
+        "ingredients": [
+          "200g di filetto di maiale",
+          "300g di cavoletti di Bruxelles",
+          "Pancetta (poca)"
+        ],
+        "steps": [
+          "Bolli i cavoletti per 5 min.",
+          "Rosola la pancetta, salta i cavoletti in quel grasso e accompagna con il filetto grigliato."
+        ]
+      },
+      "w4_d5": {
+        "name": "Salmone con Asparagi",
+        "ingredients": [
+          "200g di salmone",
+          "Asparagi selvatici",
+          "Limone"
+        ],
+        "steps": [
+          "Griglia il salmone e gli asparagi.",
+          "Irrora con limone al momento di servire."
+        ]
+      },
+      "w4_l6": {
+        "name": "Tacchino Arrosto con Verdure",
+        "ingredients": [
+          "200g di petto di tacchino",
+          "Peperone, cipolla, melanzana",
+          "Olio EVO"
+        ],
+        "steps": [
+          "Taglia le verdure e il tacchino.",
+          "Arrostisci tutto insieme nel forno a 200°C."
+        ]
+      },
+      "w4_d6": {
+        "name": "Padellata di Manzo",
+        "ingredients": [
+          "150g di strisce di manzo",
+          "Funghi misti",
+          "Aglio e prezzemolo"
+        ],
+        "steps": [
+          "Salta i funghi con l'aglio.",
+          "Aggiungi il manzo a fuoco alto e guarnisci con prezzemolo."
+        ]
+      },
+      "w4_l7": {
+        "name": "Branzino con Purè Premium",
+        "ingredients": [
+          "1 branzino al forno",
+          "300g di cavolfiore",
+          "1 cucchiaio di crema di formaggio light"
+        ],
+        "steps": [
+          "Cuoci il branzino al forno.",
+          "Bolli il cavolfiore, scolalo molto bene e frullalo con la crema di formaggio per creare un finto purè di patate."
+        ]
+      },
+      "w4_d7": {
+        "name": "Pizza Keto di Pollo",
+        "ingredients": [
+          "150g di pollo tritato e 1 uovo",
+          "Pomodoro e origano",
+          "Formaggio mozzarella"
+        ],
+        "steps": [
+          "Mescola pollo e uovo, e stendi l'impasto sottile su una teglia.",
+          "Inforna per 12 min. Aggiungi pomodoro e formaggio, e gratina."
+        ]
       }
     },
     "med": {
@@ -1921,7 +2259,8 @@
         "lunch": "Spigola o Orata al forno con purè di cavolfiore e insalata di pomodoro.",
         "snack": "20g di noci della California.",
         "dinner": "Keto-Pizza di pollo: Base di tacchino macinato con pomodoro e mozzarella."
-      }
+      },
+      "milestone_w4": "Ulises, hai completato 4 settimane. Il tuo metabolismo ora preferisce i grassi come fonte di energia. Hai notato che non hai più fame a metà mattina?"
     },
     "med_label": "Mediterranea",
     "low_carb_label": "Low-Carb",

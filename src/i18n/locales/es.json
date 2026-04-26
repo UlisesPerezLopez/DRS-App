@@ -462,6 +462,344 @@
           "Mezcla con el atún y los huevos batidos, y cuaja la tortilla.",
           "Sirve con el aguacate laminado en un lateral."
         ]
+      },
+      "w3_l1": {
+        "name": "Pollo al Sésamo y Judías Crunchy",
+        "ingredients": [
+          "200g pechuga",
+          "5g semillas de sésamo",
+          "200g judías verdes"
+        ],
+        "steps": [
+          "Plancha el pollo y añade sésamo al final para tostarlo.",
+          "Haz las judías al vapor dejándolas crujientes (6 min)."
+        ]
+      },
+      "w3_d1": {
+        "name": "Crema de Calabacín y Merluza",
+        "ingredients": [
+          "1 calabacín y 1 puerro (sin patata)",
+          "150g merluza al vapor"
+        ],
+        "steps": [
+          "Haz una crema ligera de verduras.",
+          "Acompaña con la merluza cocinada al vapor."
+        ]
+      },
+      "w3_l2": {
+        "name": "Ternera con Brócoli y Jengibre",
+        "ingredients": [
+          "180g ternera en tiras",
+          "Brócoli en ramilletes",
+          "Salsa de soja baja en sal y jengibre"
+        ],
+        "steps": [
+          "Saltea la ternera.",
+          "Añade el brócoli y un chorrito de agua para que se haga al vapor en la sartén.",
+          "Sazona con soja."
+        ]
+      },
+      "w3_d2": {
+        "name": "Ensalada de Espinacas y Aguacate",
+        "ingredients": [
+          "Espinacas frescas",
+          "Nueces y 1 huevo duro",
+          "50g aguacate"
+        ],
+        "steps": [
+          "Trocea el aguacate y el huevo.",
+          "Mezcla en frío para una dosis perfecta de potasio y grasas sanas."
+        ]
+      },
+      "w3_l3": {
+        "name": "Lomo de Cerdo con Col de Milán (Wirsing)",
+        "ingredients": [
+          "200g lomo de cerdo",
+          "300g col de Milán",
+          "Ajo y pimentón"
+        ],
+        "steps": [
+          "Hierve la col 5 min.",
+          "Saltea el ajo y pimentón, y añade la col escurrida.",
+          "Acompaña con el lomo a la plancha."
+        ]
+      },
+      "w3_d3": {
+        "name": "Dorada al Horno con Pimientos",
+        "ingredients": [
+          "1 dorada limpia",
+          "Pimientos rojos",
+          "Cebolla y AOVE"
+        ],
+        "steps": [
+          "Crea una cama de pimientos y cebolla.",
+          "Hornea la dorada encima durante 20 min a 180°C."
+        ]
+      },
+      "w3_l4": {
+        "name": "Trucha al Horno con Espárragos",
+        "ingredients": [
+          "1 trucha entera",
+          "Espárragos trigueros",
+          "Limón y AOVE"
+        ],
+        "steps": [
+          "Coloca la trucha y espárragos en una bandeja.",
+          "Rocía con limón y hornea 15 min a 180°C."
+        ]
+      },
+      "w3_d4": {
+        "name": "Arroz de Coliflor con Pavo",
+        "ingredients": [
+          "300g coliflor triturada",
+          "150g pavo picado",
+          "Especias mexicanas"
+        ],
+        "steps": [
+          "Dora el pavo con las especias.",
+          "Añade la coliflor (falso arroz) y saltea 7 min removiendo bien."
+        ]
+      },
+      "w3_l5": {
+        "name": "Muslos de Pollo al Horno",
+        "ingredients": [
+          "2 muslos de pollo",
+          "Especias al gusto",
+          "Ensalada de pepino y yogur (Tzatziki light)"
+        ],
+        "steps": [
+          "Asa el pollo hasta que la piel esté crujiente.",
+          "Acompaña con la ensalada fresca de pepino y yogur."
+        ]
+      },
+      "w3_d5": {
+        "name": "Zoodles con Gambas al Ajillo",
+        "ingredients": [
+          "1 calabacín (espiralizado)",
+          "150g gambas",
+          "Ajo y guindilla"
+        ],
+        "steps": [
+          "Haz las gambas al ajillo.",
+          "Saltea los zoodles solo 1 minuto para evitar que suelten agua."
+        ]
+      },
+      "w3_l6": {
+        "name": "Entrecot con Setas Variadas",
+        "ingredients": [
+          "180g entrecot",
+          "Setas variadas",
+          "Ajo y perejil"
+        ],
+        "steps": [
+          "Saltea las setas con ajo.",
+          "Haz la carne a la plancha al punto deseado."
+        ]
+      },
+      "w3_d6": {
+        "name": "Tortilla de Bacalao",
+        "ingredients": [
+          "2 huevos",
+          "100g bacalao desalado",
+          "Ensalada de tomate"
+        ],
+        "steps": [
+          "Desmiga el bacalao y cuaja la tortilla.",
+          "Sirve con ensalada de tomate fresca."
+        ]
+      },
+      "w3_l7": {
+        "name": "Pescado Blanco en Salsa Verde",
+        "ingredients": [
+          "200g Kabeljau o merluza",
+          "Almejas",
+          "Espárragos blancos y perejil"
+        ],
+        "steps": [
+          "Haz una salsa verde con ajo, perejil y caldo.",
+          "Cocina el pescado y almejas a fuego lento en la salsa."
+        ]
+      },
+      "w3_d7": {
+        "name": "Tabulé de Coliflor",
+        "ingredients": [
+          "200g coliflor triturada cruda",
+          "Tomate, pepino y cebolla roja",
+          "Perejil y zumo de limón"
+        ],
+        "steps": [
+          "Mezcla todo en crudo.",
+          "Deja reposar 30 min en la nevera para que el limón macere la coliflor."
+        ]
+      },
+      "w4_l1": {
+        "name": "Pollo al Romero",
+        "ingredients": [
+          "200g pechuga de pollo",
+          "Judías verdes",
+          "Ajo y romero"
+        ],
+        "steps": [
+          "Haz el pollo a la plancha con romero.",
+          "Saltea las judías con ajo.",
+          "Sirve caliente."
+        ]
+      },
+      "w4_d1": {
+        "name": "Merluza al Horno con Costra",
+        "ingredients": [
+          "200g merluza",
+          "Hierbas provenzales",
+          "Ensalada de rúcula"
+        ],
+        "steps": [
+          "Cubre la merluza con las hierbas.",
+          "Hornea a 180°C y acompaña con rúcula."
+        ]
+      },
+      "w4_l2": {
+        "name": "Albóndigas de Ternera Fit",
+        "ingredients": [
+          "180g ternera picada",
+          "1 huevo y ajo en polvo",
+          "Salsa de tomate casera"
+        ],
+        "steps": [
+          "Forma las albóndigas sin usar pan rallado.",
+          "Hazlas a la plancha y termina de cocerlas en la salsa de tomate."
+        ]
+      },
+      "w4_d2": {
+        "name": "Wok de Pavo y Brócoli",
+        "ingredients": [
+          "150g pavo en tiras",
+          "Brócoli",
+          "Jengibre y soja"
+        ],
+        "steps": [
+          "Saltea el pavo y el brócoli a fuego fuerte.",
+          "Sazona con jengibre y soja baja en sal."
+        ]
+      },
+      "w4_l3": {
+        "name": "Kabeljau al Vapor",
+        "ingredients": [
+          "200g Kabeljau (bacalao fresco)",
+          "Espinacas",
+          "Piñones"
+        ],
+        "steps": [
+          "Haz el pescado al vapor.",
+          "Saltea las espinacas con los piñones como guarnición."
+        ]
+      },
+      "w4_d3": {
+        "name": "Ensalada de Pollo Asado",
+        "ingredients": [
+          "Pollo asado desmigado",
+          "Pipas de calabaza",
+          "Tomate y pepino"
+        ],
+        "steps": [
+          "Mezcla todos los ingredientes en frío.",
+          "Aliña al gusto."
+        ]
+      },
+      "w4_l4": {
+        "name": "Entrecot con Pimientos",
+        "ingredients": [
+          "200g entrecot",
+          "Pimientos de Padrón",
+          "Ensalada mixta"
+        ],
+        "steps": [
+          "Haz el entrecot a la plancha.",
+          "Saltea los pimientos y sirve junto a la ensalada."
+        ]
+      },
+      "w4_d4": {
+        "name": "Zoodles con Gambas",
+        "ingredients": [
+          "1 calabacín (espiralizado)",
+          "150g gambas",
+          "Ajo y guindilla"
+        ],
+        "steps": [
+          "Dora las gambas con ajo y guindilla.",
+          "Añade los zoodles 2 minutos antes de apagar el fuego."
+        ]
+      },
+      "w4_l5": {
+        "name": "Solomillo con Rosenkohl",
+        "ingredients": [
+          "200g solomillo de cerdo",
+          "300g coles de Bruselas (Rosenkohl)",
+          "Bacon (poco)"
+        ],
+        "steps": [
+          "Hierve las coles 5 min.",
+          "Dora el bacon, saltea las coles en esa grasa y acompaña con el solomillo a la plancha."
+        ]
+      },
+      "w4_d5": {
+        "name": "Salmón con Espárragos",
+        "ingredients": [
+          "200g salmón",
+          "Espárragos trigueros",
+          "Limón"
+        ],
+        "steps": [
+          "Cocina el salmón y los espárragos a la plancha.",
+          "Rocía con limón al servir."
+        ]
+      },
+      "w4_l6": {
+        "name": "Pavo Asado con Verduras",
+        "ingredients": [
+          "200g pechuga de pavo",
+          "Pimiento, cebolla, berenjena",
+          "AOVE"
+        ],
+        "steps": [
+          "Corta la verdura y el pavo.",
+          "Asa todo junto en el horno a 200°C."
+        ]
+      },
+      "w4_d6": {
+        "name": "Salteado de Ternera",
+        "ingredients": [
+          "150g ternera en tiras",
+          "Setas variadas",
+          "Ajo y perejil"
+        ],
+        "steps": [
+          "Saltea las setas con ajo.",
+          "Añade la ternera a fuego fuerte y decora con perejil."
+        ]
+      },
+      "w4_l7": {
+        "name": "Lubina con Puré Premium",
+        "ingredients": [
+          "1 lubina al horno",
+          "300g coliflor",
+          "1 cda queso crema light"
+        ],
+        "steps": [
+          "Hornea la lubina.",
+          "Hierve la coliflor, escurre muy bien y tritura con el queso crema para crear un falso puré de patata."
+        ]
+      },
+      "w4_d7": {
+        "name": "Keto-Pizza de Pollo",
+        "ingredients": [
+          "150g pollo picado y 1 huevo",
+          "Tomate y orégano",
+          "Queso mozzarella"
+        ],
+        "steps": [
+          "Mezcla pollo y huevo, y extiende la masa fina en una bandeja.",
+          "Hornea 12 min. Añade tomate y queso, y gratina."
+        ]
       }
     },
     "med": {
@@ -1921,7 +2259,8 @@
         "dinner": "Keto-Pizza de pollo: Base de pollo picado con tomate y mozzarella."
       },
       "title": "Plan Low-Carb · 28 Días",
-      "subtitle": "Menú reducido en carbohidratos para quemar grasa"
+      "subtitle": "Menú reducido en carbohidratos para quemar grasa",
+      "milestone_w4": "Ulises, has completado 4 semanas. Tu metabolismo ahora prefiere la grasa como fuente de energía. ¿Has notado que ya no tienes hambre a media mañana?"
     },
     "med_label": "Mediterránea",
     "low_carb_label": "Low-Carb",
