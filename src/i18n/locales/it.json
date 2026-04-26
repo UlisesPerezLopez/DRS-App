@@ -3429,5 +3429,11 @@
       "muscles": "Corpo Intero",
       "warning": "Squat fluido che termina in una Military Press in alto. Respira ad ogni ripetizione."
     }
+  },
+  "routines": {
+    "a1_lvl1": "Routine A: Spinte e Quadricipiti (Livello 1)",
+    "a2_lvl1": "Routine B: Trazioni e Catena Posteriore (Livello 1)",
+    "b1_lvl1": "Forza 1: Stabilità Centrale (Livello 1)",
+    "b2_lvl1": "Forza 2: Tensione e Unilaterale (Livello 1)"
   }
 }

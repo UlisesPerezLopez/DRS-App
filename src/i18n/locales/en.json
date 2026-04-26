@@ -3429,5 +3429,11 @@
       "muscles": "Full Body",
       "warning": "Fluid squat ending in a Military Press at the top. Breathe on every repetition."
     }
+  },
+  "routines": {
+    "a1_lvl1": "Routine A: Pushes & Quads (Level 1)",
+    "a2_lvl1": "Routine B: Pulls & Posterior Chain (Level 1)",
+    "b1_lvl1": "Strength 1: Core Stability (Level 1)",
+    "b2_lvl1": "Strength 2: Tension & Unilateral (Level 1)"
   }
 }

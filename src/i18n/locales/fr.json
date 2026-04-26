@@ -3429,5 +3429,11 @@
       "muscles": "Corps Entier",
       "warning": "Squat fluide qui se termine par un développé militaire en haut. Respirez à chaque répétition."
     }
+  },
+  "routines": {
+    "a1_lvl1": "Routine A : Poussées et Quadriceps (Niveau 1)",
+    "a2_lvl1": "Routine B : Tirages et Chaîne Postérieure (Niveau 1)",
+    "b1_lvl1": "Force 1 : Stabilité Centrale (Niveau 1)",
+    "b2_lvl1": "Force 2 : Tension et Unilatéral (Niveau 1)"
   }
 }

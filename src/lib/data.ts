@@ -432,6 +432,23 @@ export interface ExerciseDef {
   translationKey: string;
 }
 
+export interface ExerciseConfig {
+  exerciseId: string;
+  baseSets: number;
+  targetType: 'reps' | 'time';
+  targetValue: number; // Cantidad de reps o segundos
+  baseRestSecs: number;
+  supersetId?: string; // Lo usaremos a partir del Nivel 3
+}
+
+export interface WorkoutRoutine {
+  id: string;
+  translationKey: string;
+  track: 'A' | 'B';
+  level: number;
+  exercises: ExerciseConfig[];
+}
+
 export const EXERCISE_DB: Record<string, ExerciseDef> = {
   // TRACK A: Zero Gravity (Nivel 1)
   'squat_chair': { id: 'squat_chair', translationKey: 'exercises.squat_chair' },
@@ -490,6 +507,62 @@ export const EXERCISE_DB: Record<string, ExerciseDef> = {
   'unilateral_romanian_deadlift': { id: 'unilateral_romanian_deadlift', translationKey: 'exercises.unilateral_romanian_deadlift' },
   'dumbbell_thrusters': { id: 'dumbbell_thrusters', translationKey: 'exercises.dumbbell_thrusters' }
 };
+export const WORKOUT_ROUTINES: WorkoutRoutine[] = [
+  // TRACK A: Zero Gravity (Sin Material) - Nivel 1
+  {
+    id: 'routine_a1_lvl1',
+    translationKey: 'routines.a1_lvl1',
+    track: 'A',
+    level: 1,
+    exercises: [
+      { exerciseId: 'squat_chair', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'incline_pushup', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'towel_row', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'glute_bridge', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'incline_plank', baseSets: 3, targetType: 'time', targetValue: 30, baseRestSecs: 60 }
+    ]
+  },
+  {
+    id: 'routine_a2_lvl1',
+    translationKey: 'routines.a2_lvl1',
+    track: 'A',
+    level: 1,
+    exercises: [
+      { exerciseId: 'assisted_lunge', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'floor_superman', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'chair_dips', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'static_bear_crawl', baseSets: 3, targetType: 'time', targetValue: 40, baseRestSecs: 60 },
+      { exerciseId: 'jumping_jacks_no_jump', baseSets: 3, targetType: 'time', targetValue: 45, baseRestSecs: 60 }
+    ]
+  },
+  // TRACK B: Home Gym (Mancuernas) - Nivel 1
+  {
+    id: 'routine_b1_lvl1',
+    translationKey: 'routines.b1_lvl1',
+    track: 'B',
+    level: 1,
+    exercises: [
+      { exerciseId: 'goblet_squat', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'dumbbell_floor_press', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'supported_one_arm_row', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'light_romanian_deadlift', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'bicep_curl_to_press', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 }
+    ]
+  },
+  {
+    id: 'routine_b2_lvl1',
+    translationKey: 'routines.b2_lvl1',
+    track: 'B',
+    level: 1,
+    exercises: [
+      { exerciseId: 'dumbbell_lunge', baseSets: 3, targetType: 'reps', targetValue: 10, baseRestSecs: 60 },
+      { exerciseId: 'lateral_raises', baseSets: 3, targetType: 'reps', targetValue: 15, baseRestSecs: 60 },
+      { exerciseId: 'floor_pullover', baseSets: 3, targetType: 'reps', targetValue: 12, baseRestSecs: 60 },
+      { exerciseId: 'plank_shoulder_taps', baseSets: 3, targetType: 'time', targetValue: 30, baseRestSecs: 60 },
+      { exerciseId: 'static_bike', baseSets: 1, targetType: 'time', targetValue: 600, baseRestSecs: 0 } // 10 min finisher
+    ]
+  }
+];
 
 export interface ExerciseTemplate {
   name: string;

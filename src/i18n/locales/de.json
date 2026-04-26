@@ -3429,5 +3429,11 @@
       "muscles": "Ganzkörper",
       "warning": "Fließende Kniebeuge, die oben in einem Schulterdrücken endet. Bei jeder Wiederholung atmen."
     }
+  },
+  "routines": {
+    "a1_lvl1": "Routine A: Druck & Quadrizeps (Level 1)",
+    "a2_lvl1": "Routine B: Zug & Hintere Kette (Level 1)",
+    "b1_lvl1": "Kraft 1: Rumpfstabilität (Level 1)",
+    "b2_lvl1": "Kraft 2: Spannung & Unilateral (Level 1)"
   }
 }

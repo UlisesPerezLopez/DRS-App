@@ -3429,5 +3429,11 @@
       "muscles": "Full Body",
       "warning": "Sentadilla fluida que termina en un Press Militar arriba. Respira en cada repetición."
     }
+  },
+  "routines": {
+    "a1_lvl1": "Rutina A: Empujes y Cuádriceps (Nivel 1)",
+    "a2_lvl1": "Rutina B: Tirones y Cadena Posterior (Nivel 1)",
+    "b1_lvl1": "Fuerza 1: Estabilidad Central (Nivel 1)",
+    "b2_lvl1": "Fuerza 2: Tensión y Unilateralidad (Nivel 1)"
   }
 }
