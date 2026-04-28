@@ -1,0 +1,54 @@
+🇪🇸 ES - Español
+Botón de agua: Añadir 250ml
+
+Alerta de agua: Meta diaria de agua alcanzada
+
+Onboarding: ¡Bienvenido! Personaliza tu perfil para comenzar.
+
+Texto rutina (Parte 1): Tu rutina de hoy consta de
+
+Texto rutina (Parte 2): ejercicios
+
+🇬🇧 EN - English
+Botón de agua: Add 250ml
+
+Alerta de agua: Daily water goal reached
+
+Onboarding: Welcome! Personalize your profile to get started.
+
+Texto rutina (Parte 1): Today's routine consists of
+
+Texto rutina (Parte 2): exercises
+
+🇩🇪 DE - Deutsch
+Botón de agua: 250ml hinzufügen
+
+Alerta de agua: Tägliches Wasserziel erreicht
+
+Onboarding: Willkommen! Personalisiere dein Profil, um zu beginnen.
+
+Texto rutina (Parte 1): Deine heutige Routine besteht aus
+
+Texto rutina (Parte 2): Übungen
+
+🇫🇷 FR - Français
+Botón de agua: Ajouter 250ml
+
+Alerta de agua: Objectif d'eau quotidien atteint
+
+Onboarding: Bienvenue ! Personnalise ton profil pour commencer.
+
+Texto rutina (Parte 1): Ta routine d'aujourd'hui se compose de
+
+Texto rutina (Parte 2): exercices
+
+🇮🇹 IT - Italiano
+Botón de agua: Aggiungi 250ml
+
+Alerta de agua: Obiettivo giornaliero di acqua raggiunto
+
+Onboarding: Benvenuto! Personalizza il tuo profilo per iniziare.
+
+Texto rutina (Parte 1): La tua routine di oggi consiste in
+
+Texto rutina (Parte 2): esercizi

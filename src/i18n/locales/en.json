@@ -23,7 +23,9 @@
     "title": "Welcome to DRS",
     "subtitle": "Create your first profile to start your healthy planning challenge.",
     "createPrompt": "What is your name?",
-    "createBtn": "Create my Profile"
+    "createBtn": "Create my Profile",
+    "welcome_message": "Welcome! Personalize your profile to get started.",
+    "go_to_profile": "Go to Profile"
   },
   "profile": {
     "title": "Profile & Progress",
@@ -98,7 +100,9 @@
     "ai_assistant": "AI Assistant",
     "motivation_lose": "Every calorie counts! Keep the deficit and you'll see results.",
     "motivation_gain": "Lift heavy and eat well! Muscle is built with consistency.",
-    "motivation_maintain": "Balance is key! Keep it up to maintain your best version."
+    "motivation_maintain": "Balance is key! Keep it up to maintain your best version.",
+    "water_add": "Add 250ml",
+    "water_goal_reached": "Daily water goal reached"
   },
   "mealDiary": {
     "addFood": "Add food",
@@ -140,7 +144,9 @@
     "progress_month": "Progress: Month {{n}}",
     "metric_sets": "Sets",
     "metric_target": "Target",
-    "metric_rest": "Rest"
+    "metric_rest": "Rest",
+    "routine_intro_1": "Today's routine consists of",
+    "routine_intro_2": "exercises"
   },
   "recipes": {
     "title": "Low-Cost Recipes",

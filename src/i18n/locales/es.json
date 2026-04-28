@@ -23,7 +23,9 @@
     "title": "Bienvenido a DRS",
     "subtitle": "Crea tu primer perfil para comenzar tu desafío de planificación saludable.",
     "createPrompt": "¿Cuál es tu nombre?",
-    "createBtn": "Crear mi Perfil"
+    "createBtn": "Crear mi Perfil",
+    "welcome_message": "¡Bienvenido! Personaliza tu perfil para comenzar.",
+    "go_to_profile": "Ir al Perfil"
   },
   "profile": {
     "title": "Perfil & Progreso",
@@ -98,7 +100,9 @@
     "ai_assistant": "Asistente IA",
     "motivation_lose": "¡Cada caloría cuenta! Mantén el déficit y verás resultados.",
     "motivation_gain": "¡Carga pesado y come bien! El músculo se construye con constancia.",
-    "motivation_maintain": "¡Equilibrio es la clave! Sigue así para mantener tu mejor versión."
+    "motivation_maintain": "¡Equilibrio es la clave! Sigue así para mantener tu mejor versión.",
+    "water_add": "Añadir 250ml",
+    "water_goal_reached": "Meta diaria de agua alcanzada"
   },
   "mealDiary": {
     "addFood": "Añadir alimento",
@@ -140,7 +144,9 @@
     "progress_month": "Progreso: Mes {{n}}",
     "metric_sets": "Series",
     "metric_target": "Objetivo",
-    "metric_rest": "Descanso"
+    "metric_rest": "Descanso",
+    "routine_intro_1": "Tu rutina de hoy consta de",
+    "routine_intro_2": "ejercicios"
   },
   "recipes": {
     "title": "Recetas Low-Cost",

@@ -23,7 +23,9 @@
     "title": "Bienvenue sur DRS",
     "subtitle": "Créez votre premier profil pour commencer votre défi de planification saine.",
     "createPrompt": "Quel est votre nom ?",
-    "createBtn": "Créer mon Profil"
+    "createBtn": "Créer mon Profil",
+    "welcome_message": "Bienvenue ! Personnalise ton profil pour commencer.",
+    "go_to_profile": "Aller au Profil"
   },
   "profile": {
     "title": "Profil & Progrès",
@@ -98,7 +100,9 @@
     "ai_assistant": "Assistant IA",
     "motivation_lose": "Chaque calorie compte ! Maintenez le déficit et vous verrez des résultats.",
     "motivation_gain": "Soulevez lourd et mangez bien ! Le muscle se construit avec la constance.",
-    "motivation_maintain": "L'équilibre est la clé ! Continuez pour garder votre meilleure version."
+    "motivation_maintain": "L'équilibre est la clé ! Continuez pour garder votre meilleure version.",
+    "water_add": "Ajouter 250ml",
+    "water_goal_reached": "Objectif d'eau quotidien atteint"
   },
   "mealDiary": {
     "addFood": "Ajouter de la nourriture",
@@ -140,7 +144,9 @@
     "progress_month": "Progrès : Mois {{n}}",
     "metric_sets": "Séries",
     "metric_target": "Objectif",
-    "metric_rest": "Repos"
+    "metric_rest": "Repos",
+    "routine_intro_1": "Ta routine d'aujourd'hui se compose de",
+    "routine_intro_2": "exercices"
   },
   "recipes": {
     "title": "Recettes à bas prix",

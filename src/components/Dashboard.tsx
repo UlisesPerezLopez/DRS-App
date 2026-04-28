@@ -6,7 +6,8 @@ import {
   Droplets, 
   Utensils, 
   ChevronRight,
-  TrendingDown
+  TrendingDown,
+  Plus
 } from "lucide-react";
 import { dailyTarget, dailyWaterTarget, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
@@ -15,10 +16,13 @@ import { getSmartAdvice } from "../lib/advisor";
 import { useTranslation } from "react-i18next";
 import { useWorkoutStore } from "../store/workoutStore";
 import { generateDailyMenu } from "../lib/dietEngine";
+import { MotivationEngine } from "../lib/MotivationEngine";
+import { useState, useEffect } from "react";
 
 export function Dashboard() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
+  const logWater = useAppStore(s => s.logWater);
   const { profile, foods, workouts, waterLogs } = account;
 
   const { userGoal, currentMonth, selectedTrack, getCurrentWorkouts } = useWorkoutStore();
@@ -37,6 +41,7 @@ export function Dashboard() {
   const waterConsumed = (waterLogs || {})[today] || 0;
   const waterTarget = dailyWaterTarget(profile, workoutMin);
   const waterPercent = Math.min(100, Math.round((waterConsumed / waterTarget) * 100));
+  const [waterAlert, setWaterAlert] = useState(false);
 
   const greeting = (() => {
     const h = new Date().getHours();
@@ -55,11 +60,23 @@ export function Dashboard() {
   const activeRoutines = getCurrentWorkouts();
   const mainRoutine = activeRoutines[0];
 
-  // Motivation Messages
-  const getMotivation = () => {
-    if (userGoal === 'lose') return t("dashboard.motivation_lose");
-    if (userGoal === 'gain') return t("dashboard.motivation_gain");
-    return t("dashboard.motivation_maintain");
+  // Motivation Engine — reactive random quote
+  const currentLang = i18n.language?.split('-')[0] || 'es';
+  const [motivationQuote, setMotivationQuote] = useState(() =>
+    MotivationEngine.getRandomQuote(userGoal, currentLang)
+  );
+  useEffect(() => {
+    setMotivationQuote(MotivationEngine.getRandomQuote(userGoal, currentLang));
+  }, [userGoal, currentLang]);
+
+  // Water add handler
+  const handleAddWater = () => {
+    logWater(250);
+    const newTotal = waterConsumed + 250;
+    if (newTotal >= 2000 && waterConsumed < 2000) {
+      setWaterAlert(true);
+      setTimeout(() => setWaterAlert(false), 3000);
+    }
   };
 
   return (
@@ -77,7 +94,7 @@ export function Dashboard() {
           </div>
         </div>
         <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400 italic">
-          "{getMotivation()}"
+          "{motivationQuote}"
         </p>
       </header>
 
@@ -175,8 +192,14 @@ export function Dashboard() {
           </div>
           <p className="text-xl font-black tabular-nums">{waterConsumed}<span className="text-xs text-slate-400 ml-1">ml</span></p>
           <div className="mt-2 h-1 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-            <div className="h-full bg-sky-500" style={{ width: `${waterPercent}%` }} />
+            <div className="h-full bg-sky-500 transition-all duration-300" style={{ width: `${waterPercent}%` }} />
           </div>
+          <button
+            onClick={handleAddWater}
+            className="mt-3 w-full flex items-center justify-center gap-1.5 py-2 bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl text-xs font-bold active:scale-95 transition-transform"
+          >
+            <Plus size={14} /> {t("dashboard.water_add")}
+          </button>
         </div>
 
         <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
@@ -205,6 +228,14 @@ export function Dashboard() {
         </p>
       </div>
 
+    {/* Water Goal Alert Toast */}
+      {waterAlert && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 animate-bounce">
+          <div className="bg-sky-500 text-white px-6 py-3 rounded-2xl shadow-xl shadow-sky-500/30 font-bold text-sm flex items-center gap-2">
+            <Droplets size={18} /> {t("dashboard.water_goal_reached")} 💧
+          </div>
+        </div>
+      )}
     </div>
   );
 }

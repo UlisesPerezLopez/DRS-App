@@ -1,0 +1,159 @@
+🇪🇸 ES - Español (FOOD_DB_ES)
+Pechuga de pollo | 110 | 23.0 | 0.0 | 1.2
+Pechuga de pavo | 105 | 24.0 | 0.0 | 1.0
+Atún al natural (lata) | 116 | 26.0 | 0.0 | 1.0
+Salmón fresco | 208 | 20.0 | 0.0 | 13.0
+Huevo entero | 143 | 13.0 | 1.0 | 10.0
+Tofu ahumado | 160 | 15.0 | 2.0 | 9.0
+Queso fresco batido 0% | 68 | 12.0 | 4.0 | 0.2
+Soja texturizada (seca) | 332 | 50.0 | 30.0 | 1.0
+Arroz integral (seco) | 360 | 8.0 | 74.0 | 3.0
+Avena (hojuelas) | 389 | 17.0 | 66.0 | 7.0
+Lentejas (secas) | 352 | 25.0 | 60.0 | 1.0
+Garbanzos (secos) | 364 | 19.0 | 61.0 | 6.0
+Quinoa (seca) | 368 | 14.0 | 64.0 | 6.0
+Patata cruda | 77 | 2.0 | 17.0 | 0.1
+Pasta integral (seca) | 348 | 14.0 | 71.0 | 2.0
+Pan de centeno | 259 | 9.0 | 48.0 | 3.0
+Aceite de Oliva Virgen Extra | 884 | 0.0 | 0.0 | 100.0
+Aguacate | 160 | 2.0 | 9.0 | 15.0
+Nueces | 654 | 15.0 | 14.0 | 65.0
+Almendras | 579 | 21.0 | 22.0 | 50.0
+Semillas de chía | 486 | 17.0 | 42.0 | 31.0
+Brócoli | 34 | 2.8 | 7.0 | 0.4
+Espinacas | 23 | 2.9 | 3.6 | 0.4
+Calabacín | 17 | 1.2 | 3.1 | 0.3
+Tomate | 18 | 0.9 | 3.9 | 0.2
+Cebolla | 40 | 1.1 | 9.0 | 0.1
+Champiñones | 22 | 3.1 | 3.3 | 0.3
+Manzana | 52 | 0.3 | 14.0 | 0.2
+Plátano | 89 | 1.1 | 23.0 | 0.3
+Arándanos | 57 | 0.7 | 14.0 | 0.3
+
+🇬🇧 EN - English (FOOD_DB_EN)
+Chicken breast | 110 | 23.0 | 0.0 | 1.2
+Turkey breast | 105 | 24.0 | 0.0 | 1.0
+Canned tuna in water | 116 | 26.0 | 0.0 | 1.0
+Fresh salmon | 208 | 20.0 | 0.0 | 13.0
+Whole egg | 143 | 13.0 | 1.0 | 10.0
+Smoked tofu | 160 | 15.0 | 2.0 | 9.0
+Fat-free quark | 68 | 12.0 | 4.0 | 0.2
+Textured soy protein (dry) | 332 | 50.0 | 30.0 | 1.0
+Brown rice (dry) | 360 | 8.0 | 74.0 | 3.0
+Rolled oats | 389 | 17.0 | 66.0 | 7.0
+Lentils (dry) | 352 | 25.0 | 60.0 | 1.0
+Chickpeas (dry) | 364 | 19.0 | 61.0 | 6.0
+Quinoa (dry) | 368 | 14.0 | 64.0 | 6.0
+Raw potato | 77 | 2.0 | 17.0 | 0.1
+Whole wheat pasta (dry) | 348 | 14.0 | 71.0 | 2.0
+Rye bread | 259 | 9.0 | 48.0 | 3.0
+Extra Virgin Olive Oil | 884 | 0.0 | 0.0 | 100.0
+Avocado | 160 | 2.0 | 9.0 | 15.0
+Walnuts | 654 | 15.0 | 14.0 | 65.0
+Almonds | 579 | 21.0 | 22.0 | 50.0
+Chia seeds | 486 | 17.0 | 42.0 | 31.0
+Broccoli | 34 | 2.8 | 7.0 | 0.4
+Spinach | 23 | 2.9 | 3.6 | 0.4
+Zucchini | 17 | 1.2 | 3.1 | 0.3
+Tomato | 18 | 0.9 | 3.9 | 0.2
+Onion | 40 | 1.1 | 9.0 | 0.1
+Mushrooms | 22 | 3.1 | 3.3 | 0.3
+Apple | 52 | 0.3 | 14.0 | 0.2
+Banana | 89 | 1.1 | 23.0 | 0.3
+Blueberries | 57 | 0.7 | 14.0 | 0.3
+
+🇩🇪 DE - Deutsch (FOOD_DB_DE)
+Hähnchenbrust | 110 | 23.0 | 0.0 | 1.2
+Putenbrust | 105 | 24.0 | 0.0 | 1.0
+Thunfisch im eigenen Saft | 116 | 26.0 | 0.0 | 1.0
+Frischer Lachs | 208 | 20.0 | 0.0 | 13.0
+Ganzes Ei | 143 | 13.0 | 1.0 | 10.0
+Räuchertofu | 160 | 15.0 | 2.0 | 9.0
+Magerquark | 68 | 12.0 | 4.0 | 0.2
+Sojaschnetzel (trocken) | 332 | 50.0 | 30.0 | 1.0
+Vollkornreis (trocken) | 360 | 8.0 | 74.0 | 3.0
+Haferflocken | 389 | 17.0 | 66.0 | 7.0
+Linsen (trocken) | 352 | 25.0 | 60.0 | 1.0
+Kichererbsen (trocken) | 364 | 19.0 | 61.0 | 6.0
+Quinoa (trocken) | 368 | 14.0 | 64.0 | 6.0
+Rohe Kartoffel | 77 | 2.0 | 17.0 | 0.1
+Vollkornnudeln (trocken) | 348 | 14.0 | 71.0 | 2.0
+Roggenbrot | 259 | 9.0 | 48.0 | 3.0
+Natives Olivenöl Extra | 884 | 0.0 | 0.0 | 100.0
+Avocado | 160 | 2.0 | 9.0 | 15.0
+Walnüsse | 654 | 15.0 | 14.0 | 65.0
+Mandeln | 579 | 21.0 | 22.0 | 50.0
+Chiasamen | 486 | 17.0 | 42.0 | 31.0
+Brokkoli | 34 | 2.8 | 7.0 | 0.4
+Spinat | 23 | 2.9 | 3.6 | 0.4
+Zucchini | 17 | 1.2 | 3.1 | 0.3
+Tomate | 18 | 0.9 | 3.9 | 0.2
+Zwiebel | 40 | 1.1 | 9.0 | 0.1
+Champignons | 22 | 3.1 | 3.3 | 0.3
+Apfel | 52 | 0.3 | 14.0 | 0.2
+Banane | 89 | 1.1 | 23.0 | 0.3
+Blaubeeren | 57 | 0.7 | 14.0 | 0.3
+
+🇫🇷 FR - Français (FOOD_DB_FR)
+Blanc de poulet | 110 | 23.0 | 0.0 | 1.2
+Blanc de dinde | 105 | 24.0 | 0.0 | 1.0
+Thon au naturel | 116 | 26.0 | 0.0 | 1.0
+Saumon frais | 208 | 20.0 | 0.0 | 13.0
+Œuf entier | 143 | 13.0 | 1.0 | 10.0
+Tofu fumé | 160 | 15.0 | 2.0 | 9.0
+Fromage blanc 0% | 68 | 12.0 | 4.0 | 0.2
+Protéines de soja texturées (sèches) | 332 | 50.0 | 30.0 | 1.0
+Riz complet (sec) | 360 | 8.0 | 74.0 | 3.0
+Flocons d'avoine | 389 | 17.0 | 66.0 | 7.0
+Lentilles (sèches) | 352 | 25.0 | 60.0 | 1.0
+Pois chiches (secs) | 364 | 19.0 | 61.0 | 6.0
+Quinoa (sec) | 368 | 14.0 | 64.0 | 6.0
+Pomme de terre crue | 77 | 2.0 | 17.0 | 0.1
+Pâtes complètes (sèches) | 348 | 14.0 | 71.0 | 2.0
+Pain de seigle | 259 | 9.0 | 48.0 | 3.0
+Huile d'olive extra vierge | 884 | 0.0 | 0.0 | 100.0
+Avocat | 160 | 2.0 | 9.0 | 15.0
+Noix | 654 | 15.0 | 14.0 | 65.0
+Amandes | 579 | 21.0 | 22.0 | 50.0
+Graines de chia | 486 | 17.0 | 42.0 | 31.0
+Brocoli | 34 | 2.8 | 7.0 | 0.4
+Épinards | 23 | 2.9 | 3.6 | 0.4
+Courgette | 17 | 1.2 | 3.1 | 0.3
+Tomate | 18 | 0.9 | 3.9 | 0.2
+Oignon | 40 | 1.1 | 9.0 | 0.1
+Champignons | 22 | 3.1 | 3.3 | 0.3
+Pomme | 52 | 0.3 | 14.0 | 0.2
+Banane | 89 | 1.1 | 23.0 | 0.3
+Myrtilles | 57 | 0.7 | 14.0 | 0.3
+
+🇮🇹 IT - Italiano (FOOD_DB_IT)
+Petto di pollo | 110 | 23.0 | 0.0 | 1.2
+Petto di tacchino | 105 | 24.0 | 0.0 | 1.0
+Tonno al naturale | 116 | 26.0 | 0.0 | 1.0
+Salmone fresco | 208 | 20.0 | 0.0 | 13.0
+Uovo intero | 143 | 13.0 | 1.0 | 10.0
+Tofu affumicato | 160 | 15.0 | 2.0 | 9.0
+Formaggio fresco magro 0% | 68 | 12.0 | 4.0 | 0.2
+Soia testurizzata (secca) | 332 | 50.0 | 30.0 | 1.0
+Riso integrale (secco) | 360 | 8.0 | 74.0 | 3.0
+Avena (fiocchi) | 389 | 17.0 | 66.0 | 7.0
+Lenticchie (secche) | 352 | 25.0 | 60.0 | 1.0
+Ceci (secchi) | 364 | 19.0 | 61.0 | 6.0
+Quinoa (secca) | 368 | 14.0 | 64.0 | 6.0
+Patata cruda | 77 | 2.0 | 17.0 | 0.1
+Pasta integrale (secca) | 348 | 14.0 | 71.0 | 2.0
+Pane di segale | 259 | 9.0 | 48.0 | 3.0
+Olio extravergine di oliva | 884 | 0.0 | 0.0 | 100.0
+Avocado | 160 | 2.0 | 9.0 | 15.0
+Noci | 654 | 15.0 | 14.0 | 65.0
+Mandorle | 579 | 21.0 | 22.0 | 50.0
+Semi di chia | 486 | 17.0 | 42.0 | 31.0
+Broccoli | 34 | 2.8 | 7.0 | 0.4
+Spinaci | 23 | 2.9 | 3.6 | 0.4
+Zucchine | 17 | 1.2 | 3.1 | 0.3
+Pomodoro | 18 | 0.9 | 3.9 | 0.2
+Cipolla | 40 | 1.1 | 9.0 | 0.1
+Funghi | 22 | 3.1 | 3.3 | 0.3
+Mela | 52 | 0.3 | 14.0 | 0.2
+Banana | 89 | 1.1 | 23.0 | 0.3
+Mirtilli | 57 | 0.7 | 14.0 | 0.3

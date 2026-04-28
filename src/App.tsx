@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   Home,
   Utensils,
@@ -80,6 +80,16 @@ export default function App() {
 
   const activeAccount = activeAccountId ? accounts[activeAccountId] : null;
 
+  const navigate = useNavigate();
+  // Onboarding overlay: shows after first account creation
+  const [showOnboarding, setShowOnboarding] = useState(false);
+
+  useEffect(() => {
+    if (activeAccount && activeAccount.profile.name && !activeAccount.planStartDate) {
+      setShowOnboarding(true);
+    }
+  }, [activeAccountId]);
+
   // Apply theme class on root
   useEffect(() => {
     if (theme === "dark") {
@@ -127,6 +137,29 @@ export default function App() {
 
   return (
     <div className="min-h-full bg-[#FDFBF7] dark:bg-slate-950 text-slate-900 dark:text-slate-100 max-w-md mx-auto relative">
+      {/* Onboarding Overlay Modal */}
+      {showOnboarding && (
+        <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-6">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-fadeIn">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mx-auto shadow-lg">
+              <span className="text-3xl">🎯</span>
+            </div>
+            <h2 className="text-2xl font-black text-slate-900 dark:text-white">{t("onboarding.title")}</h2>
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              {t("onboarding.welcome_message")}
+            </p>
+            <button
+              onClick={() => {
+                setShowOnboarding(false);
+                navigate('/profile');
+              }}
+              className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-transform"
+            >
+              {t("onboarding.go_to_profile")} →
+            </button>
+          </div>
+        </div>
+      )}
       {/* Top header bar */}
       <div className="sticky top-0 z-30 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-100 dark:border-slate-800 safe-top">
         <div className="flex items-center justify-between px-4 py-3">

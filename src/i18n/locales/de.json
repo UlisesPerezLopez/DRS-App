@@ -23,7 +23,9 @@
     "title": "Willkommen bei DRS",
     "subtitle": "Erstelle dein erstes Profil, um deine gesunde Planung zu starten.",
     "createPrompt": "Wie heißt du?",
-    "createBtn": "Mein Profil erstellen"
+    "createBtn": "Mein Profil erstellen",
+    "welcome_message": "Willkommen! Personalisiere dein Profil, um zu beginnen.",
+    "go_to_profile": "Zum Profil"
   },
   "profile": {
     "title": "Profil & Fortschritt",
@@ -98,7 +100,9 @@
     "ai_assistant": "KI-Assistent",
     "motivation_lose": "Jede Kalorie zählt! Halte das Defizit und du wirst Ergebnisse sehen.",
     "motivation_gain": "Heb schwer und iss gut! Muskeln werden mit Beständigkeit aufgebaut.",
-    "motivation_maintain": "Balance ist der Schlüssel! Mach weiter, um deine beste Version zu halten."
+    "motivation_maintain": "Balance ist der Schlüssel! Mach weiter, um deine beste Version zu halten.",
+    "water_add": "250ml hinzufügen",
+    "water_goal_reached": "Tägliches Wasserziel erreicht"
   },
   "mealDiary": {
     "addFood": "Essen hinzufügen",
@@ -140,7 +144,9 @@
     "progress_month": "Fortschritt: Monat {{n}}",
     "metric_sets": "Sätze",
     "metric_target": "Ziel",
-    "metric_rest": "Pause"
+    "metric_rest": "Pause",
+    "routine_intro_1": "Deine heutige Routine besteht aus",
+    "routine_intro_2": "Übungen"
   },
   "recipes": {
     "title": "Günstige Rezepte",

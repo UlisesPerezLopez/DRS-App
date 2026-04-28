@@ -268,6 +268,19 @@ export function Workout() {
         </section>
       </header>
 
+      {/* Dynamic Routine Intro */}
+      {routines.length > 0 && (
+        <div className="bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-100 dark:border-indigo-800/30 rounded-2xl px-5 py-3 text-center">
+          <p className="text-sm font-bold text-indigo-700 dark:text-indigo-300">
+            {t("workout.routine_intro_1")}{" "}
+            <span className="text-lg font-black text-indigo-600 dark:text-indigo-400">
+              {routines.reduce((acc, r) => acc + r.exercises.length, 0)}
+            </span>{" "}
+            {t("workout.routine_intro_2")}
+          </p>
+        </div>
+      )}
+
       {/* Dynamic Content */}
       <main className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
         {renderRoutines()}
