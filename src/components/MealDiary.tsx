@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Plus, Trash2, Clock, X, Search, AlertTriangle, Star } from "lucide-react";
 import type { FoodEntry, MealSlot, CommonFood, CustomFood } from "../types";
 import { COMMON_FOODS } from "../lib/data";
+import { FOOD_DB } from "../lib/foodData";
 import { calculateGlycemicLoad, calculateMacrosForPortion, dailyTarget, nowHHMM, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
@@ -68,11 +69,26 @@ export function MealDiary() {
   const target = dailyTarget(profile);
   const over = consumed > target;
 
-  // Fused search: COMMON_FOODS + customFoods
+  // Fused search: COMMON_FOODS + FOOD_DB (deduped) + customFoods
   const allFoods = useMemo(() => {
     const commons: SearchableFood[] = COMMON_FOODS.map(f => ({ ...f, _type: "common" as const }));
+    // Map FOOD_DB items to CommonFood shape, excluding keys already in COMMON_FOODS
+    const existingKeys = new Set(COMMON_FOODS.map(f => f.translationKey));
+    const foodDbItems: SearchableFood[] = FOOD_DB
+      .filter(f => !existingKeys.has(f.translationKey))
+      .map(f => ({
+        translationKey: f.translationKey,
+        calories: f.kcal,
+        protein: f.protein,
+        carbs: f.carbs,
+        fat: f.fat,
+        fiber: 0,
+        ig: null,
+        sodiumLevel: "Bajo" as const,
+        _type: "common" as const,
+      }));
     const customs: SearchableFood[] = (customFoods || []).map(f => ({ ...f, _type: "custom" as const }));
-    return [...commons, ...customs];
+    return [...commons, ...foodDbItems, ...customs];
   }, [customFoods]);
 
   const filtered = allFoods.filter((f) => {
