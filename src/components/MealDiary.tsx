@@ -219,12 +219,12 @@ export function MealDiary() {
       </section>
 
       {/* Hour selector quick access */}
-      <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-4 px-4">
+      <div className="grid grid-cols-2 gap-3">
         {MEAL_HOURS.map((m) => (
           <button
             key={m.meal}
             onClick={() => openAdd(m.meal, m.hour)}
-            className="shrink-0 flex flex-col items-center gap-0.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2.5 rounded-2xl active:scale-95 transition"
+            className="flex flex-col items-center gap-0.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2.5 rounded-2xl active:scale-95 transition"
           >
             <span className="text-xs text-slate-500">{m.hour}</span>
             <span className="text-sm font-medium">{t("meals." + (m.meal === "Media Mañana" ? "mediaManana" : m.meal.toLowerCase()), { defaultValue: m.meal })}</span>

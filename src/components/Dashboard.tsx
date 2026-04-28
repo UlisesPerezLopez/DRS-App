@@ -57,9 +57,9 @@ export function Dashboard() {
 
   // Motivation Messages
   const getMotivation = () => {
-    if (userGoal === 'lose') return "¡Cada caloría cuenta! Mantén el déficit y verás resultados.";
-    if (userGoal === 'gain') return "¡Carga pesado y come bien! El músculo se construye con constancia.";
-    return "¡Equilibrio es la clave! Sigue así para mantener tu mejor versión.";
+    if (userGoal === 'lose') return t("dashboard.motivation_lose");
+    if (userGoal === 'gain') return t("dashboard.motivation_gain");
+    return t("dashboard.motivation_maintain");
   };
 
   return (
@@ -93,17 +93,17 @@ export function Dashboard() {
               <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
                 <Utensils size={16} />
               </div>
-              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">Nutrición Hoy</h2>
+              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">{t("dashboard.nutrition_today")}</h2>
             </div>
             <div>
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{profile.dietPreference || "Mediterránea"}</p>
               <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
-                Sugerencia: {suggestion ? (suggestion.translationKey ? t(`food.${suggestion.translationKey}`) : suggestion.name) : "Cargando..."}
+                {t("dashboard.suggestion_label")}: {suggestion ? (suggestion.translationKey ? t(`foodDb.${suggestion.translationKey}`) : suggestion.name) : "..."}
               </h3>
-              <p className="text-xs text-slate-500 mt-1">{suggestion ? `Aprox. ${suggestion.calories} kcal` : "Consulta tu plan"}</p>
+              <p className="text-xs text-slate-500 mt-1">{suggestion ? t("dashboard.approx_kcal", { amount: suggestion.calories }) : ""}</p>
             </div>
             <button className="flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:gap-2 transition-all">
-              Ver plan completo <ChevronRight size={14} />
+              {t("dashboard.view_full_plan")} <ChevronRight size={14} />
             </button>
           </div>
         </div>
@@ -118,21 +118,21 @@ export function Dashboard() {
               <div className="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
                 <Activity size={16} />
               </div>
-              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">Entrenamiento Hoy</h2>
+              <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">{t("dashboard.workout_today")}</h2>
             </div>
             <div>
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                 Track {selectedTrack} · Nivel {Math.ceil(currentMonth / 2)}
               </p>
               <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
-                {mainRoutine ? t(mainRoutine.translationKey) : "Descanso"}
+                {mainRoutine ? t(mainRoutine.translationKey) : t("dashboard.rest_day")}
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                {mainRoutine ? `${mainRoutine.exercises.length} ejercicios · ${userGoal}` : "Recuperación activa"}
+                {mainRoutine ? t("dashboard.exercises_count", { count: mainRoutine.exercises.length }) + " · " + userGoal : t("dashboard.active_recovery")}
               </p>
             </div>
             <button className="flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:gap-2 transition-all">
-              Ir a la rutina <ChevronRight size={14} />
+              {t("dashboard.go_to_routine")} <ChevronRight size={14} />
             </button>
           </div>
         </div>
@@ -143,7 +143,7 @@ export function Dashboard() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Flame className="text-orange-500" size={20} />
-            <h2 className="font-bold text-slate-800 dark:text-white tracking-tight">Presupuesto Calórico</h2>
+            <h2 className="font-bold text-slate-800 dark:text-white tracking-tight">{t("dashboard.calorie_budget")}</h2>
           </div>
           <span className="text-[10px] font-black bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-lg text-slate-500 uppercase tracking-widest">{today}</span>
         </div>
@@ -171,7 +171,7 @@ export function Dashboard() {
             <div className="w-7 h-7 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500">
               <Droplets size={14} />
             </div>
-            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hidratación</span>
+            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{t("dashboard.hydration")}</span>
           </div>
           <p className="text-xl font-black tabular-nums">{waterConsumed}<span className="text-xs text-slate-400 ml-1">ml</span></p>
           <div className="mt-2 h-1 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
@@ -184,10 +184,10 @@ export function Dashboard() {
             <div className="w-7 h-7 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-500">
               <TrendingDown size={14} />
             </div>
-            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Peso Actual</span>
+            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{t("dashboard.current_weight")}</span>
           </div>
           <p className="text-xl font-black tabular-nums">{profile.weightKg}<span className="text-xs text-slate-400 ml-1">kg</span></p>
-          <p className="text-[10px] text-emerald-500 font-bold mt-1">Meta: {profile.targetWeightKg}kg</p>
+          <p className="text-[10px] text-emerald-500 font-bold mt-1">{t("dashboard.target_label", { weight: profile.targetWeightKg })}</p>
         </div>
       </section>
 
@@ -198,7 +198,7 @@ export function Dashboard() {
         </div>
         <div className="flex items-center gap-2 relative z-10">
           <Sparkles className="text-indigo-200" size={18} />
-          <h3 className="font-black text-xs uppercase tracking-[0.2em]">Asistente IA</h3>
+          <h3 className="font-black text-xs uppercase tracking-[0.2em]">{t("dashboard.ai_assistant")}</h3>
         </div>
         <p className="text-sm font-medium leading-relaxed relative z-10 text-indigo-50">
           {advice}

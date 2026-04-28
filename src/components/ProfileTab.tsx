@@ -74,11 +74,11 @@ export function ProfileTab() {
       <section className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-md space-y-5">
         <div className="flex items-center gap-2 mb-1">
           <Settings size={18} className="text-indigo-500" />
-          <h2 className="font-bold text-slate-800 dark:text-white">Configuración del Plan</h2>
+          <h2 className="font-bold text-slate-800 dark:text-white">{t("profile.plan_config")}</h2>
         </div>
 
         <div className="grid grid-cols-1 gap-4">
-          <Field label="Dieta Activa">
+          <Field label={t("profile.active_diet")}>
             <div className="relative">
               <UtensilsCrossed className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
               <select
@@ -86,14 +86,14 @@ export function ProfileTab() {
                 onChange={(e) => setDraft({ ...draft, dietPreference: e.target.value as any })}
                 className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
               >
-                <option value="mediterranea">Dieta Mediterránea</option>
-                <option value="low-carb">Dieta Low-Carb</option>
-                <option value="vegetariana">Dieta Vegetariana</option>
+                <option value="mediterranea">{t("profile.diet_mediterranean")}</option>
+                <option value="low-carb">{t("profile.diet_lowcarb")}</option>
+                <option value="vegetariana">{t("profile.diet_vegetarian")}</option>
               </select>
             </div>
           </Field>
 
-          <Field label="Track de Entrenamiento">
+          <Field label={t("profile.training_track")}>
             <div className="flex p-1 bg-slate-50 dark:bg-slate-800 rounded-2xl">
               <button
                 onClick={() => setWorkoutTrack('A')}
@@ -111,7 +111,7 @@ export function ProfileTab() {
           </Field>
 
           <div className="grid grid-cols-2 gap-3">
-            <Field label="Objetivo">
+            <Field label={t("profile.goal")}>
               <select
                 value={userGoal}
                 onChange={(e) => {
@@ -121,12 +121,12 @@ export function ProfileTab() {
                 }}
                 className="w-full px-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
               >
-                <option value="lose">Perder Peso</option>
-                <option value="maintain">Mantener</option>
-                <option value="gain">Ganar Músculo</option>
+                <option value="lose">{t("profile.goal_lose_weight")}</option>
+                <option value="maintain">{t("profile.goal_maintain")}</option>
+                <option value="gain">{t("profile.goal_gain_muscle")}</option>
               </select>
             </Field>
-            <Field label="Mes Actual">
+            <Field label={t("profile.current_month")}>
               <div className="relative">
                 <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
                 <select
@@ -134,7 +134,7 @@ export function ProfileTab() {
                   onChange={(e) => setWorkoutMonth(Number(e.target.value))}
                   className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
                 >
-                  {[1,2,3,4,5,6].map(m => <option key={m} value={m}>Mes {m}</option>)}
+                  {[1,2,3,4,5,6].map(m => <option key={m} value={m}>{t("profile.month_label", { n: m })}</option>)}
                 </select>
               </div>
             </Field>
