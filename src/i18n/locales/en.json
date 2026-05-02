@@ -156,6 +156,10 @@
     "proteinLabel": "Protein",
     "carbsLabel": "Carbs",
     "fatLabel": "Fat",
+    "low_cost_title": "Low-Cost Recipes",
+    "low_cost_subtitle": "Budget-friendly, quick, and healthy",
+    "full_menu_title": "Full Menu Cookbook",
+    "full_menu_subtitle": "Recipes from Mediterranean, Low-Carb and Vegetarian plans",
     "low_carb": {
       "w2_l1": {
         "name": "Pesto Chicken with Green Beans",

@@ -156,6 +156,10 @@
     "proteinLabel": "Proteínas",
     "carbsLabel": "Carbohidratos",
     "fatLabel": "Grasas",
+    "low_cost_title": "Recetas Low-Cost",
+    "low_cost_subtitle": "Económicas, rápidas y saludables",
+    "full_menu_title": "Recetario completo de Menús",
+    "full_menu_subtitle": "Recetas de los planes Mediterráneo, Low-Carb y Vegetariano",
     "low_carb": {
       "w2_l1": {
         "name": "Pollo al Pesto y Judías Verdes",

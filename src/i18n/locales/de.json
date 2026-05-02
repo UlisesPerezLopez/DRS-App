@@ -156,6 +156,10 @@
     "proteinLabel": "Protein",
     "carbsLabel": "Kohlenhydrate",
     "fatLabel": "Fett",
+    "low_cost_title": "Günstige Rezepte",
+    "low_cost_subtitle": "Preiswert, schnell und gesund",
+    "full_menu_title": "Vollständiges Menü-Kochbuch",
+    "full_menu_subtitle": "Rezepte aus den Plänen Mediterran, Low-Carb und Vegetarisch",
     "low_carb": {
       "w2_l1": {
         "name": "Pesto-Hähnchen mit grünen Bohnen",

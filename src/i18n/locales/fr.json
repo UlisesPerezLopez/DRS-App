@@ -156,6 +156,10 @@
     "proteinLabel": "Protéines",
     "carbsLabel": "Glucides",
     "fatLabel": "Lipides",
+    "low_cost_title": "Recettes économiques",
+    "low_cost_subtitle": "Économiques, rapides et saines",
+    "full_menu_title": "Livre de recettes complet",
+    "full_menu_subtitle": "Recettes des plans Méditerranéen, Low-Carb et Végétarien",
     "low_carb": {
       "w2_l1": {
         "name": "Poulet au Pesto et Haricots Verts",

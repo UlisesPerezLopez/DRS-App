@@ -156,6 +156,10 @@
     "proteinLabel": "Proteine",
     "carbsLabel": "Carboidrati",
     "fatLabel": "Grassi",
+    "low_cost_title": "Ricette Low-Cost",
+    "low_cost_subtitle": "Economiche, veloci e salutari",
+    "full_menu_title": "Ricettario completo dei Menu",
+    "full_menu_subtitle": "Ricette dai piani Mediterraneo, Low-Carb e Vegetariano",
     "low_carb": {
       "w2_l1": {
         "name": "Pollo al Pesto e Fagiolini",
