@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { Plus, Apple, RefreshCw, AlertTriangle } from "lucide-react";
 import { useAppStore } from "../store/useAppStore";
 import { generateDailyMenu, SuggestedMeal, SuggestedItem } from "../lib/dietEngine";
@@ -17,6 +17,44 @@ export function DietTab() {
   
   const [refreshKey, setRefreshKey] = useState(0);
 
+  /** Safely resolve an item display name – handles both foodDb keys and recipe keys */
+  const getItemDisplayName = useCallback((itm: SuggestedItem): string => {
+    const key = itm.translationKey;
+
+    // Recipe keys start with "recipes." (e.g. recipes.med.w3_l1)
+    if (key.startsWith("recipes.")) {
+      const resolved = t(`${key}.name`, { defaultValue: "" });
+      if (resolved && resolved !== `${key}.name`) return resolved;
+      // Fallback: also try under recipeDb namespace
+      const altResolved = t(`recipeDb.${key}.name`, { defaultValue: "" });
+      if (altResolved && altResolved !== `recipeDb.${key}.name`) return altResolved;
+      // Ultimate fallback: derive a readable name from the key
+      const lastSegment = key.split(".").pop() || key;
+      return lastSegment
+        .replace(/_/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    // RecipeDb keys (e.g. recipeDb.chicken_rice)
+    if (key.startsWith("recipeDb.")) {
+      const resolved = t(`${key}.name`, { defaultValue: "" });
+      if (resolved && resolved !== `${key}.name`) return resolved;
+      const lastSegment = key.split(".").pop() || key;
+      return lastSegment
+        .replace(/_/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    // Standard food key → try foodDb namespace
+    const resolved = t(`foodDb.${key}`, { defaultValue: "" });
+    if (resolved && resolved !== `foodDb.${key}`) return resolved;
+
+    // Fallback: humanize the key
+    return key
+      .replace(/_/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
+  }, [t]);
+
   const menu = useMemo(
     () => generateDailyMenu(target, preference, profile.goal),
     [target, preference, profile.goal, refreshKey]
@@ -25,7 +63,7 @@ export function DietTab() {
   const handleAdd = (mealSlot: SuggestedMeal, itm: SuggestedItem) => {
     const newFood = {
       id: crypto.randomUUID(),
-      name: itm.translationKey,
+      name: getItemDisplayName(itm),
       calories: itm.calories,
       grams: itm.grams,
       protein: itm.protein,
@@ -45,7 +83,7 @@ export function DietTab() {
     const time = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false });
     const newFoods = mealSlot.items.map((itm) => ({
       id: crypto.randomUUID(),
-      name: itm.translationKey,
+      name: getItemDisplayName(itm),
       calories: itm.calories,
       grams: itm.grams,
       protein: itm.protein,
@@ -110,7 +148,7 @@ export function DietTab() {
                 <li key={i} className="flex justify-between text-sm items-start hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition">
                   <div className="flex-1 pr-2">
                     <span className="text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                      {t(`foodDb.${itm.translationKey}`, { defaultValue: itm.name })}
+                      {getItemDisplayName(itm)}
                       <span className="text-xs text-slate-400">({itm.grams}g)</span>
                       {itm.sodiumLevel === "Alto" && (
                         <AlertTriangle size={13} className="text-rose-500" />
