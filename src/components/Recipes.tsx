@@ -11,6 +11,8 @@ function isLowCostRecipe(r: (typeof RECIPES)[number]): boolean {
 export function Recipes() {
   const { t } = useTranslation();
   const [open, setOpen] = useState<string | null>(RECIPES[0].id);
+  const [openLowCost, setOpenLowCost] = useState(true);
+  const [openFullMenu, setOpenFullMenu] = useState(false);
 
   const lowCost = useMemo(() => RECIPES.filter(isLowCostRecipe), []);
   const fullMenu = useMemo(() => RECIPES.filter((r) => !isLowCostRecipe(r)), []);
@@ -106,43 +108,67 @@ export function Recipes() {
       </header>
 
       {/* ── Section 1: Low-Cost Recipes ── */}
-      <section>
-        <div className="flex items-center gap-2 mb-3">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-900/40">
-            <Wallet size={16} className="text-emerald-600 dark:text-emerald-400" />
+      <section className="bg-white dark:bg-slate-900 rounded-[2rem] border border-slate-100 dark:border-slate-800 overflow-hidden shadow-sm">
+        <button 
+          onClick={() => setOpenLowCost(!openLowCost)}
+          className="w-full flex items-center justify-between p-5 bg-emerald-50/50 dark:bg-emerald-900/10 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400">
+              <Wallet size={20} />
+            </div>
+            <div className="text-left">
+              <h2 className="text-lg font-bold text-slate-800 dark:text-white">
+                Recetas Low-Cost
+              </h2>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                {lowCost.length} recetas económicas y fáciles
+              </p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-lg font-bold text-emerald-700 dark:text-emerald-400">
-              {t("recipes.low_cost_title")}
-            </h2>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              {t("recipes.low_cost_subtitle")}
-            </p>
+          <ChevronDown
+            size={20}
+            className={`text-slate-400 transition-transform ${openLowCost ? "rotate-180" : ""}`}
+          />
+        </button>
+        
+        {openLowCost && (
+          <div className="p-4 space-y-3 bg-slate-50/50 dark:bg-slate-900/50">
+            {lowCost.map(renderRecipeCard)}
           </div>
-        </div>
-        <div className="space-y-3">
-          {lowCost.map(renderRecipeCard)}
-        </div>
+        )}
       </section>
 
       {/* ── Section 2: Full Menu Recipes ── */}
-      <section>
-        <div className="flex items-center gap-2 mb-3">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-violet-100 dark:bg-violet-900/40">
-            <UtensilsCrossed size={16} className="text-violet-600 dark:text-violet-400" />
+      <section className="bg-white dark:bg-slate-900 rounded-[2rem] border border-slate-100 dark:border-slate-800 overflow-hidden shadow-sm">
+        <button 
+          onClick={() => setOpenFullMenu(!openFullMenu)}
+          className="w-full flex items-center justify-between p-5 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400">
+              <UtensilsCrossed size={20} />
+            </div>
+            <div className="text-left">
+              <h2 className="text-lg font-bold text-slate-800 dark:text-white">
+                Recetario completo de Menús
+              </h2>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                {fullMenu.length} recetas de los planes nutricionales
+              </p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-lg font-bold text-violet-700 dark:text-violet-400">
-              {t("recipes.full_menu_title")}
-            </h2>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              {t("recipes.full_menu_subtitle")}
-            </p>
+          <ChevronDown
+            size={20}
+            className={`text-slate-400 transition-transform ${openFullMenu ? "rotate-180" : ""}`}
+          />
+        </button>
+        
+        {openFullMenu && (
+          <div className="p-4 space-y-3 bg-slate-50/50 dark:bg-slate-900/50">
+            {fullMenu.map(renderRecipeCard)}
           </div>
-        </div>
-        <div className="space-y-3">
-          {fullMenu.map(renderRecipeCard)}
-        </div>
+        )}
       </section>
     </div>
   );

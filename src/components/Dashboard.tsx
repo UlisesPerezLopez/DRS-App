@@ -12,7 +12,6 @@ import {
 import { dailyTarget, dailyWaterTarget, todayISO } from "../lib/calc";
 import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
-import { getSmartAdvice } from "../lib/advisor";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useWorkoutStore } from "../store/workoutStore";
@@ -52,7 +51,28 @@ export function Dashboard() {
     return t("dashboard.greeting_evening");
   })();
 
-  const advice = getSmartAdvice(foods, target);
+  // Request Notification Permission
+  useEffect(() => {
+    if ("Notification" in window && Notification.permission === "default") {
+      Notification.requestPermission();
+    }
+  }, []);
+
+  // Daily Analysis Engine
+  const analysisMessage = (() => {
+    const percentage = Math.round((consumed / target) * 100);
+    const hour = new Date().getHours();
+    
+    if (consumed > target) {
+      return "Has superado tu límite calórico. Ajusta tu próxima comida o añade actividad física.";
+    }
+    
+    if (percentage < 40 && hour >= 17) {
+      return "Tu ingesta calórica es muy baja para esta hora. Asegúrate de cenar de forma nutritiva y densa.";
+    }
+    
+    return `Llevas el ${percentage}% de tus calorías diarias. ¡Buen ritmo!`;
+  })();
 
   // Nutrition Logic
   const dailyMenu = generateDailyMenu(target, profile.dietPreference || "mediterranea", profile.goal);
@@ -75,9 +95,13 @@ export function Dashboard() {
   const handleAddWater = () => {
     logWater(250);
     const newTotal = waterConsumed + 250;
-    if (newTotal >= 2000 && waterConsumed < 2000) {
+    if (newTotal >= waterTarget && waterConsumed < waterTarget) {
       setWaterAlert(true);
       setTimeout(() => setWaterAlert(false), 3000);
+      
+      if ("Notification" in window && Notification.permission === "granted") {
+        new Notification("¡Objetivo de hidratación conseguido!");
+      }
     }
   };
 
@@ -193,8 +217,10 @@ export function Dashboard() {
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{t("dashboard.hydration")}</span>
           </div>
           <p className="text-xl font-black tabular-nums">{waterConsumed}<span className="text-xs text-slate-400 ml-1">ml</span></p>
-          <div className="mt-2 h-1 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-            <div className="h-full bg-sky-500 transition-all duration-300" style={{ width: `${waterPercent}%` }} />
+          <div className="mt-3 h-3 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
+            <div className="h-full bg-sky-500 transition-all duration-500 ease-out relative" style={{ width: `${waterPercent}%` }}>
+              <div className="absolute inset-0 bg-white/20 w-full animate-pulse"></div>
+            </div>
           </div>
           <button
             onClick={handleAddWater}
@@ -216,17 +242,17 @@ export function Dashboard() {
         </div>
       </section>
 
-      {/* Advisor Engine Card */}
-      <div className="group rounded-[2rem] bg-gradient-to-br from-indigo-500 to-purple-600 p-6 text-white shadow-xl shadow-indigo-200/50 dark:shadow-none space-y-3 relative overflow-hidden text-left">
+      {/* Daily Analysis Card */}
+      <div className="group rounded-[2rem] bg-white dark:bg-slate-900 p-6 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3 relative overflow-hidden text-left">
         <div className="absolute -right-4 -top-4 opacity-10 group-hover:scale-110 transition-transform">
-          <Sparkles size={120} />
+          <Sparkles size={120} className="text-emerald-500" />
         </div>
         <div className="flex items-center gap-2 relative z-10">
-          <Sparkles className="text-indigo-200" size={18} />
-          <h3 className="font-black text-xs uppercase tracking-[0.2em]">{t("dashboard.ai_assistant")}</h3>
+          <Sparkles className="text-emerald-500" size={18} />
+          <h3 className="font-black text-xs uppercase tracking-[0.2em] text-slate-800 dark:text-white">Análisis Diario</h3>
         </div>
-        <p className="text-sm font-medium leading-relaxed relative z-10 text-indigo-50">
-          {advice}
+        <p className="text-sm font-medium leading-relaxed relative z-10 text-slate-600 dark:text-slate-300">
+          {analysisMessage}
         </p>
       </div>
 
