@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { 
   Dumbbell, 
   Timer, 
@@ -10,11 +10,14 @@ import {
   Calendar,
   Zap,
   ChevronRight,
-  ShieldAlert
+  ShieldAlert,
+  Flame
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useWorkoutStore } from "../store/workoutStore";
 import { ExerciseConfig, WorkoutRoutine } from "../lib/data";
+import { useAppStore } from "../store/useAppStore";
+import { todayISO } from "../lib/calc";
 
 /**
  * Metric Badge Component
@@ -44,7 +47,7 @@ function ExerciseCard({ ex, isSupersetPart = false, isLastInSuperset = false }: 
     <div className={`relative overflow-hidden bg-white dark:bg-slate-900 rounded-3xl border ${isSupersetPart ? 'border-indigo-200 dark:border-indigo-800/50' : 'border-slate-100 dark:border-slate-800'} shadow-md hover:shadow-xl transition-all duration-300 group`}>
       {isSupersetPart && (
         <div className="absolute top-0 right-0 px-3 py-1 bg-indigo-500 text-white text-[9px] font-black uppercase tracking-widest rounded-bl-xl shadow-sm z-10">
-          {t("workout.superset_label")}
+          {t("workout.superset_label", { defaultValue: "Superserie" })}
         </div>
       )}
 
@@ -63,19 +66,19 @@ function ExerciseCard({ ex, isSupersetPart = false, isLastInSuperset = false }: 
         <div className="grid grid-cols-3 gap-3">
           <MetricBadge 
             icon={Repeat} 
-            label={t("workout.metric_sets")} 
+            label={t("workout.metric_sets", { defaultValue: "Series" })} 
             value={ex.baseSets} 
             colorClass="text-emerald-500" 
           />
           <MetricBadge 
             icon={Target} 
-            label={t("workout.metric_target")} 
+            label={t("workout.metric_target", { defaultValue: "Objetivo" })} 
             value={`${ex.targetValue}${ex.targetType === 'reps' ? ' Reps' : 's'}`} 
             colorClass="text-blue-500" 
           />
           <MetricBadge 
             icon={Timer} 
-            label={t("workout.metric_rest")} 
+            label={t("workout.metric_rest", { defaultValue: "Descanso" })} 
             value={isSupersetPart && !isLastInSuperset ? "0s" : `${ex.baseRestSecs}s`} 
             colorClass={isSupersetPart && !isLastInSuperset ? "text-orange-500" : "text-slate-400"} 
           />
@@ -84,7 +87,7 @@ function ExerciseCard({ ex, isSupersetPart = false, isLastInSuperset = false }: 
         {/* Superset logic: Next indicator */}
         {isSupersetPart && !isLastInSuperset && (
           <div className="flex items-center gap-2 py-2 px-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl text-orange-600 dark:text-orange-400 text-[10px] font-black uppercase tracking-tight animate-pulse">
-            <Zap size={14} /> {t("workout.no_rest_next")}
+            <Zap size={14} /> {t("workout.no_rest_next", { defaultValue: "Sin descanso -> Siguiente" })}
           </div>
         )}
 
@@ -99,7 +102,7 @@ function ExerciseCard({ ex, isSupersetPart = false, isLastInSuperset = false }: 
             }`}
           >
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide">
-              <ShieldAlert size={16} /> {t("workout.biomechanic_warning")}
+              <ShieldAlert size={16} /> {t("workout.biomechanic_warning", { defaultValue: "Técnica" })}
             </div>
             {showWarning ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
           </button>
@@ -126,10 +129,102 @@ export function Workout() {
     userGoal, currentMonth, selectedTrack, 
     setGoal, setMonth, setTrack, getCurrentWorkouts 
   } = useWorkoutStore();
+  const setWorkouts = useAppStore(s => s.setWorkouts);
 
   const routines = getCurrentWorkouts();
 
-  // Helper to group exercises by superset
+  // Active Session State
+  const [isActive, setIsActive] = useState(false);
+  const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
+  const [currentSet, setCurrentSet] = useState(1);
+  const [isResting, setIsResting] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [showSummary, setShowSummary] = useState(false);
+  const [sessionBurnedKcal, setSessionBurnedKcal] = useState(0);
+
+  const allExercises = useMemo(() => {
+    return routines.flatMap(r => r.exercises);
+  }, [routines]);
+
+  const activeExercise = allExercises[currentExerciseIndex];
+
+  // Rest Timer Logic
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval>;
+    if (isResting && timeLeft > 0) {
+      interval = setInterval(() => {
+        setTimeLeft(prev => prev - 1);
+      }, 1000);
+    } else if (isResting && timeLeft <= 0) {
+      handleNextSet();
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isResting, timeLeft]);
+
+  const handleNextSet = () => {
+    setIsResting(false);
+    if (!activeExercise) return;
+    
+    if (currentSet < activeExercise.baseSets) {
+      setCurrentSet(s => s + 1);
+    } else {
+      // Next exercise
+      if (currentExerciseIndex < allExercises.length - 1) {
+        setCurrentExerciseIndex(i => i + 1);
+        setCurrentSet(1);
+      } else {
+        finishSession();
+      }
+    }
+  };
+
+  const completeSet = () => {
+    if (!activeExercise) return;
+    
+    if (currentSet <= activeExercise.baseSets) {
+      // Calculate rest
+      let rest = activeExercise.baseRestSecs;
+      // If it's a superset and not the last in the superset, rest is 0
+      const isSupersetPart = !!activeExercise.supersetId;
+      const isLastInSuperset = isSupersetPart && (
+        currentExerciseIndex === allExercises.length - 1 || 
+        allExercises[currentExerciseIndex + 1].supersetId !== activeExercise.supersetId
+      );
+      
+      if (isSupersetPart && !isLastInSuperset) {
+        rest = 0;
+      }
+      
+      if (rest > 0) {
+        setIsResting(true);
+        setTimeLeft(rest);
+      } else {
+        handleNextSet();
+      }
+    }
+  };
+
+  const finishSession = () => {
+    setIsActive(false);
+    setShowSummary(true);
+    const totalEx = allExercises.length;
+    const burned = totalEx * 35; // Conservative formula: 35 kcal per exercise
+    setSessionBurnedKcal(burned);
+    
+    const newSession = {
+      id: crypto.randomUUID(),
+      date: todayISO(),
+      exercise: routines[0] ? t(routines[0].translationKey, { defaultValue: "Rutina Principal" }) : "Rutina",
+      durationSec: totalEx * 5 * 60, // approx 5 mins per exercise
+      caloriesBurned: burned
+    };
+    
+    setWorkouts(prev => [...prev, newSession]);
+  };
+
+  // Helper to group exercises by superset for the catalog view
   const renderRoutines = () => {
     return routines.map((routine: WorkoutRoutine) => {
       // Grouping logic for supersets
@@ -179,7 +274,7 @@ export function Workout() {
           <div className="flex items-center gap-3 px-1">
             <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
             <span className="text-[10px] font-black text-slate-400 dark:text-slate-600 uppercase tracking-[0.2em]">
-              {t(routine.translationKey)} (Lv.{routine.level})
+              {t(routine.translationKey, { defaultValue: "Rutina" })} (Lv.{routine.level})
             </span>
             <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
           </div>
@@ -191,6 +286,110 @@ export function Workout() {
     });
   };
 
+  // --- RENDER VIEWS ---
+
+  // 1. Summary View
+  if (showSummary) {
+    return (
+      <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-12 pb-32 flex flex-col items-center justify-center text-center space-y-6 animate-in fade-in zoom-in duration-500">
+        <div className="w-24 h-24 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-xl">
+          <Activity size={48} />
+        </div>
+        <h1 className="text-3xl font-black text-slate-800 dark:text-white">
+          {t("workout.session_completed", { defaultValue: "¡Sesión Completada!" })}
+        </h1>
+        <div className="flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/20 px-6 py-3 rounded-2xl border border-emerald-100 dark:border-emerald-800/30">
+          <Flame size={20} className="text-emerald-500" />
+          <p className="text-sm font-bold text-slate-600 dark:text-slate-300">
+            Gasto estimado: <span className="text-emerald-600 dark:text-emerald-400 text-lg tabular-nums">{sessionBurnedKcal} kcal</span>
+          </p>
+        </div>
+        <button 
+          onClick={() => {
+            setShowSummary(false);
+            setCurrentExerciseIndex(0);
+            setCurrentSet(1);
+          }}
+          className="mt-8 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-black rounded-2xl w-full active:scale-95 transition-transform"
+        >
+          {t("workout.back_to_catalog", { defaultValue: "Volver al Catálogo" })}
+        </button>
+      </div>
+    );
+  }
+
+  // 2. Active Session View (Focus Mode)
+  if (isActive && activeExercise) {
+    const isSupersetPart = !!activeExercise.supersetId;
+    const isLastInSuperset = isSupersetPart && (
+      currentExerciseIndex === allExercises.length - 1 || 
+      allExercises[currentExerciseIndex + 1].supersetId !== activeExercise.supersetId
+    );
+
+    return (
+      <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-6 pb-32 flex flex-col animate-in slide-in-from-right-8 duration-300">
+        <header className="flex items-center justify-between mb-8">
+          <button 
+            onClick={() => setIsActive(false)} 
+            className="text-xs font-bold text-slate-500 flex items-center gap-1 hover:text-slate-800 dark:hover:text-white transition-colors bg-white dark:bg-slate-900 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800"
+          >
+            <ChevronDown className="rotate-90" size={14} /> {t("workout.cancel_session", { defaultValue: "Cancelar" })}
+          </button>
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-indigo-50 dark:bg-indigo-900/30 rounded-full text-[10px] font-black tracking-widest text-indigo-600 dark:text-indigo-400 uppercase">
+            <Activity size={12} /> Ejercicio {currentExerciseIndex + 1} de {allExercises.length}
+          </div>
+        </header>
+
+        <div className="flex-1 flex flex-col mb-8">
+          <ExerciseCard ex={activeExercise} isSupersetPart={isSupersetPart} isLastInSuperset={isLastInSuperset} />
+          
+          <div className="mt-8 bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-100 dark:border-slate-800 text-center space-y-2">
+            <h2 className="text-xl font-black text-slate-800 dark:text-white uppercase tracking-widest flex items-center justify-center gap-2">
+              Serie {currentSet} <span className="text-slate-400">/ {activeExercise.baseSets}</span>
+            </h2>
+            <div className="flex justify-center items-center gap-2 text-emerald-600 dark:text-emerald-400 font-black text-lg bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 rounded-xl mx-auto w-fit mt-2">
+              <Target size={18} /> {activeExercise.targetValue} {activeExercise.targetType === 'reps' ? 'Reps' : 'Segundos'}
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Controls */}
+        <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-50 dark:from-slate-950 via-slate-50/90 dark:via-slate-950/90 to-transparent pb-8">
+          {isResting ? (
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-2xl border border-slate-100 dark:border-slate-800 text-center space-y-4 max-w-md mx-auto">
+              <div className="flex items-center justify-center gap-2 text-xs font-black text-slate-400 uppercase tracking-widest">
+                <Timer size={14} /> Tiempo de Descanso
+              </div>
+              <div className="text-6xl font-black tabular-nums text-slate-800 dark:text-white tracking-tighter">
+                {timeLeft}<span className="text-3xl text-slate-400 ml-1">s</span>
+              </div>
+              <div className="flex justify-center gap-3">
+                <button onClick={() => setTimeLeft(t => Math.max(0, t - 10))} className="flex-1 py-3 bg-slate-100 dark:bg-slate-800 rounded-xl font-black text-slate-600 dark:text-slate-300 active:scale-95 transition-transform">-10s</button>
+                <button onClick={() => setTimeLeft(t => t + 10)} className="flex-1 py-3 bg-slate-100 dark:bg-slate-800 rounded-xl font-black text-slate-600 dark:text-slate-300 active:scale-95 transition-transform">+10s</button>
+              </div>
+              <button 
+                onClick={() => setTimeLeft(0)} 
+                className="w-full py-4 border-2 border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold rounded-2xl active:scale-95 transition-transform hover:bg-slate-50 dark:hover:bg-slate-800"
+              >
+                Saltar Descanso <ChevronRight size={16} className="inline -mt-0.5" />
+              </button>
+            </div>
+          ) : (
+            <div className="max-w-md mx-auto">
+              <button 
+                onClick={completeSet}
+                className="w-full py-5 bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-black text-lg rounded-2xl shadow-xl shadow-indigo-500/30 active:scale-95 transition-transform flex items-center justify-center gap-2 group"
+              >
+                Completar Serie <Zap size={20} className="group-hover:scale-110 transition-transform" />
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // 3. Catalog View (Default)
   return (
     <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-6 pb-32">
       {/* Premium Header */}
@@ -288,7 +487,14 @@ export function Workout() {
 
       {/* Quick Action Button - Start Training */}
       <div className="fixed bottom-32 left-0 right-0 px-8 pointer-events-none z-50">
-        <button className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-black rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-transform pointer-events-auto flex items-center justify-center gap-2 group">
+        <button 
+          onClick={() => {
+            if (allExercises.length > 0) {
+              setIsActive(true);
+            }
+          }}
+          className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-black rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-transform pointer-events-auto flex items-center justify-center gap-2 group"
+        >
           {t("workout.start_session")} <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
