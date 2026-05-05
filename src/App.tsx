@@ -183,7 +183,7 @@ export default function App() {
       </div>
 
       {/* Routed Content */}
-      <main>
+      <main className="pb-28">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/plan" element={<MyPlanTab />} />

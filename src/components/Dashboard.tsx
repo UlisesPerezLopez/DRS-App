@@ -28,6 +28,8 @@ export function Dashboard() {
 
   const { userGoal, currentMonth, selectedTrack, getCurrentWorkouts } = useWorkoutStore();
 
+  const latestWeight = account.weights.length > 0 ? account.weights[account.weights.length - 1].weight : profile.weightKg;
+
   const today = todayISO();
   const todayFoods = foods.filter((f) => f.date === today);
   const consumed = todayFoods.reduce((s, f) => s + f.calories, 0);
@@ -106,7 +108,7 @@ export function Dashboard() {
   };
 
   return (
-    <div className="px-4 pt-4 pb-28 space-y-6">
+    <div className="px-4 pt-4 pb-4 space-y-4">
       <header className="space-y-1">
         <div className="flex justify-between items-center">
           <div>
@@ -127,7 +129,7 @@ export function Dashboard() {
       {/* Summary Cards Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Nutrition Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-5 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Utensils size={80} className="text-emerald-500" />
           </div>
@@ -139,8 +141,8 @@ export function Dashboard() {
               <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">{t("dashboard.nutrition_today")}</h2>
             </div>
             <div>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{profile.dietPreference || "Mediterránea"}</p>
-              <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{profile.dietPreference || "Mediterránea"}</p>
+              <h3 className="text-base font-black text-slate-900 dark:text-white truncate">
                 {t("dashboard.suggestion_label")}: {suggestion ? (suggestion.translationKey ? t(`foodDb.${suggestion.translationKey}`) : suggestion.name) : "..."}
               </h3>
               <p className="text-xs text-slate-500 mt-1">{suggestion ? t("dashboard.approx_kcal", { amount: suggestion.calories }) : ""}</p>
@@ -152,7 +154,7 @@ export function Dashboard() {
         </div>
 
         {/* Workout Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-5 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Dumbbell size={80} className="text-indigo-500" />
           </div>
@@ -164,10 +166,10 @@ export function Dashboard() {
               <h2 className="font-bold text-slate-800 dark:text-white uppercase tracking-tight text-xs">{t("dashboard.workout_today")}</h2>
             </div>
             <div>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                 Track {selectedTrack} · Nivel {Math.ceil(currentMonth / 2)}
               </p>
-              <h3 className="text-lg font-black text-slate-900 dark:text-white truncate">
+              <h3 className="text-base font-black text-slate-900 dark:text-white truncate">
                 {mainRoutine ? t(mainRoutine.translationKey) : t("dashboard.rest_day")}
               </h3>
               <p className="text-xs text-slate-500 mt-1">
@@ -182,7 +184,7 @@ export function Dashboard() {
       </section>
 
       {/* Calories Progress Card */}
-      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-6 space-y-4">
+      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5 space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Flame className="text-orange-500" size={20} />
@@ -237,7 +239,7 @@ export function Dashboard() {
             </div>
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{t("dashboard.current_weight")}</span>
           </div>
-          <p className="text-xl font-black tabular-nums">{profile.weightKg}<span className="text-xs text-slate-400 ml-1">kg</span></p>
+          <p className="text-xl font-black tabular-nums">{latestWeight}<span className="text-xs text-slate-400 ml-1">kg</span></p>
           <p className="text-[10px] text-emerald-500 font-bold mt-1">{t("dashboard.target_label", { weight: profile.targetWeightKg })}</p>
         </div>
       </section>

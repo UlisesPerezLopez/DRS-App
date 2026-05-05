@@ -1,0 +1,259 @@
+🇪🇸 ES - Español (FOOD_DB_ES_BEBIDAS)
+Agua mineral | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Agua con gas | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Café negro | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda
+Café expreso | 9 | 0.1 | 1.7 | 0.2 | Desayuno, Media Mañana, Almuerzo
+Café descafeinado | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda, Cena
+Té verde | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Té negro | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana
+Té rojo | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Infusión de manzanilla | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Infusión de menta | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Leche entera | 61 | 3.2 | 4.8 | 3.6 | Desayuno, Media Mañana, Merienda
+Leche desnatada | 34 | 3.4 | 4.9 | 0.1 | Desayuno, Media Mañana, Merienda
+Leche sin lactosa | 40 | 3.0 | 4.6 | 1.0 | Desayuno, Media Mañana, Merienda
+Bebida de avena | 45 | 1.0 | 6.5 | 1.5 | Desayuno, Media Mañana, Merienda
+Bebida de coco | 20 | 0.1 | 2.7 | 0.9 | Desayuno, Media Mañana, Merienda
+Bebida de arroz | 47 | 0.1 | 9.4 | 1.0 | Desayuno, Media Mañana, Merienda
+Zumo de naranja natural | 45 | 0.7 | 10.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Zumo de manzana | 46 | 0.1 | 11.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Zumo de piña | 50 | 0.4 | 12.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Zumo de uva | 60 | 0.4 | 14.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Zumo de melocotón | 43 | 0.3 | 10.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Zumo de tomate | 17 | 0.8 | 3.1 | 0.1 | Media Mañana, Almuerzo, Merienda
+Batido de chocolate | 75 | 3.5 | 10.0 | 2.0 | Desayuno, Merienda
+Refresco de cola | 42 | 0.0 | 10.6 | 0.0 | Almuerzo, Cena
+Refresco de cola zero | 0 | 0.0 | 0.0 | 0.0 | Almuerzo, Cena
+Refresco de naranja | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Refresco de limón | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Té helado | 35 | 0.0 | 8.5 | 0.0 | Almuerzo, Merienda
+Tónica | 38 | 0.0 | 9.0 | 0.0 | Almuerzo, Merienda, Cena
+Bebida isotónica | 24 | 0.0 | 6.0 | 0.0 | Media Mañana, Merienda
+Bebida energética | 45 | 0.0 | 11.0 | 0.0 | Media Mañana, Almuerzo
+Bebida energética zero | 3 | 0.0 | 0.0 | 0.0 | Media Mañana, Almuerzo
+Cerveza rubia | 43 | 0.5 | 3.0 | 0.0 | Almuerzo, Cena
+Cerveza sin alcohol | 20 | 0.2 | 4.0 | 0.0 | Almuerzo, Cena
+Vino tinto | 85 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Vino blanco | 82 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Sidra | 40 | 0.0 | 3.0 | 0.0 | Almuerzo, Cena
+Cava / Champán | 75 | 0.2 | 1.5 | 0.0 | Almuerzo, Cena
+Mosto | 65 | 0.3 | 16.0 | 0.0 | Media Mañana, Almuerzo
+Kombucha | 15 | 0.1 | 3.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Kéfir de leche | 45 | 3.3 | 4.0 | 1.5 | Desayuno, Media Mañana, Merienda
+Limonada casera | 40 | 0.1 | 10.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Agua de coco | 19 | 0.7 | 3.7 | 0.2 | Media Mañana, Merienda
+Batido de proteínas (líquido) | 55 | 8.0 | 4.0 | 1.0 | Media Mañana, Merienda
+Horchata de chufa | 78 | 0.6 | 12.0 | 2.5 | Media Mañana, Merienda
+Smoothie de frutas | 55 | 0.6 | 13.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Batido de vainilla | 70 | 3.0 | 10.0 | 1.5 | Desayuno, Merienda
+Gaseosa | 35 | 0.0 | 9.0 | 0.0 | Almuerzo, Cena
+Caldo de pollo (líquido) | 15 | 1.0 | 1.0 | 0.5 | Almuerzo, Cena
+Caldo de verduras (líquido) | 10 | 0.5 | 1.5 | 0.2 | Almuerzo, Cena
+
+🇩🇪 DE - Deutsch (FOOD_DB_DE_BEBIDAS)
+Mineralwasser | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Sprudelwasser | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Schwarzer Kaffee | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda
+Espresso | 9 | 0.1 | 1.7 | 0.2 | Desayuno, Media Mañana, Almuerzo
+Entkoffeinierter Kaffee | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda, Cena
+Grüner Tee | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Schwarzer Tee | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana
+Roter Tee | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Kamillentee | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Pfefferminztee | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Vollmilch | 61 | 3.2 | 4.8 | 3.6 | Desayuno, Media Mañana, Merienda
+Magermilch | 34 | 3.4 | 4.9 | 0.1 | Desayuno, Media Mañana, Merienda
+Laktosefreie Milch | 40 | 3.0 | 4.6 | 1.0 | Desayuno, Media Mañana, Merienda
+Haferdrink | 45 | 1.0 | 6.5 | 1.5 | Desayuno, Media Mañana, Merienda
+Kokosdrink | 20 | 0.1 | 2.7 | 0.9 | Desayuno, Media Mañana, Merienda
+Reisdrink | 47 | 0.1 | 9.4 | 1.0 | Desayuno, Media Mañana, Merienda
+Frischer Orangensaft | 45 | 0.7 | 10.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Apfelsaft | 46 | 0.1 | 11.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Ananassaft | 50 | 0.4 | 12.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Traubensaft | 60 | 0.4 | 14.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Pfirsichsaft | 43 | 0.3 | 10.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Tomatensaft | 17 | 0.8 | 3.1 | 0.1 | Media Mañana, Almuerzo, Merienda
+Schokomilch | 75 | 3.5 | 10.0 | 2.0 | Desayuno, Merienda
+Cola-Erfrischungsgetränk | 42 | 0.0 | 10.6 | 0.0 | Almuerzo, Cena
+Cola Zero | 0 | 0.0 | 0.0 | 0.0 | Almuerzo, Cena
+Orangenlimonade | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Zitronenlimonade | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Eistee | 35 | 0.0 | 8.5 | 0.0 | Almuerzo, Merienda
+Tonic Water | 38 | 0.0 | 9.0 | 0.0 | Almuerzo, Merienda, Cena
+Isotonisches Getränk | 24 | 0.0 | 6.0 | 0.0 | Media Mañana, Merienda
+Energy-Drink | 45 | 0.0 | 11.0 | 0.0 | Media Mañana, Almuerzo
+Energy-Drink Zero | 3 | 0.0 | 0.0 | 0.0 | Media Mañana, Almuerzo
+Helles Bier | 43 | 0.5 | 3.0 | 0.0 | Almuerzo, Cena
+Alkoholfreies Bier | 20 | 0.2 | 4.0 | 0.0 | Almuerzo, Cena
+Rotwein | 85 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Weißwein | 82 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Apfelwein | 40 | 0.0 | 3.0 | 0.0 | Almuerzo, Cena
+Sekt / Champagner | 75 | 0.2 | 1.5 | 0.0 | Almuerzo, Cena
+Traubenmost | 65 | 0.3 | 16.0 | 0.0 | Media Mañana, Almuerzo
+Kombucha | 15 | 0.1 | 3.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Milchkefir | 45 | 3.3 | 4.0 | 1.5 | Desayuno, Media Mañana, Merienda
+Hausgemachte Limonade | 40 | 0.1 | 10.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Kokoswasser | 19 | 0.7 | 3.7 | 0.2 | Media Mañana, Merienda
+Protein-Shake (fertig) | 55 | 8.0 | 4.0 | 1.0 | Media Mañana, Merienda
+Erdmandelmilch | 78 | 0.6 | 12.0 | 2.5 | Media Mañana, Merienda
+Frucht-Smoothie | 55 | 0.6 | 13.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Vanillemilch | 70 | 3.0 | 10.0 | 1.5 | Desayuno, Merienda
+Brause | 35 | 0.0 | 9.0 | 0.0 | Almuerzo, Cena
+Hühnerbrühe | 15 | 1.0 | 1.0 | 0.5 | Almuerzo, Cena
+Gemüsebrühe | 10 | 0.5 | 1.5 | 0.2 | Almuerzo, Cena
+
+🇬🇧 EN - English (FOOD_DB_EN_BEBIDAS)
+Mineral water | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Sparkling water | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Black coffee | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda
+Espresso | 9 | 0.1 | 1.7 | 0.2 | Desayuno, Media Mañana, Almuerzo
+Decaf coffee | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda, Cena
+Green tea | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Black tea | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana
+Pu-erh tea | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Chamomile tea | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Mint tea | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Whole milk | 61 | 3.2 | 4.8 | 3.6 | Desayuno, Media Mañana, Merienda
+Skimmed milk | 34 | 3.4 | 4.9 | 0.1 | Desayuno, Media Mañana, Merienda
+Lactose-free milk | 40 | 3.0 | 4.6 | 1.0 | Desayuno, Media Mañana, Merienda
+Oat milk | 45 | 1.0 | 6.5 | 1.5 | Desayuno, Media Mañana, Merienda
+Coconut milk drink | 20 | 0.1 | 2.7 | 0.9 | Desayuno, Media Mañana, Merienda
+Rice milk | 47 | 0.1 | 9.4 | 1.0 | Desayuno, Media Mañana, Merienda
+Fresh orange juice | 45 | 0.7 | 10.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Apple juice | 46 | 0.1 | 11.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Pineapple juice | 50 | 0.4 | 12.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Grape juice | 60 | 0.4 | 14.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Peach juice | 43 | 0.3 | 10.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Tomato juice | 17 | 0.8 | 3.1 | 0.1 | Media Mañana, Almuerzo, Merienda
+Chocolate milk | 75 | 3.5 | 10.0 | 2.0 | Desayuno, Merienda
+Cola soda | 42 | 0.0 | 10.6 | 0.0 | Almuerzo, Cena
+Cola soda zero | 0 | 0.0 | 0.0 | 0.0 | Almuerzo, Cena
+Orange soda | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Lemon soda | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Ice tea | 35 | 0.0 | 8.5 | 0.0 | Almuerzo, Merienda
+Tonic water | 38 | 0.0 | 9.0 | 0.0 | Almuerzo, Merienda, Cena
+Sports drink | 24 | 0.0 | 6.0 | 0.0 | Media Mañana, Merienda
+Energy drink | 45 | 0.0 | 11.0 | 0.0 | Media Mañana, Almuerzo
+Energy drink zero | 3 | 0.0 | 0.0 | 0.0 | Media Mañana, Almuerzo
+Lager beer | 43 | 0.5 | 3.0 | 0.0 | Almuerzo, Cena
+Non-alcoholic beer | 20 | 0.2 | 4.0 | 0.0 | Almuerzo, Cena
+Red wine | 85 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+White wine | 82 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Cider | 40 | 0.0 | 3.0 | 0.0 | Almuerzo, Cena
+Champagne / Cava | 75 | 0.2 | 1.5 | 0.0 | Almuerzo, Cena
+Grape must | 65 | 0.3 | 16.0 | 0.0 | Media Mañana, Almuerzo
+Kombucha | 15 | 0.1 | 3.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Milk kefir | 45 | 3.3 | 4.0 | 1.5 | Desayuno, Media Mañana, Merienda
+Homemade lemonade | 40 | 0.1 | 10.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Coconut water | 19 | 0.7 | 3.7 | 0.2 | Media Mañana, Merienda
+RTD Protein shake | 55 | 8.0 | 4.0 | 1.0 | Media Mañana, Merienda
+Horchata | 78 | 0.6 | 12.0 | 2.5 | Media Mañana, Merienda
+Fruit smoothie | 55 | 0.6 | 13.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Vanilla milk | 70 | 3.0 | 10.0 | 1.5 | Desayuno, Merienda
+Sweetened sparkling water | 35 | 0.0 | 9.0 | 0.0 | Almuerzo, Cena
+Chicken broth | 15 | 1.0 | 1.0 | 0.5 | Almuerzo, Cena
+Vegetable broth | 10 | 0.5 | 1.5 | 0.2 | Almuerzo, Cena
+
+🇫🇷 FR - Français (FOOD_DB_FR_BEBIDAS)
+Eau minérale | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Eau gazeuse | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Café noir | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda
+Expresso | 9 | 0.1 | 1.7 | 0.2 | Desayuno, Media Mañana, Almuerzo
+Café décaféiné | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda, Cena
+Thé vert | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Thé noir | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana
+Thé rouge | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Infusion de camomille | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Infusion à la menthe | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Lait entier | 61 | 3.2 | 4.8 | 3.6 | Desayuno, Media Mañana, Merienda
+Lait écrémé | 34 | 3.4 | 4.9 | 0.1 | Desayuno, Media Mañana, Merienda
+Lait sans lactose | 40 | 3.0 | 4.6 | 1.0 | Desayuno, Media Mañana, Merienda
+Boisson à l'avoine | 45 | 1.0 | 6.5 | 1.5 | Desayuno, Media Mañana, Merienda
+Boisson à la noix de coco | 20 | 0.1 | 2.7 | 0.9 | Desayuno, Media Mañana, Merienda
+Boisson au riz | 47 | 0.1 | 9.4 | 1.0 | Desayuno, Media Mañana, Merienda
+Jus d'orange pressé | 45 | 0.7 | 10.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Jus de pomme | 46 | 0.1 | 11.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Jus d'ananas | 50 | 0.4 | 12.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Jus de raisin | 60 | 0.4 | 14.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Jus de pêche | 43 | 0.3 | 10.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Jus de tomate | 17 | 0.8 | 3.1 | 0.1 | Media Mañana, Almuerzo, Merienda
+Lait au chocolat | 75 | 3.5 | 10.0 | 2.0 | Desayuno, Merienda
+Cola (soda) | 42 | 0.0 | 10.6 | 0.0 | Almuerzo, Cena
+Cola zéro | 0 | 0.0 | 0.0 | 0.0 | Almuerzo, Cena
+Soda à l'orange | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Soda au citron | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Thé glacé | 35 | 0.0 | 8.5 | 0.0 | Almuerzo, Merienda
+Eau tonique | 38 | 0.0 | 9.0 | 0.0 | Almuerzo, Merienda, Cena
+Boisson isotonique | 24 | 0.0 | 6.0 | 0.0 | Media Mañana, Merienda
+Boisson énergisante | 45 | 0.0 | 11.0 | 0.0 | Media Mañana, Almuerzo
+Boisson énergisante zéro | 3 | 0.0 | 0.0 | 0.0 | Media Mañana, Almuerzo
+Bière blonde | 43 | 0.5 | 3.0 | 0.0 | Almuerzo, Cena
+Bière sans alcool | 20 | 0.2 | 4.0 | 0.0 | Almuerzo, Cena
+Vin rouge | 85 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Vin blanc | 82 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Cidre | 40 | 0.0 | 3.0 | 0.0 | Almuerzo, Cena
+Champagne / Cava | 75 | 0.2 | 1.5 | 0.0 | Almuerzo, Cena
+Moût de raisin | 65 | 0.3 | 16.0 | 0.0 | Media Mañana, Almuerzo
+Kombucha | 15 | 0.1 | 3.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Kéfir de lait | 45 | 3.3 | 4.0 | 1.5 | Desayuno, Media Mañana, Merienda
+Limonade maison | 40 | 0.1 | 10.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Eau de coco | 19 | 0.7 | 3.7 | 0.2 | Media Mañana, Merienda
+Shaker de protéines (liquide) | 55 | 8.0 | 4.0 | 1.0 | Media Mañana, Merienda
+Horchata | 78 | 0.6 | 12.0 | 2.5 | Media Mañana, Merienda
+Smoothie aux fruits | 55 | 0.6 | 13.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Lait à la vanille | 70 | 3.0 | 10.0 | 1.5 | Desayuno, Merienda
+Limonade gazeuse | 35 | 0.0 | 9.0 | 0.0 | Almuerzo, Cena
+Bouillon de poulet | 15 | 1.0 | 1.0 | 0.5 | Almuerzo, Cena
+Bouillon de légumes | 10 | 0.5 | 1.5 | 0.2 | Almuerzo, Cena
+
+🇮🇹 IT - Italiano (FOOD_DB_IT_BEBIDAS)
+Acqua minerale | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Acqua frizzante | 0 | 0.0 | 0.0 | 0.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Caffè nero | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda
+Caffè espresso | 9 | 0.1 | 1.7 | 0.2 | Desayuno, Media Mañana, Almuerzo
+Caffè decaffeinato | 2 | 0.1 | 0.0 | 0.0 | Desayuno, Media Mañana, Merienda, Cena
+Tè verde | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Tè nero | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana
+Tè rosso | 1 | 0.0 | 0.2 | 0.0 | Desayuno, Media Mañana, Merienda
+Camomilla | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Infuso alla menta | 1 | 0.0 | 0.2 | 0.0 | Media Mañana, Merienda, Cena
+Latte intero | 61 | 3.2 | 4.8 | 3.6 | Desayuno, Media Mañana, Merienda
+Latte scremato | 34 | 3.4 | 4.9 | 0.1 | Desayuno, Media Mañana, Merienda
+Latte senza lattosio | 40 | 3.0 | 4.6 | 1.0 | Desayuno, Media Mañana, Merienda
+Bevanda di avena | 45 | 1.0 | 6.5 | 1.5 | Desayuno, Media Mañana, Merienda
+Bevanda al cocco | 20 | 0.1 | 2.7 | 0.9 | Desayuno, Media Mañana, Merienda
+Bevanda di riso | 47 | 0.1 | 9.4 | 1.0 | Desayuno, Media Mañana, Merienda
+Succo d'arancia fresco | 45 | 0.7 | 10.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Succo di mela | 46 | 0.1 | 11.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Succo all'ananas | 50 | 0.4 | 12.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Succo d'uva | 60 | 0.4 | 14.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Succo di pesca | 43 | 0.3 | 10.0 | 0.1 | Desayuno, Media Mañana, Merienda
+Succo di pomodoro | 17 | 0.8 | 3.1 | 0.1 | Media Mañana, Almuerzo, Merienda
+Latte al cioccolato | 75 | 3.5 | 10.0 | 2.0 | Desayuno, Merienda
+Cola | 42 | 0.0 | 10.6 | 0.0 | Almuerzo, Cena
+Cola zero | 0 | 0.0 | 0.0 | 0.0 | Almuerzo, Cena
+Aranciata | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Limonata (gassata) | 40 | 0.0 | 10.0 | 0.0 | Almuerzo, Merienda
+Tè freddo | 35 | 0.0 | 8.5 | 0.0 | Almuerzo, Merienda
+Acqua tonica | 38 | 0.0 | 9.0 | 0.0 | Almuerzo, Merienda, Cena
+Sport drink | 24 | 0.0 | 6.0 | 0.0 | Media Mañana, Merienda
+Energy drink | 45 | 0.0 | 11.0 | 0.0 | Media Mañana, Almuerzo
+Energy drink zero | 3 | 0.0 | 0.0 | 0.0 | Media Mañana, Almuerzo
+Birra chiara | 43 | 0.5 | 3.0 | 0.0 | Almuerzo, Cena
+Birra analcolica | 20 | 0.2 | 4.0 | 0.0 | Almuerzo, Cena
+Vino rosso | 85 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Vino bianco | 82 | 0.1 | 2.6 | 0.0 | Almuerzo, Cena
+Sidro | 40 | 0.0 | 3.0 | 0.0 | Almuerzo, Cena
+Spumante / Champagne | 75 | 0.2 | 1.5 | 0.0 | Almuerzo, Cena
+Mosto d'uva | 65 | 0.3 | 16.0 | 0.0 | Media Mañana, Almuerzo
+Kombucha | 15 | 0.1 | 3.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Kefir di latte | 45 | 3.3 | 4.0 | 1.5 | Desayuno, Media Mañana, Merienda
+Limonata fatta in casa | 40 | 0.1 | 10.0 | 0.0 | Media Mañana, Almuerzo, Merienda
+Acqua di cocco | 19 | 0.7 | 3.7 | 0.2 | Media Mañana, Merienda
+Frullato proteico (liquido) | 55 | 8.0 | 4.0 | 1.0 | Media Mañana, Merienda
+Horchata | 78 | 0.6 | 12.0 | 2.5 | Media Mañana, Merienda
+Frullato di frutta | 55 | 0.6 | 13.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Latte alla vaniglia | 70 | 3.0 | 10.0 | 1.5 | Desayuno, Merienda
+Gazzosa | 35 | 0.0 | 9.0 | 0.0 | Almuerzo, Cena
+Brodo di pollo | 15 | 1.0 | 1.0 | 0.5 | Almuerzo, Cena
+Brodo vegetale | 10 | 0.5 | 1.5 | 0.2 | Almuerzo, Cena

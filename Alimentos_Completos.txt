@@ -1,0 +1,409 @@
+🇪🇸 ES - Español (FOOD_DB_ES)
+Pechuga de pollo | 110 | 23.0 | 0.0 | 1.2 | Almuerzo, Cena
+Pechuga de pavo | 105 | 24.0 | 0.0 | 1.0 | Almuerzo, Cena
+Atún al natural (lata) | 116 | 26.0 | 0.0 | 1.0 | Media Mañana, Almuerzo, Merienda, Cena
+Salmón fresco | 208 | 20.0 | 0.0 | 13.0 | Almuerzo, Cena
+Huevo entero | 143 | 13.0 | 1.0 | 10.0 | Desayuno, Almuerzo, Cena
+Tofu ahumado | 160 | 15.0 | 2.0 | 9.0 | Almuerzo, Cena
+Queso fresco batido 0% | 68 | 12.0 | 4.0 | 0.2 | Desayuno, Media Mañana, Merienda, Cena
+Soja texturizada (seca) | 332 | 50.0 | 30.0 | 1.0 | Almuerzo, Cena
+Arroz integral (seco) | 360 | 8.0 | 74.0 | 3.0 | Almuerzo, Cena
+Avena (hojuelas) | 389 | 17.0 | 66.0 | 7.0 | Desayuno, Media Mañana, Merienda
+Lentejas (secas) | 352 | 25.0 | 60.0 | 1.0 | Almuerzo, Cena
+Garbanzos (secos) | 364 | 19.0 | 61.0 | 6.0 | Almuerzo, Cena
+Quinoa (seca) | 368 | 14.0 | 64.0 | 6.0 | Almuerzo, Cena
+Patata cruda | 77 | 2.0 | 17.0 | 0.1 | Almuerzo, Cena
+Pasta integral (seca) | 348 | 14.0 | 71.0 | 2.0 | Almuerzo, Cena
+Pan de centeno | 259 | 9.0 | 48.0 | 3.0 | Desayuno, Media Mañana, Merienda
+Aceite de Oliva Virgen Extra | 884 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Aguacate | 160 | 2.0 | 9.0 | 15.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Nueces | 654 | 15.0 | 14.0 | 65.0 | Desayuno, Media Mañana, Merienda
+Almendras | 579 | 21.0 | 22.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Semillas de chía | 486 | 17.0 | 42.0 | 31.0 | Desayuno, Media Mañana, Merienda
+Brócoli | 34 | 2.8 | 7.0 | 0.4 | Almuerzo, Cena
+Espinacas | 23 | 2.9 | 3.6 | 0.4 | Almuerzo, Cena
+Calabacín | 17 | 1.2 | 3.1 | 0.3 | Almuerzo, Cena
+Tomate | 18 | 0.9 | 3.9 | 0.2 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Cebolla | 40 | 1.1 | 9.0 | 0.1 | Almuerzo, Cena
+Champiñones | 22 | 3.1 | 3.3 | 0.3 | Desayuno, Almuerzo, Cena
+Manzana | 52 | 0.3 | 14.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Plátano | 89 | 1.1 | 23.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Arándanos | 57 | 0.7 | 14.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Lomo de cerdo magro | 143 | 21.0 | 0.0 | 6.0 | Almuerzo, Cena
+Ternera magra | 137 | 22.0 | 0.0 | 5.0 | Almuerzo, Cena
+Merluza | 78 | 16.0 | 0.0 | 1.0 | Almuerzo, Cena
+Bacalao fresco | 82 | 18.0 | 0.0 | 0.7 | Almuerzo, Cena
+Sardinas en lata (escurridas) | 208 | 24.0 | 0.0 | 11.0 | Almuerzo, Cena
+Gambas crudas | 99 | 24.0 | 0.2 | 0.3 | Almuerzo, Cena
+Claras de huevo | 52 | 11.0 | 0.7 | 0.2 | Desayuno, Almuerzo, Cena
+Tempeh | 192 | 20.0 | 7.6 | 10.8 | Almuerzo, Cena
+Seitán | 370 | 75.0 | 14.0 | 1.9 | Almuerzo, Cena
+Edamame | 121 | 11.9 | 9.0 | 5.2 | Media Mañana, Almuerzo, Merienda, Cena
+Queso feta | 264 | 14.0 | 4.0 | 21.0 | Almuerzo, Cena
+Queso mozzarella light | 165 | 20.0 | 2.0 | 9.0 | Almuerzo, Cena
+Queso cottage | 98 | 11.0 | 3.4 | 4.3 | Desayuno, Media Mañana, Merienda, Cena
+Leche semidesnatada | 47 | 3.3 | 4.8 | 1.5 | Desayuno, Media Mañana, Merienda
+Bebida de soja (sin azúcar) | 33 | 3.3 | 1.8 | 1.8 | Desayuno, Media Mañana, Merienda
+Bebida de almendras (sin azúcar) | 13 | 0.4 | 0.3 | 1.1 | Desayuno, Media Mañana, Merienda
+Boniato crudo | 86 | 1.6 | 20.1 | 0.1 | Almuerzo, Cena
+Cuscús integral (seco) | 350 | 12.0 | 72.0 | 2.0 | Almuerzo
+Trigo sarraceno (seco) | 343 | 13.0 | 71.5 | 3.4 | Almuerzo, Cena
+Frijoles negros (secos) | 341 | 21.6 | 62.4 | 1.4 | Almuerzo, Cena
+Alubias blancas (secas) | 333 | 23.4 | 60.3 | 0.8 | Almuerzo, Cena
+Guisantes crudos | 81 | 5.4 | 14.4 | 0.4 | Almuerzo, Cena
+Pan integral de trigo | 247 | 13.0 | 41.0 | 3.4 | Desayuno, Media Mañana, Merienda
+Tortitas de arroz | 387 | 8.2 | 81.5 | 2.8 | Media Mañana, Merienda
+Mantequilla de cacahuete | 588 | 25.0 | 20.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Pipas de calabaza | 559 | 30.2 | 10.7 | 49.0 | Media Mañana, Merienda
+Pipas de girasol | 584 | 20.8 | 20.0 | 51.5 | Media Mañana, Merienda
+Pistachos | 562 | 20.2 | 27.2 | 45.3 | Media Mañana, Merienda
+Anacardos | 553 | 18.2 | 30.2 | 43.8 | Media Mañana, Merienda
+Semillas de lino | 534 | 18.3 | 28.9 | 42.2 | Desayuno, Media Mañana, Merienda
+Aceite de coco | 862 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Aceitunas verdes | 115 | 0.8 | 3.8 | 10.7 | Media Mañana, Almuerzo, Merienda
+Coliflor | 25 | 1.9 | 4.9 | 0.3 | Almuerzo, Cena
+Zanahoria | 41 | 0.9 | 9.6 | 0.2 | Media Mañana, Almuerzo, Merienda, Cena
+Pimiento rojo | 31 | 1.0 | 6.0 | 0.3 | Almuerzo, Cena
+Berenjena | 25 | 1.0 | 5.9 | 0.2 | Almuerzo, Cena
+Espárragos verdes | 20 | 2.2 | 3.9 | 0.1 | Almuerzo, Cena
+Judías verdes | 31 | 1.8 | 7.0 | 0.2 | Almuerzo, Cena
+Pepino | 15 | 0.6 | 3.6 | 0.1 | Almuerzo, Cena
+Lechuga iceberg | 14 | 0.9 | 3.0 | 0.1 | Almuerzo, Cena
+Rúcula | 25 | 2.6 | 3.7 | 0.7 | Almuerzo, Cena
+Puerro | 61 | 1.5 | 14.2 | 0.3 | Almuerzo, Cena
+Ajo | 149 | 6.4 | 33.1 | 0.5 | Almuerzo, Cena
+Naranja | 47 | 0.9 | 11.8 | 0.1 | Desayuno, Media Mañana, Merienda
+Fresa | 32 | 0.7 | 7.7 | 0.3 | Desayuno, Media Mañana, Merienda
+Kiwi | 61 | 1.1 | 14.7 | 0.5 | Desayuno, Media Mañana, Merienda
+Pera | 57 | 0.4 | 15.2 | 0.1 | Desayuno, Media Mañana, Merienda
+Piña | 50 | 0.5 | 13.1 | 0.1 | Desayuno, Media Mañana, Merienda
+Sandía | 30 | 0.6 | 7.6 | 0.2 | Media Mañana, Merienda
+Frambuesas | 52 | 1.2 | 11.9 | 0.6 | Desayuno, Media Mañana, Merienda 
+
+🇬🇧 EN - English (FOOD_DB_EN)
+Chicken breast | 110 | 23.0 | 0.0 | 1.2 | Almuerzo, Cena
+Turkey breast | 105 | 24.0 | 0.0 | 1.0 | Almuerzo, Cena
+Canned tuna in water | 116 | 26.0 | 0.0 | 1.0 | Media Mañana, Almuerzo, Merienda, Cena
+Fresh salmon | 208 | 20.0 | 0.0 | 13.0 | Almuerzo, Cena
+Whole egg | 143 | 13.0 | 1.0 | 10.0 | Desayuno, Almuerzo, Cena
+Smoked tofu | 160 | 15.0 | 2.0 | 9.0 | Almuerzo, Cena
+Fat-free quark | 68 | 12.0 | 4.0 | 0.2 | Desayuno, Media Mañana, Merienda, Cena
+Textured soy protein (dry) | 332 | 50.0 | 30.0 | 1.0 | Almuerzo, Cena
+Brown rice (dry) | 360 | 8.0 | 74.0 | 3.0 | Almuerzo, Cena
+Rolled oats | 389 | 17.0 | 66.0 | 7.0 | Desayuno, Media Mañana, Merienda
+Lentils (dry) | 352 | 25.0 | 60.0 | 1.0 | Almuerzo, Cena
+Chickpeas (dry) | 364 | 19.0 | 61.0 | 6.0 | Almuerzo, Cena
+Quinoa (dry) | 368 | 14.0 | 64.0 | 6.0 | Almuerzo, Cena
+Raw potato | 77 | 2.0 | 17.0 | 0.1 | Almuerzo, Cena
+Whole wheat pasta (dry) | 348 | 14.0 | 71.0 | 2.0 | Almuerzo, Cena
+Rye bread | 259 | 9.0 | 48.0 | 3.0 | Desayuno, Media Mañana, Merienda
+Extra Virgin Olive Oil | 884 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Avocado | 160 | 2.0 | 9.0 | 15.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Walnuts | 654 | 15.0 | 14.0 | 65.0 | Desayuno, Media Mañana, Merienda
+Almonds | 579 | 21.0 | 22.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Chia seeds | 486 | 17.0 | 42.0 | 31.0 | Desayuno, Media Mañana, Merienda
+Broccoli | 34 | 2.8 | 7.0 | 0.4 | Almuerzo, Cena
+Spinach | 23 | 2.9 | 3.6 | 0.4 | Almuerzo, Cena
+Zucchini | 17 | 1.2 | 3.1 | 0.3 | Almuerzo, Cena
+Tomato | 18 | 0.9 | 3.9 | 0.2 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Onion | 40 | 1.1 | 9.0 | 0.1 | Almuerzo, Cena
+Mushrooms | 22 | 3.1 | 3.3 | 0.3 | Desayuno, Almuerzo, Cena
+Apple | 52 | 0.3 | 14.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Banana | 89 | 1.1 | 23.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Blueberries | 57 | 0.7 | 14.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Lean pork loin | 143 | 21.0 | 0.0 | 6.0 | Almuerzo, Cena
+Lean beef | 137 | 22.0 | 0.0 | 5.0 | Almuerzo, Cena
+Hake | 78 | 16.0 | 0.0 | 1.0 | Almuerzo, Cena
+Fresh cod | 82 | 18.0 | 0.0 | 0.7 | Almuerzo, Cena
+Sardines (drained) | 208 | 24.0 | 0.0 | 11.0 | Almuerzo, Cena
+Raw shrimp | 99 | 24.0 | 0.2 | 0.3 | Almuerzo, Cena
+Egg whites | 52 | 11.0 | 0.7 | 0.2 | Desayuno, Almuerzo, Cena
+Tempeh | 192 | 20.0 | 7.6 | 10.8 | Almuerzo, Cena
+Seitan | 370 | 75.0 | 14.0 | 1.9 | Almuerzo, Cena
+Edamame | 121 | 11.9 | 9.0 | 5.2 | Media Mañana, Almuerzo, Merienda, Cena
+Feta cheese | 264 | 14.0 | 4.0 | 21.0 | Almuerzo, Cena
+Light mozzarella | 165 | 20.0 | 2.0 | 9.0 | Almuerzo, Cena
+Cottage cheese | 98 | 11.0 | 3.4 | 4.3 | Desayuno, Media Mañana, Merienda, Cena
+Semi-skimmed milk | 47 | 3.3 | 4.8 | 1.5 | Desayuno, Media Mañana, Merienda
+Soy milk (unsweetened) | 33 | 3.3 | 1.8 | 1.8 | Desayuno, Media Mañana, Merienda
+Almond milk (unsweetened) | 13 | 0.4 | 0.3 | 1.1 | Desayuno, Media Mañana, Merienda
+Raw sweet potato | 86 | 1.6 | 20.1 | 0.1 | Almuerzo, Cena
+Whole wheat couscous (dry) | 350 | 12.0 | 72.0 | 2.0 | Almuerzo
+Buckwheat (dry) | 343 | 13.0 | 71.5 | 3.4 | Almuerzo, Cena
+Black beans (dry) | 341 | 21.6 | 62.4 | 1.4 | Almuerzo, Cena
+White beans (dry) | 333 | 23.4 | 60.3 | 0.8 | Almuerzo, Cena
+Raw peas | 81 | 5.4 | 14.4 | 0.4 | Almuerzo, Cena
+Whole wheat bread | 247 | 13.0 | 41.0 | 3.4 | Desayuno, Media Mañana, Merienda
+Rice cakes | 387 | 8.2 | 81.5 | 2.8 | Media Mañana, Merienda
+Peanut butter | 588 | 25.0 | 20.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Pumpkin seeds | 559 | 30.2 | 10.7 | 49.0 | Media Mañana, Merienda
+Sunflower seeds | 584 | 20.8 | 20.0 | 51.5 | Media Mañana, Merienda
+Pistachios | 562 | 20.2 | 27.2 | 45.3 | Media Mañana, Merienda
+Cashews | 553 | 18.2 | 30.2 | 43.8 | Media Mañana, Merienda
+Flaxseeds | 534 | 18.3 | 28.9 | 42.2 | Desayuno, Media Mañana, Merienda
+Coconut oil | 862 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Green olives | 115 | 0.8 | 3.8 | 10.7 | Media Mañana, Almuerzo, Merienda
+Cauliflower | 25 | 1.9 | 4.9 | 0.3 | Almuerzo, Cena
+Carrot | 41 | 0.9 | 9.6 | 0.2 | Media Mañana, Almuerzo, Merienda, Cena
+Red bell pepper | 31 | 1.0 | 6.0 | 0.3 | Almuerzo, Cena
+Eggplant | 25 | 1.0 | 5.9 | 0.2 | Almuerzo, Cena
+Green asparagus | 20 | 2.2 | 3.9 | 0.1 | Almuerzo, Cena
+Green beans | 31 | 1.8 | 7.0 | 0.2 | Almuerzo, Cena
+Cucumber | 15 | 0.6 | 3.6 | 0.1 | Almuerzo, Cena
+Iceberg lettuce | 14 | 0.9 | 3.0 | 0.1 | Almuerzo, Cena
+Arugula | 25 | 2.6 | 3.7 | 0.7 | Almuerzo, Cena
+Leek | 61 | 1.5 | 14.2 | 0.3 | Almuerzo, Cena
+Garlic | 149 | 6.4 | 33.1 | 0.5 | Almuerzo, Cena
+Orange | 47 | 0.9 | 11.8 | 0.1 | Desayuno, Media Mañana, Merienda
+Strawberry | 32 | 0.7 | 7.7 | 0.3 | Desayuno, Media Mañana, Merienda
+Kiwi | 61 | 1.1 | 14.7 | 0.5 | Desayuno, Media Mañana, Merienda
+Pear | 57 | 0.4 | 15.2 | 0.1 | Desayuno, Media Mañana, Merienda
+Pineapple | 50 | 0.5 | 13.1 | 0.1 | Desayuno, Media Mañana, Merienda
+Watermelon | 30 | 0.6 | 7.6 | 0.2 | Media Mañana, Merienda
+Raspberries | 52 | 1.2 | 11.9 | 0.6 | Desayuno, Media Mañana, Merienda
+
+🇩🇪 DE - Deutsch (FOOD_DB_DE)
+Hähnchenbrust | 110 | 23.0 | 0.0 | 1.2 | Almuerzo, Cena
+Putenbrust | 105 | 24.0 | 0.0 | 1.0 | Almuerzo, Cena
+Thunfisch im eigenen Saft | 116 | 26.0 | 0.0 | 1.0 | Media Mañana, Almuerzo, Merienda, Cena
+Frischer Lachs | 208 | 20.0 | 0.0 | 13.0 | Almuerzo, Cena
+Ganzes Ei | 143 | 13.0 | 1.0 | 10.0 | Desayuno, Almuerzo, Cena
+Räuchertofu | 160 | 15.0 | 2.0 | 9.0 | Almuerzo, Cena
+Magerquark | 68 | 12.0 | 4.0 | 0.2 | Desayuno, Media Mañana, Merienda, Cena
+Sojaschnetzel (trocken) | 332 | 50.0 | 30.0 | 1.0 | Almuerzo, Cena
+Vollkornreis (trocken) | 360 | 8.0 | 74.0 | 3.0 | Almuerzo, Cena
+Haferflocken | 389 | 17.0 | 66.0 | 7.0 | Desayuno, Media Mañana, Merienda
+Linsen (trocken) | 352 | 25.0 | 60.0 | 1.0 | Almuerzo, Cena
+Kichererbsen (trocken) | 364 | 19.0 | 61.0 | 6.0 | Almuerzo, Cena
+Quinoa (trocken) | 368 | 14.0 | 64.0 | 6.0 | Almuerzo, Cena
+Rohe Kartoffel | 77 | 2.0 | 17.0 | 0.1 | Almuerzo, Cena
+Vollkornnudeln (trocken) | 348 | 14.0 | 71.0 | 2.0 | Almuerzo, Cena
+Roggenbrot | 259 | 9.0 | 48.0 | 3.0 | Desayuno, Media Mañana, Merienda
+Natives Olivenöl Extra | 884 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Avocado | 160 | 2.0 | 9.0 | 15.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Walnüsse | 654 | 15.0 | 14.0 | 65.0 | Desayuno, Media Mañana, Merienda
+Mandeln | 579 | 21.0 | 22.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Chiasamen | 486 | 17.0 | 42.0 | 31.0 | Desayuno, Media Mañana, Merienda
+Brokkoli | 34 | 2.8 | 7.0 | 0.4 | Almuerzo, Cena
+Spinat | 23 | 2.9 | 3.6 | 0.4 | Almuerzo, Cena
+Zucchini | 17 | 1.2 | 3.1 | 0.3 | Almuerzo, Cena
+Tomate | 18 | 0.9 | 3.9 | 0.2 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Zwiebel | 40 | 1.1 | 9.0 | 0.1 | Almuerzo, Cena
+Champignons | 22 | 3.1 | 3.3 | 0.3 | Desayuno, Almuerzo, Cena
+Apfel | 52 | 0.3 | 14.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Banane | 89 | 1.1 | 23.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Blaubeeren | 57 | 0.7 | 14.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Schweinelende mager | 143 | 21.0 | 0.0 | 6.0 | Almuerzo, Cena
+Mageres Rindfleisch | 137 | 22.0 | 0.0 | 5.0 | Almuerzo, Cena
+Seehecht | 78 | 16.0 | 0.0 | 1.0 | Almuerzo, Cena
+Frischer Kabeljau | 82 | 18.0 | 0.0 | 0.7 | Almuerzo, Cena
+Sardinen (abgetropft) | 208 | 24.0 | 0.0 | 11.0 | Almuerzo, Cena
+Garnelen roh | 99 | 24.0 | 0.2 | 0.3 | Almuerzo, Cena
+Eiklar | 52 | 11.0 | 0.7 | 0.2 | Desayuno, Almuerzo, Cena
+Tempeh | 192 | 20.0 | 7.6 | 10.8 | Almuerzo, Cena
+Seitan | 370 | 75.0 | 14.0 | 1.9 | Almuerzo, Cena
+Edamame | 121 | 11.9 | 9.0 | 5.2 | Media Mañana, Almuerzo, Merienda, Cena
+Feta-Käse | 264 | 14.0 | 4.0 | 21.0 | Almuerzo, Cena
+Mozzarella light | 165 | 20.0 | 2.0 | 9.0 | Almuerzo, Cena
+Hüttenkäse | 98 | 11.0 | 3.4 | 4.3 | Desayuno, Media Mañana, Merienda, Cena
+Fettarme Milch | 47 | 3.3 | 4.8 | 1.5 | Desayuno, Media Mañana, Merienda
+Sojadrink (ungesüßt) | 33 | 3.3 | 1.8 | 1.8 | Desayuno, Media Mañana, Merienda
+Mandeldrink (ungesüßt) | 13 | 0.4 | 0.3 | 1.1 | Desayuno, Media Mañana, Merienda
+Süßkartoffel roh | 86 | 1.6 | 20.1 | 0.1 | Almuerzo, Cena
+Vollkorn-Couscous (trocken) | 350 | 12.0 | 72.0 | 2.0 | Almuerzo
+Buchweizen (trocken) | 343 | 13.0 | 71.5 | 3.4 | Almuerzo, Cena
+Schwarze Bohnen (trocken) | 341 | 21.6 | 62.4 | 1.4 | Almuerzo, Cena
+Weiße Bohnen (trocken) | 333 | 23.4 | 60.3 | 0.8 | Almuerzo, Cena
+Erbsen roh | 81 | 5.4 | 14.4 | 0.4 | Almuerzo, Cena
+Vollkornweizenbrot | 247 | 13.0 | 41.0 | 3.4 | Desayuno, Media Mañana, Merienda
+Reiswaffeln | 387 | 8.2 | 81.5 | 2.8 | Media Mañana, Merienda
+Erdnussbutter | 588 | 25.0 | 20.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Kürbiskerne | 559 | 30.2 | 10.7 | 49.0 | Media Mañana, Merienda
+Sonnenblumenkerne | 584 | 20.8 | 20.0 | 51.5 | Media Mañana, Merienda
+Pistazien | 562 | 20.2 | 27.2 | 45.3 | Media Mañana, Merienda
+Cashewnüsse | 553 | 18.2 | 30.2 | 43.8 | Media Mañana, Merienda
+Leinsamen | 534 | 18.3 | 28.9 | 42.2 | Desayuno, Media Mañana, Merienda
+Kokosöl | 862 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Grüne Oliven | 115 | 0.8 | 3.8 | 10.7 | Media Mañana, Almuerzo, Merienda
+Blumenkohl | 25 | 1.9 | 4.9 | 0.3 | Almuerzo, Cena
+Karotte | 41 | 0.9 | 9.6 | 0.2 | Media Mañana, Almuerzo, Merienda, Cena
+Rote Paprika | 31 | 1.0 | 6.0 | 0.3 | Almuerzo, Cena
+Aubergine | 25 | 1.0 | 5.9 | 0.2 | Almuerzo, Cena
+Grüner Spargel | 20 | 2.2 | 3.9 | 0.1 | Almuerzo, Cena
+Grüne Bohnen | 31 | 1.8 | 7.0 | 0.2 | Almuerzo, Cena
+Gurke | 15 | 0.6 | 3.6 | 0.1 | Almuerzo, Cena
+Eisbergsalat | 14 | 0.9 | 3.0 | 0.1 | Almuerzo, Cena
+Rucola | 25 | 2.6 | 3.7 | 0.7 | Almuerzo, Cena
+Lauch | 61 | 1.5 | 14.2 | 0.3 | Almuerzo, Cena
+Knoblauch | 149 | 6.4 | 33.1 | 0.5 | Almuerzo, Cena
+Orange | 47 | 0.9 | 11.8 | 0.1 | Desayuno, Media Mañana, Merienda
+Erdbeere | 32 | 0.7 | 7.7 | 0.3 | Desayuno, Media Mañana, Merienda
+Kiwi | 61 | 1.1 | 14.7 | 0.5 | Desayuno, Media Mañana, Merienda
+Birne | 57 | 0.4 | 15.2 | 0.1 | Desayuno, Media Mañana, Merienda
+Ananas | 50 | 0.5 | 13.1 | 0.1 | Desayuno, Media Mañana, Merienda
+Wassermelone | 30 | 0.6 | 7.6 | 0.2 | Media Mañana, Merienda
+Himbeeren | 52 | 1.2 | 11.9 | 0.6 | Desayuno, Media Mañana, Merienda 
+
+🇫🇷 FR - Français (FOOD_DB_FR)
+Blanc de poulet | 110 | 23.0 | 0.0 | 1.2 | Almuerzo, Cena
+Blanc de dinde | 105 | 24.0 | 0.0 | 1.0 | Almuerzo, Cena
+Thon au naturel | 116 | 26.0 | 0.0 | 1.0 | Media Mañana, Almuerzo, Merienda, Cena
+Saumon frais | 208 | 20.0 | 0.0 | 13.0 | Almuerzo, Cena
+Œuf entier | 143 | 13.0 | 1.0 | 10.0 | Desayuno, Almuerzo, Cena
+Tofu fumé | 160 | 15.0 | 2.0 | 9.0 | Almuerzo, Cena
+Fromage blanc 0% | 68 | 12.0 | 4.0 | 0.2 | Desayuno, Media Mañana, Merienda, Cena
+Protéines de soja texturées (sèches) | 332 | 50.0 | 30.0 | 1.0 | Almuerzo, Cena
+Riz complet (sec) | 360 | 8.0 | 74.0 | 3.0 | Almuerzo, Cena
+Flocons d'avoine | 389 | 17.0 | 66.0 | 7.0 | Desayuno, Media Mañana, Merienda
+Lentilles (sèches) | 352 | 25.0 | 60.0 | 1.0 | Almuerzo, Cena
+Pois chiches (secs) | 364 | 19.0 | 61.0 | 6.0 | Almuerzo, Cena
+Quinoa (sec) | 368 | 14.0 | 64.0 | 6.0 | Almuerzo, Cena
+Pomme de terre crue | 77 | 2.0 | 17.0 | 0.1 | Almuerzo, Cena
+Pâtes complètes (sèches) | 348 | 14.0 | 71.0 | 2.0 | Almuerzo, Cena
+Pain de seigle | 259 | 9.0 | 48.0 | 3.0 | Desayuno, Media Mañana, Merienda
+Huile d'olive extra vierge | 884 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Avocat | 160 | 2.0 | 9.0 | 15.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Noix | 654 | 15.0 | 14.0 | 65.0 | Desayuno, Media Mañana, Merienda
+Amandes | 579 | 21.0 | 22.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Graines de chia | 486 | 17.0 | 42.0 | 31.0 | Desayuno, Media Mañana, Merienda
+Brocoli | 34 | 2.8 | 7.0 | 0.4 | Almuerzo, Cena
+Épinards | 23 | 2.9 | 3.6 | 0.4 | Almuerzo, Cena
+Courgette | 17 | 1.2 | 3.1 | 0.3 | Almuerzo, Cena
+Tomate | 18 | 0.9 | 3.9 | 0.2 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Oignon | 40 | 1.1 | 9.0 | 0.1 | Almuerzo, Cena
+Champignons | 22 | 3.1 | 3.3 | 0.3 | Desayuno, Almuerzo, Cena
+Pomme | 52 | 0.3 | 14.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Banane | 89 | 1.1 | 23.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Myrtilles | 57 | 0.7 | 14.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Longe de porc maigre | 143 | 21.0 | 0.0 | 6.0 | Almuerzo, Cena
+Bœuf maigre | 137 | 22.0 | 0.0 | 5.0 | Almuerzo, Cena
+Colin | 78 | 16.0 | 0.0 | 1.0 | Almuerzo, Cena
+Cabillaud frais | 82 | 18.0 | 0.0 | 0.7 | Almuerzo, Cena
+Sardines (égouttées) | 208 | 24.0 | 0.0 | 11.0 | Almuerzo, Cena
+Crevettes crues | 99 | 24.0 | 0.2 | 0.3 | Almuerzo, Cena
+Blancs d'œufs | 52 | 11.0 | 0.7 | 0.2 | Desayuno, Almuerzo, Cena
+Tempeh | 192 | 20.0 | 7.6 | 10.8 | Almuerzo, Cena
+Seitan | 370 | 75.0 | 14.0 | 1.9 | Almuerzo, Cena
+Edamame | 121 | 11.9 | 9.0 | 5.2 | Media Mañana, Almuerzo, Merienda, Cena
+Fromage feta | 264 | 14.0 | 4.0 | 21.0 | Almuerzo, Cena
+Mozzarella allégée | 165 | 20.0 | 2.0 | 9.0 | Almuerzo, Cena
+Fromage cottage | 98 | 11.0 | 3.4 | 4.3 | Desayuno, Media Mañana, Merienda, Cena
+Lait demi-écrémé | 47 | 3.3 | 4.8 | 1.5 | Desayuno, Media Mañana, Merienda
+Boisson au soja (sans sucre) | 33 | 3.3 | 1.8 | 1.8 | Desayuno, Media Mañana, Merienda
+Boisson aux amandes (sans sucre) | 13 | 0.4 | 0.3 | 1.1 | Desayuno, Media Mañana, Merienda
+Patate douce crue | 86 | 1.6 | 20.1 | 0.1 | Almuerzo, Cena
+Couscous de blé entier (sec) | 350 | 12.0 | 72.0 | 2.0 | Almuerzo
+Sarrasin (sec) | 343 | 13.0 | 71.5 | 3.4 | Almuerzo, Cena
+Haricots noirs (secs) | 341 | 21.6 | 62.4 | 1.4 | Almuerzo, Cena
+Haricots blancs (secs) | 333 | 23.4 | 60.3 | 0.8 | Almuerzo, Cena
+Petits pois crus | 81 | 5.4 | 14.4 | 0.4 | Almuerzo, Cena
+Pain de blé entier | 247 | 13.0 | 41.0 | 3.4 | Desayuno, Media Mañana, Merienda
+Galettes de riz | 387 | 8.2 | 81.5 | 2.8 | Media Mañana, Merienda
+Beurre de cacahuète | 588 | 25.0 | 20.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Graines de courge | 559 | 30.2 | 10.7 | 49.0 | Media Mañana, Merienda
+Graines de tournesol | 584 | 20.8 | 20.0 | 51.5 | Media Mañana, Merienda
+Pistaches | 562 | 20.2 | 27.2 | 45.3 | Media Mañana, Merienda
+Noix de cajou | 553 | 18.2 | 30.2 | 43.8 | Media Mañana, Merienda
+Graines de lin | 534 | 18.3 | 28.9 | 42.2 | Desayuno, Media Mañana, Merienda
+Huile de noix de coco | 862 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Olives vertes | 115 | 0.8 | 3.8 | 10.7 | Media Mañana, Almuerzo, Merienda
+Chou-fleur | 25 | 1.9 | 4.9 | 0.3 | Almuerzo, Cena
+Carotte | 41 | 0.9 | 9.6 | 0.2 | Media Mañana, Almuerzo, Merienda, Cena
+Poivron rouge | 31 | 1.0 | 6.0 | 0.3 | Almuerzo, Cena
+Aubergine | 25 | 1.0 | 5.9 | 0.2 | Almuerzo, Cena
+Asperges vertes | 20 | 2.2 | 3.9 | 0.1 | Almuerzo, Cena
+Haricots verts | 31 | 1.8 | 7.0 | 0.2 | Almuerzo, Cena
+Concombre | 15 | 0.6 | 3.6 | 0.1 | Almuerzo, Cena
+Laitue iceberg | 14 | 0.9 | 3.0 | 0.1 | Almuerzo, Cena
+Roquette | 25 | 2.6 | 3.7 | 0.7 | Almuerzo, Cena
+Poireau | 61 | 1.5 | 14.2 | 0.3 | Almuerzo, Cena
+Ail | 149 | 6.4 | 33.1 | 0.5 | Almuerzo, Cena
+Orange | 47 | 0.9 | 11.8 | 0.1 | Desayuno, Media Mañana, Merienda
+Fraise | 32 | 0.7 | 7.7 | 0.3 | Desayuno, Media Mañana, Merienda
+Kiwi | 61 | 1.1 | 14.7 | 0.5 | Desayuno, Media Mañana, Merienda
+Poire | 57 | 0.4 | 15.2 | 0.1 | Desayuno, Media Mañana, Merienda
+Ananas | 50 | 0.5 | 13.1 | 0.1 | Desayuno, Media Mañana, Merienda
+Pastèque | 30 | 0.6 | 7.6 | 0.2 | Media Mañana, Merienda
+Framboises | 52 | 1.2 | 11.9 | 0.6 | Desayuno, Media Mañana, Merienda
+
+🇮🇹 IT - Italiano (FOOD_DB_IT)
+Petto di pollo | 110 | 23.0 | 0.0 | 1.2 | Almuerzo, Cena
+Petto di tacchino | 105 | 24.0 | 0.0 | 1.0 | Almuerzo, Cena
+Tonno al naturale | 116 | 26.0 | 0.0 | 1.0 | Media Mañana, Almuerzo, Merienda, Cena
+Salmone fresco | 208 | 20.0 | 0.0 | 13.0 | Almuerzo, Cena
+Uovo intero | 143 | 13.0 | 1.0 | 10.0 | Desayuno, Almuerzo, Cena
+Tofu affumicato | 160 | 15.0 | 2.0 | 9.0 | Almuerzo, Cena
+Formaggio fresco magro 0% | 68 | 12.0 | 4.0 | 0.2 | Desayuno, Media Mañana, Merienda, Cena
+Soia testurizzata (secca) | 332 | 50.0 | 30.0 | 1.0 | Almuerzo, Cena
+Riso integrale (secco) | 360 | 8.0 | 74.0 | 3.0 | Almuerzo, Cena
+Avena (fiocchi) | 389 | 17.0 | 66.0 | 7.0 | Desayuno, Media Mañana, Merienda
+Lenticchie (secche) | 352 | 25.0 | 60.0 | 1.0 | Almuerzo, Cena
+Ceci (secchi) | 364 | 19.0 | 61.0 | 6.0 | Almuerzo, Cena
+Quinoa (secca) | 368 | 14.0 | 64.0 | 6.0 | Almuerzo, Cena
+Patata cruda | 77 | 2.0 | 17.0 | 0.1 | Almuerzo, Cena
+Pasta integrale (secca) | 348 | 14.0 | 71.0 | 2.0 | Almuerzo, Cena
+Pane di segale | 259 | 9.0 | 48.0 | 3.0 | Desayuno, Media Mañana, Merienda
+Olio extravergine di oliva | 884 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Avocado | 160 | 2.0 | 9.0 | 15.0 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Noci | 654 | 15.0 | 14.0 | 65.0 | Desayuno, Media Mañana, Merienda
+Mandorle | 579 | 21.0 | 22.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Semi di chia | 486 | 17.0 | 42.0 | 31.0 | Desayuno, Media Mañana, Merienda
+Broccoli | 34 | 2.8 | 7.0 | 0.4 | Almuerzo, Cena
+Spinaci | 23 | 2.9 | 3.6 | 0.4 | Almuerzo, Cena
+Zucchine | 17 | 1.2 | 3.1 | 0.3 | Almuerzo, Cena
+Pomodoro | 18 | 0.9 | 3.9 | 0.2 | Desayuno, Media Mañana, Almuerzo, Merienda, Cena
+Cipolla | 40 | 1.1 | 9.0 | 0.1 | Almuerzo, Cena
+Funghi | 22 | 3.1 | 3.3 | 0.3 | Desayuno, Almuerzo, Cena
+Mela | 52 | 0.3 | 14.0 | 0.2 | Desayuno, Media Mañana, Merienda
+Banana | 89 | 1.1 | 23.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Mirtilli | 57 | 0.7 | 14.0 | 0.3 | Desayuno, Media Mañana, Merienda
+Lombo di maiale magro | 143 | 21.0 | 0.0 | 6.0 | Almuerzo, Cena
+Manzo magro | 137 | 22.0 | 0.0 | 5.0 | Almuerzo, Cena
+Nasello | 78 | 16.0 | 0.0 | 1.0 | Almuerzo, Cena
+Merluzzo fresco | 82 | 18.0 | 0.0 | 0.7 | Almuerzo, Cena
+Sardine (sgocciolate) | 208 | 24.0 | 0.0 | 11.0 | Almuerzo, Cena
+Gamberi crudi | 99 | 24.0 | 0.2 | 0.3 | Almuerzo, Cena
+Albumi d'uovo | 52 | 11.0 | 0.7 | 0.2 | Desayuno, Almuerzo, Cena
+Tempeh | 192 | 20.0 | 7.6 | 10.8 | Almuerzo, Cena
+Seitan | 370 | 75.0 | 14.0 | 1.9 | Almuerzo, Cena
+Edamame | 121 | 11.9 | 9.0 | 5.2 | Media Mañana, Almuerzo, Merienda, Cena
+Formaggio feta | 264 | 14.0 | 4.0 | 21.0 | Almuerzo, Cena
+Mozzarella light | 165 | 20.0 | 2.0 | 9.0 | Almuerzo, Cena
+Fiocchi di latte | 98 | 11.0 | 3.4 | 4.3 | Desayuno, Media Mañana, Merienda, Cena
+Latte parzialmente scremato | 47 | 3.3 | 4.8 | 1.5 | Desayuno, Media Mañana, Merienda
+Bevanda di soia (senza zucchero) | 33 | 3.3 | 1.8 | 1.8 | Desayuno, Media Mañana, Merienda
+Bevanda di mandorla (senza zucchero) | 13 | 0.4 | 0.3 | 1.1 | Desayuno, Media Mañana, Merienda
+Patata dolce cruda | 86 | 1.6 | 20.1 | 0.1 | Almuerzo, Cena
+Couscous integrale (secco) | 350 | 12.0 | 72.0 | 2.0 | Almuerzo
+Grano saraceno (secco) | 343 | 13.0 | 71.5 | 3.4 | Almuerzo, Cena
+Fagioli neri (secchi) | 341 | 21.6 | 62.4 | 1.4 | Almuerzo, Cena
+Fagioli bianchi (secchi) | 333 | 23.4 | 60.3 | 0.8 | Almuerzo, Cena
+Piselli crudi | 81 | 5.4 | 14.4 | 0.4 | Almuerzo, Cena
+Pane integrale di frumento | 247 | 13.0 | 41.0 | 3.4 | Desayuno, Media Mañana, Merienda
+Gallette di riso | 387 | 8.2 | 81.5 | 2.8 | Media Mañana, Merienda
+Burro di arachidi | 588 | 25.0 | 20.0 | 50.0 | Desayuno, Media Mañana, Merienda
+Semi di zucca | 559 | 30.2 | 10.7 | 49.0 | Media Mañana, Merienda
+Semi di girasole | 584 | 20.8 | 20.0 | 51.5 | Media Mañana, Merienda
+Pistacchi | 562 | 20.2 | 27.2 | 45.3 | Media Mañana, Merienda
+Anacardi | 553 | 18.2 | 30.2 | 43.8 | Media Mañana, Merienda
+Semi di lino | 534 | 18.3 | 28.9 | 42.2 | Desayuno, Media Mañana, Merienda
+Olio di cocco | 862 | 0.0 | 0.0 | 100.0 | Desayuno, Almuerzo, Cena
+Olive verdi | 115 | 0.8 | 3.8 | 10.7 | Media Mañana, Almuerzo, Merienda
+Cavolfiore | 25 | 1.9 | 4.9 | 0.3 | Almuerzo, Cena
+Carota | 41 | 0.9 | 9.6 | 0.2 | Media Mañana, Almuerzo, Merienda, Cena
+Peperone rosso | 31 | 1.0 | 6.0 | 0.3 | Almuerzo, Cena
+Melanzana | 25 | 1.0 | 5.9 | 0.2 | Almuerzo, Cena
+Asparagi verdi | 20 | 2.2 | 3.9 | 0.1 | Almuerzo, Cena
+Fagiolini | 31 | 1.8 | 7.0 | 0.2 | Almuerzo, Cena
+Cetriolo | 15 | 0.6 | 3.6 | 0.1 | Almuerzo, Cena
+Lattuga iceberg | 14 | 0.9 | 3.0 | 0.1 | Almuerzo, Cena
+Rucola | 25 | 2.6 | 3.7 | 0.7 | Almuerzo, Cena
+Porro | 61 | 1.5 | 14.2 | 0.3 | Almuerzo, Cena
+Aglio | 149 | 6.4 | 33.1 | 0.5 | Almuerzo, Cena
+Arancia | 47 | 0.9 | 11.8 | 0.1 | Desayuno, Media Mañana, Merienda
+Fragola | 32 | 0.7 | 7.7 | 0.3 | Desayuno, Media Mañana, Merienda
+Kiwi | 61 | 1.1 | 14.7 | 0.5 | Desayuno, Media Mañana, Merienda
+Pera | 57 | 0.4 | 15.2 | 0.1 | Desayuno, Media Mañana, Merienda
+Ananas | 50 | 0.5 | 13.1 | 0.1 | Desayuno, Media Mañana, Merienda
+Anguria | 30 | 0.6 | 7.6 | 0.2 | Media Mañana, Merienda
+Lamponi | 52 | 1.2 | 11.9 | 0.6 | Desayuno, Media Mañana, Merienda
