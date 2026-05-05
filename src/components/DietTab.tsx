@@ -1,16 +1,15 @@
 import { useMemo, useState, useCallback } from "react";
-import { Plus, Apple, RefreshCw, AlertTriangle } from "lucide-react";
+import { Apple, RefreshCw, AlertTriangle, Eye } from "lucide-react";
 import { useAppStore } from "../store/useAppStore";
-import { generateDailyMenu, SuggestedMeal, SuggestedItem } from "../lib/dietEngine";
+import { generateDailyMenu, SuggestedItem } from "../lib/dietEngine";
 import { useTranslation } from "react-i18next";
-import { dailyTarget, todayISO } from "../lib/calc";
+import { dailyTarget } from "../lib/calc";
 
 export function DietTab() {
   const { t } = useTranslation();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const profile = account.profile;
   const setProfile = useAppStore(s => s.setProfile);
-  const setFoods = useAppStore(s => s.setFoods);
 
   const preference = profile.dietPreference || "mediterranea";
   const target = dailyTarget(profile);
@@ -60,45 +59,6 @@ export function DietTab() {
     [target, preference, profile.goal, refreshKey]
   );
 
-  const handleAdd = (mealSlot: SuggestedMeal, itm: SuggestedItem) => {
-    const newFood = {
-      id: crypto.randomUUID(),
-      name: getItemDisplayName(itm),
-      calories: itm.calories,
-      grams: itm.grams,
-      protein: itm.protein,
-      carbs: itm.carbs,
-      fat: itm.fat,
-      fiber: itm.fiber,
-      ig: itm.ig,
-      sodiumLevel: itm.sodiumLevel,
-      meal: mealSlot.meal,
-      time: new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false }),
-      date: todayISO(),
-    };
-    setFoods((prev) => [...prev, newFood]);
-  };
-
-  const handleAddAll = (mealSlot: SuggestedMeal) => {
-    const time = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false });
-    const newFoods = mealSlot.items.map((itm) => ({
-      id: crypto.randomUUID(),
-      name: getItemDisplayName(itm),
-      calories: itm.calories,
-      grams: itm.grams,
-      protein: itm.protein,
-      carbs: itm.carbs,
-      fat: itm.fat,
-      fiber: itm.fiber,
-      ig: itm.ig,
-      sodiumLevel: itm.sodiumLevel,
-      meal: mealSlot.meal,
-      time,
-      date: todayISO(),
-    }));
-    setFoods((prev) => [...prev, ...newFoods]);
-  };
-
   return (
     <div className="px-4 pt-4 pb-28 space-y-4">
       <header className="flex justify-between items-start">
@@ -116,6 +76,12 @@ export function DietTab() {
           <RefreshCw size={18} className="text-slate-600" />
         </button>
       </header>
+
+      {/* Visual-only info banner */}
+      <div className="flex items-center gap-2 px-4 py-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-2xl text-sm text-emerald-700 dark:text-emerald-400">
+        <Eye size={16} className="shrink-0" />
+        <span>{t("dietTab.viewOnly", { defaultValue: "Vista de sugerencia. Para registrar alimentos, usa el Diario." })}</span>
+      </div>
 
       <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 shadow-sm">
         <label className="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300 flex justify-between">
@@ -143,7 +109,7 @@ export function DietTab() {
               </span>
             </div>
             
-            <ul className="space-y-3 mb-4">
+            <ul className="space-y-3">
               {m.items.map((itm, i) => (
                 <li key={i} className="flex justify-between text-sm items-start hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition">
                   <div className="flex-1 pr-2">
@@ -160,27 +126,12 @@ export function DietTab() {
                       <span>G:{itm.fat}g</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center">
                     <span className="font-mono text-slate-500 whitespace-nowrap">{itm.calories} <span className="text-[10px]">kcal</span></span>
-                    <button 
-                      onClick={() => handleAdd(m, itm)}
-                      className="text-emerald-500 p-1.5 bg-emerald-50 dark:bg-emerald-950/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 rounded-lg transition active:scale-95"
-                      aria-label={t("common.add")}
-                    >
-                      <Plus size={16} />
-                    </button>
                   </div>
                 </li>
               ))}
             </ul>
-
-            <button
-              onClick={() => handleAddAll(m)}
-              className="w-full py-2.5 rounded-xl border border-emerald-500 text-emerald-600 dark:text-emerald-400 font-medium text-sm hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition flex justify-center items-center gap-2 active:scale-95"
-            >
-              <Plus size={16} />
-              {t("dietTab.addAll")}
-            </button>
           </div>
         ))}
       </div>

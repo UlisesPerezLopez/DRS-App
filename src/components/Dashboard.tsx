@@ -14,6 +14,7 @@ import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
 import { getSmartAdvice } from "../lib/advisor";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { useWorkoutStore } from "../store/workoutStore";
 import { generateDailyMenu } from "../lib/dietEngine";
 import { MotivationEngine } from "../lib/MotivationEngine";
@@ -21,6 +22,7 @@ import { useState, useEffect } from "react";
 
 export function Dashboard() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const account = useAppStore(s => s.accounts[s.activeAccountId!]);
   const logWater = useAppStore(s => s.logWater);
   const { profile, foods, workouts, waterLogs } = account;
@@ -119,7 +121,7 @@ export function Dashboard() {
               </h3>
               <p className="text-xs text-slate-500 mt-1">{suggestion ? t("dashboard.approx_kcal", { amount: suggestion.calories }) : ""}</p>
             </div>
-            <button className="flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:gap-2 transition-all">
+            <button onClick={() => navigate('/diet')} className="flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:gap-2 transition-all">
               {t("dashboard.view_full_plan")} <ChevronRight size={14} />
             </button>
           </div>
@@ -148,7 +150,7 @@ export function Dashboard() {
                 {mainRoutine ? t("dashboard.exercises_count", { count: mainRoutine.exercises.length }) + " · " + userGoal : t("dashboard.active_recovery")}
               </p>
             </div>
-            <button className="flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:gap-2 transition-all">
+            <button onClick={() => navigate('/workout')} className="flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:gap-2 transition-all">
               {t("dashboard.go_to_routine")} <ChevronRight size={14} />
             </button>
           </div>

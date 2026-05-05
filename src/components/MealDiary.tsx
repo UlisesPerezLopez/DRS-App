@@ -69,7 +69,17 @@ export function MealDiary() {
   const target = dailyTarget(profile);
   const over = consumed > target;
 
+  // Map MealSlot → mealTag key used in COMMON_FOODS
+  const MEAL_SLOT_TO_TAG: Record<MealSlot, string[]> = {
+    "Desayuno": ["breakfast"],
+    "Media Mañana": ["breakfast", "snack"],
+    "Almuerzo": ["lunch"],
+    "Merienda": ["snack"],
+    "Cena": ["dinner"],
+  };
+
   // Fused search: COMMON_FOODS + FOOD_DB (deduped) + customFoods
+  // Each FOOD_DB item carries its suitableFor for contextual sorting
   const allFoods = useMemo(() => {
     const commons: SearchableFood[] = COMMON_FOODS.map(f => ({ ...f, _type: "common" as const }));
     // Map FOOD_DB items to CommonFood shape, excluding keys already in COMMON_FOODS
@@ -85,21 +95,39 @@ export function MealDiary() {
         fiber: 0,
         ig: null,
         sodiumLevel: "Bajo" as const,
+        mealTags: f.suitableFor
+          ? f.suitableFor.flatMap(slot => MEAL_SLOT_TO_TAG[slot] || []) as ('breakfast' | 'lunch' | 'dinner' | 'snack')[]
+          : undefined,
         _type: "common" as const,
       }));
     const customs: SearchableFood[] = (customFoods || []).map(f => ({ ...f, _type: "custom" as const }));
     return [...commons, ...foodDbItems, ...customs];
   }, [customFoods]);
 
-  const filtered = allFoods.filter((f) => {
+  // Filter by search term, then sort: suitable-for-meal first
+  const filtered = useMemo(() => {
     const term = search.toLowerCase();
-    if (f._type === "common") {
-      const translated = t("foodDb." + f.translationKey, { defaultValue: f.translationKey }).toLowerCase();
-      return translated.includes(term) || f.translationKey.includes(term);
-    }
-    // CustomFood: search by name
-    return f.name.toLowerCase().includes(term);
-  });
+    const textFiltered = allFoods.filter((f) => {
+      if (f._type === "common") {
+        const translated = t("foodDb." + f.translationKey, { defaultValue: f.translationKey }).toLowerCase();
+        return translated.includes(term) || f.translationKey.includes(term);
+      }
+      // CustomFood: search by name
+      return f.name.toLowerCase().includes(term);
+    });
+
+    // Prioritize foods that match the current meal slot
+    const relevantTags = MEAL_SLOT_TO_TAG[meal] || [];
+    return textFiltered.sort((a, b) => {
+      const aMatch = a._type === "common" && a.mealTags
+        ? a.mealTags.some(tag => relevantTags.includes(tag)) ? 0 : 1
+        : 0.5; // custom foods & untagged go in the middle
+      const bMatch = b._type === "common" && b.mealTags
+        ? b.mealTags.some(tag => relevantTags.includes(tag)) ? 0 : 1
+        : 0.5;
+      return aMatch - bMatch;
+    });
+  }, [allFoods, search, meal, t]);
 
   function getFoodDisplayName(f: SearchableFood): string {
     if (f._type === "common") return t("foodDb." + f.translationKey);
