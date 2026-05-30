@@ -2533,6 +2533,13 @@
     "credits": "App erstellt von Ulises Pérez López, Junior-Entwickler für KI-Anwendungen und in Ausbildung für Programmierung und Entwicklung in KI-Umgebungen.",
     "start_button": "Starten"
   },
+  "install": {
+    "title": "App für die Offline-Nutzung installieren",
+    "desc": "Greife direkt von deinem Startbildschirm darauf zu und trage deine Gewohnheiten auch ohne Internet ein.",
+    "btnInstall": "Installieren",
+    "btnDismiss": "Jetzt nicht",
+    "iosInstruction": "Zur Installation: Tippe auf das Teilen-Symbol und wähle 'Zum Home-Bildschirm'."
+  },
   "recipeDb": {
     "chicken_rice": {
       "name": "Reis mit Hähnchen und Gemüse",

@@ -2574,6 +2574,13 @@
     "credits": "Applicazione creata da Ulises Pérez López, sviluppatore Junior di applicazioni IA e studente in formazione di programmazione e sviluppo in ambienti IA.",
     "start_button": "Iniziare"
   },
+  "install": {
+    "title": "Installa l'app per l'uso offline",
+    "desc": "Accedi all'istante dalla tua schermata iniziale e registra le tue abitudini anche senza connessione internet.",
+    "btnInstall": "Installa",
+    "btnDismiss": "Non ora",
+    "iosInstruction": "Per installare: tocca il pulsante Condividi e seleziona 'Aggiungi alla schermata Home'."
+  },
   "recipeDb": {
     "chicken_rice": {
       "name": "Riso con pollo e verdure",

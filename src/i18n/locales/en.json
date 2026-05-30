@@ -2469,6 +2469,13 @@
     "credits": "App created by Ulises Pérez López, Junior AI App Developer and student in programming and development in AI environments.",
     "start_button": "Start"
   },
+  "install": {
+    "title": "Install the App for Offline Use",
+    "desc": "Access instantly from your home screen and log your habits even without internet.",
+    "btnInstall": "Install",
+    "btnDismiss": "Not now",
+    "iosInstruction": "To install: tap the Share button and select 'Add to Home Screen'."
+  },
   "recipeDb": {
     "chicken_rice": {
       "name": "Chicken Rice with Vegetables",

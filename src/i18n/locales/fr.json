@@ -2586,6 +2586,13 @@
     "credits": "Application créée par Ulises Pérez López, développeur Junior d'applications IA et étudiant en formation de programmation et développement dans des environnements IA.",
     "start_button": "Commencer"
   },
+  "install": {
+    "title": "Installer l'application pour une utilisation hors ligne",
+    "desc": "Accédez instantanément depuis votre écran d'accueil et enregistrez vos habitudes même sans connexion Internet.",
+    "btnInstall": "Installer",
+    "btnDismiss": "Pas maintenant",
+    "iosInstruction": "Pour installer : appuyez sur le bouton Partager et sélectionnez 'Sur l'écran d'accueil'."
+  },
   "recipeDb": {
     "chicken_rice": {
       "name": "Riz au poulet et légumes",

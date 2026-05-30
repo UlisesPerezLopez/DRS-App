@@ -14,6 +14,7 @@ import { ProgressBar } from "./ProgressBar";
 import { useAppStore } from "../store/useAppStore";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { InstallBanner } from "./InstallBanner";
 import { useWorkoutStore } from "../store/workoutStore";
 import { generateDailyMenu } from "../lib/dietEngine";
 import { MotivationEngine } from "../lib/MotivationEngine";
@@ -169,6 +170,8 @@ export function Dashboard() {
           "{motivationQuote}"
         </p>
       </header>
+
+      <InstallBanner />
 
       {/* Summary Cards Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">

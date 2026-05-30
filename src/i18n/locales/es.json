@@ -2555,6 +2555,13 @@
     "credits": "Aplicación creada por Ulises Pérez López, desarrollador Junior de aplicaciones con IA y estudiante en formación de programación y desarrollo en entornos de IA.",
     "start_button": "Empezar"
   },
+  "install": {
+    "title": "Instala la App para usarla sin conexión",
+    "desc": "Accede instantáneamente desde tu pantalla de inicio y registra tus hábitos incluso sin internet.",
+    "btnInstall": "Instalar",
+    "btnDismiss": "Ahora no",
+    "iosInstruction": "Para instalar: pulsa el botón Compartir y selecciona 'Añadir a la pantalla de inicio'."
+  },
   "recipeDb": {
     "chicken_rice": {
       "name": "Arroz con pollo y verduras",
