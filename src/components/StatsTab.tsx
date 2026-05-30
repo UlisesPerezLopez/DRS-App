@@ -7,6 +7,7 @@ import {
   Droplets,
   Dumbbell,
   Flame,
+  Trash2,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAppStore } from "../store/useAppStore";
@@ -27,6 +28,8 @@ export function StatsTab() {
   const { t } = useTranslation();
   const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
   const setWeights = useAppStore((s) => s.setWeights);
+  const exportUserData = useAppStore((s) => s.exportUserData);
+  const factoryReset = useAppStore((s) => s.factoryReset);
   const { profile, weights, foods, workouts, waterLogs } = account;
 
   const [newWeight, setNewWeight] = useState<string>("");
@@ -337,7 +340,7 @@ export function StatsTab() {
 
       {/* Export Card */}
       <section className="rounded-3xl bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/30 dark:to-fuchsia-950/30 border border-violet-200 dark:border-violet-800/50 p-5 shadow-sm mt-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h2 className="font-semibold text-violet-900 dark:text-violet-300">
               {t("stats.exportTitle")}
@@ -346,12 +349,46 @@ export function StatsTab() {
               {t("stats.exportDesc")}
             </p>
           </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={handleExport}
+              className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 active:scale-95 text-white font-semibold px-4 py-2.5 rounded-2xl shadow-sm transition text-sm"
+            >
+              <Download size={16} />
+              CSV
+            </button>
+            <button
+              onClick={exportUserData}
+              className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 active:scale-95 text-white font-semibold px-4 py-2.5 rounded-2xl shadow-sm transition text-sm"
+            >
+              <Download size={16} />
+              {t("stats.exportJSON")}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Danger Zone */}
+      <section className="rounded-3xl bg-red-50/50 dark:bg-red-950/10 border border-red-200 dark:border-red-900/30 p-5 shadow-sm mt-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 className="font-semibold text-red-800 dark:text-red-400">
+              {t("stats.dangerZoneTitle")}
+            </h2>
+            <p className="text-xs text-red-600/70 dark:text-red-400/70 mt-0.5">
+              {t("stats.dangerZoneDesc")}
+            </p>
+          </div>
           <button
-            onClick={handleExport}
-            className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 active:scale-95 text-white font-semibold px-5 py-3 rounded-2xl shadow-md transition"
+            onClick={() => {
+              if (window.confirm(t("stats.wipeConfirm"))) {
+                factoryReset();
+              }
+            }}
+            className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 active:scale-95 text-white font-semibold px-5 py-3 rounded-2xl shadow-md transition text-sm whitespace-nowrap"
           >
-            <Download size={18} />
-            CSV
+            <Trash2 size={16} />
+            {t("stats.wipeDataBtn")}
           </button>
         </div>
       </section>

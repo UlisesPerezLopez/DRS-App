@@ -561,11 +561,7 @@
       },
       "w3_d2": {
         "name": "Salade d'Épinards et Avocat",
-        "ingredients": [
-          "Épinards frais",
-          "Noix et 1 œuf dur",
-          "50g d'avocat"
-        ],
+        "ingredients": ["Épinards frais", "Noix et 1 œuf dur", "50g d'avocat"],
         "steps": [
           "Hacher l'avocat et l'œuf.",
           "Mélanger à froid pour une dose parfaite de potassium et de graisses saines."
@@ -803,11 +799,7 @@
       },
       "w4_d5": {
         "name": "Saumon aux Asperges",
-        "ingredients": [
-          "200g de saumon",
-          "Asperges sauvages",
-          "Citron"
-        ],
+        "ingredients": ["200g de saumon", "Asperges sauvages", "Citron"],
         "steps": [
           "Griller le saumon et les asperges.",
           "Arroser de citron au moment de servir."
@@ -1072,11 +1064,7 @@
       },
       "w2_d1": {
         "name": "Dinde et purée de patate douce",
-        "ingredients": [
-          "150g de dinde",
-          "100g de patate douce",
-          "Mâche"
-        ],
+        "ingredients": ["150g de dinde", "100g de patate douce", "Mâche"],
         "steps": [
           "Rôtir la patate douce au micro-ondes (8 min).",
           "Écraser la patate douce et griller la dinde.",
@@ -1122,11 +1110,7 @@
       },
       "w2_d3": {
         "name": "Bar au four et légumes",
-        "ingredients": [
-          "1 bar (200g)",
-          "Poivron rouge",
-          "Aubergine"
-        ],
+        "ingredients": ["1 bar (200g)", "Poivron rouge", "Aubergine"],
         "steps": [
           "Couper et griller les légumes.",
           "Cuire le poisson 15 min à 180°C sur les légumes."
@@ -1146,11 +1130,7 @@
       },
       "w2_d4": {
         "name": "Burger de poulet Fit",
-        "ingredients": [
-          "150g de poulet haché",
-          "Roquette",
-          "10g de noix"
-        ],
+        "ingredients": ["150g de poulet haché", "Roquette", "10g de noix"],
         "steps": [
           "Former le burger et le griller.",
           "Servir sans pain sur un lit de roquette et noix."
@@ -1170,10 +1150,7 @@
       },
       "w2_d5": {
         "name": "Crème de légumes",
-        "ingredients": [
-          "Courgette, poireau, carotte",
-          "1 œuf dur"
-        ],
+        "ingredients": ["Courgette, poireau, carotte", "1 œuf dur"],
         "steps": [
           "Faire bouillir les légumes et mixer sans crème.",
           "Ajouter l'œuf haché par-dessus."
@@ -1222,9 +1199,7 @@
           "Céleri et carotte",
           "1 œuf dur et 3 tranches de filet mignon séché"
         ],
-        "steps": [
-          "Présenter sur une planche façon mezze. Sans cuisson."
-        ]
+        "steps": ["Présenter sur une planche façon mezze. Sans cuisson."]
       },
       "w3_l1": {
         "name": "Haricots blancs mijotés",
@@ -1291,11 +1266,7 @@
       },
       "w3_d3": {
         "name": "Seiche aux artichauts",
-        "ingredients": [
-          "200g de seiche",
-          "4 artichauts",
-          "Ail émincé"
-        ],
+        "ingredients": ["200g de seiche", "4 artichauts", "Ail émincé"],
         "steps": [
           "Faire revenir la seiche à feu vif.",
           "Ajouter les artichauts et l'ail à la fin."
@@ -1315,11 +1286,7 @@
       },
       "w3_d4": {
         "name": "Omelette aux champignons et radis",
-        "ingredients": [
-          "2 œufs",
-          "100g de champignons",
-          "4 radis"
-        ],
+        "ingredients": ["2 œufs", "100g de champignons", "4 radis"],
         "steps": [
           "Préparer l'omelette avec les champignons sautés.",
           "Servir les radis crus en rondelles à côté."
@@ -1375,11 +1342,7 @@
       },
       "w3_l7": {
         "name": "Omelette de pommes de terre Fit",
-        "ingredients": [
-          "2 œufs",
-          "150g de pomme de terre",
-          "1/2 oignon"
-        ],
+        "ingredients": ["2 œufs", "150g de pomme de terre", "1/2 oignon"],
         "steps": [
           "Cuire la pomme de terre en tranches à la vapeur ou micro-ondes (7 min).",
           "Mélanger avec l'œuf et cuire avec une goutte d'huile."
@@ -1533,11 +1496,7 @@
       },
       "w4_d6": {
         "name": "Brochettes de colin et gambas",
-        "ingredients": [
-          "150g de colin en dés",
-          "Gambas",
-          "Haricots verts"
-        ],
+        "ingredients": ["150g de colin en dés", "Gambas", "Haricots verts"],
         "steps": [
           "Monter les brochettes et les griller.",
           "Accompagner de haricots verts à la vapeur."
@@ -1773,11 +1732,7 @@
       },
       "w2_d1": {
         "name": "Œufs Brouillés aux Champignons et Tofu",
-        "ingredients": [
-          "2 œufs",
-          "100g de tofu émietté",
-          "Champignons et ail"
-        ],
+        "ingredients": ["2 œufs", "100g de tofu émietté", "Champignons et ail"],
         "steps": [
           "Faire dorer le tofu émietté dans la poêle pour lui donner de la texture.",
           "Ajouter les champignons et l'ail.",
@@ -1956,11 +1911,7 @@
       },
       "w3_d1": {
         "name": "Omelette à la Courgette et au Fromage de Chèvre",
-        "ingredients": [
-          "2 œufs",
-          "1/2 courgette",
-          "20g de bûche de chèvre"
-        ],
+        "ingredients": ["2 œufs", "1/2 courgette", "20g de bûche de chèvre"],
         "steps": [
           "Couper la courgette en très petits dés et la faire sauter.",
           "Ajouter le fromage émietté aux œufs battus.",
@@ -2008,10 +1959,7 @@
       },
       "w3_d3": {
         "name": "Crème de Légumes Blancs",
-        "ingredients": [
-          "Poireau, chou-fleur et oignon",
-          "1 œuf poché"
-        ],
+        "ingredients": ["Poireau, chou-fleur et oignon", "1 œuf poché"],
         "steps": [
           "Faire bouillir les légumes blancs et les mixer jusqu'à obtenir une crème fine.",
           "Préparer un œuf poché (poché dans l'eau bouillante avec du vinaigre 3 min).",
@@ -2059,11 +2007,7 @@
       },
       "w3_d5": {
         "name": "Poivrons Farcis à l'Œuf",
-        "ingredients": [
-          "2 gros poivrons rouges",
-          "2 œufs",
-          "Sel et poivre"
-        ],
+        "ingredients": ["2 gros poivrons rouges", "2 œufs", "Sel et poivre"],
         "steps": [
           "Couper le poivron en deux (dans le sens de la longueur) et retirer les graines.",
           "Le mettre dans une poêle avec un couvercle. Casser un œuf dans chaque moitié.",
@@ -2613,7 +2557,12 @@
     "trainingCard": "Entraînement",
     "pending": "En attente",
     "completed": "Terminé",
-    "recordWeightTitle": "Enregistrer le poids actuel"
+    "recordWeightTitle": "Enregistrer le poids actuel",
+    "exportJSON": "Exporter mes données (JSON)",
+    "dangerZoneTitle": "Zone de Danger",
+    "dangerZoneDesc": "Actions irréversibles de souveraineté des données.",
+    "wipeDataBtn": "Supprimer toutes mes données",
+    "wipeConfirm": "Êtes-vous sûr de vouloir supprimer définitivement toutes vos données ? Cette action est totalement irréversible et vous perdrez tout votre historique, votre série et votre progression."
   },
   "customFood": {
     "createBtn": "➕ Créer un nouvel aliment",
@@ -2654,12 +2603,7 @@
     },
     "spinach_omelette": {
       "name": "Omelette aux épinards",
-      "ingredients": [
-        "3 œufs",
-        "150 g épinards",
-        "Ail",
-        "1 c.à.s huile"
-      ],
+      "ingredients": ["3 œufs", "150 g épinards", "Ail", "1 c.à.s huile"],
       "steps": [
         "Faire sauter l'ail et les épinards.",
         "Battre les œufs et cuire dans la poêle."
@@ -2698,10 +2642,7 @@
         "Oignon",
         "1 fromage fondu light"
       ],
-      "steps": [
-        "Faire bouillir les légumes.",
-        "Mixer en ajoutant le fromage."
-      ]
+      "steps": ["Faire bouillir les légumes.", "Mixer en ajoutant le fromage."]
     },
     "chickpea_salad": {
       "name": "Salade de pois chiches",
@@ -2731,11 +2672,7 @@
     },
     "broken_eggs": {
       "name": "Œufs cassés (Huevos Rotos)",
-      "ingredients": [
-        "2 œufs",
-        "1 grosse pomme de terre",
-        "Paprika"
-      ],
+      "ingredients": ["2 œufs", "1 grosse pomme de terre", "Paprika"],
       "steps": [
         "Cuire les rondelles de pomme de terre au four/micro-ondes.",
         "Frire les œufs dessus."
@@ -2748,10 +2685,7 @@
         "Demi-avocat",
         "2 tranches de dinde"
       ],
-      "steps": [
-        "Toaster le pain.",
-        "Tartiner l'avocat et placer la dinde."
-      ]
+      "steps": ["Toaster le pain.", "Tartiner l'avocat et placer la dinde."]
     },
     "egg_white_mushroom": {
       "name": "Brouillé de blancs d'œufs aux champignons",
@@ -2806,11 +2740,7 @@
     },
     "grilled_eggplant_cheese": {
       "name": "Aubergine grillée au fromage",
-      "ingredients": [
-        "1 aubergine",
-        "80 g fromage frais",
-        "Origan"
-      ],
+      "ingredients": ["1 aubergine", "80 g fromage frais", "Origan"],
       "steps": [
         "Couper l'aubergine en rondelles et griller.",
         "Servir avec des rondelles de fromage."

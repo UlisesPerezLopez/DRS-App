@@ -222,11 +222,7 @@
       },
       "w2_l3": {
         "name": "Baked Cod with Crust",
-        "ingredients": [
-          "200g Cod",
-          "Herbes de Provence",
-          "Cucumber salad"
-        ],
+        "ingredients": ["200g Cod", "Herbes de Provence", "Cucumber salad"],
         "steps": [
           "Cover the fish with the herb crust.",
           "Bake 15 min at 180°C.",
@@ -271,11 +267,7 @@
       },
       "w2_l5": {
         "name": "Baked Salmon with Zucchini Puree",
-        "ingredients": [
-          "180g salmon",
-          "1 zucchini",
-          "EVOO and pepper"
-        ],
+        "ingredients": ["180g salmon", "1 zucchini", "EVOO and pepper"],
         "steps": [
           "Bake the salmon.",
           "Blend the previously cooked zucchini with oil to make the puree."
@@ -307,11 +299,7 @@
       },
       "w2_d6": {
         "name": "Prawn and Zucchini Skewers",
-        "ingredients": [
-          "150g prawns",
-          "1 diced zucchini",
-          "Tomato salad"
-        ],
+        "ingredients": ["150g prawns", "1 diced zucchini", "Tomato salad"],
         "steps": [
           "Assemble the skewers alternating ingredients.",
           "Grill on both sides."
@@ -473,11 +461,7 @@
       },
       "w1_l6": {
         "name": "Steamed Fresh Cod",
-        "ingredients": [
-          "200g fresh cod",
-          "Green beans",
-          "Garlic and EVOO"
-        ],
+        "ingredients": ["200g fresh cod", "Green beans", "Garlic and EVOO"],
         "steps": [
           "Steam the fish and green beans.",
           "Prepare a sauté of sliced garlic in a pan.",
@@ -525,11 +509,7 @@
       },
       "w3_l1": {
         "name": "Sesame Chicken with Crunchy Green Beans",
-        "ingredients": [
-          "200g breast",
-          "5g sesame seeds",
-          "200g green beans"
-        ],
+        "ingredients": ["200g breast", "5g sesame seeds", "200g green beans"],
         "steps": [
           "Grill the chicken and add sesame at the end to toast it.",
           "Steam the beans leaving them crunchy (6 min)."
@@ -586,11 +566,7 @@
       },
       "w3_d3": {
         "name": "Baked Bream with Peppers",
-        "ingredients": [
-          "1 clean bream",
-          "Red peppers",
-          "Onion and EVOO"
-        ],
+        "ingredients": ["1 clean bream", "Red peppers", "Onion and EVOO"],
         "steps": [
           "Create a bed of peppers and onion.",
           "Bake the bream on top for 20 min at 180°C."
@@ -598,11 +574,7 @@
       },
       "w3_l4": {
         "name": "Baked Trout with Asparagus",
-        "ingredients": [
-          "1 whole trout",
-          "Wild asparagus",
-          "Lemon and EVOO"
-        ],
+        "ingredients": ["1 whole trout", "Wild asparagus", "Lemon and EVOO"],
         "steps": [
           "Place the trout and asparagus on a tray.",
           "Drizzle with lemon and bake 15 min at 180°C."
@@ -658,11 +630,7 @@
       },
       "w3_d6": {
         "name": "Cod Omelet",
-        "ingredients": [
-          "2 eggs",
-          "100g desalted cod",
-          "Tomato salad"
-        ],
+        "ingredients": ["2 eggs", "100g desalted cod", "Tomato salad"],
         "steps": [
           "Flake the cod and cook the omelet.",
           "Serve with fresh tomato salad."
@@ -707,11 +675,7 @@
       },
       "w4_d1": {
         "name": "Baked Hake with Crust",
-        "ingredients": [
-          "200g hake",
-          "Herbes de Provence",
-          "Arugula salad"
-        ],
+        "ingredients": ["200g hake", "Herbes de Provence", "Arugula salad"],
         "steps": [
           "Cover the hake with the herbs.",
           "Bake at 180°C and serve with arugula."
@@ -731,11 +695,7 @@
       },
       "w4_d2": {
         "name": "Turkey and Broccoli Wok",
-        "ingredients": [
-          "150g turkey strips",
-          "Broccoli",
-          "Ginger and soy"
-        ],
+        "ingredients": ["150g turkey strips", "Broccoli", "Ginger and soy"],
         "steps": [
           "Sauté the turkey and broccoli over high heat.",
           "Season with ginger and low salt soy."
@@ -743,11 +703,7 @@
       },
       "w4_l3": {
         "name": "Steamed Cod",
-        "ingredients": [
-          "200g fresh cod",
-          "Spinach",
-          "Pine nuts"
-        ],
+        "ingredients": ["200g fresh cod", "Spinach", "Pine nuts"],
         "steps": [
           "Steam the fish.",
           "Sauté the spinach with pine nuts as a side dish."
@@ -760,18 +716,11 @@
           "Pumpkin seeds",
           "Tomato and cucumber"
         ],
-        "steps": [
-          "Mix all ingredients cold.",
-          "Dress to taste."
-        ]
+        "steps": ["Mix all ingredients cold.", "Dress to taste."]
       },
       "w4_l4": {
         "name": "Entrecote with Peppers",
-        "ingredients": [
-          "200g entrecote",
-          "Padrón peppers",
-          "Mixed salad"
-        ],
+        "ingredients": ["200g entrecote", "Padrón peppers", "Mixed salad"],
         "steps": [
           "Grill the entrecote.",
           "Sauté the peppers and serve alongside the salad."
@@ -803,11 +752,7 @@
       },
       "w4_d5": {
         "name": "Salmon with Asparagus",
-        "ingredients": [
-          "200g salmon",
-          "Wild asparagus",
-          "Lemon"
-        ],
+        "ingredients": ["200g salmon", "Wild asparagus", "Lemon"],
         "steps": [
           "Grill the salmon and asparagus.",
           "Drizzle with lemon when serving."
@@ -938,11 +883,7 @@
       },
       "w1_d3": {
         "name": "Mushroom Omelet",
-        "ingredients": [
-          "2 eggs",
-          "100g sliced mushrooms",
-          "Garlic powder"
-        ],
+        "ingredients": ["2 eggs", "100g sliced mushrooms", "Garlic powder"],
         "steps": [
           "Sauté the mushrooms until they release all their water.",
           "Beat the eggs.",
@@ -965,11 +906,7 @@
       },
       "w1_d4": {
         "name": "Salmon with Green Beans",
-        "ingredients": [
-          "150g fresh salmon",
-          "200g green beans",
-          "Lemon"
-        ],
+        "ingredients": ["150g fresh salmon", "200g green beans", "Lemon"],
         "steps": [
           "Steam the green beans for 8 minutes.",
           "Grill the salmon for 3 min per side, starting with the skin.",
@@ -1072,11 +1009,7 @@
       },
       "w2_d1": {
         "name": "Turkey with Sweet Potato Puree",
-        "ingredients": [
-          "150g turkey",
-          "100g sweet potato",
-          "Lamb's lettuce"
-        ],
+        "ingredients": ["150g turkey", "100g sweet potato", "Lamb's lettuce"],
         "steps": [
           "Roast sweet potato in microwave (8 min).",
           "Mash the sweet potato and grill the turkey.",
@@ -1115,18 +1048,11 @@
           "1 can natural tuna",
           "6 olives and tomato sauce"
         ],
-        "steps": [
-          "Boil pasta al dente.",
-          "Mix with tuna, olives and tomato."
-        ]
+        "steps": ["Boil pasta al dente.", "Mix with tuna, olives and tomato."]
       },
       "w2_d3": {
         "name": "Baked Sea Bass with Vegetables",
-        "ingredients": [
-          "1 sea bass (200g)",
-          "Red pepper",
-          "Eggplant"
-        ],
+        "ingredients": ["1 sea bass (200g)", "Red pepper", "Eggplant"],
         "steps": [
           "Cut and grill the vegetables.",
           "Bake the fish 15 min at 180°C on the vegetables."
@@ -1146,11 +1072,7 @@
       },
       "w2_d4": {
         "name": "Fit Chicken Burger",
-        "ingredients": [
-          "150g minced chicken",
-          "Arugula",
-          "10g walnuts"
-        ],
+        "ingredients": ["150g minced chicken", "Arugula", "10g walnuts"],
         "steps": [
           "Form burger and grill.",
           "Serve without bread on a bed of arugula and walnuts."
@@ -1170,10 +1092,7 @@
       },
       "w2_d5": {
         "name": "Vegetable Cream Soup",
-        "ingredients": [
-          "Zucchini, leek, carrot",
-          "1 hard-boiled egg"
-        ],
+        "ingredients": ["Zucchini, leek, carrot", "1 hard-boiled egg"],
         "steps": [
           "Boil vegetables and blend without cream.",
           "Add chopped egg on top."
@@ -1205,11 +1124,7 @@
       },
       "w2_l7": {
         "name": "Light Tuna Marmitako",
-        "ingredients": [
-          "150g fresh tuna",
-          "150g potato",
-          "Pepper and onion"
-        ],
+        "ingredients": ["150g fresh tuna", "150g potato", "Pepper and onion"],
         "steps": [
           "Stew the potato with vegetables.",
           "Add tuna at the end with the heat off."
@@ -1222,9 +1137,7 @@
           "Celery and carrot",
           "1 hard-boiled egg and 3 slices cured loin"
         ],
-        "steps": [
-          "Serve on a mezze style board. No cooking required."
-        ]
+        "steps": ["Serve on a mezze style board. No cooking required."]
       },
       "w3_l1": {
         "name": "Stewed White Beans",
@@ -1266,11 +1179,7 @@
       },
       "w3_d2": {
         "name": "Popeye Spinach Cream",
-        "ingredients": [
-          "300g spinach",
-          "1 small potato",
-          "1 hard-boiled egg"
-        ],
+        "ingredients": ["300g spinach", "1 small potato", "1 hard-boiled egg"],
         "steps": [
           "Boil potato and spinach with little water.",
           "Blend and add chopped hard-boiled egg."
@@ -1291,11 +1200,7 @@
       },
       "w3_d3": {
         "name": "Cuttlefish with Artichokes",
-        "ingredients": [
-          "200g cuttlefish",
-          "4 artichokes",
-          "Sliced garlic"
-        ],
+        "ingredients": ["200g cuttlefish", "4 artichokes", "Sliced garlic"],
         "steps": [
           "Sauté cuttlefish over high heat.",
           "Add artichokes and garlic at the end."
@@ -1303,11 +1208,7 @@
       },
       "w3_l4": {
         "name": "Quinoa with Chicken and Vegetables",
-        "ingredients": [
-          "60g quinoa",
-          "150g chicken",
-          "Zucchini and pepper"
-        ],
+        "ingredients": ["60g quinoa", "150g chicken", "Zucchini and pepper"],
         "steps": [
           "Wash quinoa and boil 12 min.",
           "Sauté chicken and vegetables, and mix with quinoa."
@@ -1315,11 +1216,7 @@
       },
       "w3_d4": {
         "name": "Mushroom and Radish Omelet",
-        "ingredients": [
-          "2 eggs",
-          "100g mushrooms",
-          "4 radishes"
-        ],
+        "ingredients": ["2 eggs", "100g mushrooms", "4 radishes"],
         "steps": [
           "Make omelet with sautéed mushrooms.",
           "Serve raw sliced radishes on the side."
@@ -1327,11 +1224,7 @@
       },
       "w3_l5": {
         "name": "Herb Crusted Cod",
-        "ingredients": [
-          "180g cod",
-          "Oregano, thyme, EVOO",
-          "200g asparagus"
-        ],
+        "ingredients": ["180g cod", "Oregano, thyme, EVOO", "200g asparagus"],
         "steps": [
           "Brush cod with EVOO and herbs.",
           "Bake alongside asparagus 12 min at 200°C."
@@ -1363,23 +1256,12 @@
       },
       "w3_d6": {
         "name": "Swordfish with Baba Ganoush",
-        "ingredients": [
-          "150g swordfish",
-          "1 roasted eggplant",
-          "Lemon"
-        ],
-        "steps": [
-          "Mash roasted eggplant with lemon.",
-          "Grill the fish."
-        ]
+        "ingredients": ["150g swordfish", "1 roasted eggplant", "Lemon"],
+        "steps": ["Mash roasted eggplant with lemon.", "Grill the fish."]
       },
       "w3_l7": {
         "name": "Fit Potato Omelet",
-        "ingredients": [
-          "2 eggs",
-          "150g potato",
-          "1/2 onion"
-        ],
+        "ingredients": ["2 eggs", "150g potato", "1/2 onion"],
         "steps": [
           "Cook sliced potato steamed or in microwave (7 min).",
           "Mix with egg and cook with a drop of oil."
@@ -1387,11 +1269,7 @@
       },
       "w3_d7": {
         "name": "Baked Prawns and Hummus",
-        "ingredients": [
-          "12 large prawns",
-          "80g hummus",
-          "Raw carrots"
-        ],
+        "ingredients": ["12 large prawns", "80g hummus", "Raw carrots"],
         "steps": [
           "Bake prawns with garlic and parsley (6 min).",
           "Serve with hummus and raw carrot."
@@ -1435,11 +1313,7 @@
       },
       "w4_d2": {
         "name": "Zucchini and Onion Scramble",
-        "ingredients": [
-          "2 eggs",
-          "Zucchini and onion",
-          "2 slices serrano ham"
-        ],
+        "ingredients": ["2 eggs", "Zucchini and onion", "2 slices serrano ham"],
         "steps": [
           "Sauté finely chopped vegetables.",
           "Add beaten eggs and ham.",
@@ -1485,11 +1359,7 @@
       },
       "w4_d4": {
         "name": "Baked Cod",
-        "ingredients": [
-          "200g fresh cod",
-          "10g chopped almonds",
-          "Broccoli"
-        ],
+        "ingredients": ["200g fresh cod", "10g chopped almonds", "Broccoli"],
         "steps": [
           "Place the almonds on the fish.",
           "Bake 12 min at 180°C and serve with steamed broccoli."
@@ -1509,11 +1379,7 @@
       },
       "w4_d5": {
         "name": "Turkey and Light Cheese Omelet",
-        "ingredients": [
-          "2 eggs",
-          "2 slices turkey",
-          "1 slice light cheese"
-        ],
+        "ingredients": ["2 eggs", "2 slices turkey", "1 slice light cheese"],
         "steps": [
           "Beat eggs and put in the pan.",
           "Fold cheese and turkey in the center to melt."
@@ -1533,11 +1399,7 @@
       },
       "w4_d6": {
         "name": "Hake and Prawn Skewers",
-        "ingredients": [
-          "150g diced hake",
-          "Prawns",
-          "Green beans"
-        ],
+        "ingredients": ["150g diced hake", "Prawns", "Green beans"],
         "steps": [
           "Assemble skewers and grill them.",
           "Serve with steamed green beans."
@@ -1652,11 +1514,7 @@
       },
       "w1_l4": {
         "name": "Smoked Tofu with Quinoa",
-        "ingredients": [
-          "100g Smoked tofu",
-          "60g quinoa",
-          "Zucchini and peas"
-        ],
+        "ingredients": ["100g Smoked tofu", "60g quinoa", "Zucchini and peas"],
         "steps": [
           "Dice the tofu and brown it in the pan until very crispy.",
           "Boil the quinoa 12 min after washing it well.",
@@ -1773,11 +1631,7 @@
       },
       "w2_d1": {
         "name": "Scrambled Eggs with Mushrooms and Tofu",
-        "ingredients": [
-          "2 eggs",
-          "100g crumbled tofu",
-          "Mushrooms and garlic"
-        ],
+        "ingredients": ["2 eggs", "100g crumbled tofu", "Mushrooms and garlic"],
         "steps": [
           "Brown the crumbled tofu in the pan to give it texture.",
           "Add the mushrooms and garlic.",
@@ -1838,11 +1692,7 @@
       },
       "w2_l4": {
         "name": "Sautéed Tempeh and Vegetables",
-        "ingredients": [
-          "120g tempeh",
-          "Peppers and carrot",
-          "10g peanuts"
-        ],
+        "ingredients": ["120g tempeh", "Peppers and carrot", "10g peanuts"],
         "steps": [
           "Cut the tempeh into strips and sauté over high heat.",
           "Add the julienned vegetables and sauté wok-style.",
@@ -1904,11 +1754,7 @@
       },
       "w2_d6": {
         "name": "Zucchini and Egg Pancakes",
-        "ingredients": [
-          "2 eggs",
-          "1 grated zucchini",
-          "1 tablespoon oatmeal"
-        ],
+        "ingredients": ["2 eggs", "1 grated zucchini", "1 tablespoon oatmeal"],
         "steps": [
           "Grate the zucchini and drain it very well to remove the water.",
           "Mix with egg and oatmeal.",
@@ -1943,11 +1789,7 @@
       },
       "w3_l1": {
         "name": "Warm Lentil Salad",
-        "ingredients": [
-          "100g lentils",
-          "40g quinoa",
-          "Peppers and onion"
-        ],
+        "ingredients": ["100g lentils", "40g quinoa", "Peppers and onion"],
         "steps": [
           "Boil the quinoa.",
           "Sauté the peppers and onion.",
@@ -1956,11 +1798,7 @@
       },
       "w3_d1": {
         "name": "Zucchini and Goat Cheese Omelet",
-        "ingredients": [
-          "2 eggs",
-          "1/2 zucchini",
-          "20g goat cheese log"
-        ],
+        "ingredients": ["2 eggs", "1/2 zucchini", "20g goat cheese log"],
         "steps": [
           "Cut the zucchini into very small cubes and sauté it.",
           "Add the crumbled cheese to the beaten eggs.",
@@ -2008,10 +1846,7 @@
       },
       "w3_d3": {
         "name": "White Vegetable Cream",
-        "ingredients": [
-          "Leek, cauliflower, and onion",
-          "1 poached egg"
-        ],
+        "ingredients": ["Leek, cauliflower, and onion", "1 poached egg"],
         "steps": [
           "Boil the white vegetables and blend them until smooth.",
           "Prepare a poached egg (poached in boiling water with vinegar for 3 min).",
@@ -2059,11 +1894,7 @@
       },
       "w3_d5": {
         "name": "Egg Stuffed Peppers",
-        "ingredients": [
-          "2 large red peppers",
-          "2 eggs",
-          "Salt and pepper"
-        ],
+        "ingredients": ["2 large red peppers", "2 eggs", "Salt and pepper"],
         "steps": [
           "Cut the pepper in half (lengthwise) and remove the seeds.",
           "Put it in a pan with a lid. Crack an egg inside each half.",
@@ -2242,11 +2073,7 @@
       },
       "w4_d5": {
         "name": "Wild Asparagus Omelet",
-        "ingredients": [
-          "2 eggs",
-          "1 bunch of wild asparagus",
-          "50g avocado"
-        ],
+        "ingredients": ["2 eggs", "1 bunch of wild asparagus", "50g avocado"],
         "steps": [
           "Sauté the chopped asparagus.",
           "Beat the eggs, mix them and cook the omelet.",
@@ -2613,7 +2440,12 @@
     "trainingCard": "Workout",
     "pending": "Pending",
     "completed": "Completed",
-    "recordWeightTitle": "Record Current Weight"
+    "recordWeightTitle": "Record Current Weight",
+    "exportJSON": "Export my data (JSON)",
+    "dangerZoneTitle": "Danger Zone",
+    "dangerZoneDesc": "Irreversible data sovereignty actions.",
+    "wipeDataBtn": "Delete all my data",
+    "wipeConfirm": "Are you sure you want to permanently delete all your data? This action is completely irreversible and you will lose your history, streak, and progress."
   },
   "customFood": {
     "createBtn": "➕ Create new food",
@@ -2654,25 +2486,12 @@
     },
     "spinach_omelette": {
       "name": "Spinach Omelette",
-      "ingredients": [
-        "3 eggs",
-        "150 g spinach",
-        "Garlic",
-        "1 tbsp oil"
-      ],
-      "steps": [
-        "Sauté garlic and spinach.",
-        "Whisk eggs and cook in pan."
-      ]
+      "ingredients": ["3 eggs", "150 g spinach", "Garlic", "1 tbsp oil"],
+      "steps": ["Sauté garlic and spinach.", "Whisk eggs and cook in pan."]
     },
     "quick_lentils": {
       "name": "Quick Lentils",
-      "ingredients": [
-        "200 g canned lentils",
-        "Carrot",
-        "Onion",
-        "Paprika"
-      ],
+      "ingredients": ["200 g canned lentils", "Carrot", "Onion", "Paprika"],
       "steps": [
         "Sauté vegetables.",
         "Add lentils and a splash of water, cook 10 min."
@@ -2685,10 +2504,7 @@
         "1 can tuna in water",
         "Crushed tomatoes"
       ],
-      "steps": [
-        "Cook pasta.",
-        "Mix warm tomato sauce with drained tuna."
-      ]
+      "steps": ["Cook pasta.", "Mix warm tomato sauce with drained tuna."]
     },
     "zucchini_cream": {
       "name": "Zucchini Cream Soup",
@@ -2698,10 +2514,7 @@
         "Onion",
         "1 light cheese wedge"
       ],
-      "steps": [
-        "Boil vegetables.",
-        "Blend adding the cheese."
-      ]
+      "steps": ["Boil vegetables.", "Blend adding the cheese."]
     },
     "chickpea_salad": {
       "name": "Chickpea Salad",
@@ -2712,10 +2525,7 @@
         "Red onion",
         "Oil"
       ],
-      "steps": [
-        "Rinse chickpeas.",
-        "Chop fresh vegetables and dress."
-      ]
+      "steps": ["Rinse chickpeas.", "Chop fresh vegetables and dress."]
     },
     "lemon_chicken_sweetpotato": {
       "name": "Lemon Chicken with Sweet Potato",
@@ -2731,15 +2541,8 @@
     },
     "broken_eggs": {
       "name": "Broken Eggs (Huevos Rotos)",
-      "ingredients": [
-        "2 eggs",
-        "1 large potato",
-        "Paprika"
-      ],
-      "steps": [
-        "Bake potato slices in oven/microwave.",
-        "Fry eggs on top."
-      ]
+      "ingredients": ["2 eggs", "1 large potato", "Paprika"],
+      "steps": ["Bake potato slices in oven/microwave.", "Fry eggs on top."]
     },
     "avocado_turkey_toast": {
       "name": "Avocado Turkey Toast",
@@ -2748,10 +2551,7 @@
         "Half avocado",
         "2 slices turkey breast"
       ],
-      "steps": [
-        "Toast the bread.",
-        "Spread avocado and place turkey on top."
-      ]
+      "steps": ["Toast the bread.", "Spread avocado and place turkey on top."]
     },
     "egg_white_mushroom": {
       "name": "Egg White & Mushroom Scramble",
@@ -2761,10 +2561,7 @@
         "Garlic",
         "Oil"
       ],
-      "steps": [
-        "Sauté mushrooms with garlic.",
-        "Add egg whites and scramble."
-      ]
+      "steps": ["Sauté mushrooms with garlic.", "Add egg whites and scramble."]
     },
     "apple_porridge": {
       "name": "Apple Oat Porridge",
@@ -2793,12 +2590,7 @@
     },
     "express_couscous": {
       "name": "Express Couscous",
-      "ingredients": [
-        "80 g couscous",
-        "Grated carrot",
-        "Raisins",
-        "Broth"
-      ],
+      "ingredients": ["80 g couscous", "Grated carrot", "Raisins", "Broth"],
       "steps": [
         "Boil equal parts broth and couscous.",
         "Pour over couscous, cover 5 min and fluff."
@@ -2806,15 +2598,8 @@
     },
     "grilled_eggplant_cheese": {
       "name": "Grilled Eggplant with Cheese",
-      "ingredients": [
-        "1 eggplant",
-        "80 g fresh cheese",
-        "Oregano"
-      ],
-      "steps": [
-        "Slice eggplant and grill.",
-        "Serve with cheese slices on top."
-      ]
+      "ingredients": ["1 eggplant", "80 g fresh cheese", "Oregano"],
+      "steps": ["Slice eggplant and grill.", "Serve with cheese slices on top."]
     },
     "protein_smoothie_bowl": {
       "name": "Protein Smoothie Bowl",

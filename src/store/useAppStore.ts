@@ -37,8 +37,12 @@ export interface AppActions {
   deleteAccount: (id: string) => void;
   setProfile: (profile: Partial<Profile>) => void;
   setFoods: (foods: FoodEntry[] | ((prev: FoodEntry[]) => FoodEntry[])) => void;
-  setWeights: (weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[])) => void;
-  setWorkouts: (workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[])) => void;
+  setWeights: (
+    weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[]),
+  ) => void;
+  setWorkouts: (
+    workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[]),
+  ) => void;
   setTheme: (theme: "light" | "dark") => void;
   startPlan: (date: string) => void;
   logWater: (amountMl: number, dateStr?: string) => void;
@@ -46,6 +50,8 @@ export interface AppActions {
   completeWelcome: () => void;
   checkDailyLogin: () => void;
   dismissLevelUp: () => void;
+  exportUserData: () => void;
+  factoryReset: () => void;
 }
 
 export type AppStore = AppState & AppActions;
@@ -86,7 +92,7 @@ const customStorage: StateStorage = {
           let migrated = false;
           Object.keys(parsed.state.accounts).forEach((accId) => {
             const acc = parsed.state.accounts[accId];
-            
+
             // Migrate gamification variables if missing
             if (acc.currentStreak === undefined) {
               migrated = true;
@@ -196,7 +202,7 @@ const customStorage: StateStorage = {
 
 export const useAppStore = create<AppStore>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       accounts: {},
       activeAccountId: null,
       theme: "light",
@@ -274,7 +280,7 @@ export const useAppStore = create<AppStore>()(
             typeof foodsAction === "function"
               ? foodsAction(acc.foods)
               : foodsAction;
-          
+
           let xpUpdate = {};
           let levelUp = false;
           if (newFoods.length > acc.foods.length) {
@@ -286,13 +292,13 @@ export const useAppStore = create<AppStore>()(
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { 
-                ...acc, 
+              [state.activeAccountId]: {
+                ...acc,
                 foods: newFoods,
-                ...xpUpdate
+                ...xpUpdate,
               },
             },
-            ...(levelUp ? { showLevelUpCelebration: true } : {})
+            ...(levelUp ? { showLevelUpCelebration: true } : {}),
           };
         }),
 
@@ -304,7 +310,7 @@ export const useAppStore = create<AppStore>()(
             typeof weightsAction === "function"
               ? weightsAction(acc.weights)
               : weightsAction;
-          
+
           let xpUpdate = {};
           let levelUp = false;
           if (newWeights.length > acc.weights.length) {
@@ -316,13 +322,13 @@ export const useAppStore = create<AppStore>()(
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { 
-                ...acc, 
+              [state.activeAccountId]: {
+                ...acc,
                 weights: newWeights,
-                ...xpUpdate
+                ...xpUpdate,
               },
             },
-            ...(levelUp ? { showLevelUpCelebration: true } : {})
+            ...(levelUp ? { showLevelUpCelebration: true } : {}),
           };
         }),
 
@@ -346,13 +352,13 @@ export const useAppStore = create<AppStore>()(
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { 
-                ...acc, 
+              [state.activeAccountId]: {
+                ...acc,
                 workouts: newWorkouts,
-                ...xpUpdate
+                ...xpUpdate,
               },
             },
-            ...(levelUp ? { showLevelUpCelebration: true } : {})
+            ...(levelUp ? { showLevelUpCelebration: true } : {}),
           };
         }),
 
@@ -398,10 +404,10 @@ export const useAppStore = create<AppStore>()(
               [state.activeAccountId]: {
                 ...acc,
                 waterLogs: { ...logs, [key]: next },
-                ...xpUpdate
+                ...xpUpdate,
               },
             },
-            ...(levelUp ? { showLevelUpCelebration: true } : {})
+            ...(levelUp ? { showLevelUpCelebration: true } : {}),
           };
         }),
 
@@ -469,11 +475,43 @@ export const useAppStore = create<AppStore>()(
                 userLevel: nextLevel,
               },
             },
-            ...(levelUp ? { showLevelUpCelebration: true } : {})
+            ...(levelUp ? { showLevelUpCelebration: true } : {}),
           };
         }),
 
       dismissLevelUp: () => set({ showLevelUpCelebration: false }),
+
+      exportUserData: () => {
+        const state = get();
+        const serializableState = {
+          accounts: state.accounts,
+          activeAccountId: state.activeAccountId,
+          theme: state.theme,
+          hasSeenWelcome: state.hasSeenWelcome,
+        };
+        const dataStr = JSON.stringify(serializableState, null, 2);
+        const blob = new Blob([dataStr], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, "0");
+        const dd = String(today.getDate()).padStart(2, "0");
+        const fileName = `drs_backup_${yyyy}-${mm}-${dd}.json`;
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      },
+
+      factoryReset: () => {
+        localStorage.removeItem("drs.store.v2");
+        window.location.reload();
+      },
     }),
     {
       name: "drs.store.v2",

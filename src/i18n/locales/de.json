@@ -222,11 +222,7 @@
       },
       "w2_l3": {
         "name": "Gebackener Kabeljau mit Kruste",
-        "ingredients": [
-          "200g Kabeljau",
-          "Kräuter der Provence",
-          "Gurkensalat"
-        ],
+        "ingredients": ["200g Kabeljau", "Kräuter der Provence", "Gurkensalat"],
         "steps": [
           "Fisch mit der Kräuterkruste bedecken.",
           "15 Min. bei 180°C backen.",
@@ -271,15 +267,8 @@
       },
       "w2_l5": {
         "name": "Gebackener Lachs mit Zucchinipüree",
-        "ingredients": [
-          "180g Lachs",
-          "1 Zucchini",
-          "Olivenöl und Pfeffer"
-        ],
-        "steps": [
-          "Lachs backen.",
-          "Zuvor gekochte Zucchini mit Öl pürieren."
-        ]
+        "ingredients": ["180g Lachs", "1 Zucchini", "Olivenöl und Pfeffer"],
+        "steps": ["Lachs backen.", "Zuvor gekochte Zucchini mit Öl pürieren."]
       },
       "w2_d5": {
         "name": "Schweinefilet mit Rucola",
@@ -658,11 +647,7 @@
       },
       "w3_d6": {
         "name": "Kabeljau-Omelett",
-        "ingredients": [
-          "2 Eier",
-          "100g entsalzter Kabeljau",
-          "Tomatensalat"
-        ],
+        "ingredients": ["2 Eier", "100g entsalzter Kabeljau", "Tomatensalat"],
         "steps": [
           "Kabeljau zerkleinern und Omelett stocken lassen.",
           "Mit frischem Tomatensalat servieren."
@@ -707,11 +692,7 @@
       },
       "w4_d1": {
         "name": "Gebackener Seehecht mit Kruste",
-        "ingredients": [
-          "200g Seehecht",
-          "Kräuter der Provence",
-          "Rucolasalat"
-        ],
+        "ingredients": ["200g Seehecht", "Kräuter der Provence", "Rucolasalat"],
         "steps": [
           "Seehecht mit den Kräutern bedecken.",
           "Bei 180°C backen und mit Rucola servieren."
@@ -731,11 +712,7 @@
       },
       "w4_d2": {
         "name": "Puten-Brokkoli-Wok",
-        "ingredients": [
-          "150g Putenstreifen",
-          "Brokkoli",
-          "Ingwer und Soja"
-        ],
+        "ingredients": ["150g Putenstreifen", "Brokkoli", "Ingwer und Soja"],
         "steps": [
           "Pute und Brokkoli bei starker Hitze anbraten.",
           "Mit Ingwer und salzarmer Soja würzen."
@@ -743,11 +720,7 @@
       },
       "w4_l3": {
         "name": "Gedämpfter Kabeljau",
-        "ingredients": [
-          "200g frischer Kabeljau",
-          "Spinat",
-          "Pinienkerne"
-        ],
+        "ingredients": ["200g frischer Kabeljau", "Spinat", "Pinienkerne"],
         "steps": [
           "Fisch dämpfen.",
           "Spinat mit Pinienkernen als Beilage anbraten."
@@ -760,18 +733,11 @@
           "Kürbiskerne",
           "Tomate und Gurke"
         ],
-        "steps": [
-          "Alle Zutaten kalt mischen.",
-          "Nach Geschmack anmachen."
-        ]
+        "steps": ["Alle Zutaten kalt mischen.", "Nach Geschmack anmachen."]
       },
       "w4_l4": {
         "name": "Entrecôte mit Paprika",
-        "ingredients": [
-          "200g Entrecôte",
-          "Padrón-Paprika",
-          "Gemischter Salat"
-        ],
+        "ingredients": ["200g Entrecôte", "Padrón-Paprika", "Gemischter Salat"],
         "steps": [
           "Entrecôte grillen.",
           "Paprika anbraten und neben dem Salat servieren."
@@ -803,11 +769,7 @@
       },
       "w4_d5": {
         "name": "Lachs mit Spargel",
-        "ingredients": [
-          "200g Lachs",
-          "Wilder Spargel",
-          "Zitrone"
-        ],
+        "ingredients": ["200g Lachs", "Wilder Spargel", "Zitrone"],
         "steps": [
           "Lachs und Spargel grillen.",
           "Beim Servieren mit Zitrone beträufeln."
@@ -965,11 +927,7 @@
       },
       "w1_d4": {
         "name": "Lachs mit grünen Bohnen",
-        "ingredients": [
-          "150g frischer Lachs",
-          "200g grüne Bohnen",
-          "Zitrone"
-        ],
+        "ingredients": ["150g frischer Lachs", "200g grüne Bohnen", "Zitrone"],
         "steps": [
           "Die grünen Bohnen 8 Minuten dämpfen.",
           "Den Lachs auf der Plancha 3 Min. pro Seite braten, mit der Haut beginnend.",
@@ -1072,11 +1030,7 @@
       },
       "w2_d1": {
         "name": "Pute mit Süßkartoffelpüree",
-        "ingredients": [
-          "150g Pute",
-          "100g Süßkartoffel",
-          "Feldsalat"
-        ],
+        "ingredients": ["150g Pute", "100g Süßkartoffel", "Feldsalat"],
         "steps": [
           "Süßkartoffel in der Mikrowelle garen (8 Min.).",
           "Süßkartoffel zerdrücken und Pute grillen.",
@@ -1122,11 +1076,7 @@
       },
       "w2_d3": {
         "name": "Gebackener Wolfsbarsch mit Gemüse",
-        "ingredients": [
-          "1 Wolfsbarsch (200g)",
-          "Rote Paprika",
-          "Aubergine"
-        ],
+        "ingredients": ["1 Wolfsbarsch (200g)", "Rote Paprika", "Aubergine"],
         "steps": [
           "Gemüse schneiden und grillen.",
           "Fisch 15 Min. bei 180°C auf dem Gemüse backen."
@@ -1146,11 +1096,7 @@
       },
       "w2_d4": {
         "name": "Fit-Hähnchen-Burger",
-        "ingredients": [
-          "150g Hähnchenhackfleisch",
-          "Rucola",
-          "10g Walnüsse"
-        ],
+        "ingredients": ["150g Hähnchenhackfleisch", "Rucola", "10g Walnüsse"],
         "steps": [
           "Burger formen und grillen.",
           "Ohne Brot auf einem Bett aus Rucola und Walnüssen servieren."
@@ -1170,10 +1116,7 @@
       },
       "w2_d5": {
         "name": "Gemüsecremesuppe",
-        "ingredients": [
-          "Zucchini, Lauch, Karotte",
-          "1 hartgekochtes Ei"
-        ],
+        "ingredients": ["Zucchini, Lauch, Karotte", "1 hartgekochtes Ei"],
         "steps": [
           "Gemüse kochen und ohne Sahne pürieren.",
           "Gehacktes Ei darüber geben."
@@ -1222,9 +1165,7 @@
           "Sellerie und Karotte",
           "1 hartgekochtes Ei und 3 Scheiben Lomo"
         ],
-        "steps": [
-          "Auf einem Mezze-Brett anrichten. Kein Kochen erforderlich."
-        ]
+        "steps": ["Auf einem Mezze-Brett anrichten. Kein Kochen erforderlich."]
       },
       "w3_l1": {
         "name": "Geschmorte weiße Bohnen",
@@ -1303,11 +1244,7 @@
       },
       "w3_l4": {
         "name": "Quinoa mit Hähnchen und Gemüse",
-        "ingredients": [
-          "60g Quinoa",
-          "150g Hähnchen",
-          "Zucchini und Paprika"
-        ],
+        "ingredients": ["60g Quinoa", "150g Hähnchen", "Zucchini und Paprika"],
         "steps": [
           "Quinoa waschen und 12 Min. kochen.",
           "Hähnchen und Gemüse anbraten und mit Quinoa mischen."
@@ -1315,11 +1252,7 @@
       },
       "w3_d4": {
         "name": "Champignon-Radieschen-Omelett",
-        "ingredients": [
-          "2 Eier",
-          "100g Champignons",
-          "4 Radieschen"
-        ],
+        "ingredients": ["2 Eier", "100g Champignons", "4 Radieschen"],
         "steps": [
           "Omelett mit angebratenen Champignons zubereiten.",
           "Rohe Radieschenscheiben als Beilage servieren."
@@ -1368,18 +1301,11 @@
           "1 geröstete Aubergine",
           "Zitrone"
         ],
-        "steps": [
-          "Geröstete Aubergine mit Zitrone pürieren.",
-          "Fisch grillen."
-        ]
+        "steps": ["Geröstete Aubergine mit Zitrone pürieren.", "Fisch grillen."]
       },
       "w3_l7": {
         "name": "Fit-Kartoffelomelett",
-        "ingredients": [
-          "2 Eier",
-          "150g Kartoffel",
-          "1/2 Zwiebel"
-        ],
+        "ingredients": ["2 Eier", "150g Kartoffel", "1/2 Zwiebel"],
         "steps": [
           "In Scheiben geschnittene Kartoffel dämpfen oder in der Mikrowelle garen (7 Min.).",
           "Mit Ei mischen und mit einem Tropfen Öl stocken lassen."
@@ -1387,11 +1313,7 @@
       },
       "w3_d7": {
         "name": "Gebackene Garnelen und Hummus",
-        "ingredients": [
-          "12 große Garnelen",
-          "80g Hummus",
-          "Rohe Karotten"
-        ],
+        "ingredients": ["12 große Garnelen", "80g Hummus", "Rohe Karotten"],
         "steps": [
           "Garnelen mit Knoblauch und Petersilie backen (6 Min.).",
           "Mit Hummus und rohen Karotten servieren."
@@ -1509,11 +1431,7 @@
       },
       "w4_d5": {
         "name": "Omelett mit Pute und leichtem Käse",
-        "ingredients": [
-          "2 Eier",
-          "2 Scheiben Pute",
-          "1 Scheibe leichter Käse"
-        ],
+        "ingredients": ["2 Eier", "2 Scheiben Pute", "1 Scheibe leichter Käse"],
         "steps": [
           "Eier schlagen und in die Pfanne geben.",
           "Käse und Pute in der Mitte falten, damit es schmilzt."
@@ -1533,11 +1451,7 @@
       },
       "w4_d6": {
         "name": "Seehecht-Garnelen-Spieße",
-        "ingredients": [
-          "150g Seehechtwürfel",
-          "Garnelen",
-          "Grüne Bohnen"
-        ],
+        "ingredients": ["150g Seehechtwürfel", "Garnelen", "Grüne Bohnen"],
         "steps": [
           "Spieße zusammenstellen und grillen.",
           "Mit gedämpften grünen Bohnen servieren."
@@ -1838,11 +1752,7 @@
       },
       "w2_l4": {
         "name": "Gebratenes Tempeh und Gemüse",
-        "ingredients": [
-          "120g Tempeh",
-          "Paprika und Karotte",
-          "10g Erdnüsse"
-        ],
+        "ingredients": ["120g Tempeh", "Paprika und Karotte", "10g Erdnüsse"],
         "steps": [
           "Tempeh in Streifen schneiden und bei starker Hitze anbraten.",
           "Julienne-Gemüse hinzufügen und im Wok-Stil anbraten.",
@@ -1943,11 +1853,7 @@
       },
       "w3_l1": {
         "name": "Warmer Linsensalat",
-        "ingredients": [
-          "100g Linsen",
-          "40g Quinoa",
-          "Paprika und Zwiebel"
-        ],
+        "ingredients": ["100g Linsen", "40g Quinoa", "Paprika und Zwiebel"],
         "steps": [
           "Quinoa kochen.",
           "Paprika und Zwiebel anbraten.",
@@ -1956,11 +1862,7 @@
       },
       "w3_d1": {
         "name": "Zucchini-Ziegenkäse-Omelett",
-        "ingredients": [
-          "2 Eier",
-          "1/2 Zucchini",
-          "20g Ziegenkäserolle"
-        ],
+        "ingredients": ["2 Eier", "1/2 Zucchini", "20g Ziegenkäserolle"],
         "steps": [
           "Zucchini in sehr kleine Würfel schneiden und anbraten.",
           "Zerbröselten Käse zu den geschlagenen Eiern geben.",
@@ -2008,10 +1910,7 @@
       },
       "w3_d3": {
         "name": "Weiße Gemüsecremesuppe",
-        "ingredients": [
-          "Lauch, Blumenkohl und Zwiebel",
-          "1 pochiertes Ei"
-        ],
+        "ingredients": ["Lauch, Blumenkohl und Zwiebel", "1 pochiertes Ei"],
         "steps": [
           "Weißes Gemüse kochen und zu einer feinen Creme pürieren.",
           "Pochiertes Ei zubereiten (in kochendem Wasser mit Essig 3 Min. pochieren).",
@@ -2059,11 +1958,7 @@
       },
       "w3_d5": {
         "name": "Mit Ei gefüllte Paprika",
-        "ingredients": [
-          "2 große rote Paprika",
-          "2 Eier",
-          "Salz und Pfeffer"
-        ],
+        "ingredients": ["2 große rote Paprika", "2 Eier", "Salz und Pfeffer"],
         "steps": [
           "Paprika in der Mitte (längs) durchschneiden und entkernen.",
           "In eine Pfanne mit Deckel legen. In jede Hälfte ein Ei schlagen.",
@@ -2242,11 +2137,7 @@
       },
       "w4_d5": {
         "name": "Omelett mit wildem Spargel",
-        "ingredients": [
-          "2 Eier",
-          "1 Bund wilder Spargel",
-          "50g Avocado"
-        ],
+        "ingredients": ["2 Eier", "1 Bund wilder Spargel", "50g Avocado"],
         "steps": [
           "Gehackten Spargel anbraten.",
           "Eier schlagen, mischen und Omelett braten.",
@@ -2613,7 +2504,12 @@
     "trainingCard": "Training",
     "pending": "Ausstehend",
     "completed": "Abgeschlossen",
-    "recordWeightTitle": "Aktuelles Gewicht eintragen"
+    "recordWeightTitle": "Aktuelles Gewicht eintragen",
+    "exportJSON": "Meine Daten exportieren (JSON)",
+    "dangerZoneTitle": "Gefahrenbereich",
+    "dangerZoneDesc": "Unwiderrufliche Aktionen zur Datensouveränität.",
+    "wipeDataBtn": "Alle meine Daten löschen",
+    "wipeConfirm": "Sind Sie sicher, dass Sie alle Ihre Daten dauerhaft löschen möchten? Diese Aktion ist völlig unwiderruflich und Sie verlieren Ihren gesamten Verlauf, Ihre Strähne und Ihren Fortschritt."
   },
   "customFood": {
     "createBtn": "➕ Neues Lebensmittel erstellen",
@@ -2654,12 +2550,7 @@
     },
     "spinach_omelette": {
       "name": "Spinat-Omelett",
-      "ingredients": [
-        "3 Eier",
-        "150 g Spinat",
-        "Knoblauch",
-        "1 EL Öl"
-      ],
+      "ingredients": ["3 Eier", "150 g Spinat", "Knoblauch", "1 EL Öl"],
       "steps": [
         "Knoblauch und Spinat anbraten.",
         "Eier verquirlen und in der Pfanne stocken lassen."
@@ -2698,10 +2589,7 @@
         "Zwiebel",
         "1 Schmelzkäse light"
       ],
-      "steps": [
-        "Gemüse kochen.",
-        "Pürieren und Schmelzkäse hinzufügen."
-      ]
+      "steps": ["Gemüse kochen.", "Pürieren und Schmelzkäse hinzufügen."]
     },
     "chickpea_salad": {
       "name": "Kichererbsensalat",
@@ -2731,11 +2619,7 @@
     },
     "broken_eggs": {
       "name": "Gebackene Eier mit Kartoffeln (Huevos Rotos)",
-      "ingredients": [
-        "2 Eier",
-        "1 große Kartoffel",
-        "Paprikapulver"
-      ],
+      "ingredients": ["2 Eier", "1 große Kartoffel", "Paprikapulver"],
       "steps": [
         "Kartoffel in Scheiben im Ofen/Mikrowelle garen.",
         "Spiegeleier darauf braten."
@@ -2748,10 +2632,7 @@
         "Halbe Avocado",
         "2 Scheiben Putenbrust"
       ],
-      "steps": [
-        "Brot toasten.",
-        "Avocado verteilen und Pute darauflegen."
-      ]
+      "steps": ["Brot toasten.", "Avocado verteilen und Pute darauflegen."]
     },
     "egg_white_mushroom": {
       "name": "Eiweiß-Champignon-Rührei",
@@ -2781,11 +2662,7 @@
     },
     "stuffed_peppers_soy": {
       "name": "Mit Soja gefüllte Paprika",
-      "ingredients": [
-        "2 Paprika",
-        "50 g Sojaschnetzel",
-        "Passierte Tomaten"
-      ],
+      "ingredients": ["2 Paprika", "50 g Sojaschnetzel", "Passierte Tomaten"],
       "steps": [
         "Soja einweichen und mit Tomaten mischen.",
         "Paprika füllen und 25 Min. backen."
@@ -2806,11 +2683,7 @@
     },
     "grilled_eggplant_cheese": {
       "name": "Gegrillte Aubergine mit Käse",
-      "ingredients": [
-        "1 Aubergine",
-        "80 g Frischkäse",
-        "Oregano"
-      ],
+      "ingredients": ["1 Aubergine", "80 g Frischkäse", "Oregano"],
       "steps": [
         "Aubergine in Scheiben schneiden und grillen.",
         "Mit Käsescheiben servieren."
@@ -2818,11 +2691,7 @@
     },
     "protein_smoothie_bowl": {
       "name": "Protein Smoothie Bowl",
-      "ingredients": [
-        "1 gefrorene Banane",
-        "Quark",
-        "Eine Handvoll Erdbeeren"
-      ],
+      "ingredients": ["1 gefrorene Banane", "Quark", "Eine Handvoll Erdbeeren"],
       "steps": [
         "Banane, Erdbeeren und Quark pürieren.",
         "Sehr kalt in einer Schüssel servieren."

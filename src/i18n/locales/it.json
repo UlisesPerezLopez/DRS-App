@@ -271,11 +271,7 @@
       },
       "w2_l5": {
         "name": "Salmone al Forno con Purè di Zucchine",
-        "ingredients": [
-          "180g di salmone",
-          "1 zucchina",
-          "Olio EVO e pepe"
-        ],
+        "ingredients": ["180g di salmone", "1 zucchina", "Olio EVO e pepe"],
         "steps": [
           "Cuoci il salmone al forno.",
           "Frulla la zucchina precedentemente cotta con olio per fare il purè."
@@ -743,11 +739,7 @@
       },
       "w4_l3": {
         "name": "Merluzzo al Vapore",
-        "ingredients": [
-          "200g di merluzzo fresco",
-          "Spinaci",
-          "Pinoli"
-        ],
+        "ingredients": ["200g di merluzzo fresco", "Spinaci", "Pinoli"],
         "steps": [
           "Cuoci il pesce a vapore.",
           "Salta gli spinaci con i pinoli come contorno."
@@ -803,11 +795,7 @@
       },
       "w4_d5": {
         "name": "Salmone con Asparagi",
-        "ingredients": [
-          "200g di salmone",
-          "Asparagi selvatici",
-          "Limone"
-        ],
+        "ingredients": ["200g di salmone", "Asparagi selvatici", "Limone"],
         "steps": [
           "Griglia il salmone e gli asparagi.",
           "Irrora con limone al momento di servire."
@@ -938,11 +926,7 @@
       },
       "w1_d3": {
         "name": "Frittata di funghi",
-        "ingredients": [
-          "2 uova",
-          "100g di funghi a fette",
-          "Aglio in polvere"
-        ],
+        "ingredients": ["2 uova", "100g di funghi a fette", "Aglio in polvere"],
         "steps": [
           "Salta i funghi fino a far rilasciare tutta l'acqua.",
           "Sbatti le uova.",
@@ -1122,11 +1106,7 @@
       },
       "w2_d3": {
         "name": "Branzino al forno con verdure",
-        "ingredients": [
-          "1 branzino (200g)",
-          "Peperone rosso",
-          "Melanzana"
-        ],
+        "ingredients": ["1 branzino (200g)", "Peperone rosso", "Melanzana"],
         "steps": [
           "Taglia e griglia le verdure.",
           "Inforna il pesce per 15 min a 180°C sopra le verdure."
@@ -1146,11 +1126,7 @@
       },
       "w2_d4": {
         "name": "Hamburger di pollo Fit",
-        "ingredients": [
-          "150g di pollo macinato",
-          "Rucola",
-          "10g di noci"
-        ],
+        "ingredients": ["150g di pollo macinato", "Rucola", "10g di noci"],
         "steps": [
           "Forma l'hamburger e griglialo.",
           "Servi senza pane su un letto di rucola e noci."
@@ -1170,10 +1146,7 @@
       },
       "w2_d5": {
         "name": "Vellutata di verdure",
-        "ingredients": [
-          "Zucchina, porro, carota",
-          "1 uovo sodo"
-        ],
+        "ingredients": ["Zucchina, porro, carota", "1 uovo sodo"],
         "steps": [
           "Bollisci le verdure e frulla senza panna.",
           "Aggiungi l'uovo sodo tritato sopra."
@@ -1222,9 +1195,7 @@
           "Sedano e carota",
           "1 uovo sodo e 3 fette di lombo stagionato"
         ],
-        "steps": [
-          "Presenta su un tagliere stile mezze. Senza cottura."
-        ]
+        "steps": ["Presenta su un tagliere stile mezze. Senza cottura."]
       },
       "w3_l1": {
         "name": "Fagioli bianchi in umido",
@@ -1266,11 +1237,7 @@
       },
       "w3_d2": {
         "name": "Crema di spinaci Braccio di Ferro",
-        "ingredients": [
-          "300g di spinaci",
-          "1 patata piccola",
-          "1 uovo sodo"
-        ],
+        "ingredients": ["300g di spinaci", "1 patata piccola", "1 uovo sodo"],
         "steps": [
           "Bollisci patata e spinaci con poca acqua.",
           "Frulla e aggiungi l'uovo sodo tritato."
@@ -1291,11 +1258,7 @@
       },
       "w3_d3": {
         "name": "Seppia con carciofi",
-        "ingredients": [
-          "200g di seppia",
-          "4 carciofi",
-          "Aglio a fettine"
-        ],
+        "ingredients": ["200g di seppia", "4 carciofi", "Aglio a fettine"],
         "steps": [
           "Salta la seppia a fuoco alto.",
           "Aggiungi i carciofi e l'aglio alla fine."
@@ -1315,11 +1278,7 @@
       },
       "w3_d4": {
         "name": "Frittata di funghi e ravanelli",
-        "ingredients": [
-          "2 uova",
-          "100g di funghi",
-          "4 ravanelli"
-        ],
+        "ingredients": ["2 uova", "100g di funghi", "4 ravanelli"],
         "steps": [
           "Prepara la frittata con i funghi saltati.",
           "Servi i ravanelli crudi a fette a lato."
@@ -1363,11 +1322,7 @@
       },
       "w3_d6": {
         "name": "Spada con Baba Ganoush",
-        "ingredients": [
-          "150g di pesce spada",
-          "1 melanzana arrosto",
-          "Limone"
-        ],
+        "ingredients": ["150g di pesce spada", "1 melanzana arrosto", "Limone"],
         "steps": [
           "Frulla la melanzana arrosto con il limone.",
           "Griglia il pesce."
@@ -1375,11 +1330,7 @@
       },
       "w3_l7": {
         "name": "Frittata di patate Fit",
-        "ingredients": [
-          "2 uova",
-          "150g di patate",
-          "1/2 cipolla"
-        ],
+        "ingredients": ["2 uova", "150g di patate", "1/2 cipolla"],
         "steps": [
           "Cuoci la patata a fette al vapore o al microonde (7 min).",
           "Mescola con l'uovo e cuoci con un filo d'olio."
@@ -1387,11 +1338,7 @@
       },
       "w3_d7": {
         "name": "Gamberi al forno e hummus",
-        "ingredients": [
-          "12 gamberoni",
-          "80g di hummus",
-          "Carote crude"
-        ],
+        "ingredients": ["12 gamberoni", "80g di hummus", "Carote crude"],
         "steps": [
           "Inforna i gamberi con aglio e prezzemolo (6 min).",
           "Accompagna con hummus e carote crude."
@@ -1533,11 +1480,7 @@
       },
       "w4_d6": {
         "name": "Spiedini di nasello e gamberi",
-        "ingredients": [
-          "150g di nasello a cubetti",
-          "Gamberi",
-          "Fagiolini"
-        ],
+        "ingredients": ["150g di nasello a cubetti", "Gamberi", "Fagiolini"],
         "steps": [
           "Prepara gli spiedini e grigliali.",
           "Accompagna con fagiolini al vapore."
@@ -1773,11 +1716,7 @@
       },
       "w2_d1": {
         "name": "Uova Strapazzate con Funghi e Tofu",
-        "ingredients": [
-          "2 uova",
-          "100g di tofu sbriciolato",
-          "Funghi e aglio"
-        ],
+        "ingredients": ["2 uova", "100g di tofu sbriciolato", "Funghi e aglio"],
         "steps": [
           "Rosola il tofu sbriciolato in padella per dargli consistenza.",
           "Aggiungi i funghi e l'aglio.",
@@ -2008,10 +1947,7 @@
       },
       "w3_d3": {
         "name": "Crema di Verdure Bianche",
-        "ingredients": [
-          "Porro, cavolfiore e cipolla",
-          "1 uovo in camicia"
-        ],
+        "ingredients": ["Porro, cavolfiore e cipolla", "1 uovo in camicia"],
         "steps": [
           "Bolli le verdure bianche e frullale fino a ottenere una crema liscia.",
           "Prepara un uovo in camicia (cotto in acqua bollente con aceto per 3 min).",
@@ -2059,11 +1995,7 @@
       },
       "w3_d5": {
         "name": "Peperoni Ripieni di Uova",
-        "ingredients": [
-          "2 peperoni rossi grandi",
-          "2 uova",
-          "Sale e pepe"
-        ],
+        "ingredients": ["2 peperoni rossi grandi", "2 uova", "Sale e pepe"],
         "steps": [
           "Taglia il peperone a metà (longitudinalmente) e rimuovi i semi.",
           "Mettilo in una padella con coperchio. Rompi un uovo dentro ogni metà.",
@@ -2613,7 +2545,12 @@
     "trainingCard": "Allenamento",
     "pending": "In attesa",
     "completed": "Completato",
-    "recordWeightTitle": "Registra peso attuale"
+    "recordWeightTitle": "Registra peso attuale",
+    "exportJSON": "Esporta i miei dati (JSON)",
+    "dangerZoneTitle": "Zona di Pericolo",
+    "dangerZoneDesc": "Azioni irreversibili di sovranità dei dati.",
+    "wipeDataBtn": "Cancella tutti i miei dati",
+    "wipeConfirm": "Sei sicuro di voler cancellare permanentemente tutti i tuoi dati? Questa azione è completamente irreversibile e perderai tutta la cronologia, la tua serie e i tuoi progressi."
   },
   "customFood": {
     "createBtn": "➕ Crea nuovo alimento",
@@ -2654,12 +2591,7 @@
     },
     "spinach_omelette": {
       "name": "Frittata di spinaci",
-      "ingredients": [
-        "3 uova",
-        "150 g spinaci",
-        "Aglio",
-        "1 cucchiaio olio"
-      ],
+      "ingredients": ["3 uova", "150 g spinaci", "Aglio", "1 cucchiaio olio"],
       "steps": [
         "Saltare aglio e spinaci.",
         "Sbattere le uova e cuocere in padella."
@@ -2698,10 +2630,7 @@
         "Cipolla",
         "1 formaggino light"
       ],
-      "steps": [
-        "Bollire le verdure.",
-        "Frullare aggiungendo il formaggino."
-      ]
+      "steps": ["Bollire le verdure.", "Frullare aggiungendo il formaggino."]
     },
     "chickpea_salad": {
       "name": "Insalata di ceci",
@@ -2712,10 +2641,7 @@
         "Cipolla rossa",
         "Olio"
       ],
-      "steps": [
-        "Sciacquare i ceci.",
-        "Tagliare le verdure fresche e condire."
-      ]
+      "steps": ["Sciacquare i ceci.", "Tagliare le verdure fresche e condire."]
     },
     "lemon_chicken_sweetpotato": {
       "name": "Pollo al limone con patata dolce",
@@ -2731,11 +2657,7 @@
     },
     "broken_eggs": {
       "name": "Uova rotte (Huevos Rotos)",
-      "ingredients": [
-        "2 uova",
-        "1 patata grande",
-        "Paprika"
-      ],
+      "ingredients": ["2 uova", "1 patata grande", "Paprika"],
       "steps": [
         "Cuocere le fette di patata al forno/microonde.",
         "Friggere le uova sopra."
@@ -2793,12 +2715,7 @@
     },
     "express_couscous": {
       "name": "Cuscus express",
-      "ingredients": [
-        "80 g cuscus",
-        "Carota grattugiata",
-        "Uvetta",
-        "Brodo"
-      ],
+      "ingredients": ["80 g cuscus", "Carota grattugiata", "Uvetta", "Brodo"],
       "steps": [
         "Bollire stessa quantità di brodo e cuscus.",
         "Versare sul cuscus, coprire 5 min e sgranare."
@@ -2806,11 +2723,7 @@
     },
     "grilled_eggplant_cheese": {
       "name": "Melanzana grigliata con formaggio",
-      "ingredients": [
-        "1 melanzana",
-        "80 g formaggio fresco",
-        "Origano"
-      ],
+      "ingredients": ["1 melanzana", "80 g formaggio fresco", "Origano"],
       "steps": [
         "Tagliare la melanzana a fette e grigliare.",
         "Servire con fette di formaggio sopra."
@@ -2818,11 +2731,7 @@
     },
     "protein_smoothie_bowl": {
       "name": "Smoothie Bowl proteico",
-      "ingredients": [
-        "1 banana congelata",
-        "Quark",
-        "Una manciata di fragole"
-      ],
+      "ingredients": ["1 banana congelata", "Quark", "Una manciata di fragole"],
       "steps": [
         "Frullare banana, fragole e quark.",
         "Servire molto freddo in una ciotola."
