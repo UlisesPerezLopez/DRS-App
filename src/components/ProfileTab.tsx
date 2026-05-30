@@ -30,6 +30,7 @@ import { useAppStore } from "../store/useAppStore";
 import { useTranslation } from "react-i18next";
 import { useWorkoutStore } from "../store/workoutStore";
 import { useNotifications } from "../hooks/useNotifications";
+import { hapticTap, hapticSuccess } from "../lib/haptics";
 
 export function ProfileTab() {
   const { t, i18n } = useTranslation();
@@ -67,12 +68,14 @@ export function ProfileTab() {
   const target = dailyTarget(draft);
 
   function save() {
+    hapticTap();
     setProfile(draft);
   }
 
   function addWeight() {
     const w = Number(newWeight);
     if (!w || isNaN(w)) return;
+    hapticSuccess();
     const today = todayISO();
     setWeights((prev) => {
       const filtered = prev.filter((e) => e.date !== today);

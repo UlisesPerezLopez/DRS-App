@@ -7,6 +7,7 @@ import { FOOD_DB } from "../lib/foodData";
 import { calculateGlycemicLoad, calculateMacrosForPortion } from "../lib/calc";
 import { FoodSearchList } from "./FoodSearchList";
 import { useAppStore } from "../store/useAppStore";
+import { hapticTap } from "../lib/haptics";
 
 export interface AddFoodModalProps {
   isOpen: boolean;
@@ -163,6 +164,7 @@ export function AddFoodModal({
   function handleSave() {
     const gr = Number(gramsInput);
     if (!selectedFood || !gr || isNaN(gr)) return;
+    hapticTap();
     onSave(selectedFood, gr, meal, time);
   }
 
@@ -180,6 +182,7 @@ export function AddFoodModal({
   function saveCustomFood() {
     const kcal = Number(cfKcal);
     if (!cfName.trim() || isNaN(kcal) || kcal <= 0) return;
+    hapticTap();
     const newFood: CustomFood = {
       id: crypto.randomUUID(),
       name: cfName.trim(),

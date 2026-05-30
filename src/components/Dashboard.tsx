@@ -20,6 +20,7 @@ import { useNotifications } from "../hooks/useNotifications";
 import { generateDailyMenu } from "../lib/dietEngine";
 import { MotivationEngine } from "../lib/MotivationEngine";
 import { useState, useEffect } from "react";
+import { hapticSuccess } from "../lib/haptics";
 
 export function Dashboard() {
   const { t, i18n } = useTranslation();
@@ -116,9 +117,9 @@ export function Dashboard() {
   useEffect(() => {
     setMotivationQuote(MotivationEngine.getRandomQuote(userGoal, currentLang));
   }, [userGoal, currentLang]);
-
   // Water add handler
   const handleAddWater = () => {
+    hapticSuccess();
     logWater(250, today);
     sendLocalNotification(
       t("notifications.waterAlertTitle"),
