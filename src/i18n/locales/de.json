@@ -108,7 +108,9 @@
     "motivation_gain": "Heb schwer und iss gut! Muskeln werden mit Beständigkeit aufgebaut.",
     "motivation_maintain": "Balance ist der Schlüssel! Mach weiter, um deine beste Version zu halten.",
     "water_add": "250ml hinzufügen",
-    "water_goal_reached": "Tägliches Wasserziel erreicht"
+    "water_goal_reached": "Tägliches Wasserziel erreicht",
+    "streakDays": "Tage",
+    "levelAbbr": "Lvl."
   },
   "mealDiary": {
     "addFood": "Essen hinzufügen",
@@ -3623,5 +3625,11 @@
     "a2_lvl3": "Beine & Agilität: Turbo (Level 3)",
     "b1_lvl3": "Kraft 1: Vorermüdung (Level 3)",
     "b2_lvl3": "Kraft 2: Mechanische Spannung + Tabata (Level 3)"
+  },
+  "gamification": {
+    "levelUpTitle": "Herzlichen Glückwunsch!",
+    "levelUpDesc": "Du hast Level {{level}} erreicht",
+    "levelUpMotiv": "Protokolliere deine Gewohnheiten weiter, um deine Serie aufrechtzuerhalten und weitere Belohnungen freizuschalten!",
+    "continueBtn": "Weiter"
   }
 }

@@ -108,7 +108,9 @@
     "motivation_gain": "Solleva pesante e mangia bene! I muscoli si costruiscono con la costanza.",
     "motivation_maintain": "L'equilibrio è la chiave! Continua così per mantenere la tua versione migliore.",
     "water_add": "Aggiungi 250ml",
-    "water_goal_reached": "Obiettivo giornaliero di acqua raggiunto"
+    "water_goal_reached": "Obiettivo giornaliero di acqua raggiunto",
+    "streakDays": "Giorni",
+    "levelAbbr": "Liv."
   },
   "mealDiary": {
     "addFood": "Aggiungi cibo",
@@ -3623,5 +3625,11 @@
     "a2_lvl3": "Gambe e Agilità: Turbo (Livello 3)",
     "b1_lvl3": "Forza 1: Pre-affaticamento (Livello 3)",
     "b2_lvl3": "Forza 2: Tensione Meccanica + Tabata (Livello 3)"
+  },
+  "gamification": {
+    "levelUpTitle": "Congratulazioni!",
+    "levelUpDesc": "Hai raggiunto il livello {{level}}",
+    "levelUpMotiv": "Continua a registrare le tue abitudini per mantenere la striscia e sbloccare altre ricompense!",
+    "continueBtn": "Continua"
   }
 }

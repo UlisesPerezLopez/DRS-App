@@ -24,7 +24,15 @@ export function Dashboard() {
   const navigate = useNavigate();
   const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
   const logWater = useAppStore((s) => s.logWater);
-  const { profile, foods, workouts, waterLogs } = account;
+  const {
+    profile,
+    foods,
+    workouts,
+    waterLogs,
+    currentStreak,
+    userLevel,
+    userXP,
+  } = account;
 
   const { userGoal, currentMonth, selectedTrack, getCurrentWorkouts } =
     useWorkoutStore();
@@ -125,10 +133,31 @@ export function Dashboard() {
       <header className="space-y-1">
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-              {greeting},
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest flex flex-wrap items-center gap-1.5">
+              <span>{greeting},</span>
+              <span className="flex items-center gap-0.5 bg-amber-50 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 px-1.5 py-0.5 rounded-lg text-[9px] font-black border border-amber-100 dark:border-amber-900/20 uppercase tracking-normal">
+                🔥 {currentStreak || 0} {t("dashboard.streakDays")}
+              </span>
+              <span className="flex items-center gap-0.5 bg-indigo-50 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 px-1.5 py-0.5 rounded-lg text-[9px] font-black border border-indigo-100 dark:border-indigo-900/20 uppercase tracking-normal">
+                ⭐ {t("dashboard.levelAbbr")} {userLevel || 1}
+              </span>
             </p>
-            <h1 className="text-3xl font-black tracking-tighter text-slate-900 dark:text-white">
+            {/* XP progress bar */}
+            <div className="mt-1.5 space-y-0.5 max-w-[160px]">
+              <div className="flex justify-between text-[8px] font-black uppercase text-slate-400 tracking-wide">
+                <span>XP</span>
+                <span className="tabular-nums">{userXP || 0} / 100</span>
+              </div>
+              <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
+                <div
+                  className="h-full bg-gradient-to-r from-emerald-400 to-teal-500 transition-all duration-500 ease-out rounded-full"
+                  style={{
+                    width: `${Math.min(100, Math.max(0, (userXP || 0) % 100))}%`,
+                  }}
+                ></div>
+              </div>
+            </div>
+            <h1 className="text-3xl font-black tracking-tighter text-slate-900 dark:text-white mt-2">
               {profile.name || t("dashboard.welcome")} 👋
             </h1>
           </div>

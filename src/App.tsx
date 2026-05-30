@@ -23,6 +23,7 @@ import { MyPlanTab } from "./components/MyPlanTab";
 import { DietTab } from "./components/DietTab";
 import { StatsTab } from "./components/StatsTab";
 import { WelcomeScreen } from "./components/WelcomeScreen";
+import { LevelUpOverlay } from "./components/LevelUpOverlay";
 import { todayISO } from "./lib/calc";
 
 const NAV_ITEMS = [
@@ -58,7 +59,9 @@ function BottomNav() {
               }`}
             >
               <Icon size={20} />
-              <span className="text-[10px] font-medium">{t(item.labelKey)}</span>
+              <span className="text-[10px] font-medium">
+                {t(item.labelKey)}
+              </span>
             </button>
           );
         })}
@@ -70,13 +73,14 @@ function BottomNav() {
 export default function App() {
   const { t } = useTranslation();
 
-  const theme = useAppStore(s => s.theme);
-  const setTheme = useAppStore(s => s.setTheme);
-  const activeAccountId = useAppStore(s => s.activeAccountId);
-  const accounts = useAppStore(s => s.accounts);
-  const setWeights = useAppStore(s => s.setWeights);
-  const createAccount = useAppStore(s => s.createAccount);
-  const hasSeenWelcome = useAppStore(s => s.hasSeenWelcome);
+  const theme = useAppStore((s) => s.theme);
+  const setTheme = useAppStore((s) => s.setTheme);
+  const activeAccountId = useAppStore((s) => s.activeAccountId);
+  const accounts = useAppStore((s) => s.accounts);
+  const setWeights = useAppStore((s) => s.setWeights);
+  const createAccount = useAppStore((s) => s.createAccount);
+  const hasSeenWelcome = useAppStore((s) => s.hasSeenWelcome);
+  const checkDailyLogin = useAppStore((s) => s.checkDailyLogin);
 
   const activeAccount = activeAccountId ? accounts[activeAccountId] : null;
 
@@ -85,10 +89,20 @@ export default function App() {
   const [showOnboarding, setShowOnboarding] = useState(false);
 
   useEffect(() => {
-    if (activeAccount && activeAccount.profile.name && !activeAccount.planStartDate) {
+    if (activeAccountId) {
+      checkDailyLogin();
+    }
+  }, [activeAccountId, checkDailyLogin]);
+
+  useEffect(() => {
+    if (
+      activeAccount &&
+      activeAccount.profile.name &&
+      !activeAccount.planStartDate
+    ) {
       setShowOnboarding(true);
     }
-  }, [activeAccountId]);
+  }, [activeAccountId, activeAccount]);
 
   // Apply theme class on root
   useEffect(() => {
@@ -101,8 +115,14 @@ export default function App() {
 
   // First-time bootstrap: ensure today's weight is present once
   useEffect(() => {
-    if (activeAccount && activeAccount.weights.length === 0 && activeAccount.profile.weightKg) {
-      setWeights([{ date: todayISO(), weight: activeAccount.profile.weightKg }]);
+    if (
+      activeAccount &&
+      activeAccount.weights.length === 0 &&
+      activeAccount.profile.weightKg
+    ) {
+      setWeights([
+        { date: todayISO(), weight: activeAccount.profile.weightKg },
+      ]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeAccount?.profile.weightKg, activeAccountId]);
@@ -119,7 +139,9 @@ export default function App() {
           <span className="text-4xl text-white">🎯</span>
         </div>
         <h1 className="text-3xl font-bold mb-2">{t("onboarding.title")}</h1>
-        <p className="text-center text-slate-500 mb-8">{t("onboarding.subtitle")}</p>
+        <p className="text-center text-slate-500 mb-8">
+          {t("onboarding.subtitle")}
+        </p>
         <button
           onClick={() => {
             const name = window.prompt(t("onboarding.createPrompt"));
@@ -144,14 +166,16 @@ export default function App() {
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mx-auto shadow-lg">
               <span className="text-3xl">🎯</span>
             </div>
-            <h2 className="text-2xl font-black text-slate-900 dark:text-white">{t("onboarding.title")}</h2>
+            <h2 className="text-2xl font-black text-slate-900 dark:text-white">
+              {t("onboarding.title")}
+            </h2>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
               {t("onboarding.welcome_message")}
             </p>
             <button
               onClick={() => {
                 setShowOnboarding(false);
-                navigate('/profile');
+                navigate("/profile");
               }}
               className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-transform"
             >
@@ -169,13 +193,17 @@ export default function App() {
             </div>
             <div>
               <p className="text-sm font-bold leading-tight">DRS</p>
-              <p className="text-[10px] text-slate-500 leading-tight">Desafío Rutina Saludable</p>
+              <p className="text-[10px] text-slate-500 leading-tight">
+                Desafío Rutina Saludable
+              </p>
             </div>
           </div>
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="w-9 h-9 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 active:scale-95 transition"
-            aria-label={theme === "dark" ? t("common.themeLight") : t("common.themeDark")}
+            aria-label={
+              theme === "dark" ? t("common.themeLight") : t("common.themeDark")
+            }
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
@@ -198,6 +226,7 @@ export default function App() {
 
       {/* Bottom nav */}
       <BottomNav />
+      <LevelUpOverlay />
     </div>
   );
 }

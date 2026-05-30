@@ -108,7 +108,9 @@
     "motivation_gain": "¡Carga pesado y come bien! El músculo se construye con constancia.",
     "motivation_maintain": "¡Equilibrio es la clave! Sigue así para mantener tu mejor versión.",
     "water_add": "Añadir 250ml",
-    "water_goal_reached": "Meta diaria de agua alcanzada"
+    "water_goal_reached": "Meta diaria de agua alcanzada",
+    "streakDays": "Días",
+    "levelAbbr": "Nivel"
   },
   "mealDiary": {
     "addFood": "Añadir alimento",
@@ -3623,5 +3625,11 @@
     "a2_lvl3": "Piernas y Agilidad: Turbo (Nivel 3)",
     "b1_lvl3": "Fuerza 1: Fatiga Previa (Nivel 3)",
     "b2_lvl3": "Fuerza 2: Tensión Mecánica + Tabata (Nivel 3)"
+  },
+  "gamification": {
+    "levelUpTitle": "¡Felicidades!",
+    "levelUpDesc": "Has alcanzado el Nivel {{level}}",
+    "levelUpMotiv": "¡Sigue registrando tus hábitos para mantener tu racha y desbloquear más recompensas!",
+    "continueBtn": "Continuar"
   }
 }

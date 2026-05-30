@@ -9,6 +9,7 @@ import type {
   AccountData,
   CustomFood,
 } from "../types";
+import { todayISO } from "../lib/calc";
 
 export const DEFAULT_PROFILE: Profile = {
   name: "",
@@ -27,6 +28,7 @@ export interface AppState {
   activeAccountId: string | null;
   theme: "light" | "dark";
   hasSeenWelcome: boolean;
+  showLevelUpCelebration: boolean;
 }
 
 export interface AppActions {
@@ -35,20 +37,44 @@ export interface AppActions {
   deleteAccount: (id: string) => void;
   setProfile: (profile: Partial<Profile>) => void;
   setFoods: (foods: FoodEntry[] | ((prev: FoodEntry[]) => FoodEntry[])) => void;
-  setWeights: (
-    weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[]),
-  ) => void;
-  setWorkouts: (
-    workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[]),
-  ) => void;
+  setWeights: (weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[])) => void;
+  setWorkouts: (workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[])) => void;
   setTheme: (theme: "light" | "dark") => void;
   startPlan: (date: string) => void;
   logWater: (amountMl: number, dateStr?: string) => void;
   addCustomFood: (food: CustomFood) => void;
   completeWelcome: () => void;
+  checkDailyLogin: () => void;
+  dismissLevelUp: () => void;
 }
 
 export type AppStore = AppState & AppActions;
+
+const getDaysBetween = (date1Str: string, date2Str: string) => {
+  const d1 = new Date(date1Str + "T00:00:00");
+  const d2 = new Date(date2Str + "T00:00:00");
+  const diffTime = d2.getTime() - d1.getTime();
+  return Math.round(diffTime / (1000 * 60 * 60 * 24));
+};
+
+const addXP = (userXP: number, userLevel: number, amount: number) => {
+  let nextXP = userXP + amount;
+  let nextLevel = userLevel;
+  while (nextXP >= 100) {
+    nextXP -= 100;
+    nextLevel += 1;
+  }
+  return { userXP: nextXP, userLevel: nextLevel };
+};
+
+const addXPAndCheckLevelUp = (acc: AccountData, amount: number) => {
+  const oldLevel = acc.userLevel || 1;
+  const xpUp = addXP(acc.userXP || 0, acc.userLevel || 1, amount);
+  return {
+    xpUpdate: xpUp,
+    levelUp: xpUp.userLevel > oldLevel,
+  };
+};
 
 const customStorage: StateStorage = {
   getItem: (_name) => {
@@ -60,6 +86,25 @@ const customStorage: StateStorage = {
           let migrated = false;
           Object.keys(parsed.state.accounts).forEach((accId) => {
             const acc = parsed.state.accounts[accId];
+            
+            // Migrate gamification variables if missing
+            if (acc.currentStreak === undefined) {
+              migrated = true;
+              acc.currentStreak = 0;
+            }
+            if (acc.lastLoginDate === undefined) {
+              migrated = true;
+              acc.lastLoginDate = null;
+            }
+            if (acc.userXP === undefined) {
+              migrated = true;
+              acc.userXP = 0;
+            }
+            if (acc.userLevel === undefined) {
+              migrated = true;
+              acc.userLevel = 1;
+            }
+
             if (acc.foods) {
               acc.foods = acc.foods.map((food: any) => {
                 if (!food.type) {
@@ -118,6 +163,10 @@ const customStorage: StateStorage = {
         waterLogs: {},
         customFoods: [],
         planStartDate: planStr ? JSON.parse(planStr) : null,
+        currentStreak: 0,
+        lastLoginDate: null,
+        userXP: 0,
+        userLevel: 1,
       };
 
       const state: AppState = {
@@ -125,6 +174,7 @@ const customStorage: StateStorage = {
         activeAccountId: "default_legacy",
         theme: themeStr ? JSON.parse(themeStr) : "light",
         hasSeenWelcome: true, // legacy users already onboarded
+        showLevelUpCelebration: false,
       };
 
       return JSON.stringify({ state, version: 0 });
@@ -151,6 +201,7 @@ export const useAppStore = create<AppStore>()(
       activeAccountId: null,
       theme: "light",
       hasSeenWelcome: false,
+      showLevelUpCelebration: false,
 
       createAccount: (name, profile) =>
         set((state) => {
@@ -164,6 +215,10 @@ export const useAppStore = create<AppStore>()(
             waterLogs: {},
             customFoods: [],
             planStartDate: null,
+            currentStreak: 0,
+            lastLoginDate: null,
+            userXP: 0,
+            userLevel: 1,
           };
           return {
             accounts: { ...state.accounts, [id]: newAccount },
@@ -219,11 +274,25 @@ export const useAppStore = create<AppStore>()(
             typeof foodsAction === "function"
               ? foodsAction(acc.foods)
               : foodsAction;
+          
+          let xpUpdate = {};
+          let levelUp = false;
+          if (newFoods.length > acc.foods.length) {
+            const res = addXPAndCheckLevelUp(acc, 15);
+            xpUpdate = res.xpUpdate;
+            levelUp = res.levelUp;
+          }
+
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { ...acc, foods: newFoods },
+              [state.activeAccountId]: { 
+                ...acc, 
+                foods: newFoods,
+                ...xpUpdate
+              },
             },
+            ...(levelUp ? { showLevelUpCelebration: true } : {})
           };
         }),
 
@@ -235,11 +304,25 @@ export const useAppStore = create<AppStore>()(
             typeof weightsAction === "function"
               ? weightsAction(acc.weights)
               : weightsAction;
+          
+          let xpUpdate = {};
+          let levelUp = false;
+          if (newWeights.length > acc.weights.length) {
+            const res = addXPAndCheckLevelUp(acc, 20);
+            xpUpdate = res.xpUpdate;
+            levelUp = res.levelUp;
+          }
+
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { ...acc, weights: newWeights },
+              [state.activeAccountId]: { 
+                ...acc, 
+                weights: newWeights,
+                ...xpUpdate
+              },
             },
+            ...(levelUp ? { showLevelUpCelebration: true } : {})
           };
         }),
 
@@ -251,11 +334,25 @@ export const useAppStore = create<AppStore>()(
             typeof workoutsAction === "function"
               ? workoutsAction(acc.workouts)
               : workoutsAction;
+
+          let xpUpdate = {};
+          let levelUp = false;
+          if (newWorkouts.length > acc.workouts.length) {
+            const res = addXPAndCheckLevelUp(acc, 30);
+            xpUpdate = res.xpUpdate;
+            levelUp = res.levelUp;
+          }
+
           return {
             accounts: {
               ...state.accounts,
-              [state.activeAccountId]: { ...acc, workouts: newWorkouts },
+              [state.activeAccountId]: { 
+                ...acc, 
+                workouts: newWorkouts,
+                ...xpUpdate
+              },
             },
+            ...(levelUp ? { showLevelUpCelebration: true } : {})
           };
         }),
 
@@ -285,14 +382,26 @@ export const useAppStore = create<AppStore>()(
           const logs = acc.waterLogs || {};
           const current = logs[key] || 0;
           const next = Math.max(0, current + amountMl);
+
+          // Only reward XP when they increase water consumption (amountMl > 0)
+          let xpUpdate = {};
+          let levelUp = false;
+          if (amountMl > 0) {
+            const res = addXPAndCheckLevelUp(acc, 10);
+            xpUpdate = res.xpUpdate;
+            levelUp = res.levelUp;
+          }
+
           return {
             accounts: {
               ...state.accounts,
               [state.activeAccountId]: {
                 ...acc,
                 waterLogs: { ...logs, [key]: next },
+                ...xpUpdate
               },
             },
+            ...(levelUp ? { showLevelUpCelebration: true } : {})
           };
         }),
 
@@ -312,6 +421,59 @@ export const useAppStore = create<AppStore>()(
         }),
 
       completeWelcome: () => set({ hasSeenWelcome: true }),
+
+      checkDailyLogin: () =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          const today = todayISO();
+          const last = acc.lastLoginDate;
+
+          let nextStreak = acc.currentStreak || 0;
+          let nextXP = acc.userXP || 0;
+          let nextLevel = acc.userLevel || 1;
+          let levelUp = false;
+
+          if (!last) {
+            // First time login
+            nextStreak = 1;
+            const xpUp = addXP(nextXP, nextLevel, 10); // Reward 10 XP on first login
+            if (xpUp.userLevel > nextLevel) {
+              levelUp = true;
+            }
+            nextXP = xpUp.userXP;
+            nextLevel = xpUp.userLevel;
+          } else {
+            const diff = getDaysBetween(last, today);
+            if (diff === 1) {
+              nextStreak += 1;
+              const xpUp = addXP(nextXP, nextLevel, 20); // Reward 20 XP for daily daily login
+              if (xpUp.userLevel > nextLevel) {
+                levelUp = true;
+              }
+              nextXP = xpUp.userXP;
+              nextLevel = xpUp.userLevel;
+            } else if (diff > 1) {
+              nextStreak = 1; // broken streak
+            }
+          }
+
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: {
+                ...acc,
+                currentStreak: nextStreak,
+                lastLoginDate: today,
+                userXP: nextXP,
+                userLevel: nextLevel,
+              },
+            },
+            ...(levelUp ? { showLevelUpCelebration: true } : {})
+          };
+        }),
+
+      dismissLevelUp: () => set({ showLevelUpCelebration: false }),
     }),
     {
       name: "drs.store.v2",

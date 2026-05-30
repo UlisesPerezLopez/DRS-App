@@ -85,6 +85,10 @@ export interface AccountData {
   waterLogs: Record<string, number>;
   customFoods: CustomFood[];
   planStartDate: string | null;
+  currentStreak: number;
+  lastLoginDate: string | null;
+  userXP: number;
+  userLevel: number;
 }
 
 export type PlanWarning = 'high_sodium' | 'high_potassium';

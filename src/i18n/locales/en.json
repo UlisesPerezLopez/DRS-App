@@ -108,7 +108,9 @@
     "motivation_gain": "Lift heavy and eat well! Muscle is built with consistency.",
     "motivation_maintain": "Balance is key! Keep it up to maintain your best version.",
     "water_add": "Add 250ml",
-    "water_goal_reached": "Daily water goal reached"
+    "water_goal_reached": "Daily water goal reached",
+    "streakDays": "Days",
+    "levelAbbr": "Lvl."
   },
   "mealDiary": {
     "addFood": "Add food",
@@ -3623,5 +3625,11 @@
     "a2_lvl3": "Legs & Agility: Turbo (Level 3)",
     "b1_lvl3": "Strength 1: Pre-Fatigue (Level 3)",
     "b2_lvl3": "Strength 2: Mechanical Tension + Tabata (Level 3)"
+  },
+  "gamification": {
+    "levelUpTitle": "Congratulations!",
+    "levelUpDesc": "You have reached Level {{level}}",
+    "levelUpMotiv": "Keep logging your habits to maintain your streak and unlock more rewards!",
+    "continueBtn": "Continue"
   }
 }
