@@ -22,15 +22,18 @@ import {
   Zap,
   Calendar,
   Dumbbell,
+  Bell,
 } from "lucide-react";
 import type { ActivityLevel, Profile } from "../types";
 import { ACTIVITY_LABEL, bmr, dailyTarget, tdee, todayISO } from "../lib/calc";
 import { useAppStore } from "../store/useAppStore";
 import { useTranslation } from "react-i18next";
 import { useWorkoutStore } from "../store/workoutStore";
+import { useNotifications } from "../hooks/useNotifications";
 
 export function ProfileTab() {
   const { t, i18n } = useTranslation();
+  const { permission, requestPermission } = useNotifications();
   const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
   const profile = account.profile;
   const weights = account.weights;
@@ -205,6 +208,31 @@ export function ProfileTab() {
             <option value="it">Italiano</option>
           </select>
         </Field>
+      </section>
+
+      {/* Local Notifications Preferences Card */}
+      <section className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+        <div className="flex items-center gap-2 mb-1">
+          <Bell size={18} className="text-emerald-500" />
+          <h2 className="font-semibold">{t("profile.notificationsTitle")}</h2>
+        </div>
+        <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+          {t("profile.notificationsDesc")}
+        </p>
+        <button
+          onClick={requestPermission}
+          disabled={permission === "granted"}
+          className={`w-full py-2.5 rounded-xl font-semibold transition text-sm flex items-center justify-center gap-2 ${
+            permission === "granted"
+              ? "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed border border-slate-200 dark:border-slate-700"
+              : "bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white shadow-md shadow-emerald-500/10"
+          }`}
+        >
+          <Bell size={16} />
+          {permission === "granted"
+            ? t("profile.notificationsEnabled")
+            : t("profile.enableNotifications")}
+        </button>
       </section>
 
       {/* Account Management */}

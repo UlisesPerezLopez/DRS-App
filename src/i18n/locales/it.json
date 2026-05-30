@@ -27,9 +27,17 @@
     "welcome_message": "Benvenuto! Personalizza il tuo profilo per iniziare.",
     "go_to_profile": "Vai al Profilo"
   },
+  "notifications": {
+    "waterAlertTitle": "Ben fatto!",
+    "waterAlertBody": "Hai aggiunto 250ml di acqua"
+  },
   "profile": {
     "title": "Profilo & Progresso",
     "subtitle": "I tuoi dati sono salvati su questo dispositivo.",
+    "notificationsTitle": "Promemoria locali",
+    "notificationsDesc": "Attiva gli avvisi di sistema per mantenere i tuoi obiettivi di idratazione e abitudini in linea.",
+    "enableNotifications": "Attiva promemoria locali",
+    "notificationsEnabled": "Notifiche attivate",
     "management": "Gestione Profili",
     "preferences": "Preferenze App",
     "language": "Lingua",

@@ -16,12 +16,14 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { InstallBanner } from "./InstallBanner";
 import { useWorkoutStore } from "../store/workoutStore";
+import { useNotifications } from "../hooks/useNotifications";
 import { generateDailyMenu } from "../lib/dietEngine";
 import { MotivationEngine } from "../lib/MotivationEngine";
 import { useState, useEffect } from "react";
 
 export function Dashboard() {
   const { t, i18n } = useTranslation();
+  const { sendLocalNotification } = useNotifications();
   const navigate = useNavigate();
   const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
   const logWater = useAppStore((s) => s.logWater);
@@ -118,6 +120,10 @@ export function Dashboard() {
   // Water add handler
   const handleAddWater = () => {
     logWater(250, today);
+    sendLocalNotification(
+      t("notifications.waterAlertTitle"),
+      t("notifications.waterAlertBody"),
+    );
     const newTotal = waterConsumed + 250;
     if (newTotal >= waterTarget && waterConsumed < waterTarget) {
       setWaterAlert(true);
