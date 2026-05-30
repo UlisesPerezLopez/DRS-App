@@ -15,6 +15,8 @@ export interface Profile {
 
 export interface FoodEntry {
   id: string;
+  foodId: string; // ID real o key
+  type: "common" | "custom"; // Origen explícito del alimento
   name: string;
   calories: number;
   grams: number;
@@ -95,3 +97,7 @@ export interface DailyMenuPlan {
   totalKcal: number;
   warnings?: PlanWarning[];
 }
+
+export type SearchableFood =
+  | (CommonFood & { _type: "common" })
+  | (CustomFood & { _type: "custom" });

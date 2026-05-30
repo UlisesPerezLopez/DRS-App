@@ -66,7 +66,13 @@
     "goal_lose_weight": "Perdere Peso",
     "goal_maintain": "Mantenere",
     "goal_gain_muscle": "Aumentare Massa",
-    "month_label": "Mese {{n}}"
+    "month_label": "Mese {{n}}",
+    "activity": {
+      "sedentary": "Ufficio / Sedentario",
+      "light": "Leggero (1-3 giorni/sett)",
+      "moderate": "Moderato (3-5 giorni/sett)",
+      "active": "Attivo (6-7 giorni/sett)"
+    }
   },
   "dashboard": {
     "greeting_morning": "Buongiorno",
@@ -2298,7 +2304,11 @@
           "Goditi l'ultima cena del piano."
         ]
       }
-    }
+    },
+    "lowCostTitle": "Ricette Low-Cost",
+    "lowCostDesc": "{{count}} ricette economiche e facili",
+    "fullMenuTitle": "Ricettario completo dei menu",
+    "fullMenuDesc": "{{count}} ricette dei piani nutrizionali"
   },
   "dietTab": {
     "title": "Piano Nutrizionale",
@@ -2595,7 +2605,13 @@
     "weight": "Peso (kg)",
     "calories": "Calorie",
     "water": "Acqua (ml)",
-    "training": "Allenamento (min)"
+    "training": "Allenamento (min)",
+    "kcalToday": "Kcal Oggi",
+    "waterCard": "Acqua",
+    "trainingCard": "Allenamento",
+    "pending": "In attesa",
+    "completed": "Completato",
+    "recordWeightTitle": "Registra peso attuale"
   },
   "customFood": {
     "createBtn": "➕ Crea nuovo alimento",

@@ -16,10 +16,14 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["pwa-192x192.svg", "pwa-512x512.svg", "icons/icon.svg"],
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,json}"],
+      },
       manifest: {
         name: "DRS · Desafío Rutina Saludable",
         short_name: "DRS",
-        description: "Sistema Inteligente de Recuperación Dietética y Entrenamiento",
+        description:
+          "Sistema Inteligente de Recuperación Dietética y Entrenamiento",
         theme_color: "#10b981",
         background_color: "#FDFBF7",
         display: "standalone",
@@ -30,23 +34,23 @@ export default defineConfig({
             src: "/pwa-192x192.svg",
             sizes: "192x192",
             type: "image/svg+xml",
-            purpose: "any"
+            purpose: "any",
           },
           {
             src: "/pwa-512x512.svg",
             sizes: "512x512",
             type: "image/svg+xml",
-            purpose: "any"
+            purpose: "any",
           },
           {
             src: "/pwa-512x512.svg",
             sizes: "512x512",
             type: "image/svg+xml",
-            purpose: "maskable"
-          }
-        ]
-      }
-    })
+            purpose: "maskable",
+          },
+        ],
+      },
+    }),
   ],
   resolve: {
     alias: {

@@ -66,7 +66,13 @@
     "goal_lose_weight": "Perdre du Poids",
     "goal_maintain": "Maintenir",
     "goal_gain_muscle": "Gagner du Muscle",
-    "month_label": "Mois {{n}}"
+    "month_label": "Mois {{n}}",
+    "activity": {
+      "sedentary": "Bureau / Sédentaire",
+      "light": "Légère (1-3 jours/sem)",
+      "moderate": "Modérée (3-5 jours/sem)",
+      "active": "Active (6-7 jours/sem)"
+    }
   },
   "dashboard": {
     "greeting_morning": "Bonjour",
@@ -2298,7 +2304,11 @@
           "Profiter du dernier repas du plan."
         ]
       }
-    }
+    },
+    "lowCostTitle": "Recettes Low-Cost",
+    "lowCostDesc": "{{count}} recettes économiques et faciles",
+    "fullMenuTitle": "Recetario completo de Menús",
+    "fullMenuDesc": "{{count}} recettes de plans nutritionnels"
   },
   "dietTab": {
     "title": "Plan Nutritionnel",
@@ -2595,7 +2605,13 @@
     "weight": "Poids (kg)",
     "calories": "Calories",
     "water": "Eau (ml)",
-    "training": "Entraînement (min)"
+    "training": "Entraînement (min)",
+    "kcalToday": "Kcal Aujourd'hui",
+    "waterCard": "Eau",
+    "trainingCard": "Entraînement",
+    "pending": "En attente",
+    "completed": "Terminé",
+    "recordWeightTitle": "Enregistrer le poids actuel"
   },
   "customFood": {
     "createBtn": "➕ Créer un nouvel aliment",

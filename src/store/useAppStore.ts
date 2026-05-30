@@ -1,7 +1,14 @@
 import { create } from "zustand";
 import { persist, createJSONStorage, StateStorage } from "zustand/middleware";
 import { STORAGE_KEYS } from "../lib/storage";
-import type { FoodEntry, Profile, WeightEntry, WorkoutSession, AccountData, CustomFood } from "../types";
+import type {
+  FoodEntry,
+  Profile,
+  WeightEntry,
+  WorkoutSession,
+  AccountData,
+  CustomFood,
+} from "../types";
 
 export const DEFAULT_PROFILE: Profile = {
   name: "",
@@ -28,12 +35,16 @@ export interface AppActions {
   deleteAccount: (id: string) => void;
   setProfile: (profile: Partial<Profile>) => void;
   setFoods: (foods: FoodEntry[] | ((prev: FoodEntry[]) => FoodEntry[])) => void;
-  setWeights: (weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[])) => void;
-  setWorkouts: (workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[])) => void;
+  setWeights: (
+    weights: WeightEntry[] | ((prev: WeightEntry[]) => WeightEntry[]),
+  ) => void;
+  setWorkouts: (
+    workouts: WorkoutSession[] | ((prev: WorkoutSession[]) => WorkoutSession[]),
+  ) => void;
   setTheme: (theme: "light" | "dark") => void;
   startPlan: (date: string) => void;
-  logWater: (amountMl: number) => void;
-  addCustomFood: (food: Omit<CustomFood, 'id'>) => void;
+  logWater: (amountMl: number, dateStr?: string) => void;
+  addCustomFood: (food: CustomFood) => void;
   completeWelcome: () => void;
 }
 
@@ -44,7 +55,32 @@ const customStorage: StateStorage = {
     try {
       const v2Str = localStorage.getItem("drs.store.v2");
       if (v2Str) {
-        return v2Str;
+        const parsed = JSON.parse(v2Str);
+        if (parsed && parsed.state && parsed.state.accounts) {
+          let migrated = false;
+          Object.keys(parsed.state.accounts).forEach((accId) => {
+            const acc = parsed.state.accounts[accId];
+            if (acc.foods) {
+              acc.foods = acc.foods.map((food: any) => {
+                if (!food.type) {
+                  migrated = true;
+                  const isCustom = food.name.startsWith("custom:");
+                  return {
+                    ...food,
+                    type: isCustom ? "custom" : "common",
+                    foodId: isCustom ? food.id : food.name,
+                    name: isCustom ? food.name.slice(7) : food.name,
+                  };
+                }
+                return food;
+              });
+            }
+          });
+          if (migrated) {
+            localStorage.setItem("drs.store.v2", JSON.stringify(parsed));
+          }
+        }
+        return JSON.stringify(parsed);
       }
 
       // Migrar desde legacy v1 si existe
@@ -55,7 +91,14 @@ const customStorage: StateStorage = {
       const themeStr = localStorage.getItem(STORAGE_KEYS.theme);
       const planStr = localStorage.getItem(STORAGE_KEYS.planStartDate);
 
-      if (!profileStr && !foodsStr && !weightsStr && !workoutsStr && !themeStr && !planStr) {
+      if (
+        !profileStr &&
+        !foodsStr &&
+        !weightsStr &&
+        !workoutsStr &&
+        !themeStr &&
+        !planStr
+      ) {
         return null;
       }
 
@@ -78,7 +121,7 @@ const customStorage: StateStorage = {
       };
 
       const state: AppState = {
-        accounts: { "default_legacy": defaultAccount },
+        accounts: { default_legacy: defaultAccount },
         activeAccountId: "default_legacy",
         theme: themeStr ? JSON.parse(themeStr) : "light",
         hasSeenWelcome: true, // legacy users already onboarded
@@ -109,149 +152,170 @@ export const useAppStore = create<AppStore>()(
       theme: "light",
       hasSeenWelcome: false,
 
-      createAccount: (name, profile) => set((state) => {
-        const id = crypto.randomUUID();
-        const newAccount: AccountData = {
-          id,
-          profile: { ...DEFAULT_PROFILE, ...profile, name },
-          foods: [],
-          weights: [],
-          workouts: [],
-          waterLogs: {},
-          customFoods: [],
-          planStartDate: null,
-        };
-        return {
-          accounts: { ...state.accounts, [id]: newAccount },
-          activeAccountId: id
-        };
-      }),
+      createAccount: (name, profile) =>
+        set((state) => {
+          const id = crypto.randomUUID();
+          const newAccount: AccountData = {
+            id,
+            profile: { ...DEFAULT_PROFILE, ...profile, name },
+            foods: [],
+            weights: [],
+            workouts: [],
+            waterLogs: {},
+            customFoods: [],
+            planStartDate: null,
+          };
+          return {
+            accounts: { ...state.accounts, [id]: newAccount },
+            activeAccountId: id,
+          };
+        }),
 
-      switchAccount: (id) => set((state) => {
-        if (state.accounts[id]) {
-          return { activeAccountId: id };
-        }
-        return {};
-      }),
-
-      deleteAccount: (id) => set((state) => {
-        const newAccounts = { ...state.accounts };
-        delete newAccounts[id];
-        
-        let newActive = state.activeAccountId;
-        if (newActive === id) {
-          const remainingIds = Object.keys(newAccounts);
-          newActive = remainingIds.length > 0 ? remainingIds[0] : null;
-        }
-
-        return {
-          accounts: newAccounts,
-          activeAccountId: newActive
-        };
-      }),
-
-      setProfile: (partial) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: {
-              ...acc,
-              profile: { ...acc.profile, ...partial }
-            }
+      switchAccount: (id) =>
+        set((state) => {
+          if (state.accounts[id]) {
+            return { activeAccountId: id };
           }
-        };
-      }),
+          return {};
+        }),
 
-      setFoods: (foodsAction) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        const newFoods = typeof foodsAction === "function" ? foodsAction(acc.foods) : foodsAction;
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: { ...acc, foods: newFoods }
-          }
-        };
-      }),
+      deleteAccount: (id) =>
+        set((state) => {
+          const newAccounts = { ...state.accounts };
+          delete newAccounts[id];
 
-      setWeights: (weightsAction) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        const newWeights = typeof weightsAction === "function" ? weightsAction(acc.weights) : weightsAction;
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: { ...acc, weights: newWeights }
+          let newActive = state.activeAccountId;
+          if (newActive === id) {
+            const remainingIds = Object.keys(newAccounts);
+            newActive = remainingIds.length > 0 ? remainingIds[0] : null;
           }
-        };
-      }),
 
-      setWorkouts: (workoutsAction) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        const newWorkouts = typeof workoutsAction === "function" ? workoutsAction(acc.workouts) : workoutsAction;
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: { ...acc, workouts: newWorkouts }
-          }
-        };
-      }),
+          return {
+            accounts: newAccounts,
+            activeAccountId: newActive,
+          };
+        }),
+
+      setProfile: (partial) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: {
+                ...acc,
+                profile: { ...acc.profile, ...partial },
+              },
+            },
+          };
+        }),
+
+      setFoods: (foodsAction) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          const newFoods =
+            typeof foodsAction === "function"
+              ? foodsAction(acc.foods)
+              : foodsAction;
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: { ...acc, foods: newFoods },
+            },
+          };
+        }),
+
+      setWeights: (weightsAction) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          const newWeights =
+            typeof weightsAction === "function"
+              ? weightsAction(acc.weights)
+              : weightsAction;
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: { ...acc, weights: newWeights },
+            },
+          };
+        }),
+
+      setWorkouts: (workoutsAction) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          const newWorkouts =
+            typeof workoutsAction === "function"
+              ? workoutsAction(acc.workouts)
+              : workoutsAction;
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: { ...acc, workouts: newWorkouts },
+            },
+          };
+        }),
 
       setTheme: (theme) => set({ theme }),
 
-      startPlan: (date) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: { ...acc, planStartDate: date }
-          }
-        };
-      }),
+      startPlan: (date) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: { ...acc, planStartDate: date },
+            },
+          };
+        }),
 
-      logWater: (amountMl) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        const today = new Date();
-        const key = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-        const logs = acc.waterLogs || {};
-        const current = logs[key] || 0;
-        const next = Math.max(0, current + amountMl);
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: {
-              ...acc,
-              waterLogs: { ...logs, [key]: next }
-            }
+      logWater: (amountMl, dateStr) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          let key = dateStr;
+          if (!key) {
+            const today = new Date();
+            key = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
           }
-        };
-      }),
+          const logs = acc.waterLogs || {};
+          const current = logs[key] || 0;
+          const next = Math.max(0, current + amountMl);
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: {
+                ...acc,
+                waterLogs: { ...logs, [key]: next },
+              },
+            },
+          };
+        }),
 
-      addCustomFood: (food) => set((state) => {
-        if (!state.activeAccountId) return {};
-        const acc = state.accounts[state.activeAccountId];
-        const newFood: CustomFood = { ...food, id: crypto.randomUUID() };
-        return {
-          accounts: {
-            ...state.accounts,
-            [state.activeAccountId]: {
-              ...acc,
-              customFoods: [...(acc.customFoods || []), newFood]
-            }
-          }
-        };
-      }),
+      addCustomFood: (food) =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: {
+                ...acc,
+                customFoods: [...(acc.customFoods || []), food],
+              },
+            },
+          };
+        }),
 
       completeWelcome: () => set({ hasSeenWelcome: true }),
     }),
     {
-      name: "drs.store.v2", 
+      name: "drs.store.v2",
       storage: createJSONStorage(() => customStorage),
-    }
-  )
+    },
+  ),
 );

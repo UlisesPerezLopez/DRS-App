@@ -1,6 +1,28 @@
 import { useEffect, useState } from "react";
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine } from "recharts";
-import { Save, Plus, Calculator, User, Users, Trash2, Globe, Settings, UtensilsCrossed, Zap, Calendar, Dumbbell } from "lucide-react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  CartesianGrid,
+  ReferenceLine,
+} from "recharts";
+import {
+  Save,
+  Plus,
+  Calculator,
+  User,
+  Users,
+  Trash2,
+  Globe,
+  Settings,
+  UtensilsCrossed,
+  Zap,
+  Calendar,
+  Dumbbell,
+} from "lucide-react";
 import type { ActivityLevel, Profile } from "../types";
 import { ACTIVITY_LABEL, bmr, dailyTarget, tdee, todayISO } from "../lib/calc";
 import { useAppStore } from "../store/useAppStore";
@@ -9,21 +31,25 @@ import { useWorkoutStore } from "../store/workoutStore";
 
 export function ProfileTab() {
   const { t, i18n } = useTranslation();
-  const account = useAppStore(s => s.accounts[s.activeAccountId!]);
+  const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
   const profile = account.profile;
   const weights = account.weights;
-  
-  const setProfile = useAppStore(s => s.setProfile);
-  const setWeights = useAppStore(s => s.setWeights);
-  const accounts = useAppStore(s => s.accounts);
-  const activeAccountId = useAppStore(s => s.activeAccountId);
-  const switchAccount = useAppStore(s => s.switchAccount);
-  const createAccount = useAppStore(s => s.createAccount);
-  const deleteAccount = useAppStore(s => s.deleteAccount);
 
-  const { 
-    userGoal, currentMonth, selectedTrack, 
-    setGoal: setWorkoutGoal, setMonth: setWorkoutMonth, setTrack: setWorkoutTrack 
+  const setProfile = useAppStore((s) => s.setProfile);
+  const setWeights = useAppStore((s) => s.setWeights);
+  const accounts = useAppStore((s) => s.accounts);
+  const activeAccountId = useAppStore((s) => s.activeAccountId);
+  const switchAccount = useAppStore((s) => s.switchAccount);
+  const createAccount = useAppStore((s) => s.createAccount);
+  const deleteAccount = useAppStore((s) => s.deleteAccount);
+
+  const {
+    userGoal,
+    currentMonth,
+    selectedTrack,
+    setGoal: setWorkoutGoal,
+    setMonth: setWorkoutMonth,
+    setTrack: setWorkoutTrack,
   } = useWorkoutStore();
 
   const [draft, setDraft] = useState<Profile>(profile);
@@ -48,7 +74,7 @@ export function ProfileTab() {
     setWeights((prev) => {
       const filtered = prev.filter((e) => e.date !== today);
       return [...filtered, { date: today, weight: w }].sort((a, b) =>
-        a.date.localeCompare(b.date)
+        a.date.localeCompare(b.date),
       );
     });
     setDraft((p) => ({ ...p, weightKg: w }));
@@ -74,21 +100,32 @@ export function ProfileTab() {
       <section className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-md space-y-5">
         <div className="flex items-center gap-2 mb-1">
           <Settings size={18} className="text-indigo-500" />
-          <h2 className="font-bold text-slate-800 dark:text-white">{t("profile.plan_config")}</h2>
+          <h2 className="font-bold text-slate-800 dark:text-white">
+            {t("profile.plan_config")}
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 gap-4">
           <Field label={t("profile.active_diet")}>
             <div className="relative">
-              <UtensilsCrossed className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
+              <UtensilsCrossed
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+                size={16}
+              />
               <select
                 value={draft.dietPreference}
-                onChange={(e) => setDraft({ ...draft, dietPreference: e.target.value as any })}
+                onChange={(e) =>
+                  setDraft({ ...draft, dietPreference: e.target.value as any })
+                }
                 className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
               >
-                <option value="mediterranea">{t("profile.diet_mediterranean")}</option>
+                <option value="mediterranea">
+                  {t("profile.diet_mediterranean")}
+                </option>
                 <option value="low-carb">{t("profile.diet_lowcarb")}</option>
-                <option value="vegetariana">{t("profile.diet_vegetarian")}</option>
+                <option value="vegetariana">
+                  {t("profile.diet_vegetarian")}
+                </option>
               </select>
             </div>
           </Field>
@@ -96,14 +133,14 @@ export function ProfileTab() {
           <Field label={t("profile.training_track")}>
             <div className="flex p-1 bg-slate-50 dark:bg-slate-800 rounded-2xl">
               <button
-                onClick={() => setWorkoutTrack('A')}
-                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === 'A' ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+                onClick={() => setWorkoutTrack("A")}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "A" ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
               >
                 <Zap size={14} /> Zero Gravity
               </button>
               <button
-                onClick={() => setWorkoutTrack('B')}
-                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === 'B' ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+                onClick={() => setWorkoutTrack("B")}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "B" ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
               >
                 <Dumbbell size={14} /> Home Gym
               </button>
@@ -128,13 +165,20 @@ export function ProfileTab() {
             </Field>
             <Field label={t("profile.current_month")}>
               <div className="relative">
-                <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
+                <Calendar
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+                  size={16}
+                />
                 <select
                   value={currentMonth}
                   onChange={(e) => setWorkoutMonth(Number(e.target.value))}
                   className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
                 >
-                  {[1,2,3,4,5,6].map(m => <option key={m} value={m}>{t("profile.month_label", { n: m })}</option>)}
+                  {[1, 2, 3, 4, 5, 6].map((m) => (
+                    <option key={m} value={m}>
+                      {t("profile.month_label", { n: m })}
+                    </option>
+                  ))}
                 </select>
               </div>
             </Field>
@@ -176,7 +220,8 @@ export function ProfileTab() {
         >
           {Object.entries(accounts).map(([id, acc]) => (
             <option key={id} value={id}>
-              {acc.profile.name || t("profile.unnamed")} {id === "default_legacy" ? "(Legacy)" : ""}
+              {acc.profile.name || t("profile.unnamed")}{" "}
+              {id === "default_legacy" ? "(Legacy)" : ""}
             </option>
           ))}
         </select>
@@ -226,14 +271,21 @@ export function ProfileTab() {
               type="number"
               inputMode="numeric"
               value={draft.age || ""}
-              onChange={(e) => setDraft({ ...draft, age: Number(e.target.value) })}
+              onChange={(e) =>
+                setDraft({ ...draft, age: Number(e.target.value) })
+              }
               className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
             />
           </Field>
           <Field label={t("profile.gender")}>
             <select
               value={draft.gender}
-              onChange={(e) => setDraft({ ...draft, gender: e.target.value as Profile["gender"] })}
+              onChange={(e) =>
+                setDraft({
+                  ...draft,
+                  gender: e.target.value as Profile["gender"],
+                })
+              }
               className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
             >
               <option value="male">{t("profile.genderMale")}</option>
@@ -248,7 +300,9 @@ export function ProfileTab() {
               type="number"
               inputMode="numeric"
               value={draft.heightCm || ""}
-              onChange={(e) => setDraft({ ...draft, heightCm: Number(e.target.value) })}
+              onChange={(e) =>
+                setDraft({ ...draft, heightCm: Number(e.target.value) })
+              }
               className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
             />
           </Field>
@@ -258,7 +312,9 @@ export function ProfileTab() {
               inputMode="decimal"
               step="0.1"
               value={draft.weightKg || ""}
-              onChange={(e) => setDraft({ ...draft, weightKg: Number(e.target.value) })}
+              onChange={(e) =>
+                setDraft({ ...draft, weightKg: Number(e.target.value) })
+              }
               className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
             />
           </Field>
@@ -270,7 +326,9 @@ export function ProfileTab() {
             inputMode="decimal"
             step="0.1"
             value={draft.targetWeightKg || ""}
-            onChange={(e) => setDraft({ ...draft, targetWeightKg: Number(e.target.value) })}
+            onChange={(e) =>
+              setDraft({ ...draft, targetWeightKg: Number(e.target.value) })
+            }
             className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
           />
         </Field>
@@ -278,11 +336,17 @@ export function ProfileTab() {
         <Field label={t("profile.activityLevel")}>
           <select
             value={draft.activity}
-            onChange={(e) => setDraft({ ...draft, activity: e.target.value as ActivityLevel })}
+            onChange={(e) =>
+              setDraft({ ...draft, activity: e.target.value as ActivityLevel })
+            }
             className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
           >
             {(Object.keys(ACTIVITY_LABEL) as ActivityLevel[]).map((k) => (
-              <option key={k} value={k}>{ACTIVITY_LABEL[k]}</option>
+              <option key={k} value={k}>
+                {t("profile.activity." + k, {
+                  defaultValue: ACTIVITY_LABEL[k],
+                })}
+              </option>
             ))}
           </select>
         </Field>
@@ -302,7 +366,11 @@ export function ProfileTab() {
                     : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
                 }`}
               >
-                {g === "lose" ? t("profile.goalLose") : g === "maintain" ? t("profile.goalMaintain") : t("profile.goalGain")}
+                {g === "lose"
+                  ? t("profile.goalLose")
+                  : g === "maintain"
+                    ? t("profile.goalMaintain")
+                    : t("profile.goalGain")}
               </button>
             ))}
           </div>
@@ -332,12 +400,23 @@ export function ProfileTab() {
             <p className="text-lg font-bold tabular-nums">{tdeeVal}</p>
           </div>
           <div className="rounded-xl bg-emerald-50 dark:bg-emerald-900/30 p-3">
-            <p className="text-xs text-emerald-700 dark:text-emerald-300">{t("profile.goal")}</p>
-            <p className="text-lg font-bold tabular-nums text-emerald-700 dark:text-emerald-300">{target}</p>
+            <p className="text-xs text-emerald-700 dark:text-emerald-300">
+              {t("profile.goal")}
+            </p>
+            <p className="text-lg font-bold tabular-nums text-emerald-700 dark:text-emerald-300">
+              {target}
+            </p>
           </div>
         </div>
         <p className="text-xs text-slate-500 mt-3">
-          {t("profile.targetFormula", { modifier: draft.goal === "lose" ? "− 500" : draft.goal === "gain" ? "+ 300" : "± 0" })}
+          {t("profile.targetFormula", {
+            modifier:
+              draft.goal === "lose"
+                ? "− 500"
+                : draft.goal === "gain"
+                  ? "+ 300"
+                  : "± 0",
+          })}
         </p>
       </section>
 
@@ -366,9 +445,17 @@ export function ProfileTab() {
           <div className="h-56 -ml-4">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={chartData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" opacity={0.4} />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="#e2e8f0"
+                  opacity={0.4}
+                />
                 <XAxis dataKey="date" tick={{ fontSize: 11 }} />
-                <YAxis domain={["dataMin - 1", "dataMax + 1"]} tick={{ fontSize: 11 }} width={40} />
+                <YAxis
+                  domain={["dataMin - 1", "dataMax + 1"]}
+                  tick={{ fontSize: 11 }}
+                  width={40}
+                />
                 <Tooltip
                   contentStyle={{
                     borderRadius: 12,
@@ -376,7 +463,17 @@ export function ProfileTab() {
                     fontSize: 12,
                   }}
                 />
-                <ReferenceLine y={profile.targetWeightKg} stroke="#10b981" strokeDasharray="4 4" label={{ value: t("profile.goal"), fontSize: 10, fill: "#10b981", position: "insideTopRight" }} />
+                <ReferenceLine
+                  y={profile.targetWeightKg}
+                  stroke="#10b981"
+                  strokeDasharray="4 4"
+                  label={{
+                    value: t("profile.goal"),
+                    fontSize: 10,
+                    fill: "#10b981",
+                    position: "insideTopRight",
+                  }}
+                />
                 <Line
                   type="monotone"
                   dataKey="weight"
@@ -396,14 +493,23 @@ export function ProfileTab() {
 
         {weights.length > 0 && (
           <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-            <p className="text-xs text-slate-500 mb-2">{t("profile.lastRecords")}</p>
+            <p className="text-xs text-slate-500 mb-2">
+              {t("profile.lastRecords")}
+            </p>
             <ul className="space-y-1.5 max-h-32 overflow-y-auto">
-              {[...weights].reverse().slice(0, 8).map((w) => (
-                <li key={w.date} className="flex justify-between text-sm">
-                  <span className="text-slate-600 dark:text-slate-300">{w.date}</span>
-                  <span className="font-semibold tabular-nums">{w.weight} kg</span>
-                </li>
-              ))}
+              {[...weights]
+                .reverse()
+                .slice(0, 8)
+                .map((w) => (
+                  <li key={w.date} className="flex justify-between text-sm">
+                    <span className="text-slate-600 dark:text-slate-300">
+                      {w.date}
+                    </span>
+                    <span className="font-semibold tabular-nums">
+                      {w.weight} kg
+                    </span>
+                  </li>
+                ))}
             </ul>
           </div>
         )}
@@ -412,10 +518,18 @@ export function ProfileTab() {
   );
 }
 
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
+function Field({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <label className="block">
-      <span className="text-xs text-slate-500 dark:text-slate-400 mb-1 block">{label}</span>
+      <span className="text-xs text-slate-500 dark:text-slate-400 mb-1 block">
+        {label}
+      </span>
       {children}
     </label>
   );

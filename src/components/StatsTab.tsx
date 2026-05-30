@@ -1,5 +1,13 @@
 import { useMemo, useState } from "react";
-import { Download, BarChart3, Plus, TrendingDown, Droplets, Dumbbell, Flame } from "lucide-react";
+import {
+  Download,
+  BarChart3,
+  Plus,
+  TrendingDown,
+  Droplets,
+  Dumbbell,
+  Flame,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAppStore } from "../store/useAppStore";
 import { exportProfileDataToCSV } from "../lib/export";
@@ -17,8 +25,8 @@ import { todayISO, dailyTarget, dailyWaterTarget } from "../lib/calc";
 
 export function StatsTab() {
   const { t } = useTranslation();
-  const account = useAppStore(s => s.accounts[s.activeAccountId!]);
-  const setWeights = useAppStore(s => s.setWeights);
+  const account = useAppStore((s) => s.accounts[s.activeAccountId!]);
+  const setWeights = useAppStore((s) => s.setWeights);
   const { profile, weights, foods, workouts, waterLogs } = account;
 
   const [newWeight, setNewWeight] = useState<string>("");
@@ -26,19 +34,28 @@ export function StatsTab() {
   const today = todayISO();
 
   // Habit Summary Data
-  const todayFoods = foods.filter(f => f.date === today);
+  const todayFoods = foods.filter((f) => f.date === today);
   const consumed = todayFoods.reduce((s, f) => s + f.calories, 0);
   const targetKcal = dailyTarget(profile);
 
-  const todayWorkouts = workouts.filter(w => w.date === today);
-  const workoutMin = Math.round(todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60);
+  const todayWorkouts = workouts.filter((w) => w.date === today);
+  const workoutMin = Math.round(
+    todayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60,
+  );
 
   const waterConsumed = (waterLogs || {})[today] || 0;
   const waterTarget = dailyWaterTarget(profile, workoutMin);
 
   // Build chart data for last 14 days
   const chartData = useMemo(() => {
-    const days: { date: string; label: string; peso: number | null; kcal: number; agua: number; entreno: number }[] = [];
+    const days: {
+      date: string;
+      label: string;
+      peso: number | null;
+      kcal: number;
+      agua: number;
+      entreno: number;
+    }[] = [];
     const todayDate = new Date();
 
     for (let i = 13; i >= 0; i--) {
@@ -47,9 +64,9 @@ export function StatsTab() {
       const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
       const label = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}`;
 
-      const w = weights.find(w => w.date === iso);
-      const dayFoods = foods.filter(f => f.date === iso);
-      const dayWorkouts = workouts.filter(w => w.date === iso);
+      const w = weights.find((w) => w.date === iso);
+      const dayFoods = foods.filter((f) => f.date === iso);
+      const dayWorkouts = workouts.filter((w) => w.date === iso);
       const waterDay = (waterLogs || {})[iso] || 0;
 
       days.push({
@@ -58,7 +75,9 @@ export function StatsTab() {
         peso: w ? w.weight : null,
         kcal: dayFoods.reduce((s, f) => s + f.calories, 0),
         agua: waterDay,
-        entreno: Math.round(dayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60),
+        entreno: Math.round(
+          dayWorkouts.reduce((s, w) => s + w.durationSec, 0) / 60,
+        ),
       });
     }
     return days;
@@ -71,8 +90,8 @@ export function StatsTab() {
   const handleAddWeight = () => {
     const val = Number(newWeight);
     if (!isNaN(val) && val > 0) {
-      setWeights(prev => {
-        const existing = prev.findIndex(w => w.date === today);
+      setWeights((prev) => {
+        const existing = prev.findIndex((w) => w.date === today);
         if (existing >= 0) {
           const arr = [...prev];
           arr[existing] = { date: today, weight: val };
@@ -85,9 +104,13 @@ export function StatsTab() {
   };
 
   // Find min/max for weight Y axis for better visualization
-  const weightValues = chartData.filter(d => d.peso !== null).map(d => d.peso as number);
-  const weightMin = weightValues.length > 0 ? Math.floor(Math.min(...weightValues) - 1) : 70;
-  const weightMax = weightValues.length > 0 ? Math.ceil(Math.max(...weightValues) + 1) : 100;
+  const weightValues = chartData
+    .filter((d) => d.peso !== null)
+    .map((d) => d.peso as number);
+  const weightMin =
+    weightValues.length > 0 ? Math.floor(Math.min(...weightValues) - 1) : 70;
+  const weightMax =
+    weightValues.length > 0 ? Math.ceil(Math.max(...weightValues) + 1) : 100;
 
   return (
     <div className="px-4 pt-4 pb-8 space-y-4">
@@ -96,7 +119,9 @@ export function StatsTab() {
           <BarChart3 className="text-violet-500" />
           {t("stats.title")}
         </h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{t("stats.subtitle")}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          {t("stats.subtitle")}
+        </p>
       </header>
 
       {/* Habit Summary Panel (Gamification) */}
@@ -105,27 +130,47 @@ export function StatsTab() {
           <div className="w-8 h-8 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center text-orange-500 mb-2">
             <Flame size={16} />
           </div>
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Kcal Hoy</p>
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            {t("stats.kcalToday")}
+          </p>
           <p className="text-sm font-black tabular-nums text-slate-800 dark:text-white">
-            {consumed} <span className="text-[10px] text-slate-400 font-normal">/ {targetKcal}</span>
+            {consumed}{" "}
+            <span className="text-[10px] text-slate-400 font-normal">
+              / {targetKcal}
+            </span>
           </p>
         </div>
         <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-3 shadow-sm flex flex-col items-center text-center">
           <div className="w-8 h-8 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500 mb-2">
             <Droplets size={16} />
           </div>
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Agua</p>
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            {t("stats.waterCard")}
+          </p>
           <p className="text-sm font-black tabular-nums text-slate-800 dark:text-white">
-            {waterConsumed} <span className="text-[10px] text-slate-400 font-normal">/ {waterTarget}</span>
+            {waterConsumed}{" "}
+            <span className="text-[10px] text-slate-400 font-normal">
+              / {waterTarget}
+            </span>
           </p>
         </div>
-        <div className={`border rounded-2xl p-3 shadow-sm flex flex-col items-center text-center ${todayWorkouts.length > 0 ? 'bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800' : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800'}`}>
-          <div className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${todayWorkouts.length > 0 ? 'bg-indigo-500 text-white shadow-md' : 'bg-slate-50 dark:bg-slate-800 text-slate-400'}`}>
+        <div
+          className={`border rounded-2xl p-3 shadow-sm flex flex-col items-center text-center ${todayWorkouts.length > 0 ? "bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800" : "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800"}`}
+        >
+          <div
+            className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${todayWorkouts.length > 0 ? "bg-indigo-500 text-white shadow-md" : "bg-slate-50 dark:bg-slate-800 text-slate-400"}`}
+          >
             <Dumbbell size={16} />
           </div>
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Entreno</p>
-          <p className={`text-sm font-black ${todayWorkouts.length > 0 ? 'text-indigo-700 dark:text-indigo-300' : 'text-slate-800 dark:text-white'}`}>
-            {todayWorkouts.length > 0 ? 'Completado' : 'Pendiente'}
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            {t("stats.trainingCard")}
+          </p>
+          <p
+            className={`text-sm font-black ${todayWorkouts.length > 0 ? "text-indigo-700 dark:text-indigo-300" : "text-slate-800 dark:text-white"}`}
+          >
+            {todayWorkouts.length > 0
+              ? t("stats.completed")
+              : t("stats.pending")}
           </p>
         </div>
       </section>
@@ -133,19 +178,19 @@ export function StatsTab() {
       {/* Weight Tracker Input */}
       <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 shadow-sm">
         <h3 className="font-semibold mb-3 flex items-center gap-2">
-          <TrendingDown size={18} className="text-emerald-500" /> 
-          Registrar Peso Actual
+          <TrendingDown size={18} className="text-emerald-500" />
+          {t("stats.recordWeightTitle")}
         </h3>
         <div className="flex gap-3">
-          <input 
-            type="number" 
+          <input
+            type="number"
             inputMode="decimal"
             placeholder="Ej. 78.5"
             value={newWeight}
             onChange={(e) => setNewWeight(e.target.value)}
             className="flex-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 font-bold tabular-nums text-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
           />
-          <button 
+          <button
             onClick={handleAddWeight}
             disabled={!newWeight}
             className="bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white disabled:bg-slate-200 dark:disabled:bg-slate-800 disabled:text-slate-400 w-12 rounded-2xl flex items-center justify-center transition shadow-md"
@@ -160,7 +205,10 @@ export function StatsTab() {
         <h3 className="font-semibold mb-4">{t("stats.weightCalChart")}</h3>
         <div className="h-64 -ml-2">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={chartData} margin={{ top: 5, right: 5, bottom: 5, left: -10 }}>
+            <LineChart
+              data={chartData}
+              margin={{ top: 5, right: 5, bottom: 5, left: -10 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis
                 dataKey="label"
@@ -193,9 +241,7 @@ export function StatsTab() {
                   fontSize: "12px",
                 }}
               />
-              <Legend
-                wrapperStyle={{ fontSize: "11px", paddingTop: "8px" }}
-              />
+              <Legend wrapperStyle={{ fontSize: "11px", paddingTop: "8px" }} />
               <Line
                 yAxisId="peso"
                 type="monotone"
@@ -227,7 +273,10 @@ export function StatsTab() {
         <h3 className="font-semibold mb-4">{t("stats.waterTrainChart")}</h3>
         <div className="h-52 -ml-2">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={chartData} margin={{ top: 5, right: 5, bottom: 5, left: -10 }}>
+            <LineChart
+              data={chartData}
+              margin={{ top: 5, right: 5, bottom: 5, left: -10 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis
                 dataKey="label"
@@ -285,13 +334,17 @@ export function StatsTab() {
           </ResponsiveContainer>
         </div>
       </section>
-      
+
       {/* Export Card */}
       <section className="rounded-3xl bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/30 dark:to-fuchsia-950/30 border border-violet-200 dark:border-violet-800/50 p-5 shadow-sm mt-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="font-semibold text-violet-900 dark:text-violet-300">{t("stats.exportTitle")}</h2>
-            <p className="text-xs text-violet-600/70 dark:text-violet-400/70 mt-0.5">{t("stats.exportDesc")}</p>
+            <h2 className="font-semibold text-violet-900 dark:text-violet-300">
+              {t("stats.exportTitle")}
+            </h2>
+            <p className="text-xs text-violet-600/70 dark:text-violet-400/70 mt-0.5">
+              {t("stats.exportDesc")}
+            </p>
           </div>
           <button
             onClick={handleExport}
@@ -302,7 +355,6 @@ export function StatsTab() {
           </button>
         </div>
       </section>
-
     </div>
   );
 }
