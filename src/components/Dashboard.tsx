@@ -157,7 +157,7 @@ export function Dashboard() {
               </div>
               <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
                 <div
-                  className="h-full bg-gradient-to-r from-emerald-400 to-teal-500 transition-all duration-500 ease-out rounded-full"
+                  className="h-full bg-gradient-to-r from-emerald-400 to-teal-500 transition-all duration-700 ease-out rounded-full"
                   style={{
                     width: `${Math.min(100, Math.max(0, (userXP || 0) % 100))}%`,
                   }}
@@ -182,7 +182,7 @@ export function Dashboard() {
       {/* Summary Cards Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Nutrition Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Utensils size={80} className="text-emerald-500" />
           </div>
@@ -223,7 +223,7 @@ export function Dashboard() {
         </div>
 
         {/* Workout Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all duration-300">
+        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Dumbbell size={80} className="text-indigo-500" />
           </div>
@@ -307,7 +307,7 @@ export function Dashboard() {
 
       {/* Quick Metrics Grid */}
       <section className="grid grid-cols-2 gap-4">
-        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-sky-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500">
               <Droplets size={14} />
@@ -322,7 +322,7 @@ export function Dashboard() {
           </p>
           <div className="mt-3 h-3 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
             <div
-              className="h-full bg-sky-500 transition-all duration-500 ease-out relative"
+              className="h-full bg-sky-500 transition-all duration-700 ease-out relative"
               style={{ width: `${waterPercent}%` }}
             >
               <div className="absolute inset-0 bg-white/20 w-full animate-pulse"></div>
@@ -330,13 +330,13 @@ export function Dashboard() {
           </div>
           <button
             onClick={handleAddWater}
-            className="mt-3 w-full flex items-center justify-center gap-1.5 py-2 bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl text-xs font-bold active:scale-95 transition-transform"
+            className="mt-3 w-full flex items-center justify-center gap-1.5 py-2 bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl text-xs font-bold transition-all duration-200 active:scale-95 hover:scale-[1.02] shadow-sm hover:shadow-md"
           >
             <Plus size={14} /> {t("dashboard.water_add")}
           </button>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-emerald-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-500">
               <TrendingDown size={14} />

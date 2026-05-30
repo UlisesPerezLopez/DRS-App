@@ -53,11 +53,11 @@ export function Recipes() {
     return (
       <article
         key={r.id}
-        className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden"
+        className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden transition-all duration-300"
       >
         <button
           onClick={() => setOpen(isOpen ? null : r.id)}
-          className="w-full flex items-center justify-between p-4 text-left"
+          className="w-full flex items-center justify-between p-4 text-left transition-colors duration-200 hover:bg-slate-50 dark:hover:bg-slate-800/30"
         >
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold">{recipeName}</h3>
@@ -77,12 +77,18 @@ export function Recipes() {
           </div>
           <ChevronDown
             size={20}
-            className={`shrink-0 ml-2 text-slate-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
+            className={`shrink-0 ml-2 text-slate-400 transition-transform duration-300 ease-out ${isOpen ? "rotate-180" : ""}`}
           />
         </button>
 
-        {isOpen && (
-          <div className="px-4 pb-4 border-t border-slate-100 dark:border-slate-800 pt-4 space-y-4">
+        <div
+          className={`transition-all duration-300 ease-in-out overflow-hidden ${
+            isOpen
+              ? "max-h-[1000px] border-t border-slate-100 dark:border-slate-800"
+              : "max-h-0"
+          }`}
+        >
+          <div className="px-4 pb-4 pt-4 space-y-4">
             <div className="grid grid-cols-3 gap-2 text-center">
               <Macro
                 label={t("recipes.proteinLabel")}
@@ -132,7 +138,7 @@ export function Recipes() {
               </ol>
             </div>
           </div>
-        )}
+        </div>
       </article>
     );
   }
