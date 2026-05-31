@@ -22,7 +22,7 @@ export interface CoachResponse {
  * háptica y textual desde la heurística offline local.
  */
 export async function askCoach(
-  messages: { role: "user" | "assistant"; content: string }[],
+  messages: { role: "system" | "user" | "assistant"; content: string }[],
 ): Promise<CoachResponse> {
   // MANDATORIO (Offline-First): Evaluar si está desconectado del todo
   if (typeof window !== "undefined" && !navigator.onLine) {

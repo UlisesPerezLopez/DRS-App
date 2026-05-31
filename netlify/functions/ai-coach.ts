@@ -49,14 +49,7 @@ export const handler = async (event: any, context: any) => {
         },
         body: JSON.stringify({
           model: "qwen/qwen-2.5-72b-instruct:free",
-          messages: [
-            {
-              role: "system",
-              content:
-                "Eres DRS AI Coach, un entrenador de salud experto en pérdida de peso, entrenamiento físico y nutrición saludable. Da consejos prácticos, basados en evidencia, motivadores pero directos. Habla en el idioma en el que te consulte el usuario.",
-            },
-            ...messages,
-          ],
+          messages: messages,
         }),
       },
     );

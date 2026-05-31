@@ -10,7 +10,7 @@ import type {
   CustomFood,
   CoachMessage,
 } from "../types";
-import { todayISO } from "../lib/calc";
+import { todayISO, dailyTarget } from "../lib/calc";
 import { askCoach } from "../services/aiService";
 
 export const DEFAULT_PROFILE: Profile = {
@@ -554,11 +554,61 @@ export const useAppStore = create<AppStore>()(
         get().setAiTyping(true);
 
         try {
-          // Mapear historial completo mapeado a formato OpenAI { role, content }
-          const history = get().coachMessages.map((m) => ({
-            role: m.role,
-            content: m.content,
-          }));
+          const store = get();
+          const activeAccountId = store.activeAccountId;
+          const account = activeAccountId
+            ? store.accounts[activeAccountId]
+            : null;
+
+          let systemPromptContent =
+            "Eres DRS AI Coach, un entrenador de salud experto en nutrición, pérdida de peso y entrenamiento físico. Proporcionas consejos realistas, científicamente respaldados, motivadores pero directos y estrictos. Habla en el idioma del usuario.";
+
+          if (account) {
+            const today = todayISO();
+            const todayFoods = account.foods.filter((f) => f.date === today);
+            const consumedCalories = todayFoods.reduce(
+              (sum, f) => sum + f.calories,
+              0,
+            );
+            const targetCalories = dailyTarget(account.profile);
+            const waterConsumedMl = (account.waterLogs || {})[today] || 0;
+            const streak = account.currentStreak || 0;
+            const xp = account.userXP || 0;
+            const level = account.userLevel || 1;
+            const userName = account.profile.name || "Usuario";
+            const goalStr =
+              account.profile.goal === "lose"
+                ? "pérdida de peso"
+                : account.profile.goal === "gain"
+                  ? "ganancia de masa muscular"
+                  : "mantenimiento de peso";
+
+            systemPromptContent = `Eres DRS AI Coach, un entrenador de salud personal estricto, científico y directo. Tu misión es motivar y dar pautas basadas en la ciencia a tu cliente.
+Datos reales del usuario en tiempo real:
+- Fecha actual: ${today}
+- Nombre del usuario: ${userName}
+- Objetivo: ${goalStr}
+- Nivel de Actividad: ${account.profile.activity}
+- Racha activa: ${streak} días consecutivos de conexión
+- Nivel actual: Nivel ${level} (${xp} / 100 XP)
+- Calorías consumidas hoy: ${consumedCalories} kcal
+- Presupuesto calórico total del usuario para hoy: ${targetCalories} kcal
+- Agua consumida hoy: ${waterConsumedMl} ml
+
+Instrucciones críticas:
+1. Utiliza estos datos numéricos en tiempo real para dar respuestas altamente personalizadas cuando el usuario pregunte por su estado, calorías, agua o racha.
+2. Si está excediendo las calorías, dale una pauta correctiva científica pero estricta. Si está haciéndolo bien, felicítale de forma motivadora y concisa.
+3. Sé directo y profesional. Responde en el idioma en que te consulte el usuario.`;
+          }
+
+          // Mapear historial completo mapeado a formato OpenAI { role, content } con System Prompt dinámico prepended
+          const history = [
+            { role: "system" as const, content: systemPromptContent },
+            ...get().coachMessages.map((m) => ({
+              role: m.role,
+              content: m.content,
+            })),
+          ];
 
           // Llamar a askCoach
           const response = await askCoach(history);
