@@ -35,7 +35,7 @@ export async function askCoach(
   }
 
   try {
-    const endpointUrl = "/api/ai-coach";
+    const endpointUrl = "/.netlify/functions/ai-coach";
     console.log("Endpoint actual:", endpointUrl);
     const response = await fetch(endpointUrl, {
       method: "POST",
