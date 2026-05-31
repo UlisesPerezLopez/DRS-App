@@ -39,7 +39,7 @@ export function FoodSearchList({
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder={t("common.search")}
-          className="w-full pl-9 pr-3 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:ring-2 ring-emerald-500/20 outline-none transition"
+          className="w-full pl-9 pr-3 py-3 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800 text-sm focus:ring-2 ring-emerald-500/20 outline-none transition"
         />
       </div>
       <div className="space-y-1.5 max-h-60 overflow-y-auto">
@@ -50,7 +50,7 @@ export function FoodSearchList({
             <button
               key={key}
               onClick={() => onSelectFood(f)}
-              className="w-full flex items-center justify-between text-left px-3 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition group"
+              className="w-full flex items-center justify-between text-left px-3 py-3 rounded-xl bg-[#F0EBE1] dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition group"
             >
               <div className="min-w-0 pr-4">
                 <p className="text-sm font-medium truncate group-hover:text-emerald-700 dark:group-hover:text-emerald-400 flex items-center gap-1">

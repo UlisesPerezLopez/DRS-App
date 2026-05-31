@@ -36,7 +36,7 @@ function MetricBadge({
 }) {
   return (
     <div
-      className={`flex flex-col items-center justify-center p-3 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm transition-transform hover:scale-[1.02]`}
+      className={`flex flex-col items-center justify-center p-3 rounded-2xl bg-[#FAF7F2] dark:bg-slate-800 border border-[#E5DFD3] dark:border-slate-700 shadow-sm transition-transform hover:scale-[1.02]`}
     >
       <Icon size={16} className={`${colorClass} mb-1`} />
       <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
@@ -70,7 +70,7 @@ function ExerciseCard({
 
   return (
     <div
-      className={`relative overflow-hidden bg-white dark:bg-slate-900 rounded-3xl border ${isSupersetPart ? "border-indigo-200 dark:border-indigo-800/50" : "border-slate-100 dark:border-slate-800"} shadow-md hover:shadow-xl transition-all duration-300 group`}
+      className={`relative overflow-hidden bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl border ${isSupersetPart ? "border-indigo-200 dark:border-indigo-800/50" : "border-[#E5DFD3] dark:border-slate-800"} shadow-md hover:shadow-xl transition-all duration-300 group`}
     >
       {isSupersetPart && (
         <div className="absolute top-0 right-0 px-3 py-1 bg-indigo-500 text-white text-[9px] font-black uppercase tracking-widest rounded-bl-xl shadow-sm z-10">
@@ -134,7 +134,7 @@ function ExerciseCard({
             className={`w-full flex items-center justify-between p-3 rounded-2xl transition-all ${
               showWarning
                 ? "bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400"
-                : "bg-slate-50 dark:bg-slate-800/50 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+                : "bg-[#F0EBE1] dark:bg-slate-800/50 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
             }`}
           >
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide">
@@ -340,7 +340,7 @@ export function Workout() {
   // 1. Summary View
   if (showSummary) {
     return (
-      <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-12 pb-32 flex flex-col items-center justify-center text-center space-y-6 animate-in fade-in zoom-in duration-500">
+      <div className="min-h-full bg-[#F0EBE1] dark:bg-slate-950 px-4 pt-12 pb-32 flex flex-col items-center justify-center text-center space-y-6 animate-in fade-in zoom-in duration-500">
         <div className="w-24 h-24 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-xl">
           <Activity size={48} />
         </div>
@@ -382,11 +382,11 @@ export function Workout() {
           activeExercise.supersetId);
 
     return (
-      <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-6 pb-32 flex flex-col animate-in slide-in-from-right-8 duration-300">
+      <div className="min-h-full bg-[#F0EBE1] dark:bg-slate-950 px-4 pt-6 pb-32 flex flex-col animate-in slide-in-from-right-8 duration-300">
         <header className="flex items-center justify-between mb-8">
           <button
             onClick={() => setIsActive(false)}
-            className="text-xs font-bold text-slate-500 flex items-center gap-1 hover:text-slate-800 dark:hover:text-white transition-colors bg-white dark:bg-slate-900 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800"
+            className="text-xs font-bold text-slate-500 flex items-center gap-1 hover:text-slate-800 dark:hover:text-white transition-colors bg-[#FAF7F2] dark:bg-slate-900 px-3 py-1.5 rounded-full border border-[#E5DFD3] dark:border-slate-800"
           >
             <ChevronDown className="rotate-90" size={14} />{" "}
             {t("workout.cancel_session", { defaultValue: "Cancelar" })}
@@ -404,7 +404,7 @@ export function Workout() {
             isLastInSuperset={isLastInSuperset}
           />
 
-          <div className="mt-8 bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-100 dark:border-slate-800 text-center space-y-2">
+          <div className="mt-8 bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-[#E5DFD3] dark:border-slate-800 text-center space-y-2">
             <h2 className="text-xl font-black text-slate-800 dark:text-white uppercase tracking-widest flex items-center justify-center gap-2">
               Serie {currentSet}{" "}
               <span className="text-slate-400">
@@ -421,7 +421,7 @@ export function Workout() {
         {/* Footer Controls */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-50 dark:from-slate-950 via-slate-50/90 dark:via-slate-950/90 to-transparent pb-8">
           {isResting ? (
-            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-2xl border border-slate-100 dark:border-slate-800 text-center space-y-4 max-w-md mx-auto">
+            <div className="bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl p-6 shadow-2xl border border-[#E5DFD3] dark:border-slate-800 text-center space-y-4 max-w-md mx-auto">
               <div className="flex items-center justify-center gap-2 text-xs font-black text-slate-400 uppercase tracking-widest">
                 <Timer size={14} /> Tiempo de Descanso
               </div>
@@ -448,7 +448,7 @@ export function Workout() {
                   hapticTap();
                   setTimeLeft(0);
                 }}
-                className="w-full py-4 border-2 border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold rounded-2xl active:scale-95 transition-transform hover:bg-slate-50 dark:hover:bg-slate-800"
+                className="w-full py-4 border-2 border-[#E5DFD3] dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold rounded-2xl active:scale-95 transition-transform hover:bg-[#F0EBE1] dark:hover:bg-slate-800"
               >
                 Saltar Descanso{" "}
                 <ChevronRight size={16} className="inline -mt-0.5" />
@@ -478,7 +478,7 @@ export function Workout() {
 
   // 3. Catalog View (Default)
   return (
-    <div className="min-h-full bg-slate-50 dark:bg-slate-950 px-4 pt-6 pb-32">
+    <div className="min-h-full bg-[#F0EBE1] dark:bg-slate-950 px-4 pt-6 pb-32">
       {/* Premium Header */}
       <header className="mb-8 space-y-6">
         <div className="flex justify-between items-start">
@@ -497,7 +497,7 @@ export function Workout() {
         </div>
 
         {/* Global Controls Panel */}
-        <section className="bg-white dark:bg-slate-900 rounded-[2rem] p-4 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 space-y-4">
+        <section className="bg-[#FAF7F2] dark:bg-slate-900 rounded-[2rem] p-4 shadow-xl shadow-slate-200/50 dark:shadow-none border border-[#E5DFD3] dark:border-slate-800 space-y-4">
           {/* Track Switcher */}
           <div className="flex p-1.5 bg-slate-100 dark:bg-slate-800 rounded-2xl">
             {[
@@ -509,7 +509,7 @@ export function Workout() {
                 onClick={() => setTrack(track.id as "A" | "B")}
                 className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-black transition-all duration-300 ${
                   selectedTrack === track.id
-                    ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-md"
+                    ? "bg-[#FAF7F2] dark:bg-slate-700 text-slate-900 dark:text-white shadow-md"
                     : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
                 }`}
               >
@@ -533,7 +533,7 @@ export function Workout() {
               <select
                 value={userGoal}
                 onChange={(e) => setGoal(e.target.value as any)}
-                className="w-full pl-10 pr-4 py-3.5 bg-slate-50 dark:bg-slate-800 border-none rounded-2xl text-xs font-bold text-slate-700 dark:text-slate-200 appearance-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                className="w-full pl-10 pr-4 py-3.5 bg-[#F0EBE1] dark:bg-slate-800 border-none rounded-2xl text-xs font-bold text-slate-700 dark:text-slate-200 appearance-none focus:ring-2 focus:ring-indigo-500 transition-all"
               >
                 <option value="lose">{t("workout.goal_lose")}</option>
                 <option value="maintain">{t("workout.goal_maintain")}</option>
@@ -553,7 +553,7 @@ export function Workout() {
               <select
                 value={currentMonth}
                 onChange={(e) => setMonth(Number(e.target.value))}
-                className="w-full pl-10 pr-4 py-3.5 bg-slate-50 dark:bg-slate-800 border-none rounded-2xl text-xs font-bold text-slate-700 dark:text-slate-200 appearance-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                className="w-full pl-10 pr-4 py-3.5 bg-[#F0EBE1] dark:bg-slate-800 border-none rounded-2xl text-xs font-bold text-slate-700 dark:text-slate-200 appearance-none focus:ring-2 focus:ring-indigo-500 transition-all"
               >
                 {[1, 2, 3, 4, 5, 6].map((m) => (
                   <option key={m} value={m}>

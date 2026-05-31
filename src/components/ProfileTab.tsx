@@ -103,7 +103,7 @@ export function ProfileTab() {
       </header>
 
       {/* Plan Configuration */}
-      <section className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-md space-y-5">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 p-5 rounded-3xl border border-[#E5DFD3] dark:border-slate-800 shadow-md space-y-5">
         <div className="flex items-center gap-2 mb-1">
           <Settings size={18} className="text-indigo-500" />
           <h2 className="font-bold text-slate-800 dark:text-white">
@@ -123,7 +123,7 @@ export function ProfileTab() {
                 onChange={(e) =>
                   setDraft({ ...draft, dietPreference: e.target.value as any })
                 }
-                className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+                className="w-full pl-10 pr-4 py-3 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 bg-[#F0EBE1] dark:bg-slate-800 font-medium text-sm"
               >
                 <option value="mediterranea">
                   {t("profile.diet_mediterranean")}
@@ -137,16 +137,16 @@ export function ProfileTab() {
           </Field>
 
           <Field label={t("profile.training_track")}>
-            <div className="flex p-1 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+            <div className="flex p-1 bg-[#F0EBE1] dark:bg-slate-800 rounded-2xl">
               <button
                 onClick={() => setWorkoutTrack("A")}
-                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "A" ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "A" ? "bg-[#FAF7F2] dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
               >
                 <Zap size={14} /> Zero Gravity
               </button>
               <button
                 onClick={() => setWorkoutTrack("B")}
-                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "B" ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition ${selectedTrack === "B" ? "bg-[#FAF7F2] dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400" : "text-slate-500"}`}
               >
                 <Dumbbell size={14} /> Home Gym
               </button>
@@ -162,7 +162,7 @@ export function ProfileTab() {
                   setWorkoutGoal(val);
                   setDraft({ ...draft, goal: val });
                 }}
-                className="w-full px-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+                className="w-full px-4 py-3 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 bg-[#F0EBE1] dark:bg-slate-800 font-medium text-sm"
               >
                 <option value="lose">{t("profile.goal_lose_weight")}</option>
                 <option value="maintain">{t("profile.goal_maintain")}</option>
@@ -178,7 +178,7 @@ export function ProfileTab() {
                 <select
                   value={currentMonth}
                   onChange={(e) => setWorkoutMonth(Number(e.target.value))}
-                  className="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 font-medium text-sm"
+                  className="w-full pl-10 pr-4 py-3 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 bg-[#F0EBE1] dark:bg-slate-800 font-medium text-sm"
                 >
                   {[1, 2, 3, 4, 5, 6].map((m) => (
                     <option key={m} value={m}>
@@ -193,7 +193,7 @@ export function ProfileTab() {
       </section>
 
       {/* App Preferences */}
-      <section className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 p-4 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 space-y-4">
         <div className="flex items-center gap-2 mb-1">
           <Globe size={18} className="text-emerald-500" />
           <h2 className="font-semibold">{t("profile.preferences")}</h2>
@@ -202,7 +202,7 @@ export function ProfileTab() {
           <select
             value={i18n.resolvedLanguage}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
-            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
           >
             <option value="es">Español</option>
             <option value="en">English</option>
@@ -214,7 +214,7 @@ export function ProfileTab() {
       </section>
 
       {/* Local Notifications Preferences Card */}
-      <section className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 p-4 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 space-y-4">
         <div className="flex items-center gap-2 mb-1">
           <Bell size={18} className="text-emerald-500" />
           <h2 className="font-semibold">{t("profile.notificationsTitle")}</h2>
@@ -227,7 +227,7 @@ export function ProfileTab() {
           disabled={permission === "granted"}
           className={`w-full py-2.5 rounded-xl font-semibold transition text-sm flex items-center justify-center gap-2 ${
             permission === "granted"
-              ? "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed border border-slate-200 dark:border-slate-700"
+              ? "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed border border-[#E5DFD3] dark:border-slate-700"
               : "bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white shadow-md shadow-emerald-500/10"
           }`}
         >
@@ -239,7 +239,7 @@ export function ProfileTab() {
       </section>
 
       {/* Account Management */}
-      <section className="bg-slate-100 dark:bg-slate-900/50 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+      <section className="bg-slate-100 dark:bg-slate-900/50 p-4 rounded-2xl border border-[#E5DFD3] dark:border-slate-800 space-y-4">
         <div className="flex items-center gap-2 mb-1">
           <Users size={18} className="text-emerald-600 dark:text-emerald-400" />
           <h2 className="font-semibold">{t("profile.management")}</h2>
@@ -247,7 +247,7 @@ export function ProfileTab() {
         <select
           value={activeAccountId || ""}
           onChange={(e) => switchAccount(e.target.value)}
-          className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 ring-emerald-500/20 outline-none transition"
+          className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800 focus:ring-2 ring-emerald-500/20 outline-none transition"
         >
           {Object.entries(accounts).map(([id, acc]) => (
             <option key={id} value={id}>
@@ -264,7 +264,7 @@ export function ProfileTab() {
                 createAccount(name.trim());
               }
             }}
-            className="flex-1 bg-white dark:bg-slate-800 border border-emerald-500 text-emerald-600 dark:text-emerald-400 font-medium py-2 rounded-xl flex items-center justify-center gap-1.5 text-sm hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition auto-shrink"
+            className="flex-1 bg-[#FAF7F2] dark:bg-slate-800 border border-emerald-500 text-emerald-600 dark:text-emerald-400 font-medium py-2 rounded-xl flex items-center justify-center gap-1.5 text-sm hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition auto-shrink"
           >
             <Plus size={16} /> {t("common.newInfo")}
           </button>
@@ -274,7 +274,7 @@ export function ProfileTab() {
                 deleteAccount(activeAccountId!);
               }
             }}
-            className="flex-1 bg-white dark:bg-slate-800 border border-rose-500 text-rose-600 dark:text-rose-400 font-medium py-2 rounded-xl flex items-center justify-center gap-1.5 text-sm hover:bg-rose-50 dark:hover:bg-rose-900/30 transition auto-shrink"
+            className="flex-1 bg-[#FAF7F2] dark:bg-slate-800 border border-rose-500 text-rose-600 dark:text-rose-400 font-medium py-2 rounded-xl flex items-center justify-center gap-1.5 text-sm hover:bg-rose-50 dark:hover:bg-rose-900/30 transition auto-shrink"
           >
             <Trash2 size={16} /> {t("common.delete")}
           </button>
@@ -282,7 +282,7 @@ export function ProfileTab() {
       </section>
 
       {/* Form */}
-      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 space-y-4">
+      <section className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5 space-y-4">
         <div className="flex items-center gap-2 mb-1">
           <User size={18} className="text-emerald-500" />
           <h2 className="font-semibold">{t("profile.personalData")}</h2>
@@ -292,7 +292,7 @@ export function ProfileTab() {
           <input
             value={draft.name}
             onChange={(e) => setDraft({ ...draft, name: e.target.value })}
-            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
           />
         </Field>
 
@@ -305,7 +305,7 @@ export function ProfileTab() {
               onChange={(e) =>
                 setDraft({ ...draft, age: Number(e.target.value) })
               }
-              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+              className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
             />
           </Field>
           <Field label={t("profile.gender")}>
@@ -317,7 +317,7 @@ export function ProfileTab() {
                   gender: e.target.value as Profile["gender"],
                 })
               }
-              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+              className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
             >
               <option value="male">{t("profile.genderMale")}</option>
               <option value="female">{t("profile.genderFemale")}</option>
@@ -334,7 +334,7 @@ export function ProfileTab() {
               onChange={(e) =>
                 setDraft({ ...draft, heightCm: Number(e.target.value) })
               }
-              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+              className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
             />
           </Field>
           <Field label={t("profile.weight")}>
@@ -346,7 +346,7 @@ export function ProfileTab() {
               onChange={(e) =>
                 setDraft({ ...draft, weightKg: Number(e.target.value) })
               }
-              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+              className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
             />
           </Field>
         </div>
@@ -360,7 +360,7 @@ export function ProfileTab() {
             onChange={(e) =>
               setDraft({ ...draft, targetWeightKg: Number(e.target.value) })
             }
-            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
           />
         </Field>
 
@@ -370,7 +370,7 @@ export function ProfileTab() {
             onChange={(e) =>
               setDraft({ ...draft, activity: e.target.value as ActivityLevel })
             }
-            className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            className="w-full px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
           >
             {(Object.keys(ACTIVITY_LABEL) as ActivityLevel[]).map((k) => (
               <option key={k} value={k}>
@@ -394,7 +394,7 @@ export function ProfileTab() {
                 className={`py-2.5 rounded-xl text-sm font-medium border transition ${
                   draft.goal === g
                     ? "bg-emerald-500 border-emerald-500 text-white"
-                    : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
+                    : "bg-[#FAF7F2] dark:bg-slate-800 border-[#E5DFD3] dark:border-slate-700"
                 }`}
               >
                 {g === "lose"
@@ -416,17 +416,17 @@ export function ProfileTab() {
       </section>
 
       {/* TDEE */}
-      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+      <section className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5">
         <div className="flex items-center gap-2 mb-3">
           <Calculator size={18} className="text-emerald-500" />
           <h2 className="font-semibold">{t("profile.calcTitle")}</h2>
         </div>
         <div className="grid grid-cols-3 gap-2 text-center">
-          <div className="rounded-xl bg-slate-50 dark:bg-slate-800 p-3">
+          <div className="rounded-xl bg-[#F0EBE1] dark:bg-slate-800 p-3">
             <p className="text-xs text-slate-500">BMR</p>
             <p className="text-lg font-bold tabular-nums">{bmrVal}</p>
           </div>
-          <div className="rounded-xl bg-slate-50 dark:bg-slate-800 p-3">
+          <div className="rounded-xl bg-[#F0EBE1] dark:bg-slate-800 p-3">
             <p className="text-xs text-slate-500">TDEE</p>
             <p className="text-lg font-bold tabular-nums">{tdeeVal}</p>
           </div>
@@ -452,7 +452,7 @@ export function ProfileTab() {
       </section>
 
       {/* Weight tracking */}
-      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5">
+      <section className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5">
         <h2 className="font-semibold mb-3">{t("profile.weightEvolution")}</h2>
         <div className="flex gap-2 mb-4">
           <input
@@ -462,7 +462,7 @@ export function ProfileTab() {
             value={newWeight}
             onChange={(e) => setNewWeight(e.target.value)}
             placeholder={t("profile.weightTodayPlaceholder")}
-            className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+            className="flex-1 px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-800"
           />
           <button
             onClick={addWeight}
@@ -523,7 +523,7 @@ export function ProfileTab() {
         )}
 
         {weights.length > 0 && (
-          <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+          <div className="mt-4 pt-4 border-t border-[#E5DFD3] dark:border-slate-800">
             <p className="text-xs text-slate-500 mb-2">
               {t("profile.lastRecords")}
             </p>

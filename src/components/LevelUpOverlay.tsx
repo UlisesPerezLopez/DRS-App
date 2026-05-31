@@ -17,7 +17,7 @@ export function LevelUpOverlay() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-6">
-      <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-in fade-in zoom-in duration-300 relative overflow-hidden">
+      <div className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-in fade-in zoom-in duration-300 relative overflow-hidden">
         {/* Decorative background glow */}
         <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-emerald-500/10 blur-3xl"></div>
         <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-teal-500/10 blur-3xl"></div>
@@ -25,7 +25,7 @@ export function LevelUpOverlay() {
         {/* Animated Level Badge Icon */}
         <div className="relative w-24 h-24 mx-auto flex items-center justify-center bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl shadow-xl shadow-emerald-500/30 animate-bounce">
           <Star className="text-white fill-white" size={48} />
-          <span className="absolute bottom-1 right-1 bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 text-[10px] font-black px-1.5 py-0.5 rounded-md border border-emerald-100 dark:border-emerald-900/20">
+          <span className="absolute bottom-1 right-1 bg-[#FAF7F2] dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 text-[10px] font-black px-1.5 py-0.5 rounded-md border border-emerald-100 dark:border-emerald-900/20">
             Lvl
           </span>
         </div>

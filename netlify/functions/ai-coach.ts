@@ -3,8 +3,9 @@
  * Proxy seguro (Backend-for-Frontend) para comunicarse con la API de OpenRouter
  * utilizando el modelo Qwen (qwen/qwen-2.5-72b-instruct:free).
  */
+import { Handler } from '@netlify/functions';
 
-export const handler = async (event: any, context: any) => {
+export const handler: Handler = async (event, context) => {
   // Solo permitir solicitudes POST
   if (event.httpMethod !== "POST") {
     return {

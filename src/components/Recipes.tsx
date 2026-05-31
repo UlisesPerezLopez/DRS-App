@@ -53,11 +53,11 @@ export function Recipes() {
     return (
       <article
         key={r.id}
-        className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden transition-all duration-300"
+        className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 overflow-hidden transition-all duration-300"
       >
         <button
           onClick={() => setOpen(isOpen ? null : r.id)}
-          className="w-full flex items-center justify-between p-4 text-left transition-colors duration-200 hover:bg-slate-50 dark:hover:bg-slate-800/30"
+          className="w-full flex items-center justify-between p-4 text-left transition-colors duration-200 hover:bg-[#F0EBE1] dark:hover:bg-slate-800/30"
         >
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold">{recipeName}</h3>
@@ -84,7 +84,7 @@ export function Recipes() {
         <div
           className={`transition-all duration-300 ease-in-out overflow-hidden ${
             isOpen
-              ? "max-h-[1000px] border-t border-slate-100 dark:border-slate-800"
+              ? "max-h-[1000px] border-t border-[#E5DFD3] dark:border-slate-800"
               : "max-h-0"
           }`}
         >
@@ -153,7 +153,7 @@ export function Recipes() {
       </header>
 
       {/* ── Section 1: Low-Cost Recipes ── */}
-      <section className="bg-white dark:bg-slate-900 rounded-[2rem] border border-slate-100 dark:border-slate-800 overflow-hidden shadow-sm">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 rounded-[2rem] border border-[#E5DFD3] dark:border-slate-800 overflow-hidden shadow-sm">
         <button
           onClick={() => setOpenLowCost(!openLowCost)}
           className="w-full flex items-center justify-between p-5 bg-emerald-50/50 dark:bg-emerald-900/10 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-colors"
@@ -178,17 +178,17 @@ export function Recipes() {
         </button>
 
         {openLowCost && (
-          <div className="p-4 space-y-3 bg-slate-50/50 dark:bg-slate-900/50">
+          <div className="p-4 space-y-3 bg-[#F0EBE1]/50 dark:bg-slate-900/50">
             {lowCost.map(renderRecipeCard)}
           </div>
         )}
       </section>
 
       {/* ── Section 2: Full Menu Recipes ── */}
-      <section className="bg-white dark:bg-slate-900 rounded-[2rem] border border-slate-100 dark:border-slate-800 overflow-hidden shadow-sm">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 rounded-[2rem] border border-[#E5DFD3] dark:border-slate-800 overflow-hidden shadow-sm">
         <button
           onClick={() => setOpenFullMenu(!openFullMenu)}
-          className="w-full flex items-center justify-between p-5 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+          className="w-full flex items-center justify-between p-5 hover:bg-[#F0EBE1] dark:hover:bg-slate-800/50 transition-colors"
         >
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400">
@@ -210,7 +210,7 @@ export function Recipes() {
         </button>
 
         {openFullMenu && (
-          <div className="p-4 space-y-3 bg-slate-50/50 dark:bg-slate-900/50">
+          <div className="p-4 space-y-3 bg-[#F0EBE1]/50 dark:bg-slate-900/50">
             {fullMenu.map(renderRecipeCard)}
           </div>
         )}

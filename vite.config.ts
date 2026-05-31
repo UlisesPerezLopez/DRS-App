@@ -25,7 +25,7 @@ export default defineConfig({
         description:
           "Sistema Inteligente de Recuperación Dietética y Entrenamiento",
         theme_color: "#10b981",
-        background_color: "#FDFBF7",
+        background_color: "#F0EBE1",
         display: "standalone",
         orientation: "portrait",
         start_url: "/",

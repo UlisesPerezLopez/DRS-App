@@ -129,7 +129,7 @@ export function StatsTab() {
 
       {/* Habit Summary Panel (Gamification) */}
       <section className="grid grid-cols-3 gap-3">
-        <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-3 shadow-sm flex flex-col items-center text-center">
+        <div className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-2xl p-3 shadow-sm flex flex-col items-center text-center">
           <div className="w-8 h-8 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center text-orange-500 mb-2">
             <Flame size={16} />
           </div>
@@ -143,7 +143,7 @@ export function StatsTab() {
             </span>
           </p>
         </div>
-        <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-3 shadow-sm flex flex-col items-center text-center">
+        <div className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-2xl p-3 shadow-sm flex flex-col items-center text-center">
           <div className="w-8 h-8 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500 mb-2">
             <Droplets size={16} />
           </div>
@@ -158,10 +158,10 @@ export function StatsTab() {
           </p>
         </div>
         <div
-          className={`border rounded-2xl p-3 shadow-sm flex flex-col items-center text-center ${todayWorkouts.length > 0 ? "bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800" : "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800"}`}
+          className={`border rounded-2xl p-3 shadow-sm flex flex-col items-center text-center ${todayWorkouts.length > 0 ? "bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800" : "bg-[#FAF7F2] dark:bg-slate-900 border-[#E5DFD3] dark:border-slate-800"}`}
         >
           <div
-            className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${todayWorkouts.length > 0 ? "bg-indigo-500 text-white shadow-md" : "bg-slate-50 dark:bg-slate-800 text-slate-400"}`}
+            className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${todayWorkouts.length > 0 ? "bg-indigo-500 text-white shadow-md" : "bg-[#F0EBE1] dark:bg-slate-800 text-slate-400"}`}
           >
             <Dumbbell size={16} />
           </div>
@@ -179,7 +179,7 @@ export function StatsTab() {
       </section>
 
       {/* Weight Tracker Input */}
-      <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 shadow-sm">
+      <section className="rounded-3xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5 shadow-sm">
         <h3 className="font-semibold mb-3 flex items-center gap-2">
           <TrendingDown size={18} className="text-emerald-500" />
           {t("stats.recordWeightTitle")}
@@ -191,7 +191,7 @@ export function StatsTab() {
             placeholder="Ej. 78.5"
             value={newWeight}
             onChange={(e) => setNewWeight(e.target.value)}
-            className="flex-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 font-bold tabular-nums text-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
+            className="flex-1 bg-[#F0EBE1] dark:bg-slate-950 border border-[#E5DFD3] dark:border-slate-800 rounded-2xl px-4 py-3 font-bold tabular-nums text-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
           />
           <button
             onClick={handleAddWeight}
@@ -204,7 +204,7 @@ export function StatsTab() {
       </section>
 
       {/* Weight + Calories Chart */}
-      <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 shadow-sm">
+      <section className="rounded-3xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5 shadow-sm">
         <h3 className="font-semibold mb-4">{t("stats.weightCalChart")}</h3>
         <div className="h-64 -ml-2">
           <ResponsiveContainer width="100%" height="100%">
@@ -272,7 +272,7 @@ export function StatsTab() {
       </section>
 
       {/* Water + Training Chart */}
-      <section className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-5 shadow-sm">
+      <section className="rounded-3xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-5 shadow-sm">
         <h3 className="font-semibold mb-4">{t("stats.waterTrainChart")}</h3>
         <div className="h-52 -ml-2">
           <ResponsiveContainer width="100%" height="100%">

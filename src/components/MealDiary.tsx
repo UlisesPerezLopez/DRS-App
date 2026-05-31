@@ -137,7 +137,7 @@ export function MealDiary() {
         </button>
       </header>
 
-      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4">
+      <section className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 p-4">
         <div className="flex justify-between text-sm mb-2">
           <span className="font-semibold tabular-nums">
             {consumed} / {target} {t("common.kcal")}
@@ -159,7 +159,7 @@ export function MealDiary() {
           <button
             key={m.meal}
             onClick={() => openAdd(m.meal, m.hour)}
-            className="flex flex-col items-center gap-0.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2.5 rounded-2xl active:scale-95 transition"
+            className="flex flex-col items-center gap-0.5 bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-700 px-4 py-2.5 rounded-2xl active:scale-95 transition"
           >
             <span className="text-xs text-slate-500">{m.hour}</span>
             <span className="text-sm font-medium">
@@ -193,7 +193,7 @@ export function MealDiary() {
           return (
             <section
               key={slot}
-              className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden"
+              className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 overflow-hidden"
             >
               <header className="flex items-center justify-between px-4 py-3">
                 <div>
@@ -222,7 +222,7 @@ export function MealDiary() {
                 </button>
               </header>
               {items.length > 0 && (
-                <ul className="border-t border-slate-100 dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800">
+                <ul className="border-t border-[#E5DFD3] dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800">
                   {items.map((f) => (
                     <FoodItemCard key={f.id} entry={f} onRemove={remove} />
                   ))}

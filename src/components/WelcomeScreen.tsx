@@ -69,7 +69,7 @@ export function WelcomeScreen() {
                   className={`w-full flex items-center gap-4 px-5 py-4 rounded-2xl border transition-all duration-200 active:scale-[0.98] ${
                     selectedLang === lang.code
                       ? "bg-emerald-500/20 border-emerald-500/50 shadow-lg shadow-emerald-500/10"
-                      : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"
+                      : "bg-[#FAF7F2]/5 border-white/10 hover:bg-[#FAF7F2]/10 hover:border-white/20"
                   }`}
                 >
                   <span className="text-2xl">{lang.flag}</span>
@@ -94,7 +94,7 @@ export function WelcomeScreen() {
             </div>
 
             {/* Disclaimer card */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 mb-6">
+            <div className="bg-[#FAF7F2]/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 mb-6">
               <div className="flex items-center gap-2 mb-4">
                 <Sparkles size={18} className="text-amber-400" />
                 <h3 className="font-bold text-lg text-amber-300">

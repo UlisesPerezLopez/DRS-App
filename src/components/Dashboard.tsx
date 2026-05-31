@@ -169,7 +169,7 @@ export function Dashboard() {
               {profile.name || t("dashboard.welcome")} 👋
             </h1>
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 flex items-center justify-center text-2xl shadow-sm">
+          <div className="w-12 h-12 rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 flex items-center justify-center text-2xl shadow-sm">
             🎯
           </div>
         </div>
@@ -183,7 +183,7 @@ export function Dashboard() {
       {/* Summary Cards Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Nutrition Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
+        <div className="group relative overflow-hidden bg-[#FAF7F2] dark:bg-slate-900 rounded-[2rem] p-4 border border-[#E5DFD3] dark:border-slate-800 shadow-sm dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Utensils size={80} className="text-emerald-500" />
           </div>
@@ -224,7 +224,7 @@ export function Dashboard() {
         </div>
 
         {/* Workout Summary Card */}
-        <div className="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2rem] p-4 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
+        <div className="group relative overflow-hidden bg-[#FAF7F2] dark:bg-slate-900 rounded-[2rem] p-4 border border-[#E5DFD3] dark:border-slate-800 shadow-sm dark:shadow-none hover:shadow-2xl active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
             <Dumbbell size={80} className="text-indigo-500" />
           </div>
@@ -267,7 +267,7 @@ export function Dashboard() {
       </section>
 
       {/* Calories Progress Card */}
-      <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 p-5 space-y-3">
+      <section className="rounded-3xl bg-[#FAF7F2] dark:bg-slate-900 shadow-sm border border-[#E5DFD3] dark:border-slate-800 p-5 space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Flame className="text-orange-500" size={20} />
@@ -308,7 +308,7 @@ export function Dashboard() {
 
       {/* Quick Metrics Grid */}
       <section className="grid grid-cols-2 gap-4">
-        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-sky-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
+        <div className="bg-[#FAF7F2] dark:bg-slate-900 p-4 rounded-3xl border border-[#E5DFD3] dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-sky-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-500">
               <Droplets size={14} />
@@ -326,7 +326,7 @@ export function Dashboard() {
               className="h-full bg-sky-500 transition-all duration-700 ease-out relative"
               style={{ width: `${waterPercent}%` }}
             >
-              <div className="absolute inset-0 bg-white/20 w-full animate-pulse"></div>
+              <div className="absolute inset-0 bg-[#FAF7F2]/20 w-full animate-pulse"></div>
             </div>
           </div>
           <button
@@ -337,7 +337,7 @@ export function Dashboard() {
           </button>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-emerald-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
+        <div className="bg-[#FAF7F2] dark:bg-slate-900 p-4 rounded-3xl border border-[#E5DFD3] dark:border-slate-800 shadow-sm hover:shadow-lg hover:shadow-emerald-500/10 active:scale-[0.985] hover:scale-[1.015] transition-all duration-300 ease-out">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-500">
               <TrendingDown size={14} />
@@ -357,7 +357,7 @@ export function Dashboard() {
       </section>
 
       {/* Daily Analysis Card */}
-      <div className="group rounded-[2rem] bg-white dark:bg-slate-900 p-6 border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3 relative overflow-hidden text-left">
+      <div className="group rounded-[2rem] bg-[#FAF7F2] dark:bg-slate-900 p-6 border border-[#E5DFD3] dark:border-slate-800 shadow-sm dark:shadow-none space-y-3 relative overflow-hidden text-left">
         <div className="absolute -right-4 -top-4 opacity-10 group-hover:scale-110 transition-transform">
           <Sparkles size={120} className="text-emerald-500" />
         </div>

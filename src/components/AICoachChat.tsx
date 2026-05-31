@@ -33,11 +33,11 @@ export function AICoachChat() {
       <div className="pointer-events-auto flex flex-col items-end">
         {/* PANEL DE CHAT ELEVADO */}
         {isOpen ? (
-          <div className="w-[340px] h-[460px] bg-white/95 dark:bg-slate-900/95 backdrop-blur border border-slate-200/50 dark:border-slate-800/50 shadow-2xl rounded-3xl overflow-hidden flex flex-col animate-in slide-in-from-bottom-8 fade-in-50 duration-300">
+          <div className="w-[340px] h-[460px] bg-[#FAF7F2]/95 dark:bg-slate-900/95 backdrop-blur border border-[#E5DFD3]/50 dark:border-slate-800/50 shadow-2xl rounded-3xl overflow-hidden flex flex-col animate-in slide-in-from-bottom-8 fade-in-50 duration-300">
             {/* Cabecera del Panel */}
             <header className="px-5 py-4 bg-gradient-to-r from-indigo-500 to-violet-600 text-white flex items-center justify-between shadow-md shrink-0">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center animate-pulse">
+                <div className="w-8 h-8 rounded-xl bg-[#FAF7F2]/20 flex items-center justify-center animate-pulse">
                   <Bot size={18} className="text-white" />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ export function AICoachChat() {
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1 rounded-full hover:bg-white/10 active:scale-95 transition"
+                className="p-1 rounded-full hover:bg-[#FAF7F2]/10 active:scale-95 transition"
                 aria-label={t("aiCoach.closeLabel", {
                   defaultValue: "Cerrar chat",
                 })}
@@ -61,7 +61,7 @@ export function AICoachChat() {
             </header>
 
             {/* Mensajes del Chat */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-slate-50/50 dark:bg-slate-950/20">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-[#F0EBE1]/50 dark:bg-slate-950/20">
               {coachMessages.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center p-6 space-y-3">
                   <div className="w-12 h-12 rounded-full bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center text-indigo-500 animate-bounce">
@@ -91,7 +91,7 @@ export function AICoachChat() {
                         className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-xs font-medium leading-relaxed shadow-sm ${
                           isUser
                             ? "bg-indigo-500 text-white rounded-tr-none"
-                            : "bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-100 dark:border-slate-800/80 rounded-tl-none"
+                            : "bg-[#FAF7F2] dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-[#E5DFD3] dark:border-slate-800/80 rounded-tl-none"
                         }`}
                       >
                         <p>{msg.content}</p>
@@ -111,7 +111,7 @@ export function AICoachChat() {
               {/* Indicador de Escritura */}
               {isAiTyping && (
                 <div className="flex justify-start animate-in fade-in-50 duration-200">
-                  <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-800/80 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm flex items-center gap-1.5">
+                  <div className="bg-[#FAF7F2] dark:bg-slate-800 border border-[#E5DFD3] dark:border-slate-800/80 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-bounce [animation-delay:0ms]"></span>
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-bounce [animation-delay:150ms]"></span>
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-bounce [animation-delay:300ms]"></span>
@@ -124,7 +124,7 @@ export function AICoachChat() {
             {/* Área del Input Inferior */}
             <form
               onSubmit={handleSend}
-              className="p-3 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 flex gap-2 items-center shrink-0"
+              className="p-3 border-t border-[#E5DFD3] dark:border-slate-800 bg-[#FAF7F2] dark:bg-slate-900 flex gap-2 items-center shrink-0"
             >
               <input
                 type="text"
@@ -140,7 +140,7 @@ export function AICoachChat() {
                         defaultValue: "Pregúntale al Coach...",
                       })
                 }
-                className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500 disabled:opacity-50 text-slate-900 dark:text-slate-100"
+                className="flex-1 px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#F0EBE1] dark:bg-slate-950 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500 disabled:opacity-50 text-slate-900 dark:text-slate-100"
               />
               <button
                 type="submit"

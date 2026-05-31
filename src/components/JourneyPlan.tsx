@@ -61,7 +61,7 @@ export function JourneyPlan() {
       </header>
       
       {/* Circle Progress */}
-      <section className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-100 dark:border-slate-800 flex flex-col items-center shadow-sm">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl p-6 border border-[#E5DFD3] dark:border-slate-800 flex flex-col items-center shadow-sm">
         <div className="relative flex items-center justify-center w-36 h-36 mb-4">
           <svg className="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="45" fill="none" strokeWidth="8" className="stroke-slate-100 dark:stroke-slate-800" />
@@ -94,18 +94,18 @@ export function JourneyPlan() {
       </section>
 
       {/* Routine */}
-      <section className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-5 shadow-sm">
+      <section className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-3xl p-5 shadow-sm">
         <div className="flex items-center gap-2 mb-4">
           <Activity size={20} className="text-emerald-500" />
           <h3 className="font-semibold text-lg">{t("journey.routineToday")}</h3>
         </div>
-        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 text-center">
+        <div className="p-4 rounded-2xl bg-[#F0EBE1] dark:bg-slate-800 text-center">
           <p className="font-semibold text-slate-800 dark:text-slate-200">{todaysWorkout === "Día de Desanso." ? t("journey.restDay") : todaysWorkout}</p>
         </div>
       </section>
 
       {/* Accordion de deporte de hoy */}
-      <details className="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-sm">
+      <details className="group bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-3xl overflow-hidden shadow-sm">
         <summary className="flex items-center justify-between p-5 font-semibold cursor-pointer select-none">
           <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400">
             <Flame size={20} />
@@ -113,7 +113,7 @@ export function JourneyPlan() {
           </div>
           <ChevronDown size={20} className="text-slate-400 transition group-open:rotate-180" />
         </summary>
-        <div className="p-5 pt-0 border-t border-slate-100 dark:border-slate-800">
+        <div className="p-5 pt-0 border-t border-[#E5DFD3] dark:border-slate-800">
           {todaySessions.length === 0 ? (
             <p className="text-sm text-slate-500 mt-3">{t("dashboard.noSessions")}</p>
           ) : (
@@ -129,7 +129,7 @@ export function JourneyPlan() {
               ))}
             </ul>
           )}
-          <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-between font-bold mt-4">
+          <div className="pt-3 border-t border-[#E5DFD3] dark:border-slate-800 flex justify-between font-bold mt-4">
             <span>{t("workout.burnedToday")}</span>
             <span className="text-orange-500">{totalCalories} {t("common.kcal")}</span>
           </div>

@@ -35,7 +35,9 @@ export async function askCoach(
   }
 
   try {
-    const response = await fetch("/api/ai-coach", {
+    const endpointUrl = "/api/ai-coach";
+    console.log("Endpoint actual:", endpointUrl);
+    const response = await fetch(endpointUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

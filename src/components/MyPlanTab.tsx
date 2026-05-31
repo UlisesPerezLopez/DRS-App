@@ -26,8 +26,8 @@ export function MyPlanTab() {
           onClick={() => setActiveDiet("med")}
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
             activeDiet === "med"
-              ? "bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-400 shadow-sm"
-              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+              ? "bg-[#FAF7F2] dark:bg-slate-700 text-emerald-600 dark:text-emerald-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-[#FAF7F2]/50 dark:hover:bg-slate-700/50"
           }`}
         >
           <LayoutList size={16} />
@@ -37,8 +37,8 @@ export function MyPlanTab() {
           onClick={() => setActiveDiet("low_carb")}
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
             activeDiet === "low_carb"
-              ? "bg-white dark:bg-slate-700 text-orange-600 dark:text-orange-400 shadow-sm"
-              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+              ? "bg-[#FAF7F2] dark:bg-slate-700 text-orange-600 dark:text-orange-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-[#FAF7F2]/50 dark:hover:bg-slate-700/50"
           }`}
         >
           <Flame size={16} />
@@ -48,8 +48,8 @@ export function MyPlanTab() {
           onClick={() => setActiveDiet("vegetarian")}
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold transition ${
             activeDiet === "vegetarian"
-              ? "bg-white dark:bg-slate-700 text-green-600 dark:text-green-400 shadow-sm"
-              : "text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50"
+              ? "bg-[#FAF7F2] dark:bg-slate-700 text-green-600 dark:text-green-400 shadow-sm"
+              : "text-slate-500 dark:text-slate-400 hover:bg-[#FAF7F2]/50 dark:hover:bg-slate-700/50"
           }`}
         >
           <Leaf size={16} />
@@ -75,7 +75,7 @@ export function MyPlanTab() {
                   : activeDiet === "low_carb"
                     ? "bg-orange-500 text-white shadow-md shadow-orange-500/20"
                     : "bg-green-600 text-white shadow-md shadow-green-500/20"
-                : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300"
+                : "bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 text-slate-600 dark:text-slate-300"
             }`}
           >
             {t("plans.weekLabel")} {w}
@@ -96,7 +96,7 @@ export function MyPlanTab() {
           return (
             <article
               key={plan.id}
-              className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden"
+              className="rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 overflow-hidden"
             >
               {/* Day header */}
               <button
@@ -138,7 +138,7 @@ export function MyPlanTab() {
 
               {/* Expanded content */}
               {isOpen && (
-                <div className="px-4 pb-4 border-t border-slate-100 dark:border-slate-800 pt-4 space-y-3">
+                <div className="px-4 pb-4 border-t border-[#E5DFD3] dark:border-slate-800 pt-4 space-y-3">
                   {/* Clinical warnings */}
                   {plan.warnings?.includes("high_sodium") && (
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40">

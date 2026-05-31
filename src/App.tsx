@@ -45,7 +45,7 @@ function BottomNav() {
 
   return (
     <nav className="fixed bottom-0 inset-x-0 z-40 max-w-md mx-auto safe-bottom">
-      <div className="m-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg flex justify-between px-1 py-1.5">
+      <div className="m-3 rounded-2xl bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 shadow-lg flex justify-between px-1 py-1.5">
         {NAV_ITEMS.map((item) => {
           const active = location.pathname === item.path;
           const Icon = item.icon;
@@ -144,7 +144,7 @@ export default function App() {
 
   if (!activeAccount) {
     return (
-      <div className="min-h-full bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center p-6 text-slate-900 dark:text-slate-100 max-w-md mx-auto">
+      <div className="min-h-full bg-[#F0EBE1] dark:bg-slate-950 flex flex-col items-center justify-center p-6 text-slate-900 dark:text-slate-100 max-w-md mx-auto">
         <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg mb-8">
           <span className="text-4xl text-white">🎯</span>
         </div>
@@ -168,11 +168,11 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-full bg-[#FDFBF7] dark:bg-slate-950 text-slate-900 dark:text-slate-100 max-w-md mx-auto relative">
+    <div className="min-h-full bg-[#F0EBE1] dark:bg-slate-950 text-slate-900 dark:text-slate-100 max-w-md mx-auto relative">
       {/* Onboarding Overlay Modal */}
       {showOnboarding && (
         <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-6">
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-fadeIn relative">
+          <div className="bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-fadeIn relative">
             {/* Close button */}
             <button
               onClick={() => {
@@ -207,7 +207,7 @@ export default function App() {
         </div>
       )}
       {/* Top header bar */}
-      <div className="sticky top-0 z-30 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-100 dark:border-slate-800 safe-top">
+      <div className="sticky top-0 z-30 backdrop-blur-md bg-[#FAF7F2]/80 dark:bg-slate-950/80 border-b border-[#E5DFD3] dark:border-slate-800 safe-top">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold shadow-sm text-lg">

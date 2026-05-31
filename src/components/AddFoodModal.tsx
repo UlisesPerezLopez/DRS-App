@@ -233,9 +233,9 @@ export function AddFoodModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 backdrop-blur-[1px] p-4 animate-fade-in">
-      <div className="w-full sm:max-w-md bg-white dark:bg-slate-900 rounded-3xl overflow-hidden flex flex-col max-h-[85vh] shadow-2xl animate-slide-up">
+      <div className="w-full sm:max-w-md bg-[#FAF7F2] dark:bg-slate-900 rounded-3xl overflow-hidden flex flex-col max-h-[85vh] shadow-2xl animate-slide-up">
         {/* Header */}
-        <div className="shrink-0 px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <div className="shrink-0 px-5 py-4 border-b border-[#E5DFD3] dark:border-slate-800 flex items-center justify-between">
           <h2 className="font-semibold text-lg">{t("mealDiary.addFood")}</h2>
           <button
             onClick={onClose}
@@ -261,7 +261,7 @@ export function AddFoodModal({
                   setTime(e.target.value);
                   setMeal(detectMealFromHour(e.target.value));
                 }}
-                className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950"
+                className="w-full mt-1 px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#F0EBE1] dark:bg-slate-950"
               />
             </label>
             <label className="block">
@@ -271,7 +271,7 @@ export function AddFoodModal({
               <select
                 value={meal}
                 onChange={(e) => setMeal(e.target.value as MealSlot)}
-                className="w-full mt-1 px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950"
+                className="w-full mt-1 px-3 py-2.5 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#F0EBE1] dark:bg-slate-950"
               >
                 {(
                   [
@@ -314,7 +314,7 @@ export function AddFoodModal({
                 value={cfName}
                 onChange={(e) => setCfName(e.target.value)}
                 placeholder={t("customFood.namePlaceholder")}
-                className="w-full px-3 py-2.5 rounded-xl border border-amber-200 dark:border-amber-700 bg-white dark:bg-slate-900 text-sm"
+                className="w-full px-3 py-2.5 rounded-xl border border-amber-200 dark:border-amber-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
               />
               <div className="grid grid-cols-2 gap-2">
                 <label className="block">
@@ -326,7 +326,7 @@ export function AddFoodModal({
                     inputMode="numeric"
                     value={cfKcal}
                     onChange={(e) => setCfKcal(e.target.value)}
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-amber-200 dark:border-amber-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-amber-200 dark:border-amber-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   />
                 </label>
                 <label className="block">
@@ -338,7 +338,7 @@ export function AddFoodModal({
                     inputMode="numeric"
                     value={cfProtein}
                     onChange={(e) => setCfProtein(e.target.value)}
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   />
                 </label>
                 <label className="block">
@@ -350,7 +350,7 @@ export function AddFoodModal({
                     inputMode="numeric"
                     value={cfCarbs}
                     onChange={(e) => setCfCarbs(e.target.value)}
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   />
                 </label>
                 <label className="block">
@@ -362,7 +362,7 @@ export function AddFoodModal({
                     inputMode="numeric"
                     value={cfFat}
                     onChange={(e) => setCfFat(e.target.value)}
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   />
                 </label>
                 <label className="block">
@@ -374,7 +374,7 @@ export function AddFoodModal({
                     inputMode="numeric"
                     value={cfFiber}
                     onChange={(e) => setCfFiber(e.target.value)}
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   />
                 </label>
                 <label className="block">
@@ -386,7 +386,7 @@ export function AddFoodModal({
                     onChange={(e) =>
                       setCfSodium(e.target.value as "Bajo" | "Medio" | "Alto")
                     }
-                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm"
+                    className="w-full mt-0.5 px-3 py-2 rounded-xl border border-[#E5DFD3] dark:border-slate-700 bg-[#FAF7F2] dark:bg-slate-900 text-sm"
                   >
                     <option value="Bajo">{t("customFood.sodiumLow")}</option>
                     <option value="Medio">{t("customFood.sodiumMed")}</option>
@@ -428,19 +428,19 @@ export function AddFoodModal({
                   value={gramsInput}
                   onChange={(e) => setGramsInput(e.target.value)}
                   placeholder="100"
-                  className="w-full mt-1.5 px-4 py-3 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-white dark:bg-slate-900 text-lg font-bold"
+                  className="w-full mt-1.5 px-4 py-3 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-[#FAF7F2] dark:bg-slate-900 text-lg font-bold"
                 />
               </label>
 
               {preview && (
                 <div className="mt-3 grid grid-cols-4 gap-2 text-center text-sm">
-                  <div className="bg-white dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800">
+                  <div className="bg-[#FAF7F2] dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-[#E5DFD3] dark:border-slate-800">
                     <p className="text-[10px] text-slate-500 uppercase font-bold">
                       Kcal
                     </p>
                     <p className="font-bold">{preview.calories}</p>
                   </div>
-                  <div className="bg-white dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800">
+                  <div className="bg-[#FAF7F2] dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-[#E5DFD3] dark:border-slate-800">
                     <p className="text-[10px] text-blue-500 uppercase font-bold">
                       P(g)
                     </p>
@@ -448,7 +448,7 @@ export function AddFoodModal({
                       {preview.protein}
                     </p>
                   </div>
-                  <div className="bg-white dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800">
+                  <div className="bg-[#FAF7F2] dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-[#E5DFD3] dark:border-slate-800">
                     <p className="text-[10px] text-amber-500 uppercase font-bold">
                       CH(g)
                     </p>
@@ -456,7 +456,7 @@ export function AddFoodModal({
                       {preview.carbs}
                     </p>
                   </div>
-                  <div className="bg-white dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800">
+                  <div className="bg-[#FAF7F2] dark:bg-slate-900 p-2 rounded-lg shadow-sm border border-[#E5DFD3] dark:border-slate-800">
                     <p className="text-[10px] text-rose-500 uppercase font-bold">
                       G(g)
                     </p>
@@ -473,7 +473,7 @@ export function AddFoodModal({
               )}
 
               {previewCG !== null && (
-                <div className="mt-2 flex items-center justify-between text-xs p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                <div className="mt-2 flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800">
                   <span className="text-slate-500">Carga Glucémica (CG):</span>
                   <span
                     className={
@@ -499,7 +499,7 @@ export function AddFoodModal({
         </div>
 
         {/* Footer */}
-        <div className="shrink-0 p-4 border-t border-slate-100 dark:border-slate-800">
+        <div className="shrink-0 p-4 border-t border-[#E5DFD3] dark:border-slate-800">
           <button
             onClick={handleSave}
             disabled={!selectedFood || !Number(gramsInput)}

@@ -85,7 +85,7 @@ export function DietTab() {
         <span>{t("diet.suggestionView")}</span>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 shadow-sm">
+      <div className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-3xl p-4 shadow-sm">
         <label className="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300 flex justify-between">
           <span>{t("dietTab.title")}</span>
           <span className="font-bold text-emerald-600 dark:text-emerald-400">
@@ -102,7 +102,7 @@ export function DietTab() {
                 | "vegetariana",
             })
           }
-          className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 outline-none focus:ring-2 ring-emerald-500/20 transition"
+          className="w-full bg-[#F0EBE1] dark:bg-slate-950 border border-[#E5DFD3] dark:border-slate-800 rounded-xl px-4 py-3 outline-none focus:ring-2 ring-emerald-500/20 transition"
         >
           <option value="mediterranea">
             {t("profile.diet_mediterranean")}
@@ -116,7 +116,7 @@ export function DietTab() {
         {menu.map((m, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 shadow-sm"
+            className="bg-[#FAF7F2] dark:bg-slate-900 border border-[#E5DFD3] dark:border-slate-800 rounded-3xl p-4 shadow-sm"
           >
             <div className="flex justify-between items-center mb-3">
               <h3 className="font-bold text-lg">
@@ -134,7 +134,7 @@ export function DietTab() {
               {m.items.map((itm, i) => (
                 <li
                   key={i}
-                  className="flex justify-between text-sm items-start hover:bg-slate-50 dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition"
+                  className="flex justify-between text-sm items-start hover:bg-[#F0EBE1] dark:hover:bg-slate-800/50 p-2 rounded-xl -mx-2 transition"
                 >
                   <div className="flex-1 pr-2">
                     <span className="text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
