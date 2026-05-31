@@ -35,7 +35,7 @@ export async function askCoach(
   }
 
   try {
-    const response = await fetch("/.netlify/functions/ai-coach", {
+    const response = await fetch("/api/ai-coach", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
