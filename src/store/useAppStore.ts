@@ -8,8 +8,10 @@ import type {
   WorkoutSession,
   AccountData,
   CustomFood,
+  CoachMessage,
 } from "../types";
 import { todayISO } from "../lib/calc";
+import { askCoach } from "../services/aiService";
 
 export const DEFAULT_PROFILE: Profile = {
   name: "",
@@ -29,6 +31,8 @@ export interface AppState {
   theme: "light" | "dark";
   hasSeenWelcome: boolean;
   showLevelUpCelebration: boolean;
+  isAiTyping: boolean;
+  coachMessages: CoachMessage[];
 }
 
 export interface AppActions {
@@ -52,6 +56,10 @@ export interface AppActions {
   dismissLevelUp: () => void;
   exportUserData: () => void;
   factoryReset: () => void;
+  setAiTyping: (isAiTyping: boolean) => void;
+  addCoachMessage: (message: Omit<CoachMessage, "id" | "timestamp">) => void;
+  clearCoachMessages: () => void;
+  sendMessageToCoach: (text: string) => Promise<void>;
 }
 
 export type AppStore = AppState & AppActions;
@@ -181,6 +189,8 @@ const customStorage: StateStorage = {
         theme: themeStr ? JSON.parse(themeStr) : "light",
         hasSeenWelcome: true, // legacy users already onboarded
         showLevelUpCelebration: false,
+        isAiTyping: false,
+        coachMessages: [],
       };
 
       return JSON.stringify({ state, version: 0 });
@@ -208,6 +218,8 @@ export const useAppStore = create<AppStore>()(
       theme: "light",
       hasSeenWelcome: false,
       showLevelUpCelebration: false,
+      isAiTyping: false,
+      coachMessages: [],
 
       createAccount: (name, profile) =>
         set((state) => {
@@ -511,6 +523,64 @@ export const useAppStore = create<AppStore>()(
       factoryReset: () => {
         localStorage.removeItem("drs.store.v2");
         window.location.reload();
+      },
+
+      setAiTyping: (isAiTyping) => set({ isAiTyping }),
+
+      addCoachMessage: (message) =>
+        set((state) => ({
+          coachMessages: [
+            ...state.coachMessages,
+            {
+              ...message,
+              id: crypto.randomUUID(),
+              timestamp: new Date().toISOString(),
+            },
+          ],
+        })),
+
+      clearCoachMessages: () => set({ coachMessages: [] }),
+
+      sendMessageToCoach: async (text) => {
+        if (!text.trim()) return;
+
+        // Añadir el mensaje del usuario
+        get().addCoachMessage({
+          role: "user",
+          content: text.trim(),
+        });
+
+        // Poner isAiTyping a true
+        get().setAiTyping(true);
+
+        try {
+          // Mapear historial completo mapeado a formato OpenAI { role, content }
+          const history = get().coachMessages.map((m) => ({
+            role: m.role,
+            content: m.content,
+          }));
+
+          // Llamar a askCoach
+          const response = await askCoach(history);
+
+          // Añadir la respuesta de la IA
+          get().addCoachMessage({
+            role: "assistant",
+            content: response.content,
+            isOffline: response.isOffline,
+          });
+        } catch (error) {
+          console.error("Error in sendMessageToCoach:", error);
+          get().addCoachMessage({
+            role: "assistant",
+            content:
+              "Lo siento, he experimentado un error inesperado al procesar tu consulta. Por favor, inténtalo de nuevo.",
+            isOffline: true,
+          });
+        } finally {
+          // Finalmente poner isAiTyping a false
+          get().setAiTyping(false);
+        }
       },
     }),
     {

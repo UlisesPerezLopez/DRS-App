@@ -61,7 +61,7 @@ export interface CommonFood {
   fiber: number;
   ig: number | null;
   sodiumLevel: "Bajo" | "Medio" | "Alto";
-  mealTags?: ('breakfast' | 'lunch' | 'dinner' | 'snack')[];
+  mealTags?: ("breakfast" | "lunch" | "dinner" | "snack")[];
 }
 
 export interface CustomFood {
@@ -91,7 +91,7 @@ export interface AccountData {
   userLevel: number;
 }
 
-export type PlanWarning = 'high_sodium' | 'high_potassium';
+export type PlanWarning = "high_sodium" | "high_potassium";
 
 export interface DailyMenuPlan {
   id: string;
@@ -105,3 +105,11 @@ export interface DailyMenuPlan {
 export type SearchableFood =
   | (CommonFood & { _type: "common" })
   | (CustomFood & { _type: "custom" });
+
+export interface CoachMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+  isOffline?: boolean;
+}

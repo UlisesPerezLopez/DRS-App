@@ -24,6 +24,7 @@ import { DietTab } from "./components/DietTab";
 import { StatsTab } from "./components/StatsTab";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { LevelUpOverlay } from "./components/LevelUpOverlay";
+import { AICoachChat } from "./components/AICoachChat";
 import { todayISO } from "./lib/calc";
 
 const NAV_ITEMS = [
@@ -227,6 +228,7 @@ export default function App() {
       {/* Bottom nav */}
       <BottomNav />
       <LevelUpOverlay />
+      <AICoachChat />
     </div>
   );
 }
