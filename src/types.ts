@@ -89,6 +89,7 @@ export interface AccountData {
   lastLoginDate: string | null;
   userXP: number;
   userLevel: number;
+  hasCompletedOnboarding?: boolean;
 }
 
 export type PlanWarning = "high_sodium" | "high_potassium";

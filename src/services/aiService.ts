@@ -3,6 +3,7 @@
  * Gestor de la comunicación frontend con el asistente inteligente.
  * Diseñado con tolerancia a fallos y resiliencia Offline-First de alta fidelidad.
  */
+import i18n from "../i18n/config";
 
 const OFFLINE_TIPS = [
   "Parece que estamos sin conexión. Mi consejo offline: mantén tu déficit calórico y prioriza la proteína.",
@@ -59,6 +60,17 @@ export async function askCoach(
       isOffline: false,
     };
   } catch (error) {
+    if (typeof window !== "undefined" && navigator.onLine) {
+      console.error("AI Service Error:", error);
+      return {
+        content: i18n.t("aiCoach.serverError", {
+          defaultValue:
+            "Error de conexión con el servidor de IA. Revisa la consola o intenta más tarde.",
+        }),
+        isOffline: false,
+      };
+    }
+
     console.warn("AI Coach request failed, falling back to local tips:", error);
     // Recuperar consejo heurístico local ante cualquier fallo de red o del proxy
     const randomIndex = Math.floor(Math.random() * OFFLINE_TIPS.length);

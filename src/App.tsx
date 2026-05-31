@@ -82,6 +82,7 @@ export default function App() {
   const createAccount = useAppStore((s) => s.createAccount);
   const hasSeenWelcome = useAppStore((s) => s.hasSeenWelcome);
   const checkDailyLogin = useAppStore((s) => s.checkDailyLogin);
+  const completeOnboarding = useAppStore((s) => s.completeOnboarding);
 
   const activeAccount = activeAccountId ? accounts[activeAccountId] : null;
 
@@ -99,11 +100,19 @@ export default function App() {
     if (
       activeAccount &&
       activeAccount.profile.name &&
-      !activeAccount.planStartDate
+      !activeAccount.planStartDate &&
+      !activeAccount.hasCompletedOnboarding
     ) {
       setShowOnboarding(true);
+    } else {
+      setShowOnboarding(false);
     }
-  }, [activeAccountId, activeAccount]);
+  }, [
+    activeAccountId,
+    activeAccount?.profile.name,
+    activeAccount?.planStartDate,
+    activeAccount?.hasCompletedOnboarding,
+  ]);
 
   // Apply theme class on root
   useEffect(() => {
@@ -163,7 +172,18 @@ export default function App() {
       {/* Onboarding Overlay Modal */}
       {showOnboarding && (
         <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-6">
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-fadeIn">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center space-y-6 animate-fadeIn relative">
+            {/* Close button */}
+            <button
+              onClick={() => {
+                setShowOnboarding(false);
+                completeOnboarding();
+              }}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 transition-all active:scale-90"
+              aria-label="Cerrar"
+            >
+              ✕
+            </button>
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mx-auto shadow-lg">
               <span className="text-3xl">🎯</span>
             </div>
@@ -176,6 +196,7 @@ export default function App() {
             <button
               onClick={() => {
                 setShowOnboarding(false);
+                completeOnboarding();
                 navigate("/profile");
               }}
               className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-transform"

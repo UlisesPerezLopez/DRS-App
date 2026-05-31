@@ -7,7 +7,10 @@
     "search": "Buscar...",
     "kcal": "kcal",
     "minutes": "min",
-    "serving": "ración"
+    "serving": "ración",
+    "protein_abbr": "P",
+    "carbs_abbr": "C",
+    "fat_abbr": "G"
   },
   "tabs": {
     "dashboard": "Inicio",
@@ -279,7 +282,11 @@
       },
       "w2_l5": {
         "name": "Salmón al Horno con Puré de Calabacín",
-        "ingredients": ["180g salmón", "1 calabacín", "AOVE y pimienta"],
+        "ingredients": [
+          "180g salmón",
+          "1 calabacín",
+          "AOVE y pimienta"
+        ],
         "steps": [
           "Hornea el salmón.",
           "Bate el calabacín previamente cocido con aceite para hacer el puré."
@@ -477,7 +484,11 @@
       },
       "w1_l6": {
         "name": "Bacalao Fresco al Vapor",
-        "ingredients": ["200g bacalao fresco", "Judías verdes", "Ajo y AOVE"],
+        "ingredients": [
+          "200g bacalao fresco",
+          "Judías verdes",
+          "Ajo y AOVE"
+        ],
         "steps": [
           "Haz el pescado y las judías al vapor.",
           "Prepara un refrito de ajos laminados en una sartén.",
@@ -586,7 +597,11 @@
       },
       "w3_d3": {
         "name": "Dorada al Horno con Pimientos",
-        "ingredients": ["1 dorada limpia", "Pimientos rojos", "Cebolla y AOVE"],
+        "ingredients": [
+          "1 dorada limpia",
+          "Pimientos rojos",
+          "Cebolla y AOVE"
+        ],
         "steps": [
           "Crea una cama de pimientos y cebolla.",
           "Hornea la dorada encima durante 20 min a 180°C."
@@ -642,7 +657,11 @@
       },
       "w3_l6": {
         "name": "Entrecot con Setas Variadas",
-        "ingredients": ["180g entrecot", "Setas variadas", "Ajo y perejil"],
+        "ingredients": [
+          "180g entrecot",
+          "Setas variadas",
+          "Ajo y perejil"
+        ],
         "steps": [
           "Saltea las setas con ajo.",
           "Haz la carne a la plancha al punto deseado."
@@ -723,7 +742,11 @@
       },
       "w4_d2": {
         "name": "Wok de Pavo y Brócoli",
-        "ingredients": ["150g pavo en tiras", "Brócoli", "Jengibre y soja"],
+        "ingredients": [
+          "150g pavo en tiras",
+          "Brócoli",
+          "Jengibre y soja"
+        ],
         "steps": [
           "Saltea el pavo y el brócoli a fuego fuerte.",
           "Sazona con jengibre y soja baja en sal."
@@ -748,7 +771,10 @@
           "Pipas de calabaza",
           "Tomate y pepino"
         ],
-        "steps": ["Mezcla todos los ingredientes en frío.", "Aliña al gusto."]
+        "steps": [
+          "Mezcla todos los ingredientes en frío.",
+          "Aliña al gusto."
+        ]
       },
       "w4_l4": {
         "name": "Entrecot con Pimientos",
@@ -788,7 +814,11 @@
       },
       "w4_d5": {
         "name": "Salmón con Espárragos",
-        "ingredients": ["200g salmón", "Espárragos trigueros", "Limón"],
+        "ingredients": [
+          "200g salmón",
+          "Espárragos trigueros",
+          "Limón"
+        ],
         "steps": [
           "Cocina el salmón y los espárragos a la plancha.",
           "Rocía con limón al servir."
@@ -946,7 +976,11 @@
       },
       "w1_d4": {
         "name": "Salmón con Judías Verdes",
-        "ingredients": ["150g salmón fresco", "200g judías verdes", "Limón"],
+        "ingredients": [
+          "150g salmón fresco",
+          "200g judías verdes",
+          "Limón"
+        ],
         "steps": [
           "Cuece las judías al vapor durante 8 minutos.",
           "Haz el salmón a la plancha 3 min por lado, empezando por la piel.",
@@ -1049,7 +1083,11 @@
       },
       "w2_d1": {
         "name": "Pavo con Puré de Boniato",
-        "ingredients": ["150g pavo", "100g boniato", "Canónigos"],
+        "ingredients": [
+          "150g pavo",
+          "100g boniato",
+          "Canónigos"
+        ],
         "steps": [
           "Asa el boniato al microondas (8 min).",
           "Aplasta el boniato y haz el pavo a la plancha.",
@@ -1095,7 +1133,11 @@
       },
       "w2_d3": {
         "name": "Lubina al Horno con Verduras",
-        "ingredients": ["1 lubina (200g)", "Pimiento rojo", "Berenjena"],
+        "ingredients": [
+          "1 lubina (200g)",
+          "Pimiento rojo",
+          "Berenjena"
+        ],
         "steps": [
           "Corta y plancha las verduras.",
           "Hornea el pescado 15 min a 180°C sobre la verdura."
@@ -1115,7 +1157,11 @@
       },
       "w2_d4": {
         "name": "Hamburguesa de Pollo Fit",
-        "ingredients": ["150g pollo picado", "Rúcula", "10g nueces"],
+        "ingredients": [
+          "150g pollo picado",
+          "Rúcula",
+          "10g nueces"
+        ],
         "steps": [
           "Forma la hamburguesa y hazla a la plancha.",
           "Sirve sin pan sobre la cama de rúcula y nueces."
@@ -1135,7 +1181,10 @@
       },
       "w2_d5": {
         "name": "Crema de Verduras",
-        "ingredients": ["Calabacín, puerro, zanahoria", "1 huevo duro"],
+        "ingredients": [
+          "Calabacín, puerro, zanahoria",
+          "1 huevo duro"
+        ],
         "steps": [
           "Hierve las verduras y tritura sin nata.",
           "Añade el huevo picado encima."
@@ -1184,7 +1233,9 @@
           "Apio y zanahoria",
           "1 huevo duro y 3 lonchas lomo embuchado"
         ],
-        "steps": ["Presenta en una tabla estilo mezze. Sin cocinar."]
+        "steps": [
+          "Presenta en una tabla estilo mezze. Sin cocinar."
+        ]
       },
       "w3_l1": {
         "name": "Alubias Blancas Estofadas",
@@ -1201,7 +1252,11 @@
       },
       "w3_d1": {
         "name": "Pollo al Vapor con Mostaza Antigua",
-        "ingredients": ["150g pechuga", "200g brócoli", "1 cdta mostaza Dijon"],
+        "ingredients": [
+          "150g pechuga",
+          "200g brócoli",
+          "1 cdta mostaza Dijon"
+        ],
         "steps": [
           "Cocina brócoli y pollo al vapor (12 min).",
           "Unta la mostaza al final."
@@ -1222,7 +1277,11 @@
       },
       "w3_d2": {
         "name": "Crema de Espinacas Popeye",
-        "ingredients": ["300g espinacas", "1 patata pequeña", "1 huevo duro"],
+        "ingredients": [
+          "300g espinacas",
+          "1 patata pequeña",
+          "1 huevo duro"
+        ],
         "steps": [
           "Hierve patata y espinacas con poca agua.",
           "Tritura y añade el huevo duro picado."
@@ -1243,7 +1302,11 @@
       },
       "w3_d3": {
         "name": "Sepia con Alcachofas",
-        "ingredients": ["200g sepia", "4 alcachofas", "Ajo laminado"],
+        "ingredients": [
+          "200g sepia",
+          "4 alcachofas",
+          "Ajo laminado"
+        ],
         "steps": [
           "Saltea la sepia a fuego fuerte.",
           "Añade alcachofas y el ajo al final."
@@ -1251,7 +1314,11 @@
       },
       "w3_l4": {
         "name": "Quinoa con Pollo y Verduras",
-        "ingredients": ["60g quinoa", "150g pollo", "Calabacín y pimiento"],
+        "ingredients": [
+          "60g quinoa",
+          "150g pollo",
+          "Calabacín y pimiento"
+        ],
         "steps": [
           "Lava la quinoa y hiérvela 12 min.",
           "Saltea pollo y verduras, y mezcla con la quinoa."
@@ -1259,7 +1326,11 @@
       },
       "w3_d4": {
         "name": "Tortilla de Champiñones y Rabanitos",
-        "ingredients": ["2 huevos", "100g champiñones", "4 rabanitos"],
+        "ingredients": [
+          "2 huevos",
+          "100g champiñones",
+          "4 rabanitos"
+        ],
         "steps": [
           "Haz la tortilla con los champiñones salteados.",
           "Sirve los rabanitos en rodajas crudos al lado."
@@ -1315,7 +1386,11 @@
       },
       "w3_l7": {
         "name": "Tortilla de Patatas Fit",
-        "ingredients": ["2 huevos", "150g patata", "1/2 cebolla"],
+        "ingredients": [
+          "2 huevos",
+          "150g patata",
+          "1/2 cebolla"
+        ],
         "steps": [
           "Cocina la patata en láminas al vapor o microondas (7 min).",
           "Mezcla con huevo y cuaja con una gota de aceite."
@@ -1323,7 +1398,11 @@
       },
       "w3_d7": {
         "name": "Gambas al Horno y Hummus",
-        "ingredients": ["12 gambones", "80g hummus", "Zanahorias crudas"],
+        "ingredients": [
+          "12 gambones",
+          "80g hummus",
+          "Zanahorias crudas"
+        ],
         "steps": [
           "Hornea las gambas con ajo y perejil (6 min).",
           "Acompaña con hummus y zanahoria cruda."
@@ -1875,7 +1954,11 @@
       },
       "w3_l1": {
         "name": "Ensalada Templada de Lentejas",
-        "ingredients": ["100g lentejas", "40g quinoa", "Pimientos y cebolla"],
+        "ingredients": [
+          "100g lentejas",
+          "40g quinoa",
+          "Pimientos y cebolla"
+        ],
         "steps": [
           "Hierve la quinoa.",
           "Saltea los pimientos y la cebolla.",
@@ -1884,7 +1967,11 @@
       },
       "w3_d1": {
         "name": "Tortilla de Calabacín y Queso de Cabra",
-        "ingredients": ["2 huevos", "1/2 calabacín", "20g queso de cabra rulo"],
+        "ingredients": [
+          "2 huevos",
+          "1/2 calabacín",
+          "20g queso de cabra rulo"
+        ],
         "steps": [
           "Corta el calabacín en dados muy pequeños y saltéalo.",
           "Añade el queso desmigado a los huevos batidos.",
@@ -1932,7 +2019,10 @@
       },
       "w3_d3": {
         "name": "Crema de Verduras Blancas",
-        "ingredients": ["Puerro, coliflor y cebolla", "1 huevo poché"],
+        "ingredients": [
+          "Puerro, coliflor y cebolla",
+          "1 huevo poché"
+        ],
         "steps": [
           "Hierve las verduras blancas y tritúralas hasta obtener una crema fina.",
           "Prepara un huevo poché (escalfado en agua hirviendo con vinagre 3 min).",
@@ -2238,7 +2328,11 @@
     "menuOptimal": "Menú óptimo",
     "addAll": "Añadir menú completo",
     "addToDiary": "Añadir a diario",
-    "regenerate": "Generar otro menú"
+    "regenerate": "Generar otro menú",
+    "viewOnly": "Vista de sugerencia. Para registrar alimentos, usa el Diario."
+  },
+  "diet": {
+    "suggestionView": "Vista de sugerencia. Para registrar alimentos, usa el Diario."
   },
   "journey": {
     "title": "Tu Desafío de 90 Días",
@@ -2587,7 +2681,12 @@
     },
     "spinach_omelette": {
       "name": "Tortilla de espinacas",
-      "ingredients": ["3 huevos", "150 g espinacas", "Ajo", "1 cda aceite"],
+      "ingredients": [
+        "3 huevos",
+        "150 g espinacas",
+        "Ajo",
+        "1 cda aceite"
+      ],
       "steps": [
         "Saltear ajo y espinacas.",
         "Batir huevos y cuajar en la sartén."
@@ -2613,7 +2712,10 @@
         "1 lata atún natural",
         "Tomate triturado"
       ],
-      "steps": ["Cocer pasta.", "Mezclar tomate caliente y el atún escurrido."]
+      "steps": [
+        "Cocer pasta.",
+        "Mezclar tomate caliente y el atún escurrido."
+      ]
     },
     "zucchini_cream": {
       "name": "Crema de calabacín",
@@ -2623,7 +2725,10 @@
         "Cebolla",
         "1 quesito light"
       ],
-      "steps": ["Hervir verduras.", "Triturar añadiendo el quesito."]
+      "steps": [
+        "Hervir verduras.",
+        "Triturar añadiendo el quesito."
+      ]
     },
     "chickpea_salad": {
       "name": "Ensalada de garbanzos",
@@ -2634,11 +2739,18 @@
         "Cebolla roja",
         "Aceite"
       ],
-      "steps": ["Lavar garbanzos.", "Cortar verdura fresca y aliñar."]
+      "steps": [
+        "Lavar garbanzos.",
+        "Cortar verdura fresca y aliñar."
+      ]
     },
     "lemon_chicken_sweetpotato": {
       "name": "Pechuga al limón con boniato",
-      "ingredients": ["150 g pechuga", "1 boniato mediano", "Zumo de limón"],
+      "ingredients": [
+        "150 g pechuga",
+        "1 boniato mediano",
+        "Zumo de limón"
+      ],
       "steps": [
         "Asar boniato al microondas (8 min).",
         "Plancha el pollo con limón."
@@ -2646,7 +2758,11 @@
     },
     "broken_eggs": {
       "name": "Huevos rotos",
-      "ingredients": ["2 huevos", "1 patata grande", "Pimentón"],
+      "ingredients": [
+        "2 huevos",
+        "1 patata grande",
+        "Pimentón"
+      ],
       "steps": [
         "Asar patata en rodajas al micro/horno.",
         "Hacer huevos a la plancha encima."
@@ -2659,7 +2775,10 @@
         "Medio aguacate",
         "2 lonchas pavo"
       ],
-      "steps": ["Tostar el pan.", "Untar aguacate y colocar pavo."]
+      "steps": [
+        "Tostar el pan.",
+        "Untar aguacate y colocar pavo."
+      ]
     },
     "egg_white_mushroom": {
       "name": "Revuelto de claras y champiñones",
@@ -2669,7 +2788,10 @@
         "Ajo",
         "Aceite"
       ],
-      "steps": ["Saltear champiñones con ajo.", "Añadir claras hasta cuajar."]
+      "steps": [
+        "Saltear champiñones con ajo.",
+        "Añadir claras hasta cuajar."
+      ]
     },
     "apple_porridge": {
       "name": "Porridge de avena y manzana",
@@ -2698,7 +2820,12 @@
     },
     "express_couscous": {
       "name": "Cuscús exprés",
-      "ingredients": ["80 g cuscús", "Zanahoria rallada", "Pasas", "Caldo"],
+      "ingredients": [
+        "80 g cuscús",
+        "Zanahoria rallada",
+        "Pasas",
+        "Caldo"
+      ],
       "steps": [
         "Hervir mismo bol de caldo que de cuscús.",
         "Verter sobre cuscús, tapar 5 min y ahuecar."
@@ -2706,7 +2833,11 @@
     },
     "grilled_eggplant_cheese": {
       "name": "Berenjena a la plancha con queso",
-      "ingredients": ["1 berenjena", "80 g queso fresco", "Orégano"],
+      "ingredients": [
+        "1 berenjena",
+        "80 g queso fresco",
+        "Orégano"
+      ],
       "steps": [
         "Cortar berenjena a rodajas, hacer a la plancha.",
         "Servir con rodajas de queso encima."
@@ -2719,7 +2850,10 @@
         "Queso quark",
         "Un puñado de fresas"
       ],
-      "steps": ["Triturar plátano, fresas y quark.", "Servir en bol muy frío."]
+      "steps": [
+        "Triturar plátano, fresas y quark.",
+        "Servir en bol muy frío."
+      ]
     }
   },
   "plans": {
@@ -3524,5 +3658,8 @@
     "levelUpDesc": "Has alcanzado el Nivel {{level}}",
     "levelUpMotiv": "¡Sigue registrando tus hábitos para mantener tu racha y desbloquear más recompensas!",
     "continueBtn": "Continuar"
+  },
+  "aiCoach": {
+    "serverError": "Error de conexión con el servidor de IA. Revisa la consola o intenta más tarde."
   }
 }

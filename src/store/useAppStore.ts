@@ -60,6 +60,7 @@ export interface AppActions {
   addCoachMessage: (message: Omit<CoachMessage, "id" | "timestamp">) => void;
   clearCoachMessages: () => void;
   sendMessageToCoach: (text: string) => Promise<void>;
+  completeOnboarding: () => void;
 }
 
 export type AppStore = AppState & AppActions;
@@ -117,6 +118,10 @@ const customStorage: StateStorage = {
             if (acc.userLevel === undefined) {
               migrated = true;
               acc.userLevel = 1;
+            }
+            if (acc.hasCompletedOnboarding === undefined) {
+              migrated = true;
+              acc.hasCompletedOnboarding = false;
             }
 
             if (acc.foods) {
@@ -181,6 +186,7 @@ const customStorage: StateStorage = {
         lastLoginDate: null,
         userXP: 0,
         userLevel: 1,
+        hasCompletedOnboarding: false,
       };
 
       const state: AppState = {
@@ -237,6 +243,7 @@ export const useAppStore = create<AppStore>()(
             lastLoginDate: null,
             userXP: 0,
             userLevel: 1,
+            hasCompletedOnboarding: false,
           };
           return {
             accounts: { ...state.accounts, [id]: newAccount },
@@ -279,6 +286,7 @@ export const useAppStore = create<AppStore>()(
               [state.activeAccountId]: {
                 ...acc,
                 profile: { ...acc.profile, ...partial },
+                hasCompletedOnboarding: true,
               },
             },
           };
@@ -632,6 +640,21 @@ Instrucciones críticas:
           get().setAiTyping(false);
         }
       },
+
+      completeOnboarding: () =>
+        set((state) => {
+          if (!state.activeAccountId) return {};
+          const acc = state.accounts[state.activeAccountId];
+          return {
+            accounts: {
+              ...state.accounts,
+              [state.activeAccountId]: {
+                ...acc,
+                hasCompletedOnboarding: true,
+              },
+            },
+          };
+        }),
     }),
     {
       name: "drs.store.v2",
