@@ -20,7 +20,7 @@ exports.handler = async function(event, context) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'qwen/qwen-2.5-72b-instruct:free',
+        model: 'meta-llama/llama-3-8b-instruct:free',
         messages: messages
       })
     });
