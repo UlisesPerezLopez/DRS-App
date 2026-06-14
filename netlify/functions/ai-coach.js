@@ -20,7 +20,7 @@ exports.handler = async function(event, context) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'google/gemini-1.5-flash',
+        model: 'openai/gpt-4o-mini',
         messages: messages
       })
     });
