@@ -20,7 +20,7 @@ exports.handler = async function(event, context) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: model: 'google/gemini-1.5-flash',
+        model: 'google/gemini-1.5-flash',
         messages: messages
       })
     });
